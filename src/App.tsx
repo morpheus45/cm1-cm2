@@ -11,7 +11,8 @@ const STARS_KEY = 'exercices-cm1-cm2:stars';
 
 function loadStars(): number {
   const raw = localStorage.getItem(STARS_KEY);
-  return raw ? Number(raw) : 0;
+  const parsed = raw ? Number(raw) : 0;
+  return Number.isFinite(parsed) ? parsed : 0;
 }
 
 function saveStars(value: number) {

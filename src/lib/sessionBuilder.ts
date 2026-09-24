@@ -20,10 +20,10 @@ const GENERATORS: Record<Domain, Generator> = {
 };
 
 export function buildSession(subjects: Domain[], level: Level, seed: number, count = 8): Question[] {
-  if (subjects.length === 0) {
+  const orderedSubjects = ALL_DOMAINS.filter((domain) => subjects.includes(domain));
+  if (orderedSubjects.length === 0) {
     throw new Error('Au moins une matière doit être sélectionnée.');
   }
-  const orderedSubjects = ALL_DOMAINS.filter((domain) => subjects.includes(domain));
   const rng = createRng(seed);
   const perSubject = Math.floor(count / orderedSubjects.length);
   const remainder = count - perSubject * orderedSubjects.length;

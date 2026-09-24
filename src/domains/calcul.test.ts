@@ -50,4 +50,14 @@ describe('calcul generate', () => {
       expect(actual).toBeCloseTo(expected, 1);
     });
   });
+
+  it('never mixes comma and non-comma choices within one question (decimal-context consistency)', () => {
+    for (let seed = 1; seed <= 50; seed++) {
+      const questions = generate('CM2', createRng(seed), 12);
+      questions.forEach((q) => {
+        const hasComma = q.choices.map((c) => c.includes(','));
+        expect(new Set(hasComma).size).toBe(1);
+      });
+    }
+  });
 });

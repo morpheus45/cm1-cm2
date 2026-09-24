@@ -46,4 +46,14 @@ describe('orthographe generate', () => {
       });
     }
   });
+
+  it('choices are unique even case-insensitively (catches homophone case-variant duplicates)', () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      const questions = [...generate('CM1', createRng(seed), 12), ...generate('CM2', createRng(seed), 12)];
+      questions.forEach((q) => {
+        const lowered = q.choices.map((c) => c.toLowerCase());
+        expect(new Set(lowered).size).toBe(q.choices.length);
+      });
+    }
+  });
 });

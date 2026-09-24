@@ -33,4 +33,18 @@ describe('buildSession', () => {
   it('throws when no subject is selected', () => {
     expect(() => buildSession([], 'CM1', 1, 8)).toThrow();
   });
+
+  it('produces the same session regardless of subject array order', () => {
+    const a = buildSession(['calcul', 'numeration', 'accords'], 'CM2', 42, 9);
+    const b = buildSession(['accords', 'calcul', 'numeration'], 'CM2', 42, 9);
+    const c = buildSession(['numeration', 'accords', 'calcul'], 'CM2', 42, 9);
+    expect(a).toEqual(b);
+    expect(a).toEqual(c);
+  });
+
+  it('collapses duplicate subjects without producing duplicate question ids', () => {
+    const session = buildSession(['calcul', 'calcul', 'calcul'], 'CM1', 5, 8);
+    const ids = session.map((q) => q.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  });
 });
