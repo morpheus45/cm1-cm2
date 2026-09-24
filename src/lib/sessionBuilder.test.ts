@@ -42,9 +42,9 @@ describe('buildSession', () => {
     expect(a).toEqual(c);
   });
 
-  it('collapses duplicate subjects without producing duplicate question ids', () => {
-    const session = buildSession(['calcul', 'calcul', 'calcul'], 'CM1', 5, 8);
-    const ids = session.map((q) => q.id);
-    expect(new Set(ids).size).toBe(ids.length);
+  it('collapses duplicate subjects to behave identically to the deduplicated list', () => {
+    const withDuplicates = buildSession(['calcul', 'calcul', 'numeration'], 'CM1', 5, 8);
+    const deduplicated = buildSession(['calcul', 'numeration'], 'CM1', 5, 8);
+    expect(withDuplicates).toEqual(deduplicated);
   });
 });
