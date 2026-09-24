@@ -14,6 +14,10 @@ describe('numberToFrenchWords', () => {
     expect(numberToFrenchWords(842)).toBe('huit cent quarante-deux');
     expect(numberToFrenchWords(1001)).toBe('mille un');
     expect(numberToFrenchWords(0)).toBe('zéro');
+    expect(numberToFrenchWords(200000)).toBe('deux cent mille');
+    expect(numberToFrenchWords(80000)).toBe('quatre-vingt mille');
+    expect(numberToFrenchWords(280000)).toBe('deux cent quatre-vingt mille');
+    expect(numberToFrenchWords(200000000)).toBe('deux cents millions');
   });
 
   it('correctly handles 71 with "et" (soixante et onze)', () => {
@@ -53,5 +57,16 @@ describe('numeration generate', () => {
     const a = generate('CM1', createRng(55), 8);
     const b = generate('CM1', createRng(55), 8);
     expect(a).toEqual(b);
+  });
+
+  it('choices[correctIndex] matches the number spelled out in dictée prompts', () => {
+    const questions = [...generate('CM1', createRng(11), 20), ...generate('CM2', createRng(11), 20)];
+    questions.forEach((q) => {
+      const match = q.prompt.match(/Quel nombre correspond à « (.+) » \?/);
+      if (!match) return;
+      const words = match[1];
+      const correctChoice = q.choices[q.correctIndex];
+      expect(numberToFrenchWords(Number(correctChoice))).toBe(words);
+    });
   });
 });

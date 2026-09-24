@@ -41,6 +41,12 @@ function threeDigits(n: number): string {
   return result || 'zéro';
 }
 
+function dropPluralBeforeMille(words: string): string {
+  if (words.endsWith('vingts')) return words.slice(0, -1);
+  if (words.endsWith('cents')) return words.slice(0, -1);
+  return words;
+}
+
 export function numberToFrenchWords(n: number): string {
   if (n === 0) return 'zéro';
   const billions = Math.floor(n / 1_000_000_000);
@@ -56,7 +62,7 @@ export function numberToFrenchWords(n: number): string {
     parts.push(`${threeDigits(millions)} million${millions > 1 ? 's' : ''}`);
   }
   if (thousands > 0) {
-    parts.push(thousands === 1 ? 'mille' : `${threeDigits(thousands)} mille`);
+    parts.push(thousands === 1 ? 'mille' : `${dropPluralBeforeMille(threeDigits(thousands))} mille`);
   }
   if (rest > 0 || parts.length === 0) {
     parts.push(threeDigits(rest));
@@ -128,6 +134,15 @@ const CM2_DECIMAL_ITEMS: DecimalItem[] = [
   { prompt: 'Quel pourcentage correspond au quart ?', correct: '25 %', distractors: ['50 %', '75 %', '10 %'] },
 ];
 
+function randomDicteeNumber(rng: Rng, level: Level): number {
+  const minDigits = level === 'CM1' ? 2 : 3;
+  const maxDigits = level === 'CM1' ? 6 : 9;
+  const digits = rngInt(rng, minDigits, maxDigits);
+  const min = Math.pow(10, digits - 1);
+  const max = Math.pow(10, digits) - 1;
+  return rngInt(rng, min, max);
+}
+
 export function generate(level: Level, rng: Rng, count: number): Question[] {
   const bankBudget = count >= 4 ? Math.min(2, count) : 0;
   const dicteeCount = count - bankBudget;
@@ -135,7 +150,7 @@ export function generate(level: Level, rng: Rng, count: number): Question[] {
   const dicteeQuestions: Question[] = [];
   const usedNumbers = new Set<number>();
   while (dicteeQuestions.length < dicteeCount) {
-    const correct = level === 'CM1' ? rngInt(rng, 10, 999999) : rngInt(rng, 1000, 999999999);
+    const correct = randomDicteeNumber(rng, level);
     if (usedNumbers.has(correct)) continue;
     usedNumbers.add(correct);
     const distractors = distractorsForNumber(rng, correct);

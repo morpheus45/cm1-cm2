@@ -1,3 +1,4 @@
+import { ALL_DOMAINS } from '../types';
 import type { Domain, Level, Question } from '../types';
 import { createRng, rngShuffle, type Rng } from './seededRandom';
 import * as conjugaison from '../domains/conjugaison';
@@ -22,12 +23,13 @@ export function buildSession(subjects: Domain[], level: Level, seed: number, cou
   if (subjects.length === 0) {
     throw new Error('Au moins une matière doit être sélectionnée.');
   }
+  const orderedSubjects = ALL_DOMAINS.filter((domain) => subjects.includes(domain));
   const rng = createRng(seed);
-  const perSubject = Math.floor(count / subjects.length);
-  const remainder = count - perSubject * subjects.length;
+  const perSubject = Math.floor(count / orderedSubjects.length);
+  const remainder = count - perSubject * orderedSubjects.length;
 
   const all: Question[] = [];
-  subjects.forEach((subject, index) => {
+  orderedSubjects.forEach((subject, index) => {
     const subjectCount = perSubject + (index < remainder ? 1 : 0);
     if (subjectCount > 0) {
       all.push(...GENERATORS[subject](level, rng, subjectCount));

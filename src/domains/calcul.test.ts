@@ -32,4 +32,22 @@ describe('calcul generate', () => {
       expect(q.prompt.endsWith('?')).toBe(true);
     });
   });
+
+  it('choices[correctIndex] is the actual correct arithmetic result', () => {
+    const questions = [...generate('CM1', createRng(10), 20), ...generate('CM2', createRng(10), 20)];
+    questions.forEach((q) => {
+      const match = q.prompt.match(/Combien font ([\d,]+) ([+\-×÷]) ([\d,]+) \?/);
+      expect(match).not.toBeNull();
+      const [, aStr, op, bStr] = match!;
+      const a = Number(aStr.replace(',', '.'));
+      const b = Number(bStr.replace(',', '.'));
+      let expected: number;
+      if (op === '+') expected = a + b;
+      else if (op === '-') expected = a - b;
+      else if (op === '×') expected = a * b;
+      else expected = a / b;
+      const actual = Number(q.choices[q.correctIndex].replace(',', '.'));
+      expect(actual).toBeCloseTo(expected, 1);
+    });
+  });
 });

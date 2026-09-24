@@ -15,13 +15,16 @@ export function RecapScreen({ score, total, totalStars, onRestart, onFinish }: R
       </p>
 
       <div className="flex flex-col items-center gap-2">
-        <p className="text-lg text-slate-500">Étoiles gagnées en tout</p>
+        <p className="text-lg text-slate-500">Étoiles gagnées en tout : {totalStars}</p>
         <div className="flex flex-wrap justify-center gap-1 max-w-xs">
-          {Array.from({ length: totalStars }).map((_, index) => (
+          {Array.from({ length: Math.min(totalStars, 20) }).map((_, index) => (
             <span key={index} className="text-2xl">
               ⭐
             </span>
           ))}
+          {totalStars > 20 && (
+            <span className="text-lg text-slate-500 self-center">+{totalStars - 20}</span>
+          )}
         </div>
       </div>
 

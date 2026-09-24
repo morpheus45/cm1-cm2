@@ -27,9 +27,9 @@ const CM2_HOMOPHONE_ITEMS: HomophoneItem[] = [
   { prompt: 'Il prend ... sac.', correct: 'son', pairPartner: 'sont' },
   { prompt: 'Elles ... parties tôt.', correct: 'sont', pairPartner: 'son' },
   { prompt: 'Range ... cahier.', correct: 'son', pairPartner: 'sont' },
-  { prompt: '... enfants jouent dehors.', correct: 'Ces', pairPartner: 'Ses' },
-  { prompt: 'Elle range ... affaires.', correct: 'ses', pairPartner: 'ces' },
-  { prompt: '... fleurs sont belles.', correct: 'Ces', pairPartner: 'Ses' },
+  { prompt: '... enfants-là jouent dehors.', correct: 'Ces', pairPartner: 'Ses' },
+  { prompt: 'Avant de partir, elle range ... propres affaires.', correct: 'ses', pairPartner: 'ces' },
+  { prompt: '... fleurs-ci sont magnifiques.', correct: 'Ces', pairPartner: 'Ses' },
   { prompt: '... une belle journée.', correct: "C'est", pairPartner: "S'est" },
   { prompt: 'Il ... blessé au genou.', correct: "s'est", pairPartner: "c'est" },
   { prompt: '... mon anniversaire.', correct: "C'est", pairPartner: "S'est" },
@@ -54,12 +54,13 @@ const CM2_SYNONYM_ITEMS: SynonymItem[] = [
 ];
 
 function pairDistractors(rng: Rng, item: HomophoneItem, otherItems: HomophoneItem[]): string[] {
-  const seen = new Set<string>([item.correct, item.pairPartner]);
+  const seen = new Set<string>([item.correct.toLowerCase(), item.pairPartner.toLowerCase()]);
   const uniqueCandidates = otherItems
     .map((o) => o.correct)
     .filter((correct) => {
-      if (seen.has(correct)) return false;
-      seen.add(correct);
+      const key = correct.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
       return true;
     });
   const extras = rngShuffle(rng, uniqueCandidates).slice(0, 2);

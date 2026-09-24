@@ -29,4 +29,13 @@ describe('problemes generate', () => {
     const questions = generate('CM1', createRng(4), 6);
     questions.forEach((q) => expect(q.prompt.trim().endsWith('?')).toBe(true));
   });
+
+  it('choices[correctIndex] matches the correct value encoded in the id', () => {
+    const questions = generate('CM2', createRng(12), 10);
+    questions.forEach((q) => {
+      const idParts = q.id.split('-');
+      const correctFromId = idParts[idParts.length - 1];
+      expect(q.choices[q.correctIndex]).toBe(correctFromId);
+    });
+  });
 });

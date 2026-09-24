@@ -89,13 +89,14 @@ export function generate(level: Level, rng: Rng, count: number): Question[] {
   for (let i = 0; i < count; i++) {
     const { a, b, op, result, isDecimal } = level === 'CM1' ? buildCM1Operation(rng) : buildCM2Operation(rng);
     const distractors = distractorsForResult(rng, result, isDecimal);
-    const choices = rngShuffle(rng, [result, ...distractors].map(formatNumber));
+    const formatChoice = (n: number) => (isDecimal ? n.toFixed(1).replace('.', ',') : formatNumber(n));
+    const choices = rngShuffle(rng, [result, ...distractors].map(formatChoice));
     questions.push({
       id: `calcul-${i}-${op}-${a}-${b}`,
       domain: 'calcul',
       prompt: `Combien font ${formatNumber(a)} ${op} ${formatNumber(b)} ?`,
       choices,
-      correctIndex: choices.indexOf(formatNumber(result)),
+      correctIndex: choices.indexOf(formatChoice(result)),
     });
   }
   return questions;
