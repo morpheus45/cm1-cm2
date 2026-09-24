@@ -15,6 +15,22 @@ describe('numberToFrenchWords', () => {
     expect(numberToFrenchWords(1001)).toBe('mille un');
     expect(numberToFrenchWords(0)).toBe('zéro');
   });
+
+  it('correctly handles 71 with "et" (soixante et onze)', () => {
+    expect(numberToFrenchWords(71)).toBe('soixante et onze');
+  });
+
+  it('correctly handles 72-79 with hyphen (not broken by 71 fix)', () => {
+    expect(numberToFrenchWords(72)).toBe('soixante-douze');
+  });
+
+  it('correctly handles 90-99 without "et" (not broken by 71 fix)', () => {
+    expect(numberToFrenchWords(91)).toBe('quatre-vingt-onze');
+  });
+
+  it('correctly handles 171 with "et" for embedded 71 (via threeDigits)', () => {
+    expect(numberToFrenchWords(171)).toBe('cent soixante et onze');
+  });
 });
 
 describe('numeration generate', () => {

@@ -12,6 +12,9 @@ function twoDigits(n: number): string {
   const tenIndex = Math.floor(n / 10);
   const unit = n % 10;
   if (tenIndex === 7 || tenIndex === 9) {
+    if (tenIndex === 7 && unit === 1) {
+      return `${TENS[tenIndex]} et ${TEENS[unit]}`;
+    }
     return `${TENS[tenIndex]}-${TEENS[unit]}`;
   }
   if (unit === 0) {
