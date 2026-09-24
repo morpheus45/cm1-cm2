@@ -54,12 +54,15 @@ const CM2_SYNONYM_ITEMS: SynonymItem[] = [
 ];
 
 function pairDistractors(rng: Rng, item: HomophoneItem, otherItems: HomophoneItem[]): string[] {
-  const extras = rngShuffle(
-    rng,
-    otherItems
-      .filter((o) => o.correct !== item.correct && o.correct !== item.pairPartner)
-      .map((o) => o.correct)
-  ).slice(0, 2);
+  const seen = new Set<string>([item.correct, item.pairPartner]);
+  const uniqueCandidates = otherItems
+    .map((o) => o.correct)
+    .filter((correct) => {
+      if (seen.has(correct)) return false;
+      seen.add(correct);
+      return true;
+    });
+  const extras = rngShuffle(rng, uniqueCandidates).slice(0, 2);
   return [item.pairPartner, ...extras];
 }
 

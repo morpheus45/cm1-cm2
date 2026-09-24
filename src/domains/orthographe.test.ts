@@ -31,4 +31,19 @@ describe('orthographe generate', () => {
     expect(hasSynonym(cm1Questions)).toBe(false);
     expect(hasSynonym(cm2Questions)).toBe(true);
   });
+
+  it('always produces 4 distinct choices, across many seeds', () => {
+    for (let seed = 1; seed <= 200; seed++) {
+      const questions = generate('CM1', createRng(seed), 12);
+      questions.forEach((q) => {
+        expect(new Set(q.choices).size).toBe(q.choices.length);
+      });
+    }
+    for (let seed = 1; seed <= 200; seed++) {
+      const questions = generate('CM2', createRng(seed), 12);
+      questions.forEach((q) => {
+        expect(new Set(q.choices).size).toBe(q.choices.length);
+      });
+    }
+  });
 });
