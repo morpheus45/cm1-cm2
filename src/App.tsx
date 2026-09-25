@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import type { Domain, Level, Question } from './types';
-import { buildSession } from './lib/sessionBuilder';
-import { HomeScreen } from './components/HomeScreen';
+import { subjectOf } from './types';
+import { buildSession, type Session } from './lib/sessionBuilder';
+import { HomeScreen, type StartOptions } from './components/HomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
 
@@ -21,23 +21,30 @@ function saveStars(value: number) {
 
 export function App() {
   const [screen, setScreen] = useState<Screen>('home');
-  const [session, setSession] = useState<Question[]>([]);
+  const [session, setSession] = useState<Session | null>(null);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
-  const [config, setConfig] = useState<{ name: string; subjects: Domain[]; level: Level } | null>(null);
+  const [config, setConfig] = useState<StartOptions | null>(null);
   const [totalStars, setTotalStars] = useState(loadStars);
 
-  const startSession = (name: string, subjects: Domain[], level: Level) => {
+  const startSession = (options: StartOptions) => {
     const seed = Date.now();
-    const questions = buildSession(subjects, level, seed, 8);
-    setConfig({ name, subjects, level });
-    setSession(questions);
+    const built = buildSession({
+      domains: options.domains,
+      level: options.level,
+      trimester: options.trimester,
+      seed,
+      count: 8,
+    });
+    setConfig(options);
+    setSession(built);
     setIndex(0);
     setScore(0);
     setScreen('question');
   };
 
   const handleAnswer = (correct: boolean) => {
+    if (!session) return;
     const nextScore = correct ? score + 1 : score;
     setScore(nextScore);
     if (correct) {
@@ -45,7 +52,7 @@ export function App() {
       setTotalStars(nextStars);
       saveStars(nextStars);
     }
-    if (index + 1 < session.length) {
+    if (index + 1 < session.questions.length) {
       setIndex(index + 1);
     } else {
       setScreen('recap');
@@ -57,28 +64,24 @@ export function App() {
       setScreen('home');
       return;
     }
-    startSession(config.name, config.subjects, config.level);
+    startSession(config);
   };
 
-  const finish = () => {
-    setScreen('home');
-  };
+  const finish = () => setScreen('home');
+  const quit = () => setScreen('home');
 
-  const quit = () => {
-    setScreen('home');
-  };
-
-  if (screen === 'home') {
+  if (screen === 'home' || !session) {
     return <HomeScreen onStart={startSession} />;
   }
 
   if (screen === 'question') {
-    const question = session[index];
+    const question = session.questions[index];
     return (
       <QuestionScreen
         question={question}
+        subject={subjectOf(question.domain)}
         questionNumber={index + 1}
-        totalQuestions={session.length}
+        totalQuestions={session.questions.length}
         onAnswer={handleAnswer}
         onQuit={quit}
       />
@@ -86,6 +89,14 @@ export function App() {
   }
 
   return (
-    <RecapScreen score={score} total={session.length} totalStars={totalStars} onRestart={restart} onFinish={finish} />
+    <RecapScreen
+      name={config?.name}
+      subject={session.subject}
+      score={score}
+      total={session.questions.length}
+      totalStars={totalStars}
+      onRestart={restart}
+      onFinish={finish}
+    />
   );
 }

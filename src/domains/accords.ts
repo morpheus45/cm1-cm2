@@ -1,8 +1,14 @@
-import type { Level, Question } from '../types';
+import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
+import { availableAt, stageOf, type Staged } from '../lib/progression';
 
-interface NominalGroupItem {
+/**
+ * Accord dans le groupe nominal, travaillé toute l'année. La difficulté monte
+ * avec les trimestres : accord en nombre évident (T1), accord en genre (T2),
+ * pluriels irréguliers en -eaux / -aux (T3).
+ */
+interface NominalGroupItem extends Staged {
   determiner: string;
   adjective: string;
   correctNoun: string;
@@ -10,42 +16,59 @@ interface NominalGroupItem {
 }
 
 const NOMINAL_GROUP_ITEMS: NominalGroupItem[] = [
-  { determiner: 'un', adjective: 'agréable', correctNoun: 'marchand', distractorNouns: ['vendeuses', 'boulangers', 'commerçante'] },
-  { determiner: 'une', adjective: 'jolie', correctNoun: 'feuille', distractorNouns: ['cadeau', 'écharpes', 'cartables'] },
-  { determiner: 'des', adjective: 'nouveaux', correctNoun: 'amis', distractorNouns: ['ami', 'amie', 'amies'] },
-  { determiner: 'des', adjective: 'mauvaises', correctNoun: 'blagues', distractorNouns: ['goût', 'croissants', 'idée'] },
-  { determiner: 'un', adjective: 'grand', correctNoun: 'jardin', distractorNouns: ['maisons', 'maison', 'jardins'] },
-  { determiner: 'une', adjective: 'petite', correctNoun: 'fille', distractorNouns: ['garçon', 'garçons', 'filles'] },
-  { determiner: 'des', adjective: 'beaux', correctNoun: 'tableaux', distractorNouns: ['tableau', 'peinture', 'peintures'] },
-  { determiner: 'des', adjective: 'belles', correctNoun: 'fleurs', distractorNouns: ['fleur', 'bouquet', 'bouquets'] },
-  { determiner: 'un', adjective: 'vieux', correctNoun: 'château', distractorNouns: ['tours', 'tour', 'châteaux'] },
-  { determiner: 'une', adjective: 'longue', correctNoun: 'route', distractorNouns: ['chemin', 'chemins', 'routes'] },
-  { determiner: 'des', adjective: 'gentils', correctNoun: 'voisins', distractorNouns: ['voisin', 'voisine', 'voisines'] },
-  { determiner: 'des', adjective: 'heureuses', correctNoun: 'familles', distractorNouns: ['famille', 'cousin', 'cousins'] },
+  // Accord en nombre.
+  { minStage: 1, determiner: 'un', adjective: 'grand', correctNoun: 'jardin', distractorNouns: ['maisons', 'maison', 'jardins'] },
+  { minStage: 1, determiner: 'une', adjective: 'petite', correctNoun: 'fille', distractorNouns: ['garçon', 'garçons', 'filles'] },
+  { minStage: 1, determiner: 'les', adjective: 'petits', correctNoun: 'chats', distractorNouns: ['chat', 'chatte', 'chattes'] },
+  { minStage: 1, determiner: 'une', adjective: 'jolie', correctNoun: 'feuille', distractorNouns: ['cadeau', 'écharpes', 'cartables'] },
+  { minStage: 1, determiner: 'les', adjective: 'grandes', correctNoun: 'tables', distractorNouns: ['table', 'bureau', 'bureaux'] },
+  // Accord en genre.
+  { minStage: 2, determiner: 'un', adjective: 'agréable', correctNoun: 'marchand', distractorNouns: ['vendeuses', 'boulangers', 'commerçante'] },
+  { minStage: 2, determiner: 'mes', adjective: 'nouveaux', correctNoun: 'amis', distractorNouns: ['ami', 'amie', 'amies'] },
+  { minStage: 2, determiner: 'les', adjective: 'gentils', correctNoun: 'voisins', distractorNouns: ['voisin', 'voisine', 'voisines'] },
+  { minStage: 2, determiner: 'ces', adjective: 'heureuses', correctNoun: 'familles', distractorNouns: ['famille', 'cousin', 'cousins'] },
+  { minStage: 2, determiner: 'une', adjective: 'longue', correctNoun: 'route', distractorNouns: ['chemin', 'chemins', 'routes'] },
+  { minStage: 2, determiner: 'les', adjective: 'mauvaises', correctNoun: 'blagues', distractorNouns: ['goût', 'croissants', 'idée'] },
+  // Pluriels irréguliers.
+  { minStage: 3, determiner: 'les', adjective: 'beaux', correctNoun: 'tableaux', distractorNouns: ['tableau', 'peinture', 'peintures'] },
+  { minStage: 3, determiner: 'un', adjective: 'vieux', correctNoun: 'château', distractorNouns: ['tours', 'tour', 'châteaux'] },
+  { minStage: 3, determiner: 'ces', adjective: 'vieux', correctNoun: 'journaux', distractorNouns: ['journal', 'revue', 'revues'] },
+  { minStage: 3, determiner: 'mes', adjective: 'nouveaux', correctNoun: 'bateaux', distractorNouns: ['bateau', 'barque', 'barques'] },
+  { minStage: 3, determiner: 'les', adjective: 'belles', correctNoun: 'fleurs', distractorNouns: ['fleur', 'bouquet', 'bouquets'] },
+  { minStage: 3, determiner: 'ces', adjective: 'beaux', correctNoun: 'chevaux', distractorNouns: ['cheval', 'jument', 'juments'] },
 ];
 
-interface ParticipeItem {
-  prompt: string;
+/** Participe passé employé avec « être » : programme du CM2, 2e trimestre. */
+interface ParticipeItem extends Staged {
+  subject: string;
+  infinitive: string;
   correct: string;
   distractors: [string, string, string];
 }
 
-const CM2_PARTICIPE_ITEMS: ParticipeItem[] = [
-  { prompt: 'Elle est ...', correct: 'partie', distractors: ['parti', 'partis', 'parties'] },
-  { prompt: 'Ils sont ...', correct: 'arrivés', distractors: ['arrivé', 'arrivée', 'arrivées'] },
-  { prompt: 'Elles sont ...', correct: 'tombées', distractors: ['tombé', 'tombés', 'tombée'] },
-  { prompt: 'Il est ...', correct: 'venu', distractors: ['venue', 'venus', 'venues'] },
+const PARTICIPE_ITEMS: ParticipeItem[] = [
+  { minStage: 5, subject: 'Elle est', infinitive: 'partir', correct: 'partie', distractors: ['parti', 'partis', 'parties'] },
+  { minStage: 5, subject: 'Ils sont', infinitive: 'arriver', correct: 'arrivés', distractors: ['arrivé', 'arrivée', 'arrivées'] },
+  { minStage: 5, subject: 'Elles sont', infinitive: 'tomber', correct: 'tombées', distractors: ['tombé', 'tombés', 'tombée'] },
+  { minStage: 5, subject: 'Il est', infinitive: 'venir', correct: 'venu', distractors: ['venue', 'venus', 'venues'] },
+  { minStage: 5, subject: 'Les filles sont', infinitive: 'rentrer', correct: 'rentrées', distractors: ['rentré', 'rentrés', 'rentrée'] },
+  { minStage: 5, subject: 'Mon frère est', infinitive: 'monter', correct: 'monté', distractors: ['montée', 'montés', 'montées'] },
 ];
 
-export function generate(level: Level, rng: Rng, count: number): Question[] {
-  const nominalCount = level === 'CM1' ? count : Math.ceil(count / 2);
-  const participeCount = count - nominalCount;
+export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  const stage = stageOf(level, trimester);
+  const nominalPool = availableAt(NOMINAL_GROUP_ITEMS, stage);
+  const participePool = availableAt(PARTICIPE_ITEMS, stage);
 
-  const nominalPicked = rngPickN(rng, NOMINAL_GROUP_ITEMS, nominalCount).map((item, index) => {
+  const participeCount = participePool.length === 0 ? 0 : Math.floor(count / 2);
+  const nominalCount = count - participeCount;
+
+  const nominalQuestions = rngPickN(rng, nominalPool, nominalCount).map((item, index) => {
     const choices = rngShuffle(rng, [item.correctNoun, ...item.distractorNouns]);
     return {
       id: `accords-nominal-${index}-${item.correctNoun}`,
       domain: 'accords' as const,
+      instruction: 'Quel mot complète correctement le groupe ?',
       prompt: `${item.determiner} ${item.adjective} ...`,
       choices,
       correctIndex: choices.indexOf(item.correctNoun),
@@ -53,19 +76,20 @@ export function generate(level: Level, rng: Rng, count: number): Question[] {
   });
 
   if (participeCount <= 0) {
-    return nominalPicked;
+    return nominalQuestions;
   }
 
-  const participePicked = rngPickN(rng, CM2_PARTICIPE_ITEMS, participeCount).map((item, index) => {
+  const participeQuestions = rngPickN(rng, participePool, participeCount).map((item, index) => {
     const choices = rngShuffle(rng, [item.correct, ...item.distractors]);
     return {
       id: `accords-participe-${index}-${item.correct}`,
       domain: 'accords' as const,
-      prompt: item.prompt,
+      instruction: `Accorde le participe passé — verbe « ${item.infinitive} »`,
+      prompt: `${item.subject} ...`,
       choices,
       correctIndex: choices.indexOf(item.correct),
     };
   });
 
-  return rngShuffle(rng, [...nominalPicked, ...participePicked]);
+  return rngShuffle(rng, [...nominalQuestions, ...participeQuestions]);
 }
