@@ -20,11 +20,16 @@ export function RecapScreen({
   onRestart,
   onFinish,
 }: RecapScreenProps) {
+  // Féliciter un enfant qui s'est trompé huit fois sur huit sonne faux : le
+  // titre suit le score, sans jamais le lui reprocher.
+  const ratio = total > 0 ? score / total : 0;
+  const who = name ? ` ${name}` : '';
+  const headline =
+    ratio === 1 ? `Sans faute${who} !` : ratio >= 0.5 ? `Bravo${who} !` : `Bien essayé${who} !`;
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-sky-50 px-4 py-8">
-      <h2 className="text-3xl font-bold text-slate-700 text-center">
-        {name ? `Bravo ${name} !` : 'Bravo !'}
-      </h2>
+      <h2 className="text-3xl font-bold text-slate-700 text-center">{headline}</h2>
       <p className="text-lg text-slate-500">
         Séance de {SUBJECT_LABELS[subject].toLowerCase()} terminée</p>
       <p className="text-2xl text-slate-600">
