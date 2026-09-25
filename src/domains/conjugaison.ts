@@ -67,6 +67,10 @@ const FORM_ITEMS: FormItem[] = [
   { sentence: 'Tu ... ton exercice.', infinitive: 'finir', tense: 'présent', correct: 'finis', distractors: ['finit', 'finissons', 'finissent'] },
   { sentence: 'Elles ... contentes.', infinitive: 'être', tense: 'présent', correct: 'sont', distractors: ['est', 'sommes', 'êtes'] },
   { sentence: 'On ... une belle histoire.', infinitive: 'lire', tense: 'présent', correct: 'lit', distractors: ['lis', 'lisons', 'lisent'] },
+  { sentence: 'Vous ... du vélo le dimanche.', infinitive: 'faire', tense: 'présent', correct: 'faites', distractors: ['fais', 'fait', 'font'] },
+  { sentence: 'Je ... mon cartable.', infinitive: 'prendre', tense: 'présent', correct: 'prends', distractors: ['prend', 'prenons', 'prennent'] },
+  { sentence: 'Nous ... à la cantine.', infinitive: 'manger', tense: 'présent', correct: 'mangeons', distractors: ['mange', 'manges', 'mangent'] },
+  { sentence: 'Tu ... plus vite que moi.', infinitive: 'courir', tense: 'présent', correct: 'cours', distractors: ['court', 'courons', 'courent'] },
   // --- Imparfait ---
   { sentence: 'La bibliothécaire ... des histoires.', infinitive: 'raconter', tense: 'imparfait', correct: 'racontait', distractors: ['racontais', 'racontaient', 'racontiez'] },
   { sentence: 'Il ... beau ce jour-là.', infinitive: 'faire', tense: 'imparfait', correct: 'faisait', distractors: ['faisais', 'faisaient', 'faisions'] },

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { Domain, Level, Subject, Trimester } from '../types';
+import type { Preferences } from '../lib/preferences';
 import {
   ALL_SUBJECTS,
   ALL_TRIMESTERS,
@@ -15,18 +16,20 @@ export interface StartOptions {
   domains: Domain[];
   level: Level;
   trimester: Trimester;
+  subject: Subject;
 }
 
 interface HomeScreenProps {
+  initial: Preferences;
   onStart: (options: StartOptions) => void;
 }
 
-export function HomeScreen({ onStart }: HomeScreenProps) {
-  const [name, setName] = useState('');
-  const [level, setLevel] = useState<Level>('CM1');
-  const [trimester, setTrimester] = useState<Trimester>(1);
-  const [subject, setSubject] = useState<Subject>('francais');
-  const [domains, setDomains] = useState<Domain[]>([...SUBJECT_DOMAINS.francais]);
+export function HomeScreen({ initial, onStart }: HomeScreenProps) {
+  const [name, setName] = useState(initial.name);
+  const [level, setLevel] = useState<Level>(initial.level);
+  const [trimester, setTrimester] = useState<Trimester>(initial.trimester);
+  const [subject, setSubject] = useState<Subject>(initial.subject);
+  const [domains, setDomains] = useState<Domain[]>(initial.domains);
 
   // Changer de matière repart des notions de cette matière : il n'existe aucun
   // état d'où l'on pourrait lancer une séance mêlant le français et les maths.
@@ -143,7 +146,7 @@ export function HomeScreen({ onStart }: HomeScreenProps) {
       <button
         type="button"
         disabled={!canStart}
-        onClick={() => onStart({ name: name.trim(), domains, level, trimester })}
+        onClick={() => onStart({ name: name.trim(), domains, level, trimester, subject })}
         className="w-full max-w-sm rounded-xl bg-orange-400 disabled:bg-slate-300 text-white text-xl font-bold py-4"
       >
         Commencer

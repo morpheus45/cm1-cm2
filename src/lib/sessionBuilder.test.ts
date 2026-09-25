@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { buildSession, subjectOfDomains, MIXED_SUBJECTS_ERROR } from './sessionBuilder';
+import {
+  buildSession,
+  subjectOfDomains,
+  MIXED_SUBJECTS_ERROR,
+  QUESTIONS_PER_SESSION,
+} from './sessionBuilder';
 import { ALL_DOMAINS, SUBJECT_DOMAINS, subjectOf } from '../types';
 import type { Domain, Level, Trimester } from '../types';
 
@@ -25,8 +30,10 @@ describe('buildSession', () => {
     expect(buildSession({ ...base, domains: ['calcul', 'numeration'], count: 8 }).questions).toHaveLength(8);
   });
 
-  it('defaults to 8 questions when count is omitted', () => {
-    expect(buildSession({ ...base, domains: ['calcul'] }).questions).toHaveLength(8);
+  it('defaults to a full session when count is omitted', () => {
+    expect(buildSession({ ...base, domains: ['calcul'] }).questions).toHaveLength(
+      QUESTIONS_PER_SESSION
+    );
   });
 
   it('only includes questions from the requested notions', () => {
@@ -138,6 +145,20 @@ describe('buildSession', () => {
           });
         });
       });
+    });
+  });
+
+  it('does not have to repeat itself much, even on a single notion at the very start of CM1', () => {
+    // Le cas le plus tendu : une séance entière sur une seule notion, au
+    // premier trimestre du CM1, quand presque rien n'est encore enseigné.
+    // (Les énoncés sont comparés tels quels : deux calculs sur des nombres
+    // différents sont bien deux questions différentes.)
+    ALL_DOMAINS.forEach((domain) => {
+      const session = buildSession({ domains: [domain], level: 'CM1', trimester: 1, seed: 8 });
+      const distinct = new Set(session.questions.map((q) => q.prompt));
+      expect(distinct.size, `${domain} se répète trop`).toBeGreaterThanOrEqual(
+        QUESTIONS_PER_SESSION - 1
+      );
     });
   });
 

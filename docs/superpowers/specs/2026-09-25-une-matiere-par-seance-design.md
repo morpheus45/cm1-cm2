@@ -66,6 +66,19 @@ donc aucun état de l'interface d'où l'on pourrait lancer une séance mixte.
   exactement ce que cette décision écarte, il faudra une bonne raison pour y
   revenir.
 
+## Ce qui est retenu d'une fois sur l'autre
+
+`src/lib/preferences.ts` conserve le prénom, le niveau, le trimestre, la
+matière et les notions choisies. L'enfant rouvre l'application et appuie sur
+« Commencer ».
+
+La relecture se méfie de ce qu'elle trouve : le contenu vient du navigateur de
+l'élève et peut avoir été écrit par une version antérieure. Chaque champ non
+reconnu retombe sur sa valeur par défaut, et surtout les notions relues sont
+filtrées par la matière enregistrée — une sélection écrite du temps où les six
+notions cohabitaient rouvrirait sinon une séance à cheval sur les deux
+matières, par la seule porte que le reste du code ferme.
+
 ## Test / validation
 
 - `buildSession` refuse toute liste de notions qui enjambe les deux matières.
@@ -73,3 +86,5 @@ donc aucun état de l'interface d'où l'on pourrait lancer une séance mixte.
   produites appartiennent à cette matière.
 - La suite des notions dans une séance forme un bloc continu par notion, dans
   l'ordre de la matière — vérifié en comptant les changements de notion.
+- Une sélection enregistrée qui enjambe les deux matières est ramenée à la
+  seule matière enregistrée à la relecture.

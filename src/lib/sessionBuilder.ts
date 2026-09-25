@@ -19,6 +19,9 @@ const GENERATORS: Record<Domain, Generator> = {
   problemes: problemes.generate,
 };
 
+/** Longueur d'une séance : assez pour travailler, assez court pour tenir. */
+export const QUESTIONS_PER_SESSION = 12;
+
 export interface SessionRequest {
   domains: Domain[];
   level: Level;
@@ -62,7 +65,13 @@ export function subjectOfDomains(domains: Domain[]): Subject {
  * notions : l'élève fait d'abord tout le bloc de conjugaison, puis tout le
  * bloc d'accords, etc. — dans l'ordre fixe de `ALL_DOMAINS`.
  */
-export function buildSession({ domains, level, trimester, seed, count = 8 }: SessionRequest): Session {
+export function buildSession({
+  domains,
+  level,
+  trimester,
+  seed,
+  count = QUESTIONS_PER_SESSION,
+}: SessionRequest): Session {
   const orderedDomains = ALL_DOMAINS.filter((domain) => domains.includes(domain));
   const subject = subjectOfDomains(orderedDomains);
 

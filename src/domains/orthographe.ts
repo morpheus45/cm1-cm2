@@ -27,6 +27,10 @@ const HOMOPHONE_ITEMS: HomophoneItem[] = [
   { minStage: 1, prompt: 'Paul ... Marie jouent ensemble.', correct: 'et', pairPartner: 'est' },
   { minStage: 1, prompt: 'Ce gâteau ... délicieux.', correct: 'est', pairPartner: 'et' },
   { minStage: 1, prompt: 'Je prends mon manteau ... mon écharpe.', correct: 'et', pairPartner: 'est' },
+  { minStage: 1, prompt: 'Le train part ... huit heures.', correct: 'à', pairPartner: 'a' },
+  { minStage: 1, prompt: 'Ma sœur ... perdu son écharpe.', correct: 'a', pairPartner: 'à' },
+  { minStage: 1, prompt: 'La porte ... ouverte.', correct: 'est', pairPartner: 'et' },
+  { minStage: 1, prompt: "J'ai un chien ... un chat.", correct: 'et', pairPartner: 'est' },
   // on / ont
   { minStage: 2, prompt: '... va au parc ?', correct: 'on', pairPartner: 'ont' },
   { minStage: 2, prompt: 'Ils ... mangé une pomme.', correct: 'ont', pairPartner: 'on' },

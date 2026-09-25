@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { subjectOf } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
+import { loadPreferences, savePreferences } from './lib/preferences';
 import { HomeScreen, type StartOptions } from './components/HomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
@@ -26,6 +27,9 @@ export function App() {
   const [score, setScore] = useState(0);
   const [config, setConfig] = useState<StartOptions | null>(null);
   const [totalStars, setTotalStars] = useState(loadStars);
+  // Lu une seule fois : l'écran d'accueil part de là, et n'est pas remis à
+  // zéro quand l'élève revient du bilan.
+  const [preferences] = useState(loadPreferences);
 
   const startSession = (options: StartOptions) => {
     const seed = Date.now();
@@ -34,7 +38,13 @@ export function App() {
       level: options.level,
       trimester: options.trimester,
       seed,
-      count: 8,
+    });
+    savePreferences({
+      name: options.name,
+      level: options.level,
+      trimester: options.trimester,
+      subject: options.subject,
+      domains: options.domains,
     });
     setConfig(options);
     setSession(built);
@@ -71,7 +81,7 @@ export function App() {
   const quit = () => setScreen('home');
 
   if (screen === 'home' || !session) {
-    return <HomeScreen onStart={startSession} />;
+    return <HomeScreen initial={config ?? preferences} onStart={startSession} />;
   }
 
   if (screen === 'question') {

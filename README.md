@@ -13,8 +13,9 @@ Deux règles la gouvernent :
   trimestre ; seules les notions déjà enseignées à cette date sont proposées,
   celles des trimestres précédents comprises.
 
-C'est une PWA : elle s'ajoute à l'écran d'accueil d'un téléphone ou d'une
-tablette, et fonctionne ensuite sans connexion.
+Une séance fait douze questions. C'est une PWA : elle s'ajoute à l'écran
+d'accueil d'un téléphone ou d'une tablette, et fonctionne ensuite sans
+connexion.
 
 ## Démarrer en local
 
@@ -59,7 +60,8 @@ npm run build
 
 ## Statut
 
-Pas de compte, pas de backend : tout se passe dans le navigateur, et seul le
-nombre d'étoiles est conservé d'une fois sur l'autre. Les prochaines étapes
+Pas de compte, pas de backend : tout se passe dans le navigateur. Le prénom,
+le niveau, le trimestre et les notions choisies sont conservés d'une fois sur
+l'autre, ainsi que le nombre d'étoiles. Les prochaines étapes
 (comptes enseignant/classes, tableau de bord) sont décrites dans
 `docs/superpowers/specs/`.

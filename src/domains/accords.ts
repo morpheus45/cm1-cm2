@@ -22,6 +22,12 @@ const NOMINAL_GROUP_ITEMS: NominalGroupItem[] = [
   { minStage: 1, determiner: 'les', adjective: 'petits', correctNoun: 'chats', distractorNouns: ['chat', 'chatte', 'chattes'] },
   { minStage: 1, determiner: 'une', adjective: 'jolie', correctNoun: 'feuille', distractorNouns: ['cadeau', 'écharpes', 'cartables'] },
   { minStage: 1, determiner: 'les', adjective: 'grandes', correctNoun: 'tables', distractorNouns: ['table', 'bureau', 'bureaux'] },
+  { minStage: 1, determiner: 'les', adjective: 'grands', correctNoun: 'arbres', distractorNouns: ['arbre', 'fleur', 'fleurs'] },
+  { minStage: 1, determiner: 'un', adjective: 'joli', correctNoun: 'dessin', distractorNouns: ['dessins', 'image', 'images'] },
+  { minStage: 1, determiner: 'une', adjective: 'grande', correctNoun: 'maison', distractorNouns: ['maisons', 'jardin', 'jardins'] },
+  { minStage: 1, determiner: 'les', adjective: 'petites', correctNoun: 'cuillères', distractorNouns: ['cuillère', 'couteau', 'couteaux'] },
+  { minStage: 1, determiner: 'un', adjective: 'petit', correctNoun: 'chien', distractorNouns: ['chiens', 'chatte', 'chattes'] },
+  { minStage: 1, determiner: 'les', adjective: 'nouvelles', correctNoun: 'élèves', distractorNouns: ['élève', 'maître', 'maîtres'] },
   // Accord en genre.
   { minStage: 2, determiner: 'un', adjective: 'agréable', correctNoun: 'marchand', distractorNouns: ['vendeuses', 'boulangers', 'commerçante'] },
   { minStage: 2, determiner: 'mes', adjective: 'nouveaux', correctNoun: 'amis', distractorNouns: ['ami', 'amie', 'amies'] },
