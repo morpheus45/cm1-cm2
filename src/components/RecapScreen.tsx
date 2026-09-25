@@ -1,4 +1,9 @@
+import type { Subject } from '../types';
+import { SUBJECT_LABELS } from '../types';
+
 interface RecapScreenProps {
+  name?: string;
+  subject: Subject;
   score: number;
   total: number;
   totalStars: number;
@@ -6,10 +11,27 @@ interface RecapScreenProps {
   onFinish: () => void;
 }
 
-export function RecapScreen({ score, total, totalStars, onRestart, onFinish }: RecapScreenProps) {
+export function RecapScreen({
+  name,
+  subject,
+  score,
+  total,
+  totalStars,
+  onRestart,
+  onFinish,
+}: RecapScreenProps) {
+  // Féliciter un enfant qui s'est trompé huit fois sur huit sonne faux : le
+  // titre suit le score, sans jamais le lui reprocher.
+  const ratio = total > 0 ? score / total : 0;
+  const who = name ? ` ${name}` : '';
+  const headline =
+    ratio === 1 ? `Sans faute${who} !` : ratio >= 0.5 ? `Bravo${who} !` : `Bien essayé${who} !`;
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-sky-50 px-4 py-8">
-      <h2 className="text-3xl font-bold text-slate-700">Session terminée !</h2>
+      <h2 className="text-3xl font-bold text-slate-700 text-center">{headline}</h2>
+      <p className="text-lg text-slate-500">
+        Séance de {SUBJECT_LABELS[subject].toLowerCase()} terminée</p>
       <p className="text-2xl text-slate-600">
         Score : {score} / {total}
       </p>

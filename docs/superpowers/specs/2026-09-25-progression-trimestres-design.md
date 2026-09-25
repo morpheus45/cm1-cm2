@@ -1,7 +1,7 @@
 # Progression par trimestre (design)
 
 Date : 2026-09-25
-Statut : validé par l'utilisateur, prêt pour planification d'implémentation
+Statut : **implémenté**. Voir « Écarts constatés à l'implémentation » en fin de document.
 
 ## Contexte
 
@@ -43,9 +43,8 @@ export type Trimester = 1 | 2 | 3;
 ### Signature des générateurs
 
 Chaque générateur de domaine passe de `generate(level, rng, count)` à
-`generate(level, trimester, rng, count)`. `buildSession` gagne un paramètre
-`trimester` entre `level` et `seed` : `buildSession(subjects, level,
-trimester, seed, count = 8)`.
+`generate(level, trimester, rng, count)`. `buildSession` prend désormais un
+objet : `buildSession({ domains, level, trimester, seed, count })`.
 
 ### Matières à banque de contenu (conjugaison, accords, orthographe)
 
@@ -100,3 +99,31 @@ une session au même trimestre.
 - Vérifier la reproductibilité : `buildSession` avec les mêmes
   `(subjects, level, trimester, seed, count)` retourne toujours la même
   session.
+
+## Écarts constatés à l'implémentation
+
+Deux points de ce document n'ont pas pu être suivis à la lettre. Ils sont
+notés ici pour que la spec reste lisible à côté du code.
+
+**La conjugaison a gagné un second type de question.** Ce document demande de
+restreindre les temps proposés comme mauvaises réponses à ceux déjà
+enseignés. Au CM1-T1 un seul temps l'est — le présent : il ne reste donc pas
+trois autres temps pour composer les quatre propositions, et la question
+« à quel temps ? » est de toute façon vide de sens quand on n'en connaît
+qu'un. Le générateur pose alors une question « complète la phrase »
+(« Tu ... la mousse au chocolat », verbe *aimer* au présent), dont les
+mauvaises réponses sont d'autres personnes du même temps. La question
+« à quel temps ? » réapparaît dès que quatre temps sont enseignés, c'est-à-dire
+au CM1-T3, et les deux types se partagent alors la séance.
+
+**La progression s'exprime en six étapes, pas en deux dimensions.**
+`src/lib/progression.ts` numérote CM1-T1 à CM2-T3 de 1 à 6 (`stageOf`). Chaque
+élément de banque porte un `minStage`, et le filtre est l'inégalité large
+décrite plus haut. Le tableau de progression de ce document se lit donc
+directement, colonne par colonne, dans le code.
+
+## Ce que ce document ne couvre pas, et qui a été fait en même temps
+
+Une séance ne porte plus que sur une matière — le français ou les maths,
+jamais les deux — et les questions se suivent par blocs de notion au lieu
+d'être mélangées. Voir `2026-09-25-une-matiere-par-seance-design.md`.

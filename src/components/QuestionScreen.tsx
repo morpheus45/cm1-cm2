@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import type { Question } from '../types';
+import type { Question, Subject } from '../types';
+import { DOMAIN_LABELS, SUBJECT_EMOJI, SUBJECT_LABELS } from '../types';
 import { ProgressBar } from './ProgressBar';
 
 interface QuestionScreenProps {
   question: Question;
+  subject: Subject;
   questionNumber: number;
   totalQuestions: number;
   onAnswer: (correct: boolean) => void;
@@ -25,7 +27,14 @@ function renderPrompt(prompt: string) {
   );
 }
 
-export function QuestionScreen({ question, questionNumber, totalQuestions, onAnswer, onQuit }: QuestionScreenProps) {
+export function QuestionScreen({
+  question,
+  subject,
+  questionNumber,
+  totalQuestions,
+  onAnswer,
+  onQuit,
+}: QuestionScreenProps) {
   const [selected, setSelected] = useState<number | null>(null);
   // Deterministic rotation (no Math.random outside seededRandom.ts): varies
   // across the session without needing a seed for pure UI flavor text.
@@ -58,6 +67,15 @@ export function QuestionScreen({ question, questionNumber, totalQuestions, onAns
         <div className="flex-1">
           <ProgressBar current={questionNumber} total={totalQuestions} />
         </div>
+      </div>
+
+      <div className="flex flex-col items-center gap-2">
+        <p className="text-base font-semibold text-violet-500">
+          {SUBJECT_EMOJI[subject]} {SUBJECT_LABELS[subject]} · {DOMAIN_LABELS[question.domain]}
+        </p>
+        {question.instruction && (
+          <p className="text-lg text-center text-slate-500">{question.instruction}</p>
+        )}
       </div>
 
       <p className="text-2xl text-center text-slate-700 leading-relaxed">{renderPrompt(question.prompt)}</p>

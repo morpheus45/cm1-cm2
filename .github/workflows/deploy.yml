@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
+  # Une pull request doit être vérifiée avant d'être fusionnée : sans ce
+  # déclencheur, rien ne lançait les tests tant que le code n'était pas
+  # déjà sur master.
+  pull_request:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -10,8 +15,9 @@ permissions:
   pages: write
   id-token: write
 
+# Un nouveau push sur une branche annule la vérification devenue inutile.
 concurrency:
-  group: pages
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -24,15 +30,24 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npx tsc --noEmit
       - run: npm test
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
         with:
           path: dist
 
   deploy:
     needs: build
+    # Une pull request se vérifie, elle ne se publie pas.
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    # Les publications vers Pages restent sérialisées, et une publication en
+    # cours ne s'annule pas.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -1,24 +1,51 @@
 import { useState } from 'react';
-import type { Domain, Level } from '../types';
-import { ALL_DOMAINS, DOMAIN_LABELS } from '../types';
+import type { Domain, Level, Subject, Trimester } from '../types';
+import type { Preferences } from '../lib/preferences';
+import {
+  ALL_SUBJECTS,
+  ALL_TRIMESTERS,
+  DOMAIN_LABELS,
+  SUBJECT_DOMAINS,
+  SUBJECT_EMOJI,
+  SUBJECT_LABELS,
+  TRIMESTER_LABELS,
+} from '../types';
 
-interface HomeScreenProps {
-  onStart: (name: string, subjects: Domain[], level: Level) => void;
+export interface StartOptions {
+  name: string;
+  domains: Domain[];
+  level: Level;
+  trimester: Trimester;
+  subject: Subject;
 }
 
-export function HomeScreen({ onStart }: HomeScreenProps) {
-  const [name, setName] = useState('');
-  const [level, setLevel] = useState<Level>('CM1');
-  const [subjects, setSubjects] = useState<Domain[]>([...ALL_DOMAINS]);
+interface HomeScreenProps {
+  initial: Preferences;
+  onStart: (options: StartOptions) => void;
+}
 
-  const toggleSubject = (domain: Domain) => {
-    setSubjects((prev) => (prev.includes(domain) ? prev.filter((d) => d !== domain) : [...prev, domain]));
+export function HomeScreen({ initial, onStart }: HomeScreenProps) {
+  const [name, setName] = useState(initial.name);
+  const [level, setLevel] = useState<Level>(initial.level);
+  const [trimester, setTrimester] = useState<Trimester>(initial.trimester);
+  const [subject, setSubject] = useState<Subject>(initial.subject);
+  const [domains, setDomains] = useState<Domain[]>(initial.domains);
+
+  // Changer de matière repart des notions de cette matière : il n'existe aucun
+  // état d'où l'on pourrait lancer une séance mêlant le français et les maths.
+  const selectSubject = (next: Subject) => {
+    setSubject(next);
+    setDomains([...SUBJECT_DOMAINS[next]]);
   };
 
-  const canStart = name.trim().length > 0 && subjects.length > 0;
+  const toggleDomain = (domain: Domain) => {
+    setDomains((prev) => (prev.includes(domain) ? prev.filter((d) => d !== domain) : [...prev, domain]));
+  };
+
+  const canStart = name.trim().length > 0 && domains.length > 0;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-sky-50 px-4 py-8">
+    <div className="min-h-screen flex flex-col items-center gap-6 bg-sky-50 px-4 py-8">
       <h1 className="text-3xl font-bold text-slate-700">Mes exercices</h1>
 
       <label className="w-full max-w-sm flex flex-col gap-2">
@@ -50,15 +77,62 @@ export function HomeScreen({ onStart }: HomeScreenProps) {
       </div>
 
       <div className="w-full max-w-sm flex flex-col gap-2">
-        <span className="text-lg text-slate-600">Matières</span>
-        <div className="grid grid-cols-2 gap-3">
-          {ALL_DOMAINS.map((domain) => (
+        <span className="text-lg text-slate-600">Trimestre</span>
+        <div className="flex gap-3">
+          {ALL_TRIMESTERS.map((t) => (
+            <button
+              key={t}
+              type="button"
+              onClick={() => setTrimester(t)}
+              className={`flex-1 rounded-xl py-3 text-base font-semibold border-2 ${
+                trimester === t ? 'bg-sky-400 text-white border-sky-400' : 'bg-white border-sky-200 text-slate-600'
+              }`}
+            >
+              {TRIMESTER_LABELS[t]}
+            </button>
+          ))}
+        </div>
+        <p className="text-sm text-slate-400">
+          Seules les notions déjà vues en classe à ce moment de l'année sont proposées.
+        </p>
+      </div>
+
+      <div className="w-full max-w-sm flex flex-col gap-2">
+        <span className="text-lg text-slate-600">Matière</span>
+        <div className="flex gap-3">
+          {ALL_SUBJECTS.map((s) => (
+            <button
+              key={s}
+              type="button"
+              onClick={() => selectSubject(s)}
+              className={`flex-1 rounded-2xl py-5 text-xl font-bold border-2 ${
+                subject === s
+                  ? 'bg-violet-500 text-white border-violet-500'
+                  : 'bg-white border-violet-200 text-slate-600'
+              }`}
+            >
+              <span className="block text-3xl leading-none mb-1">{SUBJECT_EMOJI[s]}</span>
+              {SUBJECT_LABELS[s]}
+            </button>
+          ))}
+        </div>
+        <p className="text-sm text-slate-400">
+          Une séance ne mélange jamais le français et les maths.
+        </p>
+      </div>
+
+      <div className="w-full max-w-sm flex flex-col gap-2">
+        <span className="text-lg text-slate-600">
+          Ce que tu travailles en {SUBJECT_LABELS[subject].toLowerCase()}
+        </span>
+        <div className="flex flex-col gap-3">
+          {SUBJECT_DOMAINS[subject].map((domain) => (
             <button
               key={domain}
               type="button"
-              onClick={() => toggleSubject(domain)}
-              className={`rounded-xl py-3 px-2 text-base font-medium border-2 ${
-                subjects.includes(domain)
+              onClick={() => toggleDomain(domain)}
+              className={`rounded-xl py-3 px-4 text-lg font-medium border-2 text-left ${
+                domains.includes(domain)
                   ? 'bg-emerald-400 text-white border-emerald-400'
                   : 'bg-white border-slate-200 text-slate-600'
               }`}
@@ -72,7 +146,7 @@ export function HomeScreen({ onStart }: HomeScreenProps) {
       <button
         type="button"
         disabled={!canStart}
-        onClick={() => onStart(name.trim(), subjects, level)}
+        onClick={() => onStart({ name: name.trim(), domains, level, trimester, subject })}
         className="w-full max-w-sm rounded-xl bg-orange-400 disabled:bg-slate-300 text-white text-xl font-bold py-4"
       >
         Commencer
