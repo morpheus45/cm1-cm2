@@ -1,5 +1,6 @@
--- Les problèmes que la maîtresse prépare pour sa classe, avec Claude, et le
--- compteur qui borne le chat.
+-- Les problèmes que la maîtresse prépare pour sa classe, avec Claude, le
+-- compteur qui borne le chat, et les demandes que le chat transmet à
+-- l'administrateur.
 --
 -- À exécuter après 001_classes_eleves_seances.sql, dans l'éditeur SQL du
 -- projet Supabase. Rejouable : on le relance sans rien perdre.
@@ -110,5 +111,53 @@ $$;
 
 revoke all on function public.compter_demande_assistant() from public, anon, authenticated;
 grant execute on function public.compter_demande_assistant() to authenticated;
+
+-- ------------------------------------ les demandes pour l'administrateur ---
+
+-- Le chat ne traite que les corrections et adaptations de l'application pour
+-- la classe. Toute autre demande d'une maîtresse est rangée ici, pour
+-- l'administrateur de l'application, qui la lit dans le tableau de bord de
+-- Supabase (Table Editor → demandes_administrateur). Personne ne la lit par
+-- l'API : ni la clé publique, ni les maîtresses.
+create table if not exists public.demandes_administrateur (
+  id            uuid primary key default gen_random_uuid(),
+  teacher_id    uuid references auth.users (id) on delete set null,
+  teacher_email text,
+  demande       text not null check (length(demande) between 1 and 4000),
+  resume        text not null default '' check (length(resume) <= 500),
+  traitee       boolean not null default false,
+  created_at    timestamptz not null default now()
+);
+
+alter table public.demandes_administrateur enable row level security;
+revoke all on table public.demandes_administrateur from public, anon, authenticated;
+
+-- Transmet une demande de la maîtresse connectée ; rend son identifiant.
+create or replace function public.transmettre_a_l_administrateur(p_demande text, p_resume text)
+returns uuid
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_id uuid;
+begin
+  if auth.uid() is null then
+    raise exception 'connexion requise';
+  end if;
+  insert into public.demandes_administrateur (teacher_id, teacher_email, demande, resume)
+  values (
+    auth.uid(),
+    (select u.email from auth.users u where u.id = auth.uid()),
+    left(coalesce(p_demande, ''), 4000),
+    left(coalesce(p_resume, ''), 500)
+  )
+  returning id into v_id;
+  return v_id;
+end;
+$$;
+
+revoke all on function public.transmettre_a_l_administrateur(text, text) from public, anon, authenticated;
+grant execute on function public.transmettre_a_l_administrateur(text, text) to authenticated;
 
 notify pgrst, 'reload schema';

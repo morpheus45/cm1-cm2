@@ -233,13 +233,30 @@ select pg_temp.doit_echouer($q$select count(*) from public.assistant_usage$q$,
   'permission denied', 'le compteur ne se lit ni ne se modifie directement');
 reset role;
 
+-- ---------------------------------------- les demandes pour l'administrateur ---
+set role anon;
+select pg_temp.doit_echouer($q$select public.transmettre_a_l_administrateur('x', 'y')$q$,
+  'permission denied', 'un anonyme ne doit rien pouvoir transmettre à l''administrateur');
+reset role;
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+select public.transmettre_a_l_administrateur('Peux-tu changer la couleur du site ?', 'Changer la couleur du site');
+select pg_temp.doit_echouer($q$select count(*) from public.demandes_administrateur$q$,
+  'permission denied', 'une maîtresse ne lit pas les demandes, même les siennes');
+reset role;
+select pg_temp.attendu(
+  (select count(*) from public.demandes_administrateur
+    where teacher_email = 'a@ecole.fr' and resume = 'Changer la couleur du site' and not traitee), 1,
+  'la demande est rangée pour l''administrateur, avec l''adresse de la maîtresse');
+
 -- ------------------------------------------------------------ les droits ---
 -- Supabase accorde d'office tous les droits à anon et authenticated ; le
 -- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après
 -- la migration, droit par droit.
 select pg_temp.attendu(
   (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets',
-                                     'public.problemes', 'public.assistant_usage']) t,
+                                     'public.problemes', 'public.assistant_usage',
+                                     'public.demandes_administrateur']) t,
      unnest(array['select', 'insert', 'update', 'delete', 'truncate', 'references', 'trigger']) d
    where has_table_privilege('anon', t, d)), 0,
   'la clé publique ne donne aucun droit sur les tables');
@@ -251,7 +268,8 @@ select pg_temp.attendu(
 select pg_temp.attendu(
   (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()',
                                      'public.creer_classe(text, text)', 'public.lire_ma_classe()',
-                                     'public.compter_demande_assistant()']) f
+                                     'public.compter_demande_assistant()',
+                                     'public.transmettre_a_l_administrateur(text, text)']) f
    where has_function_privilege('anon', f, 'execute')), 0,
   'la clé publique n''ouvre que le dépôt de séance et les problèmes de sa classe');
 select pg_temp.attendu(
