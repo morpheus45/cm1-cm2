@@ -190,6 +190,13 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
       >
         Commencer
       </button>
+
+      <a
+        href="#maitresse"
+        className="text-sm text-slate-400 underline underline-offset-4 pb-2"
+      >
+        Espace maîtresse
+      </a>
     </div>
   );
 }

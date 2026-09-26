@@ -1,13 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { subjectOf } from './types';
+import type { Domain } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
 import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
 import { loadPreferences, savePreferences } from './lib/preferences';
+import { loadResults, recordSession, type DomainResult, type SessionResult } from './lib/results';
+import { isAnswerCorrect, worksheetScore } from './lib/worksheet';
 import { HomeScreen, type StartOptions } from './components/HomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
 import { WrittenOperationScreen } from './components/WrittenOperationScreen';
 import { WrittenRecapScreen } from './components/WrittenRecapScreen';
+import { TeacherScreen } from './components/TeacherScreen';
 
 type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap';
 
@@ -37,11 +41,36 @@ export function App() {
   const [worksheet, setWorksheet] = useState<Worksheet | null>(null);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [perDomain, setPerDomain] = useState<Record<string, DomainResult>>({});
   const [config, setConfig] = useState<StartOptions | null>(null);
   // Lu une seule fois : l'écran d'accueil part de là, et n'est pas remis à
   // zéro quand l'élève revient du bilan.
   const [preferences] = useState(loadPreferences);
   const [totalStars, setTotalStars] = useState(loadStars);
+  const [results, setResults] = useState(loadResults);
+  // Une simple ancre dans l'adresse : l'espace maîtresse n'est pas une autre
+  // application, et le projet n'a pas besoin d'un routeur pour deux écrans.
+  const [teacherView, setTeacherView] = useState(() => window.location.hash === '#maitresse');
+
+  useEffect(() => {
+    const sync = () => setTeacherView(window.location.hash === '#maitresse');
+    window.addEventListener('hashchange', sync);
+    return () => window.removeEventListener('hashchange', sync);
+  }, []);
+
+  const keep = (domains: DomainResult[], activity: StartOptions['activity']) => {
+    if (!config || domains.every((entry) => entry.total === 0)) return;
+    const session: SessionResult = {
+      id: `${Date.now()}-${Math.round(Math.random() * 1e6)}`,
+      at: new Date().toISOString(),
+      level: config.level,
+      trimester: config.trimester,
+      subject: config.subject,
+      activity,
+      domains: domains.filter((entry) => entry.total > 0),
+    };
+    setResults(recordSession(session));
+  };
 
   const startSession = (options: StartOptions) => {
     const seed = Date.now();
@@ -56,6 +85,7 @@ export function App() {
     setConfig(options);
     setIndex(0);
     setScore(0);
+    setPerDomain({});
 
     if (options.activity === 'posees') {
       setWorksheet(
@@ -89,6 +119,17 @@ export function App() {
 
   const handleAnswer = (correct: boolean) => {
     if (!session) return;
+    const domain = session.questions[index].domain;
+    const previous = perDomain[domain] ?? { domain, correct: 0, total: 0 };
+    const tally = {
+      ...perDomain,
+      [domain]: {
+        domain,
+        correct: previous.correct + (correct ? 1 : 0),
+        total: previous.total + 1,
+      },
+    };
+    setPerDomain(tally);
     if (correct) {
       setScore(score + 1);
       awardStar();
@@ -96,6 +137,7 @@ export function App() {
     if (index + 1 < session.questions.length) {
       setIndex(index + 1);
     } else {
+      keep(Object.values(tally), 'questions');
       setScreen('recap');
     }
   };
@@ -108,10 +150,12 @@ export function App() {
       answers: { ...worksheet.answers, [operation.id]: { given, strokes } },
     };
     setWorksheet(answered);
-    if (given.trim() !== '' && given === operation.expected) awardStar();
+    if (isAnswerCorrect(given, operation.expected)) awardStar();
     if (index + 1 < answered.operations.length) {
       setIndex(index + 1);
     } else {
+      const { correct, total } = worksheetScore(answered);
+      keep([{ domain: 'calcul' as Domain, correct, total }], 'posees');
       setScreen('poseRecap');
     }
   };
@@ -125,6 +169,22 @@ export function App() {
   };
 
   const goHome = () => setScreen('home');
+
+  if (teacherView) {
+    const shown = config ?? preferences;
+    return (
+      <TeacherScreen
+        pupilName={shown.name}
+        level={shown.level}
+        trimester={shown.trimester}
+        sessions={results}
+        onBack={() => {
+          window.location.hash = '';
+          setTeacherView(false);
+        }}
+      />
+    );
+  }
 
   if (screen === 'home') {
     return <HomeScreen initial={config ?? preferences} onStart={startSession} />;
