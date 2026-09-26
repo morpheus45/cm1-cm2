@@ -1,4 +1,4 @@
-import { DOMAIN_LABELS } from '../../types';
+import { DOMAIN_LABELS, DOMAIN_SHORT_LABELS } from '../../types';
 import type { Domain } from '../../types';
 import type { SessionPoint } from '../../lib/results';
 
@@ -142,7 +142,7 @@ export function ProgressLines({ series }: { series: ProgressSeries[] }) {
                 strokeWidth="3"
                 strokeLinejoin="round"
               >
-                {DOMAIN_LABELS[entry.domain].split(' ')[0]} {Math.round(last.ratio * 100)}%
+                {DOMAIN_SHORT_LABELS[entry.domain]} {Math.round(last.ratio * 100)}%
               </text>
             </g>
           );

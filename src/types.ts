@@ -1,3 +1,5 @@
+import type { Figure } from './lib/figures';
+
 export type Level = 'CM1' | 'CM2';
 
 /**
@@ -43,9 +45,9 @@ export const TRIMESTER_LABELS: Record<Trimester, string> = {
   3: '3e trimestre',
 };
 
-/** Une matière au sens de l'école : le français d'un côté, les maths de
- *  l'autre. Une séance ne porte jamais sur les deux à la fois. */
-export type Subject = 'francais' | 'maths';
+/** Une matière au sens de l'école. Une séance n'en mêle jamais deux : ni le
+ *  français et les maths, ni l'histoire et la géographie. */
+export type Subject = 'francais' | 'maths' | 'histoire' | 'geographie';
 
 /**
  * Ce que l'élève fait pendant la séance. Les questions à choix se répondent
@@ -69,10 +71,12 @@ export const ACTIVITY_HINTS: Record<Activity, string> = {
 };
 
 /** Poser une opération n'a de sens qu'en maths. La révision ciblée existe
- *  dans les deux matières, mais ne les mélange pas davantage que le reste. */
+ *  dans toutes les matières, mais ne les mélange pas davantage que le reste. */
 export const SUBJECT_ACTIVITIES: Record<Subject, Activity[]> = {
   francais: ['questions', 'revision'],
   maths: ['questions', 'posees', 'revision'],
+  histoire: ['questions', 'revision'],
+  geographie: ['questions', 'revision'],
 };
 
 /** Une notion travaillée à l'intérieur d'une matière. */
@@ -82,7 +86,14 @@ export type Domain =
   | 'orthographe'
   | 'numeration'
   | 'calcul'
-  | 'problemes';
+  | 'problemes'
+  | 'geometrie'
+  | 'chronologie'
+  | 'evenements'
+  | 'mots-histoire'
+  | 'cartes'
+  | 'habiter'
+  | 'mots-geographie';
 
 export interface Question {
   id: string;
@@ -90,28 +101,45 @@ export interface Question {
   /** Consigne affichée au-dessus de l'énoncé ("Complète au présent"). */
   instruction?: string;
   prompt: string;
+  /** Un dessin à regarder avant de répondre : une figure, une frise. */
+  figure?: Figure;
   choices: string[];
   correctIndex: number;
+  /** Une phrase qui explique la bonne réponse, montrée une fois que l'élève a
+   *  répondu. */
   explanation?: string;
 }
 
-export const ALL_SUBJECTS: Subject[] = ['francais', 'maths'];
+export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];
 
 export const SUBJECT_LABELS: Record<Subject, string> = {
   francais: 'Français',
   maths: 'Maths',
+  histoire: 'Histoire',
+  geographie: 'Géographie',
 };
+
+/** « de français », « de maths », mais « d'histoire » : l'élision, comme à
+ *  l'écrit. */
+export function ofSubject(subject: Subject): string {
+  const label = SUBJECT_LABELS[subject].toLowerCase();
+  return /^[aeiouyéèh]/.test(label) ? `d'${label}` : `de ${label}`;
+}
 
 export const SUBJECT_EMOJI: Record<Subject, string> = {
   francais: '📖',
   maths: '🔢',
+  histoire: '🏰',
+  geographie: '🌍',
 };
 
 /** L'ordre des notions à l'intérieur d'une matière : c'est aussi l'ordre dans
  *  lequel les blocs de questions se suivent pendant une séance. */
 export const SUBJECT_DOMAINS: Record<Subject, Domain[]> = {
   francais: ['conjugaison', 'accords', 'orthographe'],
-  maths: ['numeration', 'calcul', 'problemes'],
+  maths: ['numeration', 'calcul', 'problemes', 'geometrie'],
+  histoire: ['chronologie', 'evenements', 'mots-histoire'],
+  geographie: ['cartes', 'habiter', 'mots-geographie'],
 };
 
 export const DOMAIN_SUBJECT: Record<Domain, Subject> = {
@@ -121,13 +149,42 @@ export const DOMAIN_SUBJECT: Record<Domain, Subject> = {
   numeration: 'maths',
   calcul: 'maths',
   problemes: 'maths',
+  geometrie: 'maths',
+  chronologie: 'histoire',
+  evenements: 'histoire',
+  'mots-histoire': 'histoire',
+  cartes: 'geographie',
+  habiter: 'geographie',
+  'mots-geographie': 'geographie',
 };
 
 export function subjectOf(domain: Domain): Subject {
   return DOMAIN_SUBJECT[domain];
 }
 
-export const ALL_DOMAINS: Domain[] = [...SUBJECT_DOMAINS.francais, ...SUBJECT_DOMAINS.maths];
+export const ALL_DOMAINS: Domain[] = ALL_SUBJECTS.flatMap((subject) => SUBJECT_DOMAINS[subject]);
+
+/** L'arc-en-ciel de l'École : les notions du français et des maths, du rouge
+ *  au rose. L'histoire et la géographie ont chacune leur arc. */
+export const RAINBOW_DOMAINS: Domain[] = [...SUBJECT_DOMAINS.francais, ...SUBJECT_DOMAINS.maths];
+
+/** Le nom court d'une notion, là où la place manque : les axes et les
+ *  courbes des graphiques de la maîtresse. */
+export const DOMAIN_SHORT_LABELS: Record<Domain, string> = {
+  conjugaison: 'Conjugaison',
+  accords: 'Accords',
+  orthographe: 'Orthographe',
+  numeration: 'Numération',
+  calcul: 'Calcul',
+  problemes: 'Problèmes',
+  geometrie: 'Géométrie',
+  chronologie: 'Repères',
+  evenements: 'Personnages',
+  'mots-histoire': 'Vocabulaire',
+  cartes: 'Cartes',
+  habiter: 'Habiter',
+  'mots-geographie': 'Vocabulaire',
+};
 
 export const DOMAIN_LABELS: Record<Domain, string> = {
   conjugaison: 'Conjugaison',
@@ -136,4 +193,11 @@ export const DOMAIN_LABELS: Record<Domain, string> = {
   numeration: 'Numération',
   calcul: 'Calcul',
   problemes: 'Problèmes',
+  geometrie: 'Géométrie',
+  chronologie: 'Se repérer dans le temps',
+  evenements: 'Personnages et événements',
+  'mots-histoire': "Les mots de l'histoire",
+  cartes: "Se repérer dans l'espace",
+  habiter: 'Habiter le monde',
+  'mots-geographie': 'Les mots de la géographie',
 };

@@ -127,7 +127,7 @@ describe('buildSession', () => {
     expect(a).toEqual(c);
   });
 
-  it('builds a sound session for each of the 36 combinations of level, trimester and notion', () => {
+  it('builds a sound session for every combination of level, trimester and notion', () => {
     const levels: Level[] = ['CM1', 'CM2'];
     const trimesters: Trimester[] = [1, 2, 3];
     levels.forEach((level) => {
@@ -139,7 +139,10 @@ describe('buildSession', () => {
           session.questions.forEach((q) => {
             expect(q.domain).toBe(domain);
             expect(q.prompt.trim().length).toBeGreaterThan(0);
-            expect(q.choices.length).toBeGreaterThanOrEqual(4);
+            // Trois réponses quand la question en a trois par nature (droites
+            // parallèles, perpendiculaires ou sécantes ; angle aigu, droit ou
+            // obtus), quatre sinon.
+            expect(q.choices.length).toBeGreaterThanOrEqual(3);
             expect(new Set(q.choices).size).toBe(q.choices.length);
             expect(q.choices[q.correctIndex]).toBeDefined();
           });
@@ -155,7 +158,9 @@ describe('buildSession', () => {
     // différents sont bien deux questions différentes.)
     ALL_DOMAINS.forEach((domain) => {
       const session = buildSession({ domains: [domain], level: 'CM1', trimester: 1, seed: 8 });
-      const distinct = new Set(session.questions.map((q) => q.prompt));
+      // Pour une question à figure, la figure fait partie de l'énoncé : deux
+      // polygones différents sont deux questions différentes.
+      const distinct = new Set(session.questions.map((q) => q.prompt + JSON.stringify(q.figure ?? null)));
       expect(distinct.size, `${domain} se répète trop`).toBeGreaterThanOrEqual(
         QUESTIONS_PER_SESSION - 1
       );

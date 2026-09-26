@@ -1,4 +1,4 @@
-import { ALL_DOMAINS, pupilKey, subjectOf } from '../types';
+import { ALL_DOMAINS, ALL_SUBJECTS, pupilKey, subjectOf } from '../types';
 import type { Activity, Domain, Level, Pupil, Subject, Trimester } from '../types';
 
 /** Ce qu'une séance a produit, notion par notion. */
@@ -175,7 +175,7 @@ export function parseResults(raw: string | null): SessionResult[] {
       !Number.isNaN(new Date(session.at).getTime()) &&
       (session.level === 'CM1' || session.level === 'CM2') &&
       [1, 2, 3].includes(session.trimester as number) &&
-      (session.subject === 'francais' || session.subject === 'maths') &&
+      ALL_SUBJECTS.includes(session.subject as Subject) &&
       Array.isArray(session.domains) &&
       session.domains.every(isDomainResult);
     if (!valid) return [];

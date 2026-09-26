@@ -1,9 +1,10 @@
 import { useId } from 'react';
-import { ALL_DOMAINS, type Domain } from '../../types';
+import { RAINBOW_DOMAINS, type Domain } from '../../types';
 import { NOTION_COLORS } from '../../theme';
 
 interface RainbowArcProps {
-  /** Les bandes à tracer, de l'extérieur vers l'intérieur. Toutes par défaut. */
+  /** Les bandes à tracer, de l'extérieur vers l'intérieur : par défaut,
+   *  l'arc-en-ciel de l'École, du français aux maths. */
   domains?: Domain[];
   className?: string;
 }
@@ -13,7 +14,7 @@ interface RainbowArcProps {
  * une notion. Le bord des traits est légèrement irrégulier, comme sur le
  * papier.
  */
-export function RainbowArc({ domains = ALL_DOMAINS, className }: RainbowArcProps) {
+export function RainbowArc({ domains = RAINBOW_DOMAINS, className }: RainbowArcProps) {
   const filterId = `craie-${useId().replace(/:/g, '')}`;
   const outer = 92;
   const band = Math.min(13, 60 / domains.length);

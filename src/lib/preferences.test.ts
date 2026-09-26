@@ -50,8 +50,16 @@ describe('parsePreferences', () => {
   });
 
   it('ignore les valeurs qu\'elle ne reconnaît pas', () => {
-    const stored = JSON.stringify({ name: 42, level: 'CE2', trimester: 7, subject: 'histoire' });
+    const stored = JSON.stringify({ name: 42, level: 'CE2', trimester: 7, subject: 'musique' });
     expect(parsePreferences(stored)).toEqual(DEFAULT_PREFERENCES);
+  });
+
+  it('relit l\'histoire et la géographie, avec leurs notions', () => {
+    const history = parsePreferences(JSON.stringify({ subject: 'histoire', domains: ['chronologie', 'calcul'] }));
+    expect(history.subject).toBe('histoire');
+    expect(history.domains).toEqual(['chronologie']);
+    const geography = parsePreferences(JSON.stringify({ subject: 'geographie', domains: [] }));
+    expect(geography.domains).toEqual(SUBJECT_DOMAINS.geographie);
   });
 
   it('ne laisse jamais ressortir une sélection à cheval sur les deux matières', () => {

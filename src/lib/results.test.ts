@@ -15,7 +15,7 @@ import {
   MINIMUM_ANSWERS_FOR_MASTERY,
   type SessionResult,
 } from './results';
-import { pupilKey, pupilLabel } from '../types';
+import { ALL_DOMAINS, pupilKey, pupilLabel } from '../types';
 
 const session = (overrides: Partial<SessionResult> = {}): SessionResult => ({
   id: 's1',
@@ -92,9 +92,9 @@ describe('summariseByDomain', () => {
     expect(conjugaison?.mastery).toBe(4 - 1); // satisfaisante
   });
 
-  it('couvre les six notions, même celles jamais travaillées', () => {
+  it('couvre toutes les notions, même celles jamais travaillées', () => {
     const summary = summariseByDomain([session()]);
-    expect(summary).toHaveLength(6);
+    expect(summary).toHaveLength(ALL_DOMAINS.length);
     const calcul = summary.find((s) => s.domain === 'calcul');
     expect(calcul?.total).toBe(0);
     expect(calcul?.ratio).toBeNull();
@@ -123,7 +123,9 @@ describe('summariseByDomain', () => {
   it('rattache chaque notion à sa matière', () => {
     const summary = summariseByDomain([]);
     expect(summary.filter((s) => s.subject === 'francais')).toHaveLength(3);
-    expect(summary.filter((s) => s.subject === 'maths')).toHaveLength(3);
+    expect(summary.filter((s) => s.subject === 'maths')).toHaveLength(4);
+    expect(summary.filter((s) => s.subject === 'histoire')).toHaveLength(3);
+    expect(summary.filter((s) => s.subject === 'geographie')).toHaveLength(3);
   });
 });
 
@@ -228,7 +230,7 @@ describe('yearOutlook', () => {
     const outlook = yearOutlook(summaries);
     expect(outlook.acquired.map((s) => s.domain)).toEqual(['conjugaison']);
     expect(outlook.toRevise.map((s) => s.domain)).toEqual(['calcul']);
-    expect(outlook.untested).toHaveLength(4);
+    expect(outlook.untested).toHaveLength(ALL_DOMAINS.length - 2);
   });
 });
 
