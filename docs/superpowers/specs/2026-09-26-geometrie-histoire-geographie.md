@@ -71,7 +71,64 @@ questions au moins porte sur le trimestre en cours.
 Banque actuelle : 142 questions écrites en histoire, 142 en géographie, et
 32 repères datés d'où l'application tire en plus des questions de dates, de
 siècles, d'ordre chronologique et de frise. La rose des vents (4 directions
-au CM1, 8 au CM2) est dessinée ; les autres questions de cartes sont écrites.
+au CM1, 8 au CM2) est dessinée, ainsi que dix sortes de questions sur carte
+(voir « Les cartes »).
+
+## Les cartes
+
+Deux fonds, dessinés comme les autres figures (des données, vérifiées par
+les tests) :
+
+- un **planisphère** (projection Natural Earth, centré sur l'Europe) : les
+  six continents de l'école française (l'Amérique d'un seul tenant, l'Europe
+  arrêtée à l'Oural, la Guyane en Amérique), les cinq océans, l'équateur ;
+- une **carte de France** (projection conique conforme, comme les cartes
+  officielles) : la France et la Corse, les pays voisins, onze grandes villes,
+  la Seine, la Loire, la Garonne et le Rhône, les Alpes, les Pyrénées, le
+  Massif central, le Jura et les Vosges, la Manche, la mer du Nord, l'océan
+  Atlantique et la Méditerranée.
+
+Ce que la question désigne est **en orange** (un continent, une ville) ou
+marqué d'une **lettre** dans une pastille blanche (un océan, une mer, un
+fleuve, un massif, un pays) ; jamais nommé. Le bleu reste celui de l'eau.
+
+| Question | CM1 | CM2 |
+|---|---|---|
+| Quel continent est colorié ? Quel océan porte la lettre A ? | 1er trimestre | 1er trimestre |
+| Quelle lettre marque la France ? (planisphère) | 1er trimestre | — |
+| Quelle grande ville est marquée ? (8 villes au CM1, 11 au CM2) | 1er trimestre | 1er trimestre |
+| Quelle mer, ou quel océan, porte la lettre A ? | 1er trimestre | 1er trimestre |
+| Quel fleuve, quel massif, quel pays porte la lettre A ? | 2e trimestre | 1er trimestre |
+| Laquelle de ces villes est la plus au nord (au sud, à l'est, à l'ouest) ? | 2e trimestre | 1er trimestre |
+| Pour aller de Lyon à Marseille, dans quelle direction part-on ? | 2e trimestre (4 directions) | 1er trimestre (8 directions) |
+
+Au-delà de leur trimestre, ces questions reviennent en révision. Dans une
+séance, les cartes alternent avec les questions écrites et la rose des vents.
+
+**D'où viennent les fonds.** `tools/generate-maps.mjs` (`npm run cartes`)
+projette une fois pour toutes les contours de **Natural Earth** (domaine
+public, paquet `world-atlas`) et écrit `src/domains/cartesFonds.ts` (34 Ko,
+environ 16 Ko de plus à télécharger). Les villes, les massifs et les
+étiquettes y sont placés en longitude et latitude ; les fleuves sont des
+tracés simplifiés passant par les villes qu'ils traversent.
+
+**Ce que le générateur refuse.** Une ville hors de France, une mer posée sur
+la terre, une étiquette de pays hors de ce pays (vérifié sur les contours
+d'origine), une lettre plus proche d'un autre fleuve ou d'un autre massif que
+du sien, une pastille qui cache un fleuve, une montagne ou une ville, une
+lettre qui sort du cadre.
+
+**Ce que vérifient les tests.** Lille est au-dessus de Paris, Paris au-dessus
+de Lyon ; la Seine passe par Paris, la Loire par Nantes, la Garonne par
+Toulouse et Bordeaux, le Rhône par Lyon ; la lettre ou le point orange
+désigne toujours la bonne réponse ; les noms de villes ne se chevauchent pas
+et ne sortent pas du cadre. Une direction n'est demandée que si elle se lit
+sans ambiguïté (à 12° près sur la carte, et le globe dit la même chose), et
+« la plus au nord » que si la gagnante l'emporte nettement.
+
+**Couleurs** (`MAP_COLORS`, dans `src/theme.ts`) : tout ce qui sert à
+répondre atteint 3:1 sur son fond (orange sur la France 4,4, sur la mer 3,0 ;
+fleuves 5,0 ; montagnes 5,6 ; frontières 3,5).
 
 ## Les couleurs
 
@@ -108,6 +165,6 @@ inconnue est refusée.
 - Le texte officiel du programme CM1 2026 n'a pas pu être consulté depuis
   l'environnement de travail (sites du ministère inaccessibles) : les contenus
   CM1 s'appuient sur ses résumés publics et sont **à relire sur le BO**.
-- Pas encore de vraie carte dessinée (continents, France) : les questions de
-  cartes sont écrites, sauf la rose des vents.
+- Les cartes ne dessinent pas encore les régions, les départements ni
+  l'outre-mer.
 - Le chat avec Claude reste limité aux problèmes de maths.

@@ -1,7 +1,8 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Figure, Point, Shape } from '../lib/figures';
-import { rngPick, type Rng } from '../lib/seededRandom';
+import { rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { assemble, choose, drawer, isEligible, type Draft, type WrittenItem } from './histoireGeographie';
+import { mapDrawer, mapMakersFor } from './cartes';
 
 /**
  * La géographie au CM1 et au CM2.
@@ -270,13 +271,19 @@ function generateFor(domain: GeographyDomain) {
     const review = items.filter((entry) => entry.trimester < trimester);
     const currentMakers = current.length > 0 ? [drawer(rng, current)] : [];
     const reviewMakers = review.length > 0 ? [drawer(rng, review)] : [];
-    // La rose des vents : les quatre points cardinaux au 1er trimestre du CM1,
-    // les directions intermédiaires au CM2.
     if (domain === 'cartes') {
+      // La rose des vents : les quatre points cardinaux au 1er trimestre du
+      // CM1, les directions intermédiaires au CM2.
       const withIntermediate = level === 'CM2';
       (trimester === 1 ? currentMakers : reviewMakers).push(() => compassQuestion(rng, withIntermediate));
+      // Les cartes dessinées : planisphère et carte de France (cartes.ts).
+      const maps = mapMakersFor(level, trimester);
+      if (maps.current.length > 0) currentMakers.push(mapDrawer(rng, level, maps.current));
+      if (maps.review.length > 0) reviewMakers.push(mapDrawer(rng, level, maps.review));
     }
-    return assemble(domain, rng, count, trimester, currentMakers, reviewMakers);
+    // L'ordre des sources change d'une séance à l'autre : sur un petit nombre
+    // de questions, ce ne sont pas toujours les mêmes qui passent en premier.
+    return assemble(domain, rng, count, trimester, rngShuffle(rng, currentMakers), rngShuffle(rng, reviewMakers));
   };
 }
 

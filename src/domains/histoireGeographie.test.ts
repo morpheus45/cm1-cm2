@@ -121,7 +121,8 @@ describe('la rose des vents', () => {
       (['CM1', 'CM2'] as Level[]).forEach((level) =>
         geographie
           .generateCartes(level, 1, createRng(seed), 12)
-          .filter((question) => question.figure)
+          // Les autres figures de la notion sont des cartes (cartes.test.ts).
+          .filter((question) => question.figure && question.id.includes('-rose-'))
           .forEach((question) => {
             const arrow = question.figure!.shapes.find(
               (shape): shape is Extract<Shape, { kind: 'segment' }> => shape.kind === 'segment' && shape.ink === 'couleur'
