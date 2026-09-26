@@ -129,11 +129,38 @@ confirmation, et ce qui va disparaître est nommé et compté.
 C'est aussi ce qui permet de se débarrasser des séances faites pour essayer
 l'application.
 
+## L'envoi des séances à la maîtresse
+
+L'élève tape une fois le **code de la classe** que lui donne sa maîtresse. Le
+champ n'apparaît que si la mise en commun est configurée : sans Supabase, il ne
+promettrait qu'un envoi qui n'aurait jamais lieu.
+
+Chaque séance terminée part alors vers la base par `depose_seance`. Trois
+garanties, chacune vérifiée de bout en bout dans un navigateur, à travers la
+bibliothèque de Supabase, jusqu'à la vraie fonction SQL sur PostgreSQL :
+
+- **Rien ne se perd hors ligne.** Un envoi qui échoue faute de réseau attend
+  dans une file sur la tablette, et repart au lancement suivant.
+- **Rien n'est compté deux fois.** L'identifiant de la séance vient de
+  l'appareil, et la base ignore un second envoi du même identifiant — ce qui
+  arrive quand le réseau coupe après l'enregistrement mais avant la réponse.
+- **Un refus ne bloque pas la file.** Un code de classe inconnu est signalé à
+  l'enfant (« vérifie le code de la classe »), et la séance n'est pas renvoyée
+  en boucle : la renvoyer n'y changerait rien.
+
+Un test compare les paramètres envoyés par l'application à ceux déclarés dans
+le fichier SQL : une faute de frappe d'un côté ne se verrait sinon qu'en ligne,
+par des séances qui n'arrivent jamais.
+
+La bibliothèque de Supabase double le poids de l'application : elle n'est
+chargée qu'au premier envoi, et jamais sur un appareil où la mise en commun
+n'est pas configurée.
+
 ## Hors périmètre de cette première partie
 
-- Le client Supabase et l'envoi des séances : tout est aujourd'hui sur
-  l'appareil. Le modèle local est celui que la base reprendra, dossier par
-  dossier.
+- La connexion de la maîtresse, la création de sa classe (et de son code), et
+  la lecture des dossiers depuis la base : l'accès maîtresse ne lit encore que
+  les séances de l'appareil.
 - La correction à l'écran par la maîtresse (le modèle prévoit déjà les tracés
   de correction, mais l'écran reste à faire).
 - Une vraie classe : la vue « Dans la classe » ne connaît que les élèves de

@@ -24,7 +24,17 @@ describe('parsePreferences', () => {
       subject: 'maths',
       domains: ['calcul', 'problemes'],
       activity: 'questions',
+      joinCode: '',
     });
+  });
+
+  it('relit le code de classe, nettoyé', () => {
+    const stored = JSON.stringify({ subject: 'maths', joinCode: 'ab-12cd' });
+    expect(parsePreferences(stored).joinCode).toBe('AB12CD');
+  });
+
+  it('ignore un code de classe qui n\'est pas du texte', () => {
+    expect(parsePreferences(JSON.stringify({ joinCode: 42 })).joinCode).toBe('');
   });
 
   it('remet les notions dans l\'ordre de la matière', () => {

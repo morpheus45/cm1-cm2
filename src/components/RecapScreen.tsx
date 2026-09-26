@@ -1,7 +1,11 @@
 import type { Subject } from '../types';
 import { SUBJECT_LABELS } from '../types';
 
+import { DeliveryNote } from './DeliveryNote';
+import type { DepositOutcome } from '../lib/cloud';
+
 interface RecapScreenProps {
+  delivery?: DepositOutcome | 'pending' | null;
   name?: string;
   subject: Subject;
   score: number;
@@ -17,6 +21,7 @@ export function RecapScreen({
   score,
   total,
   totalStars,
+  delivery = null,
   onRestart,
   onFinish,
 }: RecapScreenProps) {
@@ -35,6 +40,7 @@ export function RecapScreen({
       <p className="text-2xl text-slate-600">
         Score : {score} / {total}
       </p>
+      <DeliveryNote delivery={delivery} />
 
       <div className="flex flex-col items-center gap-2">
         <p className="text-lg text-slate-500">Étoiles gagnées en tout : {totalStars}</p>

@@ -15,6 +15,14 @@ import {
   type SessionResult,
 } from './lib/results';
 import { isAnswerCorrect, worksheetScore } from './lib/worksheet';
+import {
+  depositSession,
+  flushOutbox,
+  isCloudConfigured,
+  pendingDepositCount,
+  sendDeposit,
+  type DepositOutcome,
+} from './lib/cloud';
 import { HomeScreen, type StartOptions } from './components/HomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
@@ -57,6 +65,12 @@ export function App() {
   const [preferences] = useState(loadPreferences);
   const [totalStars, setTotalStars] = useState(loadStars);
   const [results, setResults] = useState(loadResults);
+  const [delivery, setDelivery] = useState<DepositOutcome | 'pending' | null>(null);
+
+  // Au lancement, on renvoie ce qui n'avait pas pu partir la dernière fois.
+  useEffect(() => {
+    if (isCloudConfigured() && pendingDepositCount() > 0) void flushOutbox(sendDeposit);
+  }, []);
   // Une simple ancre dans l'adresse : l'espace maîtresse n'est pas une autre
   // application, et le projet n'a pas besoin d'un routeur pour deux écrans.
   const [teacherView, setTeacherView] = useState(() => window.location.hash === '#maitresse');
@@ -67,10 +81,16 @@ export function App() {
     return () => window.removeEventListener('hashchange', sync);
   }, []);
 
-  const keep = (domains: DomainResult[], activity: StartOptions['activity']) => {
+  const keep = (
+    domains: DomainResult[],
+    activity: StartOptions['activity'],
+    finishedWorksheet?: Worksheet
+  ) => {
     if (!config || domains.every((entry) => entry.total === 0)) return;
     const session: SessionResult = {
-      id: `${Date.now()}-${Math.round(Math.random() * 1e6)}`,
+      // Un vrai UUID : c'est lui qui empêche la base d'enregistrer deux fois
+      // une séance renvoyée après une coupure de réseau.
+      id: crypto.randomUUID(),
       pupil: { firstName: config.name, lastName: config.lastName },
       at: new Date().toISOString(),
       level: config.level,
@@ -80,6 +100,13 @@ export function App() {
       domains: domains.filter((entry) => entry.total > 0),
     };
     setResults(recordSession(session));
+
+    if (config.joinCode) {
+      setDelivery('pending');
+      void depositSession(session, config.joinCode, finishedWorksheet).then(setDelivery);
+    } else {
+      setDelivery(null);
+    }
   };
 
   const startSession = (options: StartOptions) => {
@@ -87,6 +114,7 @@ export function App() {
     savePreferences({
       name: options.name,
       lastName: options.lastName,
+      joinCode: options.joinCode,
       level: options.level,
       trimester: options.trimester,
       subject: options.subject,
@@ -178,7 +206,7 @@ export function App() {
       setIndex(index + 1);
     } else {
       const { correct, total } = worksheetScore(answered);
-      keep([{ domain: 'calcul' as Domain, correct, total }], 'posees');
+      keep([{ domain: 'calcul' as Domain, correct, total }], 'posees', answered);
       setScreen('poseRecap');
     }
   };
@@ -224,7 +252,14 @@ export function App() {
   }
 
   if (screen === 'poseRecap' && worksheet) {
-    return <WrittenRecapScreen worksheet={worksheet} onRestart={restart} onFinish={goHome} />;
+    return (
+      <WrittenRecapScreen
+        worksheet={worksheet}
+        delivery={delivery}
+        onRestart={restart}
+        onFinish={goHome}
+      />
+    );
   }
 
   if (screen === 'question' && session) {
@@ -249,6 +284,7 @@ export function App() {
         score={score}
         total={session.questions.length}
         totalStars={totalStars}
+        delivery={delivery}
         onRestart={restart}
         onFinish={goHome}
       />

@@ -9,6 +9,8 @@ export interface Preferences {
   subject: Subject;
   domains: Domain[];
   activity: Activity;
+  /** Le code donné par la maîtresse. Vide : rien ne quitte l'appareil. */
+  joinCode: string;
 }
 
 const STORAGE_KEY = 'exercices-cm1-cm2:preferences';
@@ -21,6 +23,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   subject: 'francais',
   domains: [...SUBJECT_DOMAINS.francais],
   activity: 'questions',
+  joinCode: '',
 };
 
 /**
@@ -78,6 +81,10 @@ export function parsePreferences(raw: string | null): Preferences {
     subject,
     domains: domains.length > 0 ? domains : [...SUBJECT_DOMAINS[subject]],
     activity,
+    joinCode:
+      typeof stored.joinCode === 'string'
+        ? stored.joinCode.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6)
+        : '',
   };
 }
 

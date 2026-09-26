@@ -2,13 +2,22 @@ import { isAnswerCorrect, worksheetScore, type Worksheet } from '../lib/workshee
 import { worksheetToPdf, worksheetFileName } from '../lib/worksheetPdf';
 import { downloadBytes } from '../lib/download';
 
+import { DeliveryNote } from './DeliveryNote';
+import type { DepositOutcome } from '../lib/cloud';
+
 interface WrittenRecapScreenProps {
+  delivery?: DepositOutcome | 'pending' | null;
   worksheet: Worksheet;
   onRestart: () => void;
   onFinish: () => void;
 }
 
-export function WrittenRecapScreen({ worksheet, onRestart, onFinish }: WrittenRecapScreenProps) {
+export function WrittenRecapScreen({
+  worksheet,
+  delivery = null,
+  onRestart,
+  onFinish,
+}: WrittenRecapScreenProps) {
   const { correct, total } = worksheetScore(worksheet);
   const who = worksheet.name ? ` ${worksheet.name}` : '';
   const ratio = total > 0 ? correct / total : 0;
@@ -25,6 +34,7 @@ export function WrittenRecapScreen({ worksheet, onRestart, onFinish }: WrittenRe
       <p className="text-2xl text-slate-600">
         Score : {correct} / {total}
       </p>
+      <DeliveryNote delivery={delivery} />
 
       <ul className="w-full flex flex-col gap-2">
         {worksheet.operations.map((operation) => {
