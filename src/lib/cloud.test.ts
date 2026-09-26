@@ -3,7 +3,7 @@ import {
   depositParams,
   enqueueDeposit,
   flushOutbox,
-  isNetworkError,
+  isUnknownClassCode,
   isValidJoinCode,
   normaliseJoinCode,
   parseOutbox,
@@ -124,13 +124,24 @@ describe('la file d\'envoi', () => {
     expect(pendingDepositCount()).toBe(0);
   });
 
-  it('abandonne un envoi que la base refuse : le renvoyer n\'y changerait rien', async () => {
+  it('abandonne un envoi dont le code de classe est inconnu : le renvoyer n\'y changerait rien', async () => {
     enqueueDeposit(params('s1'));
     const outcome = await flushOutbox(async () => ({
       error: { message: 'code de classe inconnu', code: 'P0001' },
     }));
     expect(outcome.s1).toBe('rejected');
     expect(pendingDepositCount()).toBe(0);
+  });
+
+  it('garde un envoi que la base refuse pour une autre raison : il repartira une fois corrigé', async () => {
+    // Ce qui est arrivé quand la base ne connaissait pas encore la révision
+    // ciblée : jeter la séance l'aurait perdue pour de bon.
+    enqueueDeposit(params('s1'));
+    const outcome = await flushOutbox(async () => ({
+      error: { message: 'new row violates check constraint "sessions_activity_check"', code: '23514' },
+    }));
+    expect(outcome.s1).toBe('queued');
+    expect(pendingDepositCount()).toBe(1);
   });
 
   it('garde la séance si l\'envoi lève une exception', async () => {
@@ -164,9 +175,10 @@ describe('la file d\'envoi', () => {
   });
 });
 
-describe('isNetworkError', () => {
-  it('distingue une panne de réseau d\'un refus de la base', () => {
-    expect(isNetworkError({ message: 'TypeError: Failed to fetch' })).toBe(true);
-    expect(isNetworkError({ message: 'code de classe inconnu', code: 'P0001' })).toBe(false);
+describe('isUnknownClassCode', () => {
+  it('ne reconnaît comme refus définitif que le code de classe inconnu', () => {
+    expect(isUnknownClassCode({ message: 'code de classe inconnu', code: 'P0001' })).toBe(true);
+    expect(isUnknownClassCode({ message: 'TypeError: Failed to fetch' })).toBe(false);
+    expect(isUnknownClassCode({ message: 'violates check constraint', code: '23514' })).toBe(false);
   });
 });

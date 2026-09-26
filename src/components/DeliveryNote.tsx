@@ -9,7 +9,7 @@ export function DeliveryNote({ delivery }: { delivery: DepositOutcome | 'pending
     pending: { text: 'Envoi à ta maîtresse…', tone: 'text-slate-500' },
     sent: { text: '✓ Séance envoyée à ta maîtresse', tone: 'text-emerald-700' },
     queued: {
-      text: 'Pas de réseau : la séance partira toute seule à la prochaine connexion.',
+      text: "La séance n'a pas pu partir pour l'instant : elle réessaiera toute seule à la prochaine connexion.",
       tone: 'text-slate-500',
     },
     rejected: {

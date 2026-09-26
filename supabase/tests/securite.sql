@@ -96,13 +96,22 @@ select pg_temp.attendu(
   (select count(*) from public.pupils where first_name = 'Léa' and last_name = 'Martin'), 1,
   'le nom affiché reste celui tapé la première fois');
 
+-- Chaque type de séance de l'application doit être accepté par la base.
+set role anon;
+select public.depose_seance(gen_random_uuid(), 'AAAAAA', 'Léa', 'Martin', 'CM1', 2::smallint, 'francais', 'revision',
+  '[{"domain":"accords","correct":6,"total":6}]');
+reset role;
+select pg_temp.attendu(
+  (select count(*) from public.sessions where activity = 'revision'), 1,
+  'une séance de révision ciblée doit être acceptée par la base');
+
 -- ------------------------------------------------------- les maîtresses ---
 set role authenticated;
 set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
 
 select pg_temp.attendu((select count(*) from public.classes), 1, 'la maîtresse A voit sa classe');
 select pg_temp.attendu((select count(*) from public.pupils), 2, 'la maîtresse A voit ses deux élèves');
-select pg_temp.attendu((select count(*) from public.sessions), 6, 'la maîtresse A voit leurs six séances');
+select pg_temp.attendu((select count(*) from public.sessions), 7, 'la maîtresse A voit leurs sept séances');
 
 insert into public.pupils (class_id, first_name, last_name, pupil_key)
   values ('11111111-1111-1111-1111-111111111111', 'Noé', 'Petit', 'valeur ignorée');
@@ -161,8 +170,8 @@ select pg_temp.attendu(
   'la maîtresse A lit les trois élèves de sa première classe');
 select pg_temp.attendu(
   (select sum(jsonb_array_length(p -> 'sessions'))
-     from jsonb_array_elements(public.lire_ma_classe() -> 0 -> 'pupils') p)::bigint, 6,
-  'la maîtresse A lit leurs six séances');
+     from jsonb_array_elements(public.lire_ma_classe() -> 0 -> 'pupils') p)::bigint, 7,
+  'la maîtresse A lit leurs sept séances');
 
 set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
 select pg_temp.attendu(

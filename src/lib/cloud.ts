@@ -155,9 +155,15 @@ export function pendingDepositCount(): number {
 export type DepositOutcome = 'sent' | 'queued' | 'rejected' | 'disabled';
 
 /**
- * Tente d'envoyer tout ce qui attend. Un envoi refusé par la base (code de
- * classe inconnu, par exemple) sort de la file : le renvoyer n'y changerait
- * rien. Un envoi qui n'a pas abouti faute de réseau y reste.
+ * Tente d'envoyer tout ce qui attend.
+ *
+ * Seul un code de classe inconnu fait sortir un envoi de la file : le renvoyer
+ * n'y changerait rien, c'est à l'enfant de corriger son code. Tout autre échec
+ * — réseau absent, mais aussi erreur de la base — laisse la séance en attente.
+ * Une première version jetait aussi les erreurs de la base : quand la base a
+ * refusé la révision ciblée, que son schéma ne connaissait pas encore, les
+ * séances auraient été perdues au lieu de partir une fois le schéma corrigé.
+ * Renvoyer est sans danger : la base ignore une séance déjà reçue.
  */
 export async function flushOutbox(
   send: (params: DepositParams) => Promise<{ error: { message: string; code?: string } | null }>
@@ -169,11 +175,11 @@ export async function flushOutbox(
       const { error } = await send(params);
       if (!error) {
         outcomes[params.p_session_id] = 'sent';
-      } else if (isNetworkError(error)) {
+      } else if (isUnknownClassCode(error)) {
+        outcomes[params.p_session_id] = 'rejected';
+      } else {
         outcomes[params.p_session_id] = 'queued';
         remaining.push(params);
-      } else {
-        outcomes[params.p_session_id] = 'rejected';
       }
     } catch {
       outcomes[params.p_session_id] = 'queued';
@@ -184,11 +190,10 @@ export async function flushOutbox(
   return outcomes;
 }
 
-/** Une panne de réseau n'a pas de code d'erreur de la base : c'est ce qui la
- *  distingue d'un refus, qu'il ne servirait à rien de renvoyer. */
-export function isNetworkError(error: { message: string; code?: string }): boolean {
-  if (error.code) return false;
-  return /fetch|network|failed|timeout|offline/i.test(error.message);
+/** Le seul refus définitif : la classe n'existe pas. Le message vient de la
+ *  fonction `depose_seance`. */
+export function isUnknownClassCode(error: { message: string; code?: string }): boolean {
+  return /code de classe inconnu/i.test(error.message);
 }
 
 export async function sendDeposit(params: DepositParams) {

@@ -73,12 +73,21 @@ create table if not exists public.sessions (
   level       text not null check (level in ('CM1', 'CM2')),
   trimester   smallint not null check (trimester between 1 and 3),
   subject     text not null check (subject in ('francais', 'maths')),
-  activity    text not null check (activity in ('questions', 'posees')),
+  activity    text not null check (activity in ('questions', 'posees', 'revision')),
   -- [{ "domain": "calcul", "correct": 4, "total": 6 }, ...]
   results     jsonb not null
 );
 
 create index if not exists sessions_pupil_at_idx on public.sessions (pupil_id, at desc);
+
+-- Les types de séance acceptés. La contrainte est réécrite à chaque exécution,
+-- parce que « create table if not exists » ne touche pas une table existante :
+-- sans cela, une base créée par une version antérieure de ce fichier garderait
+-- l'ancienne liste. C'est arrivé : la révision ciblée, ajoutée à
+-- l'application, était refusée par la base, et la séance perdue.
+alter table public.sessions drop constraint if exists sessions_activity_check;
+alter table public.sessions add constraint sessions_activity_check
+  check (activity in ('questions', 'posees', 'revision'));
 
 create table if not exists public.worksheets (
   id            uuid primary key default gen_random_uuid(),
