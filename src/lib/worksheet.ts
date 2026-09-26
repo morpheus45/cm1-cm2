@@ -34,6 +34,18 @@ export interface Worksheet {
   createdAt: string;
   operations: WorksheetOperation[];
   answers: Record<string, WorksheetAnswer>;
+  /** L'appréciation de la maîtresse, écrite à la correction. */
+  appreciation?: string;
+}
+
+/** Un quart de millième du cadre : bien plus fin que le doigt d'un enfant,
+ *  et le poids d'une feuille d'opérations est divisé d'autant. */
+export function roundPoint([x, y]: [number, number]): [number, number] {
+  return [Math.round(x * 10000) / 10000, Math.round(y * 10000) / 10000];
+}
+
+export function roundStroke(stroke: Stroke): Stroke {
+  return { points: stroke.points.map(roundPoint) };
 }
 
 /** Le cadre d'écriture est plus large que haut, dans cette proportion, à

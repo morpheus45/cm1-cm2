@@ -11,6 +11,8 @@ import {
   type Mastery,
   type SessionResult,
 } from '../lib/results';
+import type { WorksheetStatus } from '../lib/teacherCloud';
+import { formatFrenchDate } from '../lib/worksheetPdf';
 import { MasteryScale } from './charts/MasteryScale';
 import { RadarProfile } from './charts/RadarProfile';
 import { ProgressLines } from './charts/ProgressLines';
@@ -32,7 +34,13 @@ interface TeacherScreenProps {
   onBack: () => void;
   onForgetPupil: (key: string) => void;
   onForgetAll: () => void;
+  /** Les feuilles d'opérations posées reçues, séance par séance — dans la
+   *  classe seulement : sur l'appareil, elles ne sont pas conservées. */
+  worksheets?: Record<string, WorksheetStatus>;
+  onCorrect?: (session: SessionResult) => void;
 }
+
+const NO_WORKSHEETS: Record<string, WorksheetStatus> = {};
 
 function Card({ title, hint, children }: { title: string; hint?: string; children: React.ReactNode }) {
   return (
@@ -92,9 +100,21 @@ export function TeacherScreen({
   onBack,
   onForgetPupil,
   onForgetAll,
+  worksheets = NO_WORKSHEETS,
+  onCorrect,
 }: TeacherScreenProps) {
   const inClass = dataScope === 'class';
   const folders = useMemo(() => pupilFolders(sessions), [sessions]);
+  const toCorrect = useMemo(
+    () =>
+      Object.fromEntries(
+        folders.map((entry) => [
+          entry.key,
+          entry.sessions.filter((session) => worksheets[session.id] && !worksheets[session.id].correctedAt).length,
+        ])
+      ),
+    [folders, worksheets]
+  );
   const [openKey, setOpenKey] = useState<string | null>(
     folders.length === 1 ? folders[0].key : null
   );
@@ -112,6 +132,11 @@ export function TeacherScreen({
     [folder, shownYear]
   );
   const summaries = useMemo(() => summariseByDomain(yearSessions), [yearSessions]);
+  // Les feuilles de l'année affichée, la plus récente d'abord.
+  const sheets = useMemo(
+    () => yearSessions.filter((session) => worksheets[session.id]).sort((a, b) => b.at.localeCompare(a.at)),
+    [yearSessions, worksheets]
+  );
   const outlook = useMemo(() => yearOutlook(summaries), [summaries]);
 
   const series = useMemo(
@@ -203,7 +228,7 @@ export function TeacherScreen({
         <div className="max-w-lg mx-auto flex flex-col gap-4">
           {header}
           {banner}
-          <PupilList folders={folders} onOpen={setOpenKey} />
+          <PupilList folders={folders} onOpen={setOpenKey} toCorrect={toCorrect} />
           <Card
             title={inClass ? 'Données de la classe' : 'Données'}
             hint={
@@ -251,6 +276,47 @@ export function TeacherScreen({
           </div>
         )}
 
+        {onCorrect && sheets.length > 0 && (
+          <Card
+            title="Opérations posées"
+            hint="Les feuilles écrites à la main. Touchez-en une pour la corriger au stylet."
+          >
+            <ul className="flex flex-col gap-2">
+              {sheets.map((session) => {
+                const correctedAt = worksheets[session.id]?.correctedAt ?? null;
+                const score = session.domains.find((entry) => entry.domain === 'calcul');
+                return (
+                  <li key={session.id}>
+                    <button
+                      type="button"
+                      onClick={() => onCorrect(session)}
+                      className="w-full flex items-center justify-between gap-3 rounded-xl border-2 border-slate-100 px-4 py-3 text-left"
+                    >
+                      <span>
+                        <span className="block font-semibold text-slate-800">
+                          {formatFrenchDate(session.at)}
+                        </span>
+                        {score && (
+                          <span className="block text-xs text-slate-500">
+                            {score.correct} / {score.total} juste{score.correct > 1 ? 's' : ''}
+                          </span>
+                        )}
+                      </span>
+                      <span
+                        className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${
+                          correctedAt ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
+                        }`}
+                      >
+                        {correctedAt ? `Corrigée le ${formatFrenchDate(correctedAt)}` : 'À corriger'}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </Card>
+        )}
+
         <Card
           title="Attendus de fin d'année"
           hint="Ce qui est tenu, et ce qu'il reste à reprendre."
@@ -277,7 +343,7 @@ export function TeacherScreen({
           title="Dans la classe"
           hint={`La répartition des élèves, notion par notion. ${folders.length} élève${
             folders.length > 1 ? 's' : ''
-          } sur cet appareil.`}
+          } ${inClass ? 'dans la classe' : 'sur cet appareil'}.`}
         >
           <ClassBands bands={bands} pupilCount={folders.length} />
         </Card>

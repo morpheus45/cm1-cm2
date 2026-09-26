@@ -4,10 +4,15 @@ import { WRITING_COLUMNS, type Stroke } from '../lib/worksheet';
 interface WritingCanvasProps {
   strokes: Stroke[];
   onStrokesChange?: (strokes: Stroke[]) => void;
+  /** Traits d'une autre main, dessous et intouchables : l'écriture de
+   *  l'élève, quand c'est la maîtresse qui corrige. */
+  backgroundStrokes?: Stroke[];
   /** Traits d'une autre main — la correction de la maîtresse — par-dessus. */
   overlayStrokes?: Stroke[];
   readOnly?: boolean;
   ink?: string;
+  inkWidth?: number;
+  label?: string;
 }
 
 const GRID_COLOR = '#d7e3ef';
@@ -25,13 +30,20 @@ const DEFAULT_INK = '#1f2937';
 export function WritingCanvas({
   strokes,
   onStrokesChange,
+  backgroundStrokes,
   overlayStrokes,
   readOnly = false,
   ink = DEFAULT_INK,
+  inkWidth = 3,
+  label = "Zone pour poser l'opération",
 }: WritingCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [size, setSize] = useState({ width: 0, height: 0 });
   const drawing = useRef<Stroke | null>(null);
+  // Le contact qui trace en ce moment : un second doigt posé pendant un trait
+  // n'en commence pas un autre.
+  const activePointer = useRef<number | null>(null);
+  const penSeen = useRef(false);
 
   // Le canevas a besoin d'une taille en pixels réels ; l'observateur la suit
   // quand l'écran tourne ou que le clavier s'ouvre.
@@ -102,9 +114,10 @@ export function WritingCanvas({
       });
     };
 
-    paint(strokes, ink, 3);
+    if (backgroundStrokes) paint(backgroundStrokes, DEFAULT_INK, 3);
+    paint(strokes, ink, inkWidth);
     if (overlayStrokes) paint(overlayStrokes, '#dc2626', 3.5);
-  }, [size, strokes, overlayStrokes, ink]);
+  }, [size, strokes, backgroundStrokes, overlayStrokes, ink, inkWidth]);
 
   useEffect(redraw, [redraw]);
 
@@ -117,14 +130,19 @@ export function WritingCanvas({
 
   const handlePointerDown = (event: React.PointerEvent<HTMLCanvasElement>) => {
     if (readOnly || !onStrokesChange) return;
-    // Une paume posée sur l'écran ne doit pas écrire : dès qu'un stylet est
-    // utilisé, on ignore les contacts du doigt.
+    // Une paume posée sur l'écran ne doit pas écrire : dès qu'un stylet a
+    // servi, on ignore les contacts du doigt.
+    if (event.pointerType === 'pen') penSeen.current = true;
+    else if (event.pointerType === 'touch' && penSeen.current) return;
+    if (activePointer.current !== null) return;
+    activePointer.current = event.pointerId;
     event.currentTarget.setPointerCapture(event.pointerId);
     drawing.current = { points: [pointFrom(event)] };
     onStrokesChange([...strokes, drawing.current]);
   };
 
   const handlePointerMove = (event: React.PointerEvent<HTMLCanvasElement>) => {
+    if (event.pointerId !== activePointer.current) return;
     if (readOnly || !onStrokesChange || !drawing.current) return;
     const next = pointFrom(event);
     const points = drawing.current.points;
@@ -135,7 +153,9 @@ export function WritingCanvas({
     onStrokesChange([...strokes.slice(0, -1), drawing.current]);
   };
 
-  const handlePointerUp = () => {
+  const handlePointerUp = (event: React.PointerEvent<HTMLCanvasElement>) => {
+    if (event.pointerId !== activePointer.current) return;
+    activePointer.current = null;
     drawing.current = null;
   };
 
@@ -143,7 +163,7 @@ export function WritingCanvas({
     <div className="relative w-full" style={{ aspectRatio: '4 / 3' }}>
       <canvas
         ref={canvasRef}
-        aria-label="Zone pour poser l'opération"
+        aria-label={label}
         className="absolute inset-0 h-full w-full rounded-xl"
         style={{ touchAction: 'none', cursor: readOnly ? 'default' : 'crosshair' }}
         onPointerDown={handlePointerDown}

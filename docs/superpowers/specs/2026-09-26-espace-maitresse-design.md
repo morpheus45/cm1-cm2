@@ -195,17 +195,52 @@ base :
 5. une autre maîtresse ne voit rien de cette classe ;
 6. un mauvais mot de passe donne un message en français.
 
+## La correction à distance des opérations posées
+
+La maîtresse corrige sur sa propre tablette, au stylet, les feuilles que ses
+élèves ont écrites à la main.
+
+- **Ce qui attend** : le bandeau de la classe compte les feuilles à corriger,
+  et « Corriger » les enchaîne, la plus ancienne d'abord. Dans la liste, chaque
+  élève porte sa pastille « N feuilles à corriger » ; dans son dossier, la carte
+  « Opérations posées » liste ses feuilles, corrigées ou non.
+- **L'écran** : une opération à la fois, pour écrire en grand. L'écriture de
+  l'élève est dessous, intouchable ; l'encre rouge de la maîtresse par-dessus.
+  Annuler le dernier trait, effacer ses traits, et une appréciation d'une ou
+  deux lignes. Dès qu'un stylet a servi, les contacts du doigt sont ignorés :
+  la paume posée sur l'écran n'écrit pas.
+- **Enregistrer** : une feuille relue sans rien à annoter est tout de même
+  « corrigée » — la maîtresse l'a vue. Quitter avec des annotations non
+  enregistrées demande confirmation.
+- **Le PDF corrigé** porte l'appréciation sous le nom de l'élève et les traits
+  rouges sur chaque opération ; son nom de fichier finit par « -corrigee ».
+
+Rien à changer dans Supabase : la table `worksheets`, sa RLS et les droits de
+la maîtresse existaient déjà. La liste des feuilles ne charge pas les tracés,
+bien plus lourds : ils ne viennent qu'à l'ouverture d'une feuille. La base ne
+signalant rien quand la RLS écarte une ligne à modifier, l'application vérifie
+qu'une ligne a bien été enregistrée avant d'annoncer « enregistré ».
+
+Vérifié de bout en bout sur le banc d'essai (PostgreSQL et relais jouant
+l'API de Supabase) : une élève dépose deux feuilles ; la maîtresse corrige la
+première, l'enregistrement est lu dans la base, le PDF téléchargé porte
+l'appréciation et l'encre rouge, la feuille rouverte a gardé ses traits ;
+« Feuille suivante » ouvre la seconde ; fermer sans enregistrer est retenu
+par une confirmation ; une autre maîtresse ne peut ni lire ni modifier la
+feuille, un visiteur sans compte non plus.
+
+L'accès maîtresse n'est chargé qu'à l'ouverture : les tablettes des élèves
+ne le téléchargent pas, et le service worker le garde en cache pour le
+hors-ligne.
+
 ## Hors périmètre de cette première partie
 
-- La correction à l'écran d'une feuille d'opérations posées : les feuilles
-  arrivent dans la base avec leurs tracés, l'écran pour les annoter reste à
-  faire.
 - Plusieurs classes pour une même maîtresse : la base les accepte, l'écran
   n'affiche que la première.
-- La correction à l'écran par la maîtresse (le modèle prévoit déjà les tracés
-  de correction, mais l'écran reste à faire).
-- Une vraie classe : la vue « Dans la classe » ne connaît que les élèves de
-  l'appareil.
+- L'élève ne voit pas encore la correction de sa maîtresse dans l'application :
+  elle la lui transmet par le PDF corrigé.
+- Sans compte, la vue « Dans la classe » ne connaît que les élèves de
+  l'appareil ; avec un compte, elle montre toute la classe.
 
 ## Test / validation
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { pupilKey, subjectOf, SUBJECT_DOMAINS } from './types';
 import type { Domain, Pupil } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
@@ -28,7 +28,13 @@ import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
 import { WrittenOperationScreen } from './components/WrittenOperationScreen';
 import { WrittenRecapScreen } from './components/WrittenRecapScreen';
-import { TeacherSpace } from './components/TeacherSpace';
+
+// L'accès maîtresse — graphiques, correction, compte — n'est chargé qu'à
+// l'ouverture : les tablettes des élèves n'ont pas à le télécharger. Le
+// service worker le garde tout de même en cache, pour le hors-ligne.
+const TeacherSpace = lazy(() =>
+  import('./components/TeacherSpace').then((module) => ({ default: module.TeacherSpace }))
+);
 
 type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap';
 
@@ -223,15 +229,17 @@ export function App() {
 
   if (teacherView) {
     return (
-      <TeacherSpace
-        localSessions={results}
-        onForgetLocalPupil={(key) => setResults(forgetPupil(key))}
-        onForgetAllLocal={() => setResults(forgetAllResults())}
-        onBack={() => {
-          window.location.hash = '';
-          setTeacherView(false);
-        }}
-      />
+      <Suspense fallback={<p className="min-h-screen bg-slate-50 py-16 text-center text-slate-500">Chargement…</p>}>
+        <TeacherSpace
+          localSessions={results}
+          onForgetLocalPupil={(key) => setResults(forgetPupil(key))}
+          onForgetAllLocal={() => setResults(forgetAllResults())}
+          onBack={() => {
+            window.location.hash = '';
+            setTeacherView(false);
+          }}
+        />
+      </Suspense>
     );
   }
 

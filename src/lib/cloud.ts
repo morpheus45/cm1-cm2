@@ -1,6 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { SessionResult } from './results';
-import type { Worksheet } from './worksheet';
+import { roundStroke, type Worksheet } from './worksheet';
 import { isSecretKey } from './publicKey';
 
 /**
@@ -60,12 +60,6 @@ export function isValidJoinCode(code: string): boolean {
   return /^[A-Z0-9]{6}$/.test(code);
 }
 
-/** Un quart de millième du cadre : bien plus fin que le doigt d'un enfant,
- *  et le poids d'une feuille d'opérations est divisé d'autant. */
-function roundPoint([x, y]: [number, number]): [number, number] {
-  return [Math.round(x * 10000) / 10000, Math.round(y * 10000) / 10000];
-}
-
 export function worksheetPayload(worksheet: Worksheet) {
   return {
     operations: worksheet.operations,
@@ -74,7 +68,7 @@ export function worksheetPayload(worksheet: Worksheet) {
         id,
         {
           given: answer.given,
-          strokes: answer.strokes.map((stroke) => ({ points: stroke.points.map(roundPoint) })),
+          strokes: answer.strokes.map(roundStroke),
         },
       ])
     ),

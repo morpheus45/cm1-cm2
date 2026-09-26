@@ -97,8 +97,10 @@ create table if not exists public.worksheets (
   operations    jsonb not null,
   -- { "<id d'opération>": { "given": "526", "strokes": [...] } }
   answers       jsonb not null,
-  -- Les annotations de la maîtresse, tracées par-dessus.
-  -- { "<id d'opération>": { "teacherStrokes": [...], "comment": "..." } }
+  -- La correction de la maîtresse (src/lib/correction.ts) : ses traits
+  -- rouges, tracés par-dessus, et son appréciation.
+  -- { "version": 1, "appreciation": "...",
+  --   "operations": { "<id d'opération>": { "teacherStrokes": [...] } } }
   corrections   jsonb,
   corrected_at  timestamptz
 );

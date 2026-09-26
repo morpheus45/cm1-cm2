@@ -1,20 +1,27 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { pupilKey } from '../types';
 import type { Level } from '../types';
 import type { SessionResult } from '../lib/results';
 import { isCloudConfigured } from '../lib/cloud';
+import { correctionsOf } from '../lib/correction';
+import type { Worksheet } from '../lib/worksheet';
 import {
   createClass,
   currentTeacher,
   deletePupil,
   pupilIdFor,
   readMyClasses,
+  readWorksheet,
+  readWorksheetIndex,
+  saveCorrection,
   signIn,
   signOut,
   signUp,
   type CloudClass,
   type TeacherAccount,
+  type WorksheetStatus,
 } from '../lib/teacherCloud';
+import { CorrectionScreen } from './CorrectionScreen';
 import { TeacherScreen } from './TeacherScreen';
 
 interface TeacherSpaceProps {
@@ -56,11 +63,29 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   const [password, setPassword] = useState('');
   const [className, setClassName] = useState('');
   const [classLevel, setClassLevel] = useState<Level>('CM1');
+  const [worksheets, setWorksheets] = useState<Record<string, WorksheetStatus>>({});
+  const [worksheetsError, setWorksheetsError] = useState('');
+  const [correcting, setCorrecting] = useState<{
+    session: SessionResult;
+    worksheet?: Worksheet;
+    error?: string;
+  } | null>(null);
 
   const refresh = useCallback(async () => {
     setError('');
     try {
-      setClasses(await readMyClasses());
+      // Sans la liste des feuilles, les dossiers restent utiles : son échec
+      // est signalé à part, sans rien bloquer.
+      const [found, index] = await Promise.all([
+        readMyClasses(),
+        readWorksheetIndex().then(
+          (value) => ({ value, error: '' }),
+          (e: Error) => ({ value: null, error: e.message })
+        ),
+      ]);
+      setClasses(found);
+      if (index.value) setWorksheets(index.value);
+      setWorksheetsError(index.error && `Les feuilles d'opérations n'ont pas pu être chargées : ${index.error}`);
     } catch (e) {
       setError((e as Error).message);
     }
@@ -73,6 +98,19 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
       if (found) void refresh();
     });
   }, [cloud, refresh]);
+
+  // Une seule classe affichée pour l'instant : la première créée.
+  const current = classes?.[0] ?? null;
+
+  // Les feuilles qui attendent la maîtresse, la plus ancienne d'abord : c'est
+  // l'ordre dans lequel « Corriger » les enchaîne.
+  const queue = useMemo(
+    () =>
+      (current?.sessions ?? [])
+        .filter((session) => worksheets[session.id] && !worksheets[session.id].correctedAt)
+        .sort((a, b) => a.at.localeCompare(b.at)),
+    [current, worksheets]
+  );
 
   const run = async (task: () => Promise<void>) => {
     setBusy(true);
@@ -194,7 +232,17 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     );
   }
 
-  const current = classes?.[0] ?? null;
+  const openCorrection = (session: SessionResult) => {
+    setCorrecting({ session });
+    // Une feuille arrivée après qu'on en a ouvert une autre ne doit pas la
+    // remplacer.
+    const settle = (next: { worksheet?: Worksheet; error?: string }) =>
+      setCorrecting((shown) => (shown?.session.id === session.id ? { session, ...next } : shown));
+    readWorksheet(session).then(
+      (worksheet) => settle({ worksheet }),
+      (e: Error) => settle({ error: e.message })
+    );
+  };
 
   if (classes !== null && current === null) {
     return (
@@ -264,6 +312,21 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         {current.joinCode}
       </p>
       {error && <p className="text-sm text-red-700">{error}</p>}
+      {worksheetsError && <p className="text-sm text-red-700">{worksheetsError}</p>}
+      {queue.length > 0 && (
+        <div className="flex items-center justify-between gap-3 rounded-xl bg-white px-4 py-3 ring-1 ring-amber-200">
+          <p className="text-sm font-medium text-amber-900">
+            {queue.length} feuille{queue.length > 1 ? 's' : ''} d'opérations à corriger
+          </p>
+          <button
+            type="button"
+            onClick={() => openCorrection(queue[0])}
+            className="shrink-0 rounded-xl bg-violet-500 px-4 py-2 text-sm font-bold text-white"
+          >
+            Corriger
+          </button>
+        </div>
+      )}
       <div className="flex gap-2 pt-1">
         <button type="button" disabled={busy} onClick={() => run(refresh)} className={secondary}>
           Actualiser
@@ -285,28 +348,64 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     return current && session ? pupilIdFor(current, session.pupil.firstName, session.pupil.lastName) : null;
   };
 
+  const correction = correcting && (
+    correcting.worksheet ? (
+      <CorrectionScreen
+        key={correcting.session.id}
+        worksheet={correcting.worksheet}
+        correctedAt={worksheets[correcting.session.id]?.correctedAt ?? null}
+        remaining={queue.filter((session) => session.id !== correcting.session.id).length}
+        onSave={async (draft) => {
+          const correctedAt = await saveCorrection(correcting.session.id, correctionsOf(draft));
+          setWorksheets((index) => ({ ...index, [correcting.session.id]: { correctedAt } }));
+        }}
+        onNext={() => {
+          const next = queue.find((session) => session.id !== correcting.session.id);
+          if (next) openCorrection(next);
+        }}
+        onClose={() => setCorrecting(null)}
+      />
+    ) : (
+      <Panel>
+        <p className={`text-center py-10 ${correcting.error ? 'text-red-700' : 'text-slate-500'}`}>
+          {correcting.error ?? 'Ouverture de la feuille…'}
+        </p>
+        <button type="button" onClick={() => setCorrecting(null)} className={secondary}>
+          Retour
+        </button>
+      </Panel>
+    )
+  );
+
   return (
-    <TeacherScreen
-      sessions={current?.sessions ?? []}
-      banner={banner}
-      dataScope="class"
-      onBack={onBack}
-      onForgetPupil={(key) =>
-        void run(async () => {
-          const id = idFor(key);
-          if (id) await deletePupil(id);
-          await refresh();
-        })
-      }
-      onForgetAll={() =>
-        void run(async () => {
-          const ids = new Set(
-            (current?.sessions ?? []).map((entry) => idFor(pupilKey(entry.pupil))).filter(Boolean) as string[]
-          );
-          for (const id of ids) await deletePupil(id);
-          await refresh();
-        })
-      }
-    />
+    <>
+      {correction}
+      <div hidden={correction !== null}>
+        <TeacherScreen
+          sessions={current?.sessions ?? []}
+          banner={banner}
+          dataScope="class"
+          worksheets={worksheets}
+          onCorrect={openCorrection}
+          onBack={onBack}
+          onForgetPupil={(key) =>
+            void run(async () => {
+              const id = idFor(key);
+              if (id) await deletePupil(id);
+              await refresh();
+            })
+          }
+          onForgetAll={() =>
+            void run(async () => {
+              const ids = new Set(
+                (current?.sessions ?? []).map((entry) => idFor(pupilKey(entry.pupil))).filter(Boolean) as string[]
+              );
+              for (const id of ids) await deletePupil(id);
+              await refresh();
+            })
+          }
+        />
+      </div>
+    </>
   );
 }
