@@ -13,9 +13,13 @@ function frenchDate(iso: string): string {
 export function PupilList({
   folders,
   onOpen,
+  toCorrect = {},
 }: {
   folders: PupilFolder[];
   onOpen: (key: string) => void;
+  /** Par dossier, le nombre de feuilles d'opérations qui attendent une
+   *  correction. */
+  toCorrect?: Record<string, number>;
 }) {
   return (
     <ul className="flex flex-col gap-2">
@@ -36,6 +40,11 @@ export function PupilList({
                   {folder.sessions.length} séance{folder.sessions.length > 1 ? 's' : ''} · dernière
                   le {frenchDate(folder.lastAt)}
                 </span>
+                {(toCorrect[folder.key] ?? 0) > 0 && (
+                  <span className="mt-1 inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800">
+                    {toCorrect[folder.key]} feuille{toCorrect[folder.key] > 1 ? 's' : ''} à corriger
+                  </span>
+                )}
               </span>
               <span className="flex gap-[3px] shrink-0" aria-hidden="true">
                 {summaries.map((summary) => (

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { frenchAuthError, mapClasses, pupilIdFor } from './teacherCloud';
+import { frenchAuthError, mapClasses, mapWorksheetIndex, pupilIdFor } from './teacherCloud';
 
 // Ce que rend `lire_ma_classe`, tel que la base l'écrit.
 const raw = [
@@ -81,5 +81,22 @@ describe('frenchAuthError', () => {
 
   it('laisse passer un message qu\'il ne connaît pas', () => {
     expect(frenchAuthError('Something odd')).toBe('Something odd');
+  });
+});
+
+describe('mapWorksheetIndex', () => {
+  it('dit, séance par séance, si la feuille est corrigée', () => {
+    expect(
+      mapWorksheetIndex([
+        { session_id: 's1', corrected_at: null },
+        { session_id: 's2', corrected_at: '2026-10-05T18:00:00+00:00' },
+        { session_id: 42, corrected_at: null },
+        null,
+      ])
+    ).toEqual({
+      s1: { correctedAt: null },
+      s2: { correctedAt: '2026-10-05T18:00:00+00:00' },
+    });
+    expect(mapWorksheetIndex('rien')).toEqual({});
   });
 });

@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { depositParams } from '../src/lib/cloud';
+import { WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
 import { ALL_ACTIVITIES, ALL_SUBJECTS } from '../src/types';
 import type { SessionResult } from '../src/lib/results';
 
@@ -53,5 +54,21 @@ describe('la base accepte toutes les valeurs de l\'application', () => {
 
   it('pour les niveaux', () => {
     allowed('level').forEach((values) => expect(values).toEqual(['CM1', 'CM2']));
+  });
+});
+
+describe('l\'accès maîtresse lit et écrit des colonnes qui existent', () => {
+  it('dans la table des feuilles d\'opérations', () => {
+    const sql = readFileSync(join(process.cwd(), 'supabase', '001_classes_eleves_seances.sql'), 'utf8');
+    const table = sql.match(/create table if not exists public\.worksheets \(([\s\S]*?)\n\);/);
+    expect(table, 'table worksheets introuvable').not.toBeNull();
+    const columns = [...table![1].matchAll(/^\s{2}(\w+)\s+\w/gm)].map((m) => m[1]);
+    const used = [
+      WORKSHEET_COLUMNS.key,
+      WORKSHEET_COLUMNS.status,
+      WORKSHEET_COLUMNS.correction,
+      ...WORKSHEET_COLUMNS.sheet,
+    ];
+    used.forEach((column) => expect(columns, `colonne ${column}`).toContain(column));
   });
 });

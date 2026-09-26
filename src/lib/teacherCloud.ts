@@ -1,6 +1,8 @@
-import type { Level, Trimester } from '../types';
+import { pupilLabel, type Level, type Trimester } from '../types';
 import { cloudClient } from './cloud';
+import { worksheetFromRow, type Corrections } from './correction';
 import { parseResults, type SessionResult } from './results';
+import type { Worksheet } from './worksheet';
 
 /** Une classe telle que la base la rend à sa maîtresse. */
 export interface CloudClass {
@@ -158,6 +160,106 @@ export async function createClass(name: string, level: Level): Promise<string> {
 export async function deletePupil(pupilId: string): Promise<void> {
   const { error } = await (await client()).from('pupils').delete().eq('id', pupilId);
   if (error) throw new Error(frenchAuthError(error.message));
+}
+
+// --- Les feuilles d'opérations posées ---------------------------------------
+
+/** Où en est une feuille : `correctedAt` reste `null` tant que la maîtresse
+ *  ne l'a pas corrigée. */
+export interface WorksheetStatus {
+  correctedAt: string | null;
+}
+
+/** Séance par séance, l'état des feuilles. Les lignes illisibles sont
+ *  ignorées. */
+export function mapWorksheetIndex(rows: unknown): Record<string, WorksheetStatus> {
+  if (!Array.isArray(rows)) return {};
+  return Object.fromEntries(
+    rows.flatMap((row) => {
+      const entry = row as { session_id?: unknown; corrected_at?: unknown } | null;
+      if (!entry || typeof entry.session_id !== 'string') return [];
+      const correctedAt = typeof entry.corrected_at === 'string' ? entry.corrected_at : null;
+      return [[entry.session_id, { correctedAt }]];
+    })
+  );
+}
+
+/**
+ * Les colonnes de la table `worksheets` que l'accès maîtresse lit et écrit.
+ * Un test les compare au fichier SQL : une faute de frappe ne se verrait
+ * sinon qu'en ligne, par des feuilles introuvables.
+ */
+export const WORKSHEET_COLUMNS = {
+  key: 'session_id',
+  status: 'corrected_at',
+  sheet: ['operations', 'answers', 'corrections'],
+  correction: 'corrections',
+} as const;
+
+/** La base ne rend pas plus de mille lignes par demande : au-delà, on
+ *  demande la suite. Une classe peut dépasser ce nombre en une année. */
+const INDEX_PAGE = 1000;
+
+/**
+ * Les feuilles de la classe, sans leurs tracés — les seules colonnes utiles
+ * pour savoir ce qui reste à corriger. Les tracés, bien plus lourds, ne sont
+ * chargés qu'à l'ouverture d'une feuille. La RLS ne laisse voir que celles
+ * des élèves de la maîtresse.
+ */
+export async function readWorksheetIndex(): Promise<Record<string, WorksheetStatus>> {
+  const supabase = await client();
+  const index: Record<string, WorksheetStatus> = {};
+  for (let from = 0; ; from += INDEX_PAGE) {
+    const { data, error } = await supabase
+      .from('worksheets')
+      .select(`${WORKSHEET_COLUMNS.key}, ${WORKSHEET_COLUMNS.status}`)
+      .order(WORKSHEET_COLUMNS.key)
+      .range(from, from + INDEX_PAGE - 1);
+    if (error) throw new Error(frenchAuthError(error.message));
+    Object.assign(index, mapWorksheetIndex(data));
+    if (!Array.isArray(data) || data.length < INDEX_PAGE) return index;
+  }
+}
+
+export async function readWorksheet(session: SessionResult): Promise<Worksheet> {
+  const { data, error } = await (await client())
+    .from('worksheets')
+    .select(WORKSHEET_COLUMNS.sheet.join(', '))
+    .eq(WORKSHEET_COLUMNS.key, session.id)
+    .maybeSingle();
+  if (error) throw new Error(frenchAuthError(error.message));
+  const worksheet =
+    data &&
+    worksheetFromRow(data, {
+      name: pupilLabel(session.pupil),
+      level: session.level,
+      trimester: session.trimester,
+      createdAt: session.at,
+    });
+  if (!worksheet) throw new Error('Cette feuille est introuvable, ou illisible.');
+  return worksheet;
+}
+
+/**
+ * Enregistre la correction et rend sa date. Une feuille relue sans rien à
+ * annoter est tout de même « corrigée » : la maîtresse l'a vue.
+ *
+ * La base ne signale pas d'erreur quand la RLS écarte la ligne : elle n'en
+ * modifie simplement aucune. On le vérifie, pour ne jamais annoncer
+ * « enregistré » à tort.
+ */
+export async function saveCorrection(sessionId: string, corrections: Corrections): Promise<string> {
+  const correctedAt = new Date().toISOString();
+  const { data, error } = await (await client())
+    .from('worksheets')
+    .update({ [WORKSHEET_COLUMNS.correction]: corrections, [WORKSHEET_COLUMNS.status]: correctedAt })
+    .eq(WORKSHEET_COLUMNS.key, sessionId)
+    .select(WORKSHEET_COLUMNS.key);
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) {
+    throw new Error('La correction n’a pas été enregistrée : cette feuille n’est plus dans votre classe.');
+  }
+  return correctedAt;
 }
 
 export type { Trimester };

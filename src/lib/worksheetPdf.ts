@@ -1,6 +1,7 @@
 import { renderPdf, PAGE_WIDTH, PAGE_HEIGHT, type PdfItem, type PdfPage } from './pdf';
 import { isAnswerCorrect, worksheetScore, WRITING_COLUMNS, type Stroke, type Worksheet } from './worksheet';
 import { TRIMESTER_LABELS } from '../types';
+import { wrapAppreciation } from './correction';
 
 const MARGIN = 40;
 const COLUMNS = 2;
@@ -12,7 +13,6 @@ const BOX_HEIGHT = (BOX_WIDTH * 3) / 4;
 const STATEMENT_HEIGHT = 18;
 const ANSWER_HEIGHT = 20;
 const ROW_HEIGHT = STATEMENT_HEIGHT + BOX_HEIGHT + ANSWER_HEIGHT + 12;
-const HEADER_HEIGHT = 96;
 
 const INK = 0.1;
 const TEACHER_RED: [number, number, number] = [0.85, 0.15, 0.15];
@@ -115,11 +115,22 @@ function verdictMark(x: number, y: number, correct: boolean): PdfItem[] {
   ];
 }
 
+/** Une ligne d'appréciation : assez courte pour tenir sur la page même écrite
+ *  en capitales, après l'intitulé. */
+const APPRECIATION_LINE_LENGTH = 56;
+const APPRECIATION_LINE_HEIGHT = 15;
+
 export function worksheetToPdfPages(worksheet: Worksheet): PdfPage[] {
   const { correct, total } = worksheetScore(worksheet);
   const pageCount = Math.max(1, Math.ceil(worksheet.operations.length / PER_PAGE));
+  const appreciation = wrapAppreciation(worksheet.appreciation ?? '', APPRECIATION_LINE_LENGTH);
 
   return Array.from({ length: pageCount }, (_, pageIndex) => {
+    // L'appréciation de la maîtresse s'écrit sous le nom, sur la première
+    // page ; les opérations descendent d'autant.
+    const notes = pageIndex === 0 ? appreciation : [];
+    const separatorY = notes.length === 0 ? 86 : 94 + notes.length * APPRECIATION_LINE_HEIGHT;
+    const headerHeight = separatorY + 10;
     const items: PdfItem[] = [
       { kind: 'text', x: MARGIN, y: 56, size: 20, text: 'Opérations posées', bold: true },
       {
@@ -147,12 +158,21 @@ export function worksheetToPdfPages(worksheet: Worksheet): PdfPage[] {
       {
         kind: 'polyline',
         points: [
-          [MARGIN, 86],
-          [PAGE_WIDTH - MARGIN, 86],
+          [MARGIN, separatorY],
+          [PAGE_WIDTH - MARGIN, separatorY],
         ],
         width: 0.8,
         gray: 0.75,
       },
+      ...notes.flatMap((line, index): PdfItem[] => {
+        const y = 98 + index * APPRECIATION_LINE_HEIGHT;
+        return [
+          ...(index === 0
+            ? [{ kind: 'text', x: MARGIN, y, size: 11, bold: true, rgb: TEACHER_RED, text: 'Appréciation :' } as PdfItem]
+            : []),
+          { kind: 'text', x: MARGIN + 84, y, size: 11, rgb: TEACHER_RED, text: line },
+        ];
+      }),
     ];
 
     if (pageCount > 1) {
@@ -173,7 +193,7 @@ export function worksheetToPdfPages(worksheet: Worksheet): PdfPage[] {
         const column = index % COLUMNS;
         const row = Math.floor(index / COLUMNS);
         const x = MARGIN + column * (BOX_WIDTH + 19);
-        const top = HEADER_HEIGHT + row * ROW_HEIGHT;
+        const top = headerHeight + row * ROW_HEIGHT;
         const boxY = top + STATEMENT_HEIGHT;
 
         const answer = worksheet.answers[operation.id];
@@ -236,5 +256,8 @@ export function worksheetFileName(worksheet: Worksheet): string {
     .replace(/^-|-$/g, '')
     .toLowerCase();
   const date = formatFrenchDate(worksheet.createdAt).split('/').reverse().join('-');
-  return `operations-posees-${slug || 'eleve'}-${date}.pdf`;
+  const corrected =
+    Boolean(worksheet.appreciation) ||
+    worksheet.operations.some((operation) => (worksheet.answers[operation.id]?.teacherStrokes ?? []).length > 0);
+  return `operations-posees-${slug || 'eleve'}-${date}${corrected ? '-corrigee' : ''}.pdf`;
 }

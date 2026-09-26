@@ -24,6 +24,8 @@ export interface TextItem {
   text: string;
   bold?: boolean;
   gray?: number;
+  /** Une couleur, à la place du gris : la correction de la maîtresse. */
+  rgb?: [number, number, number];
   /** 'left' par défaut. */
   align?: 'left' | 'center' | 'right';
 }
@@ -203,7 +205,7 @@ function itemToOperators(item: PdfItem): string[] {
   const escaped = String.fromCharCode(...encodePdfText(item.text));
   return [
     'q',
-    `${num(item.gray ?? 0)} g`,
+    item.rgb ? `${item.rgb.map(num).join(' ')} rg` : `${num(item.gray ?? 0)} g`,
     'BT',
     `${font} ${num(item.size)} Tf`,
     `${num(x)} ${num(flipY(item.y))} Td`,
