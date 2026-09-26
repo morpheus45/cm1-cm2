@@ -1,9 +1,9 @@
 # Espace maîtresse (design)
 
 Date : 2026-09-26
-Statut : première partie implémentée — les quatre vues, alimentées par les
-séances conservées sur l'appareil. La mise en commun par le réseau reste à
-brancher.
+Statut : implémenté en local — un dossier par élève, les quatre vues, le bilan
+d'année, la révision ciblée et l'effacement des données. La mise en commun par
+le réseau reste à brancher.
 
 ## Contexte
 
@@ -80,13 +80,64 @@ Le schéma limite au moins ce qui est stocké : aucune adresse, aucune date de
 naissance, aucun identifiant qui suive l'enfant hors de la classe, et tout est
 supprimé en cascade quand la classe l'est.
 
+## Un dossier par élève
+
+Plusieurs enfants peuvent travailler sur le même appareil. Chaque séance porte
+le nom de celui qui l'a faite, et l'espace maîtresse ouvre sur la liste des
+dossiers : nom, nombre de séances, date de la dernière, et six pastilles qui
+résument les six notions.
+
+L'identité est insensible aux accents, à la casse et aux espaces en trop :
+« Léa  MARTIN » et « léa martin » sont le même enfant, pas deux dossiers. Le
+nom de famille, lui, sépare bien deux Léa.
+
+La répartition de la classe se calcule à partir des dossiers présents. Elle
+affiche l'effectif à côté des pourcentages : sur deux élèves, un seul fait
+50 %, et le graphique le dit plutôt que de laisser croire à une classe.
+
+## Le bilan d'année
+
+Une carte « Attendus de fin d'année » compte les notions tenues, liste ce
+qu'il reste à reprendre en priorité, puis les acquis, puis ce sur quoi
+l'application ne se prononce pas encore. Le seuil retenu pour « tenu » est le
+niveau satisfaisant.
+
+Les séances sont regroupées par année scolaire, qui commence en septembre :
+une séance de juin 2027 appartient à l'année 2026-2027, pas à la suivante.
+Quand un élève a des séances sur deux années, un sélecteur apparaît.
+
+## La révision ciblée
+
+Un troisième type de séance, à côté des questions et des opérations posées.
+L'application choisit elle-même les deux notions les plus fragiles de l'élève
+dans la matière demandée, et construit la séance dessus.
+
+Une notion jamais travaillée passe devant une notion réussie : ne pas savoir
+si un élève tient une notion est une lacune au même titre que de savoir qu'il
+ne la tient pas. Un élève qui n'a encore rien fait travaille donc toute la
+matière, sans traitement particulier.
+
+La règle des matières tient ici comme ailleurs : la révision ciblée reste dans
+une seule matière.
+
+## Effacer les données
+
+L'espace maîtresse efface le dossier d'un élève, ou toutes les séances de tous
+les élèves. Un effacement ne se fait jamais d'un seul geste : le bouton demande
+confirmation, et ce qui va disparaître est nommé et compté.
+
+C'est aussi ce qui permet de se débarrasser des séances faites pour essayer
+l'application.
+
 ## Hors périmètre de cette première partie
 
-- Le client Supabase et l'envoi des séances.
+- Le client Supabase et l'envoi des séances : tout est aujourd'hui sur
+  l'appareil. Le modèle local est celui que la base reprendra, dossier par
+  dossier.
 - La correction à l'écran par la maîtresse (le modèle prévoit déjà les tracés
   de correction, mais l'écran reste à faire).
-- La vue « Dans la classe » avec de vraies données : elle affiche pour l'instant
-  son état vide, puisqu'un seul élève travaille sur l'appareil.
+- Une vraie classe : la vue « Dans la classe » ne connaît que les élèves de
+  l'appareil.
 
 ## Test / validation
 

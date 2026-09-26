@@ -3,6 +3,7 @@ import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 
 export interface Preferences {
   name: string;
+  lastName: string;
   level: Level;
   trimester: Trimester;
   subject: Subject;
@@ -14,6 +15,7 @@ const STORAGE_KEY = 'exercices-cm1-cm2:preferences';
 
 export const DEFAULT_PREFERENCES: Preferences = {
   name: '',
+  lastName: '',
   level: 'CM1',
   trimester: 1,
   subject: 'francais',
@@ -43,6 +45,8 @@ export function parsePreferences(raw: string | null): Preferences {
   const stored = parsed as Record<string, unknown>;
 
   const name = typeof stored.name === 'string' ? stored.name.slice(0, 40) : DEFAULT_PREFERENCES.name;
+  const lastName =
+    typeof stored.lastName === 'string' ? stored.lastName.slice(0, 40) : DEFAULT_PREFERENCES.lastName;
   const level: Level = stored.level === 'CM2' ? 'CM2' : 'CM1';
   const trimester = ALL_TRIMESTERS.includes(stored.trimester as Trimester)
     ? (stored.trimester as Trimester)
@@ -68,6 +72,7 @@ export function parsePreferences(raw: string | null): Preferences {
 
   return {
     name,
+    lastName,
     level,
     trimester,
     subject,

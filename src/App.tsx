@@ -1,10 +1,19 @@
 import { useEffect, useState } from 'react';
-import { subjectOf } from './types';
-import type { Domain } from './types';
+import { pupilKey, subjectOf, SUBJECT_DOMAINS } from './types';
+import type { Domain, Pupil } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
 import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
 import { loadPreferences, savePreferences } from './lib/preferences';
-import { loadResults, recordSession, type DomainResult, type SessionResult } from './lib/results';
+import {
+  forgetAllResults,
+  forgetPupil,
+  loadResults,
+  recordSession,
+  summariseByDomain,
+  weakestDomains,
+  type DomainResult,
+  type SessionResult,
+} from './lib/results';
 import { isAnswerCorrect, worksheetScore } from './lib/worksheet';
 import { HomeScreen, type StartOptions } from './components/HomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
@@ -62,6 +71,7 @@ export function App() {
     if (!config || domains.every((entry) => entry.total === 0)) return;
     const session: SessionResult = {
       id: `${Date.now()}-${Math.round(Math.random() * 1e6)}`,
+      pupil: { firstName: config.name, lastName: config.lastName },
       at: new Date().toISOString(),
       level: config.level,
       trimester: config.trimester,
@@ -76,6 +86,7 @@ export function App() {
     const seed = Date.now();
     savePreferences({
       name: options.name,
+      lastName: options.lastName,
       level: options.level,
       trimester: options.trimester,
       subject: options.subject,
@@ -86,6 +97,18 @@ export function App() {
     setIndex(0);
     setScore(0);
     setPerDomain({});
+
+    // La révision ciblée choisit elle-même les notions : les plus fragiles de
+    // cet élève, dans la matière demandée. Un élève qui n'a encore rien fait
+    // travaille simplement toute la matière.
+    const pupil: Pupil = { firstName: options.name, lastName: options.lastName };
+    const own = results.filter((entry) => pupilKey(entry.pupil) === pupilKey(pupil));
+    const domains =
+      options.activity === 'revision'
+        ? own.length > 0
+          ? weakestDomains(summariseByDomain(own), options.subject, 2)
+          : [...SUBJECT_DOMAINS[options.subject]]
+        : options.domains;
 
     if (options.activity === 'posees') {
       setWorksheet(
@@ -102,7 +125,7 @@ export function App() {
 
     setSession(
       buildSession({
-        domains: options.domains,
+        domains,
         level: options.level,
         trimester: options.trimester,
         seed,
@@ -171,13 +194,11 @@ export function App() {
   const goHome = () => setScreen('home');
 
   if (teacherView) {
-    const shown = config ?? preferences;
     return (
       <TeacherScreen
-        pupilName={shown.name}
-        level={shown.level}
-        trimester={shown.trimester}
         sessions={results}
+        onForgetPupil={(key) => setResults(forgetPupil(key))}
+        onForgetAll={() => setResults(forgetAllResults())}
         onBack={() => {
           window.location.hash = '';
           setTeacherView(false);

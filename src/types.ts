@@ -1,5 +1,36 @@
 export type Level = 'CM1' | 'CM2';
 
+/**
+ * Un élève. Le nom de famille reste facultatif : dans une famille le prénom
+ * suffit, dans une classe de vingt-quatre avec deux Léa il ne suffit plus.
+ */
+export interface Pupil {
+  firstName: string;
+  lastName: string;
+}
+
+/** Ce qui identifie un élève : insensible aux accents, à la casse et aux
+ *  espaces en trop, pour que « Léa  MARTIN » et « léa martin » soient le même
+ *  enfant et non deux dossiers. */
+export function pupilKey(pupil: Pupil): string {
+  return [pupil.firstName, pupil.lastName]
+    .map((part) =>
+      part
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, ' ')
+    )
+    .join(' ')
+    .trim();
+}
+
+export function pupilLabel(pupil: Pupil): string {
+  const label = [pupil.firstName.trim(), pupil.lastName.trim()].filter(Boolean).join(' ');
+  return label || 'Élève sans nom';
+}
+
 /** Moment de l'année scolaire. La progression est cumulative : le trimestre 3
  *  révise aussi les notions vues aux trimestres 1 et 2. */
 export type Trimester = 1 | 2 | 3;
@@ -21,19 +52,27 @@ export type Subject = 'francais' | 'maths';
  * du bout du doigt ; une opération posée s'écrit à la main, en colonnes, et
  * laisse une trace que la maîtresse pourra lire à la correction.
  */
-export type Activity = 'questions' | 'posees';
+export type Activity = 'questions' | 'posees' | 'revision';
 
-export const ALL_ACTIVITIES: Activity[] = ['questions', 'posees'];
+export const ALL_ACTIVITIES: Activity[] = ['questions', 'posees', 'revision'];
 
 export const ACTIVITY_LABELS: Record<Activity, string> = {
   questions: 'Questions',
   posees: 'Opérations posées',
+  revision: 'Révision ciblée',
 };
 
-/** Poser une opération n'a de sens qu'en maths. */
+export const ACTIVITY_HINTS: Record<Activity, string> = {
+  questions: 'Toutes les notions choisies, à parts égales.',
+  posees: "L'élève écrit l'opération à la main, au doigt ou au stylet. La séance produit un PDF que la maîtresse peut corriger.",
+  revision: 'Les notions les plus fragiles de cet élève, pour rattraper le retard.',
+};
+
+/** Poser une opération n'a de sens qu'en maths. La révision ciblée existe
+ *  dans les deux matières, mais ne les mélange pas davantage que le reste. */
 export const SUBJECT_ACTIVITIES: Record<Subject, Activity[]> = {
-  francais: ['questions'],
-  maths: ['questions', 'posees'],
+  francais: ['questions', 'revision'],
+  maths: ['questions', 'posees', 'revision'],
 };
 
 /** Une notion travaillée à l'intérieur d'une matière. */

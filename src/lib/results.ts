@@ -1,5 +1,5 @@
-import { ALL_DOMAINS, subjectOf } from '../types';
-import type { Activity, Domain, Level, Subject, Trimester } from '../types';
+import { ALL_DOMAINS, pupilKey, subjectOf } from '../types';
+import type { Activity, Domain, Level, Pupil, Subject, Trimester } from '../types';
 
 /** Ce qu'une séance a produit, notion par notion. */
 export interface DomainResult {
@@ -10,6 +10,7 @@ export interface DomainResult {
 
 export interface SessionResult {
   id: string;
+  pupil: Pupil;
   /** Date de fin de séance, au format ISO. */
   at: string;
   level: Level;
@@ -165,10 +166,10 @@ export function parseResults(raw: string | null): SessionResult[] {
     return [];
   }
   if (!Array.isArray(parsed)) return [];
-  return parsed.filter((item): item is SessionResult => {
-    if (typeof item !== 'object' || item === null) return false;
+  return parsed.flatMap((item): SessionResult[] => {
+    if (typeof item !== 'object' || item === null) return [];
     const session = item as Record<string, unknown>;
-    return (
+    const valid =
       typeof session.id === 'string' &&
       typeof session.at === 'string' &&
       !Number.isNaN(new Date(session.at).getTime()) &&
@@ -176,9 +177,103 @@ export function parseResults(raw: string | null): SessionResult[] {
       [1, 2, 3].includes(session.trimester as number) &&
       (session.subject === 'francais' || session.subject === 'maths') &&
       Array.isArray(session.domains) &&
-      session.domains.every(isDomainResult)
-    );
+      session.domains.every(isDomainResult);
+    if (!valid) return [];
+    // Les séances écrites avant que l'application ne distingue les élèves
+    // n'ont pas de nom : elles rejoignent un dossier « sans nom » plutôt que
+    // d'être jetées.
+    const stored = session.pupil as Partial<Pupil> | undefined;
+    const pupil: Pupil = {
+      firstName: typeof stored?.firstName === 'string' ? stored.firstName : '',
+      lastName: typeof stored?.lastName === 'string' ? stored.lastName : '',
+    };
+    return [{ ...(session as unknown as SessionResult), pupil }];
   });
+}
+
+// --- Les élèves --------------------------------------------------------------
+
+export interface PupilFolder {
+  key: string;
+  pupil: Pupil;
+  sessions: SessionResult[];
+  /** Date de la séance la plus récente. */
+  lastAt: string;
+}
+
+/** Un dossier par élève, le plus récemment actif en premier. */
+export function pupilFolders(sessions: SessionResult[]): PupilFolder[] {
+  const byKey = new Map<string, PupilFolder>();
+  sessions.forEach((session) => {
+    const key = pupilKey(session.pupil);
+    const folder = byKey.get(key);
+    if (folder) {
+      folder.sessions.push(session);
+      if (session.at > folder.lastAt) folder.lastAt = session.at;
+    } else {
+      byKey.set(key, { key, pupil: session.pupil, sessions: [session], lastAt: session.at });
+    }
+  });
+  return [...byKey.values()].sort((a, b) => b.lastAt.localeCompare(a.lastAt));
+}
+
+// --- L'année scolaire --------------------------------------------------------
+
+/** L'année scolaire d'une date : celle qui commence en septembre. Une séance
+ *  de juin 2027 appartient à l'année 2026-2027, pas à 2027-2028. */
+export function schoolYearOf(iso: string): number {
+  const date = new Date(iso);
+  // getMonth() compte à partir de zéro : septembre vaut 8. Le mois d'août
+  // reste rattaché à l'année qui s'achève.
+  return date.getMonth() >= 8 ? date.getFullYear() : date.getFullYear() - 1;
+}
+
+export function schoolYearLabel(year: number): string {
+  return `${year}-${year + 1}`;
+}
+
+export function sessionsInSchoolYear(sessions: SessionResult[], year: number): SessionResult[] {
+  return sessions.filter((session) => schoolYearOf(session.at) === year);
+}
+
+// --- Acquis et révisions -----------------------------------------------------
+
+export interface YearOutlook {
+  /** Notions tenues : niveau satisfaisant ou très bon. */
+  acquired: DomainSummary[];
+  /** Notions à retravailler : niveau insuffisant ou fragile. */
+  toRevise: DomainSummary[];
+  /** Notions sur lesquelles l'application ne se prononce pas encore. */
+  untested: DomainSummary[];
+}
+
+export function yearOutlook(summaries: DomainSummary[]): YearOutlook {
+  return {
+    acquired: summaries.filter((s) => s.mastery !== null && s.mastery >= 3),
+    toRevise: summaries.filter((s) => s.mastery !== null && s.mastery <= 2),
+    untested: summaries.filter((s) => s.mastery === null),
+  };
+}
+
+/**
+ * Les notions d'une matière sur lesquelles l'élève est le plus en difficulté,
+ * de la plus fragile à la moins fragile.
+ *
+ * Une notion jamais travaillée passe devant une notion réussie : ne pas savoir
+ * si un élève tient une notion est une lacune au même titre que de savoir
+ * qu'il ne la tient pas.
+ */
+export function weakestDomains(
+  summaries: DomainSummary[],
+  subject: Subject,
+  count: number
+): Domain[] {
+  const rank = (summary: DomainSummary) => (summary.ratio === null ? 0.5 : summary.ratio);
+  return summaries
+    .filter((summary) => summary.subject === subject)
+    .sort((a, b) => rank(a) - rank(b) || a.domain.localeCompare(b.domain))
+    .slice(0, Math.max(1, count))
+    .map((summary) => summary.domain);
 }
 
 export function loadResults(): SessionResult[] {
@@ -201,4 +296,17 @@ export function recordSession(session: SessionResult): SessionResult[] {
   const next = [...loadResults(), session];
   saveResults(next);
   return next.slice(-MAX_SESSIONS);
+}
+
+/** Efface le dossier d'un élève, et lui seul. */
+export function forgetPupil(key: string): SessionResult[] {
+  const kept = loadResults().filter((session) => pupilKey(session.pupil) !== key);
+  saveResults(kept);
+  return kept;
+}
+
+/** Efface toutes les séances de tous les élèves. */
+export function forgetAllResults(): SessionResult[] {
+  saveResults([]);
+  return [];
 }

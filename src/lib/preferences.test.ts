@@ -10,6 +10,7 @@ describe('parsePreferences', () => {
   it('relit une sélection valide telle quelle', () => {
     const stored = JSON.stringify({
       name: 'Nolhan',
+      lastName: 'Martin',
       level: 'CM2',
       trimester: 3,
       subject: 'maths',
@@ -17,6 +18,7 @@ describe('parsePreferences', () => {
     });
     expect(parsePreferences(stored)).toEqual({
       name: 'Nolhan',
+      lastName: 'Martin',
       level: 'CM2',
       trimester: 3,
       subject: 'maths',
@@ -75,8 +77,9 @@ describe('parsePreferences', () => {
     expect(parsePreferences(stored).activity).toBe('questions');
   });
 
-  it('borne la longueur du prénom', () => {
-    const stored = JSON.stringify({ name: 'a'.repeat(200) });
+  it('borne la longueur du prénom et du nom', () => {
+    const stored = JSON.stringify({ name: 'a'.repeat(200), lastName: 'b'.repeat(200) });
     expect(parsePreferences(stored).name).toHaveLength(40);
+    expect(parsePreferences(stored).lastName).toHaveLength(40);
   });
 });

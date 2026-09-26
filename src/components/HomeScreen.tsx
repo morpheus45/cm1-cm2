@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 import type { Preferences } from '../lib/preferences';
 import {
+  ACTIVITY_HINTS,
   ACTIVITY_LABELS,
   ALL_SUBJECTS,
   ALL_TRIMESTERS,
@@ -15,6 +16,7 @@ import {
 
 export interface StartOptions {
   name: string;
+  lastName: string;
   domains: Domain[];
   level: Level;
   trimester: Trimester;
@@ -29,6 +31,7 @@ interface HomeScreenProps {
 
 export function HomeScreen({ initial, onStart }: HomeScreenProps) {
   const [name, setName] = useState(initial.name);
+  const [lastName, setLastName] = useState(initial.lastName);
   const [level, setLevel] = useState<Level>(initial.level);
   const [trimester, setTrimester] = useState<Trimester>(initial.trimester);
   const [subject, setSubject] = useState<Subject>(initial.subject);
@@ -52,22 +55,37 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
     setDomains((prev) => (prev.includes(domain) ? prev.filter((d) => d !== domain) : [...prev, domain]));
   };
 
-  // Poser des opérations ne demande aucune notion : l'exercice est le même.
-  const canStart = name.trim().length > 0 && (posingOperations || domains.length > 0);
+  // Poser des opérations ne demande aucune notion, et la révision ciblée
+  // choisit les siennes toute seule.
+  const canStart =
+    name.trim().length > 0 && (posingOperations || activity === 'revision' || domains.length > 0);
 
   return (
     <div className="min-h-screen flex flex-col items-center gap-6 bg-sky-50 px-4 py-8">
       <h1 className="text-3xl font-bold text-slate-700">Mes exercices</h1>
 
-      <label className="w-full max-w-sm flex flex-col gap-2">
-        <span className="text-lg text-slate-600">Ton prénom</span>
-        <input
-          className="rounded-xl border-2 border-sky-200 px-4 py-3 text-xl"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Écris ton prénom"
-        />
-      </label>
+      <div className="w-full max-w-sm flex flex-col gap-2">
+        <label className="flex flex-col gap-2">
+          <span className="text-lg text-slate-600">Ton prénom</span>
+          <input
+            className="rounded-xl border-2 border-sky-200 px-4 py-3 text-xl"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Écris ton prénom"
+          />
+        </label>
+        <label className="flex flex-col gap-2">
+          <span className="text-lg text-slate-600">
+            Ton nom <span className="text-base text-slate-400">(si tu en as besoin)</span>
+          </span>
+          <input
+            className="rounded-xl border-2 border-sky-200 px-4 py-3 text-xl"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            placeholder="Nom de famille"
+          />
+        </label>
+      </div>
 
       <div className="w-full max-w-sm flex flex-col gap-2">
         <span className="text-lg text-slate-600">Niveau</span>
@@ -151,16 +169,15 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
               </button>
             ))}
           </div>
-          {posingOperations && (
-            <p className="text-sm text-slate-400">
-              L'élève écrit l'opération à la main, au doigt ou au stylet. La séance produit
-              un PDF que la maîtresse peut corriger.
-            </p>
-          )}
+          <p className="text-sm text-slate-400">{ACTIVITY_HINTS[activity]}</p>
         </div>
       )}
 
-      <div className={`w-full max-w-sm flex-col gap-2 ${posingOperations ? 'hidden' : 'flex'}`}>
+      <div
+        className={`w-full max-w-sm flex-col gap-2 ${
+          posingOperations || activity === 'revision' ? 'hidden' : 'flex'
+        }`}
+      >
         <span className="text-lg text-slate-600">
           Ce que tu travailles en {SUBJECT_LABELS[subject].toLowerCase()}
         </span>
@@ -185,7 +202,17 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
       <button
         type="button"
         disabled={!canStart}
-        onClick={() => onStart({ name: name.trim(), domains, level, trimester, subject, activity })}
+        onClick={() =>
+          onStart({
+            name: name.trim(),
+            lastName: lastName.trim(),
+            domains,
+            level,
+            trimester,
+            subject,
+            activity,
+          })
+        }
         className="w-full max-w-sm rounded-xl bg-orange-400 disabled:bg-slate-300 text-white text-xl font-bold py-4"
       >
         Commencer
@@ -193,9 +220,9 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
 
       <a
         href="#maitresse"
-        className="text-sm text-slate-400 underline underline-offset-4 pb-2"
+        className="w-full max-w-sm rounded-xl border-2 border-violet-200 bg-white py-3 text-center text-lg font-semibold text-violet-600"
       >
-        Espace maîtresse
+        Accès maîtresse
       </a>
     </div>
   );

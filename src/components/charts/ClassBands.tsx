@@ -21,7 +21,7 @@ export interface ClassBand {
  * exacte dans le groupe, qui n'aurait aucun sens : deux élèves du même niveau
  * ne sont pas classés entre eux.
  */
-export function ClassBands({ bands }: { bands: ClassBand[] }) {
+export function ClassBands({ bands, pupilCount }: { bands: ClassBand[]; pupilCount: number }) {
   if (bands.length === 0) {
     return (
       <p className="text-sm text-slate-400 py-8 text-center">
@@ -91,7 +91,10 @@ export function ClassBands({ bands }: { bands: ClassBand[] }) {
             {level} · {MASTERY_SHORT[level]}
           </span>
         ))}
-        <span className="w-full text-xs text-slate-400">Chiffres en % de la classe.</span>
+        <span className="w-full text-xs text-slate-400">
+          Chiffres en % des {pupilCount} élèves évalués. Sur un petit effectif, un
+          pourcentage pèse lourd : à deux élèves, un seul fait 50 %.
+        </span>
       </div>
     </div>
   );
