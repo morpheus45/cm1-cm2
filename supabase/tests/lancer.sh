@@ -45,9 +45,11 @@ alter default privileges in schema public grant all on tables to anon, authentic
 alter default privileges in schema public grant execute on functions to anon, authenticated;
 SQL
 
-echo "Migration, première exécution…"
-"${PSQL[@]}" -f 001_classes_eleves_seances.sql 2>&1 | grep -v NOTICE || true
-echo "Migration, seconde exécution (elle doit être rejouable)…"
-"${PSQL[@]}" -f 001_classes_eleves_seances.sql 2>&1 | grep -v NOTICE || true
+for passe in "première" "seconde"; do
+  echo "Migrations, $passe exécution (elles doivent être rejouables)…"
+  for fichier in 0*.sql; do
+    "${PSQL[@]}" -f "$fichier" 2>&1 | grep -v NOTICE || true
+  done
+done
 echo "Règles d'accès…"
 "${PSQL[@]}" -f tests/securite.sql

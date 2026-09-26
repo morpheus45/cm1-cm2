@@ -13,6 +13,8 @@ import {
 } from '../lib/results';
 import type { WorksheetStatus } from '../lib/teacherCloud';
 import { formatFrenchDate } from '../lib/worksheetPdf';
+import { NOTION_COLORS } from '../theme';
+import { RainbowArc } from './ecole/RainbowArc';
 import { MasteryScale } from './charts/MasteryScale';
 import { RadarProfile } from './charts/RadarProfile';
 import { ProgressLines } from './charts/ProgressLines';
@@ -44,9 +46,9 @@ const NO_WORKSHEETS: Record<string, WorksheetStatus> = {};
 
 function Card({ title, hint, children }: { title: string; hint?: string; children: React.ReactNode }) {
   return (
-    <section className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-900/5">
-      <h2 className="text-lg font-bold text-slate-800">{title}</h2>
-      {hint && <p className="text-sm text-slate-500 mt-0.5">{hint}</p>}
+    <section className="rounded-2xl bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_12px_24px_-16px_rgba(30,42,74,0.4)] ring-1 ring-encre/10">
+      <h2 className="text-lg font-bold text-encre">{title}</h2>
+      {hint && <p className="mt-0.5 text-sm text-encre-douce">{hint}</p>}
       <div className="mt-4">{children}</div>
     </section>
   );
@@ -61,7 +63,7 @@ function DangerButton({ label, confirm, onConfirm }: { label: string; confirm: s
       <button
         type="button"
         onClick={() => setArmed(true)}
-        className="w-full rounded-xl border-2 border-red-200 bg-white py-3 text-sm font-semibold text-red-700"
+        className="w-full rounded-xl border-2 border-[#B91C3B]/40 bg-white py-3 text-sm font-bold text-[#B91C3B]"
       >
         {label}
       </button>
@@ -69,12 +71,12 @@ function DangerButton({ label, confirm, onConfirm }: { label: string; confirm: s
   }
   return (
     <div className="flex flex-col gap-2">
-      <p className="text-sm text-red-700">{confirm}</p>
+      <p className="text-sm font-bold text-[#B91C3B]">{confirm}</p>
       <div className="flex gap-2">
         <button
           type="button"
           onClick={() => setArmed(false)}
-          className="flex-1 rounded-xl border-2 border-slate-200 bg-white py-3 text-sm font-semibold text-slate-600"
+          className="etiquette flex-1 py-3 text-sm"
         >
           Annuler
         </button>
@@ -84,7 +86,7 @@ function DangerButton({ label, confirm, onConfirm }: { label: string; confirm: s
             setArmed(false);
             onConfirm();
           }}
-          className="flex-1 rounded-xl bg-red-600 py-3 text-sm font-bold text-white"
+          className="flex-1 rounded-xl bg-[#B91C3B] py-3 text-sm font-bold text-white"
         >
           Effacer
         </button>
@@ -180,13 +182,13 @@ export function TeacherScreen({
   const header = (
     <header className="flex items-start justify-between gap-3">
       <div className="min-w-0">
-        <p className="text-xs font-bold uppercase tracking-wider text-violet-600">
-          Accès maîtresse
+        <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-encre-douce">
+          <RainbowArc className="w-8" /> École Arc-en-Ciel · Espace maîtresse
         </p>
-        <h1 className="text-2xl font-bold text-slate-800 truncate">
+        <h1 className="truncate text-2xl font-bold text-encre">
           {folder ? pupilLabel(folder.pupil) : 'Mes élèves'}
         </h1>
-        <p className="text-sm text-slate-500">
+        <p className="text-sm text-encre-douce">
           {folder
             ? `${yearSessions.length} séance${yearSessions.length > 1 ? 's' : ''}${
                 shownYear !== null ? ` · année ${schoolYearLabel(shownYear)}` : ''
@@ -200,7 +202,7 @@ export function TeacherScreen({
           if (folder && folders.length > 1) setOpenKey(null);
           else onBack();
         }}
-        className="shrink-0 rounded-xl border-2 border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600"
+        className="etiquette shrink-0 px-4 py-2 text-sm"
       >
         {folder && folders.length > 1 ? 'Élèves' : 'Retour'}
       </button>
@@ -209,11 +211,11 @@ export function TeacherScreen({
 
   if (folders.length === 0) {
     return (
-      <div className="min-h-screen bg-slate-50 px-4 py-6">
-        <div className="max-w-lg mx-auto flex flex-col gap-4">
+      <div className="min-h-screen px-4 py-5">
+        <div className="mx-auto flex max-w-lg flex-col gap-4">
           {header}
           {banner}
-          <div className="bg-white rounded-2xl p-6 text-center text-slate-500 shadow-sm ring-1 ring-slate-900/5">
+          <div className="cahier rounded-2xl p-6 pl-12 text-center text-encre-douce shadow-[0_12px_24px_-16px_rgba(30,42,74,0.4)]">
             Aucune séance enregistrée. Les dossiers apparaîtront dès la première
             séance terminée.
           </div>
@@ -224,8 +226,8 @@ export function TeacherScreen({
 
   if (!folder) {
     return (
-      <div className="min-h-screen bg-slate-50 px-4 py-6">
-        <div className="max-w-lg mx-auto flex flex-col gap-4">
+      <div className="min-h-screen px-4 py-5">
+        <div className="mx-auto flex max-w-lg flex-col gap-4">
           {header}
           {banner}
           <PupilList folders={folders} onOpen={setOpenKey} toCorrect={toCorrect} />
@@ -253,8 +255,8 @@ export function TeacherScreen({
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 px-4 py-6">
-      <div className="max-w-lg mx-auto flex flex-col gap-4">
+    <div className="min-h-screen px-4 py-5">
+      <div className="mx-auto flex max-w-lg flex-col gap-4">
         {header}
 
         {years.length > 1 && (
@@ -264,11 +266,8 @@ export function TeacherScreen({
                 key={candidate}
                 type="button"
                 onClick={() => setYear(candidate)}
-                className={`flex-1 rounded-xl py-2 text-sm font-semibold border-2 ${
-                  candidate === shownYear
-                    ? 'bg-violet-500 text-white border-violet-500'
-                    : 'bg-white border-violet-200 text-slate-600'
-                }`}
+                aria-pressed={candidate === shownYear}
+                className={`etiquette flex-1 py-2 text-sm ${candidate === shownYear ? '!bg-encre !text-white' : ''}`}
               >
                 {schoolYearLabel(candidate)}
               </button>
@@ -290,22 +289,25 @@ export function TeacherScreen({
                     <button
                       type="button"
                       onClick={() => onCorrect(session)}
-                      className="w-full flex items-center justify-between gap-3 rounded-xl border-2 border-slate-100 px-4 py-3 text-left"
+                      className="etiquette flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
                     >
                       <span>
-                        <span className="block font-semibold text-slate-800">
+                        <span className="block font-bold text-encre">
                           {formatFrenchDate(session.at)}
                         </span>
                         {score && (
-                          <span className="block text-xs text-slate-500">
+                          <span className="block text-xs font-normal text-encre-douce">
                             {score.correct} / {score.total} juste{score.correct > 1 ? 's' : ''}
                           </span>
                         )}
                       </span>
                       <span
-                        className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${
-                          correctedAt ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
-                        }`}
+                        className="shrink-0 rounded-full px-3 py-1 text-xs font-bold"
+                        style={
+                          correctedAt
+                            ? { background: NOTION_COLORS.numeration.tint, color: NOTION_COLORS.numeration.deep }
+                            : { background: NOTION_COLORS.accords.tint, color: NOTION_COLORS.accords.deep }
+                        }
                       >
                         {correctedAt ? `Corrigée le ${formatFrenchDate(correctedAt)}` : 'À corriger'}
                       </span>
@@ -350,7 +352,7 @@ export function TeacherScreen({
 
         <Card title="Données" hint={`Le dossier de ${pupilLabel(folder.pupil)}.`}>
           <div className="flex flex-col gap-3">
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-encre-douce">
               {folder.sessions.length} séance{folder.sessions.length > 1 ? 's' : ''} enregistrée
               {folder.sessions.length > 1 ? 's' : ''} {inClass ? 'dans la base de la classe' : 'sur cet appareil'}.
             </p>
@@ -373,7 +375,7 @@ export function TeacherScreen({
           </div>
         </Card>
 
-        <p className="text-xs text-slate-400 text-center pt-1">
+        <p className="pt-1 text-center text-xs text-encre-pale">
           Un niveau n'est annoncé qu'à partir de huit exercices dans la notion.
         </p>
       </div>

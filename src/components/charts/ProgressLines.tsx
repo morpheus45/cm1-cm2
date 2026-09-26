@@ -47,7 +47,7 @@ export function ProgressLines({ series }: { series: ProgressSeries[] }) {
 
   if (shown.length === 0 || times.length < 2) {
     return (
-      <p className="text-sm text-slate-400 py-8 text-center">
+      <p className="text-sm text-encre-pale py-8 text-center">
         La courbe apparaîtra après deux séances.
       </p>
     );
@@ -82,7 +82,7 @@ export function ProgressLines({ series }: { series: ProgressSeries[] }) {
         ))}
         <line x1={LEFT} y1={BOTTOM} x2={RIGHT} y2={BOTTOM} stroke="#c3c2b7" strokeWidth="1" />
 
-        <g fontSize="11" fill="#898781" textAnchor="end">
+        <g fontSize="11" fill="#67665f" textAnchor="end">
           {[
             [1, '100%'],
             [0.75, '75'],
@@ -96,7 +96,7 @@ export function ProgressLines({ series }: { series: ProgressSeries[] }) {
           ))}
         </g>
 
-        <g fontSize="11" fill="#898781">
+        <g fontSize="11" fill="#67665f">
           <text x={LEFT + 12} y={BOTTOM + 20} textAnchor="middle">
             {shortDate(firstIso)}
           </text>
@@ -149,7 +149,7 @@ export function ProgressLines({ series }: { series: ProgressSeries[] }) {
         })}
       </svg>
 
-      <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 justify-center">
+      <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-encre-douce justify-center">
         {shown.map((entry, index) => (
           <span key={entry.domain} className="flex items-center gap-1.5">
             <span className="w-3 h-3 rounded-sm" style={{ background: SERIES_COLORS[index] }} />

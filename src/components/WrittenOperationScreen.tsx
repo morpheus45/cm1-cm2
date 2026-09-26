@@ -3,6 +3,8 @@ import { ProgressBar } from './ProgressBar';
 import { WritingCanvas } from './WritingCanvas';
 import { NumberPad } from './NumberPad';
 import { isAnswerCorrect, type Stroke, type WorksheetOperation } from '../lib/worksheet';
+import { NOTION_COLORS } from '../theme';
+import { Intercalaire } from './ecole/Intercalaire';
 
 interface WrittenOperationScreenProps {
   operation: WorksheetOperation;
@@ -33,24 +35,25 @@ export function WrittenOperationScreen({
   const correct = isAnswerCorrect(given, operation.expected);
 
   return (
-    <div className="min-h-screen flex flex-col gap-4 bg-sky-50 px-4 py-6 max-w-lg mx-auto">
-      <div className="flex items-center gap-4">
-        <button
-          type="button"
-          onClick={onQuit}
-          className="shrink-0 rounded-xl border-2 border-slate-200 bg-white px-4 py-2 text-base font-medium text-slate-500"
-        >
+    <div className="mx-auto flex min-h-screen max-w-lg flex-col gap-4 px-4 py-5">
+      <div className="flex items-start gap-3">
+        <button type="button" onClick={onQuit} className="etiquette shrink-0 px-3 py-1.5 text-sm">
           Quitter
         </button>
         <div className="flex-1">
-          <ProgressBar current={operationNumber} total={totalOperations} label="Opération" />
+          <ProgressBar
+            current={operationNumber}
+            total={totalOperations}
+            label="Opération"
+            colors={Array(totalOperations).fill(NOTION_COLORS.calcul.band)}
+          />
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-1">
-        <p className="text-base font-semibold text-violet-500">🔢 Maths · Opération posée</p>
-        <p className="text-lg text-slate-500">Pose l'opération, puis écris le résultat</p>
-        <p className="text-3xl font-bold text-slate-700">{operation.statement}</p>
+      <div className="flex flex-col items-center gap-2 text-center">
+        <Intercalaire domain="calcul" prefix="Maths" />
+        <p className="text-lg font-bold text-encre-douce">Pose l'opération, puis écris le résultat</p>
+        <p className="text-4xl font-bold text-encre">{operation.statement}</p>
       </div>
 
       <WritingCanvas strokes={strokes} onStrokesChange={checked ? undefined : setStrokes} readOnly={checked} />
@@ -60,15 +63,15 @@ export function WrittenOperationScreen({
           type="button"
           disabled={checked || strokes.length === 0}
           onClick={() => setStrokes(strokes.slice(0, -1))}
-          className="flex-1 rounded-xl border-2 border-slate-200 bg-white py-2 text-base font-medium text-slate-600 disabled:opacity-40"
+          className="etiquette flex-1 py-2 text-base"
         >
-          Annuler le trait
+          ↶ Annuler le trait
         </button>
         <button
           type="button"
           disabled={checked || strokes.length === 0}
           onClick={() => setStrokes([])}
-          className="flex-1 rounded-xl border-2 border-slate-200 bg-white py-2 text-base font-medium text-slate-600 disabled:opacity-40"
+          className="etiquette flex-1 py-2 text-base"
         >
           Tout effacer
         </button>
@@ -81,24 +84,19 @@ export function WrittenOperationScreen({
           type="button"
           disabled={given === ''}
           onClick={() => setChecked(true)}
-          className="rounded-xl bg-orange-400 disabled:bg-slate-300 text-white text-xl font-bold py-4"
+          className="bouton-encre py-4 text-xl"
         >
           Valider
         </button>
       ) : (
         <div className="flex flex-col gap-3">
           <p
-            className={`text-center text-xl font-semibold ${
-              correct ? 'text-emerald-600' : 'text-amber-600'
-            }`}
+            className="text-center text-xl font-bold"
+            style={{ color: correct ? NOTION_COLORS.numeration.deep : NOTION_COLORS.accords.deep }}
           >
             {correct ? 'Bravo, c’est juste !' : `La bonne réponse est ${operation.expected}.`}
           </p>
-          <button
-            type="button"
-            onClick={() => onValidate(given, strokes)}
-            className="rounded-xl bg-orange-400 text-white text-xl font-bold py-4"
-          >
+          <button type="button" onClick={() => onValidate(given, strokes)} className="bouton-encre py-4 text-xl">
             Continuer
           </button>
         </div>

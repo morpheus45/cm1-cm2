@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import { NOTION_COLORS, SUBJECT_COLORS } from '../theme';
+import { Gommette } from './ecole/Gommette';
+import { RainbowArc } from './ecole/RainbowArc';
+import { SchoolTitle } from './ecole/SchoolTitle';
 import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 import type { Preferences } from '../lib/preferences';
 import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cloud';
@@ -10,7 +14,6 @@ import {
   DOMAIN_LABELS,
   SUBJECT_ACTIVITIES,
   SUBJECT_DOMAINS,
-  SUBJECT_EMOJI,
   SUBJECT_LABELS,
   TRIMESTER_LABELS,
 } from '../types';
@@ -67,190 +70,224 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
     name.trim().length > 0 && (posingOperations || activity === 'revision' || domains.length > 0);
 
   return (
-    <div className="min-h-screen flex flex-col items-center gap-6 bg-sky-50 px-4 py-8">
-      <h1 className="text-3xl font-bold text-slate-700">Mes exercices</h1>
+    <div className="min-h-screen px-4 pb-12 pt-3">
+      <div className="mx-auto flex max-w-md flex-col gap-5">
+        <SchoolTitle subtitle="Mon cahier d'exercices" />
 
-      <div className="w-full max-w-sm flex flex-col gap-2">
-        <label className="flex flex-col gap-2">
-          <span className="text-lg text-slate-600">Ton prénom</span>
-          <input
-            className="rounded-xl border-2 border-sky-200 px-4 py-3 text-xl"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Écris ton prénom"
-          />
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-lg text-slate-600">
-            Ton nom <span className="text-base text-slate-400">(si tu en as besoin)</span>
-          </span>
-          <input
-            className="rounded-xl border-2 border-sky-200 px-4 py-3 text-xl"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            placeholder="Nom de famille"
-          />
-        </label>
-        {cloudAvailable && (
-          <label className="flex flex-col gap-2">
-            <span className="text-lg text-slate-600">
-              Code de la classe{' '}
-              <span className="text-base text-slate-400">(donné par ta maîtresse)</span>
-            </span>
+        <Etape numero={1} titre="Qui es-tu ?">
+          <Ligne label="Ton prénom">
             <input
-              className="rounded-xl border-2 border-sky-200 px-4 py-3 text-xl tracking-[0.3em] uppercase"
-              value={joinCode}
-              onChange={(e) => setJoinCode(normaliseJoinCode(e.target.value))}
-              placeholder="ABC123"
-              maxLength={6}
-              autoCapitalize="characters"
-              autoComplete="off"
+              className={champ}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Écris ton prénom"
+              autoComplete="given-name"
             />
-            {joinCode !== '' && !isValidJoinCode(joinCode) && (
-              <span className="text-sm text-amber-600">Le code fait six lettres ou chiffres.</span>
-            )}
-          </label>
-        )}
-      </div>
+          </Ligne>
+          <Ligne label="Ton nom" aide="si tu en as besoin">
+            <input
+              className={champ}
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              placeholder="Nom de famille"
+              autoComplete="family-name"
+            />
+          </Ligne>
+          {cloudAvailable && (
+            <Ligne label="Code de la classe" aide="donné par ta maîtresse">
+              <input
+                className={`${champ} uppercase tracking-[0.35em]`}
+                value={joinCode}
+                onChange={(e) => setJoinCode(normaliseJoinCode(e.target.value))}
+                placeholder="ABC123"
+                maxLength={6}
+                autoCapitalize="characters"
+                autoComplete="off"
+              />
+              {joinCode !== '' && !isValidJoinCode(joinCode) && (
+                <span className="text-sm font-bold text-[#B84A06]">Le code fait six lettres ou chiffres.</span>
+              )}
+            </Ligne>
+          )}
+        </Etape>
 
-      <div className="w-full max-w-sm flex flex-col gap-2">
-        <span className="text-lg text-slate-600">Niveau</span>
-        <div className="flex gap-3">
-          {(['CM1', 'CM2'] as Level[]).map((lvl) => (
-            <button
-              key={lvl}
-              type="button"
-              onClick={() => setLevel(lvl)}
-              className={`flex-1 rounded-xl py-3 text-xl font-semibold border-2 ${
-                level === lvl ? 'bg-sky-400 text-white border-sky-400' : 'bg-white border-sky-200 text-slate-600'
-              }`}
-            >
-              {lvl}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="w-full max-w-sm flex flex-col gap-2">
-        <span className="text-lg text-slate-600">Trimestre</span>
-        <div className="flex gap-3">
-          {ALL_TRIMESTERS.map((t) => (
-            <button
-              key={t}
-              type="button"
-              onClick={() => setTrimester(t)}
-              className={`flex-1 rounded-xl py-3 text-base font-semibold border-2 ${
-                trimester === t ? 'bg-sky-400 text-white border-sky-400' : 'bg-white border-sky-200 text-slate-600'
-              }`}
-            >
-              {TRIMESTER_LABELS[t]}
-            </button>
-          ))}
-        </div>
-        <p className="text-sm text-slate-400">
-          Seules les notions déjà vues en classe à ce moment de l'année sont proposées.
-        </p>
-      </div>
-
-      <div className="w-full max-w-sm flex flex-col gap-2">
-        <span className="text-lg text-slate-600">Matière</span>
-        <div className="flex gap-3">
-          {ALL_SUBJECTS.map((s) => (
-            <button
-              key={s}
-              type="button"
-              onClick={() => selectSubject(s)}
-              className={`flex-1 rounded-2xl py-5 text-xl font-bold border-2 ${
-                subject === s
-                  ? 'bg-violet-500 text-white border-violet-500'
-                  : 'bg-white border-violet-200 text-slate-600'
-              }`}
-            >
-              <span className="block text-3xl leading-none mb-1">{SUBJECT_EMOJI[s]}</span>
-              {SUBJECT_LABELS[s]}
-            </button>
-          ))}
-        </div>
-        <p className="text-sm text-slate-400">
-          Une séance ne mélange jamais le français et les maths.
-        </p>
-      </div>
-
-      {activities.length > 1 && (
-        <div className="w-full max-w-sm flex flex-col gap-2">
-          <span className="text-lg text-slate-600">Type de séance</span>
+        <Etape numero={2} titre="Ta classe">
           <div className="flex gap-3">
-            {activities.map((option) => (
-              <button
-                key={option}
-                type="button"
-                onClick={() => setActivity(option)}
-                className={`flex-1 rounded-xl py-3 text-base font-semibold border-2 ${
-                  activity === option
-                    ? 'bg-violet-500 text-white border-violet-500'
-                    : 'bg-white border-violet-200 text-slate-600'
-                }`}
-              >
-                {ACTIVITY_LABELS[option]}
-              </button>
+            {(['CM1', 'CM2'] as Level[]).map((lvl) => (
+              <Choix key={lvl} actif={level === lvl} onClick={() => setLevel(lvl)} className="flex-1 py-3 text-xl">
+                {lvl}
+              </Choix>
             ))}
           </div>
-          <p className="text-sm text-slate-400">{ACTIVITY_HINTS[activity]}</p>
-        </div>
-      )}
+          <div className="flex gap-2">
+            {ALL_TRIMESTERS.map((t) => (
+              <Choix key={t} actif={trimester === t} onClick={() => setTrimester(t)} className="flex-1 px-1 py-2 text-sm leading-tight">
+                {TRIMESTER_LABELS[t]}
+              </Choix>
+            ))}
+          </div>
+          <p className="text-sm text-encre-pale">
+            Seules les notions déjà vues en classe à ce moment de l'année sont proposées.
+          </p>
+        </Etape>
 
-      <div
-        className={`w-full max-w-sm flex-col gap-2 ${
-          posingOperations || activity === 'revision' ? 'hidden' : 'flex'
-        }`}
-      >
-        <span className="text-lg text-slate-600">
-          Ce que tu travailles en {SUBJECT_LABELS[subject].toLowerCase()}
-        </span>
-        <div className="flex flex-col gap-3">
-          {SUBJECT_DOMAINS[subject].map((domain) => (
-            <button
-              key={domain}
-              type="button"
-              onClick={() => toggleDomain(domain)}
-              className={`rounded-xl py-3 px-4 text-lg font-medium border-2 text-left ${
-                domains.includes(domain)
-                  ? 'bg-emerald-400 text-white border-emerald-400'
-                  : 'bg-white border-slate-200 text-slate-600'
-              }`}
-            >
-              {DOMAIN_LABELS[domain]}
-            </button>
-          ))}
-        </div>
+        <Etape numero={3} titre="Ta matière">
+          <div className="flex gap-3">
+            {ALL_SUBJECTS.map((s) => {
+              const actif = subject === s;
+              const colors = SUBJECT_COLORS[s];
+              return (
+                <button
+                  key={s}
+                  type="button"
+                  aria-pressed={actif}
+                  onClick={() => selectSubject(s)}
+                  className="etiquette relative flex flex-1 flex-col items-center gap-1 px-2 pb-3 pt-2 text-xl"
+                  style={actif ? { background: colors.tint, borderColor: colors.deep, boxShadow: `0 3px 0 ${colors.deep}` } : undefined}
+                >
+                  <RainbowArc domains={SUBJECT_DOMAINS[s]} className="w-24" />
+                  <span style={actif ? { color: colors.deep } : undefined}>{SUBJECT_LABELS[s]}</span>
+                  {actif && (
+                    <Gommette color={colors.deep} mark="coche" size={26} tilt={-8} className="absolute -right-2 -top-2" />
+                  )}
+                </button>
+              );
+            })}
+          </div>
+          <p className="text-sm text-encre-pale">
+            Une séance ne mélange jamais le français et les maths : on reste d'un seul côté de l'arc-en-ciel.
+          </p>
+        </Etape>
+
+        <Etape numero={4} titre="Ta séance">
+          {activities.length > 1 && (
+            <>
+              <div className="flex gap-2">
+                {activities.map((option) => (
+                  <Choix
+                    key={option}
+                    actif={activity === option}
+                    onClick={() => setActivity(option)}
+                    className="flex-1 px-1 py-2 text-sm leading-tight"
+                  >
+                    {ACTIVITY_LABELS[option]}
+                  </Choix>
+                ))}
+              </div>
+              <p className="text-sm text-encre-pale">{ACTIVITY_HINTS[activity]}</p>
+            </>
+          )}
+          <div className={`flex-col gap-2 ${posingOperations || activity === 'revision' ? 'hidden' : 'flex'}`}>
+            <span className="text-base font-bold text-encre-douce">
+              Ce que tu travailles en {SUBJECT_LABELS[subject].toLowerCase()}
+            </span>
+            {SUBJECT_DOMAINS[subject].map((domain) => {
+              const actif = domains.includes(domain);
+              const colors = NOTION_COLORS[domain];
+              return (
+                <button
+                  key={domain}
+                  type="button"
+                  aria-pressed={actif}
+                  onClick={() => toggleDomain(domain)}
+                  className="flex items-center justify-between gap-3 rounded-r-2xl rounded-l-md border-2 py-3 pl-4 pr-3 text-left text-lg font-bold"
+                  style={{
+                    borderLeftWidth: 10,
+                    borderColor: actif ? colors.deep : '#d9d4c8',
+                    borderLeftColor: colors.band,
+                    background: actif ? colors.tint : '#fffdf8',
+                    color: actif ? colors.deep : '#475272',
+                  }}
+                >
+                  {DOMAIN_LABELS[domain]}
+                  <Gommette color={colors.deep} mark={actif ? 'coche' : null} empty={!actif} size={26} />
+                </button>
+              );
+            })}
+          </div>
+        </Etape>
+
+        <button
+          type="button"
+          disabled={!canStart}
+          onClick={() =>
+            onStart({
+              name: name.trim(),
+              lastName: lastName.trim(),
+              joinCode: isValidJoinCode(joinCode) ? joinCode : '',
+              domains,
+              level,
+              trimester,
+              subject,
+              activity,
+            })
+          }
+          className="bouton-encre w-full py-4 text-xl"
+        >
+          Commencer ma séance
+        </button>
+
+        <a
+          href="#maitresse"
+          className="self-center rounded-full px-4 py-2 text-base font-bold text-encre-douce underline decoration-2 underline-offset-4"
+        >
+          Espace maîtresse
+        </a>
       </div>
-
-      <button
-        type="button"
-        disabled={!canStart}
-        onClick={() =>
-          onStart({
-            name: name.trim(),
-            lastName: lastName.trim(),
-            joinCode: isValidJoinCode(joinCode) ? joinCode : '',
-            domains,
-            level,
-            trimester,
-            subject,
-            activity,
-          })
-        }
-        className="w-full max-w-sm rounded-xl bg-orange-400 disabled:bg-slate-300 text-white text-xl font-bold py-4"
-      >
-        Commencer
-      </button>
-
-      <a
-        href="#maitresse"
-        className="w-full max-w-sm rounded-xl border-2 border-violet-200 bg-white py-3 text-center text-lg font-semibold text-violet-600"
-      >
-        Accès maîtresse
-      </a>
     </div>
+  );
+}
+
+/** Écrire son nom sur la ligne du cahier. */
+const champ =
+  'w-full border-0 border-b-2 border-dashed border-encre/40 bg-transparent px-1 pb-1 pt-0 text-2xl text-encre placeholder:text-encre-pale/60 focus:border-solid focus:border-encre focus:outline-none';
+
+/** Une consigne de la fiche : son numéro, son titre, puis ce qu'on remplit. */
+function Etape({ numero, titre, children }: { numero: number; titre: string; children: React.ReactNode }) {
+  return (
+    <section className="cahier flex flex-col gap-3 rounded-3xl py-5 pl-12 pr-5 shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]">
+      <h2 className="-ml-9 flex items-center gap-3 text-xl font-bold text-encre">
+        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-encre text-base text-white">
+          {numero}
+        </span>
+        {titre}
+      </h2>
+      {children}
+    </section>
+  );
+}
+
+function Ligne({ label, aide, children }: { label: string; aide?: string; children: React.ReactNode }) {
+  return (
+    <label className="flex flex-col gap-1">
+      <span className="text-base font-bold text-encre-douce">
+        {label} {aide && <span className="font-normal text-encre-pale">({aide})</span>}
+      </span>
+      {children}
+    </label>
+  );
+}
+
+/** Une étiquette à choisir : pleine d'encre quand elle est choisie. */
+function Choix({
+  actif,
+  onClick,
+  className = '',
+  children,
+}: {
+  actif: boolean;
+  onClick: () => void;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      aria-pressed={actif}
+      onClick={onClick}
+      className={`etiquette ${actif ? '!bg-encre !text-white' : ''} ${className}`}
+    >
+      {children}
+    </button>
   );
 }

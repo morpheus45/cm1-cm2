@@ -4,6 +4,8 @@ import { downloadBytes } from '../lib/download';
 import { isAnswerCorrect, worksheetScore, type Stroke, type Worksheet } from '../lib/worksheet';
 import { formatFrenchDate, worksheetFileName, worksheetToPdf } from '../lib/worksheetPdf';
 import { WritingCanvas } from './WritingCanvas';
+import { NOTION_COLORS } from '../theme';
+import { RainbowArc } from './ecole/RainbowArc';
 
 const TEACHER_INK = '#dc2626';
 
@@ -87,17 +89,18 @@ export function CorrectionScreen({
   const savePdf = () =>
     downloadBytes(worksheetToPdf(draft), worksheetFileName(draft), 'application/pdf');
 
-  const tool =
-    'flex-1 rounded-xl border-2 border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-600 disabled:opacity-40';
+  const tool = 'etiquette flex-1 px-3 py-2 text-sm';
 
   return (
-    <div className="min-h-screen bg-slate-50 px-4 py-6">
-      <div className="max-w-2xl mx-auto flex flex-col gap-4">
+    <div className="min-h-screen px-4 py-5">
+      <div className="mx-auto flex max-w-2xl flex-col gap-4">
         <header className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <p className="text-xs font-bold uppercase tracking-wider text-violet-600">Correction</p>
-            <h1 className="text-2xl font-bold text-slate-800 truncate">{draft.name}</h1>
-            <p className="text-sm text-slate-500">
+            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-encre-douce">
+              <RainbowArc className="w-8" /> Correction
+            </p>
+            <h1 className="truncate font-cursive text-2xl leading-[2] text-encre">{draft.name}</h1>
+            <p className="text-sm text-encre-douce">
               Opérations posées · {formatFrenchDate(draft.createdAt)} · {correct} / {total} juste
               {correct > 1 ? 's' : ''}
             </p>
@@ -105,29 +108,33 @@ export function CorrectionScreen({
           <button
             type="button"
             onClick={() => (dirty ? setConfirmLeave(true) : onClose())}
-            className="shrink-0 rounded-xl border-2 border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600"
+            className="etiquette shrink-0 px-4 py-2 text-sm"
           >
             Fermer
           </button>
         </header>
 
         {confirmLeave && (
-          <div role="alert" className="rounded-2xl bg-amber-50 p-4 ring-1 ring-amber-200 flex flex-col gap-3">
-            <p className="text-sm text-amber-900">
+          <div
+            role="alert"
+            className="flex flex-col gap-3 rounded-2xl border-2 p-4"
+            style={{ background: NOTION_COLORS.accords.tint, borderColor: NOTION_COLORS.accords.deep }}
+          >
+            <p className="text-sm font-bold" style={{ color: NOTION_COLORS.accords.deep }}>
               Vos annotations ne sont pas enregistrées : elles seront perdues.
             </p>
             <div className="flex gap-2">
               <button
                 type="button"
                 onClick={() => setConfirmLeave(false)}
-                className="flex-1 rounded-xl bg-violet-500 py-3 text-sm font-bold text-white"
+                className="bouton-encre flex-1 py-3 text-sm"
               >
                 Rester
               </button>
               <button
                 type="button"
                 onClick={onClose}
-                className="flex-1 rounded-xl border-2 border-slate-200 bg-white py-3 text-sm font-semibold text-slate-600"
+                className="etiquette flex-1 py-3 text-sm"
               >
                 Quitter sans enregistrer
               </button>
@@ -135,7 +142,7 @@ export function CorrectionScreen({
           </div>
         )}
 
-        <p className={`text-sm font-medium ${savedAt ? 'text-emerald-700' : 'text-amber-700'}`}>
+        <p className="text-sm font-bold" style={{ color: savedAt ? NOTION_COLORS.numeration.deep : NOTION_COLORS.accords.deep }}>
           {savedAt ? `✓ Corrigée le ${frenchDateTime(savedAt)}` : 'À corriger'}
           {dirty && savedAt ? ' — modifications non enregistrées' : ''}
         </p>
@@ -153,9 +160,12 @@ export function CorrectionScreen({
                   entryOk ? 'juste' : 'à revoir'
                 }${annotated ? ', annotée' : ''}`}
                 onClick={() => setIndex(position)}
-                className={`relative flex-1 rounded-xl py-2 text-base font-bold border-2 ${
-                  position === index ? 'border-violet-500' : 'border-transparent'
-                } ${entryOk ? 'bg-emerald-50 text-emerald-800' : 'bg-amber-50 text-amber-800'}`}
+                className="relative flex-1 rounded-xl border-2 py-2 text-base font-bold"
+                style={{
+                  background: entryOk ? NOTION_COLORS.numeration.tint : NOTION_COLORS.accords.tint,
+                  color: entryOk ? NOTION_COLORS.numeration.deep : NOTION_COLORS.accords.deep,
+                  borderColor: position === index ? '#1E2A4A' : 'transparent',
+                }}
               >
                 {position + 1}
                 <span aria-hidden="true" className="ml-1 text-xs">
@@ -173,10 +183,10 @@ export function CorrectionScreen({
           })}
         </nav>
 
-        <section className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-900/5 flex flex-col gap-3">
+        <section className="rounded-2xl bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_12px_24px_-16px_rgba(30,42,74,0.4)] ring-1 ring-encre/10 flex flex-col gap-3">
           <div className="flex items-baseline justify-between gap-3">
-            <h2 className="text-2xl font-bold text-slate-800">{operation.statement}</h2>
-            <span className="text-sm text-slate-500">
+            <h2 className="text-3xl font-bold text-encre">{operation.statement}</h2>
+            <span className="text-sm text-encre-douce">
               {index + 1} / {draft.operations.length}
             </span>
           </div>
@@ -191,15 +201,15 @@ export function CorrectionScreen({
           />
 
           <p className="text-lg">
-            <span className="text-slate-500">Réponse de l'élève : </span>
+            <span className="text-encre-douce">Réponse de l'élève : </span>
             {given ? (
-              <span className={`font-bold ${ok ? 'text-emerald-700' : 'text-amber-700'}`}>
+              <span className="font-bold" style={{ color: ok ? NOTION_COLORS.numeration.deep : NOTION_COLORS.accords.deep }}>
                 {given} {ok ? '✓' : '✗'}
               </span>
             ) : (
-              <span className="text-slate-400">pas de réponse</span>
+              <span className="text-encre-pale">pas de réponse</span>
             )}
-            {!ok && <span className="text-slate-500"> — attendu : {operation.expected}</span>}
+            {!ok && <span className="text-encre-douce"> — attendu : {operation.expected}</span>}
           </p>
 
           <div className="flex gap-2">
@@ -235,9 +245,9 @@ export function CorrectionScreen({
           </div>
         </section>
 
-        <section className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-900/5 flex flex-col gap-2">
-          <label htmlFor="appreciation" className="text-lg font-bold text-slate-800">
-            Appréciation <span className="text-sm font-normal text-slate-500">(facultative)</span>
+        <section className="rounded-2xl bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_12px_24px_-16px_rgba(30,42,74,0.4)] ring-1 ring-encre/10 flex flex-col gap-2">
+          <label htmlFor="appreciation" className="text-lg font-bold text-encre">
+            Appréciation <span className="text-sm font-normal text-encre-douce">(facultative)</span>
           </label>
           <textarea
             id="appreciation"
@@ -249,21 +259,21 @@ export function CorrectionScreen({
               setJustSaved(false);
               setDraft({ ...draft, appreciation: e.target.value });
             }}
-            className="rounded-xl border-2 border-slate-200 px-4 py-3 text-lg"
+            className="rounded-xl border-2 border-encre/25 bg-white px-4 py-3 text-lg focus:border-encre focus:outline-none"
             style={{ color: TEACHER_INK }}
           />
-          <p className="text-xs text-slate-400 text-right">
+          <p className="text-right text-xs text-encre-pale">
             {(draft.appreciation ?? '').length} / {APPRECIATION_MAX_LENGTH}
           </p>
         </section>
 
         {error && (
-          <p role="alert" className="text-sm text-red-700">
+          <p role="alert" className="text-sm font-bold text-[#B91C3B]">
             {error}
           </p>
         )}
         {justSaved && !dirty && (
-          <p role="status" className="text-sm font-medium text-emerald-700">
+          <p role="status" className="text-sm font-bold" style={{ color: NOTION_COLORS.numeration.deep }}>
             ✓ Correction enregistrée.
           </p>
         )}
@@ -273,7 +283,7 @@ export function CorrectionScreen({
             type="button"
             disabled={saving || (!dirty && savedAt !== null)}
             onClick={() => void save()}
-            className="w-full rounded-xl bg-violet-500 text-white text-xl font-bold py-4 disabled:bg-slate-300"
+            className="bouton-encre w-full py-4 text-xl"
           >
             {saving ? 'Enregistrement…' : savedAt && !dirty ? 'Correction enregistrée' : 'Enregistrer la correction'}
           </button>
@@ -281,7 +291,8 @@ export function CorrectionScreen({
             <button
               type="button"
               onClick={onNext}
-              className="w-full rounded-xl bg-emerald-500 text-white text-xl font-bold py-4"
+              className="w-full rounded-2xl py-4 text-xl font-bold text-white"
+              style={{ background: NOTION_COLORS.numeration.deep, boxShadow: '0 4px 0 #0f4a28' }}
             >
               Feuille suivante ({remaining} à corriger)
             </button>
@@ -289,7 +300,7 @@ export function CorrectionScreen({
           <button
             type="button"
             onClick={savePdf}
-            className="w-full rounded-xl border-2 border-violet-200 bg-white text-violet-700 text-lg font-semibold py-3"
+            className="etiquette w-full py-3 text-lg"
           >
             Télécharger le PDF {savedAt || dirty ? 'corrigé' : 'de la feuille'}
           </button>

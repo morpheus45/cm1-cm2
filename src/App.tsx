@@ -17,9 +17,11 @@ import {
 import { isAnswerCorrect, worksheetScore } from './lib/worksheet';
 import {
   depositSession,
+  cachedClassProblems,
   flushOutbox,
   isCloudConfigured,
   pendingDepositCount,
+  refreshClassProblems,
   sendDeposit,
   type DepositOutcome,
 } from './lib/cloud';
@@ -76,6 +78,9 @@ export function App() {
   // Au lancement, on renvoie ce qui n'avait pas pu partir la dernière fois.
   useEffect(() => {
     if (isCloudConfigured() && pendingDepositCount() > 0) void flushOutbox(sendDeposit);
+    // Les problèmes de la maîtresse : mis à jour à chaque lancement, gardés
+    // sur la tablette pour les séances hors connexion.
+    if (isCloudConfigured() && preferences.joinCode) void refreshClassProblems(preferences.joinCode);
   }, []);
   // Une simple ancre dans l'adresse : l'espace maîtresse n'est pas une autre
   // application, et le projet n'a pas besoin d'un routeur pour deux écrans.
@@ -163,8 +168,12 @@ export function App() {
         level: options.level,
         trimester: options.trimester,
         seed,
+        classProblems: options.joinCode ? cachedClassProblems(options.joinCode) : [],
       })
     );
+    // Un code tout juste saisi : les problèmes de la classe arriveront pour la
+    // séance suivante.
+    if (isCloudConfigured() && options.joinCode) void refreshClassProblems(options.joinCode);
     setScreen('question');
   };
 
@@ -229,7 +238,7 @@ export function App() {
 
   if (teacherView) {
     return (
-      <Suspense fallback={<p className="min-h-screen bg-slate-50 py-16 text-center text-slate-500">Chargement…</p>}>
+      <Suspense fallback={<p className="min-h-screen py-16 text-center text-encre-douce">Chargement…</p>}>
         <TeacherSpace
           localSessions={results}
           onForgetLocalPupil={(key) => setResults(forgetPupil(key))}
@@ -278,6 +287,7 @@ export function App() {
         subject={subjectOf(question.domain)}
         questionNumber={index + 1}
         totalQuestions={session.questions.length}
+        stepDomains={session.questions.map((entry) => entry.domain)}
         onAnswer={handleAnswer}
         onQuit={goHome}
       />

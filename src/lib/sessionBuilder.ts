@@ -1,6 +1,7 @@
 import { ALL_DOMAINS, subjectOf } from '../types';
 import type { Domain, Level, Question, Subject, Trimester } from '../types';
-import { createRng, type Rng } from './seededRandom';
+import { createRng, rngShuffle, type Rng } from './seededRandom';
+import { classProblemToQuestion, pickClassProblems, type ClassProblem } from './classProblems';
 import * as conjugaison from '../domains/conjugaison';
 import * as accords from '../domains/accords';
 import * as orthographe from '../domains/orthographe';
@@ -28,6 +29,8 @@ export interface SessionRequest {
   trimester: Trimester;
   seed: number;
   count?: number;
+  /** Les problèmes préparés par la maîtresse pour la classe, s'il y en a. */
+  classProblems?: ClassProblem[];
 }
 
 export interface Session {
@@ -71,6 +74,7 @@ export function buildSession({
   trimester,
   seed,
   count = QUESTIONS_PER_SESSION,
+  classProblems = [],
 }: SessionRequest): Session {
   const orderedDomains = ALL_DOMAINS.filter((domain) => domains.includes(domain));
   const subject = subjectOfDomains(orderedDomains);
@@ -82,9 +86,17 @@ export function buildSession({
   const questions: Question[] = [];
   orderedDomains.forEach((domain, index) => {
     const domainCount = perDomain + (index < remainder ? 1 : 0);
-    if (domainCount > 0) {
-      questions.push(...GENERATORS[domain](level, trimester, rng, domainCount));
-    }
+    if (domainCount === 0) return;
+    // Les problèmes de la maîtresse prennent au plus la moitié du bloc : ils
+    // se mêlent aux problèmes de l'application au lieu de les remplacer.
+    const own =
+      domain === 'problemes'
+        ? pickClassProblems(classProblems, trimester, rng, Math.ceil(domainCount / 2)).map((problem) =>
+            classProblemToQuestion(problem, rng)
+          )
+        : [];
+    const generated = GENERATORS[domain](level, trimester, rng, domainCount - own.length);
+    questions.push(...(own.length > 0 ? rngShuffle(rng, [...own, ...generated]) : generated));
   });
 
   return { subject, domains: orderedDomains, level, trimester, questions };
