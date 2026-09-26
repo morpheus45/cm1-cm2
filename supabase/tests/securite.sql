@@ -1,4 +1,4 @@
--- Vérifie les règles d'accès de 001_classes_eleves_seances.sql.
+-- Vérifie les règles d'accès des fichiers 0*.sql.
 -- Chaque vérification lève une exception en cas d'écart : le script s'arrête
 -- au premier problème, et un « OK » final veut dire que tout a tenu.
 \set ON_ERROR_STOP 1
@@ -249,6 +249,36 @@ select pg_temp.attendu(
     where teacher_email = 'a@ecole.fr' and resume = 'Changer la couleur du site' and not traitee), 1,
   'la demande est rangée pour l''administrateur, avec l''adresse de la maîtresse');
 
+-- ------------------------------------------ l'élève voit sa correction ---
+-- La maîtresse A corrige la feuille de Léa (séance 3333…) ; celle de Noé
+-- attend encore.
+update public.worksheets
+   set corrections = '{"version":1,"appreciation":"Bien","operations":{}}', corrected_at = now()
+ where session_id = '33333333-3333-3333-3333-333333333333';
+set role anon;
+select public.depose_seance('44444444-4444-4444-4444-444444444444', 'AAAAAA', 'Noé', 'Petit', 'CM1',
+  2::smallint, 'maths', 'posees', '[{"domain":"calcul","correct":2,"total":6}]',
+  '{"operations":[],"answers":{}}');
+select pg_temp.attendu(
+  (select count(*) from public.corrections_de_mes_feuilles(array['33333333-3333-3333-3333-333333333333'::uuid])
+    where corrections ->> 'appreciation' = 'Bien' and corrected_at is not null), 1,
+  'la tablette de Léa retrouve sa feuille corrigée, avec l''appréciation');
+select pg_temp.attendu(
+  (select count(*) from public.corrections_de_mes_feuilles(array['44444444-4444-4444-4444-444444444444'::uuid])), 0,
+  'une feuille pas encore corrigée ne se montre pas');
+select pg_temp.attendu(
+  (select count(*) from public.corrections_de_mes_feuilles(array[gen_random_uuid(), gen_random_uuid()])), 0,
+  'un identifiant inventé ne donne rien');
+select pg_temp.attendu((select count(*) from public.corrections_de_mes_feuilles(null)), 0,
+  'rien demandé, rien rendu');
+select pg_temp.attendu(
+  (select count(*) from public.corrections_de_mes_feuilles(
+     array(select gen_random_uuid() from generate_series(1, 50)) || '33333333-3333-3333-3333-333333333333'::uuid)), 0,
+  'au-delà de cinquante identifiants, la suite est ignorée');
+select pg_temp.doit_echouer($q$select count(*) from public.worksheets$q$,
+  'permission denied', 'la table des feuilles reste fermée à la clé publique');
+reset role;
+
 -- ------------------------------------------------------------ les droits ---
 -- Supabase accorde d'office tous les droits à anon et authenticated ; le
 -- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après
@@ -281,6 +311,10 @@ select pg_temp.attendu(
       'public.depose_seance(uuid, text, text, text, text, smallint, text, text, jsonb, jsonb)']) f
    where has_function_privilege('anon', f, 'execute')), 1,
   'la clé publique permet toujours de déposer une séance');
+select pg_temp.attendu(
+  (select count(*) from unnest(array['public.corrections_de_mes_feuilles(uuid[])']) f
+   where has_function_privilege('anon', f, 'execute')), 1,
+  'la clé publique permet à la tablette de l''élève de relire ses feuilles corrigées');
 
 \o
 \echo 'OK : toutes les règles d''accès tiennent.'

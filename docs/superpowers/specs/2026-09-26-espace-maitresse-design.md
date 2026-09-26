@@ -233,12 +233,76 @@ L'accès maîtresse n'est chargé qu'à l'ouverture : les tablettes des élèves
 ne le téléchargent pas, et le service worker le garde en cache pour le
 hors-ligne.
 
+## Plusieurs classes
+
+Une maîtresse peut tenir plusieurs classes : un CM1 et un CM2, deux années de
+suite, les deux niveaux d'une classe double. La base les acceptait déjà ;
+l'écran les montre désormais.
+
+- En tête de l'espace maîtresse, **« Mes classes »** : une étiquette par
+  classe (nom et niveau), celle ouverte à l'encre. Tout ce qui suit — le
+  code au tableau, les dossiers, les feuilles à corriger, les problèmes avec
+  Claude — est celui de la classe ouverte.
+- Une **pastille rouge** sur une classe dit combien de feuilles d'opérations
+  y attendent une correction, pour ne pas en oublier une en travaillant sur
+  l'autre (lue aussi par les lecteurs d'écran).
+- **« + Nouvelle classe »** ouvre le même formulaire que la première fois,
+  avec « Annuler » ; la classe créée s'ouvre aussitôt, avec son propre code.
+- **La tablette se souvient** de la dernière classe ouverte, pour chaque
+  maîtresse (une tablette d'école peut servir à plusieurs) ; une classe qui
+  n'existe plus ramène à la première. Rien de cela ne quitte l'appareil.
+
+Rien ne change côté élève : son code le rattache à une classe, et à une seule.
+Rien ne change non plus dans Supabase.
+
+Vérifié de bout en bout sur la base d'essai : deux classes, un élève dans
+chacune ; chaque classe ne montre que ses élèves et son code ; la pastille
+annonce la feuille à corriger de l'autre classe ; le choix survit au
+rechargement ; sur téléphone, les étiquettes passent à la ligne sans
+défilement horizontal.
+
+## L'élève retrouve sa feuille corrigée
+
+Une fois la feuille d'opérations corrigée, l'élève la retrouve sur sa
+tablette, sans rien demander à personne.
+
+- **À l'accueil**, tout en haut : « Ta maîtresse a corrigé ta feuille ! »,
+  encadré de rouge, avec la date, le nombre d'opérations justes, « un mot de
+  ta maîtresse » s'il y en a un, et une pastille **Nouveau** tant que la
+  feuille n'a pas été ouverte. Une fois lue, la carte devient « Mes feuilles
+  corrigées » (les trois dernières). Une nouvelle correction de la même
+  feuille la rend de nouveau « Nouveau ».
+- **La feuille corrigée** : la note entourée de rouge, le mot de la maîtresse
+  en cursive rouge, puis chaque opération telle que l'élève l'a posée, avec
+  l'encre rouge de la maîtresse par-dessus, sa réponse, le bon résultat
+  quand elle s'est trompée — comme l'application le lui montre déjà à la fin
+  de chaque opération. Rien ne s'y modifie. Le PDF corrigé peut être
+  enregistré. Sur une opération, le doigt fait défiler la page.
+- **Seulement les siennes.** L'élève n'a pas de compte : ce qui lui ouvre sa
+  feuille, c'est l'identifiant de sa séance, tiré au hasard par sa tablette
+  (un UUID, 122 bits de hasard) et connu seulement d'elle et de la
+  maîtresse. La fonction `corrections_de_mes_feuilles`
+  (`supabase/003_corrections_pour_les_eleves.sql`) ne rend que les feuilles
+  corrigées dont on lui donne l'identifiant, cinquante au plus ; les tables
+  restent fermées à la clé publique. Une autre tablette, même avec le code de
+  la classe et le même nom, ne voit rien. Sur une tablette partagée, l'accueil
+  ne montre que les feuilles de l'élève dont le nom est écrit.
+- **Hors connexion** : la tablette garde les douze dernières feuilles
+  corrigées ; elle en redemande au lancement et à chaque retour à l'accueil
+  (une fois par minute au plus). Effacer les données d'un élève de
+  l'appareil efface aussi ses feuilles corrigées.
+
+Vérifié de bout en bout sur la base d'essai : rien n'est annoncé avant la
+correction ; après, l'accueil l'annonce, la feuille montre le mot et l'encre
+rouge sur les seules opérations annotées ; « J'ai compris » retire
+« Nouveau » ; une autre tablette avec le même nom et le même code ne voit
+rien ; une nouvelle correction est annoncée de nouveau ; hors connexion, la
+feuille reste là. Tests de la base : feuille corrigée rendue, feuille non
+corrigée et identifiant inventé refusés, au-delà de cinquante identifiants
+la suite ignorée, table toujours fermée.
+
 ## Hors périmètre de cette première partie
 
-- Plusieurs classes pour une même maîtresse : la base les accepte, l'écran
-  n'affiche que la première.
-- L'élève ne voit pas encore la correction de sa maîtresse dans l'application :
-  elle la lui transmet par le PDF corrigé.
 - Sans compte, la vue « Dans la classe » ne connaît que les élèves de
   l'appareil ; avec un compte, elle montre toute la classe.
 

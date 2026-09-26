@@ -164,8 +164,11 @@ export function WritingCanvas({
       <canvas
         ref={canvasRef}
         aria-label={label}
+        role={readOnly ? 'img' : undefined}
         className="absolute inset-0 h-full w-full rounded-xl"
-        style={{ touchAction: 'none', cursor: readOnly ? 'default' : 'crosshair' }}
+        // En lecture seule, le doigt fait défiler la page : une feuille
+        // corrigée s'affiche en colonne, opération sous opération.
+        style={{ touchAction: readOnly ? 'auto' : 'none', cursor: readOnly ? 'default' : 'crosshair' }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}

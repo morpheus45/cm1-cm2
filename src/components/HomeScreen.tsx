@@ -1,11 +1,14 @@
-import { useState } from 'react';
-import { NOTION_COLORS, SUBJECT_COLORS } from '../theme';
+import { useMemo, useState } from 'react';
+import { NOTION_COLORS, SUBJECT_COLORS, TEACHER_RED } from '../theme';
 import { Gommette } from './ecole/Gommette';
 import { RainbowArc } from './ecole/RainbowArc';
 import { SchoolTitle } from './ecole/SchoolTitle';
 import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 import type { Preferences } from '../lib/preferences';
 import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cloud';
+import { receivedFor, type ReceivedCorrection, type StoredCorrection } from '../lib/pupilCorrections';
+import { worksheetScore } from '../lib/worksheet';
+import { formatFrenchDate } from '../lib/worksheetPdf';
 import {
   ACTIVITY_HINTS,
   ACTIVITY_LABELS,
@@ -32,11 +35,19 @@ export interface StartOptions {
 interface HomeScreenProps {
   initial: Preferences;
   onStart: (options: StartOptions) => void;
+  /** Les feuilles corrigées reçues par la tablette, tous élèves confondus :
+   *  l'écran ne montre que celles de l'élève dont le nom est écrit. */
+  corrections?: StoredCorrection[];
+  onOpenCorrection?: (correction: ReceivedCorrection) => void;
 }
 
-export function HomeScreen({ initial, onStart }: HomeScreenProps) {
+export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrection }: HomeScreenProps) {
   const [name, setName] = useState(initial.name);
   const [lastName, setLastName] = useState(initial.lastName);
+  const received = useMemo(
+    () => receivedFor(corrections, { firstName: name, lastName }),
+    [corrections, name, lastName]
+  );
   const [joinCode, setJoinCode] = useState(initial.joinCode);
   // Sans Supabase configuré, un code de classe ne servirait à rien : le champ
   // n'apparaît pas, plutôt que de promettre un envoi qui n'aura pas lieu.
@@ -73,6 +84,10 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
     <div className="min-h-screen px-4 pb-12 pt-3">
       <div className="mx-auto flex max-w-md flex-col gap-5">
         <SchoolTitle subtitle="Mon cahier d'exercices" />
+
+        {received.length > 0 && onOpenCorrection && (
+          <FeuillesCorrigees items={received} onOpen={onOpenCorrection} />
+        )}
 
         <Etape numero={1} titre="Qui es-tu ?">
           <Ligne label="Ton prénom">
@@ -235,6 +250,66 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
         </a>
       </div>
     </div>
+  );
+}
+
+/**
+ * Le courrier de la maîtresse : les feuilles d'opérations qu'elle a corrigées,
+ * les nouvelles marquées d'une pastille rouge.
+ */
+function FeuillesCorrigees({ items, onOpen }: { items: ReceivedCorrection[]; onOpen: (item: ReceivedCorrection) => void }) {
+  const fresh = items.filter((item) => item.isNew).length;
+  const title =
+    fresh === 0
+      ? 'Mes feuilles corrigées'
+      : fresh === 1
+        ? 'Ta maîtresse a corrigé ta feuille\u00a0!'
+        : `Ta maîtresse a corrigé ${fresh} feuilles\u00a0!`;
+  return (
+    <section
+      className="flex flex-col gap-3 rounded-3xl border-2 bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]"
+      style={{ borderColor: fresh > 0 ? TEACHER_RED : 'transparent' }}
+    >
+      <h2 className="text-xl font-bold" style={{ color: fresh > 0 ? TEACHER_RED : undefined }}>
+        {title}
+      </h2>
+      <ul className="flex flex-col gap-2">
+        {items.slice(0, 3).map((item) => {
+          const { correct, total } = worksheetScore(item.worksheet);
+          return (
+            <li key={item.sessionId}>
+              <button
+                type="button"
+                onClick={() => onOpen(item)}
+                className="etiquette flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
+              >
+                <span className="min-w-0">
+                  <span className="block text-base font-bold">
+                    Opérations posées du {formatFrenchDate(item.worksheet.createdAt)}
+                  </span>
+                  <span className="block text-sm font-normal text-encre-douce">
+                    {correct} / {total} juste{correct > 1 ? 's' : ''}
+                    {item.worksheet.appreciation ? ' · un mot de ta maîtresse' : ''}
+                  </span>
+                </span>
+                {item.isNew ? (
+                  <span
+                    className="shrink-0 rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white"
+                    style={{ background: TEACHER_RED }}
+                  >
+                    Nouveau
+                  </span>
+                ) : (
+                  <span aria-hidden="true" className="shrink-0 text-xl text-encre-douce">
+                    ›
+                  </span>
+                )}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }
 

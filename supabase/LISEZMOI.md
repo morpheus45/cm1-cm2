@@ -8,9 +8,11 @@ dans `.github/workflows/deploy.yml`.
 
 1. **La base.** Copier tout `001_classes_eleves_seances.sql` dans
    [l'éditeur SQL](https://supabase.com/dashboard/project/uexxvndxlnwjvlgdkxwc/sql/new),
-   puis *Run*. Même chose ensuite pour `002_problemes_de_la_classe.sql`. Les
-   fichiers sont rejouables : on les relance après chaque modification, sans
-   rien perdre. Pour copier sans rien abîmer, le plus sûr est le bouton
+   puis *Run*. Même chose ensuite, dans l'ordre, pour
+   `002_problemes_de_la_classe.sql` (les problèmes de la classe et le chat)
+   et `003_corrections_pour_les_eleves.sql` (l'élève retrouve sa feuille
+   corrigée sur sa tablette). Les fichiers sont rejouables : on les relance
+   après chaque modification, sans rien perdre. Pour copier sans rien abîmer, le plus sûr est le bouton
    « Copy raw file » de GitHub, sur la page du fichier.
 2. **Les comptes des maîtresses.** *Authentication → Sign In / Providers →
    Email* : désactiver **Confirm email**. Sans serveur d'e-mail à soi,
