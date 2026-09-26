@@ -153,11 +153,12 @@ export async function readMyClasses(): Promise<CloudClass[]> {
   return mapClasses(data);
 }
 
-export async function createClass(name: string, level: Level): Promise<string> {
+/** Crée une classe de plus ; rend son identifiant, pour l'ouvrir aussitôt. */
+export async function createClass(name: string, level: Level): Promise<{ id: string; joinCode: string }> {
   const { data, error } = await (await client()).rpc('creer_classe', { p_name: name, p_level: level });
   if (error) throw new Error(frenchAuthError(error.message));
-  const row = Array.isArray(data) ? data[0] : data;
-  return (row as { join_code: string }).join_code;
+  const row = (Array.isArray(data) ? data[0] : data) as { class_id: string; join_code: string };
+  return { id: row.class_id, joinCode: row.join_code };
 }
 
 /** Efface un élève et, en cascade, toutes ses séances. */

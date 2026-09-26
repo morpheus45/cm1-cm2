@@ -233,10 +233,36 @@ L'accès maîtresse n'est chargé qu'à l'ouverture : les tablettes des élèves
 ne le téléchargent pas, et le service worker le garde en cache pour le
 hors-ligne.
 
+## Plusieurs classes
+
+Une maîtresse peut tenir plusieurs classes : un CM1 et un CM2, deux années de
+suite, les deux niveaux d'une classe double. La base les acceptait déjà ;
+l'écran les montre désormais.
+
+- En tête de l'espace maîtresse, **« Mes classes »** : une étiquette par
+  classe (nom et niveau), celle ouverte à l'encre. Tout ce qui suit — le
+  code au tableau, les dossiers, les feuilles à corriger, les problèmes avec
+  Claude — est celui de la classe ouverte.
+- Une **pastille rouge** sur une classe dit combien de feuilles d'opérations
+  y attendent une correction, pour ne pas en oublier une en travaillant sur
+  l'autre (lue aussi par les lecteurs d'écran).
+- **« + Nouvelle classe »** ouvre le même formulaire que la première fois,
+  avec « Annuler » ; la classe créée s'ouvre aussitôt, avec son propre code.
+- **La tablette se souvient** de la dernière classe ouverte, pour chaque
+  maîtresse (une tablette d'école peut servir à plusieurs) ; une classe qui
+  n'existe plus ramène à la première. Rien de cela ne quitte l'appareil.
+
+Rien ne change côté élève : son code le rattache à une classe, et à une seule.
+Rien ne change non plus dans Supabase.
+
+Vérifié de bout en bout sur la base d'essai : deux classes, un élève dans
+chacune ; chaque classe ne montre que ses élèves et son code ; la pastille
+annonce la feuille à corriger de l'autre classe ; le choix survit au
+rechargement ; sur téléphone, les étiquettes passent à la ligne sans
+défilement horizontal.
+
 ## Hors périmètre de cette première partie
 
-- Plusieurs classes pour une même maîtresse : la base les accepte, l'écran
-  n'affiche que la première.
 - L'élève ne voit pas encore la correction de sa maîtresse dans l'application :
   elle la lui transmet par le PDF corrigé.
 - Sans compte, la vue « Dans la classe » ne connaît que les élèves de

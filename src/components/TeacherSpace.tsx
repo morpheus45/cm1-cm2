@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { pupilKey } from '../types';
 import type { Level } from '../types';
 import type { SessionResult } from '../lib/results';
 import { isCloudConfigured } from '../lib/cloud';
 import { correctionsOf } from '../lib/correction';
+import { correctionQueue, loadChosenClass, pickCurrentClass, saveChosenClass } from '../lib/teacherClasses';
 import type { Worksheet } from '../lib/worksheet';
 import {
   createClass,
@@ -23,7 +24,7 @@ import {
 } from '../lib/teacherCloud';
 import { CorrectionScreen } from './CorrectionScreen';
 import { ProblemsScreen } from './ProblemsScreen';
-import { NOTION_COLORS } from '../theme';
+import { NOTION_COLORS, TEACHER_RED } from '../theme';
 import { SchoolTitle } from './ecole/SchoolTitle';
 import { Tableau } from './ecole/Tableau';
 import { TeacherScreen } from './TeacherScreen';
@@ -38,7 +39,7 @@ interface TeacherSpaceProps {
 const input =
   'w-full rounded-xl border-2 border-encre/25 bg-white px-4 py-3 text-lg text-encre focus:border-encre focus:outline-none';
 const primary = 'bouton-encre w-full py-3 text-lg';
-const secondary = 'etiquette w-full py-3 text-lg';
+const secondary = 'etiquette w-full px-3 py-3 text-lg';
 const fiche =
   'flex flex-col gap-3 rounded-2xl bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_12px_24px_-16px_rgba(30,42,74,0.4)] ring-1 ring-encre/10';
 
@@ -64,6 +65,8 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   const cloud = isCloudConfigured();
   const [account, setAccount] = useState<TeacherAccount | null | 'loading'>(cloud ? 'loading' : null);
   const [classes, setClasses] = useState<CloudClass[] | null>(null);
+  const [chosenId, setChosenId] = useState<string | null>(null);
+  const [addingClass, setAddingClass] = useState(false);
   const [offline, setOffline] = useState(false);
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
@@ -109,18 +112,19 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     });
   }, [cloud, refresh]);
 
-  // Une seule classe affichée pour l'instant : la première créée.
-  const current = classes?.[0] ?? null;
+  // La tablette rouvre sur la dernière classe ouverte par cette maîtresse.
+  const accountId = account && account !== 'loading' ? account.id : null;
+  useEffect(() => {
+    setChosenId(accountId ? loadChosenClass(accountId) : null);
+  }, [accountId]);
 
-  // Les feuilles qui attendent la maîtresse, la plus ancienne d'abord : c'est
-  // l'ordre dans lequel « Corriger » les enchaîne.
-  const queue = useMemo(
-    () =>
-      (current?.sessions ?? [])
-        .filter((session) => worksheets[session.id] && !worksheets[session.id].correctedAt)
-        .sort((a, b) => a.at.localeCompare(b.at)),
-    [current, worksheets]
-  );
+  const current = pickCurrentClass(classes ?? [], chosenId);
+  const queue = correctionQueue(current, worksheets);
+
+  const choose = (classId: string) => {
+    setChosenId(classId);
+    if (accountId) saveChosenClass(accountId, classId);
+  };
 
   const run = async (task: () => Promise<void>) => {
     setBusy(true);
@@ -253,12 +257,15 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     );
   };
 
-  if (classes !== null && current === null) {
+  if (classes !== null && (current === null || addingClass)) {
+    const another = current !== null;
     return (
       <Panel>
         <header>
-          <h2 className="text-2xl font-bold text-encre">Créer ma classe</h2>
-          <p className="text-sm text-encre-douce">{account.email}</p>
+          <h2 className="text-2xl font-bold text-encre">{another ? 'Nouvelle classe' : 'Créer ma classe'}</h2>
+          <p className="text-sm text-encre-douce">
+            {another ? 'Elle aura son propre code, ses élèves et ses problèmes.' : account.email}
+          </p>
         </header>
         <section className={fiche}>
           <label className="flex flex-col gap-1">
@@ -290,30 +297,83 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
             className={primary}
             onClick={() =>
               run(async () => {
-                await createClass(className.trim(), classLevel);
+                const created = await createClass(className.trim(), classLevel);
+                choose(created.id);
+                setClassName('');
+                setAddingClass(false);
                 await refresh();
               })
             }
           >
             Créer la classe
           </button>
+          {another && (
+            <button type="button" disabled={busy} onClick={() => setAddingClass(false)} className={secondary}>
+              Annuler
+            </button>
+          )}
         </section>
-        <button
-          type="button"
-          onClick={() => run(async () => { await signOut(); setAccount(null); setClasses(null); })}
-          className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
-        >
-          Se déconnecter
-        </button>
+        {!another && (
+          <button
+            type="button"
+            onClick={() => run(async () => { await signOut(); setAccount(null); setClasses(null); })}
+            className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
+          >
+            Se déconnecter
+          </button>
+        )}
       </Panel>
     );
   }
 
   const banner = current && (
     <section className={fiche}>
-      <p className="text-base font-bold text-encre">
-        {current.name} <span className="font-normal text-encre-douce">· {current.level}</span>
-      </p>
+      <nav aria-label="Mes classes" className="flex flex-col gap-2">
+        <p className="text-xs font-bold uppercase tracking-[0.16em] text-encre-douce">
+          {classes && classes.length > 1 ? 'Mes classes' : 'Ma classe'}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {(classes ?? []).map((entry) => {
+            const selected = entry.id === current.id;
+            const pending = correctionQueue(entry, worksheets).length;
+            return (
+              <button
+                key={entry.id}
+                type="button"
+                aria-pressed={selected}
+                onClick={() => choose(entry.id)}
+                className={`etiquette relative px-3 py-2 text-left text-sm ${selected ? '!bg-encre !text-white' : ''}`}
+              >
+                {entry.name} <span className="font-normal">· {entry.level}</span>
+                {pending > 0 && (
+                  <>
+                    <span
+                      aria-hidden="true"
+                      className="absolute -right-2 -top-2 grid h-6 min-w-6 place-items-center rounded-full px-1.5 text-xs font-bold text-white ring-2 ring-white"
+                      style={{ background: TEACHER_RED }}
+                    >
+                      {pending}
+                    </span>
+                    <span className="sr-only">
+                      , {pending} feuille{pending > 1 ? 's' : ''} à corriger
+                    </span>
+                  </>
+                )}
+              </button>
+            );
+          })}
+          <button
+            type="button"
+            onClick={() => {
+              setError('');
+              setAddingClass(true);
+            }}
+            className="rounded-2xl border-2 border-dashed border-encre/40 px-3 py-2 text-sm font-semibold text-encre-douce"
+          >
+            + Nouvelle classe
+          </button>
+        </div>
+      </nav>
       <div className="flex flex-col items-center gap-1">
         <p className="text-sm font-bold text-encre-douce">Code à écrire au tableau pour les élèves :</p>
         <Tableau code={current.joinCode} />
