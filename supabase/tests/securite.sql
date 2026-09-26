@@ -135,5 +135,42 @@ select pg_temp.attendu(
       and teacher_id = '00000000-0000-0000-0000-00000000000a'), 1,
   'la maîtresse B n''a pas pu s''approprier la classe A');
 
+
+-- ------------------------------------------- création de classe, lecture ---
+set role anon;
+select pg_temp.doit_echouer(
+  $q$select * from public.creer_classe('Intrus', 'CM1')$q$,
+  'permission denied', 'un anonyme ne doit pas pouvoir créer de classe');
+select pg_temp.doit_echouer(
+  $q$select public.lire_ma_classe()$q$,
+  'permission denied', 'un anonyme ne doit pas pouvoir lire une classe');
+reset role;
+
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+create temp table nouvelle as select * from public.creer_classe('CM1 bis', 'CM1');
+select pg_temp.attendu(
+  (select count(*) from nouvelle where join_code ~ '^[A-HJKMNP-Z2-9]{6}$'), 1,
+  'le code de classe évite 0, O, 1, I et L');
+select pg_temp.attendu(
+  (select count(*) from public.classes), 2, 'la maîtresse A a maintenant deux classes');
+select pg_temp.attendu(
+  (select jsonb_array_length(public.lire_ma_classe())), 2, 'la maîtresse A lit ses deux classes');
+select pg_temp.attendu(
+  (select jsonb_array_length(public.lire_ma_classe() -> 0 -> 'pupils')), 3,
+  'la maîtresse A lit les trois élèves de sa première classe');
+select pg_temp.attendu(
+  (select sum(jsonb_array_length(p -> 'sessions'))
+     from jsonb_array_elements(public.lire_ma_classe() -> 0 -> 'pupils') p)::bigint, 6,
+  'la maîtresse A lit leurs six séances');
+
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
+select pg_temp.attendu(
+  (select jsonb_array_length(public.lire_ma_classe())), 1, 'la maîtresse B ne lit que sa classe');
+select pg_temp.attendu(
+  (select jsonb_array_length(public.lire_ma_classe() -> 0 -> 'pupils')), 0,
+  'la maîtresse B ne lit aucun élève de A');
+reset role;
+
 \o
 \echo 'OK : toutes les règles d''accès tiennent.'

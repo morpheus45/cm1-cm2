@@ -241,6 +241,95 @@ $$;
 revoke all on function public.depose_seance(uuid, text, text, text, text, smallint, text, text, jsonb, jsonb) from public;
 grant execute on function public.depose_seance(uuid, text, text, text, text, smallint, text, text, jsonb, jsonb) to anon, authenticated;
 
+-- ------------------------------------------------ côté maîtresse ----------
+
+-- Crée une classe pour la maîtresse connectée et lui rend son code.
+--
+-- `security invoker` : la fonction s'exécute avec les droits de l'appelant, et
+-- c'est donc la RLS qui décide. Une maîtresse ne peut créer une classe qu'à
+-- son propre nom ; un visiteur sans compte n'a pas d'identifiant, et
+-- l'insertion échoue.
+--
+-- Le code évite les caractères qu'un enfant confond à l'écrit ou à l'oral :
+-- ni 0 ni O, ni 1 ni I ni L.
+create or replace function public.creer_classe(p_name text, p_level text)
+returns table (class_id uuid, join_code text)
+language plpgsql
+security invoker
+set search_path = public
+as $$
+declare
+  v_alphabet constant text := 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+  v_code     text;
+  v_id       uuid;
+begin
+  if auth.uid() is null then
+    raise exception 'connexion requise';
+  end if;
+  loop
+    v_code := '';
+    for i in 1..6 loop
+      v_code := v_code || substr(v_alphabet, 1 + floor(random() * length(v_alphabet))::int, 1);
+    end loop;
+    begin
+      insert into public.classes (teacher_id, name, level, join_code)
+      values (auth.uid(), btrim(p_name), p_level, v_code)
+      returning id into v_id;
+      exit;
+    exception when unique_violation then
+      -- Code déjà pris par une autre classe : on en tire un autre.
+    end;
+  end loop;
+  return query select v_id, v_code;
+end;
+$$;
+
+revoke all on function public.creer_classe(text, text) from public;
+grant execute on function public.creer_classe(text, text) to authenticated;
+
+-- Tout ce que la maîtresse connectée peut voir, en un seul appel : ses
+-- classes, leurs élèves, leurs séances. `security invoker` là aussi : la
+-- fonction ne lit que ce que la RLS laisse voir à l'appelant, et ne peut
+-- donc rien montrer de plus que les tables elles-mêmes.
+create or replace function public.lire_ma_classe()
+returns jsonb
+language sql
+stable
+security invoker
+set search_path = public
+as $$
+  select coalesce(jsonb_agg(jsonb_build_object(
+    'id', c.id,
+    'name', c.name,
+    'level', c.level,
+    'join_code', c.join_code,
+    'pupils', coalesce((
+      select jsonb_agg(jsonb_build_object(
+        'id', p.id,
+        'first_name', p.first_name,
+        'last_name', p.last_name,
+        'sessions', coalesce((
+          select jsonb_agg(jsonb_build_object(
+            'id', s.id,
+            'at', s.at,
+            'level', s.level,
+            'trimester', s.trimester,
+            'subject', s.subject,
+            'activity', s.activity,
+            'results', s.results
+          ) order by s.at)
+          from public.sessions s where s.pupil_id = p.id
+        ), '[]'::jsonb)
+      ) order by p.last_name, p.first_name)
+      from public.pupils p where p.class_id = c.id
+    ), '[]'::jsonb)
+  ) order by c.created_at), '[]'::jsonb)
+  from public.classes c;
+$$;
+
+revoke all on function public.lire_ma_classe() from public;
+grant execute on function public.lire_ma_classe() to authenticated;
+
 -- Supabase garde en cache la liste des fonctions appelables : on lui demande
 -- de la relire, sans quoi la nouvelle fonction resterait introuvable jusqu'au
 -- prochain redémarrage de l'API. Sans effet en local.

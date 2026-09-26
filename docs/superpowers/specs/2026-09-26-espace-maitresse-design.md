@@ -1,9 +1,9 @@
 # Espace maîtresse (design)
 
 Date : 2026-09-26
-Statut : implémenté en local — un dossier par élève, les quatre vues, le bilan
-d'année, la révision ciblée et l'effacement des données. La mise en commun par
-le réseau reste à brancher.
+Statut : implémenté — en local comme en classe. La mise en commun fonctionne
+dès que les deux valeurs de Supabase sont fournies au build ; sans elles,
+l'application reste entièrement sur l'appareil.
 
 ## Contexte
 
@@ -156,11 +156,52 @@ La bibliothèque de Supabase double le poids de l'application : elle n'est
 chargée qu'au premier envoi, et jamais sur un appareil où la mise en commun
 n'est pas configurée.
 
+## Le côté maîtresse, en classe
+
+Avec Supabase configuré, l'accès maîtresse demande un compte (e-mail et mot de
+passe). La maîtresse crée sa classe, l'application lui affiche le code à
+donner aux élèves, et les dossiers se remplissent à mesure que les séances
+arrivent — de n'importe quelle tablette.
+
+Deux actions passent par des fonctions SQL plutôt que par les tables :
+`creer_classe`, qui tire un code sans caractères ambigus (ni 0 ni O, ni 1 ni I
+ni L), et `lire_ma_classe`, qui rend classes, élèves et séances en un appel.
+Les deux s'exécutent avec les droits de l'appelant : c'est la RLS qui décide
+de ce qu'elles voient, elles ne peuvent rien montrer de plus que les tables.
+
+Effacer ne veut plus dire la même chose qu'en local : en classe, le bouton
+supprime l'élève de la base, pour tous les appareils. Les libellés et la
+confirmation le disent (« Retirer Noé Petit de la classe… sur tous les
+appareils »), pour qu'une maîtresse ne vide pas sa classe en croyant nettoyer
+sa tablette.
+
+Un compte peut être utilisé sans rien configurer d'autre : « Continuer sans
+compte » ouvre les dossiers de l'appareil, comme avant.
+
+### Vérifié de bout en bout
+
+Supabase est injoignable depuis l'environnement où ce code a été écrit. Le
+chemin complet a donc été reproduit : un relais joue le rôle de l'API et de la
+connexion de Supabase, devant la vraie base PostgreSQL avec le vrai script, et
+appelle les fonctions par le nom de leurs paramètres, comme Supabase. Trois
+navigateurs séparés — trois stockages distincts, qui ne partagent rien sauf la
+base :
+
+1. la maîtresse crée son compte et sa classe, et reçoit un code ;
+2. deux élèves, chacun sur sa tablette, déposent une séance avec ce code tapé
+   en minuscules ;
+3. la maîtresse actualise et voit les deux dossiers ;
+4. elle retire un élève : il disparaît de la base, séances comprises ;
+5. une autre maîtresse ne voit rien de cette classe ;
+6. un mauvais mot de passe donne un message en français.
+
 ## Hors périmètre de cette première partie
 
-- La connexion de la maîtresse, la création de sa classe (et de son code), et
-  la lecture des dossiers depuis la base : l'accès maîtresse ne lit encore que
-  les séances de l'appareil.
+- La correction à l'écran d'une feuille d'opérations posées : les feuilles
+  arrivent dans la base avec leurs tracés, l'écran pour les annoter reste à
+  faire.
+- Plusieurs classes pour une même maîtresse : la base les accepte, l'écran
+  n'affiche que la première.
 - La correction à l'écran par la maîtresse (le modèle prévoit déjà les tracés
   de correction, mais l'écran reste à faire).
 - Une vraie classe : la vue « Dans la classe » ne connaît que les élèves de

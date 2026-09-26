@@ -28,7 +28,7 @@ import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
 import { WrittenOperationScreen } from './components/WrittenOperationScreen';
 import { WrittenRecapScreen } from './components/WrittenRecapScreen';
-import { TeacherScreen } from './components/TeacherScreen';
+import { TeacherSpace } from './components/TeacherSpace';
 
 type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap';
 
@@ -223,10 +223,10 @@ export function App() {
 
   if (teacherView) {
     return (
-      <TeacherScreen
-        sessions={results}
-        onForgetPupil={(key) => setResults(forgetPupil(key))}
-        onForgetAll={() => setResults(forgetAllResults())}
+      <TeacherSpace
+        localSessions={results}
+        onForgetLocalPupil={(key) => setResults(forgetPupil(key))}
+        onForgetAllLocal={() => setResults(forgetAllResults())}
         onBack={() => {
           window.location.hash = '';
           setTeacherView(false);

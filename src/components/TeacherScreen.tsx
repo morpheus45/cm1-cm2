@@ -20,6 +20,15 @@ import { PupilList } from './PupilList';
 
 interface TeacherScreenProps {
   sessions: SessionResult[];
+  /** Affiché sous l'en-tête : la classe et son code, quand la maîtresse est
+   *  connectée. */
+  banner?: React.ReactNode;
+  /**
+   * D'où viennent les séances. Cela change tout pour un effacement : sur
+   * l'appareil, il ne touche que la tablette ; dans la classe, il supprime
+   * les élèves de la base, pour tout le monde. Les libellés le disent.
+   */
+  dataScope?: 'device' | 'class';
   onBack: () => void;
   onForgetPupil: (key: string) => void;
   onForgetAll: () => void;
@@ -76,7 +85,15 @@ function DangerButton({ label, confirm, onConfirm }: { label: string; confirm: s
   );
 }
 
-export function TeacherScreen({ sessions, onBack, onForgetPupil, onForgetAll }: TeacherScreenProps) {
+export function TeacherScreen({
+  sessions,
+  banner,
+  dataScope = 'device',
+  onBack,
+  onForgetPupil,
+  onForgetAll,
+}: TeacherScreenProps) {
+  const inClass = dataScope === 'class';
   const folders = useMemo(() => pupilFolders(sessions), [sessions]);
   const [openKey, setOpenKey] = useState<string | null>(
     folders.length === 1 ? folders[0].key : null
@@ -170,6 +187,7 @@ export function TeacherScreen({ sessions, onBack, onForgetPupil, onForgetAll }: 
       <div className="min-h-screen bg-slate-50 px-4 py-6">
         <div className="max-w-lg mx-auto flex flex-col gap-4">
           {header}
+          {banner}
           <div className="bg-white rounded-2xl p-6 text-center text-slate-500 shadow-sm ring-1 ring-slate-900/5">
             Aucune séance enregistrée. Les dossiers apparaîtront dès la première
             séance terminée.
@@ -184,11 +202,23 @@ export function TeacherScreen({ sessions, onBack, onForgetPupil, onForgetAll }: 
       <div className="min-h-screen bg-slate-50 px-4 py-6">
         <div className="max-w-lg mx-auto flex flex-col gap-4">
           {header}
+          {banner}
           <PupilList folders={folders} onOpen={setOpenKey} />
-          <Card title="Données" hint="Ce qui est enregistré sur cet appareil.">
+          <Card
+            title={inClass ? 'Données de la classe' : 'Données'}
+            hint={
+              inClass
+                ? 'Enregistrées dans la base de la classe, et visibles depuis tous vos appareils.'
+                : 'Ce qui est enregistré sur cet appareil.'
+            }
+          >
             <DangerButton
-              label="Effacer les séances de tous les élèves"
-              confirm={`${sessions.length} séance${sessions.length > 1 ? 's' : ''} et ${folders.length} dossier${folders.length > 1 ? 's' : ''} seront supprimés. C'est définitif.`}
+              label={inClass ? 'Supprimer tous les élèves de la classe' : 'Effacer les séances de tous les élèves'}
+              confirm={
+                inClass
+                  ? `${folders.length} élève${folders.length > 1 ? 's' : ''} et leurs ${sessions.length} séance${sessions.length > 1 ? 's' : ''} seront supprimés de la classe, sur tous les appareils. C'est définitif. Le code de la classe, lui, reste valable.`
+                  : `${sessions.length} séance${sessions.length > 1 ? 's' : ''} et ${folders.length} dossier${folders.length > 1 ? 's' : ''} seront supprimés de cet appareil. C'est définitif.`
+              }
               onConfirm={onForgetAll}
             />
           </Card>
@@ -256,11 +286,19 @@ export function TeacherScreen({ sessions, onBack, onForgetPupil, onForgetAll }: 
           <div className="flex flex-col gap-3">
             <p className="text-sm text-slate-500">
               {folder.sessions.length} séance{folder.sessions.length > 1 ? 's' : ''} enregistrée
-              {folder.sessions.length > 1 ? 's' : ''} sur cet appareil.
+              {folder.sessions.length > 1 ? 's' : ''} {inClass ? 'dans la base de la classe' : 'sur cet appareil'}.
             </p>
             <DangerButton
-              label={`Effacer le dossier de ${pupilLabel(folder.pupil)}`}
-              confirm={`Toutes les séances de ${pupilLabel(folder.pupil)} seront supprimées. C'est définitif.`}
+              label={
+                inClass
+                  ? `Retirer ${pupilLabel(folder.pupil)} de la classe`
+                  : `Effacer le dossier de ${pupilLabel(folder.pupil)}`
+              }
+              confirm={
+                inClass
+                  ? `${pupilLabel(folder.pupil)} et toutes ses séances seront supprimés de la classe, sur tous les appareils. C'est définitif.`
+                  : `Toutes les séances de ${pupilLabel(folder.pupil)} seront supprimées de cet appareil. C'est définitif.`
+              }
               onConfirm={() => {
                 onForgetPupil(folder.key);
                 setOpenKey(null);
