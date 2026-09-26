@@ -1,5 +1,5 @@
-import { ALL_SUBJECTS, ALL_TRIMESTERS, SUBJECT_DOMAINS, subjectOf } from '../types';
-import type { Domain, Level, Subject, Trimester } from '../types';
+import { ALL_SUBJECTS, ALL_TRIMESTERS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS, subjectOf } from '../types';
+import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 
 export interface Preferences {
   name: string;
@@ -7,6 +7,7 @@ export interface Preferences {
   trimester: Trimester;
   subject: Subject;
   domains: Domain[];
+  activity: Activity;
 }
 
 const STORAGE_KEY = 'exercices-cm1-cm2:preferences';
@@ -17,6 +18,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   trimester: 1,
   subject: 'francais',
   domains: [...SUBJECT_DOMAINS.francais],
+  activity: 'questions',
 };
 
 /**
@@ -57,12 +59,20 @@ export function parsePreferences(raw: string | null): Preferences {
     (domain) => candidates.includes(domain) && subjectOf(domain) === subject
   );
 
+  // Poser une opération n'existe pas en français : une activité enregistrée
+  // pour les maths ne doit pas resurgir quand la matière relue est le français.
+  const allowed = SUBJECT_ACTIVITIES[subject];
+  const activity = allowed.includes(stored.activity as Activity)
+    ? (stored.activity as Activity)
+    : allowed[0];
+
   return {
     name,
     level,
     trimester,
     subject,
     domains: domains.length > 0 ? domains : [...SUBJECT_DOMAINS[subject]],
+    activity,
   };
 }
 

@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import type { Domain, Level, Subject, Trimester } from '../types';
+import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 import type { Preferences } from '../lib/preferences';
 import {
+  ACTIVITY_LABELS,
   ALL_SUBJECTS,
   ALL_TRIMESTERS,
   DOMAIN_LABELS,
+  SUBJECT_ACTIVITIES,
   SUBJECT_DOMAINS,
   SUBJECT_EMOJI,
   SUBJECT_LABELS,
@@ -17,6 +19,7 @@ export interface StartOptions {
   level: Level;
   trimester: Trimester;
   subject: Subject;
+  activity: Activity;
 }
 
 interface HomeScreenProps {
@@ -30,19 +33,27 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
   const [trimester, setTrimester] = useState<Trimester>(initial.trimester);
   const [subject, setSubject] = useState<Subject>(initial.subject);
   const [domains, setDomains] = useState<Domain[]>(initial.domains);
+  const [activity, setActivity] = useState<Activity>(initial.activity);
 
   // Changer de matière repart des notions de cette matière : il n'existe aucun
   // état d'où l'on pourrait lancer une séance mêlant le français et les maths.
   const selectSubject = (next: Subject) => {
     setSubject(next);
     setDomains([...SUBJECT_DOMAINS[next]]);
+    if (!SUBJECT_ACTIVITIES[next].includes(activity)) {
+      setActivity(SUBJECT_ACTIVITIES[next][0]);
+    }
   };
+
+  const activities = SUBJECT_ACTIVITIES[subject];
+  const posingOperations = activity === 'posees';
 
   const toggleDomain = (domain: Domain) => {
     setDomains((prev) => (prev.includes(domain) ? prev.filter((d) => d !== domain) : [...prev, domain]));
   };
 
-  const canStart = name.trim().length > 0 && domains.length > 0;
+  // Poser des opérations ne demande aucune notion : l'exercice est le même.
+  const canStart = name.trim().length > 0 && (posingOperations || domains.length > 0);
 
   return (
     <div className="min-h-screen flex flex-col items-center gap-6 bg-sky-50 px-4 py-8">
@@ -121,7 +132,35 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
         </p>
       </div>
 
-      <div className="w-full max-w-sm flex flex-col gap-2">
+      {activities.length > 1 && (
+        <div className="w-full max-w-sm flex flex-col gap-2">
+          <span className="text-lg text-slate-600">Type de séance</span>
+          <div className="flex gap-3">
+            {activities.map((option) => (
+              <button
+                key={option}
+                type="button"
+                onClick={() => setActivity(option)}
+                className={`flex-1 rounded-xl py-3 text-base font-semibold border-2 ${
+                  activity === option
+                    ? 'bg-violet-500 text-white border-violet-500'
+                    : 'bg-white border-violet-200 text-slate-600'
+                }`}
+              >
+                {ACTIVITY_LABELS[option]}
+              </button>
+            ))}
+          </div>
+          {posingOperations && (
+            <p className="text-sm text-slate-400">
+              L'élève écrit l'opération à la main, au doigt ou au stylet. La séance produit
+              un PDF que la maîtresse peut corriger.
+            </p>
+          )}
+        </div>
+      )}
+
+      <div className={`w-full max-w-sm flex-col gap-2 ${posingOperations ? 'hidden' : 'flex'}`}>
         <span className="text-lg text-slate-600">
           Ce que tu travailles en {SUBJECT_LABELS[subject].toLowerCase()}
         </span>
@@ -146,7 +185,7 @@ export function HomeScreen({ initial, onStart }: HomeScreenProps) {
       <button
         type="button"
         disabled={!canStart}
-        onClick={() => onStart({ name: name.trim(), domains, level, trimester, subject })}
+        onClick={() => onStart({ name: name.trim(), domains, level, trimester, subject, activity })}
         className="w-full max-w-sm rounded-xl bg-orange-400 disabled:bg-slate-300 text-white text-xl font-bold py-4"
       >
         Commencer

@@ -13,7 +13,12 @@ Deux règles la gouvernent :
   trimestre ; seules les notions déjà enseignées à cette date sont proposées,
   celles des trimestres précédents comprises.
 
-Une séance fait douze questions. C'est une PWA : elle s'ajoute à l'écran
+Une séance fait douze questions. En maths, elle peut aussi prendre la forme
+de six **opérations posées**, que l'élève écrit à la main au doigt ou au
+stylet : la séance produit alors un PDF où la maîtresse voit le raisonnement,
+pas seulement le résultat.
+
+C'est une PWA : elle s'ajoute à l'écran
 d'accueil d'un téléphone ou d'une tablette, et fonctionne ensuite sans
 connexion.
 

@@ -21,6 +21,7 @@ describe('parsePreferences', () => {
       trimester: 3,
       subject: 'maths',
       domains: ['calcul', 'problemes'],
+      activity: 'questions',
     });
   });
 
@@ -55,6 +56,23 @@ describe('parsePreferences', () => {
   it('retombe sur toute la matière si aucune notion n\'est exploitable', () => {
     const stored = JSON.stringify({ subject: 'maths', domains: ['conjugaison'] });
     expect(parsePreferences(stored).domains).toEqual(SUBJECT_DOMAINS.maths);
+  });
+
+  it('relit le type de séance', () => {
+    const stored = JSON.stringify({ subject: 'maths', activity: 'posees' });
+    expect(parsePreferences(stored).activity).toBe('posees');
+  });
+
+  it('ne fait pas poser des opérations en français', () => {
+    // Ce que le stockage contient après une séance de maths posées, si
+    // l'enfant revient ensuite au français.
+    const stored = JSON.stringify({ subject: 'francais', activity: 'posees' });
+    expect(parsePreferences(stored).activity).toBe('questions');
+  });
+
+  it('ignore un type de séance inconnu', () => {
+    const stored = JSON.stringify({ subject: 'maths', activity: 'dictee' });
+    expect(parsePreferences(stored).activity).toBe('questions');
   });
 
   it('borne la longueur du prénom', () => {

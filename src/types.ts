@@ -16,6 +16,26 @@ export const TRIMESTER_LABELS: Record<Trimester, string> = {
  *  l'autre. Une séance ne porte jamais sur les deux à la fois. */
 export type Subject = 'francais' | 'maths';
 
+/**
+ * Ce que l'élève fait pendant la séance. Les questions à choix se répondent
+ * du bout du doigt ; une opération posée s'écrit à la main, en colonnes, et
+ * laisse une trace que la maîtresse pourra lire à la correction.
+ */
+export type Activity = 'questions' | 'posees';
+
+export const ALL_ACTIVITIES: Activity[] = ['questions', 'posees'];
+
+export const ACTIVITY_LABELS: Record<Activity, string> = {
+  questions: 'Questions',
+  posees: 'Opérations posées',
+};
+
+/** Poser une opération n'a de sens qu'en maths. */
+export const SUBJECT_ACTIVITIES: Record<Subject, Activity[]> = {
+  francais: ['questions'],
+  maths: ['questions', 'posees'],
+};
+
 /** Une notion travaillée à l'intérieur d'une matière. */
 export type Domain =
   | 'conjugaison'

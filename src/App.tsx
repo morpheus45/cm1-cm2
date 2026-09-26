@@ -1,71 +1,118 @@
 import { useState } from 'react';
 import { subjectOf } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
+import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
 import { loadPreferences, savePreferences } from './lib/preferences';
 import { HomeScreen, type StartOptions } from './components/HomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
+import { WrittenOperationScreen } from './components/WrittenOperationScreen';
+import { WrittenRecapScreen } from './components/WrittenRecapScreen';
 
-type Screen = 'home' | 'question' | 'recap';
+type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap';
 
 const STARS_KEY = 'exercices-cm1-cm2:stars';
 
 function loadStars(): number {
-  const raw = localStorage.getItem(STARS_KEY);
-  const parsed = raw ? Number(raw) : 0;
-  return Number.isFinite(parsed) ? parsed : 0;
+  try {
+    const raw = localStorage.getItem(STARS_KEY);
+    const parsed = raw ? Number(raw) : 0;
+    return Number.isFinite(parsed) ? parsed : 0;
+  } catch {
+    return 0;
+  }
 }
 
 function saveStars(value: number) {
-  localStorage.setItem(STARS_KEY, String(value));
+  try {
+    localStorage.setItem(STARS_KEY, String(value));
+  } catch {
+    // Stockage refusé : l'élève garde ses étoiles le temps de la séance.
+  }
 }
 
 export function App() {
   const [screen, setScreen] = useState<Screen>('home');
   const [session, setSession] = useState<Session | null>(null);
+  const [worksheet, setWorksheet] = useState<Worksheet | null>(null);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [config, setConfig] = useState<StartOptions | null>(null);
-  const [totalStars, setTotalStars] = useState(loadStars);
   // Lu une seule fois : l'écran d'accueil part de là, et n'est pas remis à
   // zéro quand l'élève revient du bilan.
   const [preferences] = useState(loadPreferences);
+  const [totalStars, setTotalStars] = useState(loadStars);
 
   const startSession = (options: StartOptions) => {
     const seed = Date.now();
-    const built = buildSession({
-      domains: options.domains,
-      level: options.level,
-      trimester: options.trimester,
-      seed,
-    });
     savePreferences({
       name: options.name,
       level: options.level,
       trimester: options.trimester,
       subject: options.subject,
       domains: options.domains,
+      activity: options.activity,
     });
     setConfig(options);
-    setSession(built);
     setIndex(0);
     setScore(0);
+
+    if (options.activity === 'posees') {
+      setWorksheet(
+        buildWorksheet({
+          name: options.name,
+          level: options.level,
+          trimester: options.trimester,
+          seed,
+        })
+      );
+      setScreen('pose');
+      return;
+    }
+
+    setSession(
+      buildSession({
+        domains: options.domains,
+        level: options.level,
+        trimester: options.trimester,
+        seed,
+      })
+    );
     setScreen('question');
+  };
+
+  const awardStar = () => {
+    const nextStars = totalStars + 1;
+    setTotalStars(nextStars);
+    saveStars(nextStars);
   };
 
   const handleAnswer = (correct: boolean) => {
     if (!session) return;
-    const nextScore = correct ? score + 1 : score;
-    setScore(nextScore);
     if (correct) {
-      const nextStars = totalStars + 1;
-      setTotalStars(nextStars);
-      saveStars(nextStars);
+      setScore(score + 1);
+      awardStar();
     }
     if (index + 1 < session.questions.length) {
       setIndex(index + 1);
     } else {
       setScreen('recap');
+    }
+  };
+
+  const handleWrittenAnswer = (given: string, strokes: Stroke[]) => {
+    if (!worksheet) return;
+    const operation = worksheet.operations[index];
+    const answered: Worksheet = {
+      ...worksheet,
+      answers: { ...worksheet.answers, [operation.id]: { given, strokes } },
+    };
+    setWorksheet(answered);
+    if (given.trim() !== '' && given === operation.expected) awardStar();
+    if (index + 1 < answered.operations.length) {
+      setIndex(index + 1);
+    } else {
+      setScreen('poseRecap');
     }
   };
 
@@ -77,14 +124,29 @@ export function App() {
     startSession(config);
   };
 
-  const finish = () => setScreen('home');
-  const quit = () => setScreen('home');
+  const goHome = () => setScreen('home');
 
-  if (screen === 'home' || !session) {
+  if (screen === 'home') {
     return <HomeScreen initial={config ?? preferences} onStart={startSession} />;
   }
 
-  if (screen === 'question') {
+  if (screen === 'pose' && worksheet) {
+    return (
+      <WrittenOperationScreen
+        operation={worksheet.operations[index]}
+        operationNumber={index + 1}
+        totalOperations={worksheet.operations.length}
+        onValidate={handleWrittenAnswer}
+        onQuit={goHome}
+      />
+    );
+  }
+
+  if (screen === 'poseRecap' && worksheet) {
+    return <WrittenRecapScreen worksheet={worksheet} onRestart={restart} onFinish={goHome} />;
+  }
+
+  if (screen === 'question' && session) {
     const question = session.questions[index];
     return (
       <QuestionScreen
@@ -93,20 +155,24 @@ export function App() {
         questionNumber={index + 1}
         totalQuestions={session.questions.length}
         onAnswer={handleAnswer}
-        onQuit={quit}
+        onQuit={goHome}
       />
     );
   }
 
-  return (
-    <RecapScreen
-      name={config?.name}
-      subject={session.subject}
-      score={score}
-      total={session.questions.length}
-      totalStars={totalStars}
-      onRestart={restart}
-      onFinish={finish}
-    />
-  );
+  if (screen === 'recap' && session) {
+    return (
+      <RecapScreen
+        name={config?.name}
+        subject={session.subject}
+        score={score}
+        total={session.questions.length}
+        totalStars={totalStars}
+        onRestart={restart}
+        onFinish={goHome}
+      />
+    );
+  }
+
+  return <HomeScreen initial={config ?? preferences} onStart={startSession} />;
 }
