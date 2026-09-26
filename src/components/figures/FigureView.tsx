@@ -1,4 +1,5 @@
-import type { Figure, Ink, Point, Shape } from '../../lib/figures';
+import { LETTER_RADIUS, type Figure, type Ink, type Point, type Shape } from '../../lib/figures';
+import { MAP_COLORS } from '../../theme';
 
 const INK = '#1E2A4A';
 const PALE = '#8C96A8';
@@ -29,13 +30,23 @@ function unit([ax, ay]: Point, [bx, by]: Point): Point {
 
 /**
  * Trace une figure d'exercice : l'encre du cahier, la couleur de la notion
- * pour ce que la question désigne, le gris pour les arêtes cachées.
+ * pour ce que la question désigne, le gris pour les arêtes cachées ; sur une
+ * carte, les couleurs de l'atlas.
  */
 export function FigureView({ figure, accent, className }: FigureViewProps) {
-  const color = (ink: Ink | undefined) => (ink === 'couleur' ? accent : ink === 'pale' ? PALE : INK);
+  const color = (ink: Ink | undefined) =>
+    ink === 'couleur'
+      ? accent
+      : ink === 'pale'
+        ? PALE
+        : ink === 'eau'
+          ? MAP_COLORS.eau
+          : ink === 'frontiere'
+            ? MAP_COLORS.frontiere
+            : INK;
 
   const draw = (shape: Shape, key: number) => {
-    const stroke = color(shape.ink);
+    const stroke = color('ink' in shape && shape.ink !== 'aucune' ? shape.ink : undefined);
     const common = { stroke, fill: 'none', strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
     switch (shape.kind) {
       case 'segment':
@@ -120,6 +131,11 @@ export function FigureView({ figure, accent, className }: FigureViewProps) {
             fontWeight={shape.bold ? 700 : 400}
             textAnchor={shape.anchor ?? 'start'}
             fontFamily="inherit"
+            // Le halo blanc, peint sous les lettres, les détache de la carte.
+            stroke={shape.halo ? '#FFFFFF' : undefined}
+            strokeWidth={shape.halo ? 2.6 : undefined}
+            strokeLinejoin={shape.halo ? 'round' : undefined}
+            paintOrder={shape.halo ? 'stroke' : undefined}
           >
             {shape.text}
           </text>
@@ -172,6 +188,64 @@ export function FigureView({ figure, accent, className }: FigureViewProps) {
         }
         return <g key={key}>{lines}</g>;
       }
+      case 'aire':
+        return (
+          <path
+            key={key}
+            d={shape.rings.map((ring) => path(ring, true)).join(' ')}
+            fill={shape.ground ? MAP_COLORS[shape.ground] : 'none'}
+            stroke={shape.ink === 'aucune' ? 'none' : stroke}
+            strokeWidth={shape.width ?? 0.8}
+            strokeLinejoin="round"
+          />
+        );
+      case 'trace':
+        return (
+          <path
+            key={key}
+            d={path(shape.points, false)}
+            {...common}
+            strokeWidth={shape.width ?? 1.6}
+            strokeDasharray={shape.dashed ? '4 3' : undefined}
+          />
+        );
+      case 'lettre':
+        return (
+          <g key={key}>
+            <circle cx={shape.at[0]} cy={shape.at[1]} r={LETTER_RADIUS} fill="#FFFFFF" stroke={INK} strokeWidth={1.4} />
+            <text
+              x={shape.at[0]}
+              y={shape.at[1]}
+              dy="0.35em"
+              textAnchor="middle"
+              fontSize={12.5}
+              fontWeight={700}
+              fill={INK}
+              fontFamily="inherit"
+            >
+              {shape.text}
+            </text>
+          </g>
+        );
+      case 'montagne': {
+        const [x, y] = shape.at;
+        return (
+          <path
+            key={key}
+            d={`M ${x - 5} ${y + 4} L ${x} ${y - 5} L ${x + 5} ${y + 4} Z`}
+            fill={MAP_COLORS.relief}
+            stroke="#FFFFFF"
+            strokeWidth={0.6}
+            strokeLinejoin="round"
+          />
+        );
+      }
+      case 'ville':
+        return shape.highlight ? (
+          <circle key={key} cx={shape.at[0]} cy={shape.at[1]} r={6.5} fill={MAP_COLORS.surbrillance} stroke={INK} strokeWidth={1.4} />
+        ) : (
+          <circle key={key} cx={shape.at[0]} cy={shape.at[1]} r={2.3} fill={INK} stroke="#FFFFFF" strokeWidth={0.8} />
+        );
     }
   };
 

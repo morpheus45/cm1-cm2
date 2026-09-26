@@ -36,7 +36,8 @@ en titre, et « quelque chose qu'on ne voit pas partout ».
 ## Les jetons
 
 `src/theme.ts` (couleurs des notions : `band` pour les dessins, `deep` pour les
-textes et bordures, `tint` pour les fonds) et `tailwind.config.js` (`papier`,
+textes et bordures, `tint` pour les fonds ; couleurs des cartes, celles d'un
+atlas d'école, dans `MAP_COLORS`) et `tailwind.config.js` (`papier`,
 `encre`, `encre-douce`, `encre-pale`, polices `sans` et `cursive`). Les classes
 `.cahier`, `.etiquette`, `.bouton-encre` et `.tampon` sont dans
 `src/index.css` ; les composants dans `src/components/ecole/`.

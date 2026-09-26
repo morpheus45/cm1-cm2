@@ -46,5 +46,26 @@ export const SUBJECT_COLORS: Record<Subject, NotionColors> = {
   geographie: NOTION_COLORS.cartes,
 };
 
+/**
+ * Les couleurs des cartes, celles d'un atlas d'école : la mer en bleu, la
+ * France en blanc, les pays voisins en beige, les fleuves en bleu vif, les
+ * montagnes en brun. Ce que désigne la question est en orange, jamais en
+ * bleu : sur une carte, le bleu, c'est l'eau.
+ *
+ * Contrastes vérifiés (3:1 au moins pour tout ce qui sert à répondre) :
+ * orange sur la France 4,4, sur la mer 3,0, sur les voisins 3,9 ; fleuves 5,0
+ * sur la France et 3,5 sur la mer ; montagnes 5,6 ; frontières 3,5 sur les
+ * voisins.
+ */
+export const MAP_COLORS = {
+  mer: '#B8D9EF',
+  terre: '#FFFDF7',
+  voisin: '#F1EEE8',
+  frontiere: '#857D71',
+  eau: '#2471B5',
+  relief: '#8E5B2E',
+  surbrillance: '#CC4E17',
+};
+
 /** Le rouge du stylo de la maîtresse — tampons, corrections. */
 export const TEACHER_RED = '#C0263D';
