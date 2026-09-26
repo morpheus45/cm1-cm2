@@ -1,5 +1,6 @@
 import { pupilLabel } from '../types';
 import { summariseByDomain, MASTERY_COLORS, type PupilFolder } from '../lib/results';
+import { NOTION_COLORS } from '../theme';
 
 function frenchDate(iso: string): string {
   const date = new Date(iso);
@@ -30,18 +31,21 @@ export function PupilList({
             <button
               type="button"
               onClick={() => onOpen(folder.key)}
-              className="w-full text-left bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-900/5 flex items-center justify-between gap-3"
+              className="etiquette flex w-full items-center justify-between gap-3 p-4 text-left"
             >
               <span className="min-w-0">
-                <span className="block font-bold text-slate-800 truncate">
+                <span className="block truncate text-lg font-bold text-encre">
                   {pupilLabel(folder.pupil)}
                 </span>
-                <span className="block text-xs text-slate-500">
+                <span className="block text-xs font-normal text-encre-douce">
                   {folder.sessions.length} séance{folder.sessions.length > 1 ? 's' : ''} · dernière
                   le {frenchDate(folder.lastAt)}
                 </span>
                 {(toCorrect[folder.key] ?? 0) > 0 && (
-                  <span className="mt-1 inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800">
+                  <span
+                    className="mt-1 inline-block rounded-full px-2 py-0.5 text-xs font-bold"
+                    style={{ background: NOTION_COLORS.accords.tint, color: NOTION_COLORS.accords.deep }}
+                  >
                     {toCorrect[folder.key]} feuille{toCorrect[folder.key] > 1 ? 's' : ''} à corriger
                   </span>
                 )}

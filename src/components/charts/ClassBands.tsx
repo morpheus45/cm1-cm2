@@ -24,7 +24,7 @@ export interface ClassBand {
 export function ClassBands({ bands, pupilCount }: { bands: ClassBand[]; pupilCount: number }) {
   if (bands.length === 0) {
     return (
-      <p className="text-sm text-slate-400 py-8 text-center">
+      <p className="text-sm text-encre-pale py-8 text-center">
         Cette vue compare l'élève au reste de la classe. Elle apparaîtra quand
         plusieurs élèves auront travaillé.
       </p>
@@ -46,10 +46,10 @@ export function ClassBands({ bands, pupilCount }: { bands: ClassBand[]; pupilCou
         return (
           <div key={band.domain}>
             <div className="flex items-baseline justify-between gap-3 mb-1">
-              <span className="text-sm font-semibold text-slate-700">
+              <span className="text-sm font-semibold text-encre">
                 {DOMAIN_LABELS[band.domain]}
               </span>
-              <span className="text-xs text-slate-500">
+              <span className="text-xs text-encre-douce">
                 {band.pupilName} :{' '}
                 {band.pupilMastery ? MASTERY_SHORT[band.pupilMastery] : 'pas encore évalué'}
               </span>
@@ -72,10 +72,10 @@ export function ClassBands({ bands, pupilCount }: { bands: ClassBand[]; pupilCou
             <div className="relative h-4">
               {markerAt !== null && (
                 <span
-                  className="absolute -translate-x-1/2 top-px text-[11px] font-bold text-slate-800 whitespace-nowrap"
+                  className="absolute -translate-x-1/2 top-px text-[11px] font-bold text-encre whitespace-nowrap"
                   style={{ left: `${markerAt}%` }}
                 >
-                  <span className="absolute left-1/2 -translate-x-1/2 -top-[7px] w-0 h-0 border-x-[5px] border-x-transparent border-b-[6px] border-b-slate-800" />
+                  <span className="absolute left-1/2 -translate-x-1/2 -top-[7px] w-0 h-0 border-x-[5px] border-x-transparent border-b-[6px] border-b-encre" />
                   {band.pupilName}
                 </span>
               )}
@@ -84,14 +84,14 @@ export function ClassBands({ bands, pupilCount }: { bands: ClassBand[]; pupilCou
         );
       })}
 
-      <div className="flex flex-wrap gap-x-4 gap-y-2 pt-3 border-t border-slate-200">
+      <div className="flex flex-wrap gap-x-4 gap-y-2 pt-3 border-t border-encre/15">
         {LEVELS.map((level) => (
-          <span key={level} className="flex items-center gap-1.5 text-xs text-slate-500">
+          <span key={level} className="flex items-center gap-1.5 text-xs text-encre-douce">
             <span className="w-3 h-3 rounded-sm" style={{ background: MASTERY_COLORS[level] }} />
             {level} · {MASTERY_SHORT[level]}
           </span>
         ))}
-        <span className="w-full text-xs text-slate-400">
+        <span className="w-full text-xs text-encre-pale">
           Chiffres en % des {pupilCount} élèves évalués. Sur un petit effectif, un
           pourcentage pèse lourd : à deux élèves, un seul fait 50 %.
         </span>

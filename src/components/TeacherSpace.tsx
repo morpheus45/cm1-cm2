@@ -22,6 +22,9 @@ import {
   type WorksheetStatus,
 } from '../lib/teacherCloud';
 import { CorrectionScreen } from './CorrectionScreen';
+import { NOTION_COLORS } from '../theme';
+import { SchoolTitle } from './ecole/SchoolTitle';
+import { Tableau } from './ecole/Tableau';
 import { TeacherScreen } from './TeacherScreen';
 
 interface TeacherSpaceProps {
@@ -31,15 +34,20 @@ interface TeacherSpaceProps {
   onForgetAllLocal: () => void;
 }
 
-const input = 'rounded-xl border-2 border-slate-200 px-4 py-3 text-lg w-full';
-const primary = 'w-full rounded-xl bg-violet-500 text-white text-lg font-bold py-3 disabled:bg-slate-300';
-const secondary =
-  'w-full rounded-xl border-2 border-violet-200 bg-white text-violet-700 text-lg font-semibold py-3 disabled:opacity-50';
+const input =
+  'w-full rounded-xl border-2 border-encre/25 bg-white px-4 py-3 text-lg text-encre focus:border-encre focus:outline-none';
+const primary = 'bouton-encre w-full py-3 text-lg';
+const secondary = 'etiquette w-full py-3 text-lg';
+const fiche =
+  'flex flex-col gap-3 rounded-2xl bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_12px_24px_-16px_rgba(30,42,74,0.4)] ring-1 ring-encre/10';
 
 function Panel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-slate-50 px-4 py-6">
-      <div className="max-w-lg mx-auto flex flex-col gap-4">{children}</div>
+    <div className="min-h-screen px-4 py-5">
+      <div className="mx-auto flex max-w-lg flex-col gap-4">
+        <SchoolTitle size="petit" subtitle="Espace maîtresse" />
+        {children}
+      </div>
     </div>
   );
 }
@@ -139,7 +147,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   if (account === 'loading') {
     return (
       <Panel>
-        <p className="text-center text-slate-500 py-10">Chargement…</p>
+        <p className="py-10 text-center text-encre-douce">Chargement…</p>
       </Panel>
     );
   }
@@ -150,21 +158,20 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
       <Panel>
         <header className="flex items-start justify-between gap-3">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-violet-600">Accès maîtresse</p>
-            <h1 className="text-2xl font-bold text-slate-800">Connexion</h1>
+            <h2 className="text-2xl font-bold text-encre">Connexion</h2>
           </div>
           <button
             type="button"
             onClick={onBack}
-            className="shrink-0 rounded-xl border-2 border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600"
+            className="etiquette shrink-0 px-4 py-2 text-sm"
           >
             Retour
           </button>
         </header>
 
-        <section className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-900/5 flex flex-col gap-3">
+        <section className={fiche}>
           <label className="flex flex-col gap-1">
-            <span className="text-sm text-slate-600">Adresse e-mail</span>
+            <span className="text-sm font-bold text-encre-douce">Adresse e-mail</span>
             <input
               className={input}
               type="email"
@@ -174,7 +181,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
             />
           </label>
           <label className="flex flex-col gap-1">
-            <span className="text-sm text-slate-600">Mot de passe (8 caractères au moins)</span>
+            <span className="text-sm font-bold text-encre-douce">Mot de passe (8 caractères au moins)</span>
             <input
               className={input}
               type="password"
@@ -183,8 +190,8 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
               onChange={(e) => setPassword(e.target.value)}
             />
           </label>
-          {error && <p className="text-sm text-red-700">{error}</p>}
-          {notice && <p className="text-sm text-emerald-700">{notice}</p>}
+          {error && <p className="text-sm font-bold text-[#B91C3B]">{error}</p>}
+          {notice && <p className="text-sm font-bold text-[#1B7A43]">{notice}</p>}
           <button
             type="button"
             disabled={!canSubmit}
@@ -224,7 +231,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         <button
           type="button"
           onClick={() => setOffline(true)}
-          className="text-sm text-slate-500 underline underline-offset-4"
+          className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
         >
           Continuer sans compte, avec les séances de cet appareil
         </button>
@@ -248,13 +255,12 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     return (
       <Panel>
         <header>
-          <p className="text-xs font-bold uppercase tracking-wider text-violet-600">Accès maîtresse</p>
-          <h1 className="text-2xl font-bold text-slate-800">Créer ma classe</h1>
-          <p className="text-sm text-slate-500">{account.email}</p>
+          <h2 className="text-2xl font-bold text-encre">Créer ma classe</h2>
+          <p className="text-sm text-encre-douce">{account.email}</p>
         </header>
-        <section className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-900/5 flex flex-col gap-3">
+        <section className={fiche}>
           <label className="flex flex-col gap-1">
-            <span className="text-sm text-slate-600">Nom de la classe</span>
+            <span className="text-sm font-bold text-encre-douce">Nom de la classe</span>
             <input
               className={input}
               value={className}
@@ -268,15 +274,14 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
                 key={lvl}
                 type="button"
                 onClick={() => setClassLevel(lvl)}
-                className={`flex-1 rounded-xl py-3 text-lg font-semibold border-2 ${
-                  classLevel === lvl ? 'bg-sky-400 text-white border-sky-400' : 'bg-white border-sky-200 text-slate-600'
-                }`}
+                aria-pressed={classLevel === lvl}
+                className={`etiquette flex-1 py-3 text-lg ${classLevel === lvl ? '!bg-encre !text-white' : ''}`}
               >
                 {lvl}
               </button>
             ))}
           </div>
-          {error && <p className="text-sm text-red-700">{error}</p>}
+          {error && <p className="text-sm font-bold text-[#B91C3B]">{error}</p>}
           <button
             type="button"
             disabled={className.trim().length === 0 || busy}
@@ -294,7 +299,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         <button
           type="button"
           onClick={() => run(async () => { await signOut(); setAccount(null); setClasses(null); })}
-          className="text-sm text-slate-500 underline underline-offset-4"
+          className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
         >
           Se déconnecter
         </button>
@@ -303,26 +308,22 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   }
 
   const banner = current && (
-    <section className="bg-violet-50 rounded-2xl p-4 ring-1 ring-violet-200 flex flex-col gap-2">
-      <p className="text-sm text-violet-700">
-        {current.name} · {current.level}
+    <section className={fiche}>
+      <p className="text-base font-bold text-encre">
+        {current.name} <span className="font-normal text-encre-douce">· {current.level}</span>
       </p>
-      <p className="text-sm text-slate-600">Code à donner aux élèves :</p>
-      <p className="text-4xl font-bold tracking-[0.35em] text-violet-800" aria-label={`Code de classe ${current.joinCode.split('').join(' ')}`}>
-        {current.joinCode}
-      </p>
-      {error && <p className="text-sm text-red-700">{error}</p>}
-      {worksheetsError && <p className="text-sm text-red-700">{worksheetsError}</p>}
+      <div className="flex flex-col items-center gap-1">
+        <p className="text-sm font-bold text-encre-douce">Code à écrire au tableau pour les élèves :</p>
+        <Tableau code={current.joinCode} />
+      </div>
+      {error && <p className="text-sm font-bold text-[#B91C3B]">{error}</p>}
+      {worksheetsError && <p className="text-sm font-bold text-[#B91C3B]">{worksheetsError}</p>}
       {queue.length > 0 && (
-        <div className="flex items-center justify-between gap-3 rounded-xl bg-white px-4 py-3 ring-1 ring-amber-200">
-          <p className="text-sm font-medium text-amber-900">
+        <div className="flex items-center justify-between gap-3 rounded-xl border-2 px-4 py-3" style={{ borderColor: NOTION_COLORS.accords.deep, background: NOTION_COLORS.accords.tint }}>
+          <p className="text-sm font-bold" style={{ color: NOTION_COLORS.accords.deep }}>
             {queue.length} feuille{queue.length > 1 ? 's' : ''} d'opérations à corriger
           </p>
-          <button
-            type="button"
-            onClick={() => openCorrection(queue[0])}
-            className="shrink-0 rounded-xl bg-violet-500 px-4 py-2 text-sm font-bold text-white"
-          >
+          <button type="button" onClick={() => openCorrection(queue[0])} className="bouton-encre shrink-0 px-4 py-2 text-sm">
             Corriger
           </button>
         </div>
@@ -367,7 +368,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
       />
     ) : (
       <Panel>
-        <p className={`text-center py-10 ${correcting.error ? 'text-red-700' : 'text-slate-500'}`}>
+        <p className={`py-10 text-center ${correcting.error ? 'font-bold text-[#B91C3B]' : 'text-encre-douce'}`}>
           {correcting.error ?? 'Ouverture de la feuille…'}
         </p>
         <button type="button" onClick={() => setCorrecting(null)} className={secondary}>

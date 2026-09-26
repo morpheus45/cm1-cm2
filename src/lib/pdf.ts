@@ -270,8 +270,8 @@ export function renderPdf(pages: PdfPage[], metadata: PdfMetadata = {}): Uint8Ar
 
   startObject(infoId);
   const infoString = (value: string) => String.fromCharCode(...encodePdfTextUtf16(value));
-  const title = infoString(metadata.title ?? 'Mes exercices');
-  const author = infoString(metadata.author ?? 'Mes exercices CM1-CM2');
+  const title = infoString(metadata.title ?? 'École Arc-en-Ciel');
+  const author = infoString(metadata.author ?? 'École Arc-en-Ciel');
   push(`<< /Title (${title}) /Author (${author}) /Producer (${author}) >>\nendobj\n`);
 
   safePages.forEach((page, index) => {

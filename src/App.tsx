@@ -229,7 +229,7 @@ export function App() {
 
   if (teacherView) {
     return (
-      <Suspense fallback={<p className="min-h-screen bg-slate-50 py-16 text-center text-slate-500">Chargement…</p>}>
+      <Suspense fallback={<p className="min-h-screen py-16 text-center text-encre-douce">Chargement…</p>}>
         <TeacherSpace
           localSessions={results}
           onForgetLocalPupil={(key) => setResults(forgetPupil(key))}

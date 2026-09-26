@@ -117,7 +117,7 @@ export function RadarProfile({
               <tspan fill="#52514e" fontWeight="600">
                 {DOMAIN_LABELS[summary.domain].split(' ')[0]}
               </tspan>
-              <tspan x={x} dy="13" fill="#898781">
+              <tspan x={x} dy="13" fill="#67665f">
                 {summary.ratio === null ? '—' : `${Math.round(summary.ratio * 100)} %`}
               </tspan>
             </text>
@@ -125,7 +125,7 @@ export function RadarProfile({
         })}
       </svg>
 
-      <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-slate-500">
+      <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-encre-douce">
         <span className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-sm" style={{ background: PUPIL }} />
           L'élève
@@ -137,7 +137,7 @@ export function RadarProfile({
           </span>
         )}
         {missing.length > 0 && (
-          <span className="w-full text-center text-slate-400">
+          <span className="w-full text-center text-encre-pale">
             {missing.length === 1
               ? `${DOMAIN_LABELS[missing[0].domain]} n'a jamais été travaillé.`
               : `${missing.length} notions n'ont jamais été travaillées.`}

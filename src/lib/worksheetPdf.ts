@@ -156,6 +156,15 @@ export function worksheetToPdfPages(worksheet: Worksheet): PdfPage[] {
         bold: true,
       },
       {
+        kind: 'text',
+        x: PAGE_WIDTH - MARGIN,
+        y: 76,
+        size: 10,
+        gray: 0.45,
+        align: 'right',
+        text: 'École Arc-en-Ciel',
+      },
+      {
         kind: 'polyline',
         points: [
           [MARGIN, separatorY],
@@ -244,7 +253,7 @@ export function worksheetToPdfPages(worksheet: Worksheet): PdfPage[] {
 export function worksheetToPdf(worksheet: Worksheet): Uint8Array {
   return renderPdf(worksheetToPdfPages(worksheet), {
     title: `Opérations posées — ${worksheet.name || 'élève'}`,
-    author: 'Mes exercices CM1-CM2',
+    author: 'École Arc-en-Ciel',
   });
 }
 

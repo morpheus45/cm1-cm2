@@ -58,38 +58,19 @@ function encodePng(width, height, rgba) {
 
 // --- Dessin ---------------------------------------------------------------
 
-const TOP = [139, 92, 246]; // violet-500, la couleur du sélecteur de matière
-const BOTTOM = [91, 33, 182]; // violet-800
-const WHITE = [255, 255, 255];
-
-const GLYPHS = {
-  C: [
-    '.#####.',
-    '##...##',
-    '#.....#',
-    '#......',
-    '#......',
-    '#......',
-    '#.....#',
-    '##...##',
-    '.#####.',
-  ],
-  M: [
-    '#.....#',
-    '##...##',
-    '#.#.#.#',
-    '#..#..#',
-    '#.....#',
-    '#.....#',
-    '#.....#',
-    '#.....#',
-    '#.....#',
-  ],
-};
-
-const GLYPH_WIDTH = 7;
-const GLYPH_HEIGHT = 9;
-const GLYPH_GAP = 2;
+// Le papier du cahier, ses lignes Seyès et sa marge, et l'arc-en-ciel des six
+// notions (mêmes couleurs que src/theme.ts) : l'icône est l'École elle-même.
+const PAPER = [251, 247, 238];
+const LINE = [201, 221, 242];
+const MARGIN = [233, 150, 138];
+const BANDS = [
+  [229, 72, 77], // conjugaison — rouge
+  [242, 132, 47], // accords — orange
+  [247, 197, 72], // orthographe — jaune
+  [61, 174, 107], // numération — vert
+  [61, 132, 214], // calcul — bleu
+  [139, 92, 240], // problèmes — violet
+];
 
 function insideRoundedSquare(x, y, size, radius) {
   const min = radius;
@@ -101,78 +82,80 @@ function insideRoundedSquare(x, y, size, radius) {
   return dx * dx + dy * dy <= radius * radius;
 }
 
+/** La couleur du dessin en un point (hors transparence des coins). */
+function colorAt(x, y, size, arcRatio) {
+  const cx = size / 2;
+  const cy = size * 0.66;
+  const outer = size * arcRatio;
+  const band = outer / 10;
+  if (y <= cy) {
+    const distance = Math.hypot(x - cx, y - cy);
+    const index = Math.floor((outer - distance) / band);
+    if (distance <= outer && index >= 0 && index < BANDS.length) return BANDS[index];
+  }
+  const step = size / 9;
+  const lineWidth = Math.max(1, size / 180);
+  if (Math.abs(x - size * 0.15) < lineWidth) return MARGIN;
+  if (((y + step / 2) % step) < lineWidth) return LINE;
+  return PAPER;
+}
+
 /**
  * @param size        côté de l'image, en pixels
  * @param cornerRatio 0 pour un carré plein (icône « maskable », que le système
  *                    rognera lui-même), 0.22 pour un carré arrondi
- * @param textRatio   largeur du texte, en fraction du côté
+ * @param arcRatio    rayon de l'arc-en-ciel, en fraction du côté
  */
-function drawIcon(size, cornerRatio, textRatio) {
+function drawIcon(size, cornerRatio, arcRatio) {
   const rgba = Buffer.alloc(size * size * 4);
   const radius = Math.round(size * cornerRatio);
-
+  // Quatre fois quatre échantillons par pixel : des bords lisses, même en
+  // 32 pixels.
+  const samples = 4;
   for (let y = 0; y < size; y++) {
-    const t = y / (size - 1);
-    const r = Math.round(TOP[0] + (BOTTOM[0] - TOP[0]) * t);
-    const g = Math.round(TOP[1] + (BOTTOM[1] - TOP[1]) * t);
-    const b = Math.round(TOP[2] + (BOTTOM[2] - TOP[2]) * t);
     for (let x = 0; x < size; x++) {
-      const opaque = radius === 0 || insideRoundedSquare(x + 0.5, y + 0.5, size, radius);
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      let alpha = 0;
+      for (let sy = 0; sy < samples; sy++) {
+        for (let sx = 0; sx < samples; sx++) {
+          const px = x + (sx + 0.5) / samples;
+          const py = y + (sy + 0.5) / samples;
+          if (radius > 0 && !insideRoundedSquare(px, py, size, radius)) continue;
+          const [cr, cg, cb] = colorAt(px, py, size, arcRatio);
+          r += cr;
+          g += cg;
+          b += cb;
+          alpha += 1;
+        }
+      }
       const offset = (y * size + x) * 4;
-      rgba[offset] = r;
-      rgba[offset + 1] = g;
-      rgba[offset + 2] = b;
-      rgba[offset + 3] = opaque ? 255 : 0;
+      if (alpha > 0) {
+        rgba[offset] = Math.round(r / alpha);
+        rgba[offset + 1] = Math.round(g / alpha);
+        rgba[offset + 2] = Math.round(b / alpha);
+      }
+      rgba[offset + 3] = Math.round((alpha / (samples * samples)) * 255);
     }
   }
-
-  const columns = GLYPH_WIDTH * 2 + GLYPH_GAP;
-  const scale = Math.max(1, Math.floor((size * textRatio) / columns));
-  const textWidth = columns * scale;
-  const textHeight = GLYPH_HEIGHT * scale;
-  const originX = Math.round((size - textWidth) / 2);
-  const originY = Math.round((size - textHeight) / 2);
-
-  const paint = (glyph, columnOffset) => {
-    glyph.forEach((row, gy) => {
-      [...row].forEach((cell, gx) => {
-        if (cell !== '#') return;
-        for (let dy = 0; dy < scale; dy++) {
-          for (let dx = 0; dx < scale; dx++) {
-            const x = originX + (columnOffset + gx) * scale + dx;
-            const y = originY + gy * scale + dy;
-            if (x < 0 || y < 0 || x >= size || y >= size) continue;
-            const offset = (y * size + x) * 4;
-            rgba[offset] = WHITE[0];
-            rgba[offset + 1] = WHITE[1];
-            rgba[offset + 2] = WHITE[2];
-            rgba[offset + 3] = 255;
-          }
-        }
-      });
-    });
-  };
-
-  paint(GLYPHS.C, 0);
-  paint(GLYPHS.M, GLYPH_WIDTH + GLYPH_GAP);
-
   return encodePng(size, size, rgba);
 }
 
 const FILES = [
-  // nom, taille, arrondi, largeur du texte
-  ['favicon-32.png', 32, 0.22, 0.72],
-  ['icon-192.png', 192, 0.22, 0.62],
-  ['icon-512.png', 512, 0.22, 0.62],
+  // nom, taille, arrondi, rayon de l'arc-en-ciel
+  ['favicon-32.png', 32, 0.22, 0.44],
+  ['icon-192.png', 192, 0.22, 0.4],
+  ['icon-512.png', 512, 0.22, 0.4],
   // L'icône « maskable » est rognée par le système : le dessin reste dans les
   // 80 % centraux, sinon Android en coupe les bords.
-  ['icon-maskable-512.png', 512, 0, 0.46],
+  ['icon-maskable-512.png', 512, 0, 0.32],
   // iOS applique lui-même le masque et n'aime pas la transparence.
-  ['apple-touch-icon.png', 180, 0, 0.56],
+  ['apple-touch-icon.png', 180, 0, 0.38],
 ];
 
 mkdirSync(OUT_DIR, { recursive: true });
-for (const [name, size, corner, text] of FILES) {
-  writeFileSync(join(OUT_DIR, name), drawIcon(size, corner, text));
+for (const [name, size, corner, arc] of FILES) {
+  writeFileSync(join(OUT_DIR, name), drawIcon(size, corner, arc));
   console.log(`${name} — ${size}×${size}`);
 }
