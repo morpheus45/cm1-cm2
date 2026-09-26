@@ -1,6 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { SessionResult } from './results';
 import type { Worksheet } from './worksheet';
+import { isSecretKey } from './publicKey';
 
 /**
  * La mise en commun avec la maîtresse, par Supabase.
@@ -20,9 +21,10 @@ export function readCloudConfig(env: Record<string, string | undefined>): CloudC
   const url = (env.VITE_SUPABASE_URL ?? '').trim();
   const publishableKey = (env.VITE_SUPABASE_PUBLISHABLE_KEY ?? '').trim();
   if (!url || !publishableKey) return null;
-  // Jamais la clé « secret » dans une page web : quiconque ouvre le site la
-  // lirait, et elle contourne toutes les règles d'accès de la base.
-  if (publishableKey.startsWith('sb_secret_')) return null;
+  // Jamais une clé secrète dans une page web : quiconque ouvre le site la
+  // lirait, et elle contourne toutes les règles d'accès de la base. Le build
+  // refuse déjà de publier dans ce cas ; ceci ne sert que de second verrou.
+  if (isSecretKey(publishableKey)) return null;
   return { url, publishableKey };
 }
 

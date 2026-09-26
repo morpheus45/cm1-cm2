@@ -1,7 +1,9 @@
 import { createHash } from 'node:crypto';
 import { readdirSync } from 'node:fs';
+import { loadEnv } from 'vite';
 import { defineConfig, type Plugin } from 'vitest/config';
 import react from '@vitejs/plugin-react';
+import { isSecretKey } from './src/lib/publicKey';
 
 const BASE = '/cm1-cm2/';
 
@@ -96,10 +98,23 @@ self.addEventListener('fetch', (event) => {
 `;
 }
 
-export default defineConfig({
-  base: BASE,
-  plugins: [react(), serviceWorker(BASE)],
-  test: {
-    environment: 'node',
-  },
+export default defineConfig(({ mode }) => {
+  // Tout ce qui commence par VITE_ est recopié en clair dans le code du site.
+  // Une clé secrète mise là par erreur serait lisible par n'importe qui :
+  // mieux vaut un build qui échoue, et donc rien de publié.
+  const key = loadEnv(mode, process.cwd(), 'VITE_').VITE_SUPABASE_PUBLISHABLE_KEY ?? '';
+  if (isSecretKey(key)) {
+    throw new Error(
+      'VITE_SUPABASE_PUBLISHABLE_KEY contient une clé SECRÈTE de Supabase. ' +
+        'Rien n\'a été publié. Remplacez-la par la clé « publishable » (sb_publishable_…).'
+    );
+  }
+
+  return {
+    base: BASE,
+    plugins: [react(), serviceWorker(BASE)],
+    test: {
+      environment: 'node',
+    },
+  };
 });

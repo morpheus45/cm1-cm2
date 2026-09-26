@@ -32,14 +32,27 @@ jobs:
       - run: npm ci
       - run: npx tsc --noEmit
       - run: npm test
-      # Les deux valeurs viennent des secrets du dépôt. Absentes, l'application
-      # fonctionne comme aujourd'hui, tout sur l'appareil. La clé
-      # « publishable » (sb_publishable_…) est faite pour être lisible dans le
-      # code du site : ce sont les règles d'accès de la base qui protègent les
-      # données. La clé « secret » (sb_secret_…), elle, ne doit jamais y figurer.
+      # Dit, sans jamais l'afficher, si la clé Supabase est bien en place :
+      # l'avertissement apparaît en tête du résumé de la vérification.
+      - name: Clé Supabase en place ?
+        env:
+          KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          case "$KEY" in
+            '') echo "::warning::Pas de secret VITE_SUPABASE_PUBLISHABLE_KEY : le site fonctionnera sans la mise en commun avec la maîtresse." ;;
+            sb_publishable_*) echo "::notice::Clé publique Supabase en place." ;;
+            sb_secret_*) echo "::error::Le secret VITE_SUPABASE_PUBLISHABLE_KEY contient la clé SECRÈTE : remplacez-la par la clé publishable." ;;
+            *) echo "::notice::Clé Supabase en place (ancien format)." ;;
+          esac
+      # L'adresse du projet n'a rien de secret : chaque requête du site la
+      # montre. La clé « publishable » (sb_publishable_…) est faite, elle
+      # aussi, pour être lisible dans le code du site : ce sont les règles
+      # d'accès de la base qui protègent les données. Elle vient malgré tout
+      # d'un secret du dépôt, pour qu'on puisse la changer sans toucher au
+      # code. Une clé secrète fait échouer le build (vite.config.ts).
       - run: npm run build
         env:
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_URL: https://uexxvndxlnwjvlgdkxwc.supabase.co
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'

@@ -37,6 +37,12 @@ $$;
 grant usage on schema auth to anon, authenticated;
 grant execute on function auth.uid() to anon, authenticated;
 grant usage on schema public to anon, authenticated;
+-- Supabase accorde d'office aux rôles anon et authenticated tous les droits
+-- sur ce qui sera créé dans « public » — tables ET fonctions. Sans ces deux
+-- lignes, le test serait plus sévère que la réalité : une fonction que l'on
+-- croit réservée aux maîtresses resterait appelable par un anonyme là-bas.
+alter default privileges in schema public grant all on tables to anon, authenticated;
+alter default privileges in schema public grant execute on functions to anon, authenticated;
 SQL
 
 echo "Migration, première exécution…"

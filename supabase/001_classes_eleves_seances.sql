@@ -132,6 +132,25 @@ alter table public.pupils     enable row level security;
 alter table public.sessions   enable row level security;
 alter table public.worksheets enable row level security;
 
+-- Droits posés noir sur blanc, sans compter sur les réglages du projet.
+-- Supabase donne d'office aux rôles « anon » (la clé publique) et
+-- « authenticated » (une maîtresse connectée) tous les droits sur ce qui est
+-- créé ici, tables comme fonctions — la RLS étant alors la seule barrière.
+-- On en retire donc tout ce qui ne sert pas : le visiteur sans compte ne
+-- touche à aucune table, pas même en lecture ; la maîtresse garde lecture et
+-- écriture — sa RLS décide ensuite quelles lignes — mais pas TRUNCATE, qui
+-- viderait une table sans passer par la RLS.
+revoke all on table public.classes, public.pupils, public.sessions, public.worksheets
+  from public, anon, authenticated;
+grant select, insert, update, delete
+  on table public.classes, public.pupils, public.sessions, public.worksheets
+  to authenticated;
+
+-- Les deux fonctions internes ne s'appellent pas de l'extérieur : le
+-- déclencheur les exécute avec les droits de leur propriétaire.
+revoke all on function public.cle_eleve(text, text) from public, anon, authenticated;
+revoke all on function public.pupils_calcule_cle() from public, anon, authenticated;
+
 -- La maîtresse ne voit que ses classes.
 drop policy if exists "maitresse gere ses classes" on public.classes;
 create policy "maitresse gere ses classes" on public.classes
@@ -293,7 +312,7 @@ begin
 end;
 $$;
 
-revoke all on function public.creer_classe(text, text) from public;
+revoke all on function public.creer_classe(text, text) from public, anon;
 grant execute on function public.creer_classe(text, text) to authenticated;
 
 -- Tout ce que la maîtresse connectée peut voir, en un seul appel : ses
@@ -336,7 +355,7 @@ as $$
   from public.classes c;
 $$;
 
-revoke all on function public.lire_ma_classe() from public;
+revoke all on function public.lire_ma_classe() from public, anon;
 grant execute on function public.lire_ma_classe() to authenticated;
 
 -- Supabase garde en cache la liste des fonctions appelables : on lui demande

@@ -7,10 +7,6 @@ set client_min_messages = warning;
 -- qu'elles ne lèvent pas d'exception.
 \o /dev/null
 
--- Supabase accorde par défaut tous les droits sur les tables de « public »
--- à anon et authenticated : c'est la RLS, et elle seule, qui protège.
-grant all on all tables in schema public to anon, authenticated;
-
 insert into auth.users (id, email) values
   ('00000000-0000-0000-0000-00000000000a', 'a@ecole.fr'),
   ('00000000-0000-0000-0000-00000000000b', 'b@ecole.fr');
@@ -54,14 +50,23 @@ select pg_temp.doit_echouer(
   $q$select public.depose_seance(gen_random_uuid(), 'AAAAAA','Léa','Martin','CM1',2::smallint,'maths','questions','{"x":1}')$q$,
   'résultats illisibles', 'des résultats qui ne sont pas une liste doivent être refusés');
 
-select pg_temp.attendu((select count(*) from public.classes), 0, 'un anonyme ne lit aucune classe');
-select pg_temp.attendu((select count(*) from public.pupils), 0, 'un anonyme ne lit aucun élève');
-select pg_temp.attendu((select count(*) from public.sessions), 0, 'un anonyme ne lit aucune séance');
+select pg_temp.doit_echouer($q$select count(*) from public.classes$q$,
+  'permission denied', 'un anonyme ne doit lire aucune classe');
+select pg_temp.doit_echouer($q$select count(*) from public.pupils$q$,
+  'permission denied', 'un anonyme ne doit lire aucun élève');
+select pg_temp.doit_echouer($q$select count(*) from public.sessions$q$,
+  'permission denied', 'un anonyme ne doit lire aucune séance');
+select pg_temp.doit_echouer($q$select count(*) from public.worksheets$q$,
+  'permission denied', 'un anonyme ne doit lire aucune feuille d''opérations');
+select pg_temp.doit_echouer($q$truncate public.sessions$q$,
+  'permission denied', 'un anonyme ne doit pas pouvoir vider une table');
+select pg_temp.doit_echouer($q$select public.cle_eleve('Léa', 'Martin')$q$,
+  'permission denied', 'un anonyme n''a pas à appeler les fonctions internes');
 
 select pg_temp.doit_echouer(
   $q$insert into public.pupils (class_id, first_name, last_name, pupil_key)
      values ('11111111-1111-1111-1111-111111111111', 'Pirate', 'X', 'x')$q$,
-  'row-level security', 'un anonyme ne doit pas écrire un élève, même avec un identifiant deviné');
+  'permission denied', 'un anonyme ne doit pas écrire un élève, même avec un identifiant deviné');
 
 -- La même élève, tapée de plusieurs façons.
 select public.depose_seance(gen_random_uuid(), 'AAAAAA', 'lea', 'MARTIN', 'CM1', 2::smallint, 'francais', 'questions', '[]');
@@ -180,6 +185,35 @@ select pg_temp.attendu(
   (select jsonb_array_length(public.lire_ma_classe() -> 0 -> 'pupils')), 0,
   'la maîtresse B ne lit aucun élève de A');
 reset role;
+
+-- ------------------------------------------------------------ les droits ---
+-- Supabase accorde d'office tous les droits à anon et authenticated ; le
+-- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après
+-- la migration, droit par droit.
+select pg_temp.attendu(
+  (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets']) t,
+     unnest(array['select', 'insert', 'update', 'delete', 'truncate', 'references', 'trigger']) d
+   where has_table_privilege('anon', t, d)), 0,
+  'la clé publique ne donne aucun droit sur les tables');
+select pg_temp.attendu(
+  (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets']) t,
+     unnest(array['truncate', 'references', 'trigger']) d
+   where has_table_privilege('authenticated', t, d)), 0,
+  'une maîtresse ne peut pas vider une table en contournant la RLS');
+select pg_temp.attendu(
+  (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()',
+                                     'public.creer_classe(text, text)', 'public.lire_ma_classe()']) f
+   where has_function_privilege('anon', f, 'execute')), 0,
+  'la clé publique n''ouvre que le dépôt de séance');
+select pg_temp.attendu(
+  (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()']) f
+   where has_function_privilege('authenticated', f, 'execute')), 0,
+  'les fonctions internes ne s''appellent pas de l''extérieur');
+select pg_temp.attendu(
+  (select count(*) from unnest(array[
+      'public.depose_seance(uuid, text, text, text, text, smallint, text, text, jsonb, jsonb)']) f
+   where has_function_privilege('anon', f, 'execute')), 1,
+  'la clé publique permet toujours de déposer une séance');
 
 \o
 \echo 'OK : toutes les règles d''accès tiennent.'
