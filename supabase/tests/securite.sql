@@ -186,12 +186,60 @@ select pg_temp.attendu(
   'la maîtresse B ne lit aucun élève de A');
 reset role;
 
+-- ------------------------------------------------ les problèmes de la classe ---
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+insert into public.problemes (class_id, enonce, reponse, unite, calcul, fausses_reponses, trimestre) values
+  ('11111111-1111-1111-1111-111111111111', 'Un paquet contient 12 billes. Combien de billes dans 3 paquets ?', '36', 'billes', '12 × 3', '["15", "39", "4"]', 1),
+  ('11111111-1111-1111-1111-111111111111', 'Un problème que la maîtresse a retiré de la classe.', '10', '', '5 + 5', '[]', 1);
+update public.problemes set actif = false where enonce like 'Un problème que la maîtresse a retiré%';
+select pg_temp.doit_echouer(
+  $q$insert into public.problemes (class_id, enonce, reponse, calcul, trimestre)
+     values ('11111111-1111-1111-1111-111111111111', 'Une réponse qui n''est pas un nombre.', 'douze', '12', 1)$q$,
+  'check constraint', 'la réponse d''un problème doit être un nombre');
+select pg_temp.attendu(public.compter_demande_assistant()::bigint, 1, 'première demande du jour à Claude');
+select pg_temp.attendu(public.compter_demande_assistant()::bigint, 2, 'deuxième demande du jour à Claude');
+
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
+select pg_temp.attendu((select count(*) from public.problemes), 0, 'la maîtresse B ne voit aucun problème de A');
+select pg_temp.doit_echouer(
+  $q$insert into public.problemes (class_id, enonce, reponse, calcul, trimestre)
+     values ('11111111-1111-1111-1111-111111111111', 'Un problème glissé dans la classe d''une autre.', '1', '1', 1)$q$,
+  'row-level security', 'la maîtresse B ne doit pas ajouter de problème dans la classe A');
+update public.problemes set actif = false;
+select pg_temp.attendu(public.compter_demande_assistant()::bigint, 1, 'le compteur de B est le sien');
+reset role;
+select pg_temp.attendu((select count(*) from public.problemes where actif), 1,
+  'la maîtresse B n''a retiré aucun problème de A');
+
+set role anon;
+select pg_temp.doit_echouer($q$select count(*) from public.problemes$q$,
+  'permission denied', 'un anonyme ne doit pas lire la table des problèmes');
+select pg_temp.attendu((select count(*) from public.problemes_de_la_classe('aaaaaa')), 1,
+  'l''élève reçoit le seul problème en service de sa classe, code tapé en minuscules');
+select pg_temp.attendu((select count(*) from public.problemes_de_la_classe('BBBBBB')), 0,
+  'la classe B n''a aucun problème');
+select pg_temp.attendu((select count(*) from public.problemes_de_la_classe('ZZZZZZ')), 0,
+  'un code inconnu ne donne rien');
+select pg_temp.doit_echouer($q$select public.compter_demande_assistant()$q$,
+  'permission denied', 'un anonyme ne doit pas pouvoir compter de demande au chat');
+select pg_temp.doit_echouer($q$select count(*) from public.assistant_usage$q$,
+  'permission denied', 'un anonyme ne doit pas lire le compteur du chat');
+reset role;
+
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+select pg_temp.doit_echouer($q$select count(*) from public.assistant_usage$q$,
+  'permission denied', 'le compteur ne se lit ni ne se modifie directement');
+reset role;
+
 -- ------------------------------------------------------------ les droits ---
 -- Supabase accorde d'office tous les droits à anon et authenticated ; le
 -- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après
 -- la migration, droit par droit.
 select pg_temp.attendu(
-  (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets']) t,
+  (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets',
+                                     'public.problemes', 'public.assistant_usage']) t,
      unnest(array['select', 'insert', 'update', 'delete', 'truncate', 'references', 'trigger']) d
    where has_table_privilege('anon', t, d)), 0,
   'la clé publique ne donne aucun droit sur les tables');
@@ -202,9 +250,10 @@ select pg_temp.attendu(
   'une maîtresse ne peut pas vider une table en contournant la RLS');
 select pg_temp.attendu(
   (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()',
-                                     'public.creer_classe(text, text)', 'public.lire_ma_classe()']) f
+                                     'public.creer_classe(text, text)', 'public.lire_ma_classe()',
+                                     'public.compter_demande_assistant()']) f
    where has_function_privilege('anon', f, 'execute')), 0,
-  'la clé publique n''ouvre que le dépôt de séance');
+  'la clé publique n''ouvre que le dépôt de séance et les problèmes de sa classe');
 select pg_temp.attendu(
   (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()']) f
    where has_function_privilege('authenticated', f, 'execute')), 0,
