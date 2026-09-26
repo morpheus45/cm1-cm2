@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { depositParams } from '../src/lib/cloud';
-import { WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
+import { PROBLEM_COLUMNS, WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
 import { ALL_ACTIVITIES, ALL_SUBJECTS } from '../src/types';
 import type { SessionResult } from '../src/lib/results';
 
@@ -70,5 +70,23 @@ describe('l\'accès maîtresse lit et écrit des colonnes qui existent', () => {
       ...WORKSHEET_COLUMNS.sheet,
     ];
     used.forEach((column) => expect(columns, `colonne ${column}`).toContain(column));
+  });
+});
+
+describe('les problèmes de la classe parlent la même langue que la base', () => {
+  const sql = readFileSync(join(process.cwd(), 'supabase', '002_problemes_de_la_classe.sql'), 'utf8');
+
+  it('pour les colonnes lues et écrites par la maîtresse', () => {
+    const table = sql.match(/create table if not exists public\.problemes \(([\s\S]*?)\n\);/);
+    expect(table, 'table problemes introuvable').not.toBeNull();
+    const columns = [...table![1].matchAll(/^\s{2}(\w+)\s+\w/gm)].map((m) => m[1]);
+    [...PROBLEM_COLUMNS, 'class_id'].forEach((column) => expect(columns, `colonne ${column}`).toContain(column));
+  });
+
+  it('pour le paramètre de la fonction qu\'appelle la tablette de l\'élève', () => {
+    const signature = sql.match(/create or replace function public\.problemes_de_la_classe\(([^)]*)\)/);
+    expect(signature?.[1].trim()).toBe('p_join_code text');
+    const source = readFileSync(join(process.cwd(), 'src', 'lib', 'cloud.ts'), 'utf8');
+    expect(source).toContain("rpc('problemes_de_la_classe', { p_join_code: code })");
   });
 });

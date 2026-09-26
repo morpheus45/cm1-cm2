@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import {
+  cachedClassProblems,
   depositParams,
   enqueueDeposit,
   flushOutbox,
@@ -180,5 +181,21 @@ describe('isUnknownClassCode', () => {
     expect(isUnknownClassCode({ message: 'code de classe inconnu', code: 'P0001' })).toBe(true);
     expect(isUnknownClassCode({ message: 'TypeError: Failed to fetch' })).toBe(false);
     expect(isUnknownClassCode({ message: 'violates check constraint', code: '23514' })).toBe(false);
+  });
+});
+
+describe('les problèmes de la classe sur la tablette', () => {
+  beforeEach(() => store.clear());
+
+  it('ne servent que pour la classe dont le code est donné', () => {
+    const problems = [{ id: 'p1', enonce: 'Un énoncé', reponse: '24', unite: '', fausses_reponses: [], trimestre: 1 }];
+    store.set('exercices-cm1-cm2:problemes-de-la-classe', JSON.stringify({ joinCode: 'AB23CD', problems }));
+    expect(cachedClassProblems('ab23cd')).toEqual(problems);
+    expect(cachedClassProblems('ZZ99ZZ')).toEqual([]);
+  });
+
+  it('résistent à un stockage abîmé', () => {
+    store.set('exercices-cm1-cm2:problemes-de-la-classe', '{abîmé');
+    expect(cachedClassProblems('AB23CD')).toEqual([]);
   });
 });

@@ -1,6 +1,7 @@
 import { pupilLabel, type Level, type Trimester } from '../types';
 import { cloudClient } from './cloud';
 import { worksheetFromRow, type Corrections } from './correction';
+import { parseClassProblems, proposalToRow, type ClassProblem, type ProblemProposal } from './classProblems';
 import { parseResults, type SessionResult } from './results';
 import type { Worksheet } from './worksheet';
 
@@ -113,6 +114,9 @@ export function frenchAuthError(message: string): string {
   if (/password.*(short|least|characters)/i.test(message))
     return 'Mot de passe trop court : au moins 8 caractères.';
   if (/fetch|network/i.test(message)) return 'Pas de réseau pour le moment.';
+  if (/schema cache|does not exist|could not find the (table|function)/i.test(message)) {
+    return "Cette partie n'est pas encore installée dans Supabase : le fichier SQL qui l'accompagne doit y être exécuté.";
+  }
   return message;
 }
 
@@ -260,6 +264,62 @@ export async function saveCorrection(sessionId: string, corrections: Corrections
     throw new Error('La correction n’a pas été enregistrée : cette feuille n’est plus dans votre classe.');
   }
   return correctedAt;
+}
+
+// --- Les problèmes de la classe ---------------------------------------------
+
+/** Un problème tel que la maîtresse le gère : en service ou retiré. */
+export interface ClassProblemEntry extends ClassProblem {
+  calcul: string;
+  actif: boolean;
+}
+
+/** Les colonnes de la table `problemes` que lit et écrit l'accès maîtresse —
+ *  comparées au fichier SQL par un test. */
+export const PROBLEM_COLUMNS = ['id', 'enonce', 'reponse', 'unite', 'calcul', 'fausses_reponses', 'trimestre', 'actif'] as const;
+
+export function mapProblemRows(rows: unknown): ClassProblemEntry[] {
+  if (!Array.isArray(rows)) return [];
+  const extras = new Map(
+    rows.map((row) => {
+      const entry = row as { id?: unknown; calcul?: unknown; actif?: unknown } | null;
+      return [entry?.id, { calcul: typeof entry?.calcul === 'string' ? entry.calcul : '', actif: entry?.actif !== false }];
+    })
+  );
+  return parseClassProblems(rows).map((problem) => ({
+    ...problem,
+    ...(extras.get(problem.id) ?? { calcul: '', actif: true }),
+  }));
+}
+
+export async function readClassProblems(classId: string): Promise<ClassProblemEntry[]> {
+  const { data, error } = await (await client())
+    .from('problemes')
+    .select(PROBLEM_COLUMNS.join(', '))
+    .eq('class_id', classId)
+    .order('created_at');
+  if (error) throw new Error(frenchAuthError(error.message));
+  return mapProblemRows(data);
+}
+
+/** Ajoute un problème vérifié : un problème dont le calcul ne donne pas la
+ *  réponse n'arrive même pas jusqu'à la base. */
+export async function addClassProblem(classId: string, proposal: ProblemProposal): Promise<void> {
+  const row = proposalToRow(proposal, classId);
+  const { data, error } = await (await client()).from('problemes').insert(row).select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) throw new Error("Le problème n'a pas été ajouté à la classe.");
+}
+
+export async function setClassProblemActive(id: string, actif: boolean): Promise<void> {
+  const { data, error } = await (await client()).from('problemes').update({ actif }).eq('id', id).select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) throw new Error("Ce problème n'est plus dans votre classe.");
+}
+
+export async function deleteClassProblem(id: string): Promise<void> {
+  const { error } = await (await client()).from('problemes').delete().eq('id', id);
+  if (error) throw new Error(frenchAuthError(error.message));
 }
 
 export type { Trimester };

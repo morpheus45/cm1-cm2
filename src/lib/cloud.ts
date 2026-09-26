@@ -1,6 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { SessionResult } from './results';
 import { roundStroke, type Worksheet } from './worksheet';
+import { parseClassProblems, type ClassProblem } from './classProblems';
 import { isSecretKey } from './publicKey';
 
 /**
@@ -211,3 +212,42 @@ export async function depositSession(
   const outcomes = await flushOutbox(sendDeposit);
   return outcomes[session.id] ?? 'queued';
 }
+
+// --- Les problèmes de la classe, sur la tablette de l'élève ------------------
+
+const CLASS_PROBLEMS_KEY = 'exercices-cm1-cm2:problemes-de-la-classe';
+
+/** Les problèmes de la maîtresse gardés sur la tablette : ceux de la classe
+ *  dont le code est donné, et d'aucune autre. Hors connexion, ce sont eux
+ *  qui servent. */
+export function cachedClassProblems(joinCode: string): ClassProblem[] {
+  try {
+    const stored = JSON.parse(localStorage.getItem(CLASS_PROBLEMS_KEY) ?? 'null') as {
+      joinCode?: unknown;
+      problems?: unknown;
+    } | null;
+    if (!stored || stored.joinCode !== normaliseJoinCode(joinCode)) return [];
+    return parseClassProblems(stored.problems);
+  } catch {
+    return [];
+  }
+}
+
+/** Va chercher les problèmes en service de la classe et les garde sur la
+ *  tablette. Sans réseau, ou sans code, rien ne change. */
+export async function refreshClassProblems(joinCode: string): Promise<ClassProblem[] | null> {
+  const code = normaliseJoinCode(joinCode);
+  if (!isValidJoinCode(code)) return null;
+  const supabase = await cloudClient();
+  if (!supabase) return null;
+  const { data, error } = await supabase.rpc('problemes_de_la_classe', { p_join_code: code });
+  if (error) return null;
+  const problems = parseClassProblems(data);
+  try {
+    localStorage.setItem(CLASS_PROBLEMS_KEY, JSON.stringify({ joinCode: code, problems }));
+  } catch {
+    // Stockage refusé : les problèmes serviront pour cette fois seulement.
+  }
+  return problems;
+}
+

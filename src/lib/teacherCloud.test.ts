@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { frenchAuthError, mapClasses, mapWorksheetIndex, pupilIdFor } from './teacherCloud';
+import { frenchAuthError, mapClasses, mapProblemRows, mapWorksheetIndex, pupilIdFor } from './teacherCloud';
 
 // Ce que rend `lire_ma_classe`, tel que la base l'écrit.
 const raw = [
@@ -98,5 +98,27 @@ describe('mapWorksheetIndex', () => {
       s2: { correctedAt: '2026-10-05T18:00:00+00:00' },
     });
     expect(mapWorksheetIndex('rien')).toEqual({});
+  });
+});
+
+describe('mapProblemRows', () => {
+  it('relit les problèmes de la classe, en service ou retirés', () => {
+    expect(
+      mapProblemRows([
+        { id: 'p1', enonce: 'Un énoncé', reponse: '24', unite: 'billes', calcul: '96 ÷ 4', fausses_reponses: ['100'], trimestre: 2, actif: true },
+        { id: 'p2', enonce: 'Un autre', reponse: '5', unite: '', calcul: '2 + 3', fausses_reponses: [], trimestre: 1, actif: false },
+        { id: 'p3', enonce: 'Abîmé', reponse: 'x', trimestre: 1 },
+      ])
+    ).toEqual([
+      { id: 'p1', enonce: 'Un énoncé', reponse: '24', unite: 'billes', calcul: '96 ÷ 4', fausses_reponses: ['100'], trimestre: 2, actif: true },
+      { id: 'p2', enonce: 'Un autre', reponse: '5', unite: '', calcul: '2 + 3', fausses_reponses: [], trimestre: 1, actif: false },
+    ]);
+  });
+});
+
+describe('une partie pas encore installée dans Supabase', () => {
+  it('est expliquée en français', () => {
+    expect(frenchAuthError("Could not find the table 'public.problemes' in the schema cache")).toMatch(/pas encore installée/);
+    expect(frenchAuthError('relation "public.problemes" does not exist')).toMatch(/pas encore installée/);
   });
 });

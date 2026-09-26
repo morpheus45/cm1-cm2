@@ -22,6 +22,7 @@ import {
   type WorksheetStatus,
 } from '../lib/teacherCloud';
 import { CorrectionScreen } from './CorrectionScreen';
+import { ProblemsScreen } from './ProblemsScreen';
 import { NOTION_COLORS } from '../theme';
 import { SchoolTitle } from './ecole/SchoolTitle';
 import { Tableau } from './ecole/Tableau';
@@ -73,6 +74,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   const [classLevel, setClassLevel] = useState<Level>('CM1');
   const [worksheets, setWorksheets] = useState<Record<string, WorksheetStatus>>({});
   const [worksheetsError, setWorksheetsError] = useState('');
+  const [showProblems, setShowProblems] = useState(false);
   const [correcting, setCorrecting] = useState<{
     session: SessionResult;
     worksheet?: Worksheet;
@@ -328,6 +330,9 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
           </button>
         </div>
       )}
+      <button type="button" onClick={() => setShowProblems(true)} className={secondary}>
+        Problèmes de la classe, avec Claude
+      </button>
       <div className="flex gap-2 pt-1">
         <button type="button" disabled={busy} onClick={() => run(refresh)} className={secondary}>
           Actualiser
@@ -348,6 +353,16 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     const session = current?.sessions.find((entry) => pupilKey(entry.pupil) === key);
     return current && session ? pupilIdFor(current, session.pupil.firstName, session.pupil.lastName) : null;
   };
+
+  const problemsScreen =
+    showProblems && current ? (
+      <ProblemsScreen
+        classId={current.id}
+        className={current.name}
+        level={current.level}
+        onClose={() => setShowProblems(false)}
+      />
+    ) : null;
 
   const correction = correcting && (
     correcting.worksheet ? (
@@ -380,8 +395,8 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
 
   return (
     <>
-      {correction}
-      <div hidden={correction !== null}>
+      {correction ?? problemsScreen}
+      <div hidden={correction !== null || problemsScreen !== null}>
         <TeacherScreen
           sessions={current?.sessions ?? []}
           banner={banner}
