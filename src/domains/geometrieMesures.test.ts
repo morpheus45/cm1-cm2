@@ -59,7 +59,12 @@ describe('les mesures', () => {
       if (stage === 1) expect((end - start) % 10).toBe(0);
       // Le segment dessiné commence et finit bien à ces graduations.
       const segment = shapesOf(question.figure!.shapes, 'segment').find((shape) => shape.width === 3.5)!;
-      expect(segment.to[0] - segment.from[0]).toBeCloseTo(((end - start) * 25.6) / 10, 0);
+      // L'échelle se lit sur la règle elle-même : de la graduation 0 à la 1.
+      const graduations = shapesOf(question.figure!.shapes, 'text');
+      const centimeter = graduations.find((text) => text.text === '1')!.at[0] - graduations.find((text) => text.text === '0')!.at[0];
+      expect(segment.to[0] - segment.from[0]).toBeCloseTo(((end - start) * centimeter) / 10, 0);
+      // La règle montre toute la longueur, et un centimètre de plus au moins.
+      expect(Number(graduations[graduations.length - 1].text) * 10).toBeGreaterThanOrEqual(end + 5);
     });
   });
 

@@ -24,14 +24,14 @@ import { choose, type Family } from './geometrieCommun';
 // --- Lire une règle ------------------------------------------------------------------
 
 const RULER_LEFT = 22;
-/** Un centimètre de la règle, en unités de la figure : dix centimètres
- *  tiennent dans le cadre. */
-const CM = 25.6;
+const RULER_WIDTH = 256;
 const RULER_TOP = 64;
 const RULER_BOTTOM = 106;
 const SEGMENT_Y = 52;
 
-const xAt = (mm: number) => Math.round((RULER_LEFT + (mm * CM) / 10) * 10) / 10;
+/** Combien de centimètres montrer : juste ce qu'il faut (6 à 10), pour que
+ *  les millimètres restent lisibles sur un petit écran. */
+export const rulerLength = (end: number) => Math.min(10, Math.max(6, Math.ceil(end / 10) + 1));
 
 /** Une longueur en millimètres, écrite comme au niveau de l'élève : en
  *  centimètres au 1er trimestre du CM1, en centimètres et millimètres
@@ -44,15 +44,17 @@ export function formatLength(mm: number, stage: Stage): string {
 }
 
 export function rulerFigure(start: number, end: number): Figure {
+  const centimeters = rulerLength(end);
+  const xAt = (mm: number) => Math.round((RULER_LEFT + (mm * RULER_WIDTH) / (centimeters * 10)) * 10) / 10;
   const shapes: Shape[] = [
     { kind: 'polygon', points: [[12, RULER_TOP], [288, RULER_TOP], [288, RULER_BOTTOM], [12, RULER_BOTTOM]], fill: true },
   ];
-  for (let mm = 0; mm <= 100; mm++) {
+  for (let mm = 0; mm <= centimeters * 10; mm++) {
     const length = mm % 10 === 0 ? 14 : mm % 5 === 0 ? 9 : 5;
     shapes.push({ kind: 'segment', from: [xAt(mm), RULER_TOP], to: [xAt(mm), RULER_TOP + length], width: mm % 10 === 0 ? 1.6 : 1, ink: mm % 5 === 0 ? 'encre' : 'pale' });
   }
-  for (let cm = 0; cm <= 10; cm++) {
-    shapes.push({ kind: 'text', at: [xAt(cm * 10), RULER_TOP + 30], text: String(cm), anchor: 'middle', size: 11, bold: true });
+  for (let cm = 0; cm <= centimeters; cm++) {
+    shapes.push({ kind: 'text', at: [xAt(cm * 10), RULER_TOP + 31], text: String(cm), anchor: 'middle', size: 13, bold: true });
   }
   shapes.push(
     { kind: 'segment', from: [xAt(start), SEGMENT_Y], to: [xAt(end), SEGMENT_Y], ink: 'couleur', width: 3.5 },
