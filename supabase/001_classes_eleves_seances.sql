@@ -13,6 +13,15 @@
 --     C'est la base de données qui l'impose (RLS), pas le code de la page :
 --     une erreur dans l'interface ne peut pas exposer la classe d'à côté.
 
+-- ------------------------------------------------------------ extensions ---
+
+-- « unaccent » sert à reconnaître un même élève quelle que soit la façon dont
+-- son nom a été tapé. Supabase range ses extensions dans le schéma
+-- « extensions » : on fait de même, pour que ce fichier s'exécute à
+-- l'identique en local et là-bas.
+create schema if not exists extensions;
+create extension if not exists unaccent with schema extensions;
+
 -- ---------------------------------------------------------------- tables ---
 
 create table if not exists public.classes (
@@ -29,10 +38,33 @@ create table if not exists public.pupils (
   id          uuid primary key default gen_random_uuid(),
   class_id    uuid not null references public.classes (id) on delete cascade,
   first_name  text not null check (length(btrim(first_name)) between 1 and 40),
-  last_name   text not null check (length(btrim(last_name)) between 1 and 40),
+  last_name   text not null check (length(btrim(last_name)) between 0 and 40),
+  -- Ce qui identifie l'élève dans sa classe : sans accents, sans majuscules,
+  -- sans espaces en trop. « Léa Martin » et « lea  MARTIN » sont la même
+  -- enfant. Comparer les noms tels que tapés en faisait deux élèves — le
+  -- premier jet de ce fichier avait ce défaut, un test l'a attrapé.
+  pupil_key   text not null,
   created_at  timestamptz not null default now(),
-  unique (class_id, first_name, last_name)
+  unique (class_id, pupil_key)
 );
+
+-- `security definer` : le calcul appelle une extension, et ne doit pas
+-- dépendre des droits de celui qui écrit. Sans cela, l'appel échouait pour
+-- tout rôle n'ayant pas accès au schéma « extensions » — y compris la
+-- maîtresse qui ajoute un élève à la main. La fonction ne fait que calculer
+-- une chaîne : l'exécuter avec plus de droits n'expose rien.
+create or replace function public.cle_eleve(p_first_name text, p_last_name text)
+returns text
+language sql
+stable
+security definer
+set search_path = public, extensions
+as $$
+  select btrim(lower(regexp_replace(
+    extensions.unaccent(btrim(coalesce(p_first_name, '')) || ' ' || btrim(coalesce(p_last_name, ''))),
+    '\s+', ' ', 'g'
+  )));
+$$;
 
 create table if not exists public.sessions (
   id          uuid primary key default gen_random_uuid(),
@@ -64,6 +96,26 @@ create table if not exists public.worksheets (
 
 create index if not exists worksheets_pupil_idx on public.worksheets (pupil_id);
 
+-- La clé est recalculée à chaque écriture, par la base elle-même : un élève
+-- ajouté à la main par la maîtresse, ou renommé, reste cohérent avec ceux
+-- qu'a créés l'application.
+create or replace function public.pupils_calcule_cle()
+returns trigger
+language plpgsql
+security definer
+set search_path = public, extensions
+as $$
+begin
+  new.pupil_key := public.cle_eleve(new.first_name, new.last_name);
+  return new;
+end;
+$$;
+
+drop trigger if exists pupils_cle on public.pupils;
+create trigger pupils_cle
+  before insert or update of first_name, last_name on public.pupils
+  for each row execute function public.pupils_calcule_cle();
+
 -- ------------------------------------------------------------------ RLS ---
 
 alter table public.classes    enable row level security;
@@ -72,9 +124,11 @@ alter table public.sessions   enable row level security;
 alter table public.worksheets enable row level security;
 
 -- La maîtresse ne voit que ses classes.
+drop policy if exists "maitresse gere ses classes" on public.classes;
 create policy "maitresse gere ses classes" on public.classes
   for all using (auth.uid() = teacher_id) with check (auth.uid() = teacher_id);
 
+drop policy if exists "maitresse gere ses eleves" on public.pupils;
 create policy "maitresse gere ses eleves" on public.pupils
   for all using (
     exists (select 1 from public.classes c where c.id = class_id and c.teacher_id = auth.uid())
@@ -82,6 +136,7 @@ create policy "maitresse gere ses eleves" on public.pupils
     exists (select 1 from public.classes c where c.id = class_id and c.teacher_id = auth.uid())
   );
 
+drop policy if exists "maitresse lit les seances de ses eleves" on public.sessions;
 create policy "maitresse lit les seances de ses eleves" on public.sessions
   for select using (
     exists (
@@ -91,6 +146,7 @@ create policy "maitresse lit les seances de ses eleves" on public.sessions
     )
   );
 
+drop policy if exists "maitresse corrige les feuilles de ses eleves" on public.worksheets;
 create policy "maitresse corrige les feuilles de ses eleves" on public.worksheets
   for all using (
     exists (
@@ -140,11 +196,21 @@ begin
     raise exception 'code de classe inconnu';
   end if;
 
+  if jsonb_typeof(p_results) is distinct from 'array' then
+    raise exception 'résultats illisibles';
+  end if;
+
   -- L'élève est créé la première fois qu'il dépose une séance ; ensuite on le
-  -- retrouve. Pas de doublon « Léa » / « léa  » : on compare une fois nettoyé.
-  insert into public.pupils (class_id, first_name, last_name)
-  values (v_class_id, btrim(p_first_name), btrim(p_last_name))
-  on conflict (class_id, first_name, last_name) do update set first_name = excluded.first_name
+  -- retrouve par sa clé. Le nom affiché reste celui de la première fois : une
+  -- faute de frappe ultérieure ne le réécrit pas.
+  insert into public.pupils (class_id, first_name, last_name, pupil_key)
+  values (
+    v_class_id,
+    btrim(p_first_name),
+    btrim(coalesce(p_last_name, '')),
+    public.cle_eleve(p_first_name, p_last_name)
+  )
+  on conflict (class_id, pupil_key) do update set pupil_key = excluded.pupil_key
   returning id into v_pupil_id;
 
   insert into public.sessions (pupil_id, level, trimester, subject, activity, results)

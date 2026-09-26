@@ -38,8 +38,17 @@ jobs:
         with:
           path: dist
 
+  # Les règles d'accès protègent des noms et des résultats d'enfants : elles
+  # sont vérifiées sur un vrai PostgreSQL à chaque changement, pas relues à
+  # l'œil. Le test échoue dès qu'une protection est retirée.
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash supabase/tests/lancer.sh
+
   deploy:
-    needs: build
+    needs: [build, schema]
     # Une pull request se vérifie, elle ne se publie pas.
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
