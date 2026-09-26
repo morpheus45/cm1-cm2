@@ -8,6 +8,9 @@ import * as orthographe from '../domains/orthographe';
 import * as numeration from '../domains/numeration';
 import * as calcul from '../domains/calcul';
 import * as problemes from '../domains/problemes';
+import * as geometrie from '../domains/geometrie';
+import * as histoire from '../domains/histoire';
+import * as geographie from '../domains/geographie';
 
 type Generator = (level: Level, trimester: Trimester, rng: Rng, count: number) => Question[];
 
@@ -18,6 +21,13 @@ const GENERATORS: Record<Domain, Generator> = {
   numeration: numeration.generate,
   calcul: calcul.generate,
   problemes: problemes.generate,
+  geometrie: geometrie.generate,
+  chronologie: histoire.generateChronologie,
+  evenements: histoire.generateEvenements,
+  'mots-histoire': histoire.generateMotsHistoire,
+  cartes: geographie.generateCartes,
+  habiter: geographie.generateHabiter,
+  'mots-geographie': geographie.generateMotsGeographie,
 };
 
 /** Longueur d'une séance : assez pour travailler, assez court pour tenir. */
@@ -42,15 +52,15 @@ export interface Session {
   questions: Question[];
 }
 
-export const MIXED_SUBJECTS_ERROR =
-  'Une séance porte sur une seule matière : le français ou les maths, jamais les deux.';
+export const MIXED_SUBJECTS_ERROR = 'Une séance porte sur une seule matière, jamais deux à la fois.';
 
 export const NO_DOMAIN_ERROR = 'Au moins une notion doit être sélectionnée.';
 
 /**
  * Matière commune à toutes les notions demandées. Lève une erreur si la liste
- * mélange le français et les maths : c'est le garde-fou qui garantit qu'une
- * séance ne saute jamais d'une dictée de nombres à un exercice de conjugaison.
+ * mêle deux matières : c'est le garde-fou qui garantit qu'une séance ne saute
+ * jamais d'une dictée de nombres à un exercice de conjugaison, ni d'une frise
+ * à une carte.
  */
 export function subjectOfDomains(domains: Domain[]): Subject {
   if (domains.length === 0) {

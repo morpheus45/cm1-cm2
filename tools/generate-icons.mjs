@@ -58,8 +58,9 @@ function encodePng(width, height, rgba) {
 
 // --- Dessin ---------------------------------------------------------------
 
-// Le papier du cahier, ses lignes Seyès et sa marge, et l'arc-en-ciel des six
-// notions (mêmes couleurs que src/theme.ts) : l'icône est l'École elle-même.
+// Le papier du cahier, ses lignes Seyès et sa marge, et l'arc-en-ciel de
+// l'École : les sept notions du français et des maths (mêmes couleurs que
+// src/theme.ts). L'icône est l'École elle-même.
 const PAPER = [251, 247, 238];
 const LINE = [201, 221, 242];
 const MARGIN = [233, 150, 138];
@@ -68,8 +69,9 @@ const BANDS = [
   [242, 132, 47], // accords — orange
   [247, 197, 72], // orthographe — jaune
   [61, 174, 107], // numération — vert
-  [61, 132, 214], // calcul — bleu
-  [139, 92, 240], // problèmes — violet
+  [46, 155, 224], // calcul — bleu
+  [122, 79, 224], // problèmes — violet
+  [208, 71, 155], // géométrie — rose
 ];
 
 function insideRoundedSquare(x, y, size, radius) {

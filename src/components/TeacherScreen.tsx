@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ALL_DOMAINS, pupilLabel, TRIMESTER_LABELS } from '../types';
+import { ALL_SUBJECTS, ofSubject, pupilLabel, SUBJECT_DOMAINS, SUBJECT_LABELS, TRIMESTER_LABELS, type Subject } from '../types';
 import {
   progressByDomain,
   pupilFolders,
@@ -133,7 +133,28 @@ export function TeacherScreen({
     () => (folder && shownYear !== null ? sessionsInSchoolYear(folder.sessions, shownYear) : []),
     [folder, shownYear]
   );
-  const summaries = useMemo(() => summariseByDomain(yearSessions), [yearSessions]);
+  const allSummaries = useMemo(() => summariseByDomain(yearSessions), [yearSessions]);
+  // Une matière à la fois : les graphiques restent lisibles, trois ou quatre
+  // notions côte à côte. On ouvre sur la plus travaillée.
+  const [subjectChoice, setSubjectChoice] = useState<Subject | null>(null);
+  const practiced = useMemo(
+    () =>
+      ALL_SUBJECTS.map((subject) => ({
+        subject,
+        total: allSummaries.filter((summary) => summary.subject === subject).reduce((sum, summary) => sum + summary.total, 0),
+      }))
+        .filter((entry) => entry.total > 0)
+        .sort((a, b) => b.total - a.total),
+    [allSummaries]
+  );
+  const shownSubject: Subject =
+    subjectChoice && practiced.some((entry) => entry.subject === subjectChoice)
+      ? subjectChoice
+      : (practiced[0]?.subject ?? 'francais');
+  const summaries = useMemo(
+    () => allSummaries.filter((summary) => summary.subject === shownSubject),
+    [allSummaries, shownSubject]
+  );
   // Les feuilles de l'année affichée, la plus récente d'abord.
   const sheets = useMemo(
     () => yearSessions.filter((session) => worksheets[session.id]).sort((a, b) => b.at.localeCompare(a.at)),
@@ -159,7 +180,7 @@ export function TeacherScreen({
   const bands: ClassBand[] = useMemo(() => {
     if (!folder || folders.length < 2) return [];
     const others = folders.map((entry) => summariseByDomain(entry.sessions));
-    return ALL_DOMAINS.flatMap((domain) => {
+    return SUBJECT_DOMAINS[shownSubject].flatMap((domain) => {
       const levels = others
         .map((list) => list.find((summary) => summary.domain === domain)?.mastery)
         .filter((mastery): mastery is Mastery => mastery !== null && mastery !== undefined);
@@ -177,7 +198,7 @@ export function TeacherScreen({
         },
       ];
     });
-  }, [folder, folders, summaries]);
+  }, [folder, folders, summaries, shownSubject]);
 
   const header = (
     <header className="flex items-start justify-between gap-3">
@@ -319,11 +340,27 @@ export function TeacherScreen({
           </Card>
         )}
 
+        {practiced.length > 1 && (
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Matière affichée">
+            {practiced.map(({ subject }) => (
+              <button
+                key={subject}
+                type="button"
+                aria-pressed={subject === shownSubject}
+                onClick={() => setSubjectChoice(subject)}
+                className={`etiquette flex-1 px-3 py-2 text-sm ${subject === shownSubject ? '!bg-encre !text-white' : ''}`}
+              >
+                {SUBJECT_LABELS[subject]}
+              </button>
+            ))}
+          </div>
+        )}
+
         <Card
-          title="Attendus de fin d'année"
+          title={`Attendus de fin d'année · ${SUBJECT_LABELS[shownSubject]}`}
           hint="Ce qui est tenu, et ce qu'il reste à reprendre."
         >
-          <YearOutlookCard outlook={outlook} total={ALL_DOMAINS.length} />
+          <YearOutlookCard outlook={outlook} total={SUBJECT_DOMAINS[shownSubject].length} />
         </Card>
 
         <Card title="Niveau de maîtrise" hint="L'échelle du livret scolaire, notion par notion.">
@@ -332,7 +369,7 @@ export function TeacherScreen({
 
         <Card
           title="Profil"
-          hint="Les six notions d'un coup d'œil. Les anneaux sont posés sur les seuils des quatre niveaux."
+          hint={`Les notions ${ofSubject(shownSubject)} d'un coup d'œil. Les anneaux sont posés sur les seuils des quatre niveaux.`}
         >
           <RadarProfile summaries={summaries} />
         </Card>

@@ -7,6 +7,7 @@ import { Gommette } from './ecole/Gommette';
 import { Intercalaire } from './ecole/Intercalaire';
 import { Tampon } from './ecole/Tampon';
 import { typographieFrancaise } from '../lib/typographie';
+import { FigureView } from './figures/FigureView';
 
 interface QuestionScreenProps {
   question: Question;
@@ -93,6 +94,13 @@ export function QuestionScreen({
           <p className="text-lg font-bold text-encre-douce">{typographieFrancaise(question.instruction)}</p>
         )}
         <p className="text-[1.6rem] leading-relaxed text-encre">{renderPrompt(typographieFrancaise(question.prompt), colors.tint)}</p>
+        {question.figure && (
+          <FigureView
+            figure={question.figure}
+            accent={colors.band}
+            className="w-full max-w-md self-center rounded-2xl bg-white p-2 shadow-[inset_0_0_0_1px_rgba(30,42,74,0.12)]"
+          />
+        )}
       </section>
 
       <div className="flex flex-col gap-3" role="group" aria-label="Réponses">
@@ -128,6 +136,14 @@ export function QuestionScreen({
           ) : (
             <p className="text-center text-lg font-bold text-encre-douce">
               La bonne réponse est marquée d'une gommette verte.
+            </p>
+          )}
+          {question.explanation && (
+            <p
+              className="w-full rounded-2xl border-l-4 px-4 py-3 text-base text-encre"
+              style={{ background: colors.tint, borderColor: colors.band }}
+            >
+              {typographieFrancaise(question.explanation)}
             </p>
           )}
           <button type="button" onClick={handleContinue} className="bouton-encre w-full py-4 text-xl">

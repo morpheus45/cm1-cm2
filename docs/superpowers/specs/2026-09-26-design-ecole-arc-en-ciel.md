@@ -18,9 +18,12 @@ en titre, et « quelque chose qu'on ne voit pas partout ».
   les 2 mm, plus marquées tous les 8 mm, et la marge rouge.
 - **L'arc-en-ciel des notions** : une couleur par notion, le français du côté
   chaud (conjugaison rouge, accords orange, orthographe jaune), les maths du
-  côté froid (numération vert, calcul bleu, problèmes violet). Le choix de la
-  matière montre la moitié de l'arc qui lui revient : la règle « une matière
-  par séance » se voit.
+  côté froid (numération vert, calcul bleu, problèmes violet, géométrie
+  rose). Le choix de la matière montre la part de l'arc qui lui revient : la
+  règle « une matière par séance » se voit. L'histoire et la géographie ont
+  chacune leur arc de trois couleurs : or, bordeaux et bleu roi des blasons
+  pour l'une ; bleu de la mer, vert des plaines et terre cuite des reliefs
+  pour l'autre, comme sur une carte.
 - **Les objets de la classe** : étiquettes d'écolier pour les choix (bord
   d'encre, ombre qui s'enfonce sous le doigt), gommettes pour la progression
   (une par question, à la couleur de sa notion) et les étoiles, le tampon
