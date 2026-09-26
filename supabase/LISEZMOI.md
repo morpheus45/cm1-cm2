@@ -35,10 +35,13 @@ La maîtresse y prépare, avec Claude, les problèmes de sa classe. Claude ne
 fait que proposer : l'application refait chaque calcul, et seule la maîtresse
 ajoute un problème à la classe.
 
-1. **Une clé API Anthropic.** Sur [console.anthropic.com](https://console.anthropic.com) :
-   *API Keys → Create Key*. Le chat est payant à l'usage (quelques centimes par
-   échange) : ajouter du crédit, et fixer une **limite de dépense mensuelle**
-   (*Limits*). La fonction borne aussi chaque maîtresse à 40 demandes par jour.
+1. **Une clé API Anthropic.** Sur [platform.claude.com](https://platform.claude.com)
+   (l'ancienne adresse console.anthropic.com y mène) : *Settings → API keys →
+   Create key*. La clé commence par `sk-ant-` et ne s'affiche qu'une fois. Le
+   chat est payant à l'usage (de quelques centimes à une dizaine de centimes par
+   échange), à part de tout abonnement Claude : dans *Settings → Billing*,
+   ajouter du crédit et fixer une **limite de dépense mensuelle**. La fonction
+   borne aussi chaque maîtresse à 40 demandes par jour.
 2. **La ranger dans Supabase**, jamais ailleurs : *Edge Functions → Secrets →
    Add new secret*, nom `ANTHROPIC_API_KEY`, valeur : la clé. Elle ne quitte
    plus le serveur ; aucune tablette ne la voit.
