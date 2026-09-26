@@ -35,10 +35,13 @@ jobs:
       - run: npx tsc --noEmit
       - run: npm test
       # Dit, sans jamais l'afficher, si la clé Supabase est bien en place :
-      # l'avertissement apparaît en tête du résumé de la vérification.
+      # l'avertissement apparaît en tête du résumé de la vérification. La clé
+      # publique n'ayant rien de secret, une « variable » du dépôt convient
+      # aussi bien qu'un « secret ».
       - name: Clé Supabase en place ?
+        id: cle
         env:
-          KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+          KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY || vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: |
           case "$KEY" in
             '') echo "::warning::Pas de secret VITE_SUPABASE_PUBLISHABLE_KEY : le site fonctionnera sans la mise en commun avec la maîtresse." ;;
@@ -46,6 +49,19 @@ jobs:
             sb_secret_*) echo "::error::Le secret VITE_SUPABASE_PUBLISHABLE_KEY contient la clé SECRÈTE : remplacez-la par la clé publishable." ;;
             *) echo "::notice::Clé Supabase en place (ancien format)." ;;
           esac
+          [ -n "$KEY" ] && echo "presente=oui" >> "$GITHUB_OUTPUT" || true
+      # Clé introuvable : on montre les NOMS — jamais les valeurs — de ce qui
+      # ressemble à un réglage Supabase, pour repérer une faute de frappe ou
+      # un secret rangé ailleurs. Les secrets d'« environnement » ne sont pas
+      # visibles ici, et ne conviennent pas.
+      - name: Réglages Supabase trouvés
+        if: steps.cle.outputs.presente != 'oui'
+        env:
+          SECRETS: ${{ toJSON(secrets) }}
+          VARIABLES: ${{ toJSON(vars) }}
+        run: |
+          noms() { jq -r 'keys[] | select(test("supa|cl[eé]|key"; "i"))' | paste -sd ',' - | sed 's/,/, /g'; }
+          echo "::warning::Secrets du dépôt : $(printf '%s' "$SECRETS" | noms || true) — Variables du dépôt : $(printf '%s' "$VARIABLES" | noms || true)"
       # L'adresse du projet n'a rien de secret : chaque requête du site la
       # montre. La clé « publishable » (sb_publishable_…) est faite, elle
       # aussi, pour être lisible dans le code du site : ce sont les règles
@@ -55,7 +71,7 @@ jobs:
       - run: npm run build
         env:
           VITE_SUPABASE_URL: https://uexxvndxlnwjvlgdkxwc.supabase.co
-          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY || vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
