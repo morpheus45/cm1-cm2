@@ -6,6 +6,7 @@ import { ProgressBar } from './ProgressBar';
 import { Gommette } from './ecole/Gommette';
 import { Intercalaire } from './ecole/Intercalaire';
 import { Tampon } from './ecole/Tampon';
+import { typographieFrancaise } from '../lib/typographie';
 
 interface QuestionScreenProps {
   question: Question;
@@ -89,9 +90,9 @@ export function QuestionScreen({
           <Intercalaire domain={question.domain} prefix={SUBJECT_LABELS[subject]} />
         </div>
         {question.instruction && (
-          <p className="text-lg font-bold text-encre-douce">{question.instruction}</p>
+          <p className="text-lg font-bold text-encre-douce">{typographieFrancaise(question.instruction)}</p>
         )}
-        <p className="text-[1.6rem] leading-relaxed text-encre">{renderPrompt(question.prompt, colors.tint)}</p>
+        <p className="text-[1.6rem] leading-relaxed text-encre">{renderPrompt(typographieFrancaise(question.prompt), colors.tint)}</p>
       </section>
 
       <div className="flex flex-col gap-3" role="group" aria-label="Réponses">
@@ -111,7 +112,7 @@ export function QuestionScreen({
               }`}
               style={state ? { background: state.tint, borderColor: state.deep, color: state.deep, boxShadow: `0 3px 0 ${state.deep}` } : undefined}
             >
-              <span>{choice}</span>
+              <span>{typographieFrancaise(choice)}</span>
               {showCorrect && <Gommette color={JUSTE.deep} mark="coche" size={28} label="Bonne réponse" />}
             </button>
           );

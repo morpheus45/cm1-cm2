@@ -11,6 +11,7 @@ import {
   setClassProblemActive,
   type ClassProblemEntry,
 } from '../lib/teacherCloud';
+import { typographieFrancaise } from '../lib/typographie';
 import { Gommette } from './ecole/Gommette';
 import { RainbowArc } from './ecole/RainbowArc';
 
@@ -59,7 +60,7 @@ function Proposition({
   const unit = proposal.unite ? ` ${proposal.unite}` : '';
   return (
     <div className="flex flex-col gap-2 rounded-xl border-2 bg-white p-3" style={{ borderColor: colors.deep }}>
-      <p className="text-base text-encre">{proposal.enonce}</p>
+      <p className="text-base text-encre">{typographieFrancaise(proposal.enonce)}</p>
       <p className="text-sm text-encre-douce">
         Calcul : <strong className="text-encre">{proposal.calcul}</strong> = <strong className="text-encre">{proposal.reponse}{unit}</strong>
         {' · '}
@@ -295,7 +296,7 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
                 key={problem.id}
                 className={`flex flex-col gap-2 rounded-xl border-2 border-encre/15 bg-white p-3 ${problem.actif ? '' : 'opacity-60'}`}
               >
-                <p className="text-base text-encre">{problem.enonce}</p>
+                <p className="text-base text-encre">{typographieFrancaise(problem.enonce)}</p>
                 <p className="text-sm text-encre-douce">
                   Réponse : <strong className="text-encre">{problem.reponse}{problem.unite ? ` ${problem.unite}` : ''}</strong> ·{' '}
                   {TRIMESTER_LABELS[problem.trimestre]} · {problem.actif ? 'en service' : 'retiré'}

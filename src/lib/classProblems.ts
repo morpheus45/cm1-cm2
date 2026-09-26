@@ -33,7 +33,7 @@ export interface ProblemProposal {
 
 /** « 1 250,5 », « 1250.5 » → 1250,5. Rien d'autre qu'un nombre positif. */
 export function parseFrenchNumber(text: string): number | null {
-  const cleaned = text.replace(/[\s  ]/g, '').replace(',', '.');
+  const cleaned = text.replace(/[\s\u00a0\u202f]/g, '').replace(',', '.');
   if (!/^\d+(\.\d+)?$/.test(cleaned)) return null;
   const value = Number(cleaned);
   return Number.isFinite(value) ? value : null;
@@ -55,7 +55,7 @@ const SAME = 1e-9;
  */
 export function evaluateCalculation(expression: string): number | null {
   const tokens: string[] = [];
-  const source = expression.replace(/[  ]/g, ' ').trim();
+  const source = expression.replace(/[\u00a0\u202f]/g, ' ').trim();
   let position = 0;
   while (position < source.length) {
     const char = source[position];

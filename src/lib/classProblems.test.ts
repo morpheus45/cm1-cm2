@@ -20,7 +20,7 @@ describe('les nombres à la française', () => {
     expect(parseFrenchNumber('4,5')).toBe(4.5);
     expect(parseFrenchNumber('4.5')).toBe(4.5);
     expect(parseFrenchNumber('1 250')).toBe(1250);
-    expect(parseFrenchNumber('1 250,75')).toBe(1250.75);
+    expect(parseFrenchNumber('1\u202f250,75')).toBe(1250.75);
   });
 
   it('refusent tout le reste', () => {
