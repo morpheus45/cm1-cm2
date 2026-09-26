@@ -171,7 +171,12 @@ create policy "maitresse corrige les feuilles de ses eleves" on public.worksheet
 -- propriétaire, ce qui lui permet d'écrire là où l'appelant anonyme n'a
 -- aucun droit. Elle ne rend jamais autre chose qu'un identifiant, donc elle
 -- ne peut pas servir à lire la classe.
+-- Ancienne signature, sans identifiant de séance : supprimée si une version
+-- antérieure de ce fichier a déjà été exécutée, pour qu'il n'en reste qu'une.
+drop function if exists public.depose_seance(text, text, text, text, smallint, text, text, jsonb, jsonb);
+
 create or replace function public.depose_seance(
+  p_session_id  uuid,
   p_join_code   text,
   p_first_name  text,
   p_last_name   text,
@@ -189,8 +194,11 @@ as $$
 declare
   v_class_id   uuid;
   v_pupil_id   uuid;
-  v_session_id uuid;
 begin
+  if p_session_id is null then
+    raise exception 'identifiant de séance manquant';
+  end if;
+
   select id into v_class_id from public.classes where join_code = upper(btrim(p_join_code));
   if v_class_id is null then
     raise exception 'code de classe inconnu';
@@ -213,23 +221,27 @@ begin
   on conflict (class_id, pupil_key) do update set pupil_key = excluded.pupil_key
   returning id into v_pupil_id;
 
-  insert into public.sessions (pupil_id, level, trimester, subject, activity, results)
-  values (v_pupil_id, p_level, p_trimester, p_subject, p_activity, p_results)
-  returning id into v_session_id;
+  -- L'identifiant vient de l'appareil de l'élève. Une séance renvoyée deux
+  -- fois — le réseau a coupé après l'enregistrement mais avant la réponse —
+  -- n'est donc enregistrée qu'une fois.
+  insert into public.sessions (id, pupil_id, level, trimester, subject, activity, results)
+  values (p_session_id, v_pupil_id, p_level, p_trimester, p_subject, p_activity, p_results)
+  on conflict (id) do nothing;
 
   if p_worksheet is not null then
     insert into public.worksheets (session_id, pupil_id, operations, answers)
-    values (
-      v_session_id,
-      v_pupil_id,
-      p_worksheet -> 'operations',
-      p_worksheet -> 'answers'
-    );
+    select p_session_id, v_pupil_id, p_worksheet -> 'operations', p_worksheet -> 'answers'
+    where not exists (select 1 from public.worksheets w where w.session_id = p_session_id);
   end if;
 
-  return v_session_id;
+  return p_session_id;
 end;
 $$;
 
-revoke all on function public.depose_seance(text, text, text, text, smallint, text, text, jsonb, jsonb) from public;
-grant execute on function public.depose_seance(text, text, text, text, smallint, text, text, jsonb, jsonb) to anon, authenticated;
+revoke all on function public.depose_seance(uuid, text, text, text, text, smallint, text, text, jsonb, jsonb) from public;
+grant execute on function public.depose_seance(uuid, text, text, text, text, smallint, text, text, jsonb, jsonb) to anon, authenticated;
+
+-- Supabase garde en cache la liste des fonctions appelables : on lui demande
+-- de la relire, sans quoi la nouvelle fonction resterait introuvable jusqu'au
+-- prochain redémarrage de l'API. Sans effet en local.
+notify pgrst, 'reload schema';
