@@ -90,3 +90,24 @@ describe('les problèmes de la classe parlent la même langue que la base', () =
     expect(source).toContain("rpc('problemes_de_la_classe', { p_join_code: code })");
   });
 });
+
+describe('les corrections rendues à l\'élève parlent la même langue que la base', () => {
+  const sql = readFileSync(join(process.cwd(), 'supabase', '003_corrections_pour_les_eleves.sql'), 'utf8');
+  const source = readFileSync(join(process.cwd(), 'src', 'lib', 'pupilCorrections.ts'), 'utf8');
+
+  it('pour le paramètre de la fonction qu\'appelle la tablette', () => {
+    const signature = sql.match(/create or replace function public\.corrections_de_mes_feuilles\(([^)]*)\)/);
+    expect(signature?.[1].trim()).toBe('p_session_ids uuid[]');
+    expect(source).toContain("rpc('corrections_de_mes_feuilles', { p_session_ids: ids })");
+  });
+
+  it('pour les colonnes qu\'elle relit', () => {
+    const returned = sql.match(/returns table \(([\s\S]*?)\n\)/);
+    expect(returned, 'colonnes rendues introuvables').not.toBeNull();
+    const columns = [...returned![1].matchAll(/^\s{2}(\w+)\s+\w/gm)].map((m) => m[1]);
+    ['session_id', 'operations', 'answers', 'corrections', 'corrected_at'].forEach((column) => {
+      expect(columns, `colonne ${column}`).toContain(column);
+      expect(source, `lecture de ${column}`).toContain(`raw.${column}`);
+    });
+  });
+});

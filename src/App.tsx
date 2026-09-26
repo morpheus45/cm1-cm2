@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import { pupilKey, subjectOf, SUBJECT_DOMAINS } from './types';
 import type { Domain, Pupil } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
@@ -25,6 +25,16 @@ import {
   sendDeposit,
   type DepositOutcome,
 } from './lib/cloud';
+import {
+  fetchCorrections,
+  forgetCorrections,
+  loadStoredCorrections,
+  markSeen,
+  saveStoredCorrections,
+  type ReceivedCorrection,
+  type StoredCorrection,
+} from './lib/pupilCorrections';
+import { CorrectedSheetScreen } from './components/CorrectedSheetScreen';
 import { HomeScreen, type StartOptions } from './components/HomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
@@ -38,7 +48,11 @@ const TeacherSpace = lazy(() =>
   import('./components/TeacherSpace').then((module) => ({ default: module.TeacherSpace }))
 );
 
-type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap';
+type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee';
+
+/** Pas plus d'une demande de corrections par minute, même en allant et venant
+ *  entre l'accueil et les séances. */
+const CORRECTIONS_CHECK_INTERVAL = 60_000;
 
 const STARS_KEY = 'exercices-cm1-cm2:stars';
 
@@ -74,6 +88,33 @@ export function App() {
   const [totalStars, setTotalStars] = useState(loadStars);
   const [results, setResults] = useState(loadResults);
   const [delivery, setDelivery] = useState<DepositOutcome | 'pending' | null>(null);
+  const [corrections, setCorrections] = useState(loadStoredCorrections);
+  const [openedCorrection, setOpenedCorrection] = useState<ReceivedCorrection | null>(null);
+  const lastCorrectionsCheck = useRef(0);
+
+  const updateCorrections = useCallback((change: (list: StoredCorrection[]) => StoredCorrection[]) => {
+    setCorrections((list) => {
+      const next = change(list);
+      saveStoredCorrections(next);
+      return next;
+    });
+  }, []);
+
+  // Les feuilles d'opérations corrigées par la maîtresse : demandées au
+  // lancement et à chaque retour à l'accueil, gardées pour le hors-ligne. Une
+  // tablette qui n'a pas de code de classe ne demande rien à personne.
+  const checkCorrections = useCallback(() => {
+    if (!isCloudConfigured() || !loadPreferences().joinCode) return;
+    if (Date.now() - lastCorrectionsCheck.current < CORRECTIONS_CHECK_INTERVAL) return;
+    lastCorrectionsCheck.current = Date.now();
+    void fetchCorrections(loadResults()).then((next) => {
+      if (next) setCorrections(next);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (screen === 'home') checkCorrections();
+  }, [screen, checkCorrections]);
 
   // Au lancement, on renvoie ce qui n'avait pas pu partir la dernière fois.
   useEffect(() => {
@@ -236,13 +277,25 @@ export function App() {
 
   const goHome = () => setScreen('home');
 
+  const openCorrection = (correction: ReceivedCorrection) => {
+    setOpenedCorrection(correction);
+    updateCorrections((list) => markSeen(list, correction.sessionId));
+    setScreen('corrigee');
+  };
+
   if (teacherView) {
     return (
       <Suspense fallback={<p className="min-h-screen py-16 text-center text-encre-douce">Chargement…</p>}>
         <TeacherSpace
           localSessions={results}
-          onForgetLocalPupil={(key) => setResults(forgetPupil(key))}
-          onForgetAllLocal={() => setResults(forgetAllResults())}
+          onForgetLocalPupil={(key) => {
+            setResults(forgetPupil(key));
+            updateCorrections((list) => forgetCorrections(list, key));
+          }}
+          onForgetAllLocal={() => {
+            setResults(forgetAllResults());
+            updateCorrections((list) => forgetCorrections(list, null));
+          }}
           onBack={() => {
             window.location.hash = '';
             setTeacherView(false);
@@ -252,8 +305,27 @@ export function App() {
     );
   }
 
-  if (screen === 'home') {
-    return <HomeScreen initial={config ?? preferences} onStart={startSession} />;
+  const home = (
+    <HomeScreen
+      initial={config ?? preferences}
+      onStart={startSession}
+      corrections={corrections}
+      onOpenCorrection={openCorrection}
+    />
+  );
+
+  if (screen === 'home') return home;
+
+  if (screen === 'corrigee' && openedCorrection) {
+    return (
+      <CorrectedSheetScreen
+        correction={openedCorrection}
+        onClose={() => {
+          setOpenedCorrection(null);
+          goHome();
+        }}
+      />
+    );
   }
 
   if (screen === 'pose' && worksheet) {
@@ -309,5 +381,5 @@ export function App() {
     );
   }
 
-  return <HomeScreen initial={config ?? preferences} onStart={startSession} />;
+  return home;
 }
