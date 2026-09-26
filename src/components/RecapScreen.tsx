@@ -1,5 +1,5 @@
 import type { Subject } from '../types';
-import { SUBJECT_LABELS } from '../types';
+import { ofSubject } from '../types';
 
 import { DeliveryNote } from './DeliveryNote';
 import type { DepositOutcome } from '../lib/cloud';
@@ -39,7 +39,7 @@ export function RecapScreen({
     <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center gap-6 px-4 py-8">
       <section className="cahier flex flex-col items-center gap-4 rounded-3xl px-6 py-8 text-center shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]">
         <p className="text-base font-bold uppercase tracking-[0.18em] text-encre-douce">
-          Séance de {SUBJECT_LABELS[subject].toLowerCase()} terminée
+          Séance {ofSubject(subject)} terminée
         </p>
         <Tampon tilt={-7} className="text-2xl sm:text-3xl">
           {headline}

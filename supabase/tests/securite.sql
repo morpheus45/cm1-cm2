@@ -279,6 +279,20 @@ select pg_temp.doit_echouer($q$select count(*) from public.worksheets$q$,
   'permission denied', 'la table des feuilles reste fermée à la clé publique');
 reset role;
 
+-- L'histoire et la géographie (004_histoire_geographie.sql).
+set role anon;
+select public.depose_seance(gen_random_uuid(), 'AAAAAA', 'Léa', 'Martin', 'CM1', 2::smallint, 'histoire', 'questions',
+  '[{"domain":"chronologie","correct":3,"total":4}]');
+select public.depose_seance(gen_random_uuid(), 'AAAAAA', 'Léa', 'Martin', 'CM1', 2::smallint, 'geographie', 'revision',
+  '[{"domain":"cartes","correct":4,"total":4}]');
+select pg_temp.doit_echouer(
+  $q$select public.depose_seance(gen_random_uuid(),'AAAAAA','Léa','Martin','CM1',2::smallint,'musique','questions','[]')$q$,
+  'sessions_subject_check', 'une matière inconnue doit être refusée');
+reset role;
+select pg_temp.attendu(
+  (select count(*) from public.sessions where subject in ('histoire', 'geographie')), 2,
+  'les séances d''histoire et de géographie doivent être acceptées par la base');
+
 -- ------------------------------------------------------------ les droits ---
 -- Supabase accorde d'office tous les droits à anon et authenticated ; le
 -- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après

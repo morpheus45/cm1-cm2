@@ -147,7 +147,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
         </Etape>
 
         <Etape numero={3} titre="Ta matière">
-          <div className="flex gap-3">
+          <div className="grid grid-cols-2 gap-3">
             {ALL_SUBJECTS.map((s) => {
               const actif = subject === s;
               const colors = SUBJECT_COLORS[s];
@@ -157,7 +157,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
                   type="button"
                   aria-pressed={actif}
                   onClick={() => selectSubject(s)}
-                  className="etiquette relative flex flex-1 flex-col items-center gap-1 px-2 pb-3 pt-2 text-xl"
+                  className="etiquette relative flex flex-col items-center gap-1 px-2 pb-3 pt-2 text-xl"
                   style={actif ? { background: colors.tint, borderColor: colors.deep, boxShadow: `0 3px 0 ${colors.deep}` } : undefined}
                 >
                   <RainbowArc domains={SUBJECT_DOMAINS[s]} className="w-24" />
@@ -170,7 +170,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
             })}
           </div>
           <p className="text-sm text-encre-pale">
-            Une séance ne mélange jamais le français et les maths : on reste d'un seul côté de l'arc-en-ciel.
+            Une séance ne mélange jamais deux matières : chacune a son arc, et on reste dans le sien.
           </p>
         </Etape>
 

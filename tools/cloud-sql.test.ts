@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { depositParams } from '../src/lib/cloud';
@@ -35,13 +35,18 @@ describe('la base accepte toutes les valeurs de l\'application', () => {
   // Le bug que ce test aurait attrapé : la révision ciblée a été ajoutée à
   // l'application, pas à la liste des types de séance acceptés par la base.
   // Chaque séance de révision envoyée à la maîtresse aurait été refusée.
-  const sql = readFileSync(join(process.cwd(), 'supabase', '001_classes_eleves_seances.sql'), 'utf8');
+  // Les fichiers s'exécutent dans l'ordre : c'est la dernière contrainte
+  // posée sur une colonne qui s'applique.
+  const files = readdirSync(join(process.cwd(), 'supabase'))
+    .filter((name) => /^0\d+_.*\.sql$/.test(name))
+    .sort();
+  const sql = files.map((name) => readFileSync(join(process.cwd(), 'supabase', name), 'utf8')).join('\n');
   const allowed = (column: string) => {
     const found = [...sql.matchAll(new RegExp(`check \\(${column} in \\(([^)]*)\\)\\)`, 'g'))].map((m) =>
       [...m[1].matchAll(/'([^']*)'/g)].map((v) => v[1]).sort()
     );
     expect(found.length, `aucune contrainte trouvée sur ${column}`).toBeGreaterThan(0);
-    return found;
+    return found.slice(-1);
   };
 
   it('pour les types de séance', () => {

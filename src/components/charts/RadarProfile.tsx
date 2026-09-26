@@ -1,4 +1,4 @@
-import { DOMAIN_LABELS } from '../../types';
+import { DOMAIN_LABELS, DOMAIN_SHORT_LABELS } from '../../types';
 import { MASTERY_THRESHOLDS, type DomainSummary } from '../../lib/results';
 
 // La toile est plus large que haute : les étiquettes des axes de gauche et de
@@ -23,7 +23,7 @@ function polygon(values: number[]): string {
 }
 
 /**
- * Le profil en toile d'araignée : les six notions d'un coup d'œil.
+ * Le profil en toile d'araignée : les notions d'une matière d'un coup d'œil.
  *
  * Les anneaux ne sont pas décoratifs — ils sont posés sur les seuils des
  * quatre niveaux de maîtrise. Une pointe qui dépasse le troisième anneau est
@@ -115,7 +115,7 @@ export function RadarProfile({
           return (
             <text key={summary.domain} x={x} y={y} textAnchor={anchor} fontSize="11">
               <tspan fill="#52514e" fontWeight="600">
-                {DOMAIN_LABELS[summary.domain].split(' ')[0]}
+                {DOMAIN_SHORT_LABELS[summary.domain]}
               </tspan>
               <tspan x={x} dy="13" fill="#67665f">
                 {summary.ratio === null ? '—' : `${Math.round(summary.ratio * 100)} %`}

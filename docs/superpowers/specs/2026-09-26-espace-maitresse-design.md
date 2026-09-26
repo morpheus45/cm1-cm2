@@ -18,7 +18,7 @@ toutes les quatre ont été retenues.
 | Vue | Ce qu'elle répond |
 |---|---|
 | **Niveau de maîtrise** | « Que mettre sur le livret ? » — l'échelle à quatre niveaux du LSU, notion par notion |
-| **Profil** (toile d'araignée) | « Où est le point faible ? » — les six notions d'un coup d'œil |
+| **Profil** (toile d'araignée) | « Où est le point faible ? » — les notions de la matière affichée d'un coup d'œil |
 | **Progression** | « Est-ce que ça s'améliore ? » — la réussite dans le temps |
 | **Dans la classe** | « Est-ce un problème de cet élève, ou de toute la classe ? » |
 
@@ -84,8 +84,8 @@ supprimé en cascade quand la classe l'est.
 
 Plusieurs enfants peuvent travailler sur le même appareil. Chaque séance porte
 le nom de celui qui l'a faite, et l'espace maîtresse ouvre sur la liste des
-dossiers : nom, nombre de séances, date de la dernière, et six pastilles qui
-résument les six notions.
+dossiers : nom, nombre de séances, date de la dernière, et une pastille par
+notion, groupées par matière travaillée (un espace sépare les matières).
 
 L'identité est insensible aux accents, à la casse et aux espaces en trop :
 « Léa  MARTIN » et « léa martin » sont le même enfant, pas deux dossiers. Le

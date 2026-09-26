@@ -1,4 +1,4 @@
-import { pupilLabel } from '../types';
+import { ALL_SUBJECTS, pupilLabel } from '../types';
 import { summariseByDomain, MASTERY_COLORS, type PupilFolder } from '../lib/results';
 import { NOTION_COLORS } from '../theme';
 
@@ -8,9 +8,11 @@ function frenchDate(iso: string): string {
   return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()}`;
 }
 
-/** Un dossier par élève. La pastille de droite résume les six notions : une
- *  case par notion, à la couleur de son niveau, grise si rien n'est encore
- *  établi. */
+/** Un dossier par élève. La pastille de droite résume les matières
+ *  travaillées dans la liste : une case par notion, à la couleur de son
+ *  niveau, grise si rien n'est encore établi, les matières séparées d'un
+ *  espace. Les mêmes matières pour tous, dans le même ordre : d'une ligne à
+ *  l'autre, les colonnes se comparent. */
 export function PupilList({
   folders,
   onOpen,
@@ -22,10 +24,16 @@ export function PupilList({
    *  correction. */
   toCorrect?: Record<string, number>;
 }) {
+  const summariesByFolder = folders.map((folder) => summariseByDomain(folder.sessions));
+  const practiced = ALL_SUBJECTS.filter((subject) =>
+    summariesByFolder.some((summaries) =>
+      summaries.some((summary) => summary.subject === subject && summary.total > 0)
+    )
+  );
   return (
     <ul className="flex flex-col gap-2">
-      {folders.map((folder) => {
-        const summaries = summariseByDomain(folder.sessions);
+      {folders.map((folder, index) => {
+        const summaries = summariesByFolder[index];
         return (
           <li key={folder.key}>
             <button
@@ -38,8 +46,8 @@ export function PupilList({
                   {pupilLabel(folder.pupil)}
                 </span>
                 <span className="block text-xs font-normal text-encre-douce">
-                  {folder.sessions.length} séance{folder.sessions.length > 1 ? 's' : ''} · dernière
-                  le {frenchDate(folder.lastAt)}
+                  {folder.sessions.length} séance{folder.sessions.length > 1 ? 's' : ''} ·{' '}
+                  <span className="whitespace-nowrap">dernière le {frenchDate(folder.lastAt)}</span>
                 </span>
                 {(toCorrect[folder.key] ?? 0) > 0 && (
                   <span
@@ -50,15 +58,21 @@ export function PupilList({
                   </span>
                 )}
               </span>
-              <span className="flex gap-[3px] shrink-0" aria-hidden="true">
-                {summaries.map((summary) => (
-                  <span
-                    key={summary.domain}
-                    className="w-2.5 h-6 rounded-sm"
-                    style={{
-                      background: summary.mastery ? MASTERY_COLORS[summary.mastery] : '#e2e8f0',
-                    }}
-                  />
+              <span className="flex shrink-0 gap-1.5" aria-hidden="true">
+                {practiced.map((subject) => (
+                  <span key={subject} className="flex gap-[2px]">
+                    {summaries
+                      .filter((summary) => summary.subject === subject)
+                      .map((summary) => (
+                        <span
+                          key={summary.domain}
+                          className="h-6 w-2 rounded-sm"
+                          style={{
+                            background: summary.mastery ? MASTERY_COLORS[summary.mastery] : '#e2e8f0',
+                          }}
+                        />
+                      ))}
+                  </span>
                 ))}
               </span>
             </button>
