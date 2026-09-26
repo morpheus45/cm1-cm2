@@ -27,7 +27,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # La bibliothèque de Supabase demande Node 22 au moins ; Node 20
+          # n'est plus suivi depuis avril 2026.
+          node-version: 22
           cache: npm
       - run: npm ci
       - run: npx tsc --noEmit
