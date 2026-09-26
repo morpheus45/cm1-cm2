@@ -212,28 +212,41 @@ describe('les questions sur carte', () => {
     }
   });
 
-  it('écrivent les noms de villes dans le cadre, sans chevauchement', () => {
+  it('écrivent les noms de villes dans le cadre, sans chevauchement ni flèche barrée', () => {
     for (const level of ['CM1', 'CM2'] as Level[]) {
       const makers = cartes.MAP_MAKERS.filter((maker) => maker.name === 'extreme' || maker.name === 'direction');
-      for (let seed = 1; seed <= 60; seed++) {
+      for (let seed = 1; seed <= 80; seed++) {
         for (const maker of makers) {
           const figure = maker.make(createRng(seed), level).figure!;
           const boxes = shapesOf(figure, 'text')
             .filter((shape) => shape.text.length > 1)
             .map((shape) => {
               const width = shape.text.length * (shape.size ?? 15) * 0.56;
-              const left = shape.anchor === 'end' ? shape.at[0] - width : shape.at[0];
+              const left = shape.anchor === 'end' ? shape.at[0] - width : shape.anchor === 'middle' ? shape.at[0] - width / 2 : shape.at[0];
               return [left, shape.at[1] - 11, left + width, shape.at[1]] as const;
             });
           boxes.forEach((box) => {
             expect(box[0]).toBeGreaterThanOrEqual(0);
             expect(box[2]).toBeLessThanOrEqual(figure.width);
+            expect(box[1]).toBeGreaterThanOrEqual(0);
+            expect(box[3]).toBeLessThanOrEqual(figure.height);
           });
           boxes.forEach((a, i) =>
             boxes.forEach((b, j) => {
               if (j > i) expect(a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3]).toBe(false);
             })
           );
+          // Aucun nom n'est écrit sur la flèche d'un trajet.
+          if (maker.name === 'direction') {
+            const arrow = shapesOf(figure, 'segment').find((shape) => (shape.width ?? 0) > 2)!;
+            boxes.forEach(([left, top, right, bottom]) => {
+              for (let i = 0; i <= 20; i++) {
+                const x = arrow.from[0] + ((arrow.to[0] - arrow.from[0]) * i) / 20;
+                const y = arrow.from[1] + ((arrow.to[1] - arrow.from[1]) * i) / 20;
+                expect(x >= left && x <= right && y >= top && y <= bottom).toBe(false);
+              }
+            });
+          }
         }
       }
     }

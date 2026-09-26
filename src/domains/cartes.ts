@@ -413,38 +413,74 @@ const LABEL_GAP = 6.5;
  *  mesurer le texte. */
 const textWidth = (text: string) => text.length * TEXT_SIZE * 0.56;
 
+/** Où écrire le nom d'une ville, autour de son point. */
+export type Side = 'droite' | 'gauche' | 'dessus' | 'dessous';
+
 interface Label {
   city: City;
-  anchor: 'start' | 'end';
+  side: Side;
 }
+
+type Box = [number, number, number, number];
 
 /** Le cadre d'un nom posé à côté de son point. */
-function labelBox({ city, anchor }: Label): [number, number, number, number] {
+function labelBox({ city, side }: Label): Box {
   const [x, y] = FRANCE_MAP.cities[city].at;
   const width = textWidth(CITY_NAMES[city]);
-  const left = anchor === 'start' ? x + LABEL_GAP : x - LABEL_GAP - width;
-  return [left, y - 8.5, left + width, y + 3.5];
+  switch (side) {
+    case 'droite':
+      return [x + LABEL_GAP, y - 8.5, x + LABEL_GAP + width, y + 3.5];
+    case 'gauche':
+      return [x - LABEL_GAP - width, y - 8.5, x - LABEL_GAP, y + 3.5];
+    case 'dessus':
+      return [x - width / 2, y - 16.5, x + width / 2, y - 4.5];
+    case 'dessous':
+      return [x - width / 2, y + 4.5, x + width / 2, y + 16.5];
+  }
 }
 
-const overlaps = (a: [number, number, number, number], b: [number, number, number, number]) =>
-  a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3];
+const overlaps = (a: Box, b: Box) => a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3];
 
-/** Des noms de villes qui ne se chevauchent pas et ne sortent pas du cadre ;
- *  `null` si c'est impossible. */
-export function placeLabels(cities: City[], prefer: (city: City) => 'start' | 'end' = () => 'start'): Label[] | null {
+/** Le segment traverse-t-il le cadre ? (échantillonné, largement) */
+function crosses(box: Box, [ax, ay]: Point, [bx, by]: Point): boolean {
+  const grown: Box = [box[0] - 2, box[1] - 2, box[2] + 2, box[3] + 2];
+  for (let i = 0; i <= 40; i++) {
+    const [x, y] = [ax + ((bx - ax) * i) / 40, ay + ((by - ay) * i) / 40];
+    if (x >= grown[0] && x <= grown[2] && y >= grown[1] && y <= grown[3]) return true;
+  }
+  return false;
+}
+
+/** Ce que les noms ne doivent pas couvrir : les points des villes, la flèche
+ *  du nord, et les traits donnés (la flèche d'un trajet). */
+interface Obstacles {
+  cities: City[];
+  segments?: [Point, Point][];
+}
+
+function northBox(): Box {
+  const [x, y] = FRANCE_MAP.seas.atlantique;
+  return [x - 7, y - 21, x + 7, y + 11];
+}
+
+/** Des noms de villes lisibles : dans le cadre, sans se chevaucher, sans
+ *  couvrir un point, la flèche du nord ni un trajet. Chaque ville essaie ses
+ *  places dans l'ordre préféré ; `null` si aucune ne convient. */
+export function placeLabels(cities: City[], prefer: (city: City) => Side[], obstacles: Obstacles = { cities }): Label[] | null {
   const labels: Label[] = [];
   for (const city of cities) {
-    const choices: ('start' | 'end')[] = prefer(city) === 'start' ? ['start', 'end'] : ['end', 'start'];
-    const fit = choices
-      .map((anchor) => ({ city, anchor }))
+    const order = [...prefer(city), 'droite', 'gauche', 'dessus', 'dessous'] as Side[];
+    const fit = [...new Set(order)]
+      .map((side) => ({ city, side }))
       .find((label) => {
         const box = labelBox(label);
-        const inside = box[0] >= 2 && box[2] <= FRANCE_MAP.width - 2;
-        const dots = cities.every((other) => {
+        const inside = box[0] >= 2 && box[2] <= FRANCE_MAP.width - 2 && box[1] >= 2 && box[3] <= FRANCE_MAP.height - 2;
+        const dots = obstacles.cities.every((other) => {
           const [x, y] = FRANCE_MAP.cities[other].at;
           return !overlaps(box, [x - 3, y - 3, x + 3, y + 3]);
         });
-        return inside && dots && labels.every((placed) => !overlaps(box, labelBox(placed)));
+        const lines = (obstacles.segments ?? []).every(([a, b]) => !crosses(box, a, b));
+        return inside && dots && lines && !overlaps(box, northBox()) && labels.every((placed) => !overlaps(box, labelBox(placed)));
       });
     if (!fit) return null;
     labels.push(fit);
@@ -452,9 +488,19 @@ export function placeLabels(cities: City[], prefer: (city: City) => 'start' | 'e
   return labels;
 }
 
-const nameShape = ({ city, anchor }: Label): Shape => {
+const nameShape = ({ city, side }: Label): Shape => {
   const [x, y] = FRANCE_MAP.cities[city].at;
-  return { kind: 'text', at: [anchor === 'start' ? x + LABEL_GAP : x - LABEL_GAP, y + 3.5], text: CITY_NAMES[city], size: TEXT_SIZE, anchor, bold: true, halo: true };
+  const common = { kind: 'text' as const, text: CITY_NAMES[city], size: TEXT_SIZE, bold: true, halo: true };
+  switch (side) {
+    case 'droite':
+      return { ...common, at: [x + LABEL_GAP, y + 3.5], anchor: 'start' };
+    case 'gauche':
+      return { ...common, at: [x - LABEL_GAP, y + 3.5], anchor: 'end' };
+    case 'dessus':
+      return { ...common, at: [x, y - 7], anchor: 'middle' };
+    case 'dessous':
+      return { ...common, at: [x, y + 14], anchor: 'middle' };
+  }
 };
 
 /** Une petite flèche du nord, posée dans l'océan Atlantique. */
@@ -483,7 +529,7 @@ function extremeQuestion(rng: Rng, level: Level): Draft {
     const cities = rngShuffle(rng, CITY_POOL[level]).slice(0, 4);
     const ranked = [...cities].sort((a, b) => score(b) - score(a));
     const clear = score(ranked[0]) - score(ranked[1]) >= 10 && geo(ranked[0]) > Math.max(...ranked.slice(1).map(geo));
-    const labels = placeLabels(cities, (city) => (FRANCE_MAP.cities[city].at[0] > FRANCE_MAP.width / 2 ? 'end' : 'start'));
+    const labels = placeLabels(cities, (city) => (FRANCE_MAP.cities[city].at[0] > FRANCE_MAP.width / 2 ? ['gauche'] : ['droite']));
     if ((!clear || !labels) && attempt < 60) continue;
     if (!clear || !labels) throw new Error('Aucune combinaison de villes lisible.');
     const winner = ranked[0];
@@ -501,25 +547,35 @@ function extremeQuestion(rng: Rng, level: Level): Draft {
   }
 }
 
+/** Le côté opposé à un mouvement : pour que le nom d'une ville de départ
+ *  s'écarte de la flèche qui en part. */
+function behind(ux: number, uy: number): Side {
+  if (Math.abs(ux) >= Math.abs(uy)) return ux > 0 ? 'gauche' : 'droite';
+  return uy > 0 ? 'dessus' : 'dessous';
+}
+
+const opposite: Record<Side, Side> = { droite: 'gauche', gauche: 'droite', dessus: 'dessous', dessous: 'dessus' };
+
 /** « Pour aller de Lyon à Marseille, dans quelle direction part-on ? » : le
- *  trajet est fléché, le nord est marqué. */
+ *  trajet est fléché, le nord est marqué ; les noms ne touchent pas la
+ *  flèche. */
 function directionQuestion(rng: Rng, level: Level): Draft {
   const trips = rngShuffle(rng, tripsFor(level));
   for (const { from, to, direction } of trips) {
     const [ax, ay] = FRANCE_MAP.cities[from].at;
     const [bx, by] = FRANCE_MAP.cities[to].at;
-    // Les noms s'écartent du trajet : à gauche pour la ville de l'ouest.
-    const labels = placeLabels([from, to], (city) => {
-      const x = FRANCE_MAP.cities[city].at[0];
-      const other = city === from ? bx : ax;
-      return x < other ? 'end' : 'start';
-    });
-    if (!labels) continue;
     const length = Math.hypot(bx - ax, by - ay);
     const [ux, uy] = [(bx - ax) / length, (by - ay) / length];
     const start: Point = [ax + ux * 7, ay + uy * 7];
     const tip: Point = [bx - ux * 7, by - uy * 7];
     const wing = (sign: number): Point => [tip[0] - ux * 7 + sign * uy * 4.5, tip[1] - uy * 7 - sign * ux * 4.5];
+    // Le départ s'écrit derrière la flèche, l'arrivée au-delà de sa pointe.
+    const labels = placeLabels(
+      [from, to],
+      (city) => (city === from ? [behind(ux, uy)] : [opposite[behind(ux, uy)]]),
+      { cities: [from, to], segments: [[start, tip], [wing(1), tip], [wing(-1), tip]] }
+    );
+    if (!labels) continue;
     const options = level === 'CM1' ? MAIN_DIRECTIONS : ALL_DIRECTIONS;
     return {
       key: `carte-direction-${from}-${to}`,
