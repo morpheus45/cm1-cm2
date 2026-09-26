@@ -1,4 +1,5 @@
 import type { Figure } from './lib/figures';
+import type { Construction } from './lib/construction';
 
 export type Level = 'CM1' | 'CM2';
 
@@ -108,6 +109,10 @@ export interface Question {
   /** Une phrase qui explique la bonne réponse, montrée une fois que l'élève a
    *  répondu. */
   explanation?: string;
+  /** Une construction à faire au doigt sur la figure (poser des points sur un
+   *  quadrillage). La question n'a alors pas de choix : `choices` est vide et
+   *  `correctIndex` vaut -1. */
+  construction?: Construction;
 }
 
 export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];

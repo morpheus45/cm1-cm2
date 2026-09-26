@@ -16,9 +16,10 @@ export type Point = [number, number];
  *  sur les cartes, le bleu des fleuves et le trait des frontières. */
 export type Ink = 'encre' | 'couleur' | 'pale' | 'eau' | 'frontiere';
 
-/** Le fond d'une surface de carte : la mer, la France, les pays voisins, ou
- *  l'orange de ce que désigne la question. */
-export type Ground = 'mer' | 'terre' | 'voisin' | 'surbrillance';
+/** Le fond d'une surface : sur une carte, la mer, la France, les pays
+ *  voisins, ou l'orange de ce que désigne la question ; en géométrie, une
+ *  teinte légère de la couleur de la notion (une aire à compter). */
+export type Ground = 'mer' | 'terre' | 'voisin' | 'surbrillance' | 'couleur';
 
 export type Shape =
   | { kind: 'segment'; from: Point; to: Point; ink?: Ink; dashed?: boolean; width?: number }

@@ -8,6 +8,7 @@ import { Intercalaire } from './ecole/Intercalaire';
 import { Tampon } from './ecole/Tampon';
 import { typographieFrancaise } from '../lib/typographie';
 import { FigureView } from './figures/FigureView';
+import { ConstructionBoard } from './figures/ConstructionBoard';
 
 interface QuestionScreenProps {
   question: Question;
@@ -52,6 +53,9 @@ export function QuestionScreen({
   onQuit,
 }: QuestionScreenProps) {
   const [selected, setSelected] = useState<number | null>(null);
+  // Une construction : juste ou non, une fois que l'élève a validé.
+  const [built, setBuilt] = useState<boolean | null>(null);
+  const construction = question.construction;
   // Rotation fixe (aucun hasard hors de seededRandom.ts) : les mots changent
   // au fil de la séance sans avoir besoin d'une graine.
   const encouragement = ENCOURAGEMENTS[(questionNumber - 1) % ENCOURAGEMENTS.length];
@@ -62,14 +66,15 @@ export function QuestionScreen({
     setSelected(index);
   };
 
-  const handleContinue = () => {
-    if (selected === null) return;
-    onAnswer(selected === question.correctIndex);
-    setSelected(null);
-  };
+  const answered = construction ? built !== null : selected !== null;
+  const isCorrect = construction ? built === true : answered && selected === question.correctIndex;
 
-  const answered = selected !== null;
-  const isCorrect = answered && selected === question.correctIndex;
+  const handleContinue = () => {
+    if (!answered) return;
+    onAnswer(isCorrect);
+    setSelected(null);
+    setBuilt(null);
+  };
 
   return (
     <div className="mx-auto flex min-h-screen max-w-lg flex-col gap-5 px-4 py-5">
@@ -94,7 +99,17 @@ export function QuestionScreen({
           <p className="text-lg font-bold text-encre-douce">{typographieFrancaise(question.instruction)}</p>
         )}
         <p className="text-[1.6rem] leading-relaxed text-encre">{renderPrompt(typographieFrancaise(question.prompt), colors.tint)}</p>
-        {question.figure && (
+        {question.figure && construction && (
+          <ConstructionBoard
+            key={question.id}
+            figure={question.figure}
+            construction={construction}
+            accent={colors.band}
+            validated={built !== null}
+            onValidate={setBuilt}
+          />
+        )}
+        {question.figure && !construction && (
           <FigureView
             figure={question.figure}
             accent={colors.band}
@@ -103,29 +118,31 @@ export function QuestionScreen({
         )}
       </section>
 
-      <div className="flex flex-col gap-3" role="group" aria-label="Réponses">
-        {question.choices.map((choice, index) => {
-          const isSelected = selected === index;
-          const showCorrect = answered && index === question.correctIndex;
-          const showWrongSelected = answered && isSelected && !isCorrect;
-          const state = showCorrect ? JUSTE : showWrongSelected ? A_REVOIR : null;
-          return (
-            <button
-              key={choice + index}
-              type="button"
-              disabled={answered}
-              onClick={() => handleSelect(index)}
-              className={`etiquette flex items-center justify-between gap-3 px-4 py-3.5 text-left text-xl ${
-                answered && !state ? '!opacity-50' : '!opacity-100'
-              }`}
-              style={state ? { background: state.tint, borderColor: state.deep, color: state.deep, boxShadow: `0 3px 0 ${state.deep}` } : undefined}
-            >
-              <span>{typographieFrancaise(choice)}</span>
-              {showCorrect && <Gommette color={JUSTE.deep} mark="coche" size={28} label="Bonne réponse" />}
-            </button>
-          );
-        })}
-      </div>
+      {!construction && (
+        <div className="flex flex-col gap-3" role="group" aria-label="Réponses">
+          {question.choices.map((choice, index) => {
+            const isSelected = selected === index;
+            const showCorrect = answered && index === question.correctIndex;
+            const showWrongSelected = answered && isSelected && !isCorrect;
+            const state = showCorrect ? JUSTE : showWrongSelected ? A_REVOIR : null;
+            return (
+              <button
+                key={choice + index}
+                type="button"
+                disabled={answered}
+                onClick={() => handleSelect(index)}
+                className={`etiquette flex items-center justify-between gap-3 px-4 py-3.5 text-left text-xl ${
+                  answered && !state ? '!opacity-50' : '!opacity-100'
+                }`}
+                style={state ? { background: state.tint, borderColor: state.deep, color: state.deep, boxShadow: `0 3px 0 ${state.deep}` } : undefined}
+              >
+                <span>{typographieFrancaise(choice)}</span>
+                {showCorrect && <Gommette color={JUSTE.deep} mark="coche" size={28} label="Bonne réponse" />}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {answered && (
         <div className="flex flex-col items-center gap-4">
@@ -135,7 +152,7 @@ export function QuestionScreen({
             </Tampon>
           ) : (
             <p className="text-center text-lg font-bold text-encre-douce">
-              La bonne réponse est marquée d'une gommette verte.
+              {construction ? 'La correction est tracée en vert.' : 'La bonne réponse est marquée d\'une gommette verte.'}
             </p>
           )}
           {question.explanation && (

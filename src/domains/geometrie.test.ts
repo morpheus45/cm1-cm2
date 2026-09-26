@@ -160,12 +160,26 @@ describe('les questions de géométrie', () => {
   it('sont bien formées, et leur figure tient dans son cadre', () => {
     ([1, 2, 3, 4, 5, 6] as Stage[]).forEach((stage) =>
       allQuestions(stage).forEach((question) => {
-        expect(question.choices.length).toBeGreaterThanOrEqual(3);
-        expect(new Set(question.choices).size).toBe(question.choices.length);
-        expect(question.choices[question.correctIndex]).toBeDefined();
+        if (question.construction) {
+          // Une construction : pas de choix, des points à poser (voir
+          // geometrieConstructions.test.ts).
+          expect(question.choices).toEqual([]);
+          expect(question.correctIndex).toBe(-1);
+          expect(question.construction.count).toBeGreaterThan(0);
+        } else {
+          expect(question.choices.length).toBeGreaterThanOrEqual(3);
+          expect(new Set(question.choices).size).toBe(question.choices.length);
+          expect(question.choices[question.correctIndex]).toBeDefined();
+        }
         expect(question.explanation).toBeTruthy();
         if (question.figure) expect(fitsInFrame(question.figure), question.id).toBe(true);
       })
+    );
+  });
+
+  it('écrivent « d\'arêtes », jamais « de arêtes »', () => {
+    ([3, 4, 5, 6] as Stage[]).forEach((stage) =>
+      allQuestions(stage).forEach((question) => expect(question.prompt).not.toMatch(/\bde [aeiouéèêh]/i))
     );
   });
 
@@ -202,7 +216,8 @@ describe('les questions de géométrie', () => {
 
   it('classent les droites d\'après leur dessin', () => {
     allQuestions(1)
-      .filter((question) => question.id.startsWith('geometrie-droites-'))
+      // « droites-nommees » est une autre famille (geometrieQuestions.test.ts).
+      .filter((question) => /^geometrie-droites-\d/.test(question.id))
       .forEach((question) => {
         const [first, second] = shapesOf(question.figure, 'segment') as Extract<Shape, { kind: 'segment' }>[];
         const u = [first.to[0] - first.from[0], first.to[1] - first.from[1]];
@@ -255,7 +270,8 @@ describe('la géométrie dans les séances de maths', () => {
       const level = stage <= 3 ? 'CM1' : 'CM2';
       const trimester = (((stage - 1) % 3) + 1) as 1 | 2 | 3;
       const session = generate(level, trimester, createRng(stage), 12);
-      const keys = session.map((question) => question.prompt + JSON.stringify(question.figure ?? null));
+      // Deux « Quelle phrase est vraie ? » sans figure diffèrent par leurs choix.
+      const keys = session.map((question) => question.prompt + JSON.stringify(question.figure ?? null) + [...question.choices].sort().join('|'));
       expect(new Set(keys).size).toBe(keys.length);
       expect(distance([0, 0], [3, 4])).toBe(5);
     });
