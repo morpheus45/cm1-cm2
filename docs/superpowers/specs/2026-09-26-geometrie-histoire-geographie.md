@@ -52,6 +52,52 @@ nouveautés du trimestre.
 | **CM1** | polygones, droites parallèles et perpendiculaires, angles droits, repérage sur quadrillage | quadrilatères et triangles particuliers (avec leur codage), cercle, propriétés | solides (faces, arêtes, sommets), axes de symétrie, rayon et diamètre |
 | **CM2** | angles aigus, droits, obtus ; parallélogramme | propriétés des figures, symétrie de figures plus riches | patrons du cube, le degré |
 
+### Géométrie, plus loin : construire, mesurer
+
+Demande : « construire au doigt, mesurer, et plus de questions ». Tout reste
+dans la notion Géométrie, trimestre par trimestre.
+
+**Construire au doigt** (`src/lib/construction.ts`, écran
+`ConstructionBoard`). L'élève ne choisit pas une réponse : il pose des points
+sur un quadrillage, au doigt, au stylet, à la souris ou au clavier (flèches,
+puis Entrée), les enlève en les touchant de nouveau, puis valide. Le point
+touché va au croisement le plus proche : pas besoin d'être précis. La
+vérification compare des croisements, pas des pixels ; une droite parallèle
+ou perpendiculaire est juste quel que soit le second point choisi sur elle.
+Les points déjà donnés (départ, sommets connus, point M) ne se touchent pas.
+Après validation, la correction se trace en vert, les points justes restent
+verts, les autres passent en orange.
+
+| Construction | CM1 | CM2 |
+|---|---|---|
+| Poser l'étoile dans la case C4 | 1er trimestre | révision |
+| Reproduire une figure (départ donné) | 1er trimestre | figures plus riches |
+| Compléter un carré, un rectangle (placer D) | 2e trimestre | figures penchées |
+| Tracer la parallèle, la perpendiculaire à (d) passant par M | 2e trimestre (droites horizontales, verticales, à 45°) | droites obliques |
+| Compléter par symétrie | 3e trimestre (axe vertical ou horizontal) | 2e trimestre : axe penché |
+| Agrandir une figure deux fois | — | 3e trimestre |
+
+**Mesurer** (`geometrieMesures.ts`). Lire une règle graduée (le segment ne
+part pas toujours de 0 ; centimètres au 1er trimestre du CM1, puis cm et mm,
+puis nombres décimaux au CM2) ; le périmètre en ajoutant les côtés (CM1, 2e
+trimestre), puis par la formule du carré et du rectangle (CM2) ; l'aire en
+carreaux (CM1, 3e trimestre ; le périmètre est toujours proposé comme piège),
+avec des demi-carreaux, puis l'aire du rectangle en cm² (CM2, 2e trimestre).
+
+**Plus de questions** (`geometrieQuestions.ts`). Parmi trois droites
+nommées, lesquelles sont parallèles, perpendiculaires (CM1) ; dans un cercle,
+quel segment est un diamètre, un rayon (CM1, 3e trimestre) ; quel angle est
+le plus grand, le plus petit — le plus grand a exprès les côtés les plus
+courts (CM2) ; quelle phrase est vraie sur les figures (CM2).
+
+**Ce que vérifient les tests.** Chaque construction accepte sa bonne réponse
+et refuse une réponse décalée d'un carreau ; le symétrique est exact, la
+figure complète ne se croise pas ; le rectangle complété a bien ses angles
+droits ; la copie et l'agrandissement respectent le modèle ; la règle se lit
+« fin moins début » ; les carreaux et demi-carreaux se comptent exactement ;
+les droites désignées sont vraiment parallèles ou perpendiculaires, et leurs
+noms ne prêtent pas à confusion ; le diamètre passe par le centre.
+
 ### Histoire et géographie
 
 Chaque année a son programme : un élève de CM2 ne reçoit pas les questions du

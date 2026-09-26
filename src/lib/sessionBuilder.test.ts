@@ -139,6 +139,12 @@ describe('buildSession', () => {
           session.questions.forEach((q) => {
             expect(q.domain).toBe(domain);
             expect(q.prompt.trim().length).toBeGreaterThan(0);
+            // Une construction de géométrie n'a pas de choix : l'élève pose
+            // des points.
+            if (q.construction) {
+              expect(q.choices).toEqual([]);
+              return;
+            }
             // Trois réponses quand la question en a trois par nature (droites
             // parallèles, perpendiculaires ou sécantes ; angle aigu, droit ou
             // obtus), quatre sinon.

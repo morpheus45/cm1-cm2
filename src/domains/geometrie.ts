@@ -2,6 +2,10 @@ import type { Level, Question, Trimester } from '../types';
 import type { Figure, Point } from '../lib/figures';
 import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
+import { choose, type Family } from './geometrieCommun';
+import { CONSTRUCTION_FAMILIES } from './geometrieConstructions';
+import { MEASURE_FAMILIES } from './geometrieMesures';
+import { QUESTION_FAMILIES } from './geometrieQuestions';
 import {
   angleDroit,
   angleFigure,
@@ -52,20 +56,12 @@ import {
  * - CM2, 1er : angles aigus, droits, obtus ; le parallélogramme ;
  * - CM2, 2e : propriétés des figures ; symétrie de figures plus riches ;
  * - CM2, 3e : patrons du cube ; le degré.
+ *
+ * S'y ajoutent, avec leur propre progression : les constructions au doigt
+ * (geometrieConstructions.ts), les mesures — règle, périmètres, aires —
+ * (geometrieMesures.ts) et d'autres questions à choix (geometrieQuestions.ts).
  */
 
-interface Family {
-  name: string;
-  minStage: Stage;
-  make: (rng: Rng, stage: Stage) => Omit<Question, 'id' | 'domain'> & { detail: string };
-}
-
-/** Les choix : la bonne réponse et des mauvaises, mélangés, sans doublon. */
-function choose(rng: Rng, correct: string, wrong: string[], howMany = 4) {
-  const distractors = rngShuffle(rng, [...new Set(wrong)].filter((entry) => entry !== correct)).slice(0, howMany - 1);
-  const choices = rngShuffle(rng, [correct, ...distractors]);
-  return { choices, correctIndex: choices.indexOf(correct) };
-}
 
 const POLYGON_NAMES: Record<number, string> = {
   3: 'un triangle',
@@ -373,12 +369,13 @@ const elementsSolides: Family = {
   make: (rng) => {
     const solid = rngPick(rng, SOLID_COUNTS);
     const what = rngPick(rng, ['faces', 'aretes', 'sommets'] as const);
-    const label = { faces: 'faces', aretes: 'arêtes', sommets: 'sommets' }[what];
+    // « de faces », « de sommets », mais « d'arêtes ».
+    const label = { faces: 'de faces', aretes: 'd\'arêtes', sommets: 'de sommets' }[what];
     const answer = solid[what];
     return {
       detail: `${solid.name}-${what}`,
       instruction: 'Pense aussi à ce qui est caché',
-      prompt: `Combien ${solid.asked} de ${label} ?`,
+      prompt: `Combien ${solid.asked} ${label} ?`,
       figure: solidFigure(solid.name),
       ...choose(rng, String(answer), [4, 5, 6, 8, 9, 10, 12].map(String)),
       explanation: `${capitalize(SOLID_LABELS[solid.name])} a ${solid.faces} faces, ${solid.aretes} arêtes et ${solid.sommets} sommets.`,
@@ -526,6 +523,9 @@ export const FAMILIES: Family[] = [
   axesSymetrie,
   angles,
   patrons,
+  ...CONSTRUCTION_FAMILIES,
+  ...MEASURE_FAMILIES,
+  ...QUESTION_FAMILIES,
 ];
 
 // Garde-fou : les assemblages annoncés comme patrons en sont vraiment.
