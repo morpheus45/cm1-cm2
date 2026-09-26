@@ -5,7 +5,7 @@ import { stageOf, type Stage } from '../lib/progression';
 
 type Operation = '+' | '-' | '×' | '÷';
 
-interface BuiltOperation {
+export interface BuiltOperation {
   a: number;
   b: number;
   op: Operation;
@@ -13,10 +13,21 @@ interface BuiltOperation {
   isDecimal: boolean;
 }
 
-interface OperationKind {
+export interface OperationKind {
   /** Étape à partir de laquelle la technique est au programme. */
   minStage: Stage;
-  build: (rng: Rng, stage: Stage) => BuiltOperation;
+  /**
+   * Une opération « posée » s'écrit en colonnes sur le cahier. Les tables de
+   * multiplication n'en sont pas : elles se récitent, les poser n'aurait
+   * aucun sens.
+   */
+  posable: boolean;
+  /**
+   * `posed` indique que l'opération sera écrite en colonnes sur le cahier.
+   * Les nombres sont alors plus grands : « 14 ÷ 7 » se fait de tête, le poser
+   * ne fait travailler aucune technique.
+   */
+  build: (rng: Rng, stage: Stage, posed: boolean) => BuiltOperation;
 }
 
 function round1(n: number): number {
@@ -25,6 +36,16 @@ function round1(n: number): number {
 
 function randomDecimal(rng: Rng, max: number): number {
   return rngInt(rng, 10, max * 10) / 10;
+}
+
+/**
+ * Un décimal bon à poser : au moins deux chiffres devant la virgule, et une
+ * partie décimale jamais nulle. Sans cela le tirage sortait « 37 + 1,8 », qui
+ * ne fait travailler ni l'alignement des virgules ni la retenue.
+ */
+function posedDecimal(rng: Rng, min: number, max: number): number {
+  const whole = rngInt(rng, min, Math.max(min, max));
+  return whole + rngInt(rng, 1, 9) / 10;
 }
 
 /**
@@ -37,6 +58,7 @@ function randomDecimal(rng: Rng, max: number): number {
 const OPERATION_KINDS: OperationKind[] = [
   {
     minStage: 1,
+    posable: true,
     build: (rng, stage) => {
       const bound = stage >= 4 ? 5000 : 500;
       const floorValue = stage >= 4 ? 1000 : 100;
@@ -47,6 +69,7 @@ const OPERATION_KINDS: OperationKind[] = [
   },
   {
     minStage: 1,
+    posable: true,
     build: (rng, stage) => {
       const a = stage >= 4 ? rngInt(rng, 2000, 9000) : rngInt(rng, 200, 900);
       // Le reste garde de l'épaisseur : « 478 - 473 » ne fait pas travailler
@@ -58,6 +81,7 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     // Tables de multiplication : calcul mental, dès le premier trimestre.
     minStage: 1,
+    posable: false,
     build: (rng) => {
       const a = rngInt(rng, 2, 9);
       const b = rngInt(rng, 2, 10);
@@ -67,8 +91,9 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     // Multiplication posée par un nombre à un chiffre.
     minStage: 2,
-    build: (rng) => {
-      const a = rngInt(rng, 12, 99);
+    posable: true,
+    build: (rng, _stage, posed) => {
+      const a = posed ? rngInt(rng, 112, 999) : rngInt(rng, 12, 99);
       const b = rngInt(rng, 2, 9);
       return { a, b, op: '×', result: a * b, isDecimal: false };
     },
@@ -76,8 +101,9 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     // Multiplication posée par un nombre à deux chiffres.
     minStage: 3,
-    build: (rng, stage) => {
-      const a = rngInt(rng, 11, 99);
+    posable: true,
+    build: (rng, stage, posed) => {
+      const a = posed ? rngInt(rng, 112, 999) : rngInt(rng, 11, 99);
       const b = stage >= 4 ? rngInt(rng, 11, 99) : rngInt(rng, 11, 25);
       return { a, b, op: '×', result: a * b, isDecimal: false };
     },
@@ -85,25 +111,39 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     // Division euclidienne, toujours tombant juste.
     minStage: 3,
-    build: (rng, stage) => {
+    posable: true,
+    build: (rng, stage, posed) => {
       const b = stage >= 4 ? rngInt(rng, 2, 20) : rngInt(rng, 2, 9);
-      const result = stage >= 4 ? rngInt(rng, 10, 50) : rngInt(rng, 2, 12);
+      // Posée, la division doit porter sur un dividende d'au moins trois
+      // chiffres : c'est la technique qu'on travaille, pas la table.
+      const result = posed
+        ? rngInt(rng, 50, 99)
+        : stage >= 4
+          ? rngInt(rng, 10, 50)
+          : rngInt(rng, 2, 12);
       return { a: b * result, b, op: '÷', result, isDecimal: false };
     },
   },
   {
     // Addition de nombres décimaux.
     minStage: 5,
-    build: (rng) => {
-      const a = randomDecimal(rng, 80);
-      const b = randomDecimal(rng, 80);
+    posable: true,
+    build: (rng, _stage, posed) => {
+      const a = posed ? posedDecimal(rng, 10, 80) : randomDecimal(rng, 80);
+      const b = posed ? posedDecimal(rng, 10, 80) : randomDecimal(rng, 80);
       return { a, b, op: '+', result: round1(a + b), isDecimal: true };
     },
   },
   {
     // Soustraction de nombres décimaux.
     minStage: 5,
-    build: (rng) => {
+    posable: true,
+    build: (rng, _stage, posed) => {
+      if (posed) {
+        const a = posedDecimal(rng, 30, 90);
+        const b = posedDecimal(rng, 10, Math.floor(a) - 10);
+        return { a, b, op: '-', result: round1(a - b), isDecimal: true };
+      }
       const a = round1(randomDecimal(rng, 90) + 10);
       const b = randomDecimal(rng, Math.max(1, Math.floor(a) - 1));
       return { a, b, op: '-', result: round1(a - b), isDecimal: true };
@@ -112,8 +152,9 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     // Multiplication d'un décimal par un entier.
     minStage: 6,
-    build: (rng) => {
-      const a = randomDecimal(rng, 30);
+    posable: true,
+    build: (rng, _stage, posed) => {
+      const a = posed ? posedDecimal(rng, 10, 90) : randomDecimal(rng, 30);
       const b = rngInt(rng, 2, 9);
       return { a, b, op: '×', result: round1(a * b), isDecimal: true };
     },
@@ -121,9 +162,10 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     // Division donnant un quotient décimal exact.
     minStage: 6,
-    build: (rng) => {
-      const b = rngInt(rng, 2, 9);
-      const result = randomDecimal(rng, 20);
+    posable: true,
+    build: (rng, _stage, posed) => {
+      const b = posed ? rngInt(rng, 3, 9) : rngInt(rng, 2, 9);
+      const result = posed ? posedDecimal(rng, 20, 60) : randomDecimal(rng, 20);
       return { a: round1(result * b), b, op: '÷', result, isDecimal: true };
     },
   },
@@ -149,8 +191,30 @@ function distractorsForResult(rng: Rng, correct: number, isDecimal: boolean): nu
   return Array.from(candidates);
 }
 
-function formatNumber(n: number): string {
+export function formatNumber(n: number): string {
   return Number.isInteger(n) ? String(n) : n.toFixed(1).replace('.', ',');
+}
+
+/**
+ * Tire `count` opérations parmi les techniques déjà enseignées, en faisant le
+ * tour de ces techniques avant d'en reproposer une. `posableOnly` ne garde que
+ * celles qui s'écrivent en colonnes.
+ */
+export function buildOperations(
+  level: Level,
+  trimester: Trimester,
+  rng: Rng,
+  count: number,
+  { posableOnly = false }: { posableOnly?: boolean } = {}
+): BuiltOperation[] {
+  const stage = stageOf(level, trimester);
+  const kinds = eligibleOperationKinds(level, trimester).filter(
+    (kind) => !posableOnly || kind.posable
+  );
+  const order = rngShuffle(rng, kinds);
+  return Array.from({ length: count }, (_, index) =>
+    order[index % order.length].build(rng, stage, posableOnly)
+  );
 }
 
 export function eligibleOperationKinds(level: Level, trimester: Trimester): OperationKind[] {
@@ -159,16 +223,11 @@ export function eligibleOperationKinds(level: Level, trimester: Trimester): Oper
 }
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
-  const stage = stageOf(level, trimester);
-  const kinds = eligibleOperationKinds(level, trimester);
   const questions: Question[] = [];
-  // Même principe que pour les problèmes : on fait le tour des techniques
-  // enseignées avant d'en reproposer une.
-  const order = rngShuffle(rng, kinds);
+  const operations = buildOperations(level, trimester, rng, count);
 
   for (let i = 0; i < count; i++) {
-    const kind = order[i % order.length];
-    const { a, b, op, result, isDecimal } = kind.build(rng, stage);
+    const { a, b, op, result, isDecimal } = operations[i];
     const distractors = distractorsForResult(rng, result, isDecimal);
     // Toutes les propositions sont écrites de la même façon : sinon le format
     // (« 14 » au milieu de « 13,1 ») désignerait la bonne réponse.

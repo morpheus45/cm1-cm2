@@ -10,6 +10,7 @@ describe('parsePreferences', () => {
   it('relit une sélection valide telle quelle', () => {
     const stored = JSON.stringify({
       name: 'Nolhan',
+      lastName: 'Martin',
       level: 'CM2',
       trimester: 3,
       subject: 'maths',
@@ -17,11 +18,23 @@ describe('parsePreferences', () => {
     });
     expect(parsePreferences(stored)).toEqual({
       name: 'Nolhan',
+      lastName: 'Martin',
       level: 'CM2',
       trimester: 3,
       subject: 'maths',
       domains: ['calcul', 'problemes'],
+      activity: 'questions',
+      joinCode: '',
     });
+  });
+
+  it('relit le code de classe, nettoyé', () => {
+    const stored = JSON.stringify({ subject: 'maths', joinCode: 'ab-12cd' });
+    expect(parsePreferences(stored).joinCode).toBe('AB12CD');
+  });
+
+  it('ignore un code de classe qui n\'est pas du texte', () => {
+    expect(parsePreferences(JSON.stringify({ joinCode: 42 })).joinCode).toBe('');
   });
 
   it('remet les notions dans l\'ordre de la matière', () => {
@@ -57,8 +70,26 @@ describe('parsePreferences', () => {
     expect(parsePreferences(stored).domains).toEqual(SUBJECT_DOMAINS.maths);
   });
 
-  it('borne la longueur du prénom', () => {
-    const stored = JSON.stringify({ name: 'a'.repeat(200) });
+  it('relit le type de séance', () => {
+    const stored = JSON.stringify({ subject: 'maths', activity: 'posees' });
+    expect(parsePreferences(stored).activity).toBe('posees');
+  });
+
+  it('ne fait pas poser des opérations en français', () => {
+    // Ce que le stockage contient après une séance de maths posées, si
+    // l'enfant revient ensuite au français.
+    const stored = JSON.stringify({ subject: 'francais', activity: 'posees' });
+    expect(parsePreferences(stored).activity).toBe('questions');
+  });
+
+  it('ignore un type de séance inconnu', () => {
+    const stored = JSON.stringify({ subject: 'maths', activity: 'dictee' });
+    expect(parsePreferences(stored).activity).toBe('questions');
+  });
+
+  it('borne la longueur du prénom et du nom', () => {
+    const stored = JSON.stringify({ name: 'a'.repeat(200), lastName: 'b'.repeat(200) });
     expect(parsePreferences(stored).name).toHaveLength(40);
+    expect(parsePreferences(stored).lastName).toHaveLength(40);
   });
 });
