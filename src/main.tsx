@@ -1,6 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './App';
+// Les polices sont dans l'application elle-même : elles restent là hors
+// connexion, et aucune requête ne part vers un service tiers.
+import '@fontsource/andika/latin-400.css';
+import '@fontsource/andika/latin-700.css';
+import '@fontsource/playwrite-fr-moderne/latin-400.css';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(

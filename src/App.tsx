@@ -278,6 +278,7 @@ export function App() {
         subject={subjectOf(question.domain)}
         questionNumber={index + 1}
         totalQuestions={session.questions.length}
+        stepDomains={session.questions.map((entry) => entry.domain)}
         onAnswer={handleAnswer}
         onQuit={goHome}
       />

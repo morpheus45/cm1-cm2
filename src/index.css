@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --papier: #fbf7ee;
+    --encre: #1e2a4a;
+    --seyes: #d3e3f4;
+    --seyes-fort: #a9c7ea;
+    --marge: rgba(217, 67, 47, 0.55);
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Le papier : un grain très léger, pour qu'on sente la feuille. */
+  body {
+    @apply bg-papier font-sans text-encre antialiased;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .33 0 0 0 0 .2 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  }
+
+  :focus-visible {
+    outline: 3px solid #1a5db8;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Une page de cahier Seyès : lignes fines tous les 2 mm, plus marquées
+     tous les 8 mm, et la marge rouge. */
+  .cahier {
+    background-color: #fffdf8;
+    background-image:
+      linear-gradient(90deg, transparent 0 2.25rem, var(--marge) 2.25rem calc(2.25rem + 2px), transparent calc(2.25rem + 2px)),
+      repeating-linear-gradient(180deg, transparent 0 calc(2rem - 1px), var(--seyes-fort) calc(2rem - 1px) 2rem),
+      repeating-linear-gradient(180deg, transparent 0 calc(0.5rem - 1px), var(--seyes) calc(0.5rem - 1px) 0.5rem);
+    background-position: 0 1rem;
+  }
+
+  /* Une étiquette d'écolier : bord d'encre, et une ombre franche qui
+     s'enfonce sous le doigt. */
+  .etiquette {
+    @apply rounded-2xl border-2 bg-white font-semibold text-encre transition-transform;
+    border-color: var(--encre);
+    box-shadow: 0 3px 0 var(--encre);
+  }
+  .etiquette:not(:disabled):active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 var(--encre);
+  }
+  .etiquette:disabled {
+    @apply opacity-40;
+  }
+
+  /* Le bouton principal, à l'encre du stylo-plume. */
+  .bouton-encre {
+    @apply rounded-2xl bg-encre font-bold text-white transition-transform;
+    box-shadow: 0 4px 0 #0c1430;
+  }
+  .bouton-encre:not(:disabled):active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #0c1430;
+  }
+  .bouton-encre:disabled {
+    @apply bg-encre-pale/40 text-white/90;
+    box-shadow: none;
+  }
+
+  /* Le tampon de la maîtresse : encre un peu passée, jamais tout à fait
+     droit. */
+  .tampon {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.5 1.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.5 1.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E");
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

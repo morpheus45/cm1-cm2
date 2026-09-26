@@ -6,20 +6,20 @@ export function DeliveryNote({ delivery }: { delivery: DepositOutcome | 'pending
   if (delivery === null || delivery === 'disabled') return null;
 
   const { text, tone } = {
-    pending: { text: 'Envoi à ta maîtresse…', tone: 'text-slate-500' },
-    sent: { text: '✓ Séance envoyée à ta maîtresse', tone: 'text-emerald-700' },
+    pending: { text: 'Envoi à ta maîtresse…', tone: 'text-encre-douce' },
+    sent: { text: '✓ Séance envoyée à ta maîtresse', tone: 'text-[#1B7A43]' },
     queued: {
       text: "La séance n'a pas pu partir pour l'instant : elle réessaiera toute seule à la prochaine connexion.",
-      tone: 'text-slate-500',
+      tone: 'text-encre-douce',
     },
     rejected: {
       text: "Ta maîtresse n'a pas reçu la séance : vérifie le code de la classe.",
-      tone: 'text-amber-700',
+      tone: 'text-[#B84A06]',
     },
   }[delivery];
 
   return (
-    <p role="status" className={`text-sm text-center ${tone}`}>
+    <p role="status" className={`text-center text-base font-bold ${tone}`}>
       {text}
     </p>
   );
