@@ -10,6 +10,9 @@ import {
   createClass,
   currentTeacher,
   deletePupil,
+  enterDemo,
+  exitDemo,
+  isDemoActive,
   pupilIdFor,
   readMyClasses,
   readWorksheet,
@@ -21,7 +24,7 @@ import {
   type CloudClass,
   type TeacherAccount,
   type WorksheetStatus,
-} from '../lib/teacherCloud';
+} from '../lib/teacherDataSource';
 import { CorrectionScreen } from './CorrectionScreen';
 import { EvaluationsScreen } from './evaluations/EvaluationsScreen';
 import { ProblemsScreen } from './ProblemsScreen';
@@ -51,6 +54,26 @@ function Panel({ children }: { children: React.ReactNode }) {
         <SchoolTitle size="petit" subtitle="Espace maîtresse" />
         {children}
       </div>
+    </div>
+  );
+}
+
+/** Le bandeau permanent de la démonstration : sur chaque écran, pour qu'on
+ *  ne l'oublie jamais en cours de visite. */
+function DemoBanner({ onExit }: { onExit: () => void }) {
+  return (
+    <div
+      role="status"
+      className="sticky top-0 z-30 flex flex-wrap items-center justify-center gap-2 bg-[#1E2A4A] px-4 py-2 text-center text-sm font-bold text-white"
+    >
+      <span>Classe de démonstration : élèves fictifs, rien n'est enregistré.</span>
+      <button
+        type="button"
+        onClick={onExit}
+        className="rounded-full border-2 border-white px-3 py-1 text-xs font-bold uppercase tracking-wide text-white"
+      >
+        Sortir de la démonstration
+      </button>
     </div>
   );
 }
@@ -85,6 +108,14 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     worksheet?: Worksheet;
     error?: string;
   } | null>(null);
+  const [demoMode, setDemoMode] = useState(false);
+
+  // En quittant l'espace maîtresse — par un autre onglet, ou la moindre
+  // navigation —, la démonstration ne doit jamais continuer de tourner en
+  // silence : elle s'efface avec l'écran qui l'a montrée.
+  useEffect(() => () => {
+    if (isDemoActive()) exitDemo();
+  }, []);
 
   const refresh = useCallback(async () => {
     setError('');
@@ -114,19 +145,51 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
     });
   }, [cloud, refresh]);
 
-  // La tablette rouvre sur la dernière classe ouverte par cette maîtresse.
+  // La tablette rouvre sur la dernière classe ouverte par cette maîtresse —
+  // sauf en démonstration, qui n'écrit jamais sur l'appareil.
   const accountId = account && account !== 'loading' ? account.id : null;
   useEffect(() => {
-    setChosenId(accountId ? loadChosenClass(accountId) : null);
-  }, [accountId]);
+    setChosenId(accountId && !demoMode ? loadChosenClass(accountId) : null);
+  }, [accountId, demoMode]);
+
+  const startDemo = () =>
+    run(async () => {
+      enterDemo();
+      const signed = await currentTeacher();
+      setAccount(signed);
+      await refresh();
+      setDemoMode(true);
+    });
+
+  const stopDemo = () =>
+    run(async () => {
+      exitDemo();
+      setDemoMode(false);
+      setAccount(null);
+      setClasses(null);
+      setChosenId(null);
+      setWorksheets({});
+      setShowProblems(false);
+      setShowEvaluations(false);
+      setCorrecting(null);
+    });
 
   const current = pickCurrentClass(classes ?? [], chosenId);
   const queue = correctionQueue(current, worksheets);
 
   const choose = (classId: string) => {
     setChosenId(classId);
-    if (accountId) saveChosenClass(accountId, classId);
+    if (accountId && !demoMode) saveChosenClass(accountId, classId);
   };
+
+  const disconnect = () =>
+    demoMode
+      ? stopDemo()
+      : run(async () => {
+          await signOut();
+          setAccount(null);
+          setClasses(null);
+        });
 
   const run = async (task: () => Promise<void>) => {
     setBusy(true);
@@ -249,6 +312,12 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         >
           Continuer sans compte, avec les séances de cet appareil
         </button>
+        <button type="button" disabled={busy} onClick={startDemo} className={secondary}>
+          Découvrir avec une classe de démonstration
+        </button>
+        <p className="text-center text-xs text-encre-douce">
+          Une classe fictive, prête à essayer : aucun compte, aucun élève réel, rien n'est enregistré.
+        </p>
         <a
           href="#informations"
           className="self-center text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
@@ -274,69 +343,72 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   if (classes !== null && (current === null || addingClass)) {
     const another = current !== null;
     return (
-      <Panel>
-        <header>
-          <h2 className="text-2xl font-bold text-encre">{another ? 'Nouvelle classe' : 'Créer ma classe'}</h2>
-          <p className="text-sm text-encre-douce">
-            {another ? 'Elle aura son propre code, ses élèves et ses problèmes.' : account.email}
-          </p>
-        </header>
-        <section className={fiche}>
-          <label className="flex flex-col gap-1">
-            <span className="text-sm font-bold text-encre-douce">Nom de la classe</span>
-            <input
-              className={input}
-              value={className}
-              placeholder="CM1 de Mme Durand"
-              onChange={(e) => setClassName(e.target.value)}
-            />
-          </label>
-          <div className="flex gap-3">
-            {(['CM1', 'CM2'] as Level[]).map((lvl) => (
-              <button
-                key={lvl}
-                type="button"
-                onClick={() => setClassLevel(lvl)}
-                aria-pressed={classLevel === lvl}
-                className={`etiquette flex-1 py-3 text-lg ${classLevel === lvl ? '!bg-encre !text-white' : ''}`}
-              >
-                {lvl}
+      <>
+        {demoMode && <DemoBanner onExit={stopDemo} />}
+        <Panel>
+          <header>
+            <h2 className="text-2xl font-bold text-encre">{another ? 'Nouvelle classe' : 'Créer ma classe'}</h2>
+            <p className="text-sm text-encre-douce">
+              {another ? 'Elle aura son propre code, ses élèves et ses problèmes.' : account.email}
+            </p>
+          </header>
+          <section className={fiche}>
+            <label className="flex flex-col gap-1">
+              <span className="text-sm font-bold text-encre-douce">Nom de la classe</span>
+              <input
+                className={input}
+                value={className}
+                placeholder="CM1 de Mme Durand"
+                onChange={(e) => setClassName(e.target.value)}
+              />
+            </label>
+            <div className="flex gap-3">
+              {(['CM1', 'CM2'] as Level[]).map((lvl) => (
+                <button
+                  key={lvl}
+                  type="button"
+                  onClick={() => setClassLevel(lvl)}
+                  aria-pressed={classLevel === lvl}
+                  className={`etiquette flex-1 py-3 text-lg ${classLevel === lvl ? '!bg-encre !text-white' : ''}`}
+                >
+                  {lvl}
+                </button>
+              ))}
+            </div>
+            {error && <p className="text-sm font-bold text-[#B91C3B]">{error}</p>}
+            <button
+              type="button"
+              disabled={className.trim().length === 0 || busy}
+              className={primary}
+              onClick={() =>
+                run(async () => {
+                  const created = await createClass(className.trim(), classLevel);
+                  choose(created.id);
+                  setClassName('');
+                  setAddingClass(false);
+                  await refresh();
+                })
+              }
+            >
+              Créer la classe
+            </button>
+            {another && (
+              <button type="button" disabled={busy} onClick={() => setAddingClass(false)} className={secondary}>
+                Annuler
               </button>
-            ))}
-          </div>
-          {error && <p className="text-sm font-bold text-[#B91C3B]">{error}</p>}
-          <button
-            type="button"
-            disabled={className.trim().length === 0 || busy}
-            className={primary}
-            onClick={() =>
-              run(async () => {
-                const created = await createClass(className.trim(), classLevel);
-                choose(created.id);
-                setClassName('');
-                setAddingClass(false);
-                await refresh();
-              })
-            }
-          >
-            Créer la classe
-          </button>
-          {another && (
-            <button type="button" disabled={busy} onClick={() => setAddingClass(false)} className={secondary}>
-              Annuler
+            )}
+          </section>
+          {!another && (
+            <button
+              type="button"
+              onClick={disconnect}
+              className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
+            >
+              {demoMode ? 'Sortir de la démonstration' : 'Se déconnecter'}
             </button>
           )}
-        </section>
-        {!another && (
-          <button
-            type="button"
-            onClick={() => run(async () => { await signOut(); setAccount(null); setClasses(null); })}
-            className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
-          >
-            Se déconnecter
-          </button>
-        )}
-      </Panel>
+        </Panel>
+      </>
     );
   }
 
@@ -414,13 +486,8 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         <button type="button" disabled={busy} onClick={() => run(refresh)} className={secondary}>
           Actualiser
         </button>
-        <button
-          type="button"
-          disabled={busy}
-          onClick={() => run(async () => { await signOut(); setAccount(null); setClasses(null); })}
-          className={secondary}
-        >
-          Se déconnecter
+        <button type="button" disabled={busy} onClick={disconnect} className={secondary}>
+          {demoMode ? 'Sortir de la démonstration' : 'Se déconnecter'}
         </button>
       </div>
     </section>
@@ -478,6 +545,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
 
   return (
     <>
+      {demoMode && <DemoBanner onExit={stopDemo} />}
       {correction ?? problemsScreen ?? evaluationsScreen}
       <div hidden={correction !== null || problemsScreen !== null || evaluationsScreen !== null}>
         <TeacherScreen

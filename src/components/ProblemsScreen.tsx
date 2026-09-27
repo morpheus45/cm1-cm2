@@ -10,7 +10,7 @@ import {
   readClassProblems,
   setClassProblemActive,
   type ClassProblemEntry,
-} from '../lib/teacherCloud';
+} from '../lib/teacherDataSource';
 import { typographieFrancaise } from '../lib/typographie';
 import { Gommette } from './ecole/Gommette';
 import { RainbowArc } from './ecole/RainbowArc';

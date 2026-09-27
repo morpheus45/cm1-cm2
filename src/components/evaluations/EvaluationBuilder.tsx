@@ -32,7 +32,7 @@ import {
   type EvaluationItem,
 } from '../../lib/evaluation';
 import { schoolYearOf } from '../../lib/results';
-import { createEvaluation, readClassProblems, setEvaluationStatus } from '../../lib/teacherCloud';
+import { createEvaluation, readClassProblems, setEvaluationStatus } from '../../lib/teacherDataSource';
 import { NOTION_COLORS } from '../../theme';
 import { Gommette } from '../ecole/Gommette';
 import { Intercalaire } from '../ecole/Intercalaire';
