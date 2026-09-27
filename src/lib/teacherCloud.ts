@@ -493,4 +493,18 @@ export async function redoCopy(copyId: string): Promise<void> {
   if (!Array.isArray(data) || data.length !== 1) throw new Error("Cette copie n'est plus dans votre classe.");
 }
 
+/** Rend les conditions manquantes pour créer un compte, dans l'ordre. */
+export function signUpMissing(email: string, password: string): string[] {
+  const missing: string[] = [];
+  if (!email.includes('@')) {
+    missing.push('Écrivez votre adresse e-mail complète, avec le @.');
+  }
+  const remaining = 12 - password.length;
+  if (remaining > 0) {
+    const word = remaining === 1 ? 'caractère' : 'caractères';
+    missing.push(`Mot de passe : encore ${remaining} ${word} pour créer un compte.`);
+  }
+  return missing;
+}
+
 export type { Trimester };

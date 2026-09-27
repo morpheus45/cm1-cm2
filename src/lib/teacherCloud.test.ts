@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { frenchAuthError, mapClasses, mapProblemRows, mapWorksheetIndex, pupilIdFor } from './teacherCloud';
+import { frenchAuthError, mapClasses, mapProblemRows, mapWorksheetIndex, pupilIdFor, signUpMissing } from './teacherCloud';
 
 // Ce que rend `lire_ma_classe`, tel que la base l'écrit.
 const raw = [
@@ -120,5 +120,27 @@ describe('une partie pas encore installée dans Supabase', () => {
   it('est expliquée en français', () => {
     expect(frenchAuthError("Could not find the table 'public.problemes' in the schema cache")).toMatch(/pas encore installée/);
     expect(frenchAuthError('relation "public.problemes" does not exist')).toMatch(/pas encore installée/);
+  });
+});
+
+describe('signUpMissing', () => {
+  it('dit ce qui manque pour créer un compte, dans l\'ordre', () => {
+    expect(signUpMissing('', '')).toContain('Écrivez votre adresse e-mail complète, avec le @.');
+    expect(signUpMissing('test', 'pass')).toContain('Écrivez votre adresse e-mail complète, avec le @.');
+  });
+
+  it('signale quand l\'adresse n\'a pas de @', () => {
+    expect(signUpMissing('test.example.com', 'long-password')).toContain('Écrivez votre adresse e-mail complète, avec le @.');
+  });
+
+  it('signale quand le mot de passe est trop court', () => {
+    const msg5 = signUpMissing('test@example.com', 'short');
+    expect(msg5.some((m) => m.includes('encore 7 caractères'))).toBe(true);
+    const msg11 = signUpMissing('test@example.com', 'pass1234567');
+    expect(msg11.some((m) => m.includes('encore 1 caractère'))).toBe(true);
+  });
+
+  it('rend un tableau vide quand tout est bon', () => {
+    expect(signUpMissing('test@example.com', 'validpassword123')).toEqual([]);
   });
 });
