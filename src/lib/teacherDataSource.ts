@@ -43,7 +43,7 @@ export type {
   TeacherAccount,
   WorksheetStatus,
 } from './teacherCloud';
-export { frenchAuthError, mapClasses, mapProblemRows, mapWorksheetIndex, pupilIdFor } from './teacherCloud';
+export { frenchAuthError, mapClasses, mapProblemRows, mapWorksheetIndex, pupilIdFor, signUpMissing } from './teacherCloud';
 
 // --- Le reste : envoyé à Supabase, ou à la classe de démonstration ---
 export const signIn: typeof real.signIn = (...args) => (demoActive ? demo.signIn(...args) : real.signIn(...args));
