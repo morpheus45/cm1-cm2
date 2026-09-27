@@ -54,6 +54,10 @@ function tabletteUtilisee(anneeEnregistree: string | null) {
   storage.setItem('exercices-cm1-cm2:problemes-de-la-classe', JSON.stringify({ joinCode: 'ABC123', problems: [] }));
   storage.setItem('exercices-cm1-cm2:questions-de-la-classe', JSON.stringify({ joinCode: 'ABC123', questions: [] }));
   storage.setItem('exercices-cm1-cm2:stars', '42');
+  storage.setItem(
+    'exercices-cm1-cm2:historique-questions',
+    JSON.stringify({ 'léa m': { francais: [{ signatures: ['conjugaison§Complète au présent§Tu ... la mousse.'] }] } })
+  );
   storage.setItem('exercices-cm1-cm2:classe-choisie', JSON.stringify({ maitresse: 'classe' }));
   if (anneeEnregistree !== null) storage.setItem(SCHOOL_YEAR_KEY, anneeEnregistree);
 }
@@ -80,9 +84,14 @@ describe('la conservation sur la tablette : une année scolaire', () => {
     expect(applyRetention(new Date('2026-09-27T10:00:00'))).toBe(true);
     expect(ids('exercices-cm1-cm2:resultats')).toEqual(['septembre']);
     expect(ids('exercices-cm1-cm2:feuilles-corrigees')).toEqual(['septembre']);
-    ['envois-en-attente', 'preferences', 'problemes-de-la-classe', 'questions-de-la-classe', 'stars'].forEach((key) =>
-      expect(storage.getItem(`exercices-cm1-cm2:${key}`), key).toBeNull()
-    );
+    [
+      'envois-en-attente',
+      'preferences',
+      'problemes-de-la-classe',
+      'questions-de-la-classe',
+      'stars',
+      'historique-questions',
+    ].forEach((key) => expect(storage.getItem(`exercices-cm1-cm2:${key}`), key).toBeNull());
     // La maîtresse retrouve sa classe : ce n'est pas une donnée d'élève.
     expect(storage.getItem('exercices-cm1-cm2:classe-choisie')).not.toBeNull();
     expect(storage.getItem(SCHOOL_YEAR_KEY)).toBe('2026');
@@ -94,6 +103,7 @@ describe('la conservation sur la tablette : une année scolaire', () => {
     expect(ids('exercices-cm1-cm2:resultats')).toEqual(['septembre']);
     expect(storage.getItem('exercices-cm1-cm2:preferences')).not.toBeNull();
     expect(storage.getItem('exercices-cm1-cm2:stars')).toBe('42');
+    expect(storage.getItem('exercices-cm1-cm2:historique-questions')).not.toBeNull();
   });
 
   it('au tout premier lancement, trie seulement ce qui est daté', () => {
@@ -101,6 +111,7 @@ describe('la conservation sur la tablette : une année scolaire', () => {
     expect(applyRetention(new Date('2026-09-27T10:00:00'))).toBe(false);
     expect(ids('exercices-cm1-cm2:resultats')).toEqual(['septembre']);
     expect(storage.getItem('exercices-cm1-cm2:preferences')).not.toBeNull();
+    expect(storage.getItem('exercices-cm1-cm2:historique-questions')).not.toBeNull();
     expect(storage.getItem(SCHOOL_YEAR_KEY)).toBe('2026');
   });
 });

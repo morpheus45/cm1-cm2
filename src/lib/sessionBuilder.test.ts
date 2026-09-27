@@ -7,6 +7,7 @@ import {
 } from './sessionBuilder';
 import { ALL_DOMAINS, SUBJECT_DOMAINS, subjectOf } from '../types';
 import type { Domain, Level, Trimester } from '../types';
+import { questionSignature } from './questionHistory';
 
 const base = { level: 'CM1' as Level, trimester: 1 as Trimester, seed: 1 };
 
@@ -177,5 +178,28 @@ describe('buildSession', () => {
     const withDuplicates = buildSession({ ...base, domains: ['calcul', 'calcul', 'numeration'], seed: 5, count: 8 });
     const deduplicated = buildSession({ ...base, domains: ['calcul', 'numeration'], seed: 5, count: 8 });
     expect(withDuplicates).toEqual(deduplicated);
+  });
+
+  it('avoids the given signatures when the notion has enough other questions', () => {
+    const first = buildSession({ ...base, domains: ['conjugaison'], count: 8 });
+    const avoid = first.questions.map(questionSignature);
+    const second = buildSession({ ...base, domains: ['conjugaison'], count: 8, avoidSignatures: avoid });
+    const overlap = second.questions.filter((q) => avoid.includes(questionSignature(q)));
+    expect(overlap).toHaveLength(0);
+  });
+
+  it('still returns the requested count when everything must be avoided', () => {
+    // Une notion sans assez d'énoncés distincts vaut mieux répétée que
+    // raccourcie : ce garde-fou fonctionne même dans ce cas extrême.
+    const first = buildSession({ ...base, domains: ['conjugaison'], count: 8 });
+    const everySignatureEverSeen = first.questions.map(questionSignature);
+    const impossible = Array.from({ length: 100000 }, (_, i) => `bruit-${i}`);
+    const second = buildSession({
+      ...base,
+      domains: ['conjugaison'],
+      count: 8,
+      avoidSignatures: [...everySignatureEverSeen, ...impossible],
+    });
+    expect(second.questions).toHaveLength(8);
   });
 });
