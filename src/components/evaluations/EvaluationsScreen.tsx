@@ -11,7 +11,7 @@ import {
   setClassZone,
   setEvaluationStatus,
   type CloudClass,
-} from '../../lib/teacherCloud';
+} from '../../lib/teacherDataSource';
 import { formatFrenchDate } from '../../lib/worksheetPdf';
 import { RainbowArc } from '../ecole/RainbowArc';
 import { CalendarCard } from './CalendarCard';

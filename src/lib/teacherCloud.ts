@@ -103,7 +103,10 @@ export function mapClasses(raw: unknown): CloudClass[] {
   });
 }
 
-function nameKey(firstName: string, lastName: string): string {
+/** La clé qui retrouve un élève par son nom, dans `pupilIds` — exportée pour
+ *  que d'autres sources de classes (la démonstration) puissent construire le
+ *  même index. */
+export function nameKey(firstName: string, lastName: string): string {
   return `${firstName}\u0000${lastName}`;
 }
 

@@ -11,7 +11,7 @@ import {
   type Mastery,
   type SessionResult,
 } from '../lib/results';
-import type { WorksheetStatus } from '../lib/teacherCloud';
+import type { WorksheetStatus } from '../lib/teacherDataSource';
 import { formatFrenchDate } from '../lib/worksheetPdf';
 import { NOTION_COLORS } from '../theme';
 import { RainbowArc } from './ecole/RainbowArc';

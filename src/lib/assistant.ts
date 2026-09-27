@@ -1,6 +1,7 @@
 import type { Level } from '../types';
 import { cloudClient } from './cloud';
 import type { ProblemProposal } from './classProblems';
+import { isDemoActive } from './teacherDataSource';
 
 /**
  * Le chat de l'espace maîtresse, côté page. Tout passe par la fonction
@@ -88,7 +89,12 @@ export async function assistantErrorMessage(error: unknown): Promise<string> {
   return 'Pas de réseau pour le moment : le chat a besoin d’une connexion.';
 }
 
+/** Le message montré à la place d'une vraie réponse, en démonstration. */
+export const DEMO_ASSISTANT_MESSAGE =
+  "L'assistant de Cédric ne répond pas dans la classe de démonstration : aucune donnée n'y est envoyée à un service extérieur. Essayez-le avec un vrai compte.";
+
 export async function askAssistant(niveau: Level, turns: ChatTurn[]): Promise<AssistantReply> {
+  if (isDemoActive()) throw new Error(DEMO_ASSISTANT_MESSAGE);
   const supabase = await cloudClient();
   if (!supabase) throw new Error('La mise en commun n’est pas configurée.');
   const { data, error } = await supabase.functions.invoke('assistant-problemes', {
