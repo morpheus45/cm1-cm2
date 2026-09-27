@@ -3,7 +3,7 @@ import { ofSubject, type Level, type Trimester } from '../types';
 import { fitsInFrame, type Shape } from '../lib/figures';
 import { createRng } from '../lib/seededRandom';
 import { buildSession } from '../lib/sessionBuilder';
-import type { WrittenItem } from './histoireGeographie';
+import { fromItem, type WrittenItem } from './histoireGeographie';
 import * as histoire from './histoire';
 import * as geographie from './geographie';
 
@@ -48,6 +48,35 @@ describe('les questions écrites d\'histoire et de géographie', () => {
           )
         )
       )
+    );
+  });
+
+  it('ont une seule bonne réponse parmi leurs choix', () => {
+    const rng = createRng(1);
+    everyItem.forEach(([, item]) => {
+      const draft = fromItem(rng, item);
+      expect(draft.choices.filter((choice) => choice === item.correct), item.prompt).toHaveLength(1);
+    });
+  });
+
+  // Une banque fixe (contrairement aux frises et aux cartes, fabriquées à
+  // volonté) : il en faut au moins 100, cumulées comme le reste de l'année,
+  // pour qu'une question ne revienne pas trop souvent dans une même séance.
+  const FIXED_DOMAINS = ['evenements', 'mots-histoire', 'habiter', 'mots-geographie'];
+
+  it('proposent au moins 100 questions cumulées, à chaque trimestre, dans chaque notion à banque fixe', () => {
+    [histoire.ITEMS, geographie.ITEMS].forEach((bank) =>
+      Object.entries(bank).forEach(([domain, items]) => {
+        if (!FIXED_DOMAINS.includes(domain)) return;
+        LEVELS.forEach((level) =>
+          TRIMESTERS.forEach((trimester) =>
+            expect(
+              items.filter((item) => item.level === level && item.trimester <= trimester).length,
+              `${domain} ${level} T${trimester}`
+            ).toBeGreaterThanOrEqual(100)
+          )
+        );
+      })
     );
   });
 
