@@ -37,6 +37,7 @@ export function exitDemo(): void {
 // --- Types et fonctions pures : identiques, qu'on soit en démonstration ou non ---
 export type {
   ClassProblemEntry,
+  ClassQuestionEntry,
   CloudClass,
   EvaluationDraft,
   TeacherAccount,
@@ -72,6 +73,14 @@ export const setClassProblemActive: typeof real.setClassProblemActive = (...args
   demoActive ? demo.setClassProblemActive(...args) : real.setClassProblemActive(...args);
 export const deleteClassProblem: typeof real.deleteClassProblem = (...args) =>
   demoActive ? demo.deleteClassProblem(...args) : real.deleteClassProblem(...args);
+export const readClassQuestions: typeof real.readClassQuestions = (...args) =>
+  demoActive ? demo.readClassQuestions(...args) : real.readClassQuestions(...args);
+export const addClassQuestion: typeof real.addClassQuestion = (...args) =>
+  demoActive ? demo.addClassQuestion(...args) : real.addClassQuestion(...args);
+export const setClassQuestionActive: typeof real.setClassQuestionActive = (...args) =>
+  demoActive ? demo.setClassQuestionActive(...args) : real.setClassQuestionActive(...args);
+export const deleteClassQuestion: typeof real.deleteClassQuestion = (...args) =>
+  demoActive ? demo.deleteClassQuestion(...args) : real.deleteClassQuestion(...args);
 export const readEvaluations: typeof real.readEvaluations = (...args) =>
   demoActive ? demo.readEvaluations(...args) : real.readEvaluations(...args);
 export const readCopies: typeof real.readCopies = (...args) =>

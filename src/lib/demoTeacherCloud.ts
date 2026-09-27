@@ -2,6 +2,7 @@ import type { Level } from '../types';
 import type { Zone } from './calendrier';
 import { withCorrections, type Corrections } from './correction';
 import { proposalToRow, type ProblemProposal } from './classProblems';
+import { draftToRow, type ClassQuestionDraft } from './classQuestions';
 import {
   type EvaluationCopy,
   type EvaluationStatus,
@@ -13,6 +14,7 @@ import { buildDemoDataset, DEMO_CLASS_ID, DEMO_TEACHER_EMAIL, DEMO_TEACHER_ID } 
 import {
   nameKey,
   type ClassProblemEntry,
+  type ClassQuestionEntry,
   type CloudClass,
   type EvaluationDraft,
   type TeacherAccount,
@@ -36,6 +38,7 @@ interface Store {
   classes: CloudClass[];
   worksheets: Record<string, WorksheetEntry>;
   classProblems: Record<string, ClassProblemEntry[]>;
+  classQuestions: Record<string, ClassQuestionEntry[]>;
   evaluations: Record<string, EvaluationSummary>;
   evaluationItems: Record<string, TeacherEvaluation['items']>;
   evaluationCopies: Record<string, EvaluationCopy[]>;
@@ -51,6 +54,7 @@ function freshStore(): Store {
     classes: [dataset.cloudClass],
     worksheets,
     classProblems: { [DEMO_CLASS_ID]: dataset.classProblems },
+    classQuestions: { [DEMO_CLASS_ID]: dataset.classQuestions },
     evaluations: { [dataset.evaluationSummary.id]: dataset.evaluationSummary },
     evaluationItems: { [dataset.evaluationSummary.id]: dataset.evaluationDetail.items },
     evaluationCopies: { [dataset.evaluationSummary.id]: dataset.evaluationDetail.copies },
@@ -102,6 +106,8 @@ export async function createClass(name: string, level: Level): Promise<{ id: str
     pupils: [],
     pupilIds: {},
   });
+  store.classProblems[id] = [];
+  store.classQuestions[id] = [];
   return { id, joinCode };
 }
 
@@ -168,6 +174,37 @@ export async function setClassProblemActive(id: string, actif: boolean): Promise
 export async function deleteClassProblem(id: string): Promise<void> {
   Object.keys(store.classProblems).forEach((classId) => {
     store.classProblems[classId] = store.classProblems[classId].filter((problem) => problem.id !== id);
+  });
+}
+
+export async function readClassQuestions(classId: string): Promise<ClassQuestionEntry[]> {
+  return structuredClone(store.classQuestions[classId] ?? []);
+}
+
+export async function addClassQuestion(classId: string, draft: ClassQuestionDraft): Promise<void> {
+  const row = draftToRow(draft, classId);
+  const entry: ClassQuestionEntry = {
+    id: `demo-question-${crypto.randomUUID()}`,
+    domain: row.domain,
+    enonce: row.enonce,
+    reponse: row.reponse,
+    fausses_reponses: row.fausses_reponses,
+    trimestre: row.trimestre,
+    actif: true,
+  };
+  store.classQuestions[classId] = [...(store.classQuestions[classId] ?? []), entry];
+}
+
+export async function setClassQuestionActive(id: string, actif: boolean): Promise<void> {
+  Object.values(store.classQuestions).forEach((list) => {
+    const target = list.find((question) => question.id === id);
+    if (target) target.actif = actif;
+  });
+}
+
+export async function deleteClassQuestion(id: string): Promise<void> {
+  Object.keys(store.classQuestions).forEach((classId) => {
+    store.classQuestions[classId] = store.classQuestions[classId].filter((question) => question.id !== id);
   });
 }
 

@@ -2,6 +2,7 @@ import type { SupabaseClient } from '@supabase/supabase-js';
 import type { SessionResult } from './results';
 import { roundStroke, type Worksheet } from './worksheet';
 import { parseClassProblems, type ClassProblem } from './classProblems';
+import { parseClassQuestions, type ClassQuestion } from './classQuestions';
 import { isSecretKey } from './publicKey';
 
 /**
@@ -268,5 +269,52 @@ export async function refreshClassProblems(joinCode: string): Promise<ClassProbl
     // Stockage refusé : les problèmes serviront pour cette fois seulement.
   }
   return problems;
+}
+
+// --- Les questions de la classe, dans les autres matières --------------------
+
+const CLASS_QUESTIONS_KEY = 'exercices-cm1-cm2:questions-de-la-classe';
+
+/** Les questions que la maîtresse a ajoutées elle-même, gardées sur la
+ *  tablette : celles de la classe dont le code est donné, et d'aucune
+ *  autre. Hors connexion, ce sont elles qui servent. */
+export function cachedClassQuestions(joinCode: string): ClassQuestion[] {
+  try {
+    const stored = JSON.parse(localStorage.getItem(CLASS_QUESTIONS_KEY) ?? 'null') as {
+      joinCode?: unknown;
+      questions?: unknown;
+    } | null;
+    if (!stored || stored.joinCode !== normaliseJoinCode(joinCode)) return [];
+    return parseClassQuestions(stored.questions);
+  } catch {
+    return [];
+  }
+}
+
+/** À la rentrée : les questions de la classe de l'an dernier. */
+export function forgetClassQuestions(): void {
+  try {
+    localStorage.removeItem(CLASS_QUESTIONS_KEY);
+  } catch {
+    // Stockage refusé : il n'y avait rien à effacer.
+  }
+}
+
+/** Va chercher les questions en service de la classe et les garde sur la
+ *  tablette. Sans réseau, ou sans code, rien ne change. */
+export async function refreshClassQuestions(joinCode: string): Promise<ClassQuestion[] | null> {
+  const code = normaliseJoinCode(joinCode);
+  if (!isValidJoinCode(code)) return null;
+  const supabase = await cloudClient();
+  if (!supabase) return null;
+  const { data, error } = await supabase.rpc('questions_de_la_classe', { p_join_code: code });
+  if (error) return null;
+  const questions = parseClassQuestions(data);
+  try {
+    localStorage.setItem(CLASS_QUESTIONS_KEY, JSON.stringify({ joinCode: code, questions }));
+  } catch {
+    // Stockage refusé : les questions serviront pour cette fois seulement.
+  }
+  return questions;
 }
 

@@ -36,10 +36,12 @@ import { isAnswerCorrect, worksheetScore } from './lib/worksheet';
 import {
   depositSession,
   cachedClassProblems,
+  cachedClassQuestions,
   flushOutbox,
   isCloudConfigured,
   pendingDepositCount,
   refreshClassProblems,
+  refreshClassQuestions,
   sendDeposit,
   type DepositOutcome,
 } from './lib/cloud';
@@ -166,9 +168,12 @@ export function App() {
   // Au lancement, on renvoie ce qui n'avait pas pu partir la dernière fois.
   useEffect(() => {
     if (isCloudConfigured() && pendingDepositCount() > 0) void flushOutbox(sendDeposit);
-    // Les problèmes de la maîtresse : mis à jour à chaque lancement, gardés
-    // sur la tablette pour les séances hors connexion.
-    if (isCloudConfigured() && preferences.joinCode) void refreshClassProblems(preferences.joinCode);
+    // Les problèmes et les questions de la maîtresse : mis à jour à chaque
+    // lancement, gardés sur la tablette pour les séances hors connexion.
+    if (isCloudConfigured() && preferences.joinCode) {
+      void refreshClassProblems(preferences.joinCode);
+      void refreshClassQuestions(preferences.joinCode);
+    }
   }, []);
   // Une simple ancre dans l'adresse : l'espace maîtresse n'est pas une autre
   // application, et le projet n'a pas besoin d'un routeur pour deux écrans.
@@ -263,11 +268,15 @@ export function App() {
         trimester: options.trimester,
         seed,
         classProblems: options.joinCode ? cachedClassProblems(options.joinCode) : [],
+        classQuestions: options.joinCode ? cachedClassQuestions(options.joinCode) : [],
       })
     );
-    // Un code tout juste saisi : les problèmes de la classe arriveront pour la
-    // séance suivante.
-    if (isCloudConfigured() && options.joinCode) void refreshClassProblems(options.joinCode);
+    // Un code tout juste saisi : les problèmes et les questions de la classe
+    // arriveront pour la séance suivante.
+    if (isCloudConfigured() && options.joinCode) {
+      void refreshClassProblems(options.joinCode);
+      void refreshClassQuestions(options.joinCode);
+    }
     setScreen('question');
   };
 

@@ -25,6 +25,7 @@ import {
   type TeacherAccount,
   type WorksheetStatus,
 } from '../lib/teacherDataSource';
+import { ClassQuestionsScreen } from './ClassQuestionsScreen';
 import { CorrectionScreen } from './CorrectionScreen';
 import { EvaluationsScreen } from './evaluations/EvaluationsScreen';
 import { ProblemsScreen } from './ProblemsScreen';
@@ -102,6 +103,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   const [worksheets, setWorksheets] = useState<Record<string, WorksheetStatus>>({});
   const [worksheetsError, setWorksheetsError] = useState('');
   const [showProblems, setShowProblems] = useState(false);
+  const [showClassQuestions, setShowClassQuestions] = useState(false);
   const [showEvaluations, setShowEvaluations] = useState(false);
   const [correcting, setCorrecting] = useState<{
     session: SessionResult;
@@ -482,6 +484,9 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
       <button type="button" onClick={() => setShowProblems(true)} className={secondary}>
         Problèmes de la classe, avec l'assistant de Cédric
       </button>
+      <button type="button" onClick={() => setShowClassQuestions(true)} className={secondary}>
+        Questions de la classe, dans toutes les matières
+      </button>
       <div className="flex gap-2 pt-1">
         <button type="button" disabled={busy} onClick={() => run(refresh)} className={secondary}>
           Actualiser
@@ -506,6 +511,11 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         level={current.level}
         onClose={() => setShowProblems(false)}
       />
+    ) : null;
+
+  const classQuestionsScreen =
+    showClassQuestions && current ? (
+      <ClassQuestionsScreen classId={current.id} className={current.name} onClose={() => setShowClassQuestions(false)} />
     ) : null;
 
   const evaluationsScreen =
@@ -546,8 +556,12 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   return (
     <>
       {demoMode && <DemoBanner onExit={stopDemo} />}
-      {correction ?? problemsScreen ?? evaluationsScreen}
-      <div hidden={correction !== null || problemsScreen !== null || evaluationsScreen !== null}>
+      {correction ?? problemsScreen ?? classQuestionsScreen ?? evaluationsScreen}
+      <div
+        hidden={
+          correction !== null || problemsScreen !== null || classQuestionsScreen !== null || evaluationsScreen !== null
+        }
+      >
         <TeacherScreen
           sessions={current?.sessions ?? []}
           banner={banner}

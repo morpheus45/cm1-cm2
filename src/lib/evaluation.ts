@@ -15,6 +15,7 @@ import {
 } from '../types';
 import type { PeriodNumber } from './calendrier';
 import type { ClassProblem } from './classProblems';
+import type { ClassQuestion } from './classQuestions';
 import { isConstructionRight, type Construction, type Node } from './construction';
 import { isDomainResult, masteryOf, type DomainResult, type Mastery } from './results';
 import { buildSession } from './sessionBuilder';
@@ -400,9 +401,10 @@ export function candidateQuestions(
   trimester: Trimester,
   seed: number,
   count: number,
-  classProblems: ClassProblem[] = []
+  classProblems: ClassProblem[] = [],
+  classQuestions: ClassQuestion[] = []
 ): Question[] {
-  return buildSession({ domains: [domain], level, trimester, seed, count, classProblems }).questions;
+  return buildSession({ domains: [domain], level, trimester, seed, count, classProblems, classQuestions }).questions;
 }
 
 export function candidateOperations(level: Level, trimester: Trimester, seed: number, count: number): WorksheetOperation[] {

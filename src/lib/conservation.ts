@@ -1,4 +1,4 @@
-import { forgetClassProblems, forgetOutbox } from './cloud';
+import { forgetClassProblems, forgetClassQuestions, forgetOutbox } from './cloud';
 import { forgetPreferences } from './preferences';
 import { forgetEvaluations } from './pupilEvaluations';
 import { loadStoredCorrections, saveStoredCorrections } from './pupilCorrections';
@@ -24,6 +24,7 @@ export const LOCAL_DATA: Record<string, string> = {
   'exercices-cm1-cm2:envois-en-attente': 'les séances pas encore envoyées : effacées à la rentrée',
   'exercices-cm1-cm2:preferences': 'le prénom, l\'initiale, le code de classe et les réglages : effacés à la rentrée',
   'exercices-cm1-cm2:problemes-de-la-classe': 'les problèmes de la maîtresse : effacés à la rentrée',
+  'exercices-cm1-cm2:questions-de-la-classe': 'les questions de la maîtresse, dans les autres matières : effacées à la rentrée',
   'exercices-cm1-cm2:evaluations-ouvertes': 'les évaluations ouvertes par la maîtresse : effacées à la rentrée',
   'exercices-cm1-cm2:copies-en-attente': 'les copies d\'évaluation pas encore envoyées : effacées à la rentrée',
   'exercices-cm1-cm2:evaluations-en-cours': 'où en est chaque élève dans une évaluation ouverte : effacé à la rentrée, et dès qu\'elle est terminée',
@@ -64,6 +65,7 @@ export function applyRetention(now: Date = new Date()): boolean {
   if (newYear) {
     forgetOutbox();
     forgetClassProblems();
+    forgetClassQuestions();
     forgetEvaluations();
     forgetPreferences();
     forgetStars();

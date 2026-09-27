@@ -14,7 +14,7 @@ import {
   type TeacherEvaluation,
 } from './evaluation';
 import type { SessionResult } from './results';
-import { nameKey, type ClassProblemEntry, type CloudClass, type WorksheetStatus } from './teacherCloud';
+import { nameKey, type ClassProblemEntry, type ClassQuestionEntry, type CloudClass, type WorksheetStatus } from './teacherCloud';
 
 /**
  * La classe de démonstration : des données fictives, entièrement fabriquées
@@ -55,6 +55,7 @@ export interface DemoDataset {
   cloudClass: CloudClass;
   worksheets: Record<string, WorksheetEntry>;
   classProblems: ClassProblemEntry[];
+  classQuestions: ClassQuestionEntry[];
   evaluationSummary: EvaluationSummary;
   evaluationDetail: TeacherEvaluation;
 }
@@ -253,6 +254,36 @@ const DEMO_CLASS_PROBLEMS_BASE: Array<Omit<ClassProblemEntry, 'id'>> = [
   },
 ];
 
+/** Quelques questions que la maîtresse a ajoutées elle-même, dans d'autres
+ *  matières que les problèmes de maths — pour montrer que ça marche aussi
+ *  en démonstration. */
+const DEMO_CLASS_QUESTIONS_BASE: Array<Omit<ClassQuestionEntry, 'id'>> = [
+  {
+    domain: 'conjugaison',
+    enonce: 'Conjugue le verbe « finir » à la troisième personne du pluriel, au présent.',
+    reponse: 'ils finissent',
+    fausses_reponses: ['ils finissaient', 'ils finiront'],
+    trimestre: 1,
+    actif: true,
+  },
+  {
+    domain: 'chronologie',
+    enonce: 'En quelle année a eu lieu la Révolution française ?',
+    reponse: '1789',
+    fausses_reponses: ['1889', '1715', '1848'],
+    trimestre: 2,
+    actif: true,
+  },
+  {
+    domain: 'mots-geographie',
+    enonce: 'Comment appelle-t-on une grande ville qui organise la vie autour d\'elle ?',
+    reponse: 'une métropole',
+    fausses_reponses: ['un hameau', 'un village'],
+    trimestre: 1,
+    actif: true,
+  },
+];
+
 /** Construit la classe de démonstration, toujours la même : séances sur
  *  plusieurs semaines, feuilles à corriger, une évaluation terminée. */
 export function buildDemoDataset(): DemoDataset {
@@ -319,6 +350,11 @@ export function buildDemoDataset(): DemoDataset {
     id: `demo-probleme-${index}`,
   }));
 
+  const classQuestions: ClassQuestionEntry[] = DEMO_CLASS_QUESTIONS_BASE.map((question, index) => ({
+    ...question,
+    id: `demo-question-${index}`,
+  }));
+
   const cloudClass: CloudClass = {
     id: DEMO_CLASS_ID,
     name: DEMO_CLASS_NAME,
@@ -330,5 +366,5 @@ export function buildDemoDataset(): DemoDataset {
     pupilIds,
   };
 
-  return { cloudClass, worksheets, classProblems, evaluationSummary, evaluationDetail };
+  return { cloudClass, worksheets, classProblems, classQuestions, evaluationSummary, evaluationDetail };
 }
