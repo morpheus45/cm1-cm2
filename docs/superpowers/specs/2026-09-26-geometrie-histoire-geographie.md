@@ -213,4 +213,4 @@ inconnue est refusée.
   CM1 s'appuient sur ses résumés publics et sont **à relire sur le BO**.
 - Les cartes ne dessinent pas encore les régions, les départements ni
   l'outre-mer.
-- Le chat avec Claude reste limité aux problèmes de maths.
+- L'assistant de Cédric reste limité aux problèmes de maths.

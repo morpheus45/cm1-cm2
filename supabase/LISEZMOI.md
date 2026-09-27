@@ -50,10 +50,10 @@ dans `.github/workflows/deploy.yml`.
 Le résumé de chaque vérification, dans l'onglet *Actions* du dépôt, dit si la
 clé est en place — sans l'afficher.
 
-## Le chat avec Claude (espace maîtresse)
+## L'assistant de Cédric (espace maîtresse)
 
-La maîtresse y prépare, avec Claude, les problèmes de sa classe. Claude ne
-fait que proposer : l'application refait chaque calcul, et seule la maîtresse
+La maîtresse y prépare, avec l'assistant, les problèmes de sa classe. L'assistant
+ne fait que proposer : l'application refait chaque calcul, et seule la maîtresse
 ajoute un problème à la classe.
 
 1. **Une clé API Anthropic.** Sur [platform.claude.com](https://platform.claude.com)

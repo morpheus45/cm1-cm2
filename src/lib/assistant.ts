@@ -4,8 +4,8 @@ import type { ProblemProposal } from './classProblems';
 
 /**
  * Le chat de l'espace maîtresse, côté page. Tout passe par la fonction
- * Supabase « assistant-problemes », qui tient la clé de Claude : la page ne
- * parle jamais à Claude directement.
+ * Supabase « assistant-problemes », qui tient la clé du service
+ * d'intelligence artificielle : la page ne lui parle jamais directement.
  */
 
 /** Un tour de la conversation, tel que la fonction l'attend. */
@@ -20,8 +20,8 @@ export interface AssistantReply {
   /** La demande sortait du cadre : elle a été transmise à l'administrateur. */
   horsChamp: boolean;
   transmis: boolean;
-  /** La réponse brute de Claude, à renvoyer telle quelle au tour suivant.
-   *  `null` quand Claude a refusé : ce tour-là ne se garde pas. */
+  /** La réponse brute de l'assistant, à renvoyer telle quelle au tour
+   *  suivant. `null` quand il a refusé : ce tour-là ne se garde pas. */
   assistant: string | null;
 }
 

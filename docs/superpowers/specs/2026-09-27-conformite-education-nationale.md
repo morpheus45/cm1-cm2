@@ -43,7 +43,7 @@ les mots trop longs passent à la ligne quand le texte est agrandi.
 - Page « Informations pour les familles » (`#informations`) : données,
   finalité, destinataires, hébergeurs, durée, droits, cookies, accessibilité,
   éditeur. Liens depuis l'accueil et depuis la connexion de la maîtresse.
-- Le chat avec Claude rappelle de n'y écrire aucun nom d'élève.
+- L'assistant de Cédric rappelle de n'y écrire aucun nom d'élève.
 
 **Sécurité.** Politique de sécurité du contenu stricte, écrite au build
 (`src/lib/securityPolicy.ts`) : scripts du site seulement, connexions au site
@@ -82,7 +82,7 @@ Bastille. En quel siècle ? », les repères sont plus courts (« le premier
 train au départ de Paris »), les définitions plus simples (« vivre bien
 aujourd'hui sans abîmer la planète de demain »), et les textes de l'accueil
 tutoient l'élève. Le test `src/domains/lisibilite.test.ts` garde ces règles.
-L'assistant Claude de la maîtresse reçoit la même consigne pour ses énoncés.
+L'assistant de Cédric reçoit la même consigne pour ses énoncés.
 
 ## Décisions
 

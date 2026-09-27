@@ -24,7 +24,7 @@ interface ProblemsScreenProps {
 
 interface Bulle {
   id: number;
-  de: 'maitresse' | 'claude';
+  de: 'maitresse' | 'assistant';
   texte: string;
   propositions?: ProblemProposal[];
   horsChamp?: boolean;
@@ -102,9 +102,10 @@ function Proposition({
 }
 
 /**
- * Les problèmes que la maîtresse prépare pour sa classe, avec Claude.
+ * Les problèmes que la maîtresse prépare pour sa classe, avec l'assistant de
+ * Cédric.
  *
- * Claude ne fait que proposer : l'application refait chaque calcul, et
+ * L'assistant ne fait que proposer : l'application refait chaque calcul, et
  * seule la maîtresse ajoute un problème à la classe. Une demande hors du
  * cadre (autre chose que corriger ou adapter l'application) n'est pas traitée :
  * elle est transmise à l'administrateur, et la réponse le dit.
@@ -151,9 +152,9 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
     try {
       const reply = await askAssistant(level, [...turns.current, { role: 'user', content: asked }]);
       turns.current = withReply(turns.current, asked, reply);
-      push({ de: 'claude', texte: reply.message, propositions: reply.problemes, horsChamp: reply.horsChamp });
+      push({ de: 'assistant', texte: reply.message, propositions: reply.problemes, horsChamp: reply.horsChamp });
     } catch (e) {
-      push({ de: 'claude', texte: (e as Error).message, erreur: true });
+      push({ de: 'assistant', texte: (e as Error).message, erreur: true });
     } finally {
       setSending(false);
     }
@@ -185,9 +186,9 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
           </h2>
           <p className="text-sm text-encre-douce">
             L'assistant de Cédric vous aide à créer, corriger ou adapter les problèmes de votre classe. C'est une
-            intelligence artificielle (Claude, de la société Anthropic) : l'application refait chaque calcul, et rien
-            n'arrive aux élèves sans votre accord. Toute autre demande est transmise à l'administrateur de
-            l'application. N'écrivez ici aucun nom d'élève : vos messages sont envoyés à Anthropic.
+            intelligence artificielle : l'application refait chaque calcul, et rien n'arrive aux élèves sans votre
+            accord. Toute autre demande est transmise à Cédric, l'administrateur de l'application. N'écrivez ici
+            aucun nom d'élève : vos messages sont envoyés à un service d'intelligence artificielle externe.
           </p>
 
           <div className="flex flex-col gap-3" aria-live="polite">

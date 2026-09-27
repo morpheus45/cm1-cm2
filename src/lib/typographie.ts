@@ -8,8 +8,8 @@
  * ligne. De même, « reçoit-il », « a-t-il », « est-ce » ne se coupent pas au
  * trait d'union : le pronom reste accroché au verbe.
  *
- * Les énoncés viennent de l'application comme des maîtresses (et de Claude) :
- * on les corrige à l'affichage, en un seul endroit.
+ * Les énoncés viennent de l'application comme des maîtresses (et de
+ * l'assistant) : on les corrige à l'affichage, en un seul endroit.
  */
 const INSECABLE = '\u00a0';
 /** Invisible, il interdit seulement de couper la ligne à cet endroit. */

@@ -1,5 +1,5 @@
--- Les problèmes que la maîtresse prépare pour sa classe, avec Claude, le
--- compteur qui borne le chat, et les demandes que le chat transmet à
+-- Les problèmes que la maîtresse prépare pour sa classe, avec l'assistant de
+-- Cédric, le compteur qui borne le chat, et les demandes que le chat transmet à
 -- l'administrateur.
 --
 -- À exécuter après 001_classes_eleves_seances.sql, dans l'éditeur SQL du
@@ -74,7 +74,7 @@ grant execute on function public.problemes_de_la_classe(text) to anon, authentic
 
 -- ------------------------------------------------ le compteur du chat ---
 
--- Chaque question posée à Claude coûte quelques centimes : un plafond par
+-- Chaque question posée à l'assistant coûte quelques centimes : un plafond par
 -- maîtresse et par jour évite toute mauvaise surprise sur la facture.
 create table if not exists public.assistant_usage (
   teacher_id  uuid not null references auth.users (id) on delete cascade,

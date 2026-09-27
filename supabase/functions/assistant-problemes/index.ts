@@ -1,4 +1,4 @@
-// Le chat de l'espace maîtresse : la maîtresse écrit, Claude l'aide à
+// Le chat de l'espace maîtresse : la maîtresse écrit, l'assistant l'aide à
 // corriger ou adapter l'application pour sa classe — surtout ses problèmes de
 // maths. Tout le reste est transmis à l'administrateur de l'application.
 //
@@ -6,7 +6,7 @@
 // « assistant-problemes ». Secret requis : ANTHROPIC_API_KEY (Edge Functions →
 // Secrets). La clé ne quitte jamais le serveur : aucune tablette ne la voit.
 //
-// Ce que la fonction garantit, quoi que réponde Claude :
+// Ce que la fonction garantit, quoi que réponde le modèle :
 //  - seule une maîtresse connectée peut l'appeler (vérifiée ici même) ;
 //  - un plafond de demandes par maîtresse et par jour borne la facture ;
 //  - une demande hors du cadre n'est pas traitée : elle est rangée pour
@@ -25,9 +25,9 @@ const MAX_CHARS = 4000;
 const MAX_PROBLEMS = 5;
 
 const TRANSMIS =
-  "Cette demande sort de ce que je peux faire ici : je l'ai transmise à l'administrateur de l'application, qui vous répondra.";
+  "Cette demande sort de ce que je peux faire ici : je l'ai transmise à Cédric, l'administrateur de l'application, qui vous répondra.";
 const NON_TRANSMIS =
-  "Cette demande sort de ce que je peux faire ici, et elle n'a pas pu être transmise à l'administrateur : réessayez dans un moment.";
+  "Cette demande sort de ce que je peux faire ici, et elle n'a pas pu être transmise à Cédric, l'administrateur de l'application : réessayez dans un moment.";
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
@@ -49,7 +49,7 @@ function erreur(status: number, code: string, message: string): Response {
 type Niveau = 'CM1' | 'CM2';
 
 function systemPrompt(niveau: Niveau): string {
-  return `Tu es « l'assistant de Cédric », l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de français et de maths pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle 3). Cédric est l'administrateur de l'application ; toi, tu es une intelligence artificielle (Claude, de la société Anthropic), et tu le dis simplement si on te le demande. Tu parles à la maîtresse d'une classe de ${niveau}.
+  return `Tu es « l'assistant de Cédric », l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de français et de maths pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle 3). Cédric est l'administrateur de l'application ; toi, tu es une intelligence artificielle : dis-le simplement si on te le demande, et ne te présente jamais comme Cédric ni comme une personne. Ne nomme ni le modèle d'intelligence artificielle ni l'entreprise qui le fournit ; si la maîtresse te le demande, réponds que tu es l'assistant de l'application, une intelligence artificielle mise à disposition par Cédric. Tu parles à la maîtresse d'une classe de ${niveau}.
 
 L'application propose aux élèves des séances d'une seule matière : questions de conjugaison, d'accords, d'orthographe, de numération, de calcul et de problèmes ; des opérations posées à la main, que la maîtresse corrige au stylet ; une révision ciblée sur les notions fragiles. La maîtresse y suit chaque élève (niveaux de maîtrise, graphiques, attendus de fin d'année) et y ajoute ses propres problèmes de maths pour la classe.
 
@@ -133,7 +133,7 @@ function isString(value: unknown): value is string {
   return typeof value === 'string';
 }
 
-/** La réponse de Claude, revérifiée champ par champ. */
+/** La réponse du modèle, revérifiée champ par champ. */
 function lireReponse(text: string): Reponse | null {
   let parsed: unknown;
   try {
@@ -224,10 +224,10 @@ Deno.serve(async (req) => {
     return erreur(429, 'plafond', `Vous avez posé ${DAILY_LIMIT} questions à l'assistant aujourd'hui : c'est le plafond du jour. À demain !`);
   }
 
-  // 4. Claude.
+  // 4. Le modèle d'intelligence artificielle.
   const apiKey = Deno.env.get('ANTHROPIC_API_KEY');
   if (!apiKey) {
-    return erreur(503, 'cle-manquante', "La clé de l'assistant (Claude, d'Anthropic) n'est pas encore installée dans Supabase.");
+    return erreur(503, 'cle-manquante', "La clé de l'assistant n'est pas encore installée dans Supabase.");
   }
   const anthropic = new Anthropic({ apiKey });
   let response: Anthropic.Beta.Messages.BetaMessage;
@@ -235,8 +235,8 @@ Deno.serve(async (req) => {
     response = await anthropic.beta.messages.create({
       model: MODEL,
       max_tokens: 16000,
-      // Si les filtres de sécurité de Claude refusent une demande par erreur,
-      // Anthropic la reprend avec le modèle de repli qu'il recommande.
+      // Si les filtres de sécurité du modèle refusent une demande par erreur,
+      // le fournisseur la reprend avec le modèle de repli qu'il recommande.
       betas: ['server-side-fallback-2026-07-01'],
       fallbacks: 'default',
       system: systemPrompt(niveau),
@@ -247,7 +247,7 @@ Deno.serve(async (req) => {
     });
   } catch (error) {
     if (error instanceof Anthropic.AuthenticationError) {
-      return erreur(503, 'cle-refusee', "La clé de l'assistant (Claude, d'Anthropic) installée dans Supabase est refusée : elle doit être remplacée.");
+      return erreur(503, 'cle-refusee', "La clé de l'assistant installée dans Supabase est refusée : elle doit être remplacée.");
     }
     if (error instanceof Anthropic.RateLimitError) {
       return erreur(429, 'occupe', "L'assistant est très demandé en ce moment : réessayez dans une minute.");
@@ -256,7 +256,7 @@ Deno.serve(async (req) => {
       return erreur(503, 'injoignable', "L'assistant est injoignable pour l'instant : réessayez dans un moment.");
     }
     if (error instanceof Anthropic.APIError) {
-      console.error('claude', error.status, error.message);
+      console.error('assistant', error.status, error.message);
       return erreur(502, 'indisponible', "L'assistant n'a pas pu répondre : réessayez dans un moment.");
     }
     throw error;

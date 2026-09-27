@@ -205,8 +205,8 @@ select pg_temp.doit_echouer(
   $q$insert into public.problemes (class_id, enonce, reponse, calcul, trimestre)
      values ('11111111-1111-1111-1111-111111111111', 'Une réponse qui n''est pas un nombre.', 'douze', '12', 1)$q$,
   'check constraint', 'la réponse d''un problème doit être un nombre');
-select pg_temp.attendu(public.compter_demande_assistant()::bigint, 1, 'première demande du jour à Claude');
-select pg_temp.attendu(public.compter_demande_assistant()::bigint, 2, 'deuxième demande du jour à Claude');
+select pg_temp.attendu(public.compter_demande_assistant()::bigint, 1, 'première demande du jour à l''assistant');
+select pg_temp.attendu(public.compter_demande_assistant()::bigint, 2, 'deuxième demande du jour à l''assistant');
 
 set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
 select pg_temp.attendu((select count(*) from public.problemes), 0, 'la maîtresse B ne voit aucun problème de A');

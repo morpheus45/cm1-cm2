@@ -47,7 +47,7 @@ begin
   delete from public.pupils p
   where p.created_at < v_debut
     and not exists (select 1 from public.sessions s where s.pupil_id = p.id);
-  -- Le compteur des demandes à Claude, et les demandes transmises à
+  -- Le compteur des demandes à l'assistant, et les demandes transmises à
   -- l'administrateur, qui portent l'adresse de la maîtresse.
   delete from public.assistant_usage where day < (v_debut at time zone 'Europe/Paris')::date;
   delete from public.demandes_administrateur where created_at < v_debut;
