@@ -2,7 +2,8 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { depositParams } from '../src/lib/cloud';
-import { PROBLEM_COLUMNS, WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
+import { EVALUATION_COLUMNS, PROBLEM_COLUMNS, WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
+import { copyParams } from '../src/lib/pupilEvaluations';
 import { ALL_ACTIVITIES, ALL_SUBJECTS } from '../src/types';
 import type { SessionResult } from '../src/lib/results';
 
@@ -113,6 +114,61 @@ describe('les corrections rendues à l\'élève parlent la même langue que la b
     ['session_id', 'operations', 'answers', 'corrections', 'corrected_at'].forEach((column) => {
       expect(columns, `colonne ${column}`).toContain(column);
       expect(source, `lecture de ${column}`).toContain(`raw.${column}`);
+    });
+  });
+});
+
+describe('les évaluations parlent la même langue que la base', () => {
+  const sql = readFileSync(join(process.cwd(), 'supabase', '006_evaluations.sql'), 'utf8');
+  const pupilSide = readFileSync(join(process.cwd(), 'src', 'lib', 'pupilEvaluations.ts'), 'utf8');
+  const teacherSide = readFileSync(join(process.cwd(), 'src', 'lib', 'teacherCloud.ts'), 'utf8');
+  const parser = readFileSync(join(process.cwd(), 'src', 'lib', 'evaluation.ts'), 'utf8');
+
+  it('pour les paramètres de la copie, dans le même ordre', () => {
+    const signature = sql.match(/create or replace function public\.rendre_evaluation\(([\s\S]*?)\)\s*returns text/);
+    expect(signature, 'signature de rendre_evaluation introuvable').not.toBeNull();
+    const sqlNames = [...signature![1].matchAll(/\b(p_\w+)\s/g)].map((m) => m[1]);
+    expect(Object.keys(copyParams('c', 'AAAAAA', 'e', { firstName: 'Léa', lastName: '' }, []))).toEqual(sqlNames);
+    expect(pupilSide).toContain("rpc('rendre_evaluation', params)");
+  });
+
+  it('pour les fonctions qu\'appellent la tablette et la maîtresse', () => {
+    expect(sql).toMatch(/function public\.evaluations_ouvertes\(p_join_code text, p_copy_ids uuid\[\] default '\{\}'\)/);
+    expect(pupilSide).toContain("rpc('evaluations_ouvertes', { p_join_code: code, p_copy_ids: askedCopyIds() })");
+    expect(sql).toMatch(/function public\.questions_de_l_evaluation\(p_join_code text, p_evaluation_id uuid\)/);
+    expect(pupilSide).toContain("rpc('questions_de_l_evaluation', { p_join_code: code, p_evaluation_id: evaluation.id })");
+    expect(sql).toMatch(/function public\.lire_evaluations\(p_class_id uuid\)/);
+    expect(teacherSide).toContain("rpc('lire_evaluations', { p_class_id: classId })");
+    expect(sql).toMatch(/function public\.lire_copies\(p_evaluation_id uuid\)/);
+    expect(teacherSide).toContain("rpc('lire_copies', { p_evaluation_id: evaluationId })");
+    expect(teacherSide).toContain("rpc('lire_copies', { p_evaluation_id: summary.id })");
+  });
+
+  it('pour les colonnes écrites par la maîtresse', () => {
+    const table = sql.match(/create table if not exists public\.evaluations \(([\s\S]*?)\n\);/);
+    expect(table, 'table evaluations introuvable').not.toBeNull();
+    const columns = [...table![1].matchAll(/^\s{2}(\w+)\s+\w/gm)].map((m) => m[1]);
+    EVALUATION_COLUMNS.forEach((column) => expect(columns, `colonne ${column}`).toContain(column));
+    expect(sql).toContain('alter table public.classes add column if not exists zone text');
+  });
+
+  it('pour ce que rendent les fonctions, et que relit l\'application', () => {
+    const ouvertes = sql.match(/function public\.evaluations_ouvertes\([^)]*\)\s*returns table \(([\s\S]*?)\n\)/);
+    expect(ouvertes, 'colonnes de evaluations_ouvertes introuvables').not.toBeNull();
+    const columns = [...ouvertes![1].matchAll(/^\s{2}(\w+)\s+\w/gm)].map((m) => m[1]);
+    expect(columns).toEqual(['id', 'title', 'subject', 'level', 'trimester', 'question_count', 'version', 'opened_at', 'rendues']);
+    columns.forEach((key) => expect(parser, `lecture de ${key}`).toMatch(new RegExp(`row\\.${key}\\b`)));
+    ['period', 'status', 'created_at', 'closed_at'].forEach((key) => {
+      expect(sql, `clé ${key}`).toContain(`'${key}', e.${key}`);
+      expect(parser, `lecture de ${key}`).toMatch(new RegExp(`row\\.${key}\\b`));
+    });
+    ['question_count', 'copy_count'].forEach((key) => {
+      expect(sql, `clé ${key}`).toContain(`'${key}', `);
+      expect(parser, `lecture de ${key}`).toMatch(new RegExp(`row\\.${key}\\b`));
+    });
+    ['first_name', 'last_name', 'answers', 'results', 'at'].forEach((key) => {
+      expect(sql, `clé ${key}`).toContain(`'${key}', `);
+      expect(parser, `lecture de ${key}`).toMatch(new RegExp(`raw\\.${key}\\b`));
     });
   });
 });

@@ -19,7 +19,9 @@ const cloudClass = (id: string, sessions: SessionResult[] = []): CloudClass => (
   name: `Classe ${id}`,
   level: 'CM1',
   joinCode: 'ABC123',
+  zone: null,
   sessions,
+  pupils: [],
   pupilIds: {},
 });
 

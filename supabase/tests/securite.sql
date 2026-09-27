@@ -34,6 +34,14 @@ begin
   end if;
 end $$;
 
+create or replace function pg_temp.egal(p_obtenu text, p_attendu text, p_quoi text)
+returns void language plpgsql as $$
+begin
+  if p_obtenu is distinct from p_attendu then
+    raise exception 'ÉCHEC : % — attendu %, obtenu %', p_quoi, p_attendu, p_obtenu;
+  end if;
+end $$;
+
 grant execute on all functions in schema pg_temp to anon, authenticated;
 
 -- ------------------------------------------------------------- l'élève ---
@@ -348,6 +356,286 @@ select pg_temp.attendu(
 select pg_temp.attendu((select count(*) from public.classes), 3, 'les classes des maîtresses restent');
 select pg_temp.attendu((select count(*) from public.problemes), 2, 'les problèmes des classes restent');
 
+-- ------------------------------------------------------- les évaluations ---
+-- (006_evaluations.sql) La maîtresse A prépare une évaluation de maths : une
+-- question de numération, une de calcul, une construction au doigt et une
+-- opération posée.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+update public.classes set zone = 'B' where id = '11111111-1111-1111-1111-111111111111';
+select pg_temp.doit_echouer(
+  $q$update public.classes set zone = 'D' where id = '11111111-1111-1111-1111-111111111111'$q$,
+  'classes_zone_check', 'une zone de vacances inconnue doit être refusée');
+select pg_temp.attendu(
+  (select count(*) from jsonb_array_elements(public.lire_ma_classe()) c where c ->> 'zone' = 'B'), 1,
+  'la maîtresse A relit la zone de sa classe');
+
+insert into public.evaluations (id, class_id, title, subject, period, trimester, items) values
+  ('66666666-6666-6666-6666-666666666601', '11111111-1111-1111-1111-111111111111',
+   'Maths — fin de la période 1', 'maths', 1, 1,
+   '[{"kind":"question","question":{"id":"q1","domain":"numeration","prompt":"a","choices":["1","2","3"],"correctIndex":1}},
+     {"kind":"question","question":{"id":"q2","domain":"calcul","prompt":"b","choices":["4","5"],"correctIndex":0}},
+     {"kind":"question","question":{"id":"q3","domain":"geometrie","prompt":"c","choices":[],"correctIndex":-1,"construction":{}}},
+     {"kind":"operation","operation":{"id":"op1","statement":"12 + 30","expected":"42"}}]'),
+  ('66666666-6666-6666-6666-666666666602', '11111111-1111-1111-1111-111111111111',
+   'Français — pas encore ouverte', 'francais', 1, 1,
+   '[{"kind":"question","question":{"id":"q1","domain":"accords","prompt":"a","choices":["x","y"],"correctIndex":0}}]');
+select pg_temp.doit_echouer(
+  $q$insert into public.evaluations (class_id, title, subject, trimester, items)
+     values ('11111111-1111-1111-1111-111111111111', 'Vide', 'maths', 1, '[]')$q$,
+  'evaluations_items_check', 'une évaluation sans question doit être refusée');
+
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
+select pg_temp.attendu((select count(*) from public.evaluations), 0, 'la maîtresse B ne voit aucune évaluation de A');
+select pg_temp.attendu(
+  jsonb_array_length(public.lire_evaluations('11111111-1111-1111-1111-111111111111'))::bigint, 0,
+  'la maîtresse B ne lit pas les évaluations de A, même en donnant l''identifiant de la classe');
+select pg_temp.doit_echouer(
+  $q$insert into public.evaluations (class_id, title, subject, trimester, items)
+     values ('11111111-1111-1111-1111-111111111111', 'Intruse', 'maths', 1, '[{"kind":"question"}]')$q$,
+  'row-level security', 'la maîtresse B ne doit pas glisser d''évaluation dans la classe A');
+update public.evaluations set status = 'ouverte';
+reset role;
+select pg_temp.attendu((select count(*) from public.evaluations where status = 'ouverte'), 0,
+  'la maîtresse B n''a ouvert aucune évaluation de A');
+
+set role anon;
+select pg_temp.attendu((select count(*) from public.evaluations_ouvertes('AAAAAA')), 0,
+  'une évaluation préparée n''est pas encore proposée aux élèves');
+select pg_temp.egal(public.questions_de_l_evaluation('AAAAAA', '66666666-6666-6666-6666-666666666601')::text, null,
+  'les questions d''une évaluation préparée ne sortent pas');
+select pg_temp.doit_echouer(
+  $q$select public.rendre_evaluation(gen_random_uuid(), 'AAAAAA', '66666666-6666-6666-6666-666666666601',
+       'Léa', 'Martin', '[{},{},{},{}]')$q$,
+  'évaluation fermée', 'aucune copie n''arrive avant que la maîtresse ouvre l''évaluation');
+reset role;
+
+-- La maîtresse A ouvre l'évaluation de maths.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+update public.evaluations set status = 'ouverte', opened_at = now()
+ where id = '66666666-6666-6666-6666-666666666601';
+reset role;
+
+set role anon;
+select pg_temp.doit_echouer($q$select count(*) from public.evaluations$q$,
+  'permission denied', 'un anonyme ne doit lire aucune évaluation directement');
+select pg_temp.doit_echouer($q$select count(*) from public.evaluation_copies$q$,
+  'permission denied', 'un anonyme ne doit lire aucune copie');
+select pg_temp.doit_echouer(
+  $q$select public.lire_evaluations('11111111-1111-1111-1111-111111111111')$q$,
+  'permission denied', 'un anonyme ne doit pas lire les évaluations d''une classe');
+select pg_temp.doit_echouer(
+  $q$select public.lire_copies('66666666-6666-6666-6666-666666666601')$q$,
+  'permission denied', 'un anonyme ne doit pas lire les copies d''une évaluation');
+select pg_temp.attendu(
+  (select count(*) from public.evaluations_ouvertes('aaaaaa')
+    where level = 'CM1' and subject = 'maths' and question_count = 4 and version ~ '^[0-9a-f]{32}$'), 1,
+  'la tablette reçoit l''évaluation ouverte de sa classe : quatre questions, et leur empreinte');
+select pg_temp.attendu(
+  jsonb_array_length(public.questions_de_l_evaluation('aaaaaa', '66666666-6666-6666-6666-666666666601'))::bigint, 4,
+  'puis ses questions, une fois');
+select pg_temp.egal(public.questions_de_l_evaluation('BBBBBB', '66666666-6666-6666-6666-666666666601')::text, null,
+  'les questions ne sortent pas avec le code d''une autre classe');
+select pg_temp.attendu((select count(*) from public.evaluations_ouvertes('BBBBBB')), 0,
+  'la classe B n''a aucune évaluation');
+select pg_temp.attendu((select count(*) from public.evaluations_ouvertes('ZZZZZZ')), 0,
+  'un code inconnu ne donne rien');
+
+-- Léa rend sa copie : la numération juste, le calcul faux, la construction
+-- réussie, l'opération juste (écrite « 42,0 »).
+select pg_temp.egal(
+  public.rendre_evaluation('77777777-7777-7777-7777-777777777701', 'aaaaaa',
+    '66666666-6666-6666-6666-666666666601', 'Léa', 'Martin',
+    '[{"given":1},{"given":1},{"given":[[1,2]],"correct":true},{"given":"42,0","strokes":[{"points":[[0.1,0.2]]}]}]'),
+  'rendue', 'la copie de Léa est rendue');
+-- Renvoyée après une coupure : rien ne change.
+select pg_temp.egal(
+  public.rendre_evaluation('77777777-7777-7777-7777-777777777701', 'AAAAAA',
+    '66666666-6666-6666-6666-666666666601', 'Léa', 'Martin',
+    '[{"given":1},{"given":1},{"given":[[1,2]],"correct":true},{"given":"42,0"}]'),
+  'rendue', 'une copie renvoyée est reconnue');
+-- Léa recommence sur une autre tablette : sa première copie compte.
+select pg_temp.egal(
+  public.rendre_evaluation('77777777-7777-7777-7777-777777777702', 'AAAAAA',
+    '66666666-6666-6666-6666-666666666601', 'lea', 'MARTIN',
+    '[{"given":0},{"given":0},{"correct":true},{"given":"42"}]'),
+  'deja_faite', 'un élève ne rend qu''une copie par évaluation');
+-- Noé : une tablette trafiquée qui se dit juste partout.
+select pg_temp.egal(
+  public.rendre_evaluation('77777777-7777-7777-7777-777777777703', 'AAAAAA',
+    '66666666-6666-6666-6666-666666666601', 'Noé', 'Petit',
+    '[{"given":"abc","correct":true},{"given":"1","correct":true},{"correct":false},{"given":"41","correct":true}]'),
+  'rendue', 'la copie de Noé est rendue');
+-- Tom : des réponses absurdes sont fausses, sans erreur.
+select pg_temp.egal(
+  public.rendre_evaluation('77777777-7777-7777-7777-777777777704', 'AAAAAA',
+    '66666666-6666-6666-6666-666666666601', 'Tom', 'B',
+    '[{"given":99999999999},{"given":-1},{"given":null},{"given":"quarante-deux"}]'),
+  'rendue', 'la copie de Tom est rendue');
+select pg_temp.doit_echouer(
+  $q$select public.rendre_evaluation(gen_random_uuid(), 'AAAAAA', '66666666-6666-6666-6666-666666666601',
+       'Zoé', 'R', '[{"given":1}]')$q$,
+  'réponses illisibles', 'une copie qui n''a pas une réponse par question doit être refusée');
+select pg_temp.doit_echouer(
+  $q$select public.rendre_evaluation(gen_random_uuid(), 'AAAAAA', '66666666-6666-6666-6666-666666666601',
+       'Zoé', 'R', '{"given":1}')$q$,
+  'réponses illisibles', 'des réponses qui ne sont pas une liste doivent être refusées');
+select pg_temp.doit_echouer(
+  $q$select public.rendre_evaluation(gen_random_uuid(), 'AAAAAA', '66666666-6666-6666-6666-666666666601',
+       '  ', 'R', '[{},{},{},{}]')$q$,
+  'prénom manquant', 'une copie sans prénom doit être refusée');
+select pg_temp.doit_echouer(
+  $q$select public.rendre_evaluation(null, 'AAAAAA', '66666666-6666-6666-6666-666666666601',
+       'Zoé', 'R', '[{},{},{},{}]')$q$,
+  'identifiant de copie manquant', 'une copie sans identifiant doit être refusée');
+select pg_temp.doit_echouer(
+  $q$select public.rendre_evaluation(gen_random_uuid(), 'ZZZZZZ', '66666666-6666-6666-6666-666666666601',
+       'Zoé', 'R', '[{},{},{},{}]')$q$,
+  'code de classe inconnu', 'une copie avec un code inconnu doit être refusée');
+select pg_temp.doit_echouer(
+  $q$select public.rendre_evaluation(gen_random_uuid(), 'BBBBBB', '66666666-6666-6666-6666-666666666601',
+       'Zoé', 'R', '[{},{},{},{}]')$q$,
+  'évaluation inconnue', 'une copie ne peut pas viser l''évaluation d''une autre classe');
+select pg_temp.egal(
+  (select array_to_string(rendues, ',') from public.evaluations_ouvertes('AAAAAA',
+     array['77777777-7777-7777-7777-777777777701'::uuid, '77777777-7777-7777-7777-777777777702'::uuid, gen_random_uuid()])),
+  '77777777-7777-7777-7777-777777777701',
+  'la tablette apprend lesquelles de ses copies la base garde');
+select pg_temp.attendu(
+  (select coalesce(cardinality(rendues), 0) from public.evaluations_ouvertes('AAAAAA')), 0,
+  'sans identifiant, la tablette n''apprend rien des copies');
+reset role;
+
+-- Ce que la base a gardé, et corrigé elle-même.
+select pg_temp.egal(
+  (select results::text from public.evaluation_copies where id = '77777777-7777-7777-7777-777777777701'),
+  '[{"total": 1, "domain": "numeration", "correct": 1}, {"total": 2, "domain": "calcul", "correct": 1}, {"total": 1, "domain": "geometrie", "correct": 1}]',
+  'la copie de Léa est corrigée par notion, dans l''ordre des questions');
+select pg_temp.egal(
+  (select string_agg(a ->> 'correct', ',' order by n) from public.evaluation_copies k,
+     jsonb_array_elements(k.answers) with ordinality as t(a, n)
+    where k.id = '77777777-7777-7777-7777-777777777703'),
+  'false,false,false,false', 'la base ne croit pas une tablette qui se dit juste');
+select pg_temp.egal(
+  (select string_agg(a ->> 'correct', ',' order by n) from public.evaluation_copies k,
+     jsonb_array_elements(k.answers) with ordinality as t(a, n)
+    where k.id = '77777777-7777-7777-7777-777777777704'),
+  'false,false,false,false', 'des réponses absurdes sont simplement fausses');
+select pg_temp.attendu(
+  (select count(*) from public.evaluation_copies k, jsonb_array_elements(k.answers) a where a ? 'domain'), 0,
+  'les réponses gardées ne répètent pas la notion');
+select pg_temp.attendu(
+  (select count(*) from public.sessions
+    where id = '77777777-7777-7777-7777-777777777701' and activity = 'evaluation' and subject = 'maths'
+      and trimester = 1 and level = 'CM1'
+      and results = (select results from public.evaluation_copies where id = '77777777-7777-7777-7777-777777777701')), 1,
+  'la copie compte aussi comme une séance d''évaluation, pour les tableaux de la maîtresse');
+select pg_temp.attendu(
+  (select count(*) from public.sessions where id = '77777777-7777-7777-7777-777777777702'), 0,
+  'la seconde copie de Léa n''a laissé aucune séance');
+select pg_temp.egal(
+  (select operations::text || ' ' || (answers -> 'op1' ->> 'given') || ' ' || jsonb_array_length(answers -> 'op1' -> 'strokes')
+     from public.worksheets where session_id = '77777777-7777-7777-7777-777777777701'),
+  '[{"id": "op1", "expected": "42", "statement": "12 + 30"}] 42,0 1',
+  'l''opération posée de Léa rejoint les feuilles à corriger au stylet');
+select pg_temp.attendu((select count(*) from public.pupils where first_name = 'Tom'), 1,
+  'un élève qui rend sa première copie entre dans la classe');
+
+-- La maîtresse A relit les copies ; la maîtresse B n'y touche pas.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+select pg_temp.attendu(
+  (select (e ->> 'copy_count')::bigint from jsonb_array_elements(
+     public.lire_evaluations('11111111-1111-1111-1111-111111111111')) e
+    where e ->> 'id' = '66666666-6666-6666-6666-666666666601' and (e ->> 'question_count')::int = 4), 3,
+  'la maîtresse A voit que l''évaluation a reçu trois copies');
+select pg_temp.attendu(
+  jsonb_array_length(public.lire_copies('66666666-6666-6666-6666-666666666601'))::bigint, 3,
+  'la maîtresse A lit les trois copies');
+select pg_temp.attendu(
+  (select count(*) from jsonb_array_elements(public.lire_copies('66666666-6666-6666-6666-666666666601')) k
+    where k ->> 'first_name' = 'Léa' and k ->> 'last_name' = 'Martin' and jsonb_array_length(k -> 'answers') = 4), 1,
+  'avec le nom de chaque élève et ses réponses');
+select pg_temp.doit_echouer(
+  $q$update public.evaluations set items = '[{"kind":"question"}]' where id = '66666666-6666-6666-6666-666666666601'$q$,
+  'questions figées', 'les questions ne changent plus une fois des copies rendues');
+select pg_temp.doit_echouer(
+  $q$insert into public.evaluation_copies (id, evaluation_id, pupil_id, answers, results)
+     select '77777777-7777-7777-7777-777777777701', '66666666-6666-6666-6666-666666666601', id, '[]', '[]' from public.pupils limit 1$q$,
+  'permission denied', 'une maîtresse n''écrit pas de copie à la place d''un élève');
+select pg_temp.doit_echouer(
+  $q$update public.evaluation_copies set results = '[]'$q$,
+  'permission denied', 'une maîtresse ne modifie pas une copie');
+
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
+select pg_temp.attendu((select count(*) from public.evaluation_copies), 0, 'la maîtresse B ne voit aucune copie de A');
+select pg_temp.attendu(
+  jsonb_array_length(public.lire_copies('66666666-6666-6666-6666-666666666601'))::bigint, 0,
+  'la maîtresse B ne lit aucune copie de A, même en donnant l''identifiant de l''évaluation');
+delete from public.evaluation_copies;
+delete from public.evaluations;
+reset role;
+select pg_temp.attendu((select count(*) from public.evaluation_copies), 3, 'la maîtresse B n''a effacé aucune copie de A');
+select pg_temp.attendu((select count(*) from public.evaluations), 2, 'la maîtresse B n''a effacé aucune évaluation de A');
+
+-- Faire refaire : la copie de Noé s'efface, avec sa séance et sa feuille.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+delete from public.evaluation_copies where id = '77777777-7777-7777-7777-777777777703';
+reset role;
+select pg_temp.attendu(
+  (select count(*) from public.sessions where id = '77777777-7777-7777-7777-777777777703')
+  + (select count(*) from public.worksheets where session_id = '77777777-7777-7777-7777-777777777703'), 0,
+  'une copie à refaire emporte sa séance et sa feuille d''opérations');
+
+-- La maîtresse A clôture : plus aucune tablette ne la propose, mais la copie
+-- d'une tablette restée sans réseau arrive encore. Noé refait la sienne.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+update public.evaluations set status = 'terminee', closed_at = now()
+ where id = '66666666-6666-6666-6666-666666666601';
+reset role;
+set role anon;
+select pg_temp.attendu((select count(*) from public.evaluations_ouvertes('AAAAAA')), 0,
+  'une évaluation terminée n''est plus proposée');
+select pg_temp.egal(public.questions_de_l_evaluation('AAAAAA', '66666666-6666-6666-6666-666666666601')::text, null,
+  'ni ses questions');
+select pg_temp.egal(
+  public.rendre_evaluation('77777777-7777-7777-7777-777777777705', 'AAAAAA',
+    '66666666-6666-6666-6666-666666666601', 'Noé', 'Petit',
+    '[{"given":1},{"given":0},{"correct":true},{"given":"42"}]'),
+  'rendue', 'une copie en route arrive encore après la clôture');
+reset role;
+select pg_temp.egal(
+  (select results::text from public.evaluation_copies where id = '77777777-7777-7777-7777-777777777705'),
+  '[{"total": 1, "domain": "numeration", "correct": 1}, {"total": 2, "domain": "calcul", "correct": 2}, {"total": 1, "domain": "geometrie", "correct": 1}]',
+  'la copie refaite de Noé est corrigée');
+
+-- À la rentrée, une copie de l'an dernier part avec sa séance.
+insert into public.sessions (id, pupil_id, at, level, trimester, subject, activity, results) values
+  ('77777777-7777-7777-7777-777777777799', '55555555-5555-5555-5555-555555555502',
+    public.debut_annee_scolaire() - interval '1 day', 'CM1', 3, 'maths', 'evaluation', '[]');
+insert into public.evaluation_copies (id, evaluation_id, pupil_id, answers, results, at) values
+  ('77777777-7777-7777-7777-777777777799', '66666666-6666-6666-6666-666666666601',
+    '55555555-5555-5555-5555-555555555502', '[]', '[]', public.debut_annee_scolaire() - interval '1 day');
+select public.effacer_annee_precedente();
+select pg_temp.attendu(
+  (select count(*) from public.evaluation_copies where id = '77777777-7777-7777-7777-777777777799'), 0,
+  'une copie de l''année précédente disparaît avec sa séance');
+select pg_temp.attendu((select count(*) from public.evaluation_copies), 3, 'les copies de l''année restent');
+
+-- Une évaluation supprimée emporte ses copies, leurs séances et leurs feuilles.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+delete from public.evaluations where id = '66666666-6666-6666-6666-666666666601';
+reset role;
+select pg_temp.attendu(
+  (select count(*) from public.evaluation_copies)
+  + (select count(*) from public.sessions where activity = 'evaluation')
+  + (select count(*) from public.worksheets where session_id::text like '77777777-%'), 0,
+  'une évaluation supprimée ne laisse ni copie, ni séance, ni feuille');
+
 -- ------------------------------------------------------------ les droits ---
 -- Supabase accorde d'office tous les droits à anon et authenticated ; le
 -- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après
@@ -355,28 +643,40 @@ select pg_temp.attendu((select count(*) from public.problemes), 2, 'les problèm
 select pg_temp.attendu(
   (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets',
                                      'public.problemes', 'public.assistant_usage',
-                                     'public.demandes_administrateur']) t,
+                                     'public.demandes_administrateur',
+                                     'public.evaluations', 'public.evaluation_copies']) t,
      unnest(array['select', 'insert', 'update', 'delete', 'truncate', 'references', 'trigger']) d
    where has_table_privilege('anon', t, d)), 0,
   'la clé publique ne donne aucun droit sur les tables');
 select pg_temp.attendu(
-  (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets']) t,
+  (select count(*) from unnest(array['public.classes', 'public.pupils', 'public.sessions', 'public.worksheets',
+                                     'public.evaluations', 'public.evaluation_copies']) t,
      unnest(array['truncate', 'references', 'trigger']) d
    where has_table_privilege('authenticated', t, d)), 0,
   'une maîtresse ne peut pas vider une table en contournant la RLS');
+select pg_temp.attendu(
+  (select count(*) from unnest(array['insert', 'update']) d
+   where has_table_privilege('authenticated', 'public.evaluation_copies', d)), 0,
+  'une maîtresse n''écrit ni ne modifie les copies de ses élèves');
 select pg_temp.attendu(
   (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()',
                                      'public.creer_classe(text, text)', 'public.lire_ma_classe()',
                                      'public.compter_demande_assistant()',
                                      'public.transmettre_a_l_administrateur(text, text)',
                                      'public.debut_annee_scolaire(timestamptz)',
-                                     'public.effacer_annee_precedente()']) f
+                                     'public.effacer_annee_precedente()',
+                                     'public.lire_evaluations(uuid)', 'public.lire_copies(uuid)',
+                                     'public.nombre_normalise(text)',
+                                     'public.copie_efface_sa_seance()',
+                                     'public.evaluations_questions_figees()']) f
    where has_function_privilege('anon', f, 'execute')), 0,
   'la clé publique n''ouvre que le dépôt de séance et les problèmes de sa classe');
 select pg_temp.attendu(
   (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()',
                                      'public.debut_annee_scolaire(timestamptz)',
-                                     'public.effacer_annee_precedente()']) f
+                                     'public.effacer_annee_precedente()',
+                                     'public.nombre_normalise(text)', 'public.copie_efface_sa_seance()',
+                                     'public.evaluations_questions_figees()']) f
    where has_function_privilege('authenticated', f, 'execute')), 0,
   'les fonctions internes ne s''appellent pas de l''extérieur');
 select pg_temp.attendu(
@@ -388,6 +688,12 @@ select pg_temp.attendu(
   (select count(*) from unnest(array['public.corrections_de_mes_feuilles(uuid[])']) f
    where has_function_privilege('anon', f, 'execute')), 1,
   'la clé publique permet à la tablette de l''élève de relire ses feuilles corrigées');
+select pg_temp.attendu(
+  (select count(*) from unnest(array['public.evaluations_ouvertes(text, uuid[])',
+      'public.questions_de_l_evaluation(text, uuid)',
+      'public.rendre_evaluation(uuid, text, uuid, text, text, jsonb)']) f
+   where has_function_privilege('anon', f, 'execute')), 3,
+  'la clé publique permet de recevoir les évaluations ouvertes et d''y rendre sa copie');
 
 \o
 \echo 'OK : toutes les règles d''accès tiennent.'

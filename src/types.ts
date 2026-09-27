@@ -57,25 +57,31 @@ export type Subject = 'francais' | 'maths' | 'histoire' | 'geographie';
  * Ce que l'élève fait pendant la séance. Les questions à choix se répondent
  * du bout du doigt ; une opération posée s'écrit à la main, en colonnes, et
  * laisse une trace que la maîtresse pourra lire à la correction.
+ *
+ * L'évaluation ne se choisit pas : seule la maîtresse la lance, et toute la
+ * classe reçoit les mêmes questions (src/lib/evaluation.ts).
  */
-export type Activity = 'questions' | 'posees' | 'revision';
+export type Activity = 'questions' | 'posees' | 'revision' | 'evaluation';
 
-export const ALL_ACTIVITIES: Activity[] = ['questions', 'posees', 'revision'];
+export const ALL_ACTIVITIES: Activity[] = ['questions', 'posees', 'revision', 'evaluation'];
 
 export const ACTIVITY_LABELS: Record<Activity, string> = {
   questions: 'Questions',
   posees: 'Opérations posées',
   revision: 'Révision ciblée',
+  evaluation: 'Évaluation',
 };
 
 export const ACTIVITY_HINTS: Record<Activity, string> = {
   questions: 'Des questions sur tout ce que tu as coché.',
   posees: "Tu poses l'opération avec ton doigt. Ta maîtresse pourra la corriger.",
   revision: 'Les exercices qui te donnent le plus de mal, pour progresser.',
+  evaluation: 'Les questions choisies par ta maîtresse, pour toute la classe.',
 };
 
 /** Poser une opération n'a de sens qu'en maths. La révision ciblée existe
- *  dans toutes les matières, mais ne les mélange pas davantage que le reste. */
+ *  dans toutes les matières, mais ne les mélange pas davantage que le reste.
+ *  L'évaluation n'y figure pas : l'élève ne la lance jamais lui-même. */
 export const SUBJECT_ACTIVITIES: Record<Subject, Activity[]> = {
   francais: ['questions', 'revision'],
   maths: ['questions', 'posees', 'revision'],
