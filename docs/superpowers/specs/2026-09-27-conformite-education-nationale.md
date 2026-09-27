@@ -71,6 +71,19 @@ quatre hors ligne, UIT 2025) ; eau potable ; fibre optique ; côte
 méditerranéenne ; un distracteur ambigu (« un vieux tour ») ; une marque
 commerciale retirée d'une question sur les grands magasins.
 
+**Lisibilité pour les élèves.** Les questions sont lues par des enfants de 8 à
+11 ans. Tout ce qu'un élève peut lire pendant une séance (5 671 textes) a été
+mesuré : longueur des phrases, indice de lisibilité LIX, ponctuation. Les
+explications passent d'un LIX médian de 26 à 21 ; plus aucun point-virgule
+(il y en avait dans 379 explications), plus aucune phrase de plus de 18 mots,
+plus de parenthèses en histoire-géographie ; les réponses font 12 mots au
+plus. Les questions de dates se lisent désormais « 1789 : la prise de la
+Bastille. En quel siècle ? », les repères sont plus courts (« le premier
+train au départ de Paris »), les définitions plus simples (« vivre bien
+aujourd'hui sans abîmer la planète de demain »), et les textes de l'accueil
+tutoient l'élève. Le test `src/domains/lisibilite.test.ts` garde ces règles.
+L'assistant Claude de la maîtresse reçoit la même consigne pour ses énoncés.
+
 ## Décisions
 
 - Durée de conservation : une année scolaire.

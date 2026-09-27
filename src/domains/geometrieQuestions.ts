@@ -225,8 +225,8 @@ const anglePlusGrand: Family = {
       choices,
       correctIndex: letters.indexOf(letter),
       explanation: biggest
-        ? `L'angle ${letter} est le plus ouvert : c'est le plus grand, même si ses côtés sont les plus courts.`
-        : `L'angle ${letter} est le moins ouvert : c'est le plus petit, même si ses côtés sont les plus longs.`,
+        ? `L'angle ${letter} est le plus ouvert : c'est le plus grand. La longueur des côtés ne compte pas.`
+        : `L'angle ${letter} est le moins ouvert : c'est le plus petit. La longueur des côtés ne compte pas.`,
     };
   },
 };
@@ -244,7 +244,7 @@ export const STATEMENTS: Statements[] = [
     minStage: 5,
     right: 'Un carré est un rectangle particulier.',
     wrong: ['Un rectangle est toujours un carré.', 'Un losange a toujours quatre angles droits.', 'Un triangle peut avoir deux angles droits.'],
-    why: 'Un carré a quatre angles droits, comme tout rectangle ; il a en plus quatre côtés égaux.',
+    why: 'Un carré a quatre angles droits, comme tout rectangle. Il a en plus quatre côtés égaux.',
   },
   {
     minStage: 5,
@@ -268,19 +268,19 @@ export const STATEMENTS: Statements[] = [
     minStage: 5,
     right: 'Un cube a 6 faces, 12 arêtes et 8 sommets.',
     wrong: ['Un cube a 8 faces.', 'Un pavé droit a 6 sommets.', 'Une pyramide à base carrée a 4 faces.'],
-    why: 'Un cube a 6 faces carrées, 12 arêtes et 8 sommets ; une pyramide à base carrée a 5 faces.',
+    why: 'Un cube a 6 faces carrées, 12 arêtes et 8 sommets. Une pyramide à base carrée a 5 faces.',
   },
   {
     minStage: 6,
     right: 'Deux droites perpendiculaires à une même droite sont parallèles entre elles.',
     wrong: ['Deux droites parallèles finissent toujours par se couper.', 'Deux droites perpendiculaires ne se coupent jamais.', 'Deux droites qui se coupent forment toujours un angle droit.'],
-    why: 'Deux droites qui font chacune un angle droit avec la même droite ont la même direction : elles sont parallèles.',
+    why: 'Elles font chacune un angle droit avec la même droite. Elles vont donc dans la même direction : elles sont parallèles.',
   },
   {
     minStage: 6,
     right: 'Un losange a quatre côtés de même longueur.',
     wrong: ['Un losange a toujours quatre angles droits.', 'Un rectangle a toujours quatre côtés égaux.', 'Un triangle rectangle a deux angles droits.'],
-    why: 'Un losange a quatre côtés égaux ; ses angles ne sont pas forcément droits.',
+    why: 'Un losange a quatre côtés égaux. Ses angles ne sont pas forcément droits.',
   },
 ];
 

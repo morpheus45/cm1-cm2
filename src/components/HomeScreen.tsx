@@ -144,7 +144,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
             ))}
           </div>
           <p className="text-sm text-encre-pale">
-            Seules les notions déjà vues en classe à ce moment de l'année sont proposées.
+            Tu n'auras que des exercices déjà vus en classe.
           </p>
         </Etape>
 
@@ -172,7 +172,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
             })}
           </div>
           <p className="text-sm text-encre-pale">
-            Une séance ne mélange jamais deux matières : chacune a son arc, et on reste dans le sien.
+            Une séance, c'est une seule matière à la fois.
           </p>
         </Etape>
 

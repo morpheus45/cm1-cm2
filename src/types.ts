@@ -69,9 +69,9 @@ export const ACTIVITY_LABELS: Record<Activity, string> = {
 };
 
 export const ACTIVITY_HINTS: Record<Activity, string> = {
-  questions: 'Toutes les notions choisies, à parts égales.',
-  posees: "L'élève écrit l'opération à la main, au doigt ou au stylet. La séance produit un PDF que la maîtresse peut corriger.",
-  revision: 'Les notions les plus fragiles de cet élève, pour rattraper le retard.',
+  questions: 'Des questions sur tout ce que tu as coché.',
+  posees: "Tu poses l'opération avec ton doigt. Ta maîtresse pourra la corriger.",
+  revision: 'Les exercices qui te donnent le plus de mal, pour progresser.',
 };
 
 /** Poser une opération n'a de sens qu'en maths. La révision ciblée existe

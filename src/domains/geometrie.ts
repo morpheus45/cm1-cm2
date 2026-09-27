@@ -307,7 +307,7 @@ const rayonDiametre: Family = {
         : `Le diamètre d\'un cercle mesure ${radius * 2} cm. Combien mesure son rayon ?`,
       figure: circleFigure(askDiameter ? 'rayon' : 'diametre', rngInt(rng, 10, 160)),
       ...choose(rng, `${answer} cm`, wrong),
-      explanation: 'Le diamètre mesure le double du rayon ; le rayon, la moitié du diamètre.',
+      explanation: 'Le diamètre mesure le double du rayon. Le rayon mesure la moitié du diamètre.',
     };
   },
 };
@@ -442,7 +442,7 @@ const angles: Family = {
 /** Ce qu'il faut savoir des figures, sans dessin. */
 const PROPERTIES: { minStage: Stage; prompt: string; correct: string; wrong: string[]; explanation: string }[] = [
   { minStage: 2, prompt: 'Quel quadrilatère a quatre côtés de même longueur et quatre angles droits ?', correct: 'le carré', wrong: ['le rectangle', 'le losange', 'le triangle'], explanation: 'Le carré a quatre côtés égaux et quatre angles droits.' },
-  { minStage: 2, prompt: 'Quel quadrilatère a quatre angles droits et ses côtés opposés de même longueur ?', correct: 'le rectangle', wrong: ['le losange', 'le pentagone', 'le triangle'], explanation: 'Le rectangle a quatre angles droits ; ses côtés opposés ont la même longueur.' },
+  { minStage: 2, prompt: 'Quel quadrilatère a quatre angles droits et ses côtés opposés de même longueur ?', correct: 'le rectangle', wrong: ['le losange', 'le pentagone', 'le triangle'], explanation: 'Le rectangle a quatre angles droits. Ses côtés opposés ont la même longueur.' },
   { minStage: 2, prompt: 'Quel quadrilatère a quatre côtés de même longueur, sans avoir forcément d\'angle droit ?', correct: 'le losange', wrong: ['le rectangle', 'le triangle', 'le pentagone'], explanation: 'Le losange a quatre côtés de même longueur.' },
   { minStage: 2, prompt: 'Combien de côtés de même longueur a un triangle équilatéral ?', correct: '3', wrong: ['0', '1', '2'], explanation: 'Dans un triangle équilatéral, les trois côtés ont la même longueur.' },
   { minStage: 2, prompt: 'Un triangle rectangle a :', correct: 'un angle droit', wrong: ['deux angles droits', 'trois angles droits', 'quatre côtés'], explanation: 'Un triangle rectangle a exactement un angle droit.' },
@@ -451,7 +451,7 @@ const PROPERTIES: { minStage: Stage; prompt: string; correct: string; wrong: str
   { minStage: 3, prompt: 'Quel solide peut rouler dans toutes les directions ?', correct: 'la boule', wrong: ['le cube', 'le cylindre', 'la pyramide'], explanation: 'La boule n\'a ni face plate ni arête : elle roule dans tous les sens.' },
   { minStage: 4, prompt: 'Deux droites perpendiculaires se coupent en formant :', correct: 'un angle droit', wrong: ['un angle aigu', 'un angle obtus', 'aucun angle'], explanation: 'Des droites perpendiculaires se coupent à angle droit.' },
   { minStage: 4, prompt: 'Deux droites parallèles :', correct: 'ne se coupent jamais', wrong: ['se coupent à angle droit', 'se coupent une fois', 'forment un triangle'], explanation: 'Deux droites parallèles ne se coupent jamais, même prolongées.' },
-  { minStage: 5, prompt: 'Un carré est aussi :', correct: 'un rectangle et un losange', wrong: ['un triangle', 'un pentagone', 'un cercle'], explanation: 'Un carré a quatre angles droits (comme un rectangle) et quatre côtés égaux (comme un losange).' },
+  { minStage: 5, prompt: 'Un carré est aussi :', correct: 'un rectangle et un losange', wrong: ['un triangle', 'un pentagone', 'un cercle'], explanation: 'Un carré a quatre angles droits, comme un rectangle. Il a aussi quatre côtés égaux, comme un losange.' },
   { minStage: 5, prompt: 'Dans un parallélogramme, les côtés opposés sont :', correct: 'parallèles et de même longueur', wrong: ['perpendiculaires', 'toujours de longueurs différentes', 'courbes'], explanation: 'Les côtés opposés d\'un parallélogramme sont parallèles et de même longueur.' },
   { minStage: 6, prompt: 'Combien mesure un angle droit ?', correct: '90°', wrong: ['45°', '100°', '180°'], explanation: 'Un angle droit mesure 90 degrés.' },
   { minStage: 6, prompt: 'Un angle aigu mesure :', correct: 'moins de 90°', wrong: ['exactement 90°', 'plus de 90°', 'toujours 180°'], explanation: 'Un angle aigu est plus petit qu\'un angle droit : moins de 90°.' },

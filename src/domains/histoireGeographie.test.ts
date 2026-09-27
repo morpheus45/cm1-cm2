@@ -95,7 +95,7 @@ describe('les frises', () => {
         .generateChronologie('CM2', 3, createRng(seed), 12)
         .filter((question) => question.figure)
         .forEach((question) => {
-          const year = Number(question.prompt.match(/\((\d{3,4})\)/)?.[1]);
+          const year = Number(question.prompt.match(/, en (\d{3,4}) \?$/)?.[1]);
           const shapes = question.figure!.shapes;
           const marks = shapes.filter((shape): shape is Extract<Shape, { kind: 'circle' }> => shape.kind === 'circle');
           const letters = shapes.filter(

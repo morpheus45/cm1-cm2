@@ -86,8 +86,8 @@ const regle: Family = {
       ...choose(rng, format(length), wrong),
       explanation:
         start === 0
-          ? `Le segment part de 0 et finit à ${format(end)} : il mesure ${format(length)}.`
-          : `Le segment part de ${format(start)} et finit à ${format(end)} : il mesure ${format(end)} − ${format(start)} = ${format(length)}.`,
+          ? `Le segment va de 0 à ${format(end)}. Il mesure ${format(length)}.`
+          : `Le segment va de ${format(start)} à ${format(end)}. Il mesure ${format(end)} − ${format(start)} = ${format(length)}.`,
     };
   },
 };
@@ -290,7 +290,7 @@ const aireCarreaux: Family = {
       prompt: 'Quelle est l\'aire de la figure coloriée ?',
       figure: areaFigure(pieces, 'Un quadrillage où une figure faite de carreaux entiers est coloriée.'),
       ...choose(rng, `${count} carreaux`, wrong),
-      explanation: `On compte les carreaux coloriés : ${count}. Le tour de la figure, lui, mesure ${perimeter} côtés de carreau : c'est son périmètre, pas son aire.`,
+      explanation: `Il y a ${count} carreaux coloriés. Le tour de la figure mesure ${perimeter} côtés de carreau : c'est son périmètre, pas son aire.`,
     };
   },
 };
@@ -347,7 +347,7 @@ const aireDemi: Family = {
           format(total + 0.5),
           format(total - 0.5),
         ]),
-        explanation: `${cells.length} carreaux entiers, et ${halvesCount} demi-carreau${halvesCount > 1 ? 'x' : ''} qui font ${String(halvesCount / 2).replace('.', ',')} carreau${halvesCount > 2 ? 'x' : ''} : en tout, ${format(total)}.`,
+        explanation: `${cells.length} carreaux entiers, et ${halvesCount} demi-carreau${halvesCount > 1 ? 'x' : ''} qui font ${String(halvesCount / 2).replace('.', ',')} carreau${halvesCount >= 4 ? 'x' : ''}. En tout : ${format(total)}.`,
       };
     }
   },

@@ -178,7 +178,7 @@ const constructionReproduire: Family = {
       ...copyQuestion(rng, shapes[index], 1, index),
       instruction: 'Le premier sommet est déjà placé',
       prompt: 'Reproduis la figure à droite : pose ses autres sommets.',
-      explanation: 'Compte les carreaux d\'un sommet à l\'autre sur le modèle, puis refais les mêmes pas à partir du point de départ.',
+      explanation: 'Sur le modèle, compte les carreaux d\'un sommet à l\'autre. Refais les mêmes pas à partir du point de départ.',
     };
   },
 };
@@ -192,7 +192,7 @@ const constructionAgrandir: Family = {
       ...copyQuestion(rng, SMALL_SHAPES[index], 2, index),
       instruction: 'Chaque longueur est multipliée par 2',
       prompt: 'Agrandis la figure deux fois : pose ses autres sommets.',
-      explanation: 'Agrandir deux fois : un côté d\'un carreau en fait deux, un côté de deux carreaux en fait quatre ; les angles ne changent pas.',
+      explanation: 'Agrandir deux fois : chaque côté devient deux fois plus long. Les angles ne changent pas.',
     };
   },
 };
@@ -256,8 +256,8 @@ const constructionCompleter: Family = {
           solution: [{ kind: 'polyline', points: [at(c), at(d), at(a)], ink: 'couleur' }, vertexLabel(d, center, 'D', 'couleur')],
         }),
         explanation: isSquare
-          ? 'Un carré a quatre côtés de même longueur et quatre angles droits : de C à D, on refait le chemin de B à A.'
-          : 'Dans un rectangle, les côtés opposés ont la même longueur : de C à D, on refait le chemin de B à A.',
+          ? 'Un carré a quatre côtés de même longueur. De C à D, refais le chemin de B à A.'
+          : 'Dans un rectangle, les côtés opposés ont la même longueur. De C à D, refais le chemin de B à A.',
       };
     }
   },
@@ -432,8 +432,8 @@ const constructionSymetrie: Family = {
       }),
       explanation:
         axis === 'penche'
-          ? 'Avec un axe penché, chaque sommet et son symétrique sont de part et d\'autre de l\'axe, à la même distance : on compte les carreaux en échangeant colonnes et lignes.'
-          : 'Chaque sommet et son symétrique sont à la même distance de l\'axe, de part et d\'autre : compte les carreaux jusqu\'à l\'axe, puis autant de l\'autre côté.',
+          ? 'L\'axe est penché. Chaque point et son symétrique sont à la même distance de l\'axe, chacun d\'un côté.'
+          : 'Compte les carreaux jusqu\'à l\'axe. Puis compte-en autant de l\'autre côté.',
     };
   },
 };

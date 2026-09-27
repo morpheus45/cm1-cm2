@@ -40,7 +40,7 @@ export const CONTINENT_NAMES: Record<Continent, string> = {
 };
 
 const CONTINENT_HINTS: Record<Continent, string> = {
-  afrique: 'L\'Afrique est au sud de l\'Europe ; l\'équateur la traverse.',
+  afrique: 'L\'Afrique est au sud de l\'Europe. L\'équateur la traverse.',
   amerique: 'L\'Amérique s\'étire du nord au sud, entre l\'océan Atlantique et l\'océan Pacifique.',
   antarctique: 'L\'Antarctique est le continent glacé, autour du pôle Sud.',
   asie: 'L\'Asie, le plus grand continent, s\'étend de l\'Europe jusqu\'à l\'océan Pacifique.',
@@ -123,7 +123,7 @@ export const MASSIF_NAMES: Record<Massif, string> = {
 const MASSIF_HINTS: Record<Massif, string> = {
   alpes: 'Les Alpes, à l\'est, portent le mont Blanc, le plus haut sommet de France.',
   pyrenees: 'Les Pyrénées, au sud-ouest, marquent la frontière avec l\'Espagne.',
-  'massif-central': 'Le Massif central occupe le centre et le sud du pays ; ses volcans sont éteints.',
+  'massif-central': 'Le Massif central est au centre et au sud du pays. Ses volcans sont éteints.',
   jura: 'Le Jura, à l\'est, longe la frontière avec la Suisse.',
   vosges: 'Les Vosges, au nord-est, séparent la Lorraine de l\'Alsace.',
 };
