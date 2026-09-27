@@ -35,6 +35,13 @@ describe('typographieFrancaise', () => {
     expect(typographieFrancaise('24 × 3')).toBe(`24${nbsp}× 3`);
   });
 
+  it('sépare les classes des grands nombres, pas les années', () => {
+    expect(typographieFrancaise('La ville compte 25000 habitants.')).toBe(`La ville compte 25${nbsp}000${nbsp}habitants.`);
+    expect(typographieFrancaise('3095204238')).toBe(`3${nbsp}095${nbsp}204${nbsp}238`);
+    expect(typographieFrancaise('12345,678')).toBe(`12${nbsp}345,678`);
+    expect(typographieFrancaise('en 1789, puis en 1848')).toBe('en 1789, puis en 1848');
+  });
+
   it('ne touche pas au reste, et se rejoue sans rien changer', () => {
     ['mille deux cent', '1250', 'Tu veux du thé ... du café', 'Sans faute'].forEach((text) =>
       expect(typographieFrancaise(text)).toBe(text)

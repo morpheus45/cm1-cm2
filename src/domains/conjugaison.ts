@@ -92,11 +92,12 @@ const FORM_ITEMS: FormItem[] = [
   { sentence: 'Ils ... merci à la maîtresse.', infinitive: 'dire', tense: 'passé composé', correct: 'ont dit', distractors: ['a dit', 'avons dit', 'avez dit'] },
   { sentence: 'Elle ... à huit heures.', infinitive: 'partir', tense: 'passé composé', correct: 'est partie', distractors: ['est parti', 'sont parties', 'es partie'] },
   { sentence: 'Tu ... tes devoirs.', infinitive: 'finir', tense: 'passé composé', correct: 'as fini', distractors: ['a fini', 'avons fini', 'ont fini'] },
-  // --- Passé simple ---
+  // --- Passé simple : aux troisièmes personnes seulement, comme le programme
+  // le demande à l'école élémentaire. ---
   { sentence: 'Le chevalier ... au combat.', infinitive: 'partir', tense: 'passé simple', correct: 'partit', distractors: ['partis', 'partirent', 'partîmes'] },
   { sentence: 'Elle ... son cahier et sortit.', infinitive: 'prendre', tense: 'passé simple', correct: 'prit', distractors: ['pris', 'prirent', 'prîmes'] },
   { sentence: 'Ils ... un renard dans la forêt.', infinitive: 'voir', tense: 'passé simple', correct: 'virent', distractors: ['vit', 'vis', 'vîmes'] },
-  { sentence: 'Nous ... très peur.', infinitive: 'avoir', tense: 'passé simple', correct: 'eûmes', distractors: ['eut', 'eurent', 'eus'] },
+  { sentence: 'Ils ... très peur.', infinitive: 'avoir', tense: 'passé simple', correct: 'eurent', distractors: ['eut', 'eus', 'eûmes'] },
   { sentence: 'Il ... très courageux.', infinitive: 'être', tense: 'passé simple', correct: 'fut', distractors: ['furent', 'fus', 'fûmes'] },
   // --- Plus-que-parfait ---
   { sentence: 'Il ... quand nous sommes arrivés.', infinitive: 'manger', tense: 'plus-que-parfait', correct: 'avait mangé', distractors: ['avais mangé', 'avaient mangé', 'avions mangé'] },
@@ -137,7 +138,7 @@ const IDENTIFICATION_ITEMS: IdentificationItem[] = [
   { prompt: 'Le chevalier **partit** au combat.', tense: 'passé simple' },
   { prompt: 'Elle **prit** son cahier et sortit.', tense: 'passé simple' },
   { prompt: 'Ils **virent** un renard dans la forêt.', tense: 'passé simple' },
-  { prompt: 'Nous **eûmes** très peur.', tense: 'passé simple' },
+  { prompt: 'Ils **eurent** très peur.', tense: 'passé simple' },
   { prompt: 'Il **avait déjà mangé** quand nous sommes arrivés.', tense: 'plus-que-parfait' },
   { prompt: 'Elle **était partie** avant la pluie.', tense: 'plus-que-parfait' },
   { prompt: 'Nous **avions fini** nos devoirs.', tense: 'plus-que-parfait' },

@@ -51,9 +51,9 @@ function posedDecimal(rng: Rng, min: number, max: number): number {
 /**
  * Techniques opératoires, dans l'ordre où elles sont enseignées :
  * addition/soustraction posées et tables (CM1-T1), multiplication par un
- * chiffre (T2), multiplication à deux chiffres et division (T3) ; révision des
- * quatre opérations sur de plus grands nombres (CM2-T1), puis les décimaux —
- * addition et soustraction (T2), multiplication et division (T3).
+ * chiffre (T2), multiplication à deux chiffres et division (T3) ; au CM2, de
+ * plus grands nombres, et les décimaux, que le programme fait retrouver dès la
+ * rentrée : addition et soustraction (T1), multiplication et division (T3).
  */
 const OPERATION_KINDS: OperationKind[] = [
   {
@@ -126,7 +126,7 @@ const OPERATION_KINDS: OperationKind[] = [
   },
   {
     // Addition de nombres décimaux.
-    minStage: 5,
+    minStage: 4,
     posable: true,
     build: (rng, _stage, posed) => {
       const a = posed ? posedDecimal(rng, 10, 80) : randomDecimal(rng, 80);
@@ -136,7 +136,7 @@ const OPERATION_KINDS: OperationKind[] = [
   },
   {
     // Soustraction de nombres décimaux.
-    minStage: 5,
+    minStage: 4,
     posable: true,
     build: (rng, _stage, posed) => {
       if (posed) {

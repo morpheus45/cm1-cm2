@@ -25,11 +25,17 @@ apprise au premier trimestre ne soit plus jamais révisée.
 | Domaine | CM1 — T1 | CM1 — T2 | CM1 — T3 | CM2 — T1 | CM2 — T2 | CM2 — T3 |
 |---|---|---|---|---|---|---|
 | Conjugaison | Présent | + Imparfait | + Futur, Passé composé | Révision des 4 temps CM1 | + Passé simple, Plus-que-parfait | + Conditionnel présent |
-| Accords | Groupe nominal | Groupe nominal | Groupe nominal | Groupe nominal | + Participe passé avec être | + Participe passé avec être |
+| Accords | Groupe nominal | Groupe nominal | + Participe passé avec être | Groupe nominal, participe passé avec être | idem | idem |
 | Orthographe | a/à, et/est | + on/ont | + ce/se | Révision CM1 + son/sont | + ces/ses, ou/où | + c'est/s'est, synonymes |
-| Numération | Jusqu'à 9 999 | Jusqu'à 99 999 | Jusqu'à 999 999 + fractions | Révision CM1 + jusqu'au million | Jusqu'au milliard + décimaux | + pourcentages |
-| Calcul | Addition/soustraction posées, tables | + multiplication posée (1 chiffre) | + multiplication 2 chiffres, division | Révision 4 opérations + calcul mental | + décimaux (addition/soustraction) | + décimaux (multiplication/division) |
+| Numération | Jusqu'à 9 999 | Jusqu'à 99 999 | Jusqu'à 999 999 + fractions, décimaux | Révision CM1 + jusqu'au million | Jusqu'au milliard | + pourcentages |
+| Calcul | Addition/soustraction posées, tables | + multiplication posée (1 chiffre) | + multiplication 2 chiffres, division | Révision 4 opérations + décimaux (addition/soustraction) | idem | + décimaux (multiplication/division) |
 | Problèmes | 1 étape | + 2 étapes | 2 étapes (renforcement) | Révision 1-2 étapes | + plusieurs étapes | + proportionnalité |
+
+Mise à jour de septembre 2026 (audit de conformité au programme de 2025,
+BO n° 16 du 17 avril 2025) : les décimaux arrivent au CM1-T3 et reviennent
+dès le CM2-T1 ; l'accord du participe passé avec « être » arrive au CM1-T3,
+avec le passé composé ; le passé simple ne se conjugue qu'aux troisièmes
+personnes.
 
 ## Mécanique technique
 

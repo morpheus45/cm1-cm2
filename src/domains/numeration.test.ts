@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
-import { generate, numberToFrenchWords } from './numeration';
+import { ecritureChiffree, generate, numberToFrenchWords } from './numeration';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Trimester } from '../types';
 
@@ -19,8 +19,27 @@ const MAX_NUMBER: Record<string, number> = {
 function dicteeNumbers(level: Level, trimester: Trimester, seed: number, count: number): number[] {
   return generate(level, trimester, createRng(seed), count)
     .filter((q) => q.id.startsWith('numeration-dictee'))
-    .map((q) => Number(q.choices[q.correctIndex]));
+    .map((q) => Number(q.choices[q.correctIndex].replace(/\s/g, '')));
 }
+
+describe('ecritureChiffree', () => {
+  it('sépare les classes comme à l\'école, sans jamais couper la ligne', () => {
+    const nbsp = '\u00a0';
+    expect(ecritureChiffree(7)).toBe('7');
+    expect(ecritureChiffree(842)).toBe('842');
+    expect(ecritureChiffree(9390)).toBe(`9${nbsp}390`);
+    expect(ecritureChiffree(623188)).toBe(`623${nbsp}188`);
+    expect(ecritureChiffree(3095204238)).toBe(`3${nbsp}095${nbsp}204${nbsp}238`);
+  });
+
+  it('écrit ainsi toutes les réponses de la dictée de nombres', () => {
+    for (let seed = 1; seed <= 20; seed++) {
+      generate('CM2', 3, createRng(seed), 10)
+        .filter((q) => q.id.startsWith('numeration-dictee'))
+        .forEach((q) => q.choices.forEach((choice) => expect(choice).toBe(ecritureChiffree(Number(choice.replace(/\s/g, ''))))));
+    }
+  });
+});
 
 
 describe('numberToFrenchWords', () => {
@@ -103,7 +122,7 @@ describe('numeration generate', () => {
     questions.forEach((q) => {
       const match = q.prompt.match(/« (.+) »/);
       if (!match || !q.id.startsWith('numeration-dictee')) return;
-      expect(numberToFrenchWords(Number(q.choices[q.correctIndex]))).toBe(match[1]);
+      expect(numberToFrenchWords(Number(q.choices[q.correctIndex].replace(/\s/g, '')))).toBe(match[1]);
     });
   });
 
@@ -140,7 +159,7 @@ describe('numeration generate', () => {
     expect(bankPrompts('CM1', 2)).toHaveLength(0);
     expect(bankPrompts('CM1', 3).some((p) => p.includes('fraction'))).toBe(true);
 
-    expect(bankPrompts('CM2', 1).every((p) => p.includes('fraction'))).toBe(true);
+    expect(bankPrompts('CM2', 1).some((p) => p.includes('pourcentage'))).toBe(false);
 
     // Seules deux questions de banque par séance : il faut plusieurs tirages
     // pour voir toute la palette d'un trimestre.
@@ -151,8 +170,11 @@ describe('numeration generate', () => {
           .map((q) => q.prompt)
       ).flat();
 
-    expect(overManySeeds('CM1', 3).every((p) => p.includes('fraction'))).toBe(true);
-    expect(overManySeeds('CM2', 2).some((p) => p.includes('écriture'))).toBe(true);
+    // Les décimaux arrivent au CM1, avec les fractions (programme de 2025).
+    expect(overManySeeds('CM1', 3).some((p) => p.includes('fraction'))).toBe(true);
+    expect(overManySeeds('CM1', 3).some((p) => p.includes('virgule'))).toBe(true);
+    expect(overManySeeds('CM1', 3).some((p) => p.includes('pourcentage'))).toBe(false);
+    expect(overManySeeds('CM2', 1).some((p) => p.includes('écriture'))).toBe(true);
     expect(overManySeeds('CM2', 2).some((p) => p.includes('pourcentage'))).toBe(false);
     expect(overManySeeds('CM2', 3).some((p) => p.includes('pourcentage'))).toBe(true);
   });

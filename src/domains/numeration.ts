@@ -73,6 +73,15 @@ export function numberToFrenchWords(n: number): string {
   return parts.join(' ').trim();
 }
 
+/**
+ * Un nombre écrit en chiffres comme à l'école : les classes séparées par une
+ * espace, qui ne coupe jamais la ligne (« 3 095 204 238 »). Sans elle, un
+ * élève de CM2 devait déchiffrer « 3095204238 ».
+ */
+export function ecritureChiffree(n: number): string {
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0');
+}
+
 function distractorsForNumber(rng: Rng, correct: number): number[] {
   const digits = String(correct).length;
   const candidates = new Set<number>();
@@ -125,7 +134,11 @@ const DIGIT_RANGE: Record<Stage, { min: number; max: number }> = {
   6: { min: 4, max: 10 },
 };
 
-/** Fractions (CM1-T3), écriture décimale (CM2-T2), pourcentages (CM2-T3). */
+/**
+ * Fractions et écriture décimale (CM1-T3), pourcentages (CM2-T3). Le
+ * programme de 2025 introduit les décimaux au CM1, comme fractions décimales
+ * puis avec la virgule, et les fait retrouver au CM2 dès la rentrée.
+ */
 interface BankItem extends Staged {
   prompt: string;
   correct: string;
@@ -138,10 +151,10 @@ const BANK_ITEMS: BankItem[] = [
   { minStage: 3, prompt: 'Quelle fraction correspond à « un quart » ?', correct: '1/4', distractors: ['4/1', '1/2', '1/3'] },
   { minStage: 3, prompt: 'Quelle fraction correspond à « trois quarts » ?', correct: '3/4', distractors: ['4/3', '3/3', '1/4'] },
   { minStage: 3, prompt: 'Quelle fraction correspond à « deux tiers » ?', correct: '2/3', distractors: ['3/2', '1/3', '2/2'] },
-  { minStage: 5, prompt: "Quelle est l'écriture chiffrée de « douze virgule cinq » ?", correct: '12,5', distractors: ['120,5', '1,25', '12,05'] },
-  { minStage: 5, prompt: "Quelle est l'écriture chiffrée de « trois virgule sept » ?", correct: '3,7', distractors: ['37', '3,07', '30,7'] },
-  { minStage: 5, prompt: "Quelle est l'écriture chiffrée de « sept virgule zéro cinq » ?", correct: '7,05', distractors: ['7,5', '70,5', '0,705'] },
-  { minStage: 5, prompt: "Quelle est l'écriture décimale de la fraction 3/10 ?", correct: '0,3', distractors: ['3,0', '0,03', '30'] },
+  { minStage: 3, prompt: "Quelle est l'écriture chiffrée de « douze virgule cinq » ?", correct: '12,5', distractors: ['120,5', '1,25', '12,05'] },
+  { minStage: 3, prompt: "Quelle est l'écriture chiffrée de « trois virgule sept » ?", correct: '3,7', distractors: ['37', '3,07', '30,7'] },
+  { minStage: 3, prompt: "Quelle est l'écriture chiffrée de « sept virgule zéro cinq » ?", correct: '7,05', distractors: ['7,5', '70,5', '705'] },
+  { minStage: 3, prompt: "Quelle est l'écriture décimale de la fraction 3/10 ?", correct: '0,3', distractors: ['3,0', '0,03', '30'] },
   { minStage: 6, prompt: 'Quel pourcentage correspond à la moitié ?', correct: '50 %', distractors: ['25 %', '75 %', '100 %'] },
   { minStage: 6, prompt: 'Quel pourcentage correspond au quart ?', correct: '25 %', distractors: ['50 %', '75 %', '10 %'] },
   { minStage: 6, prompt: 'Quel pourcentage correspond aux trois quarts ?', correct: '75 %', distractors: ['25 %', '50 %', '100 %'] },
@@ -169,14 +182,14 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
     if (usedNumbers.has(correct)) continue;
     usedNumbers.add(correct);
     const distractors = distractorsForNumber(rng, correct);
-    const choices = rngShuffle(rng, [String(correct), ...distractors.map(String)]);
+    const choices = rngShuffle(rng, [correct, ...distractors].map(ecritureChiffree));
     dicteeQuestions.push({
       id: `numeration-dictee-${dicteeQuestions.length}-${correct}`,
       domain: 'numeration',
       instruction: 'Écris ce nombre en chiffres',
       prompt: `« ${numberToFrenchWords(correct)} »`,
       choices,
-      correctIndex: choices.indexOf(String(correct)),
+      correctIndex: choices.indexOf(ecritureChiffree(correct)),
     });
   }
 
