@@ -149,6 +149,16 @@ export function pendingDepositCount(): number {
   return readOutbox().length;
 }
 
+/** À la rentrée, ce qui attendait encore date de l'année passée, que la base
+ *  efface de toute façon : la file est vidée. */
+export function forgetOutbox(): void {
+  try {
+    localStorage.removeItem(OUTBOX_KEY);
+  } catch {
+    // Stockage refusé : il n'y avait rien à effacer.
+  }
+}
+
 export type DepositOutcome = 'sent' | 'queued' | 'rejected' | 'disabled';
 
 /**
@@ -230,6 +240,15 @@ export function cachedClassProblems(joinCode: string): ClassProblem[] {
     return parseClassProblems(stored.problems);
   } catch {
     return [];
+  }
+}
+
+/** À la rentrée : les problèmes de la classe de l'an dernier. */
+export function forgetClassProblems(): void {
+  try {
+    localStorage.removeItem(CLASS_PROBLEMS_KEY);
+  } catch {
+    // Stockage refusé : il n'y avait rien à effacer.
   }
 }
 

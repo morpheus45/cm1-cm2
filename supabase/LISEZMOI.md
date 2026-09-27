@@ -11,10 +11,15 @@ dans `.github/workflows/deploy.yml`.
    puis *Run*. Même chose ensuite, dans l'ordre, pour
    `002_problemes_de_la_classe.sql` (les problèmes de la classe et le chat),
    `003_corrections_pour_les_eleves.sql` (l'élève retrouve sa feuille
-   corrigée sur sa tablette) et `004_histoire_geographie.sql` (la base
+   corrigée sur sa tablette), `004_histoire_geographie.sql` (la base
    accepte les séances d'histoire et de géographie ; à passer **avant** de
    publier la version qui les propose, sinon ces séances restent en attente
-   sur les tablettes). Les fichiers sont rejouables : on les relance
+   sur les tablettes) et `005_conservation_une_annee.sql` (les résultats des
+   élèves ne se gardent qu'une année scolaire : chaque 1er septembre, ce qui
+   date de l'année précédente est effacé, par une tâche programmée chaque
+   nuit avec l'extension pg_cron, que le fichier active ; **attention**, le
+   lancer efface aussitôt ce qui date d'avant le 1er septembre de l'année en
+   cours). Les fichiers sont rejouables : on les relance
    après chaque modification, sans rien perdre. Pour copier sans rien abîmer, le plus sûr est le bouton
    « Copy raw file » de GitHub, sur la page du fichier.
 2. **Les comptes des maîtresses.** *Authentication → Sign In / Providers →
@@ -25,6 +30,19 @@ dans `.github/workflows/deploy.yml`.
    **Publishable** (`sb_publishable_…`) dans le secret
    [`VITE_SUPABASE_PUBLISHABLE_KEY`](https://github.com/morpheus45/cm1-cm2/settings/secrets/actions/new)
    du dépôt. Jamais la clé secrète : le build refuse alors de publier.
+4. **Les mots de passe.** *Authentication → Sign In / Providers → Email* :
+   **Minimum password length** à 12. L'application le demande déjà pour
+   créer un compte ; la base le fera respecter aussi.
+5. **Fermer les inscriptions**, une fois les comptes des maîtresses créés :
+   *Authentication → Sign In / Providers* : désactiver **Allow new users to
+   sign up**. Sans cela, n'importe qui peut se créer un compte (sans rien
+   voir des classes des autres, mais le projet n'a pas à héberger d'inconnus).
+   On le réactive le temps d'accueillir une nouvelle maîtresse.
+6. **Le contrat de sous-traitance.** Supabase propose un contrat conforme au
+   RGPD (DPA, [supabase.com/legal/dpa](https://supabase.com/legal/dpa)) : le
+   signer engage Supabase à ne traiter les données des élèves que pour le
+   compte de l'école. À conserver avec le registre des traitements de
+   l'école.
 
 Le résumé de chaque vérification, dans l'onglet *Actions* du dépôt, dit si la
 clé est en place — sans l'afficher.
@@ -63,6 +81,6 @@ lire.
 
 ## Vérifier
 
-Les règles d'accès se vérifient sur un PostgreSQL local jetable :
-`bash supabase/tests/lancer.sh`. La fonction se vérifie avec Deno :
+Les règles d'accès, et l'effacement de chaque rentrée, se vérifient sur un
+PostgreSQL local jetable : `bash supabase/tests/lancer.sh`. La fonction se vérifie avec Deno :
 `deno check --node-modules-dir=none supabase/functions/assistant-problemes/index.ts`.

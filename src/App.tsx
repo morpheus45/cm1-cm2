@@ -4,6 +4,7 @@ import type { Domain, Pupil } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
 import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
 import { loadPreferences, savePreferences } from './lib/preferences';
+import { loadStars, saveStars } from './lib/stars';
 import {
   forgetAllResults,
   forgetPupil,
@@ -36,6 +37,7 @@ import {
 } from './lib/pupilCorrections';
 import { CorrectedSheetScreen } from './components/CorrectedSheetScreen';
 import { HomeScreen, type StartOptions } from './components/HomeScreen';
+import { InformationsScreen } from './components/InformationsScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
 import { WrittenOperationScreen } from './components/WrittenOperationScreen';
@@ -53,26 +55,6 @@ type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee';
 /** Pas plus d'une demande de corrections par minute, même en allant et venant
  *  entre l'accueil et les séances. */
 const CORRECTIONS_CHECK_INTERVAL = 60_000;
-
-const STARS_KEY = 'exercices-cm1-cm2:stars';
-
-function loadStars(): number {
-  try {
-    const raw = localStorage.getItem(STARS_KEY);
-    const parsed = raw ? Number(raw) : 0;
-    return Number.isFinite(parsed) ? parsed : 0;
-  } catch {
-    return 0;
-  }
-}
-
-function saveStars(value: number) {
-  try {
-    localStorage.setItem(STARS_KEY, String(value));
-  } catch {
-    // Stockage refusé : l'élève garde ses étoiles le temps de la séance.
-  }
-}
 
 export function App() {
   const [screen, setScreen] = useState<Screen>('home');
@@ -126,9 +108,15 @@ export function App() {
   // Une simple ancre dans l'adresse : l'espace maîtresse n'est pas une autre
   // application, et le projet n'a pas besoin d'un routeur pour deux écrans.
   const [teacherView, setTeacherView] = useState(() => window.location.hash === '#maitresse');
+  // Les informations pour les familles : une page qu'on peut aussi ouvrir
+  // directement, par un lien donné aux parents.
+  const [infoView, setInfoView] = useState(() => window.location.hash === '#informations');
 
   useEffect(() => {
-    const sync = () => setTeacherView(window.location.hash === '#maitresse');
+    const sync = () => {
+      setTeacherView(window.location.hash === '#maitresse');
+      setInfoView(window.location.hash === '#informations');
+    };
     window.addEventListener('hashchange', sync);
     return () => window.removeEventListener('hashchange', sync);
   }, []);
@@ -282,6 +270,17 @@ export function App() {
     updateCorrections((list) => markSeen(list, correction.sessionId));
     setScreen('corrigee');
   };
+
+  if (infoView) {
+    return (
+      <InformationsScreen
+        onBack={() => {
+          window.location.hash = '';
+          setInfoView(false);
+        }}
+      />
+    );
+  }
 
   if (teacherView) {
     return (

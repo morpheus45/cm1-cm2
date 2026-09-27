@@ -30,7 +30,10 @@ export function pupilKey(pupil: Pupil): string {
 }
 
 export function pupilLabel(pupil: Pupil): string {
-  const label = [pupil.firstName.trim(), pupil.lastName.trim()].filter(Boolean).join(' ');
+  const lastName = pupil.lastName.trim();
+  // Une initiale seule s'écrit avec son point : « Léa M. ».
+  const shown = /^\p{L}$/u.test(lastName) ? `${lastName}.` : lastName;
+  const label = [pupil.firstName.trim(), shown].filter(Boolean).join(' ');
   return label || 'Élève sans nom';
 }
 

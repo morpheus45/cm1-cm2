@@ -166,6 +166,8 @@ describe('l\'identité d\'un élève', () => {
   it('affiche prénom et nom, et se rabat sur une mention quand il n\'y a rien', () => {
     expect(pupilLabel({ firstName: 'Nolhan', lastName: 'Martin' })).toBe('Nolhan Martin');
     expect(pupilLabel({ firstName: 'Nolhan', lastName: '' })).toBe('Nolhan');
+    expect(pupilLabel({ firstName: 'Léa', lastName: 'M' })).toBe('Léa M.');
+    expect(pupilLabel({ firstName: 'Léa', lastName: 'É' })).toBe('Léa É.');
     expect(pupilLabel({ firstName: '  ', lastName: '' })).toBe('Élève sans nom');
   });
 });

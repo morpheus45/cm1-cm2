@@ -7,6 +7,11 @@ import '@fontsource/andika/latin-400.css';
 import '@fontsource/andika/latin-700.css';
 import '@fontsource/playwrite-fr-moderne/latin-400.css';
 import './index.css';
+import { applyRetention } from './lib/conservation';
+
+// Une année scolaire, pas davantage : ce qui date d'avant la rentrée est
+// effacé avant même l'affichage.
+applyRetention();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

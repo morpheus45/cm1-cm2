@@ -4,6 +4,7 @@ import { loadEnv } from 'vite';
 import { defineConfig, type Plugin } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import { isSecretKey } from './src/lib/publicKey';
+import { contentSecurityPolicy } from './src/lib/securityPolicy';
 
 const BASE = '/cm1-cm2/';
 
@@ -35,6 +36,23 @@ function serviceWorker(base: string): Plugin {
         fileName: 'sw.js',
         source: renderServiceWorker({ base, version, urls }),
       });
+    },
+  };
+}
+
+/**
+ * Écrit la politique de sécurité du contenu en tête de la page publiée
+ * (src/lib/securityPolicy.ts). Seulement au build : en développement, le
+ * rechargement à chaud de Vite a besoin de scripts que la politique refuse.
+ */
+function securityPolicy(supabaseUrl: string | undefined): Plugin {
+  return {
+    name: 'exercices-politique-de-securite',
+    apply: 'build',
+    transformIndexHtml(html) {
+      const meta = `<meta http-equiv="Content-Security-Policy" content="${contentSecurityPolicy(supabaseUrl)}" />`;
+      if (!html.includes('<meta charset="UTF-8" />')) throw new Error('index.html : balise charset introuvable.');
+      return html.replace('<meta charset="UTF-8" />', `<meta charset="UTF-8" />\n    ${meta}`);
     },
   };
 }
@@ -102,7 +120,8 @@ export default defineConfig(({ mode }) => {
   // Tout ce qui commence par VITE_ est recopié en clair dans le code du site.
   // Une clé secrète mise là par erreur serait lisible par n'importe qui :
   // mieux vaut un build qui échoue, et donc rien de publié.
-  const key = loadEnv(mode, process.cwd(), 'VITE_').VITE_SUPABASE_PUBLISHABLE_KEY ?? '';
+  const env = loadEnv(mode, process.cwd(), 'VITE_');
+  const key = env.VITE_SUPABASE_PUBLISHABLE_KEY ?? '';
   if (isSecretKey(key)) {
     throw new Error(
       'VITE_SUPABASE_PUBLISHABLE_KEY contient une clé SECRÈTE de Supabase. ' +
@@ -112,7 +131,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     base: BASE,
-    plugins: [react(), serviceWorker(BASE)],
+    plugins: [react(), serviceWorker(BASE), securityPolicy(env.VITE_SUPABASE_URL)],
     test: {
       environment: 'node',
     },
