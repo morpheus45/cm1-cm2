@@ -1,4 +1,4 @@
-import { ALL_DOMAINS, ALL_SUBJECTS, pupilKey, subjectOf } from '../types';
+import { ALL_DOMAINS, ALL_SUBJECTS, pupilKey, SUBJECT_DOMAINS, subjectOf } from '../types';
 import type { Activity, Domain, Level, Pupil, Subject, Trimester } from '../types';
 
 /** Ce qu'une séance a produit, notion par notion. */
@@ -140,7 +140,7 @@ const STORAGE_KEY = 'exercices-cm1-cm2:resultats';
  *  navigateur est limité, et une année scolaire suffit largement. */
 const MAX_SESSIONS = 300;
 
-function isDomainResult(value: unknown): value is DomainResult {
+export function isDomainResult(value: unknown): value is DomainResult {
   if (typeof value !== 'object' || value === null) return false;
   const entry = value as Record<string, unknown>;
   return (
@@ -276,6 +276,38 @@ export function weakestDomains(
     .map((summary) => summary.domain);
 }
 
+/**
+ * Les notions d'une révision ciblée.
+ *
+ * Après une évaluation, la révision reprend d'abord ce que l'évaluation a
+ * montré : les lacunes (maîtrise insuffisante), puis les fragilités (maîtrise
+ * fragile). Une notion sort de la liste quand l'élève l'a retravaillée depuis
+ * et la réussit : huit réponses au moins, à un niveau satisfaisant. La suite
+ * vient des notions les plus fragiles de toutes ses séances.
+ *
+ * Un élève qui n'a encore rien fait travaille toute la matière.
+ */
+export function revisionDomains(own: SessionResult[], subject: Subject, count: number): Domain[] {
+  if (own.length === 0) return [...SUBJECT_DOMAINS[subject]];
+  const general = weakestDomains(summariseByDomain(own), subject, SUBJECT_DOMAINS[subject].length);
+  const latest = own
+    .filter((session) => session.activity === 'evaluation' && session.subject === subject)
+    .sort((a, b) => b.at.localeCompare(a.at))[0];
+  if (!latest) return general.slice(0, Math.max(1, count));
+  const since = summariseByDomain(own.filter((session) => session.at > latest.at && session.activity !== 'evaluation'));
+  const mended = (domain: Domain) => {
+    const summary = since.find((entry) => entry.domain === domain);
+    return summary?.mastery !== null && summary?.mastery !== undefined && summary.mastery >= 3;
+  };
+  const shown = latest.domains
+    .filter((entry) => entry.total > 0 && subjectOf(entry.domain) === subject && masteryOf(entry.correct / entry.total) <= 2)
+    // Les lacunes d'abord ; à égalité, l'ordre des notions dans la matière.
+    .sort((a, b) => a.correct / a.total - b.correct / b.total)
+    .map((entry) => entry.domain)
+    .filter((domain) => !mended(domain));
+  return [...new Set([...shown, ...general])].slice(0, Math.max(1, count));
+}
+
 export function loadResults(): SessionResult[] {
   try {
     return parseResults(localStorage.getItem(STORAGE_KEY));
@@ -296,6 +328,14 @@ export function recordSession(session: SessionResult): SessionResult[] {
   const next = [...loadResults(), session];
   saveResults(next);
   return next.slice(-MAX_SESSIONS);
+}
+
+/** Efface une séance, et elle seule : une évaluation que la maîtresse a
+ *  demandé de refaire. */
+export function forgetSession(id: string): SessionResult[] {
+  const kept = loadResults().filter((session) => session.id !== id);
+  saveResults(kept);
+  return kept;
 }
 
 /** Efface le dossier d'un élève, et lui seul. */

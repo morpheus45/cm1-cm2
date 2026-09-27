@@ -1,5 +1,16 @@
-import { pupilLabel, type Level, type Trimester } from '../types';
+import { pupilLabel, type Level, type Pupil, type Subject, type Trimester } from '../types';
+import { ZONES, type PeriodNumber, type Zone } from './calendrier';
 import { cloudClient } from './cloud';
+import {
+  parseCopies,
+  parseEvaluationSummaries,
+  withDetail,
+  type EvaluationCopy,
+  type EvaluationItem,
+  type EvaluationStatus,
+  type EvaluationSummary,
+  type TeacherEvaluation,
+} from './evaluation';
 import { worksheetFromRow, type Corrections } from './correction';
 import { parseClassProblems, proposalToRow, type ClassProblem, type ProblemProposal } from './classProblems';
 import { parseResults, type SessionResult } from './results';
@@ -11,8 +22,13 @@ export interface CloudClass {
   name: string;
   level: Level;
   joinCode: string;
+  /** La zone de vacances de l'école ; `null` tant que la maîtresse ne l'a
+   *  pas choisie. */
+  zone: Zone | null;
   /** Les séances de tous ses élèves, au format de l'application. */
   sessions: SessionResult[];
+  /** Tous les élèves de la classe, même ceux qui n'ont encore rien fait. */
+  pupils: Pupil[];
   /** Pour pouvoir effacer le dossier d'un élève dans la base. */
   pupilIds: Record<string, string>;
 }
@@ -39,6 +55,7 @@ interface RawClass {
   name: string;
   level: string;
   join_code: string;
+  zone?: string | null;
   pupils: RawPupil[];
 }
 
@@ -77,7 +94,9 @@ export function mapClasses(raw: unknown): CloudClass[] {
         name: entry.name,
         level: entry.level === 'CM2' ? 'CM2' : 'CM1',
         joinCode: entry.join_code,
+        zone: ZONES.includes(entry.zone as Zone) ? (entry.zone as Zone) : null,
         sessions: parseResults(JSON.stringify(candidates)),
+        pupils: pupils.map((pupil) => ({ firstName: pupil.first_name ?? '', lastName: pupil.last_name ?? '' })),
         pupilIds,
       },
     ];
@@ -159,6 +178,13 @@ export async function createClass(name: string, level: Level): Promise<{ id: str
   if (error) throw new Error(frenchAuthError(error.message));
   const row = (Array.isArray(data) ? data[0] : data) as { class_id: string; join_code: string };
   return { id: row.class_id, joinCode: row.join_code };
+}
+
+/** La zone de vacances de l'école, qui place les périodes du calendrier. */
+export async function setClassZone(classId: string, zone: Zone): Promise<void> {
+  const { data, error } = await (await client()).from('classes').update({ zone }).eq('id', classId).select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) throw new Error("La zone n'a pas été enregistrée.");
 }
 
 /** Efface un élève et, en cascade, toutes ses séances. */
@@ -321,6 +347,91 @@ export async function setClassProblemActive(id: string, actif: boolean): Promise
 export async function deleteClassProblem(id: string): Promise<void> {
   const { error } = await (await client()).from('problemes').delete().eq('id', id);
   if (error) throw new Error(frenchAuthError(error.message));
+}
+
+// --- Les évaluations -----------------------------------------------------------
+
+/** Les colonnes de la table `evaluations` qu'écrit l'accès maîtresse —
+ *  comparées au fichier SQL par un test. */
+export const EVALUATION_COLUMNS = ['class_id', 'title', 'subject', 'period', 'trimester', 'items', 'status', 'opened_at', 'closed_at'] as const;
+
+/** Les évaluations de la classe, sans leurs questions : de quoi faire la
+ *  liste, et voir les copies arriver. */
+export async function readEvaluations(classId: string): Promise<EvaluationSummary[]> {
+  const { data, error } = await (await client()).rpc('lire_evaluations', { p_class_id: classId });
+  if (error) throw new Error(frenchAuthError(error.message));
+  return parseEvaluationSummaries(data);
+}
+
+/** Les copies reçues pour une évaluation, avec le nom de chaque élève. */
+export async function readCopies(evaluationId: string): Promise<EvaluationCopy[]> {
+  const { data, error } = await (await client()).rpc('lire_copies', { p_evaluation_id: evaluationId });
+  if (error) throw new Error(frenchAuthError(error.message));
+  return parseCopies(data);
+}
+
+/** Une évaluation ouverte par la maîtresse : ses questions, puis ses copies. */
+export async function readEvaluation(summary: EvaluationSummary): Promise<TeacherEvaluation> {
+  const supabase = await client();
+  const [items, copies] = await Promise.all([
+    supabase.from('evaluations').select('items').eq('id', summary.id).maybeSingle(),
+    supabase.rpc('lire_copies', { p_evaluation_id: summary.id }),
+  ]);
+  const error = items.error ?? copies.error;
+  if (error) throw new Error(frenchAuthError(error.message));
+  const evaluation = withDetail(summary, (items.data as { items?: unknown } | null)?.items, copies.data);
+  if (!evaluation) throw new Error('Cette évaluation est introuvable, ou illisible.');
+  return evaluation;
+}
+
+export interface EvaluationDraft {
+  title: string;
+  subject: Subject;
+  period: PeriodNumber | null;
+  trimester: Trimester;
+  items: EvaluationItem[];
+}
+
+/** Enregistre une évaluation préparée ; rend son identifiant. */
+export async function createEvaluation(classId: string, draft: EvaluationDraft): Promise<string> {
+  const { data, error } = await (await client())
+    .from('evaluations')
+    .insert({
+      class_id: classId,
+      title: draft.title.trim(),
+      subject: draft.subject,
+      period: draft.period,
+      trimester: draft.trimester,
+      items: draft.items,
+    })
+    .select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  const id = Array.isArray(data) && data.length === 1 ? (data[0] as { id?: unknown }).id : null;
+  if (typeof id !== 'string') throw new Error("L'évaluation n'a pas été enregistrée.");
+  return id;
+}
+
+/** Ouvre l'évaluation aux élèves, ou la termine. */
+export async function setEvaluationStatus(id: string, status: Exclude<EvaluationStatus, 'preparee'>): Promise<void> {
+  const now = new Date().toISOString();
+  const change = status === 'ouverte' ? { status, opened_at: now, closed_at: null } : { status, closed_at: now };
+  const { data, error } = await (await client()).from('evaluations').update(change).eq('id', id).select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) throw new Error("Cette évaluation n'est plus dans votre classe.");
+}
+
+/** Supprime une évaluation, et avec elle les copies et leurs résultats. */
+export async function deleteEvaluation(id: string): Promise<void> {
+  const { error } = await (await client()).from('evaluations').delete().eq('id', id);
+  if (error) throw new Error(frenchAuthError(error.message));
+}
+
+/** Efface la copie d'un élève, qui pourra refaire l'évaluation tant
+ *  qu'elle est ouverte. */
+export async function redoCopy(copyId: string): Promise<void> {
+  const { data, error } = await (await client()).from('evaluation_copies').delete().eq('id', copyId).select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) throw new Error("Cette copie n'est plus dans votre classe.");
 }
 
 export type { Trimester };

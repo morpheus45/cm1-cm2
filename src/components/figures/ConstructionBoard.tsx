@@ -25,7 +25,11 @@ interface ConstructionBoardProps {
   accent: string;
   /** Une fois validé, la grille montre la correction et ne bouge plus. */
   validated: boolean;
-  onValidate: (right: boolean) => void;
+  /** Le verdict, et les points posés : une évaluation les garde dans la
+   *  copie de l'élève. */
+  onValidate: (right: boolean, placed: Node[]) => void;
+  /** « Valider » par défaut. */
+  validateLabel?: string;
 }
 
 const plural = (count: number, word: string) => `${count} ${word}${count > 1 ? 's' : ''}`;
@@ -44,7 +48,7 @@ function starPath([cx, cy]: Point, radius: number): string {
  * nouveau, puis valide. La correction se trace alors en vert ; ses points
  * justes restent verts, les autres passent en orange.
  */
-export function ConstructionBoard({ figure, construction, accent, validated, onValidate }: ConstructionBoardProps) {
+export function ConstructionBoard({ figure, construction, accent, validated, onValidate, validateLabel = 'Valider' }: ConstructionBoardProps) {
   const { grid, target, count } = construction;
   const [placed, setPlaced] = useState<Node[]>([]);
   const [cursor, setCursor] = useState<Node | null>(null);
@@ -213,9 +217,9 @@ export function ConstructionBoard({ figure, construction, accent, validated, onV
             type="button"
             className="bouton-encre flex-[2] py-3 text-lg disabled:opacity-50"
             disabled={placed.length !== count}
-            onClick={() => onValidate(isConstructionRight(construction, placed))}
+            onClick={() => onValidate(isConstructionRight(construction, placed), placed)}
           >
-            Valider
+            {validateLabel}
           </button>
         </div>
       )}

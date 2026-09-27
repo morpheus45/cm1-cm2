@@ -245,7 +245,7 @@ l'écran les montre désormais.
 - En tête de l'espace maîtresse, **« Mes classes »** : une étiquette par
   classe (nom et niveau), celle ouverte à l'encre. Tout ce qui suit — le
   code au tableau, les dossiers, les feuilles à corriger, les problèmes avec
-  Claude — est celui de la classe ouverte.
+  l'assistant — est celui de la classe ouverte.
 - Une **pastille rouge** sur une classe dit combien de feuilles d'opérations
   y attendent une correction, pour ne pas en oublier une en travaillant sur
   l'autre (lue aussi par les lecteurs d'écran).

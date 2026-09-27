@@ -1,4 +1,4 @@
-# Chat avec Claude : les problèmes de la classe (design)
+# L'assistant de Cédric : les problèmes de la classe (design)
 
 ## Demande
 
@@ -10,16 +10,16 @@ le reste doit lui être soumis, et la réponse doit le dire.
 
 ## Ce que fait le chat
 
-- La maîtresse ouvre **Problèmes de la classe, avec Claude** depuis son
-  bandeau. Elle écrit (ou choisit une suggestion) ; Claude répond en deux ou
-  trois phrases et propose au plus cinq problèmes.
+- La maîtresse ouvre **Problèmes de la classe, avec l'assistant de Cédric**
+  depuis son bandeau. Elle écrit (ou choisit une suggestion) ; l'assistant
+  répond en deux ou trois phrases et propose au plus cinq problèmes.
 - Chaque proposition arrive avec son **calcul** (« 96 ÷ 4 »), sa réponse, trois
   fausses réponses (erreurs typiques d'élève) et un trimestre.
   **L'application refait le calcul** : « Calcul vérifié » ou « Le calcul donne
   21, pas 22 ». Un problème faux ne peut pas être ajouté.
 - **Seule la maîtresse ajoute** un problème à la classe. Elle peut le retirer,
-  le remettre, le supprimer, ou le reprendre avec Claude (« Modifier avec
-  Claude » prépare la demande).
+  le remettre, le supprimer, ou le reprendre avec l'assistant (« Modifier avec
+  l'assistant » prépare la demande).
 - **Les élèves** reçoivent les problèmes en service de leur classe au
   lancement de l'application (code de classe), gardés sur la tablette pour le
   hors-ligne. Dans une séance de maths, ils prennent au plus la moitié du bloc
@@ -29,11 +29,11 @@ le reste doit lui être soumis, et la réponse doit le dire.
 ## Le périmètre, garanti par la fonction
 
 Hors des corrections et adaptations de l'application, la demande n'est pas
-traitée : Claude signale `hors_champ`, la fonction range la demande dans
+traitée : le modèle signale `hors_champ`, la fonction range la demande dans
 `demandes_administrateur` (avec l'adresse de la maîtresse) et **ajoute
 elle-même** à la réponse : « Cette demande sort de ce que je peux faire ici :
-je l'ai transmise à l'administrateur de l'application, qui vous répondra. »
-La phrase ne dépend pas de Claude.
+je l'ai transmise à Cédric, l'administrateur de l'application, qui vous
+répondra. » La phrase ne dépend pas du modèle.
 
 ## Architecture
 
@@ -64,7 +64,7 @@ La phrase ne dépend pas de Claude.
 - Base : banc d'essai PostgreSQL étendu (anonyme, maîtresses A/B, problèmes
   retirés, compteur, demandes pour l'administrateur) ; il échoue si la RLS des
   problèmes est retirée.
-- Fonction : 22 contrôles contre un faux serveur Claude et la base d'essai
+- Fonction : 22 contrôles contre un faux serveur d'IA et la base d'essai
   (accès, requête envoyée, clé jamais renvoyée, conversation, hors cadre,
   refus, réponse illisible, entrées mal formées, plafond, clé absente). La CI
   vérifie qu'elle se compile avec les bibliothèques aux versions déclarées.
@@ -72,5 +72,5 @@ La phrase ne dépend pas de Claude.
   propositions (une vérifiée, une refusée), ajoute la bonne, voit sa demande
   hors cadre transmise ; un élève de sa classe reçoit le problème dans sa
   séance de maths, avec ses quatre réponses.
-- Pas encore vérifié : un échange avec le vrai Claude — il faut la clé API de
+- Pas encore vérifié : un échange avec le vrai modèle — il faut la clé API de
   l'administrateur, qui ne doit jamais transiter par ici.

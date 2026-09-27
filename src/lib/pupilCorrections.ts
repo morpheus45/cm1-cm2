@@ -46,10 +46,10 @@ export interface ReceivedCorrection {
 }
 
 /** Les séances dont la tablette demande la correction : ses opérations
- *  posées, les plus récentes d'abord. */
+ *  posées, les plus récentes d'abord. Une évaluation peut en contenir aussi. */
 export function sessionIdsToAsk(sessions: SessionResult[]): string[] {
   return sessions
-    .filter((session) => session.activity === 'posees')
+    .filter((session) => session.activity === 'posees' || session.activity === 'evaluation')
     .sort((a, b) => b.at.localeCompare(a.at))
     .slice(0, MAX_ASKED)
     .map((session) => session.id);

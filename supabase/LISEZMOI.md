@@ -19,7 +19,10 @@ dans `.github/workflows/deploy.yml`.
    date de l'année précédente est effacé, par une tâche programmée chaque
    nuit avec l'extension pg_cron, que le fichier active ; **attention**, le
    lancer efface aussitôt ce qui date d'avant le 1er septembre de l'année en
-   cours). Les fichiers sont rejouables : on les relance
+   cours), puis `006_evaluations.sql` (les évaluations de la maîtresse ; à
+   passer **avant** de publier la version qui les propose, sinon le bouton
+   « Évaluations de la classe » annonce que cette partie n'est pas
+   installée). Les fichiers sont rejouables : on les relance
    après chaque modification, sans rien perdre. Pour copier sans rien abîmer, le plus sûr est le bouton
    « Copy raw file » de GitHub, sur la page du fichier.
 2. **Les comptes des maîtresses.** *Authentication → Sign In / Providers →
@@ -47,10 +50,10 @@ dans `.github/workflows/deploy.yml`.
 Le résumé de chaque vérification, dans l'onglet *Actions* du dépôt, dit si la
 clé est en place — sans l'afficher.
 
-## Le chat avec Claude (espace maîtresse)
+## L'assistant de Cédric (espace maîtresse)
 
-La maîtresse y prépare, avec Claude, les problèmes de sa classe. Claude ne
-fait que proposer : l'application refait chaque calcul, et seule la maîtresse
+La maîtresse y prépare, avec l'assistant, les problèmes de sa classe. L'assistant
+ne fait que proposer : l'application refait chaque calcul, et seule la maîtresse
 ajoute un problème à la classe.
 
 1. **Une clé API Anthropic.** Sur [platform.claude.com](https://platform.claude.com)

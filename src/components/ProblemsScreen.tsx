@@ -24,7 +24,7 @@ interface ProblemsScreenProps {
 
 interface Bulle {
   id: number;
-  de: 'maitresse' | 'claude';
+  de: 'maitresse' | 'assistant';
   texte: string;
   propositions?: ProblemProposal[];
   horsChamp?: boolean;
@@ -102,9 +102,10 @@ function Proposition({
 }
 
 /**
- * Les problèmes que la maîtresse prépare pour sa classe, avec Claude.
+ * Les problèmes que la maîtresse prépare pour sa classe, avec l'assistant de
+ * Cédric.
  *
- * Claude ne fait que proposer : l'application refait chaque calcul, et
+ * L'assistant ne fait que proposer : l'application refait chaque calcul, et
  * seule la maîtresse ajoute un problème à la classe. Une demande hors du
  * cadre (autre chose que corriger ou adapter l'application) n'est pas traitée :
  * elle est transmise à l'administrateur, et la réponse le dit.
@@ -151,9 +152,9 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
     try {
       const reply = await askAssistant(level, [...turns.current, { role: 'user', content: asked }]);
       turns.current = withReply(turns.current, asked, reply);
-      push({ de: 'claude', texte: reply.message, propositions: reply.problemes, horsChamp: reply.horsChamp });
+      push({ de: 'assistant', texte: reply.message, propositions: reply.problemes, horsChamp: reply.horsChamp });
     } catch (e) {
-      push({ de: 'claude', texte: (e as Error).message, erreur: true });
+      push({ de: 'assistant', texte: (e as Error).message, erreur: true });
     } finally {
       setSending(false);
     }
@@ -181,13 +182,13 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
 
         <section className={fiche} aria-labelledby="chat-titre">
           <h2 id="chat-titre" className="text-lg font-bold text-encre">
-            Préparer avec Claude
+            Préparer avec l'assistant de Cédric
           </h2>
           <p className="text-sm text-encre-douce">
-            Claude vous aide à créer, corriger ou adapter les problèmes de votre classe. L'application refait chaque
-            calcul, et rien n'arrive aux élèves sans votre accord. Toute autre demande est transmise à
-            l'administrateur de l'application. N'écrivez ici aucun nom d'élève : vos messages sont envoyés au
-            service Claude d'Anthropic.
+            L'assistant de Cédric vous aide à créer, corriger ou adapter les problèmes de votre classe. C'est une
+            intelligence artificielle : l'application refait chaque calcul, et rien n'arrive aux élèves sans votre
+            accord. Toute autre demande est transmise à Cédric, l'administrateur de l'application. N'écrivez ici
+            aucun nom d'élève : vos messages sont envoyés à un service d'intelligence artificielle externe.
           </p>
 
           <div className="flex flex-col gap-3" aria-live="polite">
@@ -224,7 +225,7 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
                     }
                   >
                     <span className="mb-0.5 block text-xs font-bold uppercase tracking-wider" style={{ color: VIOLET.deep }}>
-                      Claude
+                      Assistant de Cédric
                     </span>
                     {bulle.texte}
                   </p>
@@ -248,7 +249,7 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
             )}
             {sending && (
               <p className="self-start rounded-2xl border-2 border-dashed px-4 py-2 text-sm font-bold text-encre-douce" style={{ borderColor: VIOLET.deep }}>
-                Claude réfléchit…
+                L'assistant réfléchit…
               </p>
             )}
             <div ref={logEnd} />
@@ -275,7 +276,7 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
               className="rounded-xl border-2 border-encre/25 bg-white px-4 py-3 text-base text-encre focus:border-encre focus:outline-none"
             />
             <button type="submit" disabled={sending || question.trim() === ''} className="bouton-encre self-end px-6 py-3 text-base">
-              {sending ? 'Envoi…' : 'Envoyer à Claude'}
+              {sending ? 'Envoi…' : "Envoyer à l'assistant"}
             </button>
           </form>
         </section>
@@ -349,7 +350,7 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
                       }}
                       className="etiquette px-3 py-1.5 text-sm"
                     >
-                      Modifier avec Claude
+                      Modifier avec l'assistant
                     </button>
                     <button
                       type="button"

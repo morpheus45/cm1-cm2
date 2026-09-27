@@ -2,11 +2,12 @@ import type { Question, Trimester } from '../types';
 import { rngInt, rngPickN, rngShuffle, type Rng } from './seededRandom';
 
 /**
- * Les problèmes que la maîtresse prépare pour sa classe, avec Claude.
+ * Les problèmes que la maîtresse prépare pour sa classe, avec l'assistant de
+ * Cédric.
  *
- * Claude propose ; l'application refait chaque calcul ; la maîtresse valide.
- * Un problème dont le calcul ne donne pas la réponse annoncée ne peut pas
- * être ajouté : un élève ne doit jamais être compté faux sur une bonne
+ * L'assistant propose ; l'application refait chaque calcul ; la maîtresse
+ * valide. Un problème dont le calcul ne donne pas la réponse annoncée ne peut
+ * pas être ajouté : un élève ne doit jamais être compté faux sur une bonne
  * réponse.
  */
 
@@ -21,7 +22,7 @@ export interface ClassProblem {
   trimestre: Trimester;
 }
 
-/** Ce que Claude propose, avant la vérification et la validation. */
+/** Ce que l'assistant propose, avant la vérification et la validation. */
 export interface ProblemProposal {
   enonce: string;
   calcul: string;

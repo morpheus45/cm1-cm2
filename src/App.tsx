@@ -1,5 +1,5 @@
 import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
-import { pupilKey, subjectOf, SUBJECT_DOMAINS } from './types';
+import { pupilKey, subjectOf } from './types';
 import type { Domain, Pupil } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
 import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
@@ -8,13 +8,30 @@ import { loadStars, saveStars } from './lib/stars';
 import {
   forgetAllResults,
   forgetPupil,
+  forgetSession,
   loadResults,
   recordSession,
-  summariseByDomain,
-  weakestDomains,
+  revisionDomains,
   type DomainResult,
   type SessionResult,
 } from './lib/results';
+import { evaluationResults, isReady, type EvaluationAnswer, type OpenEvaluation, type ReadyEvaluation } from './lib/evaluation';
+import {
+  cachedOpenEvaluations,
+  copyParams,
+  deliverCopies,
+  enqueueCopy,
+  evaluationState,
+  loadProgress,
+  pendingCopyIds,
+  progressFor,
+  refreshOpenEvaluations,
+  saveProgress,
+  withoutProgress,
+  withProgress,
+  type CopyOutcome,
+  type EvaluationProgress,
+} from './lib/pupilEvaluations';
 import { isAnswerCorrect, worksheetScore } from './lib/worksheet';
 import {
   depositSession,
@@ -36,7 +53,8 @@ import {
   type StoredCorrection,
 } from './lib/pupilCorrections';
 import { CorrectedSheetScreen } from './components/CorrectedSheetScreen';
-import { HomeScreen, type StartOptions } from './components/HomeScreen';
+import { EvaluationDoneScreen, EvaluationScreen } from './components/EvaluationScreen';
+import { HomeScreen, type ClassEvaluations, type StartOptions } from './components/HomeScreen';
 import { InformationsScreen } from './components/InformationsScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
@@ -50,7 +68,15 @@ const TeacherSpace = lazy(() =>
   import('./components/TeacherSpace').then((module) => ({ default: module.TeacherSpace }))
 );
 
-type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee';
+type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee' | 'evaluation' | 'evaluationFin';
+
+/** L'évaluation qu'un élève est en train de faire. */
+interface TakenEvaluation {
+  evaluation: ReadyEvaluation;
+  pupil: Pupil;
+  joinCode: string;
+  answers: EvaluationAnswer[];
+}
 
 /** Pas plus d'une demande de corrections par minute, même en allant et venant
  *  entre l'accueil et les séances. */
@@ -73,6 +99,45 @@ export function App() {
   const [corrections, setCorrections] = useState(loadStoredCorrections);
   const [openedCorrection, setOpenedCorrection] = useState<ReceivedCorrection | null>(null);
   const lastCorrectionsCheck = useRef(0);
+  // Les évaluations ouvertes par la maîtresse : celles gardées sur la
+  // tablette d'abord, pour les montrer même hors connexion.
+  const [classEvaluations, setClassEvaluations] = useState<ClassEvaluations & { fetchedAt: string | null }>(() => ({
+    joinCode: preferences.joinCode,
+    ...cachedOpenEvaluations(preferences.joinCode),
+  }));
+  const [progress, setProgress] = useState(loadProgress);
+  const [pendingCopies, setPendingCopies] = useState(pendingCopyIds);
+  const [taking, setTaking] = useState<TakenEvaluation | null>(null);
+  const [copyOutcome, setCopyOutcome] = useState<CopyOutcome | 'pending'>('pending');
+
+  const syncEvaluations = useCallback(() => {
+    setProgress(loadProgress());
+    setPendingCopies(pendingCopyIds());
+  }, []);
+
+  // Les copies qui attendaient partent d'abord ; la liste qui revient sait
+  // alors lesquelles la base a reçues.
+  const refreshEvaluations = useCallback(
+    (code: string) => {
+      setClassEvaluations((current) =>
+        current.joinCode === code ? current : { joinCode: code, ...cachedOpenEvaluations(code) }
+      );
+      void deliverCopies()
+        .then(() => refreshOpenEvaluations(code))
+        .then((fresh) => {
+          if (fresh) setClassEvaluations({ joinCode: code, ...fresh });
+          syncEvaluations();
+        })
+        .catch(() => syncEvaluations());
+    },
+    [syncEvaluations]
+  );
+
+  const evaluationStateOf = useCallback(
+    (evaluation: OpenEvaluation, pupil: Pupil) =>
+      evaluationState(evaluation, pupil, progress, pendingCopies, classEvaluations.fetchedAt),
+    [progress, pendingCopies, classEvaluations.fetchedAt]
+  );
 
   const updateCorrections = useCallback((change: (list: StoredCorrection[]) => StoredCorrection[]) => {
     setCorrections((list) => {
@@ -149,8 +214,7 @@ export function App() {
     }
   };
 
-  const startSession = (options: StartOptions) => {
-    const seed = Date.now();
+  const rememberChoices = (options: StartOptions) => {
     savePreferences({
       name: options.name,
       lastName: options.lastName,
@@ -162,21 +226,22 @@ export function App() {
       activity: options.activity,
     });
     setConfig(options);
+  };
+
+  const startSession = (options: StartOptions) => {
+    const seed = Date.now();
+    rememberChoices(options);
     setIndex(0);
     setScore(0);
     setPerDomain({});
 
-    // La révision ciblée choisit elle-même les notions : les plus fragiles de
-    // cet élève, dans la matière demandée. Un élève qui n'a encore rien fait
-    // travaille simplement toute la matière.
+    // La révision ciblée choisit elle-même les notions : d'abord les lacunes
+    // et les fragilités de la dernière évaluation, puis les notions les plus
+    // fragiles de cet élève, dans la matière demandée. Un élève qui n'a
+    // encore rien fait travaille simplement toute la matière.
     const pupil: Pupil = { firstName: options.name, lastName: options.lastName };
     const own = results.filter((entry) => pupilKey(entry.pupil) === pupilKey(pupil));
-    const domains =
-      options.activity === 'revision'
-        ? own.length > 0
-          ? weakestDomains(summariseByDomain(own), options.subject, 2)
-          : [...SUBJECT_DOMAINS[options.subject]]
-        : options.domains;
+    const domains = options.activity === 'revision' ? revisionDomains(own, options.subject, 2) : options.domains;
 
     if (options.activity === 'posees') {
       setWorksheet(
@@ -255,6 +320,88 @@ export function App() {
     }
   };
 
+  // --- Les évaluations -------------------------------------------------------
+
+  const startEvaluation = (evaluation: OpenEvaluation, options: StartOptions) => {
+    if (!isReady(evaluation)) return;
+    rememberChoices(options);
+    const pupil: Pupil = { firstName: options.name, lastName: options.lastName };
+    const state = evaluationStateOf(evaluation, pupil);
+    if (state.kind === 'rendue') return;
+    let list = loadProgress();
+    // La maîtresse a effacé la copie : l'élève repart de zéro, et l'ancien
+    // résultat quitte la tablette.
+    if (state.kind === 'a-refaire') {
+      setResults(forgetSession(state.previousCopyId));
+      list = withoutProgress(list, evaluation.id, pupil);
+    }
+    const existing = progressFor(list, evaluation.id, pupil);
+    const entry: EvaluationProgress =
+      existing && !existing.copyId
+        ? { ...existing, answers: existing.answers.slice(0, evaluation.items.length - 1) }
+        : { evaluationId: evaluation.id, joinCode: options.joinCode, pupil, answers: [], startedAt: new Date().toISOString() };
+    list = withProgress(list, entry);
+    saveProgress(list);
+    setProgress(list);
+    setTaking({ evaluation, pupil, joinCode: options.joinCode, answers: entry.answers });
+    setScreen('evaluation');
+  };
+
+  const progressOf = (taken: TakenEvaluation): EvaluationProgress =>
+    progressFor(loadProgress(), taken.evaluation.id, taken.pupil) ?? {
+      evaluationId: taken.evaluation.id,
+      joinCode: taken.joinCode,
+      pupil: taken.pupil,
+      answers: [],
+      startedAt: new Date().toISOString(),
+    };
+
+  const saveEvaluationProgress = (answers: EvaluationAnswer[]) => {
+    if (!taking) return;
+    const list = withProgress(loadProgress(), { ...progressOf(taking), answers });
+    saveProgress(list);
+    setProgress(list);
+  };
+
+  const finishEvaluation = (answers: EvaluationAnswer[]) => {
+    if (!taking) return;
+    const { evaluation, pupil, joinCode } = taking;
+    // L'identifiant de la copie est aussi celui de sa séance, ici comme dans
+    // la base.
+    const copyId = crypto.randomUUID();
+    setResults(
+      recordSession({
+        id: copyId,
+        pupil,
+        at: new Date().toISOString(),
+        level: evaluation.level,
+        trimester: evaluation.trimester,
+        subject: evaluation.subject,
+        activity: 'evaluation',
+        domains: evaluationResults(evaluation.items, answers).filter((entry) => entry.total > 0),
+      })
+    );
+    enqueueCopy(copyParams(copyId, joinCode, evaluation.id, pupil, answers));
+    const list = withProgress(loadProgress(), {
+      ...progressOf(taking),
+      answers: [],
+      copyId,
+      delivery: 'en-attente',
+    });
+    saveProgress(list);
+    setProgress(list);
+    setPendingCopies(pendingCopyIds());
+    setCopyOutcome('pending');
+    setScreen('evaluationFin');
+    void deliverCopies().then(
+      (outcomes) => {
+        setCopyOutcome(outcomes[copyId] ?? 'queued');
+        syncEvaluations();
+      },
+      () => setCopyOutcome('queued')
+    );
+  };
+
   const restart = () => {
     if (!config) {
       setScreen('home');
@@ -310,10 +457,45 @@ export function App() {
       onStart={startSession}
       corrections={corrections}
       onOpenCorrection={openCorrection}
+      evaluations={classEvaluations}
+      evaluationStateOf={evaluationStateOf}
+      onStartEvaluation={startEvaluation}
+      onRefreshEvaluations={refreshEvaluations}
     />
   );
 
   if (screen === 'home') return home;
+
+  if (screen === 'evaluation' && taking) {
+    return (
+      <EvaluationScreen
+        key={`${taking.evaluation.id}-${pupilKey(taking.pupil)}`}
+        evaluation={taking.evaluation}
+        pupilName={taking.pupil.firstName}
+        initialAnswers={taking.answers}
+        onProgress={saveEvaluationProgress}
+        onFinish={finishEvaluation}
+        onQuit={() => {
+          setTaking(null);
+          goHome();
+        }}
+      />
+    );
+  }
+
+  if (screen === 'evaluationFin' && taking) {
+    return (
+      <EvaluationDoneScreen
+        title={taking.evaluation.title}
+        pupilName={taking.pupil.firstName}
+        outcome={copyOutcome}
+        onFinish={() => {
+          setTaking(null);
+          goHome();
+        }}
+      />
+    );
+  }
 
   if (screen === 'corrigee' && openedCorrection) {
     return (

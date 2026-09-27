@@ -41,10 +41,10 @@ describe('assistantErrorMessage', () => {
 
   it('explique une fonction absente, ou refusée par Supabase', async () => {
     expect(await assistantErrorMessage(failure(404, { code: 'NOT_FOUND', message: 'Requested function was not found' }))).toBe(
-      "Le chat avec Claude n'est pas encore installé dans Supabase."
+      "L'assistant n'est pas encore installé dans Supabase."
     );
     expect(await assistantErrorMessage(failure(401, { code: 401, message: 'Invalid JWT' }))).toMatch(/Verify JWT/);
-    expect(await assistantErrorMessage(failure(500, null))).toBe("Claude n'a pas pu répondre : réessayez dans un moment.");
+    expect(await assistantErrorMessage(failure(500, null))).toBe("L'assistant n'a pas pu répondre : réessayez dans un moment.");
   });
 
   it('parle de réseau quand rien n\'a répondu', async () => {

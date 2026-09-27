@@ -27,14 +27,15 @@ const SECTIONS: Section[] = [
     title: 'Ce qui est enregistré',
     items: [
       'Sur la tablette : le prénom de l\'élève et l\'initiale de son nom, le code de la classe, ses réglages, ses étoiles, et les résultats de ses séances (la date, la matière, les notions travaillées, le nombre de bonnes réponses). Pour les opérations posées, ce que l\'élève a écrit au doigt, puis la correction de l\'enseignante.',
-      'Dans l\'espace de la classe, seulement avec un code de classe : les mêmes résultats et les mêmes feuilles d\'opérations, avec le prénom et l\'initiale de l\'élève.',
+      'Pour une évaluation lancée par l\'enseignante : la réponse de l\'élève à chaque question, que l\'application corrige. Pendant l\'évaluation, la tablette garde aussi où il en est, pour qu\'il puisse reprendre s\'il s\'interrompt.',
+      'Dans l\'espace de la classe, seulement avec un code de classe : les mêmes résultats, les mêmes feuilles d\'opérations et les copies des évaluations, avec le prénom et l\'initiale de l\'élève.',
       'Pour l\'enseignante : l\'adresse e-mail et le mot de passe de son compte. Le mot de passe est enregistré sous une forme que personne ne peut relire.',
     ],
   },
   {
     title: 'À quoi cela sert',
     paragraphs: [
-      'À suivre les progrès de chaque élève, à lui proposer de réviser les notions qu\'il maîtrise le moins, et à permettre à l\'enseignante de corriger les opérations posées. Ces données servent uniquement à l\'enseignement, dans le cadre de la mission de l\'école : ni publicité, ni profil commercial, ni revente.',
+      'À suivre les progrès de chaque élève, à faire le point sur ses acquis lors des évaluations de l\'enseignante, à lui proposer de réviser les notions qu\'il maîtrise le moins, et à permettre à l\'enseignante de corriger les opérations posées. Ces données servent uniquement à l\'enseignement, dans le cadre de la mission de l\'école : ni publicité, ni profil commercial, ni revente.',
     ],
   },
   {
@@ -43,7 +44,7 @@ const SECTIONS: Section[] = [
       'Dans l\'espace de la classe, l\'enseignante voit les résultats de ses élèves, et elle seule : la base de données refuse toute autre lecture. Ces règles d\'accès sont vérifiées par des tests automatiques à chaque modification de l\'application.',
       'Sur la tablette, l\'Espace maîtresse montre aussi les séances faites sur cette tablette.',
       'Deux prestataires techniques interviennent. GitHub publie le site : il ne reçoit aucune donnée d\'élève, seulement, comme tout hébergeur, l\'adresse technique des appareils qui ouvrent le site. Supabase héberge l\'espace des classes, dans un centre de données situé à Francfort, en Allemagne (Union européenne).',
-      'Si l\'enseignante demande l\'aide de Claude (Anthropic) pour préparer des problèmes de maths, seuls ses messages lui sont envoyés : aucun nom, aucun résultat d\'élève.',
+      'Si l\'enseignante demande l\'aide de l\'assistant de l\'espace maîtresse, une intelligence artificielle fournie par un prestataire externe, pour préparer des problèmes de maths, seuls ses messages sont transmis à ce prestataire : aucun nom, aucun résultat d\'élève.',
     ],
   },
   {
@@ -68,7 +69,7 @@ const SECTIONS: Section[] = [
   {
     title: 'Accessibilité',
     paragraphs: [
-      'L\'application a été vérifiée avec l\'outil d\'audit axe-core, sans défaut relevé sur les treize écrans testés. Elle s\'utilise entièrement au clavier, reste lisible avec un texte agrandi à 200 %, et fonctionne en portrait comme en paysage. Un audit complet selon le référentiel officiel (RGAA) n\'a pas encore été mené. Les constructions de géométrie au doigt et les opérations écrites à la main restent difficiles sans la vue. Signalez tout obstacle à l\'enseignante.',
+      'L\'application a été vérifiée avec l\'outil d\'audit axe-core, sans défaut relevé sur les vingt-trois écrans testés. Elle s\'utilise entièrement au clavier, reste lisible avec un texte agrandi à 200 %, et fonctionne en portrait comme en paysage. Un audit complet selon le référentiel officiel (RGAA) n\'a pas encore été mené. Les constructions de géométrie au doigt et les opérations écrites à la main restent difficiles sans la vue. Signalez tout obstacle à l\'enseignante.',
     ],
   },
   {
