@@ -21,6 +21,7 @@ import {
   signIn,
   signOut,
   signUp,
+  signUpMissing,
   type CloudClass,
   type TeacherAccount,
   type WorksheetStatus,
@@ -289,6 +290,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
             type="button"
             disabled={!canSignUp}
             className={secondary}
+            aria-describedby="conditions-creation"
             onClick={() =>
               run(async () => {
                 const created = await signUp(email, password);
@@ -305,6 +307,16 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
           >
             Créer mon compte
           </button>
+          {(email || password) && signUpMissing(email, password).length > 0 && (
+            <p id="conditions-creation" aria-live="polite" className="text-sm text-encre-douce">
+              {signUpMissing(email, password).map((msg, i) => (
+                <span key={i}>
+                  {msg}
+                  <br />
+                </span>
+              ))}
+            </p>
+          )}
         </section>
 
         <button
