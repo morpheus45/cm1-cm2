@@ -96,4 +96,38 @@ describe('demoTeacherCloud', () => {
     expect(after.pupils.some((p) => p.firstName === pupil.firstName)).toBe(false);
     expect(after.sessions.some((s) => s.pupil.firstName === pupil.firstName)).toBe(false);
   });
+
+  it('refuse une question de classe mal formée', async () => {
+    await expect(
+      demoCloud.addClassQuestion('demo-classe', {
+        domain: 'conjugaison',
+        enonce: 'Un énoncé bien assez long pour passer la validation.',
+        reponse: '',
+        fausses_reponses: ['une réponse'],
+        trimestre: 1,
+      })
+    ).rejects.toThrow();
+  });
+
+  it('ajoute, retire et supprime une question de classe, dans une matière autre que les maths', async () => {
+    await demoCloud.addClassQuestion('demo-classe', {
+      domain: 'orthographe',
+      enonce: 'Un énoncé bien assez long pour passer la validation.',
+      reponse: 'bonbon',
+      fausses_reponses: ['bombon'],
+      trimestre: 1,
+    });
+    let questions = await demoCloud.readClassQuestions('demo-classe');
+    const added = questions.find((question) => question.reponse === 'bonbon');
+    expect(added).toBeDefined();
+    expect(added?.actif).toBe(true);
+
+    await demoCloud.setClassQuestionActive(added!.id, false);
+    questions = await demoCloud.readClassQuestions('demo-classe');
+    expect(questions.find((question) => question.id === added!.id)?.actif).toBe(false);
+
+    await demoCloud.deleteClassQuestion(added!.id);
+    questions = await demoCloud.readClassQuestions('demo-classe');
+    expect(questions.some((question) => question.id === added!.id)).toBe(false);
+  });
 });

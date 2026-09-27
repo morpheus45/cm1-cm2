@@ -52,6 +52,7 @@ function tabletteUtilisee(anneeEnregistree: string | null) {
   storage.setItem('exercices-cm1-cm2:envois-en-attente', JSON.stringify([{ p_session_id: 'juin', p_join_code: 'ABC123' }]));
   storage.setItem('exercices-cm1-cm2:preferences', JSON.stringify({ name: 'Léa', lastName: 'M', joinCode: 'ABC123' }));
   storage.setItem('exercices-cm1-cm2:problemes-de-la-classe', JSON.stringify({ joinCode: 'ABC123', problems: [] }));
+  storage.setItem('exercices-cm1-cm2:questions-de-la-classe', JSON.stringify({ joinCode: 'ABC123', questions: [] }));
   storage.setItem('exercices-cm1-cm2:stars', '42');
   storage.setItem('exercices-cm1-cm2:classe-choisie', JSON.stringify({ maitresse: 'classe' }));
   if (anneeEnregistree !== null) storage.setItem(SCHOOL_YEAR_KEY, anneeEnregistree);
@@ -79,7 +80,7 @@ describe('la conservation sur la tablette : une année scolaire', () => {
     expect(applyRetention(new Date('2026-09-27T10:00:00'))).toBe(true);
     expect(ids('exercices-cm1-cm2:resultats')).toEqual(['septembre']);
     expect(ids('exercices-cm1-cm2:feuilles-corrigees')).toEqual(['septembre']);
-    ['envois-en-attente', 'preferences', 'problemes-de-la-classe', 'stars'].forEach((key) =>
+    ['envois-en-attente', 'preferences', 'problemes-de-la-classe', 'questions-de-la-classe', 'stars'].forEach((key) =>
       expect(storage.getItem(`exercices-cm1-cm2:${key}`), key).toBeNull()
     );
     // La maîtresse retrouve sa classe : ce n'est pas une donnée d'élève.

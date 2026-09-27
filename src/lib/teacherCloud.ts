@@ -13,6 +13,7 @@ import {
 } from './evaluation';
 import { worksheetFromRow, type Corrections } from './correction';
 import { parseClassProblems, proposalToRow, type ClassProblem, type ProblemProposal } from './classProblems';
+import { draftToRow, parseClassQuestions, type ClassQuestion, type ClassQuestionDraft } from './classQuestions';
 import { parseResults, type SessionResult } from './results';
 import type { Worksheet } from './worksheet';
 
@@ -349,6 +350,61 @@ export async function setClassProblemActive(id: string, actif: boolean): Promise
 
 export async function deleteClassProblem(id: string): Promise<void> {
   const { error } = await (await client()).from('problemes').delete().eq('id', id);
+  if (error) throw new Error(frenchAuthError(error.message));
+}
+
+// --- Les questions de la classe, dans les autres matières -------------------
+
+/** Une question en service dans la classe, ou retirée. */
+export interface ClassQuestionEntry extends ClassQuestion {
+  actif: boolean;
+}
+
+/** Les colonnes de la table `questions_classe` que lit et écrit l'accès
+ *  maîtresse — comparées au fichier SQL par un test. */
+export const QUESTION_COLUMNS = ['id', 'domain', 'enonce', 'reponse', 'fausses_reponses', 'trimestre', 'actif'] as const;
+
+export function mapClassQuestionRows(rows: unknown): ClassQuestionEntry[] {
+  if (!Array.isArray(rows)) return [];
+  const extras = new Map(
+    rows.map((row) => {
+      const entry = row as { id?: unknown; actif?: unknown } | null;
+      return [entry?.id, { actif: entry?.actif !== false }];
+    })
+  );
+  return parseClassQuestions(rows).map((question) => ({
+    ...question,
+    ...(extras.get(question.id) ?? { actif: true }),
+  }));
+}
+
+export async function readClassQuestions(classId: string): Promise<ClassQuestionEntry[]> {
+  const { data, error } = await (await client())
+    .from('questions_classe')
+    .select(QUESTION_COLUMNS.join(', '))
+    .eq('class_id', classId)
+    .order('created_at');
+  if (error) throw new Error(frenchAuthError(error.message));
+  return mapClassQuestionRows(data);
+}
+
+/** Ajoute une question vérifiée : une question mal formée n'arrive même pas
+ *  jusqu'à la base. */
+export async function addClassQuestion(classId: string, draft: ClassQuestionDraft): Promise<void> {
+  const row = draftToRow(draft, classId);
+  const { data, error } = await (await client()).from('questions_classe').insert(row).select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) throw new Error("La question n'a pas été ajoutée à la classe.");
+}
+
+export async function setClassQuestionActive(id: string, actif: boolean): Promise<void> {
+  const { data, error } = await (await client()).from('questions_classe').update({ actif }).eq('id', id).select('id');
+  if (error) throw new Error(frenchAuthError(error.message));
+  if (!Array.isArray(data) || data.length !== 1) throw new Error("Cette question n'est plus dans votre classe.");
+}
+
+export async function deleteClassQuestion(id: string): Promise<void> {
+  const { error } = await (await client()).from('questions_classe').delete().eq('id', id);
   if (error) throw new Error(frenchAuthError(error.message));
 }
 

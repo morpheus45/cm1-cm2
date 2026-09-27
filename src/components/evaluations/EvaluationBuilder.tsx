@@ -21,6 +21,7 @@ import {
   type Zone,
 } from '../../lib/calendrier';
 import type { ClassProblem } from '../../lib/classProblems';
+import type { ClassQuestion } from '../../lib/classQuestions';
 import {
   ADVISED_PER_DOMAIN,
   candidateOperations,
@@ -32,7 +33,7 @@ import {
   type EvaluationItem,
 } from '../../lib/evaluation';
 import { schoolYearOf } from '../../lib/results';
-import { createEvaluation, readClassProblems, setEvaluationStatus } from '../../lib/teacherDataSource';
+import { createEvaluation, readClassProblems, readClassQuestions, setEvaluationStatus } from '../../lib/teacherDataSource';
 import { NOTION_COLORS } from '../../theme';
 import { Gommette } from '../ecole/Gommette';
 import { Intercalaire } from '../ecole/Intercalaire';
@@ -87,15 +88,21 @@ export function EvaluationBuilder({
   const [exhausted, setExhausted] = useState<Partial<Record<Pool, boolean>>>({});
   const [chosen, setChosen] = useState<EvaluationItem[]>([]);
   const [classProblems, setClassProblems] = useState<ClassProblem[]>([]);
+  const [classQuestions, setClassQuestions] = useState<ClassQuestion[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const seed = useRef(Date.now());
 
-  // Les problèmes de la maîtresse se proposent avec ceux de l'application.
+  // Les problèmes et les questions de la maîtresse se proposent avec ceux
+  // de l'application.
   useEffect(() => {
     readClassProblems(classId).then(
       (problems) => setClassProblems(problems.filter((problem) => problem.actif)),
       () => setClassProblems([])
+    );
+    readClassQuestions(classId).then(
+      (questions) => setClassQuestions(questions.filter((question) => question.actif)),
+      () => setClassQuestions([])
     );
   }, [classId]);
 
@@ -105,7 +112,7 @@ export function EvaluationBuilder({
     seed.current += 7919;
     return pool === 'operations'
       ? candidateOperations(level, trimester, seed.current, count).map((operation) => ({ kind: 'operation', operation }))
-      : candidateQuestions(pool, level, trimester, seed.current, count, classProblems).map((question) => ({
+      : candidateQuestions(pool, level, trimester, seed.current, count, classProblems, classQuestions).map((question) => ({
           kind: 'question',
           question,
         }));

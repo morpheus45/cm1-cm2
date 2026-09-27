@@ -65,6 +65,14 @@ describe('buildDemoDataset', () => {
     expect(classProblems.every((problem) => problem.actif)).toBe(true);
   });
 
+  it('propose aussi des questions ajoutées par la maîtresse dans d\'autres matières', () => {
+    const { classQuestions } = buildDemoDataset();
+    expect(classQuestions.length).toBeGreaterThan(0);
+    expect(classQuestions.every((question) => question.actif)).toBe(true);
+    expect(new Set(classQuestions.map((question) => question.domain)).size).toBeGreaterThan(1);
+    expect(classQuestions.some((question) => question.domain === 'problemes')).toBe(false);
+  });
+
   it('a une évaluation terminée, avec ses copies, mais pas toutes rendues', () => {
     const { evaluationSummary, evaluationDetail } = buildDemoDataset();
     expect(evaluationSummary.status).toBe('terminee');

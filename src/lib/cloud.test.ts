@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import {
   cachedClassProblems,
+  cachedClassQuestions,
   depositParams,
   enqueueDeposit,
   flushOutbox,
@@ -197,5 +198,23 @@ describe('les problèmes de la classe sur la tablette', () => {
   it('résistent à un stockage abîmé', () => {
     store.set('exercices-cm1-cm2:problemes-de-la-classe', '{abîmé');
     expect(cachedClassProblems('AB23CD')).toEqual([]);
+  });
+});
+
+describe('les questions de la classe sur la tablette', () => {
+  beforeEach(() => store.clear());
+
+  it('ne servent que pour la classe dont le code est donné', () => {
+    const questions = [
+      { id: 'q1', domain: 'orthographe', enonce: 'Un énoncé', reponse: 'bonbon', fausses_reponses: ['bombon'], trimestre: 1 },
+    ];
+    store.set('exercices-cm1-cm2:questions-de-la-classe', JSON.stringify({ joinCode: 'AB23CD', questions }));
+    expect(cachedClassQuestions('ab23cd')).toEqual(questions);
+    expect(cachedClassQuestions('ZZ99ZZ')).toEqual([]);
+  });
+
+  it('résistent à un stockage abîmé', () => {
+    store.set('exercices-cm1-cm2:questions-de-la-classe', '{abîmé');
+    expect(cachedClassQuestions('AB23CD')).toEqual([]);
   });
 });

@@ -2,9 +2,10 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { depositParams } from '../src/lib/cloud';
-import { EVALUATION_COLUMNS, PROBLEM_COLUMNS, WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
+import { EVALUATION_COLUMNS, PROBLEM_COLUMNS, QUESTION_COLUMNS, WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
+import { isCustomisableDomain } from '../src/lib/classQuestions';
 import { copyParams } from '../src/lib/pupilEvaluations';
-import { ALL_ACTIVITIES, ALL_SUBJECTS } from '../src/types';
+import { ALL_ACTIVITIES, ALL_DOMAINS, ALL_SUBJECTS } from '../src/types';
 import type { SessionResult } from '../src/lib/results';
 
 const session: SessionResult = {
@@ -94,6 +95,31 @@ describe('les problèmes de la classe parlent la même langue que la base', () =
     expect(signature?.[1].trim()).toBe('p_join_code text');
     const source = readFileSync(join(process.cwd(), 'src', 'lib', 'cloud.ts'), 'utf8');
     expect(source).toContain("rpc('problemes_de_la_classe', { p_join_code: code })");
+  });
+});
+
+describe('les questions de la classe parlent la même langue que la base', () => {
+  const sql = readFileSync(join(process.cwd(), 'supabase', '007_questions_de_la_classe.sql'), 'utf8');
+
+  it('pour les colonnes lues et écrites par la maîtresse', () => {
+    const table = sql.match(/create table if not exists public\.questions_classe \(([\s\S]*?)\n\);/);
+    expect(table, 'table questions_classe introuvable').not.toBeNull();
+    const columns = [...table![1].matchAll(/^\s{2}(\w+)\s+\w/gm)].map((m) => m[1]);
+    [...QUESTION_COLUMNS, 'class_id'].forEach((column) => expect(columns, `colonne ${column}`).toContain(column));
+  });
+
+  it('accepte exactement les notions ouvertes à la maîtresse, jamais les problèmes de maths', () => {
+    const constraint = sql.match(/domain\s+text not null check \(domain in \(([\s\S]*?)\)\)/);
+    expect(constraint, 'contrainte sur domain introuvable').not.toBeNull();
+    const allowed = [...constraint![1].matchAll(/'([^']*)'/g)].map((m) => m[1]).sort();
+    expect(allowed).toEqual([...ALL_DOMAINS].filter(isCustomisableDomain).sort());
+  });
+
+  it('pour le paramètre de la fonction qu\'appelle la tablette de l\'élève', () => {
+    const signature = sql.match(/create or replace function public\.questions_de_la_classe\(([^)]*)\)/);
+    expect(signature?.[1].trim()).toBe('p_join_code text');
+    const source = readFileSync(join(process.cwd(), 'src', 'lib', 'cloud.ts'), 'utf8');
+    expect(source).toContain("rpc('questions_de_la_classe', { p_join_code: code })");
   });
 });
 

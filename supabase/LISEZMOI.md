@@ -19,10 +19,14 @@ dans `.github/workflows/deploy.yml`.
    date de l'année précédente est effacé, par une tâche programmée chaque
    nuit avec l'extension pg_cron, que le fichier active ; **attention**, le
    lancer efface aussitôt ce qui date d'avant le 1er septembre de l'année en
-   cours), puis `006_evaluations.sql` (les évaluations de la maîtresse ; à
+   cours), `006_evaluations.sql` (les évaluations de la maîtresse ; à
    passer **avant** de publier la version qui les propose, sinon le bouton
    « Évaluations de la classe » annonce que cette partie n'est pas
-   installée). Les fichiers sont rejouables : on les relance
+   installée), puis `007_questions_de_la_classe.sql` (la maîtresse ajoute
+   elle-même des questions dans toutes les matières, pas seulement les
+   problèmes de maths ; à passer **avant** de publier la version qui le
+   propose, sinon le bouton « Questions de la classe » annonce que cette
+   partie n'est pas installée). Les fichiers sont rejouables : on les relance
    après chaque modification, sans rien perdre. Pour copier sans rien abîmer, le plus sûr est le bouton
    « Copy raw file » de GitHub, sur la page du fichier.
 2. **Les comptes des maîtresses.** *Authentication → Sign In / Providers →
