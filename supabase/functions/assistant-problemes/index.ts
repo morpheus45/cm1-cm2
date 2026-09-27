@@ -49,7 +49,7 @@ function erreur(status: number, code: string, message: string): Response {
 type Niveau = 'CM1' | 'CM2';
 
 function systemPrompt(niveau: Niveau): string {
-  return `Tu es l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de français et de maths pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle 3). Tu parles à la maîtresse d'une classe de ${niveau}.
+  return `Tu es « l'assistant de Cédric », l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de français et de maths pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle 3). Cédric est l'administrateur de l'application ; toi, tu es une intelligence artificielle (Claude, de la société Anthropic), et tu le dis simplement si on te le demande. Tu parles à la maîtresse d'une classe de ${niveau}.
 
 L'application propose aux élèves des séances d'une seule matière : questions de conjugaison, d'accords, d'orthographe, de numération, de calcul et de problèmes ; des opérations posées à la main, que la maîtresse corrige au stylet ; une révision ciblée sur les notions fragiles. La maîtresse y suit chaque élève (niveaux de maîtrise, graphiques, attendus de fin d'année) et y ajoute ses propres problèmes de maths pour la classe.
 
@@ -192,7 +192,7 @@ Deno.serve(async (req) => {
   const apikey = req.headers.get('apikey') ?? Deno.env.get('SUPABASE_ANON_KEY') ?? '';
   const url = Deno.env.get('SUPABASE_URL');
   if (!url || !token || !apikey) {
-    return erreur(401, 'connexion', 'Connectez-vous pour discuter avec Claude.');
+    return erreur(401, 'connexion', "Connectez-vous pour discuter avec l'assistant.");
   }
   const supabase = createClient(url, apikey, {
     global: { headers: { Authorization: `Bearer ${token}` } },
@@ -221,13 +221,13 @@ Deno.serve(async (req) => {
     return erreur(500, 'base', "Le compteur du chat est introuvable : le fichier 002 a-t-il été exécuté dans Supabase ?");
   }
   if (typeof count === 'number' && count > DAILY_LIMIT) {
-    return erreur(429, 'plafond', `Vous avez posé ${DAILY_LIMIT} questions à Claude aujourd'hui : c'est le plafond du jour. À demain !`);
+    return erreur(429, 'plafond', `Vous avez posé ${DAILY_LIMIT} questions à l'assistant aujourd'hui : c'est le plafond du jour. À demain !`);
   }
 
   // 4. Claude.
   const apiKey = Deno.env.get('ANTHROPIC_API_KEY');
   if (!apiKey) {
-    return erreur(503, 'cle-manquante', "La clé de Claude n'est pas encore installée dans Supabase.");
+    return erreur(503, 'cle-manquante', "La clé de l'assistant (Claude, d'Anthropic) n'est pas encore installée dans Supabase.");
   }
   const anthropic = new Anthropic({ apiKey });
   let response: Anthropic.Beta.Messages.BetaMessage;
@@ -247,17 +247,17 @@ Deno.serve(async (req) => {
     });
   } catch (error) {
     if (error instanceof Anthropic.AuthenticationError) {
-      return erreur(503, 'cle-refusee', "La clé de Claude installée dans Supabase est refusée : elle doit être remplacée.");
+      return erreur(503, 'cle-refusee', "La clé de l'assistant (Claude, d'Anthropic) installée dans Supabase est refusée : elle doit être remplacée.");
     }
     if (error instanceof Anthropic.RateLimitError) {
-      return erreur(429, 'occupe', 'Claude est très demandé en ce moment : réessayez dans une minute.');
+      return erreur(429, 'occupe', "L'assistant est très demandé en ce moment : réessayez dans une minute.");
     }
     if (error instanceof Anthropic.APIConnectionError) {
-      return erreur(503, 'injoignable', "Claude est injoignable pour l'instant : réessayez dans un moment.");
+      return erreur(503, 'injoignable', "L'assistant est injoignable pour l'instant : réessayez dans un moment.");
     }
     if (error instanceof Anthropic.APIError) {
       console.error('claude', error.status, error.message);
-      return erreur(502, 'indisponible', "Claude n'a pas pu répondre : réessayez dans un moment.");
+      return erreur(502, 'indisponible', "L'assistant n'a pas pu répondre : réessayez dans un moment.");
     }
     throw error;
   }
@@ -272,11 +272,11 @@ Deno.serve(async (req) => {
     });
   }
   if (response.stop_reason === 'max_tokens') {
-    return erreur(502, 'trop-long', 'La réponse de Claude était trop longue : demandez moins de problèmes à la fois.');
+    return erreur(502, 'trop-long', "La réponse de l'assistant était trop longue : demandez moins de problèmes à la fois.");
   }
   const text = [...response.content].reverse().find((block) => block.type === 'text');
   const reponse = text && text.type === 'text' ? lireReponse(text.text) : null;
-  if (!reponse) return erreur(502, 'illisible', "La réponse de Claude n'a pas pu être lue : réessayez.");
+  if (!reponse) return erreur(502, 'illisible', "La réponse de l'assistant n'a pas pu être lue : réessayez.");
 
   // 5. Hors du cadre : rangée pour l'administrateur, et la réponse le dit.
   if (reponse.hors_champ) {

@@ -44,7 +44,7 @@ const SECTIONS: Section[] = [
       'Dans l\'espace de la classe, l\'enseignante voit les résultats de ses élèves, et elle seule : la base de données refuse toute autre lecture. Ces règles d\'accès sont vérifiées par des tests automatiques à chaque modification de l\'application.',
       'Sur la tablette, l\'Espace maîtresse montre aussi les séances faites sur cette tablette.',
       'Deux prestataires techniques interviennent. GitHub publie le site : il ne reçoit aucune donnée d\'élève, seulement, comme tout hébergeur, l\'adresse technique des appareils qui ouvrent le site. Supabase héberge l\'espace des classes, dans un centre de données situé à Francfort, en Allemagne (Union européenne).',
-      'Si l\'enseignante demande l\'aide de Claude (Anthropic) pour préparer des problèmes de maths, seuls ses messages lui sont envoyés : aucun nom, aucun résultat d\'élève.',
+      'Si l\'enseignante demande l\'aide de l\'assistant de l\'espace maîtresse, une intelligence artificielle (Claude, de la société Anthropic), pour préparer des problèmes de maths, seuls ses messages lui sont envoyés : aucun nom, aucun résultat d\'élève.',
     ],
   },
   {

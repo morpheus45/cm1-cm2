@@ -408,7 +408,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         Évaluations de la classe
       </button>
       <button type="button" onClick={() => setShowProblems(true)} className={secondary}>
-        Problèmes de la classe, avec Claude
+        Problèmes de la classe, avec l'assistant de Cédric
       </button>
       <div className="flex gap-2 pt-1">
         <button type="button" disabled={busy} onClick={() => run(refresh)} className={secondary}>

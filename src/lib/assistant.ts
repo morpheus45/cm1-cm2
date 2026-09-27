@@ -79,11 +79,11 @@ export async function assistantErrorMessage(error: unknown): Promise<string> {
     }
     const { erreur, message } = (payload ?? {}) as { erreur?: unknown; message?: unknown };
     if (isString(erreur) && isString(message)) return message;
-    if (context.status === 404) return "Le chat avec Claude n'est pas encore installé dans Supabase.";
+    if (context.status === 404) return "L'assistant n'est pas encore installé dans Supabase.";
     if (context.status === 401) {
       return 'Supabase a refusé la connexion au chat. Reconnectez-vous ; si cela continue, le réglage « Verify JWT » de la fonction doit être désactivé.';
     }
-    return "Claude n'a pas pu répondre : réessayez dans un moment.";
+    return "L'assistant n'a pas pu répondre : réessayez dans un moment.";
   }
   return 'Pas de réseau pour le moment : le chat a besoin d’une connexion.';
 }
@@ -96,7 +96,7 @@ export async function askAssistant(niveau: Level, turns: ChatTurn[]): Promise<As
   });
   if (error) throw new Error(await assistantErrorMessage(error));
   const reply = parseAssistantReply(data);
-  if (!reply) throw new Error("La réponse de Claude n'a pas pu être lue : réessayez.");
+  if (!reply) throw new Error("La réponse de l'assistant n'a pas pu être lue : réessayez.");
   return reply;
 }
 
