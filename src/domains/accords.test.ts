@@ -31,12 +31,13 @@ describe('accords generate', () => {
     expect(generate('CM2', 2, createRng(42), 8)).toEqual(generate('CM2', 2, createRng(42), 8));
   });
 
-  it('introduces the participe passé only from the second trimester of CM2', () => {
+  it('introduces the participe passé with the passé composé, in the third trimester of CM1', () => {
     const hasParticipe = (level: Level, trimester: Trimester) =>
       generate(level, trimester, createRng(5), 20).some((q) => q.id.startsWith('accords-participe'));
     expect(hasParticipe('CM1', 1)).toBe(false);
-    expect(hasParticipe('CM1', 3)).toBe(false);
-    expect(hasParticipe('CM2', 1)).toBe(false);
+    expect(hasParticipe('CM1', 2)).toBe(false);
+    expect(hasParticipe('CM1', 3)).toBe(true);
+    expect(hasParticipe('CM2', 1)).toBe(true);
     expect(hasParticipe('CM2', 2)).toBe(true);
     expect(hasParticipe('CM2', 3)).toBe(true);
   });

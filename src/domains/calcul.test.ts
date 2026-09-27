@@ -71,22 +71,23 @@ describe('calcul generate', () => {
       });
   });
 
-  it('keeps every number whole until the second trimester of CM2', () => {
+  it('keeps every number whole in CM1', () => {
     const wholeOnly: Array<[Level, Trimester]> = [
       ['CM1', 1],
       ['CM1', 2],
       ['CM1', 3],
-      ['CM2', 1],
     ];
     wholeOnly.forEach(([level, trimester]) => {
       generate(level, trimester, createRng(10), 60).forEach((q) => expect(isDecimal(q)).toBe(false));
     });
   });
 
-  it('adds and subtracts decimals in CM2-T2, and only multiplies or divides them in CM2-T3', () => {
-    generate('CM2', 2, createRng(12), 80)
-      .filter(isDecimal)
-      .forEach((q) => expect(['+', '-']).toContain(operatorOf(q)));
+  it('adds and subtracts decimals from the start of CM2, and only multiplies or divides them in CM2-T3', () => {
+    ([1, 2] as Trimester[]).forEach((trimester) => {
+      const decimals = generate('CM2', trimester, createRng(12), 80).filter(isDecimal);
+      expect(decimals.length).toBeGreaterThan(0);
+      decimals.forEach((q) => expect(['+', '-']).toContain(operatorOf(q)));
+    });
 
     const t3 = generate('CM2', 3, createRng(12), 120);
     expect(t3.some((q) => isDecimal(q) && ['×', '÷'].includes(operatorOf(q)))).toBe(true);

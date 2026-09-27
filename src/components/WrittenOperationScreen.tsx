@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ProgressBar } from './ProgressBar';
 import { WritingCanvas } from './WritingCanvas';
 import { NumberPad } from './NumberPad';
 import { isAnswerCorrect, type Stroke, type WorksheetOperation } from '../lib/worksheet';
 import { NOTION_COLORS } from '../theme';
 import { Intercalaire } from './ecole/Intercalaire';
+import { useScreenTitle } from './useScreenTitle';
 
 interface WrittenOperationScreenProps {
   operation: WorksheetOperation;
@@ -25,6 +26,12 @@ export function WrittenOperationScreen({
   const [given, setGiven] = useState('');
   const [checked, setChecked] = useState(false);
 
+  // Nouvelle opération : en haut de la page, annoncée par son titre.
+  const titleRef = useScreenTitle(operation.id);
+  const continueRef = useRef<HTMLButtonElement>(null);
+  // Le dernier geste de l'élève : une touche du clavier, ou le doigt.
+  const byKeyboard = useRef(false);
+
   // Nouvelle opération : cahier blanc.
   useEffect(() => {
     setStrokes([]);
@@ -32,10 +39,21 @@ export function WrittenOperationScreen({
     setChecked(false);
   }, [operation.id]);
 
+  // « Valider » disparaît : le focus passe sur « Continuer » au lieu de se
+  // perdre en haut de la page.
+  useEffect(() => {
+    if (checked) continueRef.current?.focus({ preventScroll: !byKeyboard.current });
+  }, [checked]);
+
   const correct = isAnswerCorrect(given, operation.expected);
+  const verdict = correct ? 'Bravo, c’est juste\u00a0!' : `La bonne réponse est ${operation.expected}.`;
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-lg flex-col gap-4 px-4 py-5">
+    <div
+      className="mx-auto flex min-h-screen max-w-lg flex-col gap-4 px-4 py-5"
+      onKeyDown={() => (byKeyboard.current = true)}
+      onPointerDown={() => (byKeyboard.current = false)}
+    >
       <div className="flex items-start gap-3">
         <button type="button" onClick={onQuit} className="etiquette shrink-0 px-3 py-1.5 text-sm">
           Quitter
@@ -49,6 +67,10 @@ export function WrittenOperationScreen({
           />
         </div>
       </div>
+
+      <h1 ref={titleRef} tabIndex={-1} className="sr-only">
+        Opérations posées, opération {operationNumber} sur {totalOperations}
+      </h1>
 
       <div className="flex flex-col items-center gap-2 text-center">
         <Intercalaire domain="calcul" prefix="Maths" />
@@ -79,6 +101,10 @@ export function WrittenOperationScreen({
 
       <NumberPad value={given} onChange={setGiven} disabled={checked} />
 
+      <p className="sr-only" role="status">
+        {checked ? verdict : ''}
+      </p>
+
       {!checked ? (
         <button
           type="button"
@@ -94,9 +120,9 @@ export function WrittenOperationScreen({
             className="text-center text-xl font-bold"
             style={{ color: correct ? NOTION_COLORS.numeration.deep : NOTION_COLORS.accords.deep }}
           >
-            {correct ? 'Bravo, c’est juste !' : `La bonne réponse est ${operation.expected}.`}
+            {verdict}
           </p>
-          <button type="button" onClick={() => onValidate(given, strokes)} className="bouton-encre py-4 text-xl">
+          <button ref={continueRef} type="button" onClick={() => onValidate(given, strokes)} className="bouton-encre py-4 text-xl">
             Continuer
           </button>
         </div>

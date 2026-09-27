@@ -89,7 +89,10 @@ notion, groupées par matière travaillée (un espace sépare les matières).
 
 L'identité est insensible aux accents, à la casse et aux espaces en trop :
 « Léa  MARTIN » et « léa martin » sont le même enfant, pas deux dossiers. Le
-nom de famille, lui, sépare bien deux Léa.
+nom de famille, lui, sépare bien deux Léa. Depuis septembre 2026, l'élève
+n'écrit plus que l'initiale de son nom (« Léa M. ») : le RGPD demande de ne
+garder que le nécessaire. Un nom complet saisi auparavant reste tel quel, pour
+ne pas couper un dossier en deux.
 
 La répartition de la classe se calcule à partir des dossiers présents. Elle
 affiche l'effectif à côté des pourcentages : sur deux élèves, un seul fait

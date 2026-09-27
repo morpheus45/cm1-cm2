@@ -97,6 +97,14 @@ describe('conjugaison generate', () => {
     instructions.forEach((text) => expect(text).not.toContain('Complète au imparfait'));
   });
 
+  it('ne fait conjuguer le passé simple qu\'aux troisièmes personnes, comme le programme', () => {
+    for (let seed = 1; seed <= 60; seed++) {
+      generate('CM2', 3, createRng(seed), 12)
+        .filter((q) => (q.instruction ?? '').includes('passé simple') || q.choices[q.correctIndex] === 'passé simple')
+        .forEach((q) => expect(q.prompt, q.prompt).not.toMatch(/^(Je|J'|Tu|Nous|Vous)\b/));
+    }
+  });
+
   it('keeps revising earlier tenses at the end of the year', () => {
     const questions = generate('CM2', 3, createRng(11), 60);
     const tenses = new Set(

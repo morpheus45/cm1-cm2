@@ -293,6 +293,61 @@ select pg_temp.attendu(
   (select count(*) from public.sessions where subject in ('histoire', 'geographie')), 2,
   'les séances d''histoire et de géographie doivent être acceptées par la base');
 
+-- ------------------------------------------------------ la conservation ---
+-- Une année scolaire, pas davantage : le 1er septembre, tout ce qui date de
+-- l'année précédente disparaît (005_conservation_une_annee.sql).
+reset role;
+select pg_temp.attendu(
+  (select count(*) from (values
+     (public.debut_annee_scolaire('2026-09-27 12:00+02') = '2026-09-01 00:00+02'),
+     (public.debut_annee_scolaire('2027-06-30 18:00+02') = '2026-09-01 00:00+02'),
+     (public.debut_annee_scolaire('2027-01-15 09:00+01') = '2026-09-01 00:00+02'),
+     (public.debut_annee_scolaire('2026-08-31 23:30+02') = '2025-09-01 00:00+02'),
+     (public.debut_annee_scolaire('2026-08-31 22:30+00') = '2026-09-01 00:00+02')) v(juste)
+   where juste), 5,
+  'l''année scolaire commence le 1er septembre à minuit, heure de Paris');
+
+insert into public.pupils (id, class_id, first_name, last_name, pupil_key, created_at) values
+  ('55555555-5555-5555-5555-555555555501', '11111111-1111-1111-1111-111111111111', 'Ancien', 'A', 'x', now() - interval '2 years'),
+  ('55555555-5555-5555-5555-555555555502', '11111111-1111-1111-1111-111111111111', 'Fidèle', 'F', 'x', now() - interval '2 years');
+insert into public.sessions (id, pupil_id, at, level, trimester, subject, activity, results) values
+  ('55555555-5555-5555-5555-555555555511', '55555555-5555-5555-5555-555555555501',
+    public.debut_annee_scolaire() - interval '1 day', 'CM1', 3, 'maths', 'posees', '[]'),
+  ('55555555-5555-5555-5555-555555555512', '55555555-5555-5555-5555-555555555502',
+    public.debut_annee_scolaire() - interval '300 days', 'CM1', 1, 'francais', 'questions', '[]'),
+  ('55555555-5555-5555-5555-555555555513', '55555555-5555-5555-5555-555555555502',
+    public.debut_annee_scolaire() + interval '1 day', 'CM2', 1, 'francais', 'questions', '[]');
+insert into public.worksheets (session_id, pupil_id, operations, answers) values
+  ('55555555-5555-5555-5555-555555555511', '55555555-5555-5555-5555-555555555501', '[]', '{}');
+insert into public.assistant_usage (teacher_id, day, requests) values
+  ('00000000-0000-0000-0000-00000000000a', (public.debut_annee_scolaire() - interval '10 days')::date, 3);
+insert into public.demandes_administrateur (teacher_id, teacher_email, demande, created_at) values
+  ('00000000-0000-0000-0000-00000000000a', 'a@ecole.fr', 'Une demande de l''an dernier.',
+    public.debut_annee_scolaire() - interval '1 day');
+create temp table avant_effacement as select count(*) as seances from public.sessions;
+
+select public.effacer_annee_precedente();
+
+select pg_temp.attendu((select count(*) from public.sessions where at < public.debut_annee_scolaire()), 0,
+  'aucune séance de l''année précédente ne reste');
+select pg_temp.attendu((select count(*) from public.sessions), (select seances - 2 from avant_effacement),
+  'seules les deux séances de l''an dernier sont effacées');
+select pg_temp.attendu(
+  (select count(*) from public.worksheets where session_id = '55555555-5555-5555-5555-555555555511'), 0,
+  'la feuille d''opérations part avec sa séance');
+select pg_temp.attendu((select count(*) from public.pupils where id = '55555555-5555-5555-5555-555555555501'), 0,
+  'un élève qui n''a travaillé que l''an dernier disparaît');
+select pg_temp.attendu((select count(*) from public.pupils where id = '55555555-5555-5555-5555-555555555502'), 1,
+  'un élève qui a travaillé cette année reste');
+select pg_temp.attendu(
+  (select count(*) from public.assistant_usage where day < public.debut_annee_scolaire()::date), 0,
+  'le compteur des demandes de l''an dernier disparaît');
+select pg_temp.attendu(
+  (select count(*) from public.demandes_administrateur where created_at < public.debut_annee_scolaire()), 0,
+  'les demandes transmises l''an dernier disparaissent');
+select pg_temp.attendu((select count(*) from public.classes), 3, 'les classes des maîtresses restent');
+select pg_temp.attendu((select count(*) from public.problemes), 2, 'les problèmes des classes restent');
+
 -- ------------------------------------------------------------ les droits ---
 -- Supabase accorde d'office tous les droits à anon et authenticated ; le
 -- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après
@@ -313,11 +368,15 @@ select pg_temp.attendu(
   (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()',
                                      'public.creer_classe(text, text)', 'public.lire_ma_classe()',
                                      'public.compter_demande_assistant()',
-                                     'public.transmettre_a_l_administrateur(text, text)']) f
+                                     'public.transmettre_a_l_administrateur(text, text)',
+                                     'public.debut_annee_scolaire(timestamptz)',
+                                     'public.effacer_annee_precedente()']) f
    where has_function_privilege('anon', f, 'execute')), 0,
   'la clé publique n''ouvre que le dépôt de séance et les problèmes de sa classe');
 select pg_temp.attendu(
-  (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()']) f
+  (select count(*) from unnest(array['public.cle_eleve(text, text)', 'public.pupils_calcule_cle()',
+                                     'public.debut_annee_scolaire(timestamptz)',
+                                     'public.effacer_annee_precedente()']) f
    where has_function_privilege('authenticated', f, 'execute')), 0,
   'les fonctions internes ne s''appellent pas de l''extérieur');
 select pg_temp.attendu(

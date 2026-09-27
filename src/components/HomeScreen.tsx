@@ -99,13 +99,15 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
               autoComplete="given-name"
             />
           </Ligne>
-          <Ligne label="Ton nom" aide="si tu en as besoin">
+          <Ligne label="L'initiale de ton nom" aide="si un camarade a le même prénom">
             <input
-              className={champ}
+              className={`${champ} max-w-[7rem]`}
               value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              placeholder="Nom de famille"
-              autoComplete="family-name"
+              onChange={(e) => setLastName(initialeDuNom(e.target.value))}
+              placeholder="M"
+              maxLength={1}
+              autoCapitalize="characters"
+              autoComplete="off"
             />
           </Ligne>
           {cloudAvailable && (
@@ -134,7 +136,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
               </Choix>
             ))}
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             {ALL_TRIMESTERS.map((t) => (
               <Choix key={t} actif={trimester === t} onClick={() => setTrimester(t)} className="flex-1 px-1 py-2 text-sm leading-tight">
                 {TRIMESTER_LABELS[t]}
@@ -142,7 +144,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
             ))}
           </div>
           <p className="text-sm text-encre-pale">
-            Seules les notions déjà vues en classe à ce moment de l'année sont proposées.
+            Tu n'auras que des exercices déjà vus en classe.
           </p>
         </Etape>
 
@@ -170,14 +172,14 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
             })}
           </div>
           <p className="text-sm text-encre-pale">
-            Une séance ne mélange jamais deux matières : chacune a son arc, et on reste dans le sien.
+            Une séance, c'est une seule matière à la fois.
           </p>
         </Etape>
 
         <Etape numero={4} titre="Ta séance">
           {activities.length > 1 && (
             <>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 {activities.map((option) => (
                   <Choix
                     key={option}
@@ -242,12 +244,20 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
           Commencer ma séance
         </button>
 
-        <a
-          href="#maitresse"
-          className="self-center rounded-full px-4 py-2 text-base font-bold text-encre-douce underline decoration-2 underline-offset-4"
-        >
-          Espace maîtresse
-        </a>
+        <nav aria-label="Autres pages" className="flex flex-col items-center gap-1">
+          <a
+            href="#maitresse"
+            className="rounded-full px-4 py-2 text-base font-bold text-encre-douce underline decoration-2 underline-offset-4"
+          >
+            Espace maîtresse
+          </a>
+          <a
+            href="#informations"
+            className="rounded-full px-4 py-2 text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
+          >
+            Informations pour les familles
+          </a>
+        </nav>
       </div>
     </div>
   );
@@ -311,6 +321,16 @@ function FeuillesCorrigees({ items, onOpen }: { items: ReceivedCorrection[]; onO
       </ul>
     </section>
   );
+}
+
+/**
+ * L'initiale du nom, et rien de plus : assez pour distinguer deux Léa, sans
+ * garder le nom de l'élève. Un nom complet enregistré avant cette règle reste
+ * tel quel — l'élève peut l'effacer, pas l'allonger —, pour ne pas séparer
+ * son dossier en deux chez la maîtresse.
+ */
+function initialeDuNom(value: string): string {
+  return value.length > 1 ? value : value.replace(/[^\p{L}]/gu, '').toUpperCase();
 }
 
 /** Écrire son nom sur la ligne du cahier. */

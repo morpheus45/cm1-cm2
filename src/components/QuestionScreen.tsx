@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Domain, Question, Subject } from '../types';
-import { SUBJECT_LABELS } from '../types';
+import { ofSubject, SUBJECT_LABELS } from '../types';
 import { NOTION_COLORS } from '../theme';
 import { ProgressBar } from './ProgressBar';
 import { Gommette } from './ecole/Gommette';
@@ -9,6 +9,7 @@ import { Tampon } from './ecole/Tampon';
 import { typographieFrancaise } from '../lib/typographie';
 import { FigureView } from './figures/FigureView';
 import { ConstructionBoard } from './figures/ConstructionBoard';
+import { useScreenTitle } from './useScreenTitle';
 
 interface QuestionScreenProps {
   question: Question;
@@ -69,6 +70,29 @@ export function QuestionScreen({
   const answered = construction ? built !== null : selected !== null;
   const isCorrect = construction ? built === true : answered && selected === question.correctIndex;
 
+  // Chaque question repart du haut de la page, annoncée par son titre :
+  // « Séance de français, question 3 sur 12 ».
+  const titleRef = useScreenTitle(questionNumber);
+  const continueRef = useRef<HTMLButtonElement>(null);
+  // Le dernier geste de l'élève : une touche du clavier, ou le doigt.
+  const byKeyboard = useRef(false);
+
+  // La réponse donnée, les boutons se désactivent et le focus se perdrait en
+  // haut de la page : il passe sur « Continuer ». Au doigt, la page ne bouge
+  // pas ; au clavier, elle descend jusqu'au bouton.
+  useEffect(() => {
+    if (answered) continueRef.current?.focus({ preventScroll: !byKeyboard.current });
+  }, [answered]);
+
+  // Ce qu'entend un élève qui suit la séance avec un lecteur d'écran.
+  const verdict = !answered
+    ? ''
+    : isCorrect
+      ? `${encouragement} C'est la bonne réponse.`
+      : construction
+        ? "Ce n'est pas encore ça : la correction est tracée en vert."
+        : `Ce n'est pas encore ça. La bonne réponse est : ${typographieFrancaise(question.choices[question.correctIndex])}.`;
+
   const handleContinue = () => {
     if (!answered) return;
     onAnswer(isCorrect);
@@ -77,7 +101,11 @@ export function QuestionScreen({
   };
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-lg flex-col gap-5 px-4 py-5">
+    <div
+      className="mx-auto flex min-h-screen max-w-lg flex-col gap-5 px-4 py-5"
+      onKeyDown={() => (byKeyboard.current = true)}
+      onPointerDown={() => (byKeyboard.current = false)}
+    >
       <div className="flex items-start gap-3">
         <button type="button" onClick={onQuit} className="etiquette shrink-0 px-3 py-1.5 text-sm">
           Quitter
@@ -91,6 +119,10 @@ export function QuestionScreen({
         </div>
       </div>
 
+      <h1 ref={titleRef} tabIndex={-1} className="sr-only">
+        Séance {ofSubject(subject)}, question {questionNumber} sur {totalQuestions}
+      </h1>
+
       <section className="cahier flex flex-col gap-4 rounded-3xl py-5 pl-12 pr-5 shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]">
         <div className="-ml-9 flex flex-wrap items-center gap-2">
           <Intercalaire domain={question.domain} prefix={SUBJECT_LABELS[subject]} />
@@ -98,7 +130,7 @@ export function QuestionScreen({
         {question.instruction && (
           <p className="text-lg font-bold text-encre-douce">{typographieFrancaise(question.instruction)}</p>
         )}
-        <p className="text-[1.6rem] leading-relaxed text-encre">{renderPrompt(typographieFrancaise(question.prompt), colors.tint)}</p>
+        <p className="break-words text-[1.6rem] leading-relaxed text-encre">{renderPrompt(typographieFrancaise(question.prompt), colors.tint)}</p>
         {question.figure && construction && (
           <ConstructionBoard
             key={question.id}
@@ -136,13 +168,17 @@ export function QuestionScreen({
                 }`}
                 style={state ? { background: state.tint, borderColor: state.deep, color: state.deep, boxShadow: `0 3px 0 ${state.deep}` } : undefined}
               >
-                <span>{typographieFrancaise(choice)}</span>
+                <span className="min-w-0 break-words">{typographieFrancaise(choice)}</span>
                 {showCorrect && <Gommette color={JUSTE.deep} mark="coche" size={28} label="Bonne réponse" />}
               </button>
             );
           })}
         </div>
       )}
+
+      <p className="sr-only" role="status">
+        {verdict}
+      </p>
 
       {answered && (
         <div className="flex flex-col items-center gap-4">
@@ -163,7 +199,7 @@ export function QuestionScreen({
               {typographieFrancaise(question.explanation)}
             </p>
           )}
-          <button type="button" onClick={handleContinue} className="bouton-encre w-full py-4 text-xl">
+          <button ref={continueRef} type="button" onClick={handleContinue} className="bouton-encre w-full py-4 text-xl">
             Continuer
           </button>
         </div>

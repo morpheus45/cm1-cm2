@@ -186,7 +186,8 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
           <p className="text-sm text-encre-douce">
             Claude vous aide à créer, corriger ou adapter les problèmes de votre classe. L'application refait chaque
             calcul, et rien n'arrive aux élèves sans votre accord. Toute autre demande est transmise à
-            l'administrateur de l'application.
+            l'administrateur de l'application. N'écrivez ici aucun nom d'élève : vos messages sont envoyés au
+            service Claude d'Anthropic.
           </p>
 
           <div className="flex flex-col gap-3" aria-live="polite">

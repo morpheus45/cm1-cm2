@@ -37,14 +37,18 @@ const NOMINAL_GROUP_ITEMS: NominalGroupItem[] = [
   { minStage: 2, determiner: 'les', adjective: 'mauvaises', correctNoun: 'blagues', distractorNouns: ['goût', 'croissants', 'idée'] },
   // Pluriels irréguliers.
   { minStage: 3, determiner: 'les', adjective: 'beaux', correctNoun: 'tableaux', distractorNouns: ['tableau', 'peinture', 'peintures'] },
-  { minStage: 3, determiner: 'un', adjective: 'vieux', correctNoun: 'château', distractorNouns: ['tours', 'tour', 'châteaux'] },
+  { minStage: 3, determiner: 'un', adjective: 'vieux', correctNoun: 'château', distractorNouns: ['forteresses', 'forteresse', 'châteaux'] },
   { minStage: 3, determiner: 'ces', adjective: 'vieux', correctNoun: 'journaux', distractorNouns: ['journal', 'revue', 'revues'] },
   { minStage: 3, determiner: 'mes', adjective: 'nouveaux', correctNoun: 'bateaux', distractorNouns: ['bateau', 'barque', 'barques'] },
   { minStage: 3, determiner: 'les', adjective: 'belles', correctNoun: 'fleurs', distractorNouns: ['fleur', 'bouquet', 'bouquets'] },
   { minStage: 3, determiner: 'ces', adjective: 'beaux', correctNoun: 'chevaux', distractorNouns: ['cheval', 'jument', 'juments'] },
 ];
 
-/** Participe passé employé avec « être » : programme du CM2, 2e trimestre. */
+/**
+ * Participe passé employé avec « être » : le programme de 2025 le fait
+ * accorder dès le CM1, en même temps que le passé composé (CM1-T3). L'accord
+ * avec « avoir » reste au CM2.
+ */
 interface ParticipeItem extends Staged {
   subject: string;
   infinitive: string;
@@ -53,12 +57,12 @@ interface ParticipeItem extends Staged {
 }
 
 const PARTICIPE_ITEMS: ParticipeItem[] = [
-  { minStage: 5, subject: 'Elle est', infinitive: 'partir', correct: 'partie', distractors: ['parti', 'partis', 'parties'] },
-  { minStage: 5, subject: 'Ils sont', infinitive: 'arriver', correct: 'arrivés', distractors: ['arrivé', 'arrivée', 'arrivées'] },
-  { minStage: 5, subject: 'Elles sont', infinitive: 'tomber', correct: 'tombées', distractors: ['tombé', 'tombés', 'tombée'] },
-  { minStage: 5, subject: 'Il est', infinitive: 'venir', correct: 'venu', distractors: ['venue', 'venus', 'venues'] },
-  { minStage: 5, subject: 'Les filles sont', infinitive: 'rentrer', correct: 'rentrées', distractors: ['rentré', 'rentrés', 'rentrée'] },
-  { minStage: 5, subject: 'Mon frère est', infinitive: 'monter', correct: 'monté', distractors: ['montée', 'montés', 'montées'] },
+  { minStage: 3, subject: 'Elle est', infinitive: 'partir', correct: 'partie', distractors: ['parti', 'partis', 'parties'] },
+  { minStage: 3, subject: 'Ils sont', infinitive: 'arriver', correct: 'arrivés', distractors: ['arrivé', 'arrivée', 'arrivées'] },
+  { minStage: 3, subject: 'Elles sont', infinitive: 'tomber', correct: 'tombées', distractors: ['tombé', 'tombés', 'tombée'] },
+  { minStage: 3, subject: 'Il est', infinitive: 'venir', correct: 'venu', distractors: ['venue', 'venus', 'venues'] },
+  { minStage: 3, subject: 'Les filles sont', infinitive: 'rentrer', correct: 'rentrées', distractors: ['rentré', 'rentrés', 'rentrée'] },
+  { minStage: 3, subject: 'Mon frère est', infinitive: 'monter', correct: 'monté', distractors: ['montée', 'montés', 'montées'] },
 ];
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {

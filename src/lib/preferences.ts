@@ -97,6 +97,16 @@ export function loadPreferences(): Preferences {
   }
 }
 
+/** À la rentrée : le prénom, l'initiale et le code de classe de l'élève de
+ *  l'an dernier ne restent pas sur la tablette. */
+export function forgetPreferences(): void {
+  try {
+    localStorage.removeItem(STORAGE_KEY);
+  } catch {
+    // Stockage refusé : il n'y avait rien à effacer.
+  }
+}
+
 export function savePreferences(preferences: Preferences): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(preferences));

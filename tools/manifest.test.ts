@@ -18,6 +18,12 @@ describe('manifeste de la PWA', () => {
     expect(manifest.background_color).toMatch(/^#[0-9a-f]{6}$/i);
   });
 
+  it('laisse tourner l\'écran', () => {
+    // Imposer le portrait priverait de l'application un élève dont la
+    // tablette est fixée en paysage (RGAA 13.9, WCAG 1.3.4).
+    expect(manifest.orientation ?? 'any').toBe('any');
+  });
+
   it('reste relatif au dossier de publication', () => {
     // L'application est servie depuis /cm1-cm2/ : un chemin absolu la
     // ferait démarrer à la racine du domaine.
@@ -55,6 +61,16 @@ describe('page d\'accueil', () => {
     expect(html).toContain('rel="manifest"');
     expect(html).toContain('apple-touch-icon');
     expect(html).toContain('name="theme-color"');
+  });
+
+  it('range tout l\'écran dans la zone principale', () => {
+    // Les lecteurs d'écran y sautent directement (RGAA 12.6).
+    expect(html).toContain('<main id="root">');
+    expect(html).toContain('<html lang="fr">');
+  });
+
+  it('ne transmet pas son adresse aux sites qu\'on ouvre depuis l\'application', () => {
+    expect(html).toContain('<meta name="referrer" content="no-referrer" />');
   });
 
   it('permet l\'ajout à l\'écran d\'accueil sur iPhone', () => {

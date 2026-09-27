@@ -159,10 +159,14 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   }
 
   if (!account) {
-    const canSubmit = email.includes('@') && password.length >= 8 && !busy;
+    // Un compte donne accès aux résultats de toute une classe : la CNIL
+    // recommande au moins 12 caractères. Les comptes plus anciens, créés avec
+    // 8, se connectent toujours.
+    const canSignIn = email.includes('@') && password.length >= 8 && !busy;
+    const canSignUp = email.includes('@') && password.length >= 12 && !busy;
     return (
       <Panel>
-        <header className="flex items-start justify-between gap-3">
+        <header className="flex flex-wrap items-start justify-between gap-3">
           <div>
             <h2 className="text-2xl font-bold text-encre">Connexion</h2>
           </div>
@@ -187,7 +191,9 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
             />
           </label>
           <label className="flex flex-col gap-1">
-            <span className="text-sm font-bold text-encre-douce">Mot de passe (8 caractères au moins)</span>
+            <span className="text-sm font-bold text-encre-douce">
+              Mot de passe <span className="font-normal">(12 caractères au moins pour créer un compte)</span>
+            </span>
             <input
               className={input}
               type="password"
@@ -200,7 +206,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
           {notice && <p className="text-sm font-bold text-[#1B7A43]">{notice}</p>}
           <button
             type="button"
-            disabled={!canSubmit}
+            disabled={!canSignIn}
             className={primary}
             onClick={() =>
               run(async () => {
@@ -214,7 +220,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
           </button>
           <button
             type="button"
-            disabled={!canSubmit}
+            disabled={!canSignUp}
             className={secondary}
             onClick={() =>
               run(async () => {
@@ -241,6 +247,12 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         >
           Continuer sans compte, avec les séances de cet appareil
         </button>
+        <a
+          href="#informations"
+          className="self-center text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
+        >
+          Les données des élèves : ce que fait l'application
+        </a>
       </Panel>
     );
   }

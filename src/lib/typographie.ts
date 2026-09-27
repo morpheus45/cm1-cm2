@@ -2,7 +2,9 @@
  * La typographie française à l'écran : une espace insécable là où une ligne
  * ne doit jamais se couper — avant « ? ! ; : » et le guillemet fermant, après
  * le guillemet ouvrant, entre un nombre et ce qui le suit (« 24 billes »,
- * « 3,50 € »). Sans elle, un « ? » peut se retrouver seul au début d'une
+ * « 3,50 € »), entre les classes d'un grand nombre (« 25 000 »).
+ * Les nombres de quatre chiffres restent collés : ce sont souvent des
+ * années (« en 1789 »). Sans elle, un « ? » peut se retrouver seul au début d'une
  * ligne. De même, « reçoit-il », « a-t-il », « est-ce » ne se coupent pas au
  * trait d'union : le pronom reste accroché au verbe.
  *
@@ -15,6 +17,7 @@ const SANS_COUPURE = '\u2060';
 
 export function typographieFrancaise(text: string): string {
   return text
+    .replace(/(?<![\d,.])\d{5,}/g, (nombre) => nombre.replace(/\B(?=(\d{3})+(?!\d))/g, INSECABLE))
     .replace(/[ \t]+(?=[?!;:»])/g, INSECABLE)
     .replace(/«[ \t]+/g, `«${INSECABLE}`)
     .replace(/(\d)[ \t]+(?=[^\s\d])/g, `$1${INSECABLE}`)
