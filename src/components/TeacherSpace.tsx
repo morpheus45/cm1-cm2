@@ -23,6 +23,7 @@ import {
   type WorksheetStatus,
 } from '../lib/teacherCloud';
 import { CorrectionScreen } from './CorrectionScreen';
+import { EvaluationsScreen } from './evaluations/EvaluationsScreen';
 import { ProblemsScreen } from './ProblemsScreen';
 import { NOTION_COLORS, TEACHER_RED } from '../theme';
 import { SchoolTitle } from './ecole/SchoolTitle';
@@ -78,6 +79,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
   const [worksheets, setWorksheets] = useState<Record<string, WorksheetStatus>>({});
   const [worksheetsError, setWorksheetsError] = useState('');
   const [showProblems, setShowProblems] = useState(false);
+  const [showEvaluations, setShowEvaluations] = useState(false);
   const [correcting, setCorrecting] = useState<{
     session: SessionResult;
     worksheet?: Worksheet;
@@ -402,6 +404,9 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
           </button>
         </div>
       )}
+      <button type="button" onClick={() => setShowEvaluations(true)} className={secondary}>
+        Évaluations de la classe
+      </button>
       <button type="button" onClick={() => setShowProblems(true)} className={secondary}>
         Problèmes de la classe, avec Claude
       </button>
@@ -436,10 +441,16 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
       />
     ) : null;
 
+  const evaluationsScreen =
+    showEvaluations && current ? (
+      <EvaluationsScreen cloudClass={current} onClassChanged={refresh} onClose={() => setShowEvaluations(false)} />
+    ) : null;
+
   const correction = correcting && (
     correcting.worksheet ? (
       <CorrectionScreen
         key={correcting.session.id}
+        kind={correcting.session.activity === 'evaluation' ? 'Évaluation, opérations posées' : undefined}
         worksheet={correcting.worksheet}
         correctedAt={worksheets[correcting.session.id]?.correctedAt ?? null}
         remaining={queue.filter((session) => session.id !== correcting.session.id).length}
@@ -467,8 +478,8 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
 
   return (
     <>
-      {correction ?? problemsScreen}
-      <div hidden={correction !== null || problemsScreen !== null}>
+      {correction ?? problemsScreen ?? evaluationsScreen}
+      <div hidden={correction !== null || problemsScreen !== null || evaluationsScreen !== null}>
         <TeacherScreen
           sessions={current?.sessions ?? []}
           banner={banner}

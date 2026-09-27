@@ -1,10 +1,12 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { NOTION_COLORS, SUBJECT_COLORS, TEACHER_RED } from '../theme';
 import { Gommette } from './ecole/Gommette';
 import { RainbowArc } from './ecole/RainbowArc';
 import { SchoolTitle } from './ecole/SchoolTitle';
-import type { Activity, Domain, Level, Subject, Trimester } from '../types';
+import type { Activity, Domain, Level, Pupil, Subject, Trimester } from '../types';
 import type { Preferences } from '../lib/preferences';
+import type { OpenEvaluation } from '../lib/evaluation';
+import type { EvaluationState } from '../lib/pupilEvaluations';
 import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cloud';
 import { receivedFor, type ReceivedCorrection, type StoredCorrection } from '../lib/pupilCorrections';
 import { worksheetScore } from '../lib/worksheet';
@@ -32,6 +34,13 @@ export interface StartOptions {
   activity: Activity;
 }
 
+/** Les évaluations ouvertes d'une classe, telles que la tablette les a
+ *  reçues. */
+export interface ClassEvaluations {
+  joinCode: string;
+  evaluations: OpenEvaluation[];
+}
+
 interface HomeScreenProps {
   initial: Preferences;
   onStart: (options: StartOptions) => void;
@@ -39,9 +48,28 @@ interface HomeScreenProps {
    *  l'écran ne montre que celles de l'élève dont le nom est écrit. */
   corrections?: StoredCorrection[];
   onOpenCorrection?: (correction: ReceivedCorrection) => void;
+  /** Les évaluations ouvertes par la maîtresse. */
+  evaluations?: ClassEvaluations;
+  evaluationStateOf?: (evaluation: OpenEvaluation, pupil: Pupil) => EvaluationState;
+  onStartEvaluation?: (evaluation: OpenEvaluation, options: StartOptions) => void;
+  /** Demande les évaluations ouvertes de la classe dont le code est écrit. */
+  onRefreshEvaluations?: (joinCode: string) => void;
 }
 
-export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrection }: HomeScreenProps) {
+/** L'accueil redemande les évaluations ouvertes à ce rythme : une évaluation
+ *  que la maîtresse vient d'ouvrir apparaît sans rien toucher. */
+const EVALUATIONS_CHECK_INTERVAL = 30_000;
+
+export function HomeScreen({
+  initial,
+  onStart,
+  corrections = [],
+  onOpenCorrection,
+  evaluations,
+  evaluationStateOf,
+  onStartEvaluation,
+  onRefreshEvaluations,
+}: HomeScreenProps) {
   const [name, setName] = useState(initial.name);
   const [lastName, setLastName] = useState(initial.lastName);
   const received = useMemo(
@@ -71,6 +99,21 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
   const activities = SUBJECT_ACTIVITIES[subject];
   const posingOperations = activity === 'posees';
 
+  useEffect(() => {
+    if (!onRefreshEvaluations || !cloudAvailable || !isValidJoinCode(joinCode)) return;
+    onRefreshEvaluations(joinCode);
+    const timer = window.setInterval(() => {
+      if (document.visibilityState === 'visible') onRefreshEvaluations(joinCode);
+    }, EVALUATIONS_CHECK_INTERVAL);
+    return () => window.clearInterval(timer);
+  }, [joinCode, cloudAvailable, onRefreshEvaluations]);
+
+  const pupil: Pupil = { firstName: name, lastName };
+  const classEvaluations =
+    evaluations && evaluationStateOf && evaluations.joinCode === joinCode && isValidJoinCode(joinCode)
+      ? evaluations.evaluations.map((evaluation) => ({ evaluation, state: evaluationStateOf(evaluation, pupil) }))
+      : [];
+
   const toggleDomain = (domain: Domain) => {
     setDomains((prev) => (prev.includes(domain) ? prev.filter((d) => d !== domain) : [...prev, domain]));
   };
@@ -80,10 +123,29 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
   const canStart =
     name.trim().length > 0 && (posingOperations || activity === 'revision' || domains.length > 0);
 
+  const options = (): StartOptions => ({
+    name: name.trim(),
+    lastName: lastName.trim(),
+    joinCode: isValidJoinCode(joinCode) ? joinCode : '',
+    domains,
+    level,
+    trimester,
+    subject,
+    activity,
+  });
+
   return (
     <div className="min-h-screen px-4 pb-12 pt-3">
       <div className="mx-auto flex max-w-md flex-col gap-5">
         <SchoolTitle subtitle="Mon cahier d'exercices" />
+
+        {classEvaluations.length > 0 && onStartEvaluation && (
+          <Evaluations
+            items={classEvaluations}
+            canStart={name.trim().length > 0}
+            onStart={(evaluation) => onStartEvaluation(evaluation, options())}
+          />
+        )}
 
         {received.length > 0 && onOpenCorrection && (
           <FeuillesCorrigees items={received} onOpen={onOpenCorrection} />
@@ -227,18 +289,7 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
         <button
           type="button"
           disabled={!canStart}
-          onClick={() =>
-            onStart({
-              name: name.trim(),
-              lastName: lastName.trim(),
-              joinCode: isValidJoinCode(joinCode) ? joinCode : '',
-              domains,
-              level,
-              trimester,
-              subject,
-              activity,
-            })
-          }
+          onClick={() => onStart(options())}
           className="bouton-encre w-full py-4 text-xl"
         >
           Commencer ma séance
@@ -260,6 +311,77 @@ export function HomeScreen({ initial, onStart, corrections = [], onOpenCorrectio
         </nav>
       </div>
     </div>
+  );
+}
+
+/**
+ * Les évaluations que la maîtresse a ouvertes. Seule elle les lance : l'élève
+ * ne peut ni en choisir une autre, ni refaire celle qu'il a rendue.
+ */
+function Evaluations({
+  items,
+  canStart,
+  onStart,
+}: {
+  items: Array<{ evaluation: OpenEvaluation; state: EvaluationState }>;
+  canStart: boolean;
+  onStart: (evaluation: OpenEvaluation) => void;
+}) {
+  const waiting = items.filter((item) => item.state.kind !== 'rendue').length;
+  const title =
+    waiting === 0
+      ? 'Évaluation rendue'
+      : waiting === 1
+        ? 'Ta maîtresse a lancé une évaluation'
+        : `Ta maîtresse a lancé ${waiting} évaluations`;
+  return (
+    <section
+      className="flex flex-col gap-3 rounded-3xl border-2 bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]"
+      style={{ borderColor: waiting > 0 ? '#1E2A4A' : 'transparent' }}
+    >
+      <h2 className="text-xl font-bold text-encre">{title}</h2>
+      <ul className="flex flex-col gap-3">
+        {items.map(({ evaluation, state }) => {
+          const total = evaluation.questionCount;
+          const ready = evaluation.items !== null;
+          return (
+            <li key={evaluation.id} className="flex flex-col gap-2">
+              <p className="text-lg font-bold text-encre">
+                {evaluation.title}
+                <span className="block text-sm font-normal text-encre-douce">
+                  {SUBJECT_LABELS[evaluation.subject]} · {total} question{total > 1 ? 's' : ''}
+                </span>
+              </p>
+              {state.kind === 'en-cours' && (
+                <p className="text-base text-encre-douce">
+                  Tu as répondu à {state.answered} question{state.answered > 1 ? 's' : ''} sur {total}.
+                </p>
+              )}
+              {state.kind === 'a-refaire' && (
+                <p className="text-base font-bold text-encre-douce">Ta maîtresse te demande de la refaire.</p>
+              )}
+              {state.kind === 'rendue' ? (
+                <p className="text-base font-bold text-[#1B7A43]">✓ Ta copie est rendue.</p>
+              ) : (
+                <button
+                  type="button"
+                  disabled={!canStart || !ready}
+                  onClick={() => onStart(evaluation)}
+                  className="bouton-encre w-full py-3 text-lg"
+                >
+                  {!ready
+                    ? 'Les questions arrivent…'
+                    : state.kind === 'en-cours'
+                      ? "Reprendre l'évaluation"
+                      : "Commencer l'évaluation"}
+                </button>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+      {waiting > 0 && !canStart && <p className="text-sm font-bold text-encre-douce">Écris d'abord ton prénom, plus bas.</p>}
+    </section>
   );
 }
 

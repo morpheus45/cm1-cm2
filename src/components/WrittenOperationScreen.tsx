@@ -13,6 +13,12 @@ interface WrittenOperationScreenProps {
   totalOperations: number;
   onValidate: (given: string, strokes: Stroke[]) => void;
   onQuit: () => void;
+  /**
+   * Pendant une évaluation, l'opération est une question parmi d'autres :
+   * pas de verdict, la réponse part dès qu'elle est validée, et la barre
+   * d'avancement compte toutes les questions, de la couleur de leur notion.
+   */
+  evaluation?: { stepColors: string[] };
 }
 
 export function WrittenOperationScreen({
@@ -21,6 +27,7 @@ export function WrittenOperationScreen({
   totalOperations,
   onValidate,
   onQuit,
+  evaluation,
 }: WrittenOperationScreenProps) {
   const [strokes, setStrokes] = useState<Stroke[]>([]);
   const [given, setGiven] = useState('');
@@ -62,14 +69,16 @@ export function WrittenOperationScreen({
           <ProgressBar
             current={operationNumber}
             total={totalOperations}
-            label="Opération"
-            colors={Array(totalOperations).fill(NOTION_COLORS.calcul.band)}
+            label={evaluation ? 'Question' : 'Opération'}
+            colors={evaluation?.stepColors ?? Array(totalOperations).fill(NOTION_COLORS.calcul.band)}
           />
         </div>
       </div>
 
       <h1 ref={titleRef} tabIndex={-1} className="sr-only">
-        Opérations posées, opération {operationNumber} sur {totalOperations}
+        {evaluation
+          ? `Évaluation, question ${operationNumber} sur ${totalOperations}`
+          : `Opérations posées, opération ${operationNumber} sur ${totalOperations}`}
       </h1>
 
       <div className="flex flex-col items-center gap-2 text-center">
@@ -105,7 +114,16 @@ export function WrittenOperationScreen({
         {checked ? verdict : ''}
       </p>
 
-      {!checked ? (
+      {evaluation ? (
+        <button
+          type="button"
+          disabled={given === ''}
+          onClick={() => onValidate(given, strokes)}
+          className="bouton-encre py-4 text-xl"
+        >
+          Valider ma réponse
+        </button>
+      ) : !checked ? (
         <button
           type="button"
           disabled={given === ''}

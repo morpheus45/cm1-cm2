@@ -18,6 +18,9 @@ interface CorrectionScreenProps {
   onSave: (worksheet: Worksheet) => Promise<void>;
   onNext: () => void;
   onClose: () => void;
+  /** « Opérations posées » par défaut ; « Évaluation » pour les opérations
+   *  d'une évaluation. */
+  kind?: string;
 }
 
 function frenchDateTime(iso: string): string {
@@ -38,6 +41,7 @@ export function CorrectionScreen({
   onSave,
   onNext,
   onClose,
+  kind = 'Opérations posées',
 }: CorrectionScreenProps) {
   const [draft, setDraft] = useState(worksheet);
   const [saved, setSaved] = useState(() => JSON.stringify(correctionsOf(worksheet)));
@@ -101,7 +105,7 @@ export function CorrectionScreen({
             </p>
             <h1 className="truncate font-cursive text-2xl leading-[2] text-encre">{draft.name}</h1>
             <p className="text-sm text-encre-douce">
-              Opérations posées · {formatFrenchDate(draft.createdAt)} · {correct} / {total} juste
+              {kind} · {formatFrenchDate(draft.createdAt)} · {correct} / {total} juste
               {correct > 1 ? 's' : ''}
             </p>
           </div>

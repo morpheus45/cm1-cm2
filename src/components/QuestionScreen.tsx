@@ -27,7 +27,8 @@ const ENCOURAGEMENTS = ['Bravo\u00a0!', 'Super\u00a0!', 'Bien joué\u00a0!', 'G�
 const JUSTE = NOTION_COLORS.numeration;
 const A_REVOIR = NOTION_COLORS.accords;
 
-function renderPrompt(prompt: string, highlight: string) {
+/** L'énoncé, ses mots importants surlignés de la couleur de la notion. */
+export function renderPrompt(prompt: string, highlight: string) {
   const parts = prompt.split(/\*\*(.+?)\*\*/g);
   return parts.map((part, index) =>
     index % 2 === 1 ? (

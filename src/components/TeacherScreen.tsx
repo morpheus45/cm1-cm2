@@ -314,9 +314,11 @@ export function TeacherScreen({
                     >
                       <span>
                         <span className="block font-bold text-encre">
-                          {formatFrenchDate(session.at)}
+                          {session.activity === 'evaluation'
+                            ? `Évaluation du ${formatFrenchDate(session.at)}`
+                            : formatFrenchDate(session.at)}
                         </span>
-                        {score && (
+                        {score && session.activity !== 'evaluation' && (
                           <span className="block text-xs font-normal text-encre-douce">
                             {score.correct} / {score.total} juste{score.correct > 1 ? 's' : ''}
                           </span>
