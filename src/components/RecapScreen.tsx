@@ -6,6 +6,7 @@ import type { DepositOutcome } from '../lib/cloud';
 import { Gommette } from './ecole/Gommette';
 import { NoteEntouree } from './ecole/NoteEntouree';
 import { Tampon } from './ecole/Tampon';
+import { useScreenTitle } from './useScreenTitle';
 
 interface RecapScreenProps {
   delivery?: DepositOutcome | 'pending' | null;
@@ -34,13 +35,14 @@ export function RecapScreen({
   // titre suit le score, sans jamais le lui reprocher.
   const ratio = total > 0 ? score / total : 0;
   const headline = ratio === 1 ? 'Sans faute\u00a0!' : ratio >= 0.5 ? 'Bravo\u00a0!' : 'Bien essayé\u00a0!';
+  const titleRef = useScreenTitle();
 
   return (
     <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center gap-6 px-4 py-8">
       <section className="cahier flex flex-col items-center gap-4 rounded-3xl px-6 py-8 text-center shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]">
-        <p className="text-base font-bold uppercase tracking-[0.18em] text-encre-douce">
+        <h1 ref={titleRef} tabIndex={-1} className="text-base font-bold uppercase tracking-[0.18em] text-encre-douce focus:outline-none">
           Séance {ofSubject(subject)} terminée
-        </p>
+        </h1>
         <Tampon tilt={-7} className="text-2xl sm:text-3xl">
           {headline}
         </Tampon>

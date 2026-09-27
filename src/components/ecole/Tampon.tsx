@@ -11,7 +11,7 @@ interface TamponProps {
 export function Tampon({ children, color = TEACHER_RED, tilt = -6, className = '' }: TamponProps) {
   return (
     <div
-      className={`tampon inline-block whitespace-nowrap rounded-xl px-5 py-2 text-center font-bold uppercase tracking-[0.1em] ${className}`}
+      className={`tampon inline-block max-w-full rounded-xl px-5 py-2 text-center font-bold uppercase tracking-[0.1em] ${className}`}
       style={{
         color,
         border: `4px double ${color}`,

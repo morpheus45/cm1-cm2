@@ -6,7 +6,7 @@ export const END_OF_YEAR_TARGET = 3;
 
 function Line({ summary }: { summary: DomainSummary }) {
   return (
-    <li className="flex items-center justify-between gap-3 py-1.5">
+    <li className="flex flex-wrap items-center justify-between gap-x-3 gap-y-0.5 py-1.5">
       <span className="flex items-center gap-2 text-sm text-encre">
         <span
           className="w-2.5 h-2.5 rounded-sm shrink-0"
@@ -14,7 +14,7 @@ function Line({ summary }: { summary: DomainSummary }) {
         />
         {DOMAIN_LABELS[summary.domain]}
       </span>
-      <span className="text-xs text-encre-douce shrink-0">
+      <span className="text-xs text-encre-douce">
         {summary.mastery ? MASTERY_SHORT[summary.mastery] : 'pas assez travaillé'}
         {summary.ratio !== null && ` · ${Math.round(summary.ratio * 100)} %`}
       </span>
