@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
 import { generate, eligibleTenses } from './conjugaison';
+import { ALL_VERBS, PERSONS, type Tense } from './conjugaisonVerbes';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Trimester } from '../types';
 
@@ -105,6 +106,25 @@ describe('conjugaison generate', () => {
     }
   });
 
+  it('ne mélange jamais un indicateur de temps avec un temps incompatible', () => {
+    const PAST_TENSES = ['imparfait', 'passé composé', 'passé simple', 'plus-que-parfait'];
+    const NON_PAST_TENSES = ['présent', 'futur', 'conditionnel présent'];
+    const tenseOf = (q: { id: string; instruction?: string; choices: string[]; correctIndex: number }): string =>
+      q.id.startsWith('conjugaison-forme-') ? tenseOfFormQuestion(q.instruction ?? '') : q.choices[q.correctIndex];
+
+    LEVELS.forEach((level) => {
+      ALL_TRIMESTERS.forEach((trimester) => {
+        for (let seed = 1; seed <= 40; seed++) {
+          generate(level, trimester, createRng(seed * 7919 + 1), 12).forEach((q) => {
+            const tense = tenseOf(q);
+            if (/\bdemain\b/.test(q.prompt)) expect(PAST_TENSES, q.prompt).not.toContain(tense);
+            if (/\bhier\b/.test(q.prompt)) expect(NON_PAST_TENSES, q.prompt).not.toContain(tense);
+          });
+        }
+      });
+    });
+  });
+
   it('keeps revising earlier tenses at the end of the year', () => {
     const questions = generate('CM2', 3, createRng(11), 60);
     const tenses = new Set(
@@ -114,5 +134,31 @@ describe('conjugaison generate', () => {
     );
     expect(tenses.has('présent')).toBe(true);
     expect(tenses.has('conditionnel présent')).toBe(true);
+  });
+});
+
+describe('trouver le temps : une seule bonne réponse', () => {
+  it("ne propose jamais un autre temps qui donne la même forme (il remplit, il dit…)", () => {
+    for (const level of LEVELS) {
+      for (const trimester of ALL_TRIMESTERS) {
+        for (let seed = 0; seed < 150; seed++) {
+          for (const q of generate(level, trimester as Trimester, createRng(seed), 12)) {
+            if (q.instruction !== 'À quel temps est le verbe souligné ?') continue;
+            const form = /\*\*(.+?)\*\*/.exec(q.prompt)?.[1];
+            expect(form).toBeTruthy();
+            const correct = q.choices[q.correctIndex] as Tense;
+            for (const verb of ALL_VERBS) {
+              for (const person of PERSONS) {
+                if (verb.forms[correct]?.[person] !== form) continue;
+                for (const other of q.choices) {
+                  if (other === correct) continue;
+                  expect(verb.forms[other as Tense]?.[person], `${q.prompt} : ${correct} / ${other}`).not.toBe(form);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   });
 });

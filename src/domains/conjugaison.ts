@@ -2,15 +2,9 @@ import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
+import { ALL_VERBS, PERSONS, type Person, type Tense, type Verb } from './conjugaisonVerbes';
 
-export type Tense =
-  | 'présent'
-  | 'imparfait'
-  | 'futur'
-  | 'passé composé'
-  | 'passé simple'
-  | 'plus-que-parfait'
-  | 'conditionnel présent';
+export type { Tense };
 
 /**
  * Étape à partir de laquelle chaque temps est enseigné. Aucun temps hors de
@@ -45,166 +39,176 @@ export function eligibleTenses(level: Level, trimester: Trimester): Tense[] {
   return TENSE_ORDER.filter((tense) => TENSE_MIN_STAGE[tense] <= stage);
 }
 
-/** « Complète la phrase » : les mauvaises réponses sont d'autres personnes du
- *  même temps, jamais un temps que l'élève n'a pas encore vu. */
-interface FormItem {
-  sentence: string;
-  infinitive: string;
-  tense: Tense;
-  correct: string;
-  distractors: [string, string, string];
+/** Un temps composé (passé composé, plus-que-parfait) : les verbes qui se
+ *  conjuguent avec « être » n'y participent pas dans ce domaine. */
+function isCompoundTense(tense: Tense): boolean {
+  return tense === 'passé composé' || tense === 'plus-que-parfait';
 }
 
-const FORM_ITEMS: FormItem[] = [
-  // --- Présent ---
-  { sentence: 'Tu ... la mousse au chocolat.', infinitive: 'aimer', tense: 'présent', correct: 'aimes', distractors: ['aime', 'aiment', 'aimez'] },
-  { sentence: 'Nous ... un chien noir.', infinitive: 'avoir', tense: 'présent', correct: 'avons', distractors: ['avez', 'ont', 'as'] },
-  { sentence: 'Elle ... ses devoirs.', infinitive: 'faire', tense: 'présent', correct: 'fait', distractors: ['fais', 'faisons', 'font'] },
-  { sentence: 'Vous ... le bus le matin.', infinitive: 'prendre', tense: 'présent', correct: 'prenez', distractors: ['prends', 'prend', 'prennent'] },
-  { sentence: "Je ... à l'école à pied.", infinitive: 'aller', tense: 'présent', correct: 'vais', distractors: ['vas', 'va', 'allons'] },
-  { sentence: 'Ils ... dans la cour.', infinitive: 'jouer', tense: 'présent', correct: 'jouent', distractors: ['joue', 'joues', 'jouons'] },
-  { sentence: 'Nous ... la fenêtre.', infinitive: 'ouvrir', tense: 'présent', correct: 'ouvrons', distractors: ['ouvre', 'ouvrez', 'ouvrent'] },
-  { sentence: 'Tu ... ton exercice.', infinitive: 'finir', tense: 'présent', correct: 'finis', distractors: ['finit', 'finissons', 'finissent'] },
-  { sentence: 'Elles ... contentes.', infinitive: 'être', tense: 'présent', correct: 'sont', distractors: ['est', 'sommes', 'êtes'] },
-  { sentence: 'On ... une belle histoire.', infinitive: 'lire', tense: 'présent', correct: 'lit', distractors: ['lis', 'lisons', 'lisent'] },
-  { sentence: 'Vous ... du vélo le dimanche.', infinitive: 'faire', tense: 'présent', correct: 'faites', distractors: ['fais', 'fait', 'font'] },
-  { sentence: 'Je ... mon cartable.', infinitive: 'prendre', tense: 'présent', correct: 'prends', distractors: ['prend', 'prenons', 'prennent'] },
-  { sentence: 'Nous ... à la cantine.', infinitive: 'manger', tense: 'présent', correct: 'mangeons', distractors: ['mange', 'manges', 'mangent'] },
-  { sentence: 'Tu ... plus vite que moi.', infinitive: 'courir', tense: 'présent', correct: 'cours', distractors: ['court', 'courons', 'courent'] },
-  // --- Imparfait ---
-  { sentence: 'La bibliothécaire ... des histoires.', infinitive: 'raconter', tense: 'imparfait', correct: 'racontait', distractors: ['racontais', 'racontaient', 'racontiez'] },
-  { sentence: 'Il ... beau ce jour-là.', infinitive: 'faire', tense: 'imparfait', correct: 'faisait', distractors: ['faisais', 'faisaient', 'faisions'] },
-  { sentence: 'Nous ... à la piscine le mercredi.', infinitive: 'aller', tense: 'imparfait', correct: 'allions', distractors: ['allais', 'allait', 'allaient'] },
-  { sentence: 'Tu ... un vélo rouge.', infinitive: 'vouloir', tense: 'imparfait', correct: 'voulais', distractors: ['voulait', 'voulions', 'voulaient'] },
-  { sentence: 'Vous ... souvent en retard.', infinitive: 'être', tense: 'imparfait', correct: 'étiez', distractors: ['étais', 'était', 'étions'] },
-  { sentence: 'Ils ... beaucoup de chance.', infinitive: 'avoir', tense: 'imparfait', correct: 'avaient', distractors: ['avais', 'avait', 'aviez'] },
-  // --- Futur ---
-  { sentence: "Ils ... l'ascenseur.", infinitive: 'prendre', tense: 'futur', correct: 'prendront', distractors: ['prendra', 'prendrons', 'prendrez'] },
-  { sentence: 'Elle ... demain matin.', infinitive: 'venir', tense: 'futur', correct: 'viendra', distractors: ['viendras', 'viendrons', 'viendront'] },
-  { sentence: 'Nous ... le film ce soir.', infinitive: 'voir', tense: 'futur', correct: 'verrons', distractors: ['verrai', 'verra', 'verront'] },
-  { sentence: 'Vous ... la vérité.', infinitive: 'dire', tense: 'futur', correct: 'direz', distractors: ['dirai', 'dira', 'diront'] },
-  { sentence: 'Tu ... grand plus tard.', infinitive: 'être', tense: 'futur', correct: 'seras', distractors: ['serai', 'sera', 'serons'] },
-  { sentence: "J'... un nouveau cartable.", infinitive: 'avoir', tense: 'futur', correct: 'aurai', distractors: ['auras', 'aura', 'aurons'] },
-  // --- Passé composé ---
-  { sentence: "J'... ma vieille trottinette.", infinitive: 'remplacer', tense: 'passé composé', correct: 'ai remplacé', distractors: ['as remplacé', 'a remplacé', 'avons remplacé'] },
-  { sentence: 'Elle ... un bel oiseau.', infinitive: 'voir', tense: 'passé composé', correct: 'a vu', distractors: ['ai vu', 'as vu', 'ont vu'] },
-  { sentence: 'Nous ... le train de huit heures.', infinitive: 'prendre', tense: 'passé composé', correct: 'avons pris', distractors: ['avez pris', 'ont pris', 'as pris'] },
-  { sentence: 'Ils ... merci à la maîtresse.', infinitive: 'dire', tense: 'passé composé', correct: 'ont dit', distractors: ['a dit', 'avons dit', 'avez dit'] },
-  { sentence: 'Elle ... à huit heures.', infinitive: 'partir', tense: 'passé composé', correct: 'est partie', distractors: ['est parti', 'sont parties', 'es partie'] },
-  { sentence: 'Tu ... tes devoirs.', infinitive: 'finir', tense: 'passé composé', correct: 'as fini', distractors: ['a fini', 'avons fini', 'ont fini'] },
-  // --- Passé simple : aux troisièmes personnes seulement, comme le programme
-  // le demande à l'école élémentaire. ---
-  { sentence: 'Le chevalier ... au combat.', infinitive: 'partir', tense: 'passé simple', correct: 'partit', distractors: ['partis', 'partirent', 'partîmes'] },
-  { sentence: 'Elle ... son cahier et sortit.', infinitive: 'prendre', tense: 'passé simple', correct: 'prit', distractors: ['pris', 'prirent', 'prîmes'] },
-  { sentence: 'Ils ... un renard dans la forêt.', infinitive: 'voir', tense: 'passé simple', correct: 'virent', distractors: ['vit', 'vis', 'vîmes'] },
-  { sentence: 'Ils ... très peur.', infinitive: 'avoir', tense: 'passé simple', correct: 'eurent', distractors: ['eut', 'eus', 'eûmes'] },
-  { sentence: 'Il ... très courageux.', infinitive: 'être', tense: 'passé simple', correct: 'fut', distractors: ['furent', 'fus', 'fûmes'] },
-  // --- Plus-que-parfait ---
-  { sentence: 'Il ... quand nous sommes arrivés.', infinitive: 'manger', tense: 'plus-que-parfait', correct: 'avait mangé', distractors: ['avais mangé', 'avaient mangé', 'avions mangé'] },
-  { sentence: 'Elle ... avant la pluie.', infinitive: 'partir', tense: 'plus-que-parfait', correct: 'était partie', distractors: ['était parti', 'étaient parties', 'étais partie'] },
-  { sentence: 'Nous ... nos devoirs.', infinitive: 'finir', tense: 'plus-que-parfait', correct: 'avions fini', distractors: ['aviez fini', 'avait fini', 'avaient fini'] },
-  { sentence: 'Ils ... leurs affaires.', infinitive: 'oublier', tense: 'plus-que-parfait', correct: 'avaient oublié', distractors: ['avait oublié', 'avions oublié', 'aviez oublié'] },
-  // --- Conditionnel présent ---
-  { sentence: "J'... visiter Paris un jour.", infinitive: 'aimer', tense: 'conditionnel présent', correct: 'aimerais', distractors: ['aimerait', 'aimerions', 'aimeraient'] },
-  { sentence: "Tu ... m'aider, s'il te plaît.", infinitive: 'pouvoir', tense: 'conditionnel présent', correct: 'pourrais', distractors: ['pourrait', 'pourrions', 'pourraient'] },
-  { sentence: 'Nous ... partir en vacances.', infinitive: 'vouloir', tense: 'conditionnel présent', correct: 'voudrions', distractors: ['voudrais', 'voudrait', 'voudraient'] },
-  { sentence: 'Elle ... si elle avait le temps.', infinitive: 'venir', tense: 'conditionnel présent', correct: 'viendrait', distractors: ['viendrais', 'viendrions', 'viendraient'] },
-];
-
-/** « À quel temps ? » : n'a de sens qu'à partir de 4 temps enseignés, sinon il
- *  n'y a pas assez de mauvaises réponses légitimes. */
-interface IdentificationItem {
-  prompt: string;
-  tense: Tense;
+/**
+ * Le sujet d'une phrase : un pronom ou un nom propre, associé à la personne
+ * grammaticale dont il emprunte la conjugaison. Multiplier les sujets d'une
+ * même personne (« il », « Léa », « Paul »...) fabrique de nombreuses phrases
+ * différentes à partir d'une seule table de conjugaison.
+ */
+interface SubjectSlot {
+  person: Person;
+  text: string;
+  /** Le passé simple ne s'enseigne qu'aux troisièmes personnes : ce sujet
+   *  peut-il y figurer ? */
+  thirdPerson: boolean;
 }
 
-const IDENTIFICATION_ITEMS: IdentificationItem[] = [
-  { prompt: 'Tu **aimes** la mousse au chocolat.', tense: 'présent' },
-  { prompt: 'Nous **avons** un chien noir.', tense: 'présent' },
-  { prompt: 'Elle **fait** ses devoirs.', tense: 'présent' },
-  { prompt: 'Vous **prenez** le bus le matin.', tense: 'présent' },
-  { prompt: 'La bibliothécaire **racontait** des histoires aux enfants.', tense: 'imparfait' },
-  { prompt: 'Il **faisait** beau ce jour-là.', tense: 'imparfait' },
-  { prompt: 'Nous **allions** à la piscine le mercredi.', tense: 'imparfait' },
-  { prompt: 'Tu **voulais** un vélo rouge.', tense: 'imparfait' },
-  { prompt: "Ils **prendront** l'ascenseur.", tense: 'futur' },
-  { prompt: 'Elle **viendra** demain matin.', tense: 'futur' },
-  { prompt: 'Nous **verrons** le film ce soir.', tense: 'futur' },
-  { prompt: 'Vous **direz** la vérité.', tense: 'futur' },
-  { prompt: "J'**ai remplacé** ma vieille trottinette.", tense: 'passé composé' },
-  { prompt: 'Elle **a vu** un bel oiseau.', tense: 'passé composé' },
-  { prompt: 'Nous **avons pris** le train.', tense: 'passé composé' },
-  { prompt: 'Ils **ont dit** merci.', tense: 'passé composé' },
-  { prompt: 'Le chevalier **partit** au combat.', tense: 'passé simple' },
-  { prompt: 'Elle **prit** son cahier et sortit.', tense: 'passé simple' },
-  { prompt: 'Ils **virent** un renard dans la forêt.', tense: 'passé simple' },
-  { prompt: 'Ils **eurent** très peur.', tense: 'passé simple' },
-  { prompt: 'Il **avait déjà mangé** quand nous sommes arrivés.', tense: 'plus-que-parfait' },
-  { prompt: 'Elle **était partie** avant la pluie.', tense: 'plus-que-parfait' },
-  { prompt: 'Nous **avions fini** nos devoirs.', tense: 'plus-que-parfait' },
-  { prompt: 'Ils **avaient oublié** leurs affaires.', tense: 'plus-que-parfait' },
-  { prompt: "J'**aimerais** visiter Paris un jour.", tense: 'conditionnel présent' },
-  { prompt: "Tu **pourrais** m'aider, s'il te plaît.", tense: 'conditionnel présent' },
-  { prompt: 'Nous **voudrions** partir en vacances.', tense: 'conditionnel présent' },
-  { prompt: 'Elle **viendrait** si elle avait le temps.', tense: 'conditionnel présent' },
+const SUBJECT_SLOTS: SubjectSlot[] = [
+  { person: 'je', text: 'Je', thirdPerson: false },
+  { person: 'tu', text: 'Tu', thirdPerson: false },
+  { person: 'il', text: 'Il', thirdPerson: true },
+  { person: 'il', text: 'Elle', thirdPerson: true },
+  { person: 'il', text: 'Léa', thirdPerson: true },
+  { person: 'il', text: 'Paul', thirdPerson: true },
+  { person: 'il', text: 'Marion', thirdPerson: true },
+  { person: 'il', text: 'Tom', thirdPerson: true },
+  { person: 'nous', text: 'Nous', thirdPerson: false },
+  { person: 'vous', text: 'Vous', thirdPerson: false },
+  { person: 'ils', text: 'Ils', thirdPerson: true },
+  { person: 'ils', text: 'Elles', thirdPerson: true },
+  { person: 'ils', text: 'Les enfants', thirdPerson: true },
+  { person: 'ils', text: 'Mes parents', thirdPerson: true },
+  { person: 'ils', text: 'Les élèves', thirdPerson: true },
 ];
 
-const MIN_TENSES_FOR_IDENTIFICATION = 4;
+/** L'élision ne touche que « je », devant une forme qui commence par une
+ *  voyelle ou un h muet : « j'aime », mais « je finis ». Le trou cache la
+ *  forme, pas l'élision — elle se décide d'après la bonne réponse, la seule
+ *  que la phrase doive rendre grammaticale. */
+function elides(subject: SubjectSlot, form: string): boolean {
+  return subject.person === 'je' && /^[aeiouyh]/i.test(form);
+}
+
+function subjectWithBlank(subject: SubjectSlot, correctForm: string): string {
+  return elides(subject, correctForm) ? "J'..." : `${subject.text} ...`;
+}
+
+function subjectWithBoldForm(subject: SubjectSlot, correctForm: string): string {
+  return elides(subject, correctForm) ? `J'**${correctForm}**` : `${subject.text} **${correctForm}**`;
+}
 
 /** « au présent », mais « à l'imparfait ». */
 function atTense(tense: Tense): string {
   return /^[aeiouy]/i.test(tense) ? `à l'${tense}` : `au ${tense}`;
 }
 
-/** Clé d'une phrase, verbe masqué : sert à ne pas poser deux fois la même
- *  phrase dans une séance, une fois à compléter et une fois à identifier. */
-function sentenceKey(text: string): string {
-  return text.replace(/\*\*.+?\*\*/, '...');
+interface Candidate {
+  verb: Verb;
+  tense: Tense;
+  subject: SubjectSlot;
+  key: string;
 }
+
+function buildCandidates(tenses: Tense[]): Candidate[] {
+  const candidates: Candidate[] = [];
+  ALL_VERBS.forEach((verb) => {
+    tenses.forEach((tense) => {
+      if (isCompoundTense(tense) && !verb.canCompound) return;
+      SUBJECT_SLOTS.forEach((subject) => {
+        if (tense === 'passé simple' && !subject.thirdPerson) return;
+        candidates.push({ verb, tense, subject, key: `${verb.infinitive}|${tense}|${subject.text}` });
+      });
+    });
+  });
+  return candidates;
+}
+
+/** Les personnes proposées comme mauvaises réponses : celles d'un même verbe,
+ *  au même temps — l'erreur d'élève la plus fréquente est de bien choisir le
+ *  temps mais de mal accorder la personne. */
+function distractorsFor(rng: Rng, verb: Verb, tense: Tense, correctPerson: Person): string[] {
+  const correct = verb.forms[tense][correctPerson];
+  const others = PERSONS.filter((person) => person !== correctPerson);
+  const seen = new Set([correct]);
+  const forms = rngShuffle(rng, others)
+    .map((person) => verb.forms[tense][person])
+    .filter((form) => {
+      if (seen.has(form)) return false;
+      seen.add(form);
+      return true;
+    });
+  return forms.slice(0, 3);
+}
+
+function formQuestion(rng: Rng, index: number, candidate: Candidate): Question | null {
+  const { verb, tense, subject } = candidate;
+  const correct = verb.forms[tense][subject.person];
+  const distractors = distractorsFor(rng, verb, tense, subject.person);
+  if (distractors.length < 3) return null;
+  const choices = rngShuffle(rng, [correct, ...distractors]);
+  return {
+    id: `conjugaison-forme-${index}-${verb.infinitive}-${correct}`,
+    domain: 'conjugaison',
+    instruction: `Complète ${atTense(tense)} — verbe « ${verb.infinitive} »`,
+    prompt: `${subjectWithBlank(subject, correct)} ${verb.complement}`,
+    choices,
+    correctIndex: choices.indexOf(correct),
+  };
+}
+
+function identificationQuestion(rng: Rng, index: number, candidate: Candidate, tenses: Tense[]): Question | null {
+  const { verb, tense, subject } = candidate;
+  const correct = verb.forms[tense][subject.person];
+  // « Il remplit », « je finis », « il dit » : la même forme au présent et au
+  // passé simple. Un temps qui donne la même forme serait aussi une bonne
+  // réponse : il ne peut pas être proposé.
+  const otherTenses = rngShuffle(
+    rng,
+    tenses.filter((t) => t !== tense && verb.forms[t][subject.person] !== correct)
+  ).slice(0, 3);
+  if (otherTenses.length < 3) return null;
+  const choices = rngShuffle(rng, [tense, ...otherTenses]);
+  return {
+    id: `conjugaison-temps-${index}-${tense}-${verb.infinitive}`,
+    domain: 'conjugaison',
+    instruction: 'À quel temps est le verbe souligné ?',
+    prompt: `${subjectWithBoldForm(subject, correct)} ${verb.complement}`,
+    choices,
+    correctIndex: choices.indexOf(tense),
+  };
+}
+
+const MIN_TENSES_FOR_IDENTIFICATION = 4;
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
   const tenses = eligibleTenses(level, trimester);
-  const tenseSet = new Set<Tense>(tenses);
-
-  const formPool = FORM_ITEMS.filter((item) => tenseSet.has(item.tense));
   const canIdentify = tenses.length >= MIN_TENSES_FOR_IDENTIFICATION;
   const identificationCount = canIdentify ? Math.floor(count / 2) : 0;
   const formCount = count - identificationCount;
 
-  const formQuestions = rngPickN(rng, formPool, formCount).map((item, index) => {
-    const choices = rngShuffle(rng, [item.correct, ...item.distractors]);
-    return {
-      id: `conjugaison-forme-${index}-${item.infinitive}-${item.correct}`,
-      domain: 'conjugaison' as const,
-      instruction: `Complète ${atTense(item.tense)} — verbe « ${item.infinitive} »`,
-      prompt: item.sentence,
-      choices,
-      correctIndex: choices.indexOf(item.correct),
-    };
-  });
-
-  if (identificationCount <= 0) {
-    return formQuestions;
+  const candidates = buildCandidates(tenses);
+  const formCandidates = rngPickN(rng, candidates, formCount * 2);
+  const formQuestions: Question[] = [];
+  const usedKeys = new Set<string>();
+  for (const candidate of formCandidates) {
+    if (formQuestions.length >= formCount) break;
+    const question = formQuestion(rng, formQuestions.length, candidate);
+    if (!question) continue;
+    formQuestions.push(question);
+    usedKeys.add(candidate.key);
   }
 
-  const usedSentences = new Set(formQuestions.map((q) => sentenceKey(q.prompt)));
-  const eligibleIdentification = IDENTIFICATION_ITEMS.filter((item) => tenseSet.has(item.tense));
-  const unusedIdentification = eligibleIdentification.filter(
-    (item) => !usedSentences.has(sentenceKey(item.prompt))
-  );
-  const identificationPool = unusedIdentification.length > 0 ? unusedIdentification : eligibleIdentification;
-  const identificationQuestions = rngPickN(rng, identificationPool, identificationCount).map((item, index) => {
-    const distractors = rngShuffle(rng, tenses.filter((t) => t !== item.tense)).slice(0, 3);
-    const choices = rngShuffle(rng, [item.tense, ...distractors]);
-    return {
-      id: `conjugaison-temps-${index}-${item.tense}`,
-      domain: 'conjugaison' as const,
-      instruction: 'À quel temps est le verbe souligné ?',
-      prompt: item.prompt,
-      choices,
-      correctIndex: choices.indexOf(item.tense),
-    };
-  });
+  if (identificationCount <= 0) {
+    return formQuestions.slice(0, formCount);
+  }
 
-  return rngShuffle(rng, [...formQuestions, ...identificationQuestions]);
+  const unusedCandidates = candidates.filter((candidate) => !usedKeys.has(candidate.key));
+  const identificationPool = unusedCandidates.length >= identificationCount ? unusedCandidates : candidates;
+  const identificationQuestions: Question[] = [];
+  for (const candidate of rngPickN(rng, identificationPool, identificationPool.length)) {
+    if (identificationQuestions.length >= identificationCount) break;
+    if (usedKeys.has(candidate.key)) continue;
+    const question = identificationQuestion(rng, identificationQuestions.length, candidate, tenses);
+    if (!question) continue;
+    identificationQuestions.push(question);
+    usedKeys.add(candidate.key);
+  }
+
+  return rngShuffle(rng, [...formQuestions.slice(0, formCount), ...identificationQuestions]);
 }

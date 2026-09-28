@@ -12,6 +12,7 @@ import * as problemes from '../domains/problemes';
 import * as geometrie from '../domains/geometrie';
 import * as histoire from '../domains/histoire';
 import * as geographie from '../domains/geographie';
+import { questionSignature } from './questionHistory';
 
 type Generator = (level: Level, trimester: Trimester, rng: Rng, count: number) => Question[];
 
@@ -44,6 +45,13 @@ export interface SessionRequest {
   classProblems?: ClassProblem[];
   /** Ses questions dans les autres matières, s'il y en a. */
   classQuestions?: ClassQuestion[];
+  /**
+   * Les signatures de questions à éviter si possible, des plus anciennes aux
+   * plus récentes — l'historique des dix dernières séances de la matière
+   * (voir questionHistory.ts). En cas de manque, la séance reprend d'abord
+   * les plus anciennes plutôt que de raccourcir la séance.
+   */
+  avoidSignatures?: string[];
 }
 
 export interface Session {
@@ -76,11 +84,53 @@ export function subjectOfDomains(domains: Domain[]): Subject {
   return subjects.values().next().value as Subject;
 }
 
+/** Assez de candidats pour qu'exclure les questions récemment vues laisse
+ *  toujours un choix confortable, même quand une notion n'en a besoin que
+ *  de deux ou trois. */
+const CANDIDATE_POOL_SIZE = 200;
+
+/**
+ * Pioche `count` questions fraîches auprès d'une notion, en évitant si
+ * possible les signatures données. Si la notion n'a pas assez de questions
+ * jamais vues, la séance reprend d'abord celles vues il y a le plus
+ * longtemps (`avoid` est ordonné des plus anciennes aux plus récentes).
+ * Rend toujours exactement `count` questions, même si la notion n'a pas
+ * `count` énoncés distincts : mieux vaut répéter que raccourcir la séance.
+ */
+function pickFreshQuestions(
+  generator: Generator,
+  level: Level,
+  trimester: Trimester,
+  rng: Rng,
+  count: number,
+  avoid: string[]
+): Question[] {
+  if (count <= 0) return [];
+  const candidates = generator(level, trimester, rng, Math.max(count, CANDIDATE_POOL_SIZE));
+  const seenSignatures = new Set<string>();
+  const unique: Question[] = [];
+  candidates.forEach((question) => {
+    const signature = questionSignature(question);
+    if (seenSignatures.has(signature)) return;
+    seenSignatures.add(signature);
+    unique.push(question);
+  });
+
+  const avoidRank = new Map(avoid.map((signature, index) => [signature, index]));
+  const fresh = unique.filter((question) => !avoidRank.has(questionSignature(question)));
+  const stale = unique
+    .filter((question) => avoidRank.has(questionSignature(question)))
+    .sort((a, b) => avoidRank.get(questionSignature(a))! - avoidRank.get(questionSignature(b))!);
+  const picked = [...fresh, ...stale];
+  return picked.length >= count ? picked.slice(0, count) : candidates.slice(0, count);
+}
+
 /**
  * Construit une séance. Les questions ne sont pas mélangées entre les
  * notions : l'élève fait d'abord tout le bloc de conjugaison, puis tout le
  * bloc d'accords, etc. — dans l'ordre fixe de `ALL_DOMAINS`.
  */
+
 export function buildSession({
   domains,
   level,
@@ -89,6 +139,7 @@ export function buildSession({
   count = QUESTIONS_PER_SESSION,
   classProblems = [],
   classQuestions = [],
+  avoidSignatures = [],
 }: SessionRequest): Session {
   const orderedDomains = ALL_DOMAINS.filter((domain) => domains.includes(domain));
   const subject = subjectOfDomains(orderedDomains);
@@ -113,7 +164,14 @@ export function buildSession({
         : pickClassQuestions(classQuestions, domain, trimester, rng, Math.ceil(domainCount / 2)).map((question) =>
             classQuestionToQuestion(question, rng)
           );
-    const generated = GENERATORS[domain](level, trimester, rng, domainCount - own.length);
+    const generated = pickFreshQuestions(
+      GENERATORS[domain],
+      level,
+      trimester,
+      rng,
+      domainCount - own.length,
+      avoidSignatures
+    );
     questions.push(...(own.length > 0 ? rngShuffle(rng, [...own, ...generated]) : generated));
   });
 

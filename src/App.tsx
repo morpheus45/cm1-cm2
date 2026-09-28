@@ -5,6 +5,7 @@ import { buildSession, type Session } from './lib/sessionBuilder';
 import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
 import { loadPreferences, savePreferences } from './lib/preferences';
 import { loadStars, saveStars } from './lib/stars';
+import { recentSignatures, recordShownQuestions } from './lib/questionHistory';
 import {
   forgetAllResults,
   forgetPupil,
@@ -261,16 +262,17 @@ export function App() {
       return;
     }
 
-    setSession(
-      buildSession({
-        domains,
-        level: options.level,
-        trimester: options.trimester,
-        seed,
-        classProblems: options.joinCode ? cachedClassProblems(options.joinCode) : [],
-        classQuestions: options.joinCode ? cachedClassQuestions(options.joinCode) : [],
-      })
-    );
+    const built = buildSession({
+      domains,
+      level: options.level,
+      trimester: options.trimester,
+      seed,
+      classProblems: options.joinCode ? cachedClassProblems(options.joinCode) : [],
+      classQuestions: options.joinCode ? cachedClassQuestions(options.joinCode) : [],
+      avoidSignatures: recentSignatures(pupil, options.subject),
+    });
+    setSession(built);
+    recordShownQuestions(pupil, options.subject, built.questions);
     // Un code tout juste saisi : les problèmes et les questions de la classe
     // arriveront pour la séance suivante.
     if (isCloudConfigured() && options.joinCode) {
