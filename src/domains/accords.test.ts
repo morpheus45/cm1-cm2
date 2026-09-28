@@ -43,9 +43,14 @@ describe('accords generate', () => {
   });
 
   it('keeps irregular plurals for the third trimester of CM1 onwards', () => {
+    // Les noms irréguliers ne sont qu'une partie du lexique : un seul tirage
+    // peut les manquer par hasard. Plusieurs graines évitent ce faux négatif
+    // tout en gardant le test déterministe.
     const usesIrregular = (level: Level, trimester: Trimester) =>
-      generate(level, trimester, createRng(9), 40).some((q) =>
-        IRREGULAR_PLURALS.some((noun) => q.id.endsWith(`-${noun}`))
+      [1, 2, 3, 4, 5].some((seed) =>
+        generate(level, trimester, createRng(seed), 40).some((q) =>
+          IRREGULAR_PLURALS.some((noun) => q.id.endsWith(`-${noun}`))
+        )
       );
     expect(usesIrregular('CM1', 1)).toBe(false);
     expect(usesIrregular('CM1', 2)).toBe(false);

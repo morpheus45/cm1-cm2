@@ -207,7 +207,9 @@ function compoundWith(auxiliaire: Paradigm, participe: string): Paradigm {
 
 const ETRE: Verb = {
   infinitive: 'être',
-  complement: 'très content.',
+  // Adjectif invariable en genre : le sujet peut être féminin (Elle, Léa,
+  // Marion...) et « content » resterait faux à l'oreille pour ces sujets.
+  complement: 'très sage.',
   canCompound: true,
   forms: {
     'présent': ETRE_PRESENT,
@@ -255,7 +257,10 @@ const ALLER: Verb = {
 
 const FAIRE: Verb = {
   infinitive: 'faire',
-  complement: 'ses devoirs.',
+  // Article défini plutôt que possessif : « faire les devoirs » convient à
+  // n'importe quel sujet, alors que « ses devoirs » ne suivrait pas « nous »
+  // ou « ils » (il faudrait « nos »/« leurs »).
+  complement: 'les devoirs.',
   canCompound: true,
   forms: {
     'présent': paradigm('fais', 'fais', 'fait', 'faisons', 'faites', 'font'),
@@ -300,7 +305,7 @@ const VENIR: Verb = {
 
 const PRENDRE: Verb = {
   infinitive: 'prendre',
-  complement: 'son cartable.',
+  complement: 'le cartable.',
   canCompound: true,
   forms: {
     'présent': paradigm('prends', 'prends', 'prend', 'prenons', 'prenez', 'prennent'),
@@ -369,16 +374,16 @@ export const GROUP1_VERBS: Verb[] = [
   group1('marcher', 'très vite.'),
   group1('préparer', 'le repas.'),
   group1('dessiner', 'un joli dessin.'),
-  group1('laver', 'ses mains.'),
-  group1('chercher', 'ses clés.'),
-  group1('montrer', 'son cahier.'),
+  group1('laver', 'la vaisselle.'),
+  group1('chercher', 'les clés.'),
+  group1('montrer', 'le cahier.'),
   group1('tourner', 'la page.'),
   group1('danser', 'toute la soirée.'),
-  group1('commencer', 'son exercice.', 'cer'),
+  group1('commencer', 'un exercice.', 'cer'),
   group1('lancer', 'le ballon.', 'cer'),
   group1('placer', 'les livres sur l\'étagère.', 'cer'),
   group1('manger', 'à la cantine.', 'ger'),
-  group1('ranger', 'sa chambre.', 'ger'),
+  group1('ranger', 'la chambre.', 'ger'),
   group1('nager', 'à la piscine.', 'ger'),
   group1('changer', "d'avis.", 'ger'),
   group1('nettoyer', 'la classe.', 'yer'),
@@ -387,16 +392,16 @@ export const GROUP1_VERBS: Verb[] = [
   group1('acheter', 'un cartable.', 'e-accent'),
   group1('lever', 'la main.', 'e-accent'),
   group1('peser', 'les fruits.', 'e-accent'),
-  group1('appeler', 'sa maman.', 'double'),
+  group1('appeler', 'le docteur.', 'double'),
   group1('jeter', 'le papier à la poubelle.', 'double'),
   group1('rappeler', 'la leçon.', 'double'),
 ];
 
 export const GROUP2_VERBS: Verb[] = [
-  group2('finir', 'son exercice.'),
+  group2('finir', 'un exercice.'),
   group2('choisir', 'un livre.'),
   group2('grandir', 'très vite.'),
-  group2('réussir', 'son contrôle.'),
+  group2('réussir', 'un contrôle.'),
   group2('remplir', 'la fiche.'),
   group2('punir', 'les élèves bruyants.'),
   group2('rougir', 'de honte.'),

@@ -147,7 +147,7 @@ const ON_ONT_ITEMS: HomophoneItem[] = [
   ...SUBJECTS_3PL.flatMap((subject) =>
     POSSESSIONS.map((object): HomophoneItem => ({
       minStage: 2,
-      prompt: `${subject} ont ${object}.`,
+      prompt: `${subject} ... ${object}.`,
       correct: 'ont',
       pairPartner: 'on',
     }))
@@ -223,6 +223,10 @@ const SON_SONT_ITEMS: HomophoneItem[] = [
 
 const THINGS_SHOWN = ['enfants', 'fleurs', 'histoires', 'photos', 'chansons', 'idées', 'affaires', 'amis'];
 
+// Des objets qu'on peut réellement ranger : contrairement à THINGS_SHOWN,
+// « idées » ou « amis » ne se rangent pas.
+const THINGS_TIDIED = ['affaires', 'jouets', 'crayons', 'livres', 'photos', 'cahiers', 'chaussures', 'vêtements'];
+
 const CES_SES_ITEMS: HomophoneItem[] = [
   ...THINGS_SHOWN.map((thing): HomophoneItem => ({
     minStage: 5,
@@ -230,10 +234,13 @@ const CES_SES_ITEMS: HomophoneItem[] = [
     correct: 'ces',
     pairPartner: 'ses',
   })),
+  // « propres » avant le nom (au sens de « à soi ») n'appelle qu'un
+  // possessif : « ces propres affaires » ne se dit pas, alors que « ses
+  // propres affaires » lève toute ambiguïté avec la question précédente.
   ...SUBJECTS_3SG.flatMap((subject) =>
-    THINGS_SHOWN.map((thing): HomophoneItem => ({
+    THINGS_TIDIED.map((thing): HomophoneItem => ({
       minStage: 5,
-      prompt: `${subject} range ... ${thing}.`,
+      prompt: `${subject} range ... propres ${thing}.`,
       correct: 'ses',
       pairPartner: 'ces',
     }))

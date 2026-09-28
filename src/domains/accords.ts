@@ -46,26 +46,41 @@ interface NominalCandidate {
   number: GrammaticalNumber;
 }
 
-function nominalDistractors(rng: Rng, nouns: Noun[], noun: Noun, number: GrammaticalNumber, correct: string): string[] {
-  const sameNounOtherNumber = nounForm(noun, number === 'singulier' ? 'pluriel' : 'singulier');
-  const otherForms = rngShuffle(rng, nouns.filter((candidate) => candidate !== noun)).flatMap((other) => [
-    other.singular,
-    other.plural,
-  ]);
-  return dedupe([sameNounOtherNumber, ...otherForms], correct).slice(0, 3);
+/**
+ * Un autre nom ne fait un distracteur valable que s'il est faux par le genre
+ * ou par le nombre : sinon il compléterait tout aussi bien le groupe que la
+ * bonne réponse (« un léger garçon / cahier » sont tous les deux masculins
+ * singuliers, donc tous les deux justes — ce qu'on doit éviter).
+ *
+ * Au pluriel, un adjectif invariable en genre (« agréables ») ne marque rien
+ * — et « des » non plus : rien dans la phrase ne trahit alors le genre du
+ * nom attendu, si bien qu'un autre nom au pluriel, quel que soit son genre,
+ * conviendrait tout autant. Il faut alors écarter tous les noms au même
+ * nombre, pas seulement ceux du même genre.
+ */
+function nominalDistractors(rng: Rng, nouns: Noun[], noun: Noun, adjective: Adjective, number: GrammaticalNumber, correct: string): string[] {
+  const genderMarked = number === 'singulier' || adjective.masculinePlural !== adjective.femininePlural;
+  const candidates = nouns.flatMap((other) =>
+    NUMBERS.filter((otherNumber) => otherNumber !== number || (genderMarked && other.gender !== noun.gender)).map(
+      (otherNumber) => nounForm(other, otherNumber)
+    )
+  );
+  return dedupe(rngShuffle(rng, candidates), correct).slice(0, 3);
 }
 
 function nominalQuestion(rng: Rng, index: number, nouns: Noun[], candidate: NominalCandidate): Question {
   const { noun, adjective, number } = candidate;
   const correct = nounForm(noun, number);
   const adjectiveText = adjectiveForm(adjective, noun.gender, number);
-  const distractors = nominalDistractors(rng, nouns, noun, number, correct);
+  const distractors = nominalDistractors(rng, nouns, noun, adjective, number, correct);
   const choices = rngShuffle(rng, [correct, ...distractors]);
+  const article_ = article(noun.gender, number, false);
+  const prompt = adjective.position === 'avant' ? `${article_} ${adjectiveText} ...` : `${article_} ... ${adjectiveText}`;
   return {
     id: `accords-nominal-${index}-${correct}`,
     domain: 'accords',
     instruction: 'Quel mot complète correctement le groupe ?',
-    prompt: `${article(noun.gender, number, false)} ${adjectiveText} ...`,
+    prompt,
     choices,
     correctIndex: choices.indexOf(correct),
   };
@@ -73,31 +88,55 @@ function nominalQuestion(rng: Rng, index: number, nouns: Noun[], candidate: Nomi
 
 // --- Groupe nominal : l'adjectif manque, le nom est déjà là. ---------------
 
-function adjectiveDistractors(rng: Rng, adjectives: Adjective[], adjective: Adjective, correct: string): string[] {
-  const ownForms = [adjective.masculineSingular, adjective.feminineSingular, adjective.masculinePlural, adjective.femininePlural];
-  const own = dedupe(ownForms, correct);
-  if (own.length >= 3) return rngShuffle(rng, own).slice(0, 3);
-  const otherForms = rngShuffle(rng, adjectives.filter((candidate) => candidate !== adjective)).flatMap((other) => [
-    other.masculineSingular,
-    other.feminineSingular,
-    other.masculinePlural,
-    other.femininePlural,
-  ]);
-  const extra = dedupe(otherForms, correct).filter((word) => !own.includes(word));
-  return [...own, ...extra].slice(0, 3);
+const GENDERS: Gender[] = ['m', 'f'];
+
+/** Les cases (genre, nombre) qui produisent chaque forme distincte d'un
+ *  adjectif. Nécessaire car certaines formes sont invariables au-delà du
+ *  genre : « mauvais », « doux » et « frais » s'écrivent pareil au masculin
+ *  singulier et au masculin pluriel. Exclure seulement la case (genre,
+ *  nombre) visée laisserait passer la même chaîne via l'autre case. */
+function adjectiveFormsWithMemberships(adjective: Adjective): { word: string; memberships: { gender: Gender; number: GrammaticalNumber }[] }[] {
+  const byWord = new Map<string, { gender: Gender; number: GrammaticalNumber }[]>();
+  GENDERS.forEach((gender) =>
+    NUMBERS.forEach((number) => {
+      const word = adjectiveForm(adjective, gender, number);
+      const memberships = byWord.get(word) ?? [];
+      memberships.push({ gender, number });
+      byWord.set(word, memberships);
+    })
+  );
+  return Array.from(byWord.entries()).map(([word, memberships]) => ({ word, memberships }));
+}
+
+/**
+ * Même règle que pour les noms : une forme d'adjectif (la sienne ou celle
+ * d'un autre adjectif) n'est un distracteur valable que si elle est fausse
+ * par le genre ou par le nombre du nom donné — jamais une forme qui
+ * s'accorderait tout aussi bien (« un cahier léger / agréable » sont tous
+ * les deux masculins singuliers, donc tous les deux justes).
+ */
+function adjectiveDistractors(rng: Rng, adjectives: Adjective[], adjective: Adjective, noun: Noun, number: GrammaticalNumber, correct: string): string[] {
+  const candidates = adjectives.flatMap((other) =>
+    adjectiveFormsWithMemberships(other)
+      .filter(({ memberships }) => !memberships.some((m) => m.gender === noun.gender && m.number === number))
+      .map(({ word }) => word)
+  );
+  return dedupe(rngShuffle(rng, candidates), correct).slice(0, 3);
 }
 
 function adjectifQuestion(rng: Rng, index: number, adjectives: Adjective[], candidate: NominalCandidate): Question {
   const { noun, adjective, number } = candidate;
   const correct = adjectiveForm(adjective, noun.gender, number);
   const nounText = nounForm(noun, number);
-  const distractors = adjectiveDistractors(rng, adjectives, adjective, correct);
+  const distractors = adjectiveDistractors(rng, adjectives, adjective, noun, number, correct);
   const choices = rngShuffle(rng, [correct, ...distractors]);
+  const article_ = article(noun.gender, number, false);
+  const prompt = adjective.position === 'après' ? `${article_} ${nounText} ...` : `${article_} ... ${nounText}`;
   return {
     id: `accords-adjectif-${index}-${correct}`,
     domain: 'accords',
     instruction: "Quel mot complète correctement le groupe ?",
-    prompt: `${article(noun.gender, number, false)} ${nounText} ...`,
+    prompt,
     choices,
     correctIndex: choices.indexOf(correct),
   };
@@ -178,9 +217,16 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
   const adjectives = ADJECTIVES.filter((adjective) => adjective.minStage <= stage);
 
   const nominalCandidates: NominalCandidate[] = nouns.flatMap((noun) =>
-    adjectives.flatMap((adjective) => NUMBERS.map((number) => ({ noun, adjective, number })))
+    adjectives
+      .filter((adjective) => adjective.categories.includes(noun.category))
+      .flatMap((adjective) => NUMBERS.map((number) => ({ noun, adjective, number })))
   );
-  const sujetCandidates: SujetCandidate[] = nouns.flatMap((noun) =>
+  // Les verbes de ce lexique décrivent des actions d'élève (faire les
+  // devoirs, chercher les clés, réussir un contrôle...) : seule une personne
+  // en est capable, sans quoi la phrase devient absurde (« un crayon prépare
+  // le repas », « un chien réussit son contrôle »).
+  const personNouns = nouns.filter((noun) => noun.category === 'personne');
+  const sujetCandidates: SujetCandidate[] = personNouns.flatMap((noun) =>
     ALL_VERBS.flatMap((verb) => NUMBERS.map((number) => ({ noun, verb, number })))
   );
   const adjectifCandidates: NominalCandidate[] = stage >= 2 ? nominalCandidates : [];
