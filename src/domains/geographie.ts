@@ -1,7 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Figure, Point, Shape } from '../lib/figures';
 import { rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
-import { assemble, choose, drawer, isEligible, type Draft, type WrittenItem } from './histoireGeographie';
+import { assemble, choose, deriveDefinitionReverses, drawer, isEligible, type Draft, type WrittenItem } from './histoireGeographie';
 import { mapDrawer, mapMakersFor } from './cartes';
 
 /**
@@ -50,7 +50,7 @@ const COUNTRIES: [Level, Trimester, string, string][] = [
   ['CM2', 1, 'la Nouvelle-Zélande', 'l\'Océanie'],
 ];
 
-export const ITEMS: Record<GeographyDomain, WrittenItem[]> = {
+const RAW_ITEMS: Record<GeographyDomain, WrittenItem[]> = {
   cartes: [
     ...COUNTRIES.map(([level, trimester, country, continent]) =>
       item(level, trimester, `Sur quel continent se trouve ${country} ?`, continent, CONTINENTS, `${country.charAt(0).toUpperCase() + country.slice(1)} se trouve en ${continent.replace(/^l\'/, '')}.`)
@@ -579,6 +579,16 @@ export const ITEMS: Record<GeographyDomain, WrittenItem[]> = {
     item('CM2', 3, 'Un écoquartier est :', 'un quartier pensé pour protéger la nature', ['un quartier sans habitants', 'une zone industrielle', 'un parking géant'], 'Espaces verts, déplacements doux, bâtiments bien isolés.'),
     item('CM2', 3, 'Un espace vert est :', 'un lieu de nature en ville : parc, jardin, square', ['un bâtiment peint en vert', 'un terrain de parking', 'une autoroute'], 'Il apporte de la fraîcheur et de la biodiversité en ville.'),
   ],
+};
+
+/**
+ * Chaque définition de « mots-geographie » pose aussi sa question inverse
+ * (« Comment appelle-t-on... ? »), fabriquée à partir de la même phrase
+ * déjà vérifiée — voir `deriveDefinitionReverses`.
+ */
+export const ITEMS: Record<GeographyDomain, WrittenItem[]> = {
+  ...RAW_ITEMS,
+  'mots-geographie': [...RAW_ITEMS['mots-geographie'], ...deriveDefinitionReverses(RAW_ITEMS['mots-geographie'])],
 };
 
 // --- La rose des vents ---------------------------------------------------------------

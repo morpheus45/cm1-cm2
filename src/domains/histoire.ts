@@ -1,7 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Figure, Shape } from '../lib/figures';
 import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
-import { assemble, choose, drawer, isEligible, type Draft, type WrittenItem } from './histoireGeographie';
+import { assemble, choose, deriveDefinitionReverses, drawer, isEligible, type Draft, type WrittenItem } from './histoireGeographie';
 
 /**
  * L'histoire au CM1 et au CM2.
@@ -78,7 +78,7 @@ const item = (
   explanation?: string
 ): WrittenItem => ({ level, trimester, prompt, correct, wrong: wrong.filter((entry) => entry !== correct), explanation });
 
-export const ITEMS: Record<HistoryDomain, WrittenItem[]> = {
+const RAW_ITEMS: Record<HistoryDomain, WrittenItem[]> = {
   chronologie: [
     // CM1 — le Moyen Âge.
     item('CM1', 1, 'Le Moyen Âge commence en 476. Quand se termine-t-il ?', 'en 1492', ['en 1789', 'en 1000', 'en 1515'], 'Le Moyen Âge va de 476 à 1492 : environ mille ans.'),
@@ -616,6 +616,16 @@ export const ITEMS: Record<HistoryDomain, WrittenItem[]> = {
     item('CM2', 3, 'Une guerre mondiale est :', 'une guerre qui touche de nombreux pays, sur plusieurs continents', ['une guerre entre deux villages', 'une guerre au Moyen Âge', 'une guerre sans soldats'], 'Au XXe siècle, deux guerres mondiales ravagent le monde.'),
     item('CM2', 3, 'Un génocide est :', 'le massacre organisé de tout un peuple', ['une bataille gagnée', 'un traité de paix', 'une migration'], 'La Shoah est le génocide des Juifs d\'Europe.'),
   ],
+};
+
+/**
+ * Chaque définition de « mots-histoire » pose aussi sa question inverse
+ * (« Comment appelle-t-on... ? »), fabriquée à partir de la même phrase
+ * déjà vérifiée — voir `deriveDefinitionReverses`.
+ */
+export const ITEMS: Record<HistoryDomain, WrittenItem[]> = {
+  ...RAW_ITEMS,
+  'mots-histoire': [...RAW_ITEMS['mots-histoire'], ...deriveDefinitionReverses(RAW_ITEMS['mots-histoire'])],
 };
 
 // --- Les questions fabriquées à partir des repères --------------------------------
