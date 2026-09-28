@@ -290,7 +290,7 @@ const DIRE: Verb = {
 
 const VENIR: Verb = {
   infinitive: 'venir',
-  complement: 'nous voir demain.',
+  complement: 'nous voir à la maison.',
   canCompound: false,
   forms: {
     'présent': paradigm('viens', 'viens', 'vient', 'venons', 'venez', 'viennent'),

@@ -114,10 +114,14 @@ export const ADJECTIVES: Adjective[] = [
   adj(1, 'gentil', 'gentille', 'gentils', 'gentilles', 'avant', ['personne', 'animal']),
   adj(1, 'heureux', 'heureuse', 'heureux', 'heureuses', 'après', ['personne', 'animal']),
   adj(1, 'mauvais', 'mauvaise', 'mauvais', 'mauvaises', 'avant'),
-  adj(1, 'long', 'longue', 'longs', 'longues', 'avant', ['vehicule', 'objet', 'fragile']),
+  // « long » décrit une forme : un fruit, une fleur ou un gâteau (catégorie
+  // « fragile ») ne se décrivent pas par leur longueur.
+  adj(1, 'long', 'longue', 'longs', 'longues', 'avant', ['vehicule', 'objet']),
   adj(1, 'léger', 'légère', 'légers', 'légères', 'après', ['vehicule', 'objet', 'fragile']),
   adj(1, 'premier', 'première', 'premiers', 'premières', 'avant'),
-  adj(1, 'agréable', 'agréable', 'agréables', 'agréables', 'après'),
+  // « agréable » ne va pas à un aliment (« une salade agréable ») : « bon »
+  // ou « frais » leur conviennent, pas ce mot-là.
+  adj(1, 'agréable', 'agréable', 'agréables', 'agréables', 'après', ['personne', 'animal', 'vehicule', 'objet']),
   adj(1, 'rapide', 'rapide', 'rapides', 'rapides', 'après', ['personne', 'animal', 'vehicule']),
   adj(1, 'fort', 'forte', 'forts', 'fortes', 'après', ['personne', 'animal']),
   adj(1, 'doux', 'douce', 'doux', 'douces', 'après', ['personne', 'animal', 'objet', 'fragile']),

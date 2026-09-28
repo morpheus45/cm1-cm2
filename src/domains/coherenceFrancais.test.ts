@@ -82,20 +82,23 @@ describe('accords — une seule bonne réponse, jamais une association absurde',
     questions
       .filter((q) => q.id.startsWith('accords-nominal-'))
       .forEach((q) => {
-        // Le nombre vient toujours de l'article (un/une = singulier, des =
-        // pluriel) : sans fixer ça d'abord, une forme d'adjectif invariable
-        // au-delà du genre (« mauvais » masculin singulier ET pluriel)
-        // ferait croire à une ambiguïté qui n'existe pas pour l'élève, qui
-        // lit l'article avant l'adjectif.
+        // Le nombre vient toujours de l'article (un/une = singulier, des/de =
+        // pluriel — « de » devant un adjectif déjà placé avant le nom) : sans
+        // fixer ça d'abord, une forme d'adjectif invariable au-delà du genre
+        // (« mauvais » masculin singulier ET pluriel) ferait croire à une
+        // ambiguïté qui n'existe pas pour l'élève, qui lit l'article avant
+        // l'adjectif.
         const article = q.prompt.split(' ')[0];
-        const number: GrammaticalNumber = article === 'des' ? 'pluriel' : 'singulier';
+        const plural = article === 'des' || article === 'de';
+        const number: GrammaticalNumber = plural ? 'pluriel' : 'singulier';
         const adjectiveWord = fixedWordOf(q.prompt);
         const slotsAtNumber = (adjectiveFormIndex.get(adjectiveWord) ?? []).filter((slot) => slot.number === number);
         expect(slotsAtNumber.length, `adjectif inconnu dans « ${q.prompt} » au ${number}`).toBeGreaterThan(0);
-        // « un »/« une » donnent le genre directement ; « des » ne le donne
-        // pas — seul l'adjectif peut alors le trahir (ou pas, s'il est
-        // invariable en genre, auquel cas les deux genres restent acceptés).
-        const genders: Gender[] = article === 'des' ? slotsAtNumber.map((slot) => slot.gender) : [article === 'un' ? 'm' : 'f'];
+        // « un »/« une » donnent le genre directement ; « des »/« de » ne le
+        // donnent pas — seul l'adjectif peut alors le trahir (ou pas, s'il
+        // est invariable en genre, auquel cas les deux genres restent
+        // acceptés).
+        const genders: Gender[] = plural ? slotsAtNumber.map((slot) => slot.gender) : [article === 'un' ? 'm' : 'f'];
         const valid = q.choices.map((choice) => {
           const entry = nounFormIndex.get(choice);
           if (!entry) return false;

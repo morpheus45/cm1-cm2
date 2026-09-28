@@ -105,6 +105,25 @@ describe('conjugaison generate', () => {
     }
   });
 
+  it('ne mélange jamais un indicateur de temps avec un temps incompatible', () => {
+    const PAST_TENSES = ['imparfait', 'passé composé', 'passé simple', 'plus-que-parfait'];
+    const NON_PAST_TENSES = ['présent', 'futur', 'conditionnel présent'];
+    const tenseOf = (q: { id: string; instruction?: string; choices: string[]; correctIndex: number }): string =>
+      q.id.startsWith('conjugaison-forme-') ? tenseOfFormQuestion(q.instruction ?? '') : q.choices[q.correctIndex];
+
+    LEVELS.forEach((level) => {
+      ALL_TRIMESTERS.forEach((trimester) => {
+        for (let seed = 1; seed <= 40; seed++) {
+          generate(level, trimester, createRng(seed * 7919 + 1), 12).forEach((q) => {
+            const tense = tenseOf(q);
+            if (/\bdemain\b/.test(q.prompt)) expect(PAST_TENSES, q.prompt).not.toContain(tense);
+            if (/\bhier\b/.test(q.prompt)) expect(NON_PAST_TENSES, q.prompt).not.toContain(tense);
+          });
+        }
+      });
+    });
+  });
+
   it('keeps revising earlier tenses at the end of the year', () => {
     const questions = generate('CM2', 3, createRng(11), 60);
     const tenses = new Set(

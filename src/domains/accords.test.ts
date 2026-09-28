@@ -1,11 +1,16 @@
 import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
 import { generate } from './accords';
+import { ADJECTIVES } from './accordsLexique';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Trimester } from '../types';
 
 const LEVELS: Level[] = ['CM1', 'CM2'];
 const IRREGULAR_PLURALS = ['tableaux', 'journaux', 'bateaux', 'chevaux'];
+/** Les formes plurielles des adjectifs : un « des » suivi de l'une d'elles
+ *  trahirait un adjectif déjà placé avant le nom, dans une question qui
+ *  laisse ce nom à trouver. */
+const PLURAL_ADJECTIVE_FORMS = new Set(ADJECTIVES.flatMap((a) => [a.masculinePlural, a.femininePlural]));
 
 describe('accords generate', () => {
   it('returns the requested number of questions', () => {
@@ -61,5 +66,29 @@ describe('accords generate', () => {
   it('still revises simple nominal groups at the end of CM2', () => {
     const questions = generate('CM2', 3, createRng(13), 40);
     expect(questions.some((q) => q.id.startsWith('accords-nominal'))).toBe(true);
+  });
+
+  it('écrit « de », jamais « des », devant un adjectif déjà placé avant le nom', () => {
+    LEVELS.forEach((level) => {
+      ALL_TRIMESTERS.forEach((trimester) => {
+        for (let seed = 1; seed <= 40; seed++) {
+          const questions = generate(level, trimester, createRng(seed * 7919 + 1), 12);
+          // Groupe nominal, nom à trouver : l'adjectif, déjà visible, ne doit
+          // jamais suivre un « des » quand il est placé avant le nom.
+          questions
+            .filter((q) => q.id.startsWith('accords-nominal'))
+            .forEach((q) => {
+              const firstWord = q.prompt.split(' ')[1];
+              if (PLURAL_ADJECTIVE_FORMS.has(firstWord)) expect(q.prompt, q.prompt).not.toMatch(/^des /);
+            });
+          // Groupe nominal, adjectif à trouver et placé avant le nom : le
+          // trou masque l'adjectif, mais l'article qui le précède doit déjà
+          // être « de ».
+          questions
+            .filter((q) => q.id.startsWith('accords-adjectif'))
+            .forEach((q) => expect(q.prompt, q.prompt).not.toMatch(/^des \.\.\. /));
+        }
+      });
+    });
   });
 });

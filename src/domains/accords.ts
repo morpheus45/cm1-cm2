@@ -11,6 +11,7 @@ import {
   NOUNS,
   nounForm,
   type Adjective,
+  type AdjectivePosition,
   type EtreSubject,
   type EtreVerb,
   type Gender,
@@ -19,10 +20,15 @@ import {
 } from './accordsLexique';
 import { ALL_VERBS, PERSONS, type Verb } from './conjugaisonVerbes';
 
-/** « un », « une », « des » : jamais d'élision à écrire, contrairement à
- *  « le »/« la », ce qui laisse le lexique libre de tout mot. */
-function article(gender: Gender, number: GrammaticalNumber, capitalise: boolean): string {
-  const word = number === 'pluriel' ? 'des' : gender === 'm' ? 'un' : 'une';
+/**
+ * « un », « une », « des » : jamais d'élision à écrire, contrairement à
+ * « le »/« la », ce qui laisse le lexique libre de tout mot. Au pluriel,
+ * quand un adjectif est placé avant le nom, l'écrit soigné demande « de »
+ * et non « des » (« de grandes filles ») — sauf noms composés, absents de
+ * ce lexique.
+ */
+function article(gender: Gender, number: GrammaticalNumber, position: AdjectivePosition, capitalise: boolean): string {
+  const word = number === 'pluriel' ? (position === 'avant' ? 'de' : 'des') : gender === 'm' ? 'un' : 'une';
   return capitalise ? `${word.charAt(0).toUpperCase()}${word.slice(1)}` : word;
 }
 
@@ -74,7 +80,7 @@ function nominalQuestion(rng: Rng, index: number, nouns: Noun[], candidate: Nomi
   const adjectiveText = adjectiveForm(adjective, noun.gender, number);
   const distractors = nominalDistractors(rng, nouns, noun, adjective, number, correct);
   const choices = rngShuffle(rng, [correct, ...distractors]);
-  const article_ = article(noun.gender, number, false);
+  const article_ = article(noun.gender, number, adjective.position, false);
   const prompt = adjective.position === 'avant' ? `${article_} ${adjectiveText} ...` : `${article_} ... ${adjectiveText}`;
   return {
     id: `accords-nominal-${index}-${correct}`,
@@ -130,7 +136,7 @@ function adjectifQuestion(rng: Rng, index: number, adjectives: Adjective[], cand
   const nounText = nounForm(noun, number);
   const distractors = adjectiveDistractors(rng, adjectives, adjective, noun, number, correct);
   const choices = rngShuffle(rng, [correct, ...distractors]);
-  const article_ = article(noun.gender, number, false);
+  const article_ = article(noun.gender, number, adjective.position, false);
   const prompt = adjective.position === 'après' ? `${article_} ${nounText} ...` : `${article_} ... ${nounText}`;
   return {
     id: `accords-adjectif-${index}-${correct}`,
@@ -167,7 +173,7 @@ function sujetQuestion(rng: Rng, index: number, candidate: SujetCandidate): Ques
     id: `accords-sujet-${index}-${verb.infinitive}-${correct}`,
     domain: 'accords',
     instruction: 'Quel verbe complète correctement la phrase ?',
-    prompt: `${article(noun.gender, number, true)} ${nounForm(noun, number)} ... ${verb.complement}`,
+    prompt: `${article(noun.gender, number, 'après', true)} ${nounForm(noun, number)} ... ${verb.complement}`,
     choices,
     correctIndex: choices.indexOf(correct),
   };

@@ -158,8 +158,9 @@ const ON_ONT_ITEMS: HomophoneItem[] = [
 
 // Des objets masculins et des états qui leur conviennent tous, pour éviter
 // à la fois un accord fautif (les prédicats restent au masculin) et une
-// phrase absurde (« un livre aboie » n'aurait pas de sens).
-const SIMPLE_OBJECTS = ['livre', 'cahier', 'ballon', 'vélo', 'stylo', 'jardin', 'gâteau', 'dessin', 'cartable', 'tableau'];
+// phrase absurde (« un livre aboie » n'aurait pas de sens). Tous des objets
+// qu'on transporte : un lieu comme un jardin ne « traîne » pas dans le sac.
+const SIMPLE_OBJECTS = ['livre', 'cahier', 'ballon', 'vélo', 'stylo', 'manteau', 'gâteau', 'dessin', 'cartable', 'tableau'];
 const CE_PREDICATES = [
   'est par terre',
   'est dans le sac',
