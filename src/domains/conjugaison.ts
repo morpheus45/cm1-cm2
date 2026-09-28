@@ -152,10 +152,17 @@ function formQuestion(rng: Rng, index: number, candidate: Candidate): Question |
   };
 }
 
-function identificationQuestion(rng: Rng, index: number, candidate: Candidate, tenses: Tense[]): Question {
+function identificationQuestion(rng: Rng, index: number, candidate: Candidate, tenses: Tense[]): Question | null {
   const { verb, tense, subject } = candidate;
   const correct = verb.forms[tense][subject.person];
-  const otherTenses = rngShuffle(rng, tenses.filter((t) => t !== tense)).slice(0, 3);
+  // « Il remplit », « je finis », « il dit » : la même forme au présent et au
+  // passé simple. Un temps qui donne la même forme serait aussi une bonne
+  // réponse : il ne peut pas être proposé.
+  const otherTenses = rngShuffle(
+    rng,
+    tenses.filter((t) => t !== tense && verb.forms[t][subject.person] !== correct)
+  ).slice(0, 3);
+  if (otherTenses.length < 3) return null;
   const choices = rngShuffle(rng, [tense, ...otherTenses]);
   return {
     id: `conjugaison-temps-${index}-${tense}-${verb.infinitive}`,
@@ -197,7 +204,9 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
   for (const candidate of rngPickN(rng, identificationPool, identificationPool.length)) {
     if (identificationQuestions.length >= identificationCount) break;
     if (usedKeys.has(candidate.key)) continue;
-    identificationQuestions.push(identificationQuestion(rng, identificationQuestions.length, candidate, tenses));
+    const question = identificationQuestion(rng, identificationQuestions.length, candidate, tenses);
+    if (!question) continue;
+    identificationQuestions.push(question);
     usedKeys.add(candidate.key);
   }
 

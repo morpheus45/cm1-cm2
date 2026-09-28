@@ -163,14 +163,12 @@ describe('conjugaison — aucun possessif figé qui ne suit pas le sujet', () =>
     });
   });
 
-  it('« être » utilise un attribut invariable en genre, pour convenir aux sujets féminins et masculins', () => {
-    // Sans ça, « Elle est très content. » resterait faux : le sujet peut être
-    // féminin (Elle, Léa, Marion...) dans conjugaison.ts.
-    const invariantAdjectives = ['calme', 'sage', 'rapide', 'malade', 'aimable', 'timide', 'honnête', 'sympathique', 'célèbre', 'tranquille'];
+  it("« être » est suivi d'un lieu : rien à accorder, ni en genre ni en nombre", () => {
+    // Un adjectif resterait faux pour une partie des sujets : « Elle est très
+    // content », « Des filles sont très sage ». Un lieu convient à tous.
     const etre = ALL_VERBS.find((verb) => verb.infinitive === 'être');
     expect(etre).toBeDefined();
-    const word = etre!.complement.replace(/^très /, '').replace(/\.$/, '');
-    expect(invariantAdjectives).toContain(word);
+    expect(etre!.complement).toMatch(/^(dans|sur|sous|devant|derrière|chez|à|au|aux) /);
   });
 });
 

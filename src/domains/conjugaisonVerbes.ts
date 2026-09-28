@@ -207,9 +207,9 @@ function compoundWith(auxiliaire: Paradigm, participe: string): Paradigm {
 
 const ETRE: Verb = {
   infinitive: 'être',
-  // Adjectif invariable en genre : le sujet peut être féminin (Elle, Léa,
-  // Marion...) et « content » resterait faux à l'oreille pour ces sujets.
-  complement: 'très sage.',
+  // Un lieu plutôt qu'un adjectif : rien à accorder, quels que soient le
+  // genre et le nombre du sujet (« Des filles sont dans la cour »).
+  complement: 'dans la cour.',
   canCompound: true,
   forms: {
     'présent': ETRE_PRESENT,
@@ -290,7 +290,7 @@ const DIRE: Verb = {
 
 const VENIR: Verb = {
   infinitive: 'venir',
-  complement: 'nous voir à la maison.',
+  complement: "à l'école en bus.",
   canCompound: false,
   forms: {
     'présent': paradigm('viens', 'viens', 'vient', 'venons', 'venez', 'viennent'),
@@ -320,7 +320,7 @@ const PRENDRE: Verb = {
 
 const POUVOIR: Verb = {
   infinitive: 'pouvoir',
-  complement: "m'aider un peu.",
+  complement: 'jouer dehors.',
   canCompound: true,
   forms: {
     'présent': paradigm('peux', 'peux', 'peut', 'pouvons', 'pouvez', 'peuvent'),
