@@ -105,18 +105,45 @@ describe('calcul generate', () => {
     expect(questions.some((q) => !isDecimal(q))).toBe(true);
   });
 
-  it('garde l\'addition et la soustraction à deux chiffres : au-delà, ça se pose, ça ne se devine pas', () => {
-    // Une addition ou une soustraction à trois chiffres ou plus demande la
-    // technique posée, au stylet — un QCM ne montre ni le raisonnement ni la
-    // retenue à la maîtresse.
+  // Les tables de multiplication sont la seule technique non posable : elles
+  // se reconnaissent, parmi les questions « × », à leurs deux facteurs jamais
+  // au-delà de 10 (les autres techniques de multiplication posée partent
+  // toujours d'un facteur à deux chiffres au moins).
+  function isTable(q: Question): boolean {
+    if (operatorOf(q) !== '×' || isDecimal(q)) return false;
+    const [a, b] = operandsOf(q).map(Number);
+    return a <= 10 && b <= 10;
+  }
+
+  it('porte le champ operation pour toute technique posable, jamais pour les tables de multiplication', () => {
+    let tablesSeen = 0;
     LEVELS.forEach((level) => {
       ALL_TRIMESTERS.forEach((trimester) => {
-        generate(level, trimester, createRng(31), 80)
-          .filter((q) => ['+', '-'].includes(operatorOf(q)) && !isDecimal(q))
+        generate(level, trimester, createRng(31), 200).forEach((q) => {
+          if (isTable(q)) {
+            tablesSeen += 1;
+            expect(q.operation, q.prompt).toBeUndefined();
+          } else {
+            expect(q.operation, q.prompt).toBeDefined();
+          }
+        });
+      });
+    });
+    // Sans quoi le test ne vérifierait jamais vraiment la branche des tables.
+    expect(tablesSeen).toBeGreaterThan(0);
+  });
+
+  it('l\'opération posée redonne exactement la bonne réponse affichée', () => {
+    LEVELS.forEach((level) => {
+      ALL_TRIMESTERS.forEach((trimester) => {
+        generate(level, trimester, createRng(31), 200)
+          .filter((q) => q.operation !== undefined)
           .forEach((q) => {
-            const [a, b] = operandsOf(q).map(Number);
-            expect(a, q.prompt).toBeLessThan(100);
-            expect(b, q.prompt).toBeLessThan(100);
+            const { a, b, op, isDecimal: decimal } = q.operation!;
+            const raw = op === '+' ? a + b : op === '-' ? a - b : op === '×' ? a * b : a / b;
+            const result = decimal ? Math.round(raw * 10) / 10 : raw;
+            const expected = decimal ? result.toFixed(1).replace('.', ',') : String(result);
+            expect(q.choices[q.correctIndex], q.prompt).toBe(expected);
           });
       });
     });
