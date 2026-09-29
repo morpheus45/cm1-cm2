@@ -3,7 +3,7 @@ import { ofSubject, type Level, type Trimester } from '../types';
 import { fitsInFrame, type Shape } from '../lib/figures';
 import { createRng } from '../lib/seededRandom';
 import { buildSession } from '../lib/sessionBuilder';
-import { fromItem, type WrittenItem } from './histoireGeographie';
+import { deriveDefinitionReverses, fromItem, type WrittenItem } from './histoireGeographie';
 import * as histoire from './histoire';
 import * as geographie from './geographie';
 
@@ -80,9 +80,92 @@ describe('les questions écrites d\'histoire et de géographie', () => {
     );
   });
 
+  // Le vocabulaire (mots-histoire, mots-geographie) pose en plus la question
+  // inverse de chaque définition (voir deriveDefinitionReverses) : near
+  // deux fois plus de questions différentes que la seule banque écrite.
+  const VOCABULARY_DOMAINS = ['mots-histoire', 'mots-geographie'];
+
+  it('le vocabulaire dépasse largement les 100 grâce à la question inverse de chaque définition', () => {
+    [histoire.ITEMS, geographie.ITEMS].forEach((bank) =>
+      Object.entries(bank).forEach(([domain, items]) => {
+        if (!VOCABULARY_DOMAINS.includes(domain)) return;
+        LEVELS.forEach((level) =>
+          TRIMESTERS.forEach((trimester) =>
+            expect(
+              items.filter((item) => item.level === level && item.trimester <= trimester).length,
+              `${domain} ${level} T${trimester}`
+            ).toBeGreaterThanOrEqual(140)
+          )
+        );
+      })
+    );
+  });
+
   it('écrivent « l\'est », « l\'ouest », jamais « le est »', () => {
     const texts = everyItem.flatMap(([, item]) => [item.prompt, item.correct, ...item.wrong, item.explanation ?? '']);
     texts.forEach((text) => expect(text).not.toMatch(/(^|\s)le (est|ouest)\b/));
+  });
+});
+
+describe('la question inverse d\'une définition (deriveDefinitionReverses)', () => {
+  const write = (prompt: string, correct: string): WrittenItem => ({
+    level: 'CM1',
+    trimester: 1,
+    prompt,
+    correct,
+    wrong: [],
+  });
+
+  it('retourne une définition simple, article en minuscule', () => {
+    const [derived] = deriveDefinitionReverses([write('Un fief est :', 'une terre donnée par un seigneur à son vassal')]);
+    expect(derived.prompt).toBe('Comment appelle-t-on une terre donnée par un seigneur à son vassal ?');
+    expect(derived.correct).toBe('un fief');
+  });
+
+  it('ignore la précision entre virgules pour ne garder que le terme', () => {
+    const [derived] = deriveDefinitionReverses([write('Une rosace, dans une cathédrale, est :', 'une grande fenêtre ronde décorée de vitraux')]);
+    expect(derived.correct).toBe('une rosace');
+  });
+
+  it('accorde « ce sont » et garde un nom propre capitalisé', () => {
+    const [a, b] = deriveDefinitionReverses([
+      write('Le clergé, ce sont :', 'les hommes et les femmes d\'Église'),
+      write('Marianne est :', 'un symbole de la République française'),
+    ]);
+    expect(a.correct).toBe('le clergé');
+    expect(b.correct).toBe('Marianne');
+  });
+
+  it('met en minuscule un article élidé, collé au nom sans espace', () => {
+    const [derived] = deriveDefinitionReverses([write('L\'embouchure d\'un fleuve est :', 'l\'endroit où il se jette dans la mer')]);
+    expect(derived.correct).toBe('l\'embouchure d\'un fleuve');
+  });
+
+  it('laisse de côté un verbe qui n\'est ni « est » ni « sont »', () => {
+    expect(deriveDefinitionReverses([write('Une boussole sert à :', 'trouver le nord')])).toHaveLength(0);
+  });
+
+  it('laisse de côté une définition qui n\'est pas un groupe nominal', () => {
+    // « facile à atteindre » n'est pas un nom : la question inverse ne se
+    // dirait pas (« Comment appelle-t-on facile à atteindre ? »).
+    expect(
+      deriveDefinitionReverses([write('Un territoire bien desservi est :', 'facile à atteindre, grâce à de bonnes liaisons')])
+    ).toHaveLength(0);
+  });
+
+  it('laisse de côté une définition qui a elle-même des deux-points', () => {
+    expect(deriveDefinitionReverses([write('Un espace vert est :', 'un lieu de nature en ville : parc, jardin')])).toHaveLength(0);
+  });
+
+  it('pioche les mauvaises réponses parmi les autres termes du même niveau', () => {
+    const items = [
+      write('Un fief est :', 'une terre donnée par un seigneur à son vassal'),
+      write('Un vassal est :', 'un noble qui doit fidélité à un seigneur'),
+      write('Un cens est :', 'une redevance payée par le paysan pour sa terre'),
+    ];
+    const [derived] = deriveDefinitionReverses(items);
+    expect(derived.wrong).toEqual(expect.arrayContaining(['un vassal', 'un cens']));
+    expect(derived.wrong).not.toContain('un fief');
   });
 });
 
