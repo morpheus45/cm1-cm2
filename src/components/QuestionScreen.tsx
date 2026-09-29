@@ -10,6 +10,8 @@ import { typographieFrancaise } from '../lib/typographie';
 import { FigureView } from './figures/FigureView';
 import { ConstructionBoard } from './figures/ConstructionBoard';
 import { useScreenTitle } from './useScreenTitle';
+import { Brouillon } from './Brouillon';
+import { needsBrouillon } from '../lib/brouillon';
 
 interface QuestionScreenProps {
   question: Question;
@@ -150,6 +152,8 @@ export function QuestionScreen({
           />
         )}
       </section>
+
+      {needsBrouillon(question) && <Brouillon key={question.id} locked={answered} />}
 
       {!construction && (
         <div className="flex flex-col gap-3" role="group" aria-label="Réponses">

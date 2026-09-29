@@ -11,6 +11,7 @@ import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cl
 import { receivedFor, type ReceivedCorrection, type StoredCorrection } from '../lib/pupilCorrections';
 import { worksheetScore } from '../lib/worksheet';
 import { formatFrenchDate } from '../lib/worksheetPdf';
+import { ALL_TABLES } from '../domains/tables';
 import {
   ACTIVITY_HINTS,
   ACTIVITY_LABELS,
@@ -32,6 +33,8 @@ export interface StartOptions {
   trimester: Trimester;
   subject: Subject;
   activity: Activity;
+  /** Les tables choisies, pour une séance de tables de multiplication. */
+  tables: number[];
 }
 
 /** Les évaluations ouvertes d'une classe, telles que la tablette les a
@@ -85,6 +88,7 @@ export function HomeScreen({
   const [subject, setSubject] = useState<Subject>(initial.subject);
   const [domains, setDomains] = useState<Domain[]>(initial.domains);
   const [activity, setActivity] = useState<Activity>(initial.activity);
+  const [tables, setTables] = useState<number[]>(initial.tables);
 
   // Changer de matière repart des notions de cette matière : il n'existe aucun
   // état d'où l'on pourrait lancer une séance mêlant le français et les maths.
@@ -98,6 +102,13 @@ export function HomeScreen({
 
   const activities = SUBJECT_ACTIVITIES[subject];
   const posingOperations = activity === 'posees';
+  const practisingTables = activity === 'tables';
+
+  const toggleTable = (table: number) => {
+    setTables((prev) =>
+      prev.includes(table) ? prev.filter((t) => t !== table) : ALL_TABLES.filter((t) => t === table || prev.includes(t))
+    );
+  };
 
   useEffect(() => {
     if (!onRefreshEvaluations || !cloudAvailable || !isValidJoinCode(joinCode)) return;
@@ -121,7 +132,10 @@ export function HomeScreen({
   // Poser des opérations ne demande aucune notion, et la révision ciblée
   // choisit les siennes toute seule.
   const canStart =
-    name.trim().length > 0 && (posingOperations || activity === 'revision' || domains.length > 0);
+    name.trim().length > 0 &&
+    (practisingTables
+      ? tables.length > 0
+      : posingOperations || activity === 'revision' || domains.length > 0);
 
   const options = (): StartOptions => ({
     name: name.trim(),
@@ -132,6 +146,7 @@ export function HomeScreen({
     trimester,
     subject,
     activity,
+    tables,
   });
 
   return (
@@ -256,7 +271,31 @@ export function HomeScreen({
               <p className="text-sm text-encre-pale">{ACTIVITY_HINTS[activity]}</p>
             </>
           )}
-          <div className={`flex-col gap-2 ${posingOperations || activity === 'revision' ? 'hidden' : 'flex'}`}>
+          {practisingTables && (
+            <div className="flex flex-col gap-2">
+              <span className="text-base font-bold text-encre-douce">Les tables que tu révises</span>
+              <div className="grid grid-cols-5 gap-2">
+                {ALL_TABLES.map((table) => (
+                  <Choix
+                    key={table}
+                    actif={tables.includes(table)}
+                    onClick={() => toggleTable(table)}
+                    className="py-2.5 text-xl"
+                  >
+                    {table}
+                  </Choix>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => setTables(tables.length === ALL_TABLES.length ? [] : [...ALL_TABLES])}
+                className="self-start text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
+              >
+                {tables.length === ALL_TABLES.length ? 'Tout décocher' : 'Toutes les tables'}
+              </button>
+            </div>
+          )}
+          <div className={`flex-col gap-2 ${posingOperations || practisingTables || activity === 'revision' ? 'hidden' : 'flex'}`}>
             <span className="text-base font-bold text-encre-douce">
               Ce que tu travailles en {SUBJECT_LABELS[subject].toLowerCase()}
             </span>

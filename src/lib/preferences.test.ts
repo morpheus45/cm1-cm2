@@ -24,8 +24,14 @@ describe('parsePreferences', () => {
       subject: 'maths',
       domains: ['calcul', 'problemes'],
       activity: 'questions',
+      tables: [2, 3, 4, 5, 6, 7, 8, 9, 10],
       joinCode: '',
     });
+  });
+
+  it('relit les tables cochées, et retombe sur toutes quand il n\'y en a pas', () => {
+    expect(parsePreferences(JSON.stringify({ subject: 'maths', tables: [8, 7] })).tables).toEqual([7, 8]);
+    expect(parsePreferences(JSON.stringify({ subject: 'maths', tables: 'rien' })).tables).toHaveLength(9);
   });
 
   it('relit le code de classe, nettoyé', () => {
