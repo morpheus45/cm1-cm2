@@ -13,6 +13,10 @@ export interface BuiltOperation {
   isDecimal: boolean;
 }
 
+/** Une opération tirée, avec la technique dont elle vient : `posable` dit si
+ *  elle s'écrit en colonnes (celle de son `OperationKind`). */
+export type DrawnOperation = BuiltOperation & { posable: boolean };
+
 export interface OperationKind {
   /** Étape à partir de laquelle la technique est au programme. */
   minStage: Stage;
@@ -59,15 +63,7 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     minStage: 1,
     posable: true,
-    build: (rng, stage, posed) => {
-      // Non posée, l'addition reste un calcul mental à deux chiffres : au-delà,
-      // elle demande la technique posée, que l'élève doit écrire au stylet,
-      // pas deviner parmi quatre choix.
-      if (!posed) {
-        const a = rngInt(rng, 10, 99);
-        const b = rngInt(rng, 10, 99);
-        return { a, b, op: '+', result: a + b, isDecimal: false };
-      }
+    build: (rng, stage) => {
       const bound = stage >= 4 ? 5000 : 500;
       const floorValue = stage >= 4 ? 1000 : 100;
       const a = rngInt(rng, floorValue, bound);
@@ -78,14 +74,7 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     minStage: 1,
     posable: true,
-    build: (rng, stage, posed) => {
-      // Même chose pour la soustraction : posée seulement, dès que les
-      // nombres passent à trois chiffres.
-      if (!posed) {
-        const a = rngInt(rng, 20, 99);
-        const b = rngInt(rng, 10, Math.floor(a * 0.8));
-        return { a, b, op: '-', result: a - b, isDecimal: false };
-      }
+    build: (rng, stage) => {
       const a = stage >= 4 ? rngInt(rng, 2000, 9000) : rngInt(rng, 200, 900);
       // Le reste garde de l'épaisseur : « 478 - 473 » ne fait pas travailler
       // la technique de la soustraction posée.
@@ -221,15 +210,16 @@ export function buildOperations(
   rng: Rng,
   count: number,
   { posableOnly = false }: { posableOnly?: boolean } = {}
-): BuiltOperation[] {
+): DrawnOperation[] {
   const stage = stageOf(level, trimester);
   const kinds = eligibleOperationKinds(level, trimester).filter(
     (kind) => !posableOnly || kind.posable
   );
   const order = rngShuffle(rng, kinds);
-  return Array.from({ length: count }, (_, index) =>
-    order[index % order.length].build(rng, stage, posableOnly)
-  );
+  return Array.from({ length: count }, (_, index) => {
+    const kind = order[index % order.length];
+    return { ...kind.build(rng, stage, posableOnly), posable: kind.posable };
+  });
 }
 
 export function eligibleOperationKinds(level: Level, trimester: Trimester): OperationKind[] {
@@ -242,7 +232,7 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
   const operations = buildOperations(level, trimester, rng, count);
 
   for (let i = 0; i < count; i++) {
-    const { a, b, op, result, isDecimal } = operations[i];
+    const { a, b, op, result, isDecimal, posable } = operations[i];
     const distractors = distractorsForResult(rng, result, isDecimal);
     // Toutes les propositions sont écrites de la même façon : sinon le format
     // (« 14 » au milieu de « 13,1 ») désignerait la bonne réponse.
@@ -255,6 +245,9 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
       prompt: `${formatNumber(a)} ${op} ${formatNumber(b)}`,
       choices,
       correctIndex: choices.indexOf(formatChoice(result)),
+      // Les tables de multiplication se récitent : les poser n'aurait aucun
+      // sens, elles ne portent donc pas ce champ.
+      ...(posable ? { operation: { a, b, op, isDecimal } } : {}),
     });
   }
 

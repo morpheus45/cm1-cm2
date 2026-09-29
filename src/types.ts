@@ -122,6 +122,10 @@ export interface Question {
    *  quadrillage). La question n'a alors pas de choix : `choices` est vide et
    *  `correctIndex` vaut -1. */
   construction?: Construction;
+  /** L'opération à poser au brouillon avant de répondre, pour les techniques
+   *  qui s'écrivent en colonnes (`calcul.ts` seul le remplit). Les tables de
+   *  multiplication n'en portent pas : elles se récitent. */
+  operation?: { a: number; b: number; op: '+' | '-' | '×' | '÷'; isDecimal: boolean };
 }
 
 export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];
