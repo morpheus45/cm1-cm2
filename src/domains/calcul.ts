@@ -59,7 +59,15 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     minStage: 1,
     posable: true,
-    build: (rng, stage) => {
+    build: (rng, stage, posed) => {
+      // Non posée, l'addition reste un calcul mental à deux chiffres : au-delà,
+      // elle demande la technique posée, que l'élève doit écrire au stylet,
+      // pas deviner parmi quatre choix.
+      if (!posed) {
+        const a = rngInt(rng, 10, 99);
+        const b = rngInt(rng, 10, 99);
+        return { a, b, op: '+', result: a + b, isDecimal: false };
+      }
       const bound = stage >= 4 ? 5000 : 500;
       const floorValue = stage >= 4 ? 1000 : 100;
       const a = rngInt(rng, floorValue, bound);
@@ -70,7 +78,14 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     minStage: 1,
     posable: true,
-    build: (rng, stage) => {
+    build: (rng, stage, posed) => {
+      // Même chose pour la soustraction : posée seulement, dès que les
+      // nombres passent à trois chiffres.
+      if (!posed) {
+        const a = rngInt(rng, 20, 99);
+        const b = rngInt(rng, 10, Math.floor(a * 0.8));
+        return { a, b, op: '-', result: a - b, isDecimal: false };
+      }
       const a = stage >= 4 ? rngInt(rng, 2000, 9000) : rngInt(rng, 200, 900);
       // Le reste garde de l'épaisseur : « 478 - 473 » ne fait pas travailler
       // la technique de la soustraction posée.

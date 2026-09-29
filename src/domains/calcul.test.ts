@@ -104,4 +104,21 @@ describe('calcul generate', () => {
     const questions = generate('CM2', 3, createRng(23), 60);
     expect(questions.some((q) => !isDecimal(q))).toBe(true);
   });
+
+  it('garde l\'addition et la soustraction à deux chiffres : au-delà, ça se pose, ça ne se devine pas', () => {
+    // Une addition ou une soustraction à trois chiffres ou plus demande la
+    // technique posée, au stylet — un QCM ne montre ni le raisonnement ni la
+    // retenue à la maîtresse.
+    LEVELS.forEach((level) => {
+      ALL_TRIMESTERS.forEach((trimester) => {
+        generate(level, trimester, createRng(31), 80)
+          .filter((q) => ['+', '-'].includes(operatorOf(q)) && !isDecimal(q))
+          .forEach((q) => {
+            const [a, b] = operandsOf(q).map(Number);
+            expect(a, q.prompt).toBeLessThan(100);
+            expect(b, q.prompt).toBeLessThan(100);
+          });
+      });
+    });
+  });
 });
