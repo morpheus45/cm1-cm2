@@ -741,8 +741,9 @@ function timelineQuestion(rng: Rng, pool: Repere[]): Draft | null {
   };
 }
 
-/** Les années travaillées à chaque trimestre : celles des thèmes étudiés. */
-const CENTURY_RANGES: Record<Level, Record<Trimester, [number, number]>> = {
+/** Les années travaillées à chaque trimestre : celles des thèmes étudiés. Un
+ *  niveau qui n'y figure pas n'a pas encore d'exercice sur les siècles. */
+const CENTURY_RANGES: Partial<Record<Level, Record<Trimester, [number, number]>>> = {
   CM1: { 1: [1001, 1300], 2: [1501, 1700], 3: [1401, 1800] },
   CM2: { 1: [1789, 1950], 2: [1801, 1900], 3: [1901, 2020] },
 };
@@ -787,7 +788,8 @@ function generateFor(domain: HistoryDomain) {
     if (domain === 'chronologie') {
       const reperes = REPERES.filter((entry) => isEligible(entry, level, trimester));
       const recent = reperes.filter((entry) => entry.trimester === trimester);
-      currentMakers.push(...repereMakers(rng, recent, reperes), () => centuryDrill(rng, CENTURY_RANGES[level][trimester]));
+      const years = CENTURY_RANGES[level]?.[trimester];
+      currentMakers.push(...repereMakers(rng, recent, reperes), ...(years ? [() => centuryDrill(rng, years)] : []));
       reviewMakers.push(...repereMakers(rng, reperes.filter((entry) => entry.trimester < trimester), reperes));
     }
     return assemble(domain, rng, count, trimester, currentMakers, reviewMakers);

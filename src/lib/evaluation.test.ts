@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { ALL_TRIMESTERS, SUBJECT_DOMAINS, type Level, type Question, type Subject } from '../types';
+import { ALL_LEVELS, ALL_TRIMESTERS, SUBJECT_DOMAINS, type Level, type Question, type Subject } from '../types';
 import {
   analyseEvaluation,
   candidateOperations,
@@ -154,10 +154,15 @@ describe('ce que reçoit la tablette', () => {
   };
 
   it('écarte une évaluation illisible, et garde les copies que la base connaît', () => {
-    const parsed = parseOpenEvaluations([row, { ...row, id: 'e2', question_count: 0 }, { ...row, level: 'CE2' }, null]);
+    const parsed = parseOpenEvaluations([row, { ...row, id: 'e2', question_count: 0 }, { ...row, level: 'CP' }, null]);
     expect(parsed).toHaveLength(1);
     expect(parsed[0]).toMatchObject({ questionCount: 1, version: 'v1', items: null, returnedCopyIds: ['c1'] });
     expect(parseOpenEvaluations('rien')).toEqual([]);
+  });
+
+  it('accepte une évaluation de chacun des huit niveaux', () => {
+    const parsed = parseOpenEvaluations(ALL_LEVELS.map((level) => ({ ...row, id: `e-${level}`, level })));
+    expect(parsed.map((entry) => entry.level)).toEqual(ALL_LEVELS);
   });
 
   it('associe les questions reçues, si elles sont de la même version et lisibles', () => {

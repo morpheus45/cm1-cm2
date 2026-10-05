@@ -3,6 +3,7 @@ import type { Domain, Level, Question, Subject, Trimester } from '../types';
 import { createRng, rngShuffle, type Rng } from './seededRandom';
 import { classProblemToQuestion, pickClassProblems, type ClassProblem } from './classProblems';
 import { classQuestionToQuestion, pickClassQuestions, type ClassQuestion } from './classQuestions';
+import { hasContent } from './contenu';
 import * as conjugaison from '../domains/conjugaison';
 import * as accords from '../domains/accords';
 import * as orthographe from '../domains/orthographe';
@@ -56,7 +57,8 @@ export interface SessionRequest {
 
 export interface Session {
   subject: Subject;
-  /** Les notions retenues, dans l'ordre où leurs questions se suivent. */
+  /** Les notions retenues, dans l'ordre où leurs questions se suivent : celles
+   *  qui ont des questions pour ce niveau et ce trimestre. */
   domains: Domain[];
   level: Level;
   trimester: Trimester;
@@ -129,6 +131,10 @@ function pickFreshQuestions(
  * Construit une séance. Les questions ne sont pas mélangées entre les
  * notions : l'élève fait d'abord tout le bloc de conjugaison, puis tout le
  * bloc d'accords, etc. — dans l'ordre fixe de `ALL_DOMAINS`.
+ *
+ * Une notion sans question pour ce niveau et ce trimestre (src/lib/contenu.ts)
+ * est laissée de côté : la séance se fait avec les autres, et sans aucune
+ * notion elle est vide plutôt que de planter.
  */
 
 export function buildSession({
@@ -141,8 +147,10 @@ export function buildSession({
   classQuestions = [],
   avoidSignatures = [],
 }: SessionRequest): Session {
-  const orderedDomains = ALL_DOMAINS.filter((domain) => domains.includes(domain));
-  const subject = subjectOfDomains(orderedDomains);
+  const requestedDomains = ALL_DOMAINS.filter((domain) => domains.includes(domain));
+  const subject = subjectOfDomains(requestedDomains);
+  const orderedDomains = requestedDomains.filter((domain) => hasContent(domain, level, trimester));
+  if (orderedDomains.length === 0) return { subject, domains: [], level, trimester, questions: [] };
 
   const rng = createRng(seed);
   const perDomain = Math.floor(count / orderedDomains.length);

@@ -1,7 +1,74 @@
 import type { Figure } from './lib/figures';
 import type { Construction } from './lib/construction';
 
-export type Level = 'CM1' | 'CM2';
+export type Level = 'CE1' | 'CE2' | 'CM1' | 'CM2' | '6e' | '5e' | '4e' | '3e';
+
+/** Les huit niveaux de l'application, dans l'ordre de la scolarité. */
+export const ALL_LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
+
+export const LEVEL_LABELS: Record<Level, string> = {
+  CE1: 'CE1',
+  CE2: 'CE2',
+  CM1: 'CM1',
+  CM2: 'CM2',
+  '6e': '6e',
+  '5e': '5e',
+  '4e': '4e',
+  '3e': '3e',
+};
+
+/** Ce qui vient de la base ou du navigateur n'est un niveau que s'il en est
+ *  un : on le vérifie plutôt que de le croire. */
+export function isLevel(value: unknown): value is Level {
+  return ALL_LEVELS.includes(value as Level);
+}
+
+/** Les cycles du programme : le 2 pour le CE1 et le CE2, le 3 du CM1 à la
+ *  6e, le 4 de la 5e à la 3e. */
+export type Cycle = 2 | 3 | 4;
+
+export const CYCLE_OF_LEVEL: Record<Level, Cycle> = {
+  CE1: 2,
+  CE2: 2,
+  CM1: 3,
+  CM2: 3,
+  '6e': 3,
+  '5e': 4,
+  '4e': 4,
+  '3e': 4,
+};
+
+/**
+ * Les niveaux que l'application propose : à l'élève, pour choisir sa classe,
+ * et à la maîtresse, pour créer la sienne. La base et le code savent déjà les
+ * huit niveaux de `ALL_LEVELS`, mais un niveau n'entre dans cette liste
+ * qu'une fois ses questions écrites : elle s'allongera au fil des contenus.
+ */
+export const AVAILABLE_LEVELS: Level[] = ['CM1', 'CM2'];
+
+/** Les niveaux du collège : l'élève y a des professeurs, plus de maîtresse. */
+const COLLEGE_LEVELS: Level[] = ['6e', '5e', '4e', '3e'];
+
+/**
+ * Le mot dont l'élève se sert pour parler de son enseignant : « ta
+ * maîtresse » du CE1 au CM2, « ton professeur » de la 6e à la 3e. Il ne vaut
+ * que pour ce que lit l'élève : l'espace maîtresse garde son vocabulaire.
+ */
+export function teacherWord(level: Level): string {
+  return COLLEGE_LEVELS.includes(level) ? 'ton professeur' : 'ta maîtresse';
+}
+
+/** Le même mot en début de phrase : « Ta maîtresse corrigera ta copie. » */
+export function teacherWordCapitalised(level: Level): string {
+  const word = teacherWord(level);
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+/** Le même mot, avec l'article défini : « pour la maîtresse », « pour le
+ *  professeur ». */
+export function teacherWordDefinite(level: Level): string {
+  return COLLEGE_LEVELS.includes(level) ? 'le professeur' : 'la maîtresse';
+}
 
 /**
  * Un élève. Le nom de famille reste facultatif : dans une famille le prénom
@@ -76,12 +143,14 @@ export const ACTIVITY_LABELS: Record<Activity, string> = {
   evaluation: 'Évaluation',
 };
 
-export const ACTIVITY_HINTS: Record<Activity, string> = {
-  questions: 'Des questions sur tout ce que tu as coché.',
-  posees: "Tu poses l'opération avec ton doigt. Ta maîtresse pourra la corriger.",
-  tables: 'Choisis tes tables et donne le résultat le plus vite possible, sans poser.',
-  revision: 'Les exercices qui te donnent le plus de mal, pour progresser.',
-  evaluation: 'Les questions choisies par ta maîtresse, pour toute la classe.',
+/** Ce qu'on dit à l'élève de chaque séance. Le mot qui désigne son enseignant
+ *  suit son niveau : une maîtresse, puis des professeurs. */
+export const ACTIVITY_HINTS: Record<Activity, (level: Level) => string> = {
+  questions: () => 'Des questions sur tout ce que tu as coché.',
+  posees: (level) => `Tu poses l'opération avec ton doigt. ${teacherWordCapitalised(level)} pourra la corriger.`,
+  tables: () => 'Choisis tes tables et donne le résultat le plus vite possible, sans poser.',
+  revision: () => 'Les exercices qui te donnent le plus de mal, pour progresser.',
+  evaluation: (level) => `Les questions choisies par ${teacherWord(level)}, pour toute la classe.`,
 };
 
 /** Poser une opération n'a de sens qu'en maths. La révision ciblée existe

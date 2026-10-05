@@ -1,7 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
-import { stageOf, type Stage } from '../lib/progression';
+import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
 import { ALL_VERBS, PERSONS, type Person, type Tense, type Verb } from './conjugaisonVerbes';
 
 export type { Tense };
@@ -36,7 +36,7 @@ const TENSE_ORDER: Tense[] = [
 
 export function eligibleTenses(level: Level, trimester: Trimester): Tense[] {
   const stage = stageOf(level, trimester);
-  return TENSE_ORDER.filter((tense) => TENSE_MIN_STAGE[tense] <= stage);
+  return TENSE_ORDER.filter((tense) => isAvailableAt(TENSE_MIN_STAGE[tense], stage));
 }
 
 /** Un temps composé (passé composé, plus-que-parfait) : les verbes qui se

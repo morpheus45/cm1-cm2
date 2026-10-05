@@ -1,4 +1,5 @@
 import { downloadBytes } from '../lib/download';
+import { teacherWord, teacherWordCapitalised } from '../types';
 import type { ReceivedCorrection } from '../lib/pupilCorrections';
 import { isAnswerCorrect, worksheetScore } from '../lib/worksheet';
 import { formatFrenchDate, worksheetFileName, worksheetToPdf } from '../lib/worksheetPdf';
@@ -21,6 +22,7 @@ interface CorrectedSheetScreenProps {
 export function CorrectedSheetScreen({ correction, onClose }: CorrectedSheetScreenProps) {
   const { worksheet } = correction;
   const { correct, total } = worksheetScore(worksheet);
+  const teacher = teacherWord(worksheet.level);
 
   const savePdf = () =>
     downloadBytes(worksheetToPdf(worksheet), worksheetFileName(worksheet), 'application/pdf');
@@ -46,13 +48,13 @@ export function CorrectedSheetScreen({ correction, onClose }: CorrectedSheetScre
         <NoteEntouree score={correct} total={total} />
         {worksheet.appreciation ? (
           <div className="flex flex-col gap-1">
-            <p className="text-sm font-bold text-encre-douce">Le mot de ta maîtresse :</p>
+            <p className="text-sm font-bold text-encre-douce">Le mot de {teacher} :</p>
             <p className="font-cursive text-2xl leading-[2]" style={{ color: TEACHER_RED }}>
               {worksheet.appreciation}
             </p>
           </div>
         ) : (
-          <p className="text-base text-encre-douce">Regarde les traits rouges de ta maîtresse sur tes opérations.</p>
+          <p className="text-base text-encre-douce">Regarde les traits rouges de {teacher} sur tes opérations.</p>
         )}
       </section>
 
@@ -78,7 +80,7 @@ export function CorrectedSheetScreen({ correction, onClose }: CorrectedSheetScre
                 strokes={answer?.strokes ?? []}
                 overlayStrokes={answer?.teacherStrokes ?? []}
                 readOnly
-                label={`Ton opération ${operation.statement}${annotated ? ', avec la correction de ta maîtresse' : ''}`}
+                label={`Ton opération ${operation.statement}${annotated ? `, avec la correction de ${teacher}` : ''}`}
               />
               <p className="text-lg">
                 <span className="text-encre-douce">Ta réponse : </span>
@@ -89,7 +91,7 @@ export function CorrectedSheetScreen({ correction, onClose }: CorrectedSheetScre
               </p>
               {annotated && (
                 <p className="text-sm font-bold" style={{ color: TEACHER_RED }}>
-                  Ta maîtresse a écrit sur cette opération.
+                  {teacherWordCapitalised(worksheet.level)} a écrit sur cette opération.
                 </p>
               )}
             </li>

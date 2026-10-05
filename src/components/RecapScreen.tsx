@@ -1,4 +1,4 @@
-import type { Subject } from '../types';
+import type { Level, Subject } from '../types';
 import { ofSubject } from '../types';
 
 import { DeliveryNote } from './DeliveryNote';
@@ -11,6 +11,7 @@ import { useScreenTitle } from './useScreenTitle';
 interface RecapScreenProps {
   delivery?: DepositOutcome | 'pending' | null;
   name?: string;
+  level: Level;
   subject: Subject;
   score: number;
   total: number;
@@ -23,6 +24,7 @@ const STAR_GOLD = '#E0A100';
 
 export function RecapScreen({
   name,
+  level,
   subject,
   score,
   total,
@@ -48,7 +50,7 @@ export function RecapScreen({
         </Tampon>
         {name && <p className="font-cursive text-2xl leading-[2] text-encre">{name}</p>}
         <NoteEntouree score={score} total={total} />
-        <DeliveryNote delivery={delivery} />
+        <DeliveryNote delivery={delivery} level={level} />
       </section>
 
       <div className="flex flex-col items-center gap-2">

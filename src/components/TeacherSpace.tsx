@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { pupilKey } from '../types';
+import { AVAILABLE_LEVELS, LEVEL_LABELS, pupilKey } from '../types';
 import type { Level } from '../types';
 import type { SessionResult } from '../lib/results';
 import { isCloudConfigured } from '../lib/cloud';
@@ -376,16 +376,16 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
                 onChange={(e) => setClassName(e.target.value)}
               />
             </label>
-            <div className="flex gap-3">
-              {(['CM1', 'CM2'] as Level[]).map((lvl) => (
+            <div className="flex flex-wrap gap-3">
+              {AVAILABLE_LEVELS.map((lvl) => (
                 <button
                   key={lvl}
                   type="button"
                   onClick={() => setClassLevel(lvl)}
                   aria-pressed={classLevel === lvl}
-                  className={`etiquette flex-1 py-3 text-lg ${classLevel === lvl ? '!bg-encre !text-white' : ''}`}
+                  className={`etiquette min-w-[4.5rem] flex-1 py-3 text-lg ${classLevel === lvl ? '!bg-encre !text-white' : ''}`}
                 >
-                  {lvl}
+                  {LEVEL_LABELS[lvl]}
                 </button>
               ))}
             </div>

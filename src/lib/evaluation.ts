@@ -2,6 +2,7 @@ import {
   ALL_DOMAINS,
   ALL_SUBJECTS,
   DOMAIN_SUBJECT,
+  isLevel,
   ofSubject,
   pupilKey,
   pupilLabel,
@@ -262,7 +263,7 @@ export function parseOpenEvaluations(raw: unknown, questions: Record<string, Rec
   return raw.flatMap((row): OpenEvaluation[] => {
     if (!isRecord(row) || typeof row.id !== 'string' || typeof row.title !== 'string') return [];
     if (!isSubject(row.subject) || !isTrimester(row.trimester) || !isCount(row.question_count)) return [];
-    if ((row.level !== 'CM1' && row.level !== 'CM2') || typeof row.version !== 'string') return [];
+    if (!isLevel(row.level) || typeof row.version !== 'string') return [];
     const received = questions[row.id];
     const items = received && received.version === row.version ? parseItems(received.items, row.subject) : null;
     return [

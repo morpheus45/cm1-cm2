@@ -1,5 +1,6 @@
 import type { Level, Trimester } from '../types';
 import { buildOperations, formatNumber } from '../domains/calcul';
+import { hasContent } from './contenu';
 import { createRng } from './seededRandom';
 
 /**
@@ -73,13 +74,17 @@ export function buildWorksheet({
   createdAt?: string;
 }): Worksheet {
   const rng = createRng(seed);
-  const operations = buildOperations(level, trimester, rng, count, { posableOnly: true }).map(
-    (operation, index) => ({
-      id: `pose-${index}-${operation.op}-${operation.a}-${operation.b}`,
-      statement: `${formatNumber(operation.a)} ${operation.op} ${formatNumber(operation.b)}`,
-      expected: formatNumber(operation.result),
-    })
-  );
+  // Sans questions de calcul pour ce niveau (src/lib/contenu.ts), il n'y a pas
+  // d'opération à poser : la feuille est vide plutôt que d'emprunter celles
+  // d'un autre niveau du même cycle.
+  const operations = (hasContent('calcul', level, trimester)
+    ? buildOperations(level, trimester, rng, count, { posableOnly: true })
+    : []
+  ).map((operation, index) => ({
+    id: `pose-${index}-${operation.op}-${operation.a}-${operation.b}`,
+    statement: `${formatNumber(operation.a)} ${operation.op} ${formatNumber(operation.b)}`,
+    expected: formatNumber(operation.result),
+  }));
 
   return {
     name,

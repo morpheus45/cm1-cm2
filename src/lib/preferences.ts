@@ -1,4 +1,4 @@
-import { ALL_SUBJECTS, ALL_TRIMESTERS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS, subjectOf } from '../types';
+import { ALL_SUBJECTS, ALL_TRIMESTERS, AVAILABLE_LEVELS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS, subjectOf } from '../types';
 import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 import { ALL_TABLES, normaliseTables } from '../domains/tables';
 
@@ -58,7 +58,8 @@ export function parsePreferences(raw: string | null): Preferences {
   const name = typeof stored.name === 'string' ? stored.name.slice(0, 40) : DEFAULT_PREFERENCES.name;
   const lastName =
     typeof stored.lastName === 'string' ? stored.lastName.slice(0, 40) : DEFAULT_PREFERENCES.lastName;
-  const level: Level = stored.level === 'CM2' ? 'CM2' : 'CM1';
+  // Seul un niveau que l'application propose est repris ; sinon, le CM1.
+  const level: Level = AVAILABLE_LEVELS.includes(stored.level as Level) ? (stored.level as Level) : DEFAULT_PREFERENCES.level;
   const trimester = ALL_TRIMESTERS.includes(stored.trimester as Trimester)
     ? (stored.trimester as Trimester)
     : DEFAULT_PREFERENCES.trimester;

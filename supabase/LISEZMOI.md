@@ -22,11 +22,17 @@ dans `.github/workflows/deploy.yml`.
    cours), `006_evaluations.sql` (les évaluations de la maîtresse ; à
    passer **avant** de publier la version qui les propose, sinon le bouton
    « Évaluations de la classe » annonce que cette partie n'est pas
-   installée), puis `007_questions_de_la_classe.sql` (la maîtresse ajoute
+   installée), `007_questions_de_la_classe.sql` (la maîtresse ajoute
    elle-même des questions dans toutes les matières, pas seulement les
    problèmes de maths ; à passer **avant** de publier la version qui le
    propose, sinon le bouton « Questions de la classe » annonce que cette
-   partie n'est pas installée). Les fichiers sont rejouables : on les relance
+   partie n'est pas installée), puis `008_niveaux_ce1_3e.sql` (la base
+   accepte les huit niveaux, du CE1 à la 3e, pour les classes des
+   maîtresses comme pour les séances des élèves, et plus seulement le CM1 et
+   le CM2 ; aucune donnée n'est touchée ; à passer **avant** de publier la
+   version qui ouvre un nouveau niveau, sinon la création d'une classe de ce
+   niveau est refusée et les séances de ses élèves restent en attente sur les
+   tablettes). Les fichiers sont rejouables : on les relance
    après chaque modification, sans rien perdre. Pour copier sans rien abîmer, le plus sûr est le bouton
    « Copy raw file » de GitHub, sur la page du fichier.
 2. **Les comptes des maîtresses.** *Authentication → Sign In / Providers →

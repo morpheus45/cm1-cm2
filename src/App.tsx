@@ -3,6 +3,7 @@ import { pupilKey, subjectOf } from './types';
 import type { Domain, Pupil } from './types';
 import { buildSession, type Session } from './lib/sessionBuilder';
 import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
+import { activitiesFor, notionsFor } from './lib/contenu';
 import { loadPreferences, savePreferences } from './lib/preferences';
 import { loadStars, saveStars } from './lib/stars';
 import { recentSignatures, recordShownQuestions } from './lib/questionHistory';
@@ -240,6 +241,9 @@ export function App() {
   };
 
   const startSession = (options: StartOptions) => {
+    // Une séance que ce niveau n'offre pas, faute de questions
+    // (src/lib/contenu.ts), ne démarre pas : on reste à l'accueil.
+    if (!activitiesFor(options.subject, options.level, options.trimester).includes(options.activity)) return;
     const seed = Date.now();
     rememberChoices(options);
     setIndex(0);
@@ -252,7 +256,9 @@ export function App() {
     // encore rien fait travaille simplement toute la matière.
     const pupil: Pupil = { firstName: options.name, lastName: options.lastName };
     const own = results.filter((entry) => pupilKey(entry.pupil) === pupilKey(pupil));
-    const domains = options.activity === 'revision' ? revisionDomains(own, options.subject, 2) : options.domains;
+    const available = notionsFor(options.subject, options.level, options.trimester);
+    const domains =
+      options.activity === 'revision' ? revisionDomains(own, options.subject, 2, available) : options.domains;
 
     if (options.activity === 'tables') {
       setTableFacts({ seed, facts: buildTableFacts(options.tables, createRng(seed)) });
@@ -262,14 +268,14 @@ export function App() {
     }
 
     if (options.activity === 'posees') {
-      setWorksheet(
-        buildWorksheet({
-          name: options.name,
-          level: options.level,
-          trimester: options.trimester,
-          seed,
-        })
-      );
+      const sheet = buildWorksheet({
+        name: options.name,
+        level: options.level,
+        trimester: options.trimester,
+        seed,
+      });
+      if (sheet.operations.length === 0) return;
+      setWorksheet(sheet);
       setScreen('pose');
       return;
     }
@@ -283,6 +289,7 @@ export function App() {
       classQuestions: options.joinCode ? cachedClassQuestions(options.joinCode) : [],
       avoidSignatures: recentSignatures(pupil, options.subject),
     });
+    if (built.questions.length === 0) return;
     setSession(built);
     recordShownQuestions(pupil, options.subject, built.questions);
     // Un code tout juste saisi : les problèmes et les questions de la classe
@@ -511,6 +518,7 @@ export function App() {
       <EvaluationDoneScreen
         title={taking.evaluation.title}
         pupilName={taking.pupil.firstName}
+        level={taking.evaluation.level}
         outcome={copyOutcome}
         onFinish={() => {
           setTaking(null);
@@ -538,6 +546,7 @@ export function App() {
         key={tableFacts.seed}
         facts={tableFacts.facts}
         name={config?.name}
+        level={config?.level ?? preferences.level}
         delivery={delivery}
         onCorrect={awardStar}
         // Pour la maîtresse et la base, une série de tables est une séance de
@@ -592,6 +601,7 @@ export function App() {
     return (
       <RecapScreen
         name={config?.name}
+        level={session.level}
         subject={session.subject}
         score={score}
         total={session.questions.length}

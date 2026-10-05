@@ -1,7 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
-import { stageOf } from '../lib/progression';
+import { isAvailableAt, stageOf } from '../lib/progression';
 import {
   ADJECTIVES,
   adjectiveForm,
@@ -219,8 +219,8 @@ function allocate(count: number, keys: PoolKey[]): Record<PoolKey, number> {
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
   const stage = stageOf(level, trimester);
-  const nouns = NOUNS.filter((noun) => noun.minStage <= stage);
-  const adjectives = ADJECTIVES.filter((adjective) => adjective.minStage <= stage);
+  const nouns = NOUNS.filter((noun) => isAvailableAt(noun.minStage, stage));
+  const adjectives = ADJECTIVES.filter((adjective) => isAvailableAt(adjective.minStage, stage));
 
   const nominalCandidates: NominalCandidate[] = nouns.flatMap((noun) =>
     adjectives
@@ -236,7 +236,7 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
     ALL_VERBS.flatMap((verb) => NUMBERS.map((number) => ({ noun, verb, number })))
   );
   const adjectifCandidates: NominalCandidate[] = stage >= 2 ? nominalCandidates : [];
-  const participeVerbs = ETRE_VERBS.filter((verb) => verb.minStage <= stage);
+  const participeVerbs = ETRE_VERBS.filter((verb) => isAvailableAt(verb.minStage, stage));
   const participeCandidates: ParticipeCandidate[] = participeVerbs.flatMap((verb) =>
     ETRE_SUBJECTS.map((subject) => ({ verb, subject }))
   );

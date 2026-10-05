@@ -46,10 +46,37 @@ function erreur(status: number, code: string, message: string): Response {
   return json(status, { erreur: code, message });
 }
 
-type Niveau = 'CM1' | 'CM2';
+/** Les niveaux de l'application, du CE1 à la 3e. Cette fonction se colle telle
+ *  quelle dans l'éditeur de Supabase : elle ne peut rien importer du site, et
+ *  un test (tools/cloud-sql.test.ts) vérifie que sa liste est celle de
+ *  src/types.ts. */
+const NIVEAUX = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'] as const;
+type Niveau = (typeof NIVEAUX)[number];
+
+/** Le cycle du programme de chaque niveau. */
+const CYCLES: Record<Niveau, 2 | 3 | 4> = {
+  CE1: 2,
+  CE2: 2,
+  CM1: 3,
+  CM2: 3,
+  '6e': 3,
+  '5e': 4,
+  '4e': 4,
+  '3e': 4,
+};
+
+function lireNiveau(valeur: unknown): Niveau | null {
+  return NIVEAUX.find((niveau) => niveau === valeur) ?? null;
+}
+
+/** Celui ou celle qui doit pouvoir lire l'énoncé seul. Le CM1 et le CM2 gardent
+ *  la consigne d'origine ; les autres niveaux parlent d'un élève de leur classe. */
+function lecteur(niveau: Niveau): string {
+  return niveau === 'CM1' || niveau === 'CM2' ? 'un enfant de 8 ans' : `un élève de ${niveau}`;
+}
 
 function systemPrompt(niveau: Niveau): string {
-  return `Tu es « l'assistant de Cédric », l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de français et de maths pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle 3). Cédric est l'administrateur de l'application ; toi, tu es une intelligence artificielle : dis-le simplement si on te le demande, et ne te présente jamais comme Cédric ni comme une personne. Ne nomme ni le modèle d'intelligence artificielle ni l'entreprise qui le fournit ; si la maîtresse te le demande, réponds que tu es l'assistant de l'application, une intelligence artificielle mise à disposition par Cédric. Tu parles à la maîtresse d'une classe de ${niveau}.
+  return `Tu es « l'assistant de Cédric », l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de français et de maths pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle ${CYCLES[niveau]}). Cédric est l'administrateur de l'application ; toi, tu es une intelligence artificielle : dis-le simplement si on te le demande, et ne te présente jamais comme Cédric ni comme une personne. Ne nomme ni le modèle d'intelligence artificielle ni l'entreprise qui le fournit ; si la maîtresse te le demande, réponds que tu es l'assistant de l'application, une intelligence artificielle mise à disposition par Cédric. Tu parles à la maîtresse d'une classe de ${niveau}.
 
 L'application propose aux élèves des séances d'une seule matière : questions de conjugaison, d'accords, d'orthographe, de numération, de calcul et de problèmes ; des opérations posées à la main, que la maîtresse corrige au stylet ; une révision ciblée sur les notions fragiles. La maîtresse y suit chaque élève (niveaux de maîtrise, graphiques, attendus de fin d'année) et y ajoute ses propres problèmes de maths pour la classe.
 
@@ -58,7 +85,7 @@ Ton rôle se limite à aider la maîtresse à corriger ou adapter l'utilisation 
 Toute autre demande sort de ton rôle, même si elle paraît simple : un autre sujet, une autre application, un changement du fonctionnement ou de l'apparence de l'application, des données sur les élèves, un conseil sans rapport avec l'application. Dans ce cas, ne la traite pas : mets "hors_champ" à true, résume la demande en une phrase dans "demande_administrateur", et laisse "problemes" vide. Dans "message", dis seulement, en une phrase, que tu ne peux pas t'en charger ici ; l'application ajoute elle-même que la demande est transmise à l'administrateur.
 
 Les problèmes que tu proposes (${MAX_PROBLEMS} au plus par réponse) :
-- "enonce" : clair, en français, adapté à des élèves de ${niveau}, tiré de la vie courante ; des phrases courtes (vingt mots au plus) et des mots simples, qu'un enfant de 8 ans lit seul ; aucune marque, aucun nom de personne réelle ;
+- "enonce" : clair, en français, adapté à des élèves de ${niveau}, tiré de la vie courante ; des phrases courtes (vingt mots au plus) et des mots simples, qu'${lecteur(niveau)} lit seul ; aucune marque, aucun nom de personne réelle ;
 - "calcul" : une seule expression arithmétique qui donne la réponse : des nombres, + − × ÷ et des parenthèses, la virgule pour les décimaux, aucun espace dans les nombres ;
 - "reponse" : le résultat exact, un nombre positif avec deux décimales au plus, écrit avec une virgule ; l'application refait le calcul et refuse toute différence ;
 - "unite" : l'unité courte (« € », « cm », « billes ») ou une chaîne vide ;
@@ -210,7 +237,7 @@ Deno.serve(async (req) => {
   } catch {
     return erreur(400, 'requete', "La demande n'a pas pu être lue.");
   }
-  const niveau: Niveau | null = body?.niveau === 'CM1' || body?.niveau === 'CM2' ? body.niveau : null;
+  const niveau = lireNiveau(body?.niveau);
   const messages = lireMessages(body?.messages);
   if (!niveau || !messages) return erreur(400, 'requete', "La conversation n'a pas pu être lue.");
 

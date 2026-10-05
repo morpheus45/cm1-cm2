@@ -9,6 +9,7 @@ import type { OpenEvaluation } from '../lib/evaluation';
 import type { EvaluationState } from '../lib/pupilEvaluations';
 import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cloud';
 import { receivedFor, type ReceivedCorrection, type StoredCorrection } from '../lib/pupilCorrections';
+import { activitiesFor, notionsFor } from '../lib/contenu';
 import { worksheetScore } from '../lib/worksheet';
 import { formatFrenchDate } from '../lib/worksheetPdf';
 import { ALL_TABLES } from '../domains/tables';
@@ -17,10 +18,12 @@ import {
   ACTIVITY_LABELS,
   ALL_SUBJECTS,
   ALL_TRIMESTERS,
+  AVAILABLE_LEVELS,
   DOMAIN_LABELS,
-  SUBJECT_ACTIVITIES,
-  SUBJECT_DOMAINS,
+  LEVEL_LABELS,
   SUBJECT_LABELS,
+  teacherWord,
+  teacherWordCapitalised,
   TRIMESTER_LABELS,
 } from '../types';
 
@@ -90,17 +93,39 @@ export function HomeScreen({
   const [activity, setActivity] = useState<Activity>(initial.activity);
   const [tables, setTables] = useState<number[]>(initial.tables);
 
+  // Ce que l'élève peut choisir est ce qui a des questions pour sa classe et
+  // son trimestre : une matière, une séance ou une notion sans contenu n'est
+  // pas proposée (src/lib/contenu.ts).
+  const subjects = ALL_SUBJECTS.filter((s) => notionsFor(s, level, trimester).length > 0);
+  const notions = notionsFor(subject, level, trimester);
+  const activities = activitiesFor(subject, level, trimester);
+
   // Changer de matière repart des notions de cette matière : il n'existe aucun
   // état d'où l'on pourrait lancer une séance mêlant le français et les maths.
   const selectSubject = (next: Subject) => {
+    const allowed = activitiesFor(next, level, trimester);
     setSubject(next);
-    setDomains([...SUBJECT_DOMAINS[next]]);
-    if (!SUBJECT_ACTIVITIES[next].includes(activity)) {
-      setActivity(SUBJECT_ACTIVITIES[next][0]);
+    setDomains(notionsFor(next, level, trimester));
+    if (!allowed.includes(activity)) {
+      setActivity(allowed[0]);
     }
   };
 
-  const activities = SUBJECT_ACTIVITIES[subject];
+  // Changer de classe ou de trimestre : ce qui n'a pas de questions là — la
+  // matière, la séance, les notions cochées — laisse la place à ce qui en a.
+  const moveTo = (nextLevel: Level, nextTrimester: Trimester) => {
+    setLevel(nextLevel);
+    setTrimester(nextTrimester);
+    const nextSubjects = ALL_SUBJECTS.filter((s) => notionsFor(s, nextLevel, nextTrimester).length > 0);
+    const nextSubject = nextSubjects.includes(subject) ? subject : nextSubjects[0];
+    if (!nextSubject) return;
+    const nextNotions = notionsFor(nextSubject, nextLevel, nextTrimester);
+    const nextActivities = activitiesFor(nextSubject, nextLevel, nextTrimester);
+    setSubject(nextSubject);
+    if (!nextActivities.includes(activity)) setActivity(nextActivities[0]);
+    if (!domains.some((domain) => nextNotions.includes(domain))) setDomains(nextNotions);
+  };
+
   const posingOperations = activity === 'posees';
   const practisingTables = activity === 'tables';
 
@@ -129,19 +154,23 @@ export function HomeScreen({
     setDomains((prev) => (prev.includes(domain) ? prev.filter((d) => d !== domain) : [...prev, domain]));
   };
 
+  // Seules comptent les notions cochées qui ont des questions à ce niveau.
+  const chosenNotions = domains.filter((domain) => notions.includes(domain));
+
   // Poser des opérations ne demande aucune notion, et la révision ciblée
   // choisit les siennes toute seule.
   const canStart =
     name.trim().length > 0 &&
+    activities.includes(activity) &&
     (practisingTables
       ? tables.length > 0
-      : posingOperations || activity === 'revision' || domains.length > 0);
+      : posingOperations || activity === 'revision' || chosenNotions.length > 0);
 
   const options = (): StartOptions => ({
     name: name.trim(),
     lastName: lastName.trim(),
     joinCode: isValidJoinCode(joinCode) ? joinCode : '',
-    domains,
+    domains: chosenNotions,
     level,
     trimester,
     subject,
@@ -156,6 +185,7 @@ export function HomeScreen({
 
         {classEvaluations.length > 0 && onStartEvaluation && (
           <Evaluations
+            level={level}
             items={classEvaluations}
             canStart={name.trim().length > 0}
             onStart={(evaluation) => onStartEvaluation(evaluation, options())}
@@ -163,7 +193,7 @@ export function HomeScreen({
         )}
 
         {received.length > 0 && onOpenCorrection && (
-          <FeuillesCorrigees items={received} onOpen={onOpenCorrection} />
+          <FeuillesCorrigees level={level} items={received} onOpen={onOpenCorrection} />
         )}
 
         <Etape numero={1} titre="Qui es-tu ?">
@@ -188,7 +218,7 @@ export function HomeScreen({
             />
           </Ligne>
           {cloudAvailable && (
-            <Ligne label="Code de la classe" aide="donné par ta maîtresse">
+            <Ligne label="Code de la classe" aide={`donné par ${teacherWord(level)}`}>
               <input
                 className={`${champ} uppercase tracking-[0.35em]`}
                 value={joinCode}
@@ -206,16 +236,21 @@ export function HomeScreen({
         </Etape>
 
         <Etape numero={2} titre="Ta classe">
-          <div className="flex gap-3">
-            {(['CM1', 'CM2'] as Level[]).map((lvl) => (
-              <Choix key={lvl} actif={level === lvl} onClick={() => setLevel(lvl)} className="flex-1 py-3 text-xl">
-                {lvl}
+          <div className="flex flex-wrap gap-3">
+            {AVAILABLE_LEVELS.map((lvl) => (
+              <Choix
+                key={lvl}
+                actif={level === lvl}
+                onClick={() => moveTo(lvl, trimester)}
+                className="min-w-[4.5rem] flex-1 py-3 text-xl"
+              >
+                {LEVEL_LABELS[lvl]}
               </Choix>
             ))}
           </div>
           <div className="flex flex-wrap gap-2">
             {ALL_TRIMESTERS.map((t) => (
-              <Choix key={t} actif={trimester === t} onClick={() => setTrimester(t)} className="flex-1 px-1 py-2 text-sm leading-tight">
+              <Choix key={t} actif={trimester === t} onClick={() => moveTo(level, t)} className="flex-1 px-1 py-2 text-sm leading-tight">
                 {TRIMESTER_LABELS[t]}
               </Choix>
             ))}
@@ -227,7 +262,7 @@ export function HomeScreen({
 
         <Etape numero={3} titre="Ta matière">
           <div className="grid grid-cols-2 gap-3">
-            {ALL_SUBJECTS.map((s) => {
+            {subjects.map((s) => {
               const actif = subject === s;
               const colors = SUBJECT_COLORS[s];
               return (
@@ -239,7 +274,7 @@ export function HomeScreen({
                   className="etiquette relative flex flex-col items-center gap-1 px-2 pb-3 pt-2 text-xl"
                   style={actif ? { background: colors.tint, borderColor: colors.deep, boxShadow: `0 3px 0 ${colors.deep}` } : undefined}
                 >
-                  <RainbowArc domains={SUBJECT_DOMAINS[s]} className="w-24" />
+                  <RainbowArc domains={notionsFor(s, level, trimester)} className="w-24" />
                   <span style={actif ? { color: colors.deep } : undefined}>{SUBJECT_LABELS[s]}</span>
                   {actif && (
                     <Gommette color={colors.deep} mark="coche" size={26} tilt={-8} className="absolute -right-2 -top-2" />
@@ -248,12 +283,15 @@ export function HomeScreen({
               );
             })}
           </div>
+          {subjects.length === 0 && (
+            <p className="text-base font-bold text-encre-douce">Les exercices de cette classe arrivent bientôt.</p>
+          )}
           <p className="text-sm text-encre-pale">
             Une séance, c'est une seule matière à la fois.
           </p>
         </Etape>
 
-        <Etape numero={4} titre="Ta séance">
+        <Etape numero={4} titre="Ta séance" masquee={subjects.length === 0}>
           {activities.length > 1 && (
             <>
               <div className="flex flex-wrap gap-2">
@@ -268,7 +306,7 @@ export function HomeScreen({
                   </Choix>
                 ))}
               </div>
-              <p className="text-sm text-encre-pale">{ACTIVITY_HINTS[activity]}</p>
+              <p className="text-sm text-encre-pale">{ACTIVITY_HINTS[activity](level)}</p>
             </>
           )}
           {practisingTables && (
@@ -295,11 +333,11 @@ export function HomeScreen({
               </button>
             </div>
           )}
-          <div className={`flex-col gap-2 ${posingOperations || practisingTables || activity === 'revision' ? 'hidden' : 'flex'}`}>
+          <div className={`flex-col gap-2 ${posingOperations || practisingTables || activity === 'revision' || notions.length === 0 ? 'hidden' : 'flex'}`}>
             <span className="text-base font-bold text-encre-douce">
               Ce que tu travailles en {SUBJECT_LABELS[subject].toLowerCase()}
             </span>
-            {SUBJECT_DOMAINS[subject].map((domain) => {
+            {notions.map((domain) => {
               const actif = domains.includes(domain);
               const colors = NOTION_COLORS[domain];
               return (
@@ -358,21 +396,24 @@ export function HomeScreen({
  * ne peut ni en choisir une autre, ni refaire celle qu'il a rendue.
  */
 function Evaluations({
+  level,
   items,
   canStart,
   onStart,
 }: {
+  level: Level;
   items: Array<{ evaluation: OpenEvaluation; state: EvaluationState }>;
   canStart: boolean;
   onStart: (evaluation: OpenEvaluation) => void;
 }) {
   const waiting = items.filter((item) => item.state.kind !== 'rendue').length;
+  const teacher = teacherWordCapitalised(level);
   const title =
     waiting === 0
       ? 'Évaluation rendue'
       : waiting === 1
-        ? 'Ta maîtresse a lancé une évaluation'
-        : `Ta maîtresse a lancé ${waiting} évaluations`;
+        ? `${teacher} a lancé une évaluation`
+        : `${teacher} a lancé ${waiting} évaluations`;
   return (
     <section
       className="flex flex-col gap-3 rounded-3xl border-2 bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]"
@@ -397,7 +438,7 @@ function Evaluations({
                 </p>
               )}
               {state.kind === 'a-refaire' && (
-                <p className="text-base font-bold text-encre-douce">Ta maîtresse te demande de la refaire.</p>
+                <p className="text-base font-bold text-encre-douce">{teacher} te demande de la refaire.</p>
               )}
               {state.kind === 'rendue' ? (
                 <p className="text-base font-bold text-[#1B7A43]">✓ Ta copie est rendue.</p>
@@ -428,14 +469,23 @@ function Evaluations({
  * Le courrier de la maîtresse : les feuilles d'opérations qu'elle a corrigées,
  * les nouvelles marquées d'une pastille rouge.
  */
-function FeuillesCorrigees({ items, onOpen }: { items: ReceivedCorrection[]; onOpen: (item: ReceivedCorrection) => void }) {
+function FeuillesCorrigees({
+  level,
+  items,
+  onOpen,
+}: {
+  level: Level;
+  items: ReceivedCorrection[];
+  onOpen: (item: ReceivedCorrection) => void;
+}) {
   const fresh = items.filter((item) => item.isNew).length;
+  const teacher = teacherWordCapitalised(level);
   const title =
     fresh === 0
       ? 'Mes feuilles corrigées'
       : fresh === 1
-        ? 'Ta maîtresse a corrigé ta feuille\u00a0!'
-        : `Ta maîtresse a corrigé ${fresh} feuilles\u00a0!`;
+        ? `${teacher} a corrigé ta feuille\u00a0!`
+        : `${teacher} a corrigé ${fresh} feuilles\u00a0!`;
   return (
     <section
       className="flex flex-col gap-3 rounded-3xl border-2 bg-[#fffdf8] p-4 shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]"
@@ -460,7 +510,7 @@ function FeuillesCorrigees({ items, onOpen }: { items: ReceivedCorrection[]; onO
                   </span>
                   <span className="block text-sm font-normal text-encre-douce">
                     {correct} / {total} juste{correct > 1 ? 's' : ''}
-                    {item.worksheet.appreciation ? ' · un mot de ta maîtresse' : ''}
+                    {item.worksheet.appreciation ? ` · un mot de ${teacherWord(level)}` : ''}
                   </span>
                 </span>
                 {item.isNew ? (
@@ -498,8 +548,20 @@ function initialeDuNom(value: string): string {
 const champ =
   'w-full border-0 border-b-2 border-dashed border-encre/40 bg-transparent px-1 pb-1 pt-0 text-2xl text-encre placeholder:text-encre-pale/60 focus:border-solid focus:border-encre focus:outline-none';
 
-/** Une consigne de la fiche : son numéro, son titre, puis ce qu'on remplit. */
-function Etape({ numero, titre, children }: { numero: number; titre: string; children: React.ReactNode }) {
+/** Une consigne de la fiche : son numéro, son titre, puis ce qu'on remplit.
+ *  Masquée, elle n'est pas dessinée : il n'y a rien à y remplir. */
+function Etape({
+  numero,
+  titre,
+  masquee = false,
+  children,
+}: {
+  numero: number;
+  titre: string;
+  masquee?: boolean;
+  children: React.ReactNode;
+}) {
+  if (masquee) return null;
   return (
     <section className="cahier flex flex-col gap-3 rounded-3xl py-5 pl-12 pr-5 shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]">
       <h2 className="-ml-9 flex items-center gap-3 text-xl font-bold text-encre">

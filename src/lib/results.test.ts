@@ -15,7 +15,7 @@ import {
   MINIMUM_ANSWERS_FOR_MASTERY,
   type SessionResult,
 } from './results';
-import { ALL_DOMAINS, pupilKey, pupilLabel } from '../types';
+import { ALL_DOMAINS, ALL_LEVELS, pupilKey, pupilLabel } from '../types';
 
 const session = (overrides: Partial<SessionResult> = {}): SessionResult => ({
   id: 's1',
@@ -282,8 +282,13 @@ describe('parseResults', () => {
 
   it('écarte une séance abîmée sans jeter les autres', () => {
     const good = session();
-    const raw = JSON.stringify([good, { id: 'x' }, { ...good, id: 'y', level: 'CE2' }, null]);
+    const raw = JSON.stringify([good, { id: 'x' }, { ...good, id: 'y', level: 'CP' }, null]);
     expect(parseResults(raw)).toEqual([good]);
+  });
+
+  it('garde les séances des huit niveaux, du CE1 à la 3e', () => {
+    const sessions = ALL_LEVELS.map((level) => session({ id: `s-${level}`, level }));
+    expect(parseResults(JSON.stringify(sessions)).map((entry) => entry.level)).toEqual(ALL_LEVELS);
   });
 
   it('accueille une séance écrite avant que les élèves ne soient distingués', () => {

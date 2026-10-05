@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import type { Question, Subject } from '../types';
-import { ofSubject, SUBJECT_LABELS } from '../types';
+import type { Level, Question, Subject } from '../types';
+import { ofSubject, SUBJECT_LABELS, teacherWord, teacherWordCapitalised } from '../types';
 import { NOTION_COLORS } from '../theme';
 import {
   choiceAnswer,
@@ -136,7 +136,7 @@ function Intro({
           <li>Il y a {total} questions.</li>
           <li>Lis bien chaque question.</li>
           <li>Tu ne verras pas si ta réponse est juste.</li>
-          <li>Ta maîtresse corrigera ta copie.</li>
+          <li>{teacherWordCapitalised(evaluation.level)} corrigera ta copie.</li>
         </ul>
         {answered > 0 && (
           <p className="text-lg font-bold text-encre-douce">
@@ -255,32 +255,38 @@ function EvaluationQuestion({
   );
 }
 
-const COPY_NOTES: Record<CopyOutcome | 'pending', { text: string; tone: string }> = {
-  pending: { text: 'Envoi de ta copie…', tone: 'text-encre-douce' },
-  sent: { text: '✓ Copie rendue à ta maîtresse', tone: 'text-[#1B7A43]' },
-  queued: { text: 'Pas de connexion : ta copie partira toute seule plus tard.', tone: 'text-encre-douce' },
-  already: {
-    text: 'Tu avais déjà rendu cette évaluation. Ta maîtresse garde ta première copie.',
-    tone: 'text-encre-douce',
-  },
-  rejected: { text: "Ta copie n'est pas arrivée. Préviens ta maîtresse.", tone: 'text-[#B84A06]' },
-};
+/** Ce que devient la copie, dit avec le mot que l'élève emploie pour son
+ *  enseignant : une maîtresse, ou un professeur. */
+function copyNotes(level: Level): Record<CopyOutcome | 'pending', { text: string; tone: string }> {
+  return {
+    pending: { text: 'Envoi de ta copie…', tone: 'text-encre-douce' },
+    sent: { text: `✓ Copie rendue à ${teacherWord(level)}`, tone: 'text-[#1B7A43]' },
+    queued: { text: 'Pas de connexion : ta copie partira toute seule plus tard.', tone: 'text-encre-douce' },
+    already: {
+      text: `Tu avais déjà rendu cette évaluation. ${teacherWordCapitalised(level)} garde ta première copie.`,
+      tone: 'text-encre-douce',
+    },
+    rejected: { text: `Ta copie n'est pas arrivée. Préviens ${teacherWord(level)}.`, tone: 'text-[#B84A06]' },
+  };
+}
 
 /** La fin de l'évaluation : ni note ni correction, la copie part à la
  *  maîtresse. */
 export function EvaluationDoneScreen({
   title,
   pupilName,
+  level,
   outcome,
   onFinish,
 }: {
   title: string;
   pupilName: string;
+  level: Level;
   outcome: CopyOutcome | 'pending';
   onFinish: () => void;
 }) {
   const titleRef = useScreenTitle();
-  const note = COPY_NOTES[outcome];
+  const note = copyNotes(level)[outcome];
   return (
     <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center gap-6 px-4 py-8">
       <section className="cahier flex flex-col items-center gap-4 rounded-3xl px-6 py-8 text-center shadow-[0_1px_0_rgba(30,42,74,0.08),0_14px_28px_-18px_rgba(30,42,74,0.45)]">
@@ -291,7 +297,7 @@ export function EvaluationDoneScreen({
           C'est fini{'\u00a0'}!
         </Tampon>
         {pupilName && <p className="font-cursive text-2xl leading-[2] text-encre">{pupilName}</p>}
-        <p className="text-xl text-encre">Ta maîtresse va regarder tes réponses.</p>
+        <p className="text-xl text-encre">{teacherWordCapitalised(level)} va regarder tes réponses.</p>
         <p role="status" className={`text-base font-bold ${note.tone}`}>
           {note.text}
         </p>

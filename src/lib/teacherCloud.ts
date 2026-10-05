@@ -1,4 +1,4 @@
-import { pupilLabel, type Level, type Pupil, type Subject, type Trimester } from '../types';
+import { isLevel, pupilLabel, type Level, type Pupil, type Subject, type Trimester } from '../types';
 import { ZONES, type PeriodNumber, type Zone } from './calendrier';
 import { cloudClient } from './cloud';
 import {
@@ -93,7 +93,7 @@ export function mapClasses(raw: unknown): CloudClass[] {
       {
         id: entry.id,
         name: entry.name,
-        level: entry.level === 'CM2' ? 'CM2' : 'CM1',
+        level: isLevel(entry.level) ? entry.level : 'CM1',
         joinCode: entry.join_code,
         zone: ZONES.includes(entry.zone as Zone) ? (entry.zone as Zone) : null,
         sessions: parseResults(JSON.stringify(candidates)),

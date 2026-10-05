@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { TableFact } from '../domains/tables';
 import type { DepositOutcome } from '../lib/cloud';
+import type { Level } from '../types';
 import { NOTION_COLORS } from '../theme';
 import { DeliveryNote } from './DeliveryNote';
 import { Intercalaire } from './ecole/Intercalaire';
@@ -13,6 +14,7 @@ import { useScreenTitle } from './useScreenTitle';
 interface TablesScreenProps {
   facts: TableFact[];
   name?: string;
+  level: Level;
   delivery?: DepositOutcome | 'pending' | null;
   /** Une bonne réponse : une étoile de plus. */
   onCorrect: () => void;
@@ -32,7 +34,7 @@ const TABLES = NOTION_COLORS.calcul;
  * clavier), voit tout de suite si c'est juste, et passe au suivant. À la fin,
  * les résultats manqués sont rappelés, pour savoir quoi réviser.
  */
-export function TablesScreen({ facts, name, delivery = null, onCorrect, onFinished, onRestart, onQuit }: TablesScreenProps) {
+export function TablesScreen({ facts, name, level, delivery = null, onCorrect, onFinished, onRestart, onQuit }: TablesScreenProps) {
   const [index, setIndex] = useState(0);
   const [given, setGiven] = useState('');
   const [checked, setChecked] = useState(false);
@@ -114,7 +116,7 @@ export function TablesScreen({ facts, name, delivery = null, onCorrect, onFinish
               </ul>
             </div>
           )}
-          <DeliveryNote delivery={delivery} />
+          <DeliveryNote delivery={delivery} level={level} />
         </section>
         <div className="flex w-full flex-col gap-3">
           <button type="button" onClick={onRestart} className="bouton-encre w-full py-4 text-xl">
