@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
+import { needsBrouillon } from '../lib/brouillon';
 import { generate } from './calcul';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Question, Trimester } from '../types';
@@ -105,46 +106,19 @@ describe('calcul generate', () => {
     expect(questions.some((q) => !isDecimal(q))).toBe(true);
   });
 
-  // Les tables de multiplication sont la seule technique non posable : elles
-  // se reconnaissent, parmi les questions « × », à leurs deux facteurs jamais
-  // au-delà de 10 (les autres techniques de multiplication posée partent
-  // toujours d'un facteur à deux chiffres au moins).
-  function isTable(q: Question): boolean {
-    if (operatorOf(q) !== '×' || isDecimal(q)) return false;
-    const [a, b] = operandsOf(q).map(Number);
-    return a <= 10 && b <= 10;
-  }
-
-  it('porte le champ operation pour toute technique posable, jamais pour les tables de multiplication', () => {
-    let tablesSeen = 0;
+  it('garde les nombres du programme en QCM : l\'élève les pose au brouillon', () => {
+    // Addition et soustraction entières : au moins trois chiffres, comme sur
+    // le cahier ; le brouillon de l'écran de question permet de les poser.
     LEVELS.forEach((level) => {
       ALL_TRIMESTERS.forEach((trimester) => {
-        generate(level, trimester, createRng(31), 200).forEach((q) => {
-          if (isTable(q)) {
-            tablesSeen += 1;
-            expect(q.operation, q.prompt).toBeUndefined();
-          } else {
-            expect(q.operation, q.prompt).toBeDefined();
-          }
+        const posables = generate(level, trimester, createRng(31), 80)
+          .filter((q) => ['+', '-'].includes(operatorOf(q)) && !isDecimal(q));
+        expect(posables.length).toBeGreaterThan(0);
+        posables.forEach((q) => {
+          const [a] = operandsOf(q).map(Number);
+          expect(a, q.prompt).toBeGreaterThanOrEqual(100);
+          expect(needsBrouillon(q), q.prompt).toBe(true);
         });
-      });
-    });
-    // Sans quoi le test ne vérifierait jamais vraiment la branche des tables.
-    expect(tablesSeen).toBeGreaterThan(0);
-  });
-
-  it('l\'opération posée redonne exactement la bonne réponse affichée', () => {
-    LEVELS.forEach((level) => {
-      ALL_TRIMESTERS.forEach((trimester) => {
-        generate(level, trimester, createRng(31), 200)
-          .filter((q) => q.operation !== undefined)
-          .forEach((q) => {
-            const { a, b, op, isDecimal: decimal } = q.operation!;
-            const raw = op === '+' ? a + b : op === '-' ? a - b : op === '×' ? a * b : a / b;
-            const result = decimal ? Math.round(raw * 10) / 10 : raw;
-            const expected = decimal ? result.toFixed(1).replace('.', ',') : String(result);
-            expect(q.choices[q.correctIndex], q.prompt).toBe(expected);
-          });
       });
     });
   });

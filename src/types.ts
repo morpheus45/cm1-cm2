@@ -61,13 +61,17 @@ export type Subject = 'francais' | 'maths' | 'histoire' | 'geographie';
  * L'évaluation ne se choisit pas : seule la maîtresse la lance, et toute la
  * classe reçoit les mêmes questions (src/lib/evaluation.ts).
  */
-export type Activity = 'questions' | 'posees' | 'revision' | 'evaluation';
+export type Activity = 'questions' | 'posees' | 'tables' | 'revision' | 'evaluation';
 
+/** Les types de séance enregistrés, ceux que la base accepte. Une série de
+ *  tables de multiplication s'enregistre comme une séance de questions de
+ *  calcul : elle n'y figure pas. */
 export const ALL_ACTIVITIES: Activity[] = ['questions', 'posees', 'revision', 'evaluation'];
 
 export const ACTIVITY_LABELS: Record<Activity, string> = {
   questions: 'Questions',
   posees: 'Opérations posées',
+  tables: 'Tables de multiplication',
   revision: 'Révision ciblée',
   evaluation: 'Évaluation',
 };
@@ -75,6 +79,7 @@ export const ACTIVITY_LABELS: Record<Activity, string> = {
 export const ACTIVITY_HINTS: Record<Activity, string> = {
   questions: 'Des questions sur tout ce que tu as coché.',
   posees: "Tu poses l'opération avec ton doigt. Ta maîtresse pourra la corriger.",
+  tables: 'Choisis tes tables et donne le résultat le plus vite possible, sans poser.',
   revision: 'Les exercices qui te donnent le plus de mal, pour progresser.',
   evaluation: 'Les questions choisies par ta maîtresse, pour toute la classe.',
 };
@@ -84,7 +89,7 @@ export const ACTIVITY_HINTS: Record<Activity, string> = {
  *  L'évaluation n'y figure pas : l'élève ne la lance jamais lui-même. */
 export const SUBJECT_ACTIVITIES: Record<Subject, Activity[]> = {
   francais: ['questions', 'revision'],
-  maths: ['questions', 'posees', 'revision'],
+  maths: ['questions', 'posees', 'tables', 'revision'],
   histoire: ['questions', 'revision'],
   geographie: ['questions', 'revision'],
 };
@@ -122,10 +127,6 @@ export interface Question {
    *  quadrillage). La question n'a alors pas de choix : `choices` est vide et
    *  `correctIndex` vaut -1. */
   construction?: Construction;
-  /** L'opération à poser au brouillon avant de répondre, pour les techniques
-   *  qui s'écrivent en colonnes (`calcul.ts` seul le remplit). Les tables de
-   *  multiplication n'en portent pas : elles se récitent. */
-  operation?: { a: number; b: number; op: '+' | '-' | '×' | '÷'; isDecimal: boolean };
 }
 
 export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];

@@ -1,5 +1,6 @@
 import { ALL_SUBJECTS, ALL_TRIMESTERS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS, subjectOf } from '../types';
 import type { Activity, Domain, Level, Subject, Trimester } from '../types';
+import { ALL_TABLES, normaliseTables } from '../domains/tables';
 
 export interface Preferences {
   name: string;
@@ -9,8 +10,14 @@ export interface Preferences {
   subject: Subject;
   domains: Domain[];
   activity: Activity;
+  /** Les tables de multiplication cochées pour la séance de tables. */
+  tables: number[];
   /** Le code donné par la maîtresse. Vide : rien ne quitte l'appareil. */
   joinCode: string;
+}
+
+function defaults(): Preferences {
+  return { ...DEFAULT_PREFERENCES, domains: [...DEFAULT_PREFERENCES.domains], tables: [...ALL_TABLES] };
 }
 
 const STORAGE_KEY = 'exercices-cm1-cm2:preferences';
@@ -23,6 +30,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   subject: 'francais',
   domains: [...SUBJECT_DOMAINS.francais],
   activity: 'questions',
+  tables: [...ALL_TABLES],
   joinCode: '',
 };
 
@@ -34,16 +42,16 @@ export const DEFAULT_PREFERENCES: Preferences = {
  * l'écran d'accueil.
  */
 export function parsePreferences(raw: string | null): Preferences {
-  if (!raw) return { ...DEFAULT_PREFERENCES, domains: [...DEFAULT_PREFERENCES.domains] };
+  if (!raw) return defaults();
 
   let parsed: unknown;
   try {
     parsed = JSON.parse(raw);
   } catch {
-    return { ...DEFAULT_PREFERENCES, domains: [...DEFAULT_PREFERENCES.domains] };
+    return defaults();
   }
   if (typeof parsed !== 'object' || parsed === null) {
-    return { ...DEFAULT_PREFERENCES, domains: [...DEFAULT_PREFERENCES.domains] };
+    return defaults();
   }
   const stored = parsed as Record<string, unknown>;
 
@@ -81,6 +89,7 @@ export function parsePreferences(raw: string | null): Preferences {
     subject,
     domains: domains.length > 0 ? domains : [...SUBJECT_DOMAINS[subject]],
     activity,
+    tables: normaliseTables(stored.tables),
     joinCode:
       typeof stored.joinCode === 'string'
         ? stored.joinCode.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6)
@@ -93,7 +102,7 @@ export function loadPreferences(): Preferences {
     return parsePreferences(localStorage.getItem(STORAGE_KEY));
   } catch {
     // Navigation privée, stockage refusé : on repart des valeurs par défaut.
-    return { ...DEFAULT_PREFERENCES, domains: [...DEFAULT_PREFERENCES.domains] };
+    return defaults();
   }
 }
 

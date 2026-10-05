@@ -63,6 +63,9 @@ import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
 import { WrittenOperationScreen } from './components/WrittenOperationScreen';
 import { WrittenRecapScreen } from './components/WrittenRecapScreen';
+import { TablesScreen } from './components/TablesScreen';
+import { buildTableFacts, type TableFact } from './domains/tables';
+import { createRng } from './lib/seededRandom';
 
 // L'accès maîtresse — graphiques, correction, compte — n'est chargé qu'à
 // l'ouverture : les tablettes des élèves n'ont pas à le télécharger. Le
@@ -71,7 +74,7 @@ const TeacherSpace = lazy(() =>
   import('./components/TeacherSpace').then((module) => ({ default: module.TeacherSpace }))
 );
 
-type Screen = 'home' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee' | 'evaluation' | 'evaluationFin';
+type Screen = 'home' | 'tables' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee' | 'evaluation' | 'evaluationFin';
 
 /** L'évaluation qu'un élève est en train de faire. */
 interface TakenEvaluation {
@@ -89,6 +92,7 @@ export function App() {
   const [screen, setScreen] = useState<Screen>('home');
   const [session, setSession] = useState<Session | null>(null);
   const [worksheet, setWorksheet] = useState<Worksheet | null>(null);
+  const [tableFacts, setTableFacts] = useState<{ seed: number; facts: TableFact[] } | null>(null);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [perDomain, setPerDomain] = useState<Record<string, DomainResult>>({});
@@ -230,6 +234,7 @@ export function App() {
       subject: options.subject,
       domains: options.domains,
       activity: options.activity,
+      tables: options.tables,
     });
     setConfig(options);
   };
@@ -248,6 +253,13 @@ export function App() {
     const pupil: Pupil = { firstName: options.name, lastName: options.lastName };
     const own = results.filter((entry) => pupilKey(entry.pupil) === pupilKey(pupil));
     const domains = options.activity === 'revision' ? revisionDomains(own, options.subject, 2) : options.domains;
+
+    if (options.activity === 'tables') {
+      setTableFacts({ seed, facts: buildTableFacts(options.tables, createRng(seed)) });
+      setDelivery(null);
+      setScreen('tables');
+      return;
+    }
 
     if (options.activity === 'posees') {
       setWorksheet(
@@ -516,6 +528,24 @@ export function App() {
           setOpenedCorrection(null);
           goHome();
         }}
+      />
+    );
+  }
+
+  if (screen === 'tables' && tableFacts) {
+    return (
+      <TablesScreen
+        key={tableFacts.seed}
+        facts={tableFacts.facts}
+        name={config?.name}
+        delivery={delivery}
+        onCorrect={awardStar}
+        // Pour la maîtresse et la base, une série de tables est une séance de
+        // questions de calcul : aucune nouvelle catégorie à déclarer côté
+        // serveur, et les résultats nourrissent la révision ciblée.
+        onFinished={(correct, total) => keep([{ domain: 'calcul' as Domain, correct, total }], 'questions')}
+        onRestart={restart}
+        onQuit={goHome}
       />
     );
   }

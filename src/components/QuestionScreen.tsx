@@ -10,8 +10,8 @@ import { typographieFrancaise } from '../lib/typographie';
 import { FigureView } from './figures/FigureView';
 import { ConstructionBoard } from './figures/ConstructionBoard';
 import { useScreenTitle } from './useScreenTitle';
-import { OperationDraft } from './OperationDraft';
-import type { Stroke } from '../lib/worksheet';
+import { Brouillon } from './Brouillon';
+import { needsBrouillon } from '../lib/brouillon';
 
 interface QuestionScreenProps {
   question: Question;
@@ -60,11 +60,6 @@ export function QuestionScreen({
   // Une construction : juste ou non, une fois que l'élève a validé.
   const [built, setBuilt] = useState<boolean | null>(null);
   const construction = question.construction;
-  // Le brouillon : son dessin reste tant que l'élève reste sur la même
-  // question, même en allant et venant ; il disparaît à la question suivante.
-  const [draftOpen, setDraftOpen] = useState(false);
-  const [draftStrokes, setDraftStrokes] = useState<Stroke[]>([]);
-  const draftButtonRef = useRef<HTMLButtonElement>(null);
   // Rotation fixe (aucun hasard hors de seededRandom.ts) : les mots changent
   // au fil de la séance sans avoir besoin d'une graine.
   const encouragement = ENCOURAGEMENTS[(questionNumber - 1) % ENCOURAGEMENTS.length];
@@ -106,13 +101,6 @@ export function QuestionScreen({
     onAnswer(isCorrect);
     setSelected(null);
     setBuilt(null);
-    setDraftOpen(false);
-    setDraftStrokes([]);
-  };
-
-  const closeDraft = () => {
-    setDraftOpen(false);
-    draftButtonRef.current?.focus({ preventScroll: true });
   };
 
   return (
@@ -165,16 +153,7 @@ export function QuestionScreen({
         )}
       </section>
 
-      {question.operation && !answered && (
-        <button
-          ref={draftButtonRef}
-          type="button"
-          onClick={() => setDraftOpen(true)}
-          className="etiquette w-full py-4 text-xl"
-        >
-          Poser l'opération
-        </button>
-      )}
+      {needsBrouillon(question) && <Brouillon key={question.id} locked={answered} />}
 
       {!construction && (
         <div className="flex flex-col gap-3" role="group" aria-label="Réponses">
@@ -229,16 +208,6 @@ export function QuestionScreen({
             Continuer
           </button>
         </div>
-      )}
-
-      {question.operation && draftOpen && (
-        <OperationDraft
-          statement={question.prompt}
-          isDecimal={question.operation.isDecimal}
-          strokes={draftStrokes}
-          onStrokesChange={setDraftStrokes}
-          onClose={closeDraft}
-        />
       )}
     </div>
   );

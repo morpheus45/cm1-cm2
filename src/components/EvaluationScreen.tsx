@@ -19,6 +19,8 @@ import { Tampon } from './ecole/Tampon';
 import { ProgressBar } from './ProgressBar';
 import { renderPrompt } from './QuestionScreen';
 import { useScreenTitle } from './useScreenTitle';
+import { Brouillon } from './Brouillon';
+import { needsBrouillon } from '../lib/brouillon';
 import { WrittenOperationScreen } from './WrittenOperationScreen';
 
 interface EvaluationScreenProps {
@@ -221,6 +223,8 @@ function EvaluationQuestion({
           />
         )}
       </section>
+
+      {needsBrouillon(question) && <Brouillon key={question.id} />}
 
       {!construction && (
         <>

@@ -13,10 +13,6 @@ export interface BuiltOperation {
   isDecimal: boolean;
 }
 
-/** Une opération tirée, avec la technique dont elle vient : `posable` dit si
- *  elle s'écrit en colonnes (celle de son `OperationKind`). */
-export type DrawnOperation = BuiltOperation & { posable: boolean };
-
 export interface OperationKind {
   /** Étape à partir de laquelle la technique est au programme. */
   minStage: Stage;
@@ -63,6 +59,8 @@ const OPERATION_KINDS: OperationKind[] = [
   {
     minStage: 1,
     posable: true,
+    // Les nombres du programme, même en QCM : l'élève pose l'opération sur
+    // le brouillon avant de choisir sa réponse.
     build: (rng, stage) => {
       const bound = stage >= 4 ? 5000 : 500;
       const floorValue = stage >= 4 ? 1000 : 100;
@@ -210,16 +208,15 @@ export function buildOperations(
   rng: Rng,
   count: number,
   { posableOnly = false }: { posableOnly?: boolean } = {}
-): DrawnOperation[] {
+): BuiltOperation[] {
   const stage = stageOf(level, trimester);
   const kinds = eligibleOperationKinds(level, trimester).filter(
     (kind) => !posableOnly || kind.posable
   );
   const order = rngShuffle(rng, kinds);
-  return Array.from({ length: count }, (_, index) => {
-    const kind = order[index % order.length];
-    return { ...kind.build(rng, stage, posableOnly), posable: kind.posable };
-  });
+  return Array.from({ length: count }, (_, index) =>
+    order[index % order.length].build(rng, stage, posableOnly)
+  );
 }
 
 export function eligibleOperationKinds(level: Level, trimester: Trimester): OperationKind[] {
@@ -232,7 +229,7 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
   const operations = buildOperations(level, trimester, rng, count);
 
   for (let i = 0; i < count; i++) {
-    const { a, b, op, result, isDecimal, posable } = operations[i];
+    const { a, b, op, result, isDecimal } = operations[i];
     const distractors = distractorsForResult(rng, result, isDecimal);
     // Toutes les propositions sont écrites de la même façon : sinon le format
     // (« 14 » au milieu de « 13,1 ») désignerait la bonne réponse.
@@ -245,9 +242,6 @@ export function generate(level: Level, trimester: Trimester, rng: Rng, count: nu
       prompt: `${formatNumber(a)} ${op} ${formatNumber(b)}`,
       choices,
       correctIndex: choices.indexOf(formatChoice(result)),
-      // Les tables de multiplication se récitent : les poser n'aurait aucun
-      // sens, elles ne portent donc pas ce champ.
-      ...(posable ? { operation: { a, b, op, isDecimal } } : {}),
     });
   }
 
