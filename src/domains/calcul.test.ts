@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
+import { needsBrouillon } from '../lib/brouillon';
 import { generate } from './calcul';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Question, Trimester } from '../types';
@@ -105,19 +106,19 @@ describe('calcul generate', () => {
     expect(questions.some((q) => !isDecimal(q))).toBe(true);
   });
 
-  it('garde l\'addition et la soustraction à deux chiffres : au-delà, ça se pose, ça ne se devine pas', () => {
-    // Une addition ou une soustraction à trois chiffres ou plus demande la
-    // technique posée, au stylet — un QCM ne montre ni le raisonnement ni la
-    // retenue à la maîtresse.
+  it('garde les nombres du programme en QCM : l\'élève les pose au brouillon', () => {
+    // Addition et soustraction entières : au moins trois chiffres, comme sur
+    // le cahier ; le brouillon de l'écran de question permet de les poser.
     LEVELS.forEach((level) => {
       ALL_TRIMESTERS.forEach((trimester) => {
-        generate(level, trimester, createRng(31), 80)
-          .filter((q) => ['+', '-'].includes(operatorOf(q)) && !isDecimal(q))
-          .forEach((q) => {
-            const [a, b] = operandsOf(q).map(Number);
-            expect(a, q.prompt).toBeLessThan(100);
-            expect(b, q.prompt).toBeLessThan(100);
-          });
+        const posables = generate(level, trimester, createRng(31), 80)
+          .filter((q) => ['+', '-'].includes(operatorOf(q)) && !isDecimal(q));
+        expect(posables.length).toBeGreaterThan(0);
+        posables.forEach((q) => {
+          const [a] = operandsOf(q).map(Number);
+          expect(a, q.prompt).toBeGreaterThanOrEqual(100);
+          expect(needsBrouillon(q), q.prompt).toBe(true);
+        });
       });
     });
   });
