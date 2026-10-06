@@ -64,7 +64,7 @@ export const SYNONYMES: Relation[] = [
   relation(CE2_T1, 'cycle2', 'grand', 'immense', ['petit', 'étroit', 'lourd']),
   relation(CE2_T1, 'cycle2', 'bateau', 'navire', ['avion', 'wagon', 'camion']),
   relation(CE2_T1, 'cycle2', 'sauter', 'bondir', ['tomber', 'courir', 'glisser']),
-  relation(CE2_T1, 'cycle2', 'se dépêcher', 'se hâter', ['se reposer', 'se cacher', "s'asseoir"]),
+  relation(CE2_T1, 'cycle2', 'se dépêcher', 'se hâter', ['se reposer', 'se cacher', 'se laver']),
   relation(CE2_T1, 'cycle2', 'commencer', 'débuter', ['finir', 'arrêter', 'attendre']),
   relation(CE2_T1, 'cycle2', 'regarder', 'observer', ['écouter', 'toucher', 'sentir']),
   relation(CE2_T1, 'cycle2', 'chemin', 'sentier', ['mur', 'pont', 'champ']),
@@ -370,7 +370,7 @@ export const POLYSEMIE: MotAPlusieursSens[] = [
   polysemie(SIXIEME_T2, '6e', 'note', [
     { definition: "un son d'une mélodie", phrases: ["Le pianiste joue une **note** très aiguë.", "Léa chante la bonne **note**.", "Il manque une **note** à cette mélodie."] },
     { definition: 'un résultat sur une copie', phrases: ["Lucas a une bonne **note** en maths.", "La **note** du contrôle est écrite en rouge.", "Chloé est contente de sa **note** de français."] },
-    { definition: 'un petit mot écrit', phrases: ["Papa laisse une **note** sur la table.", "J'ai trouvé une **note** dans mon cartable.", "Karim écrit une **note** pour son voisin."] },
+    { definition: 'un court message écrit', phrases: ["Papa laisse une **note** sur la table.", "J'ai trouvé une **note** dans mon cartable.", "Karim écrit une **note** pour son voisin."] },
   ]),
   polysemie(SIXIEME_T2, '6e', 'mine', [
     { definition: "la partie noire d'un crayon", phrases: ["La **mine** de mon crayon est cassée.", "Il faut changer la **mine** du critérium.", "Léa casse la **mine** de son crayon."] },
@@ -519,7 +519,7 @@ export const CHAMPS_LEXICAUX: GroupeDeMots[] = [
   groupe(SIXIEME_T2, '6e', 'la cuisine', ['four', 'casserole', 'recette', 'ingrédient', 'farine', 'cuisson', 'mijoter', 'éplucher', 'marmite']),
   groupe(SIXIEME_T2, '6e', 'le voyage', ['valise', 'billet', 'gare', 'passeport', 'hôtel', 'trajet', 'bagage', 'escale', 'destination']),
   groupe(SIXIEME_T2, '6e', 'la musique', ['note', 'mélodie', 'rythme', 'orchestre', 'concert', 'refrain', 'partition', 'chorale']),
-  groupe(SIXIEME_T2, '6e', 'le sport', ['équipe', 'arbitre', 'stade', 'match', 'entraînement', 'championnat', 'victoire', 'médaille']),
+  groupe(SIXIEME_T2, '6e', 'le sport', ['équipe', 'arbitre', 'stade', 'match', 'compétition', 'championnat', 'victoire', 'médaille']),
   groupe(SIXIEME_T2, '6e', 'la peur', ['frayeur', 'trembler', 'cauchemar', 'angoisse', 'fuir', 'effroi', 'frisson', 'terreur']),
   groupe(SIXIEME_T2, '6e', 'la ville', ['circulation', 'trottoir', 'immeuble', 'avenue', 'passant', 'boulevard', 'quartier', 'carrefour']),
 ];

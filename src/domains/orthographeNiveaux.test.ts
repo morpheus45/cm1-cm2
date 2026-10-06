@@ -4,6 +4,7 @@ import { ALL_TRIMESTERS, type Level, type Question, type Trimester } from '../ty
 import { stageOf } from '../lib/progression';
 import { generate } from './orthographe';
 import { famillesDeLEtape } from './orthographeNiveaux';
+import { MOTS_A_DEUX_GRAPHIES } from './francaisNiveaux';
 import { GABARITS_6E, GABARITS_CYCLE_2, MOTS_6E_REVISION, MOTS_CYCLE_2, gabaritsDuNiveau, motsConnus, type Gabarit } from './orthographeHomophonesNiveaux';
 import { MOTS_AVEC_TROU, MOTS_INVARIABLES } from './orthographeMotsNiveaux';
 import {
@@ -579,6 +580,13 @@ describe('polysémie', () => {
     });
   });
 
+  it('les définitions d\'un même cycle ne commencent jamais par les mêmes trois mots : « un petit mot écrit » et « un petit mot comme « le » » se confondent', () => {
+    (['cycle2', '6e'] as const).forEach((pour) => {
+      const debuts = POLYSEMIE.filter((mot) => mot.pour === pour).flatMap((mot) => mot.sens.map((sens) => sens.definition.split(' ').slice(0, 3).join(' ')));
+      expect(new Set(debuts).size, pour).toBe(debuts.length);
+    });
+  });
+
   it('une phrase n\'est qu\'à un seul sens : aucune ne se retrouve sous deux sens', () => {
     const phrases = POLYSEMIE.flatMap((mot) => mot.sens.flatMap((sens) => sens.phrases));
     expect(new Set(phrases).size).toBe(phrases.length);
@@ -672,13 +680,7 @@ describe('figures de style, emprunts, ordre alphabétique', () => {
 // --- Les orthographes rectifiées en 1990 : jamais une faute ---------------------------------------------------------
 
 describe('les rectifications de 1990', () => {
-  const INTERDITS = [
-    'maître', 'maitre', 'maîtresse', 'maitresse', 'île', 'ile', 'boîte', 'boite', 'coût', 'cout', 'coûte', 'coute', 'coûter', 'couter', 'goût', 'gout', 'goûter', 'gouter',
-    'flûte', 'flute', 'dîner', 'diner', 'dînette', 'dinette', 'nénuphar', 'nénufar', 'ognon', 'oignon', 'évènement', 'événement', 'chariot', 'charriot', 'week-end', 'weekend',
-    'connaît', 'connait', 'plaît', 'plait', 'brûler', 'bruler', 'brûlant', 'brulant', 'paraît', 'paraitre', 'abîme', 'abime', 'aîné', 'chaîne', 'chaine', 'fraîche', 'fraiche',
-    'quelquefois', 'cacahuète', 'cacahouète', 'bûche', 'dégoûtant', 'dégoutant',
-  ];
-  const motInterdit = new RegExp(`(?<![\\p{L}-])(${INTERDITS.join('|')})(?![\\p{L}-])`, 'iu');
+  const motInterdit = new RegExp(`(?<![\\p{L}-])(${MOTS_A_DEUX_GRAPHIES.join('|')})(?![\\p{L}-])`, 'iu');
 
   it('aucun mot touché par les rectifications ne figure dans les listes de mots, de phrases et de sens', () => {
     const textes: string[] = [

@@ -159,7 +159,7 @@ export const MOTS_AVEC_TROU: MotAvecTrou[] = [
   lettres('s-ss', 'poussin', 'ss', ['s', 'c', 'z'], ["Le pou...in sort de l'œuf.", 'Un pou...in suit sa maman.']),
   lettres('s-ss', 'maison', 's', ['ss', 'z', 'c'], ['Nous rentrons à la mai...on.', 'La mai...on est au bout de la rue.']),
   lettres('s-ss', 'cerise', 's', ['ss', 'z', 'c'], ['Paul mange une ceri...e.', 'La ceri...e est rouge.']),
-  lettres('s-ss', 'chaise', 's', ['ss', 'z', 'c'], ["Léa s'assoit sur la chai...e.", 'La chai...e est devant la table.']),
+  lettres('s-ss', 'chaise', 's', ['ss', 'z', 'c'], ['Léa pose son sac sur la chai...e.', 'La chai...e est devant la table.']),
   lettres('s-ss', 'fraise', 's', ['ss', 'z', 'c'], ['Nora mange une frai...e.', 'La frai...e est sucrée.']),
   lettres('s-ss', 'oiseau', 's', ['ss', 'z', 'c'], ['Un oi...eau chante sur la branche.', "L'oi...eau a fait son nid."]),
   lettres('s-ss', 'valise', 's', ['ss', 'z', 'c'], ['Papa ferme la vali...e.', 'La vali...e est lourde.']),

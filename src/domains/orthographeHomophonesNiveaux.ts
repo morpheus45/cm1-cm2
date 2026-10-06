@@ -554,7 +554,7 @@ export const GABARITS_6E: Gabarit[] = [
     'ou',
     SIXIEME_T1,
     MOTS_6E_REVISION,
-    ['Tu pars en juillet ... en août ?', 'Tu viens à pied ... à vélo ?', 'Tu lis ce soir ... demain ?', 'On travaille seuls ... en groupe ?', 'Tu écris au stylo ... au crayon ?'],
+    ['Tu pars en juillet ... en septembre ?', 'Tu viens à pied ... à vélo ?', 'Tu lis ce soir ... demain ?', 'On travaille seuls ... en groupe ?', 'Tu écris au stylo ... au crayon ?'],
     { compagnon: 'où', valides: ['et'] }
   ),
   gabarit('ou / où', 'où', SIXIEME_T1, MOTS_6E_REVISION, ['le gymnase', 'la salle de musique', 'le bureau du principal', 'la cantine', 'le CDI', 'ma salle'].map((lieu) => `... se trouve ${lieu} ?`), {
@@ -800,7 +800,7 @@ export const GABARITS_6E: Gabarit[] = [
       ['pain', 'beurre'],
       ['lait', 'café'],
       ['chocolat', 'bonbons'],
-      ['football', 'tennis'],
+      ['riz', 'pâtes'],
     ].map(([a, b]) => `Il ne mange ni ${a} ... ${b}.`),
     { compagnon: "n'y" }
   ),

@@ -28,6 +28,18 @@ export function signature(question: Question): string {
   return `${question.instruction ?? ''}|${question.prompt}`;
 }
 
+/**
+ * Les mots dont l'orthographe a deux graphies depuis les rectifications de 1990 : l'une et l'autre sont justes,
+ * aucune n'est une faute. Aucune liste de questions du CE1, du CE2 et de la 6e ne les emploie, pour qu'une
+ * question n'ait jamais l'air d'en corriger une (voir la référence, § 0.5) : les tests le vérifient.
+ */
+export const MOTS_A_DEUX_GRAPHIES = [
+  'maître', 'maitre', 'maîtresse', 'maitresse', 'île', 'ile', 'boîte', 'boite', 'coût', 'cout', 'coûte', 'coute', 'coûter', 'couter', 'goût', 'gout', 'goûter', 'gouter',
+  'flûte', 'flute', 'dîner', 'diner', 'dînette', 'dinette', 'nénuphar', 'nénufar', 'ognon', 'oignon', 'évènement', 'événement', 'chariot', 'charriot', 'week-end', 'weekend',
+  'connaît', 'connait', 'plaît', 'plait', 'brûler', 'bruler', 'brûlant', 'brulant', 'paraît', 'paraitre', 'abîme', 'abime', 'aîné', 'chaîne', 'chaine', 'fraîche', 'fraiche',
+  'quelquefois', 'cacahuète', 'cacahouète', 'bûche', 'dégoûtant', 'dégoutant', 'août', 'aout', 'entraînement', 'entrainement', 'entraîner', 'asseoir', 'assoir', 'assoit', 'assied',
+];
+
 /** Le mot commence-t-il par une voyelle, accentuée ou non, ou par un h muet ?
  *  Les mots de nos listes qui commencent par un h (homme, habiter, hôpital)
  *  ont tous un h muet : aucun h aspiré n'y figure. */

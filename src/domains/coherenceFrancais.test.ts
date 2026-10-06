@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
 import { ALL_TRIMESTERS, type Level, type Trimester } from '../types';
 import { generate as generateAccords } from './accords';
+import { generate as generateConjugaison } from './conjugaison';
 import { generate as generateOrthographe } from './orthographe';
+import { MOTS_A_DEUX_GRAPHIES, NIVEAUX_ECRITS } from './francaisNiveaux';
 import {
   ADJECTIVES,
   NOUNS,
@@ -212,5 +214,28 @@ describe('orthographe — homophones : jamais deux mots possibles', () => {
       const correct = q.choices[q.correctIndex].toLowerCase();
       expect(pairPartnerAlsoFits(correct, q.prompt), q.prompt).toBe(false);
     });
+  });
+});
+
+// --- Les rectifications de 1990 : jamais une faute, jamais un mot de question --------------------------------
+
+describe('les trois notions du CE1, du CE2 et de la 6e : aucun mot à deux graphies depuis 1990', () => {
+  // « maître » et « maitre », « connaît » et « connait », « goûter » et « gouter » s'écrivent des deux façons :
+  // une question qui en employe un a l'air d'en corriger l'autre.
+  const motInterdit = new RegExp(`(?<![\\p{L}-])(${MOTS_A_DEUX_GRAPHIES.join('|')})(?![\\p{L}-])`, 'iu');
+  const generateurs = [generateConjugaison, generateAccords, generateOrthographe];
+
+  it('ni dans une consigne, ni dans un énoncé, ni dans un choix', () => {
+    NIVEAUX_ECRITS.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) =>
+        generateurs.forEach((generer) =>
+          SEEDS.slice(0, 15).forEach((seed) =>
+            generer(level, trimester, createRng(seed), 24).forEach((q) =>
+              [q.instruction ?? '', q.prompt, ...q.choices].forEach((texte) => expect(texte, `${level} T${trimester} : ${texte}`).not.toMatch(motInterdit))
+            )
+          )
+        )
+      )
+    );
   });
 });
