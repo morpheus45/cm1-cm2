@@ -2,7 +2,7 @@ import type { Question, Trimester } from '../types';
 import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
 import { schemaEnBarres, tableauADoubleEntree, tableauDeProportionnalite } from './figuresMaths';
-import { de, decimalAleatoire, deuxPrenoms, fabriquer, fauxNombres, il, OBJETS, pronom, texte, type Brique } from './mathsCommun';
+import { de, decimalAleatoire, deuxPrenoms, fabriquer, fauxNombres, il, objetPour, OBJETS, pronom, texte, type Brique } from './mathsCommun';
 import { ARTICLES_A_PRIX, donnees, forme, heure, INSTRUCTION, INSTRUCTION_DONNEES } from './problemesCommun';
 
 /**
@@ -325,9 +325,9 @@ const inconnu = forme('inconnu', 7, (rng) => {
   const variante = rngInt(rng, 0, 3);
   const [moi] = deuxPrenoms(rng);
   if (variante === 0) {
-    const objet = rngPick(rng, OBJETS);
     const [depart, gain] = [rngInt(rng, 15, 90), rngInt(rng, 12, 60)];
     const total = depart + gain;
+    const objet = objetPour(rng, total);
     return {
       instruction: INSTRUCTION,
       prompt: `${moi.nom} a des ${objet}. ${il(moi)} en gagne ${gain}. ${il(moi)} en a maintenant ${total}. Combien en avait-${pronom(moi)} au début ?`,
@@ -524,11 +524,11 @@ const fractionDite = (n: number, d: number) => (n === 1 ? NOMS_DE_FRACTIONS[d] :
 
 const fractionDeQuantite = forme('fraction-de-quantite', 8, (rng) => {
   const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const [n, d] = rngPick(rng, FRACTIONS);
   const unite = rngInt(rng, 2, 12);
   const total = d * unite;
   const part = n * unite;
+  const objet = objetPour(rng, total);
   return {
     instruction: INSTRUCTION,
     prompt: `${moi.nom} a ${total} ${objet}. ${il(moi)} en donne ${fractionDite(n, d)}. Combien ${de(objet)} donne-t-${pronom(moi)} ?`,
@@ -541,10 +541,10 @@ const fractionDeQuantite = forme('fraction-de-quantite', 8, (rng) => {
 
 const resteApresUneFraction = forme('reste-fraction', 8, (rng) => {
   const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const [n, d] = rngPick(rng, FRACTIONS);
   const unite = rngInt(rng, 2, 12);
   const [total, part] = [d * unite, n * unite];
+  const objet = objetPour(rng, total);
   const reste = total - part;
   return {
     instruction: INSTRUCTION,

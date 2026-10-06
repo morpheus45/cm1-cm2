@@ -38,6 +38,7 @@ import {
   lettresConsecutives,
   lettresDistinctes,
   longueurSurLeCote,
+  longueursDePolygone,
   nomDeLaCase,
   NOM_DU_SOLIDE,
   nomsSurLaRegle,
@@ -262,6 +263,7 @@ const solidesDuCE1: Family = {
       const solide = rngPick(rng, SOLIDES_DU_CE1);
       return {
         detail: `figure-${solide}`,
+        instruction: 'Regarde bien le solide',
         prompt: 'Comment s\'appelle ce solide ?',
         figure: solideFigure(solide),
         ...choose(rng, NOM_DU_SOLIDE[solide], SOLIDES_DU_CE1.map((nom) => NOM_DU_SOLIDE[nom])),
@@ -271,6 +273,7 @@ const solidesDuCE1: Family = {
     const [objet, solide] = rngPick(rng, OBJETS_ET_SOLIDES);
     return {
       detail: `objet-${objet}`,
+      instruction: 'Pense à la forme de l\'objet',
       prompt: `Quel solide ressemble à ${objet} ?`,
       ...choose(rng, NOM_DU_SOLIDE[solide], SOLIDES_DU_CE1.map((nom) => NOM_DU_SOLIDE[nom])),
       explanation: `${objet.charAt(0).toUpperCase()}${objet.slice(1)} a la forme d'${NOM_DU_SOLIDE[solide]}.`,
@@ -533,7 +536,7 @@ const perimetrePolygone: Family = {
       const n = rngPick(rng, [3, 4, 5]);
       const lettres = lettresConsecutives(rng, n);
       const nom = lettres.join('');
-      const longueurs = Array.from({ length: n }, () => rngInt(rng, 3, 12));
+      const longueurs = longueursDePolygone(rng, n, 3, 12);
       const total = longueurs.reduce((somme, valeur) => somme + valeur, 0);
       const figure = polygoneNomme(
         irregularPolygon(n, rng),
@@ -551,7 +554,7 @@ const perimetrePolygone: Family = {
         explanation: `On ajoute tous les côtés : ${longueurs.join(' + ')} = ${total} cm.`,
       };
     }
-    const [x, y, z] = [rngInt(rng, 3, 12), rngInt(rng, 3, 12), rngInt(rng, 3, 12)];
+    const [x, y, z] = longueursDePolygone(rng, 3, 3, 12);
     const total = x + y + z;
     return {
       detail: `triangle-${x}-${y}-${z}`,
@@ -849,6 +852,7 @@ const solidesDuCE2: Family = {
     ] as [string, string, string][]);
     return {
       detail: `faces-${solide}`,
+      instruction: 'Pense aux faces du solide',
       prompt: `Quelle est la forme des faces d'${solide} ?`,
       ...choose(rng, bonne, ['des triangles', 'des cercles', 'des hexagones', 'des losanges']),
       explanation: pourquoi,

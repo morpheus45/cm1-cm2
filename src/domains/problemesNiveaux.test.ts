@@ -7,6 +7,7 @@ import { ALL_TRIMESTERS, type Level, type Question, type Trimester } from '../ty
 import { eligibleTemplateCount, generate } from './problemes';
 import { BRIQUES_CYCLE2, PAIRES, PAIRES_GRANDES } from './problemesCycle2';
 import { BRIQUES_SIXIEME } from './problemesSixieme';
+import { COLLECTIONS } from './mathsCommun';
 import { ARTICLES_A_PRIX, THEMES } from './problemesCommun';
 
 /**
@@ -852,5 +853,14 @@ describe('des quantités et des prix qui ont l\'air vrais', () => {
       const enfant = /^(?:Léa|Tom|Inès|Hugo|Zoé|Noé|Jade|Lucas|Emma|Nathan|Manon|Louis|Chloé|Adam|Lina|Yanis|Clara|Théo|Anna|Rayan|Sofia|Maël|Eva|Enzo) a (\d+) /.exec(prompt);
       if (enfant) expect(Number(enfant[1]), prompt).toBeLessThan(1000);
     });
+  });
+
+  it('ne donnent à un enfant plus de soixante objets que s\'il les collectionne : timbres, billes, cartes', () => {
+    const enfants = enonces().flatMap((prompt) => {
+      const m = /^(?:Léa|Tom|Inès|Hugo|Zoé|Noé|Jade|Lucas|Emma|Nathan|Manon|Louis|Chloé|Adam|Lina|Yanis|Clara|Théo|Anna|Rayan|Sofia|Maël|Eva|Enzo) a (\d+) (\p{L}+)\./u.exec(prompt);
+      return m ? [{ prompt, nombre: Number(m[1]), objet: m[2] }] : [];
+    });
+    expect(enfants.filter(({ nombre }) => nombre > 60).length, 'aucun enfant n\'a plus de soixante objets').toBeGreaterThan(0);
+    enfants.filter(({ nombre }) => nombre > 60).forEach(({ prompt, objet }) => expect(COLLECTIONS, prompt).toContain(objet));
   });
 });

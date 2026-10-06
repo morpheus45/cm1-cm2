@@ -35,6 +35,7 @@ import {
   lettresConsecutives,
   lettresDistinctes,
   longueurSurLeCote,
+  longueursDePolygone,
   PATRONS_DU_CUBE,
   PAS_DES_PATRONS,
   polygoneNomme,
@@ -221,6 +222,7 @@ const cercle6e: Family = {
     const definition = rngPick(rng, DEFINITIONS_DU_CERCLE);
     return {
       detail: `definition-${definition.bonne}`,
+      instruction: 'Pense au vocabulaire du cercle',
       prompt: definition.prompt,
       ...choose(rng, definition.bonne, definition.fausses),
       explanation: definition.pourquoi,
@@ -297,7 +299,7 @@ const perimetre6e: Family = {
     const n = rngPick(rng, [4, 5, 6]);
     const lettres = lettresConsecutives(rng, n);
     const nom = lettres.join('');
-    const longueurs = Array.from({ length: n }, () => rngInt(rng, 15, 95));
+    const longueurs = longueursDePolygone(rng, n, 15, 95);
     const total = longueurs.reduce((somme, valeur) => somme + valeur, 0);
     return {
       detail: `polygone-${nom}-${longueurs.join('.')}`,
@@ -702,6 +704,7 @@ const mediatrice: Family = {
     ]);
     return {
       detail: `definition-${a}${b}-${definition.bonne.slice(0, 12)}`,
+      instruction: 'Pense à la définition de la médiatrice',
       prompt: definition.prompt,
       ...choose(rng, definition.bonne, definition.fausses),
       explanation: definition.pourquoi,

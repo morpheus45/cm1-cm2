@@ -277,6 +277,12 @@ export const OBJETS = [
   'œufs',
 ];
 
+/** Ce qu'un enfant peut avoir en grand nombre : une collection (on n'a pas 175 cahiers, mais 175 timbres). */
+export const COLLECTIONS = ['billes', 'cartes', 'images', 'autocollants', 'timbres', 'jetons', 'perles', 'coquillages', 'bonbons'];
+
+/** Ce qu'un enfant possède : n'importe quoi en petit nombre, une collection au-delà de soixante. */
+export const objetPour = (rng: Rng, quantite: number) => rngPick(rng, quantite > 60 ? COLLECTIONS : OBJETS);
+
 /** Des contenants : « un sac de 4 billes », « 3 sacs ». */
 export interface Contenant {
   un: string;

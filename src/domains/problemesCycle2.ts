@@ -3,7 +3,7 @@ import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
 import { diagrammeEnBarres } from './figuresMaths';
 import { tablesAuProgramme } from './tables';
-import { accorde, CONTENANTS, de, deuxPrenoms, fabriquer, fauxNombres, il, majuscule, OBJETS, pronom, que, type Brique, type Prenom } from './mathsCommun';
+import { accorde, CONTENANTS, de, deuxPrenoms, fabriquer, fauxNombres, il, majuscule, objetPour, pronom, que, type Brique, type Prenom } from './mathsCommun';
 import { ARTICLES_A_PRIX, donnees, forme, heure, INSTRUCTION, INSTRUCTION_DONNEES, nombresEn, plafond, THEMES, type ArticleAPrix } from './problemesCommun';
 
 /**
@@ -174,7 +174,7 @@ const ajout = forme('ajout', -5, (rng, stage) => {
     return { ...resultat, prompt: `${majuscule(stock.nom)} a ${a} ${objet}. ${il(stock)} en ${stock.entre} ${b}. Combien ${de(objet)} a-t-${pronom(stock)} maintenant ?` };
   }
   const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
+  const objet = objetPour(rng, a + b);
   return { ...resultat, prompt: `${moi.nom} a ${a} ${objet}. ${il(moi)} en gagne ${b}. Combien ${de(objet)} a-t-${pronom(moi)} maintenant ?` };
 });
 
@@ -192,7 +192,7 @@ const retrait = forme('retrait', -5, (rng, stage) => {
     return { ...resultat, prompt: `${majuscule(stock.nom)} a ${a} ${objet}. ${il(stock)} en ${stock.sort} ${b}. Combien lui en reste-t-il ?` };
   }
   const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
+  const objet = objetPour(rng, a);
   return { ...resultat, prompt: `${moi.nom} a ${a} ${objet}. ${il(moi)} en perd ${b}. Combien lui en reste-t-il ?` };
 });
 
@@ -225,8 +225,8 @@ const complement = forme('complement', -5, (rng, stage) => {
 // Entre deux enfants, jamais plus de mille choses : au-delà, c'est l'affaire d'un commerce (voir `ajout`).
 const ecart = forme('ecart', -5, (rng, stage) => {
   const [premier, second] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const [a, b] = termesDeLaDifference(rng, Math.min(borne(rng, stage), 999));
+  const objet = objetPour(rng, a);
   return {
     instruction: INSTRUCTION,
     prompt: `${premier.nom} a ${a} ${objet}. ${second.nom} a ${b} ${objet}. Combien ${de(objet)} ${premier.nom} a-t-${pronom(premier)} de plus ${que(second.nom)} ?`,
@@ -238,11 +238,11 @@ const ecart = forme('ecart', -5, (rng, stage) => {
 
 const comparaison = forme('comparaison', -5, (rng, stage) => {
   const [premier, second] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const plus = rng() < 0.5;
   const limite = Math.min(borne(rng, stage), 999);
   const [a, k] = plus ? termesDeLaSomme(rng, limite) : termesDeLaDifference(rng, limite);
   const reponse = plus ? a + k : a - k;
+  const objet = objetPour(rng, Math.max(a, reponse));
   return {
     instruction: INSTRUCTION,
     prompt: `${premier.nom} a ${a} ${objet}. ${second.nom} en a ${k} de ${plus ? 'plus' : 'moins'}. Combien en a ${second.nom} ?`,
@@ -372,8 +372,8 @@ const rangees = forme('rangees', -4, (rng, stage) => {
 
 const chacun = forme('chacun', -4, (rng, stage) => {
   const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const [k, n] = [rngPick(rng, tablesDe(stage)), rngInt(rng, 2, 10)];
+  const objet = objetPour(rng, n * k);
   return {
     instruction: INSTRUCTION,
     prompt: `${moi.nom} a ${n} amis. ${il(moi)} donne ${k} ${objet} à chacun. Combien ${de(objet)} donne-t-${pronom(moi)} ?`,
@@ -550,7 +550,7 @@ const partage = forme('partage', -3, (rng, stage) => {
   const [n, k] = [rngPick(rng, tablesDe(stage)), rngInt(rng, 2, 10)];
   const total = n * k;
   if (rng() < 0.5) {
-    const objet = rngPick(rng, OBJETS);
+    const objet = objetPour(rng, total);
     return {
       instruction: INSTRUCTION,
       prompt: `On partage ${total} ${objet} entre ${n} enfants. Chaque enfant reçoit autant. Combien ${de(objet)} reçoit chaque enfant ?`,
@@ -696,8 +696,8 @@ const longueursCE2 = forme('longueurs-ce2', -2, (rng, stage) => {
 
 const foisPlus = forme('fois-plus', -1, (rng, stage) => {
   const [premier, second] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const [a, k] = [rngInt(rng, 3, 20), rngInt(rng, 2, 6)];
+  const objet = objetPour(rng, a * k);
   return {
     instruction: INSTRUCTION,
     prompt: `${premier.nom} a ${a} ${objet}. ${second.nom} en a ${k} fois plus. Combien en a ${second.nom} ?`,
@@ -738,10 +738,10 @@ const FRACTIONS_UNITAIRES = [
 
 const fractionDeLaQuantite = forme('fraction-pb', -1, (rng, stage) => {
   const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const { dit, d } = rngPick(rng, FRACTIONS_UNITAIRES);
   const part = rngInt(rng, 2, Math.floor(100 / d) > 12 ? 12 : Math.floor(100 / d));
   const total = d * part;
+  const objet = objetPour(rng, total);
   return {
     instruction: INSTRUCTION,
     prompt: `${moi.nom} a ${total} ${objet}. ${il(moi)} en donne ${dit}. Combien ${de(objet)} donne-t-${pronom(moi)} ?`,
@@ -900,10 +900,10 @@ const dureeHeuresMinutes = forme('duree-heures-minutes', 0, (rng, stage) => {
 
 const resteApresUneFraction = forme('fraction-reste', 0, (rng, stage) => {
   const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
   const { dit, d } = rngPick(rng, FRACTIONS_UNITAIRES);
   const part = rngInt(rng, 2, Math.floor(100 / d) > 12 ? 12 : Math.floor(100 / d));
   const total = d * part;
+  const objet = objetPour(rng, total);
   const reponse = total - part;
   return {
     instruction: INSTRUCTION,

@@ -31,6 +31,21 @@ export function lettresConsecutives(rng: Rng, n: number): string[] {
 /** `n` lettres différentes, dans un ordre quelconque. */
 export const lettresDistinctes = (rng: Rng, n: number): string[] => rngShuffle(rng, LETTRES).slice(0, n);
 
+/**
+ * `n` longueurs de côtés qui forment bien un polygone : le plus long est plus court que tous les autres ensemble
+ * (sinon le triangle de 12 cm, 3 cm et 4 cm n'existe pas). Les dessins ne sont pas à l'échelle, mais les nombres,
+ * eux, doivent être ceux d'une figure qui existe.
+ */
+export function longueursDePolygone(rng: Rng, n: number, min: number, max: number): number[] {
+  let longueurs: number[] = [];
+  for (let essai = 0; essai < 100; essai++) {
+    longueurs = Array.from({ length: n }, () => rngInt(rng, min, max));
+    if (2 * Math.max(...longueurs) < longueurs.reduce((somme, valeur) => somme + valeur, 0)) return longueurs;
+  }
+  // Des côtés presque égaux existent toujours.
+  return Array.from({ length: n }, (_, index) => max - (index % 2));
+}
+
 /** Un identifiant court pour un détail trop long (une liste de carreaux, de sommets) : mêmes données, même texte. */
 export function condenser(texte: string): string {
   let hache = 5381;

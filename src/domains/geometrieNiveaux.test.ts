@@ -346,6 +346,7 @@ function attendu(question: Question, level: Level): Attendu {
     case 'perimetre-polygone': {
       if (!figure) {
         const [x, y, z] = chiffres;
+        verifierQuePolygoneExiste([x, y, z], question.id);
         return nombre(x + y + z, 'cm');
       }
       const nomDuPolygone = /polygone (\S+) \?/.exec(prompt)![1];
@@ -353,6 +354,7 @@ function attendu(question: Question, level: Level): Attendu {
       expect(lettresDesSommets(figure, sommets), question.id).toBe(nomDuPolygone);
       const longueurs = textes(figure).flatMap((entree) => (longueurEcrite(entree.text) === null ? [] : [longueurEcrite(entree.text)!]));
       expect(longueurs, `${question.id} : une longueur par côté`).toHaveLength(sommets.length);
+      verifierQuePolygoneExiste(longueurs, question.id);
       return nombre(longueurs.reduce((somme, valeur) => somme + valeur, 0), 'cm');
     }
     case 'milieu': {
@@ -478,6 +480,7 @@ function attendu(question: Question, level: Level): Attendu {
         expect(lettresDesSommets(figure!, sommets), question.id).toBe(/polygone (\S+) \?/.exec(prompt)![1]);
         const longueurs = textes(figure!).flatMap((entree) => (longueurEcrite(entree.text) === null ? [] : [longueurEcrite(entree.text)!]));
         expect(longueurs, question.id).toHaveLength(sommets.length);
+        verifierQuePolygoneExiste(longueurs, question.id);
         return nombre(Math.round(longueurs.reduce((somme, valeur) => somme + valeur, 0) * 10) / 10, 'cm');
       }
       const ecrites = textes(figure!).flatMap((entree) => (longueurEcrite(entree.text) === null ? [] : [longueurEcrite(entree.text)!]));
@@ -679,13 +682,19 @@ function estLaBonne(reponse: Attendu, choix: string): boolean {
   return m !== null && egal(parseFrenchNumber(m[1]) as number, reponse.valeur) && (m[2] ?? m[3]) === reponse.unite;
 }
 
+/** Des côtés qui forment un polygone : le plus long est plus court que tous les autres ensemble. */
+function verifierQuePolygoneExiste(longueurs: number[], contexte: string) {
+  expect(2 * Math.max(...longueurs), `${contexte} : ces côtés ne forment pas un polygone (${longueurs.join(', ')})`).toBeLessThan(longueurs.reduce((somme, valeur) => somme + valeur, 0));
+}
+
 describe('les questions de géométrie du CE1, du CE2 et de la 6e', () => {
-  it('ont trois ou quatre propositions différentes, ou une construction, et une explication', () => {
+  it('ont trois ou quatre propositions différentes, ou une construction, une consigne et une explication', () => {
     parCellule((level, trimester) => questions(level, trimester, 12)).forEach(({ level, trimester, valeur }) => {
       expect(valeur.length, `${level} T${trimester}`).toBe(12 * GRAINES);
       valeur.forEach((question) => {
         expect(question.domain).toBe('geometrie');
         expect(question.explanation, question.id).toBeTruthy();
+        expect(question.instruction, question.id).toBeTruthy();
         if (question.construction) {
           expect(question.choices, question.id).toEqual([]);
           return;
