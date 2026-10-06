@@ -238,7 +238,9 @@ const multiplicationPosee2: Technique = {
   },
   erreurs: ({ a, b }) => erreursProduit(a, b),
   explication: ({ b, result }) =>
-    `On multiplie par ${b % 10}, puis par ${b - (b % 10)}. On additionne les deux lignes. Résultat : ${result}.`,
+    b % 10 === 0
+      ? `On multiplie par ${b / 10}, puis par 10. Résultat : ${result}.`
+      : `On multiplie par ${b % 10}, puis par ${b - (b % 10)}. On additionne les deux lignes. Résultat : ${result}.`,
 };
 
 /** Une division en ligne, comme l'opération inverse de la multiplication :
