@@ -9,6 +9,7 @@ import { NoteEntouree } from './ecole/NoteEntouree';
 import { Tampon } from './ecole/Tampon';
 import { useScreenTitle } from './useScreenTitle';
 import type { DepositOutcome } from '../lib/cloud';
+import { teacherWordDefinite } from '../types';
 
 interface WrittenRecapScreenProps {
   delivery?: DepositOutcome | 'pending' | null;
@@ -43,7 +44,7 @@ export function WrittenRecapScreen({
         </Tampon>
         {worksheet.name && <p className="font-cursive text-2xl leading-[2] text-encre">{worksheet.name}</p>}
         <NoteEntouree score={correct} total={total} />
-        <DeliveryNote delivery={delivery} />
+        <DeliveryNote delivery={delivery} level={worksheet.level} />
       </section>
 
       <ul className="flex w-full flex-col gap-2">
@@ -70,7 +71,7 @@ export function WrittenRecapScreen({
 
       <div className="flex w-full flex-col gap-3">
         <button type="button" onClick={savePdf} className="etiquette w-full py-3.5 text-lg">
-          Enregistrer le PDF pour la maîtresse
+          Enregistrer le PDF pour {teacherWordDefinite(worksheet.level)}
         </button>
         <p className="-mt-1 text-center text-sm text-encre-pale">
           Le PDF contient l'opération posée à la main, telle qu'elle a été écrite.

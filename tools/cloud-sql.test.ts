@@ -5,7 +5,7 @@ import { depositParams } from '../src/lib/cloud';
 import { EVALUATION_COLUMNS, PROBLEM_COLUMNS, QUESTION_COLUMNS, WORKSHEET_COLUMNS } from '../src/lib/teacherCloud';
 import { isCustomisableDomain } from '../src/lib/classQuestions';
 import { copyParams } from '../src/lib/pupilEvaluations';
-import { ALL_ACTIVITIES, ALL_DOMAINS, ALL_SUBJECTS } from '../src/types';
+import { ALL_ACTIVITIES, ALL_DOMAINS, ALL_LEVELS, ALL_SUBJECTS, CYCLE_OF_LEVEL } from '../src/types';
 import type { SessionResult } from '../src/lib/results';
 
 const session: SessionResult = {
@@ -60,7 +60,21 @@ describe('la base accepte toutes les valeurs de l\'application', () => {
   });
 
   it('pour les niveaux', () => {
-    allowed('level').forEach((values) => expect(values).toEqual(['CM1', 'CM2']));
+    allowed('level').forEach((values) => expect(values).toEqual([...ALL_LEVELS].sort()));
+  });
+
+  it('pour les niveaux de la classe et de la séance, tous deux élargis par le fichier 008', () => {
+    // Deux colonnes portent un niveau : en élargir une seule refuserait soit
+    // la création d'une classe, soit le dépôt d'une séance.
+    const widening = readFileSync(join(process.cwd(), 'supabase', '008_niveaux_ce1_3e.sql'), 'utf8');
+    const constraints = [...widening.matchAll(/add constraint (\w+)\s+check \(level in \(([^)]*)\)\)/g)].map((m) => ({
+      name: m[1],
+      values: [...m[2].matchAll(/'([^']*)'/g)].map((v) => v[1]).sort(),
+    }));
+    expect(constraints.map((entry) => entry.name)).toEqual(['classes_level_check', 'sessions_level_check']);
+    constraints.forEach((entry) => expect(entry.values).toEqual([...ALL_LEVELS].sort()));
+    expect(widening).toContain('drop constraint if exists classes_level_check');
+    expect(widening).toContain('drop constraint if exists sessions_level_check');
   });
 });
 
@@ -196,5 +210,29 @@ describe('les évaluations parlent la même langue que la base', () => {
       expect(sql, `clé ${key}`).toContain(`'${key}', `);
       expect(parser, `lecture de ${key}`).toMatch(new RegExp(`raw\\.${key}\\b`));
     });
+  });
+});
+
+describe('la fonction de l\'assistant parle la même langue que l\'application', () => {
+  // Elle se colle telle quelle dans Supabase : elle ne peut rien importer du
+  // site, et recopie donc la liste des niveaux et leurs cycles.
+  const source = readFileSync(join(process.cwd(), 'supabase', 'functions', 'assistant-problemes', 'index.ts'), 'utf8');
+
+  it('connaît les huit niveaux, dans l\'ordre de la scolarité', () => {
+    const list = source.match(/const NIVEAUX = \[([^\]]*)\] as const;/);
+    expect(list, 'liste NIVEAUX introuvable').not.toBeNull();
+    expect([...list![1].matchAll(/'([^']*)'/g)].map((m) => m[1])).toEqual(ALL_LEVELS);
+  });
+
+  it('range chaque niveau dans le même cycle que l\'application', () => {
+    const table = source.match(/const CYCLES: Record<Niveau, 2 \| 3 \| 4> = \{([^}]*)\};/);
+    expect(table, 'table CYCLES introuvable').not.toBeNull();
+    const cycles = Object.fromEntries([...table![1].matchAll(/'?(\w+)'?:\s*(\d)/g)].map((m) => [m[1], Number(m[2])]));
+    expect(cycles).toEqual(CYCLE_OF_LEVEL);
+  });
+
+  it('ne réserve plus l\'assistant au CM1 et au CM2', () => {
+    expect(source).not.toMatch(/body\?\.niveau === 'CM1'/);
+    expect(source).not.toContain('(cycle 3)');
   });
 });

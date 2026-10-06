@@ -60,6 +60,14 @@ describe('parsePreferences', () => {
     expect(parsePreferences(stored)).toEqual(DEFAULT_PREFERENCES);
   });
 
+  it('ne reprend qu\'un niveau que l\'application propose', () => {
+    expect(parsePreferences(JSON.stringify({ level: 'CM2' })).level).toBe('CM2');
+    // Un niveau que l'application connaît, mais n'offre pas encore, comme un
+    // niveau inconnu : le CM1.
+    expect(parsePreferences(JSON.stringify({ level: '6e' })).level).toBe('CM1');
+    expect(parsePreferences(JSON.stringify({ level: 'CP' })).level).toBe('CM1');
+  });
+
   it('relit l\'histoire et la géographie, avec leurs notions', () => {
     const history = parsePreferences(JSON.stringify({ subject: 'histoire', domains: ['chronologie', 'calcul'] }));
     expect(history.subject).toBe('histoire');

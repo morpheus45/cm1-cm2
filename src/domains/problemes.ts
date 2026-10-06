@@ -1,7 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngShuffle } from '../lib/seededRandom';
-import { stageOf, type Stage } from '../lib/progression';
+import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
 
 interface ProblemResult {
   prompt: string;
@@ -152,7 +152,7 @@ const PROBLEM_TEMPLATES: ProblemTemplate[] = [
 
 export function eligibleTemplateCount(level: Level, trimester: Trimester): number {
   const stage = stageOf(level, trimester);
-  return PROBLEM_TEMPLATES.filter((template) => template.minStage <= stage).length;
+  return PROBLEM_TEMPLATES.filter((template) => isAvailableAt(template.minStage, stage)).length;
 }
 
 function distractorsAround(rng: Rng, correct: number, spread: number, howMany: number): number[] {
@@ -176,7 +176,7 @@ function distractorsAround(rng: Rng, correct: number, spread: number, howMany: n
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
   const stage = stageOf(level, trimester);
-  const templates = PROBLEM_TEMPLATES.filter((template) => template.minStage <= stage);
+  const templates = PROBLEM_TEMPLATES.filter((template) => isAvailableAt(template.minStage, stage));
   const questions: Question[] = [];
 
   // On parcourt les types de problèmes dans un ordre tiré au sort plutôt que

@@ -1,6 +1,6 @@
 import type { Point, Shape } from '../lib/figures';
 import { polar } from '../lib/figures';
-import type { Stage } from '../lib/progression';
+import { isAvailableAt, type Stage } from '../lib/progression';
 import { rngInt, rngPick, rngShuffle } from '../lib/seededRandom';
 import { choose, type Family } from './geometrieCommun';
 
@@ -288,7 +288,7 @@ const phraseVraie: Family = {
   name: 'phrase-vraie',
   minStage: 5,
   make: (rng, stage) => {
-    const available = STATEMENTS.filter((entry) => entry.minStage <= stage);
+    const available = STATEMENTS.filter((entry) => isAvailableAt(entry.minStage, stage));
     const index = rngInt(rng, 0, available.length - 1);
     const { right, wrong, why } = available[index];
     return {

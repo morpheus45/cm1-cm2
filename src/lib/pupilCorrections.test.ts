@@ -119,6 +119,12 @@ describe('parseStoredCorrections', () => {
     expect(parseStoredCorrections(JSON.stringify(stored))).toEqual(stored);
     expect(parseStoredCorrections(null)).toEqual([]);
     expect(parseStoredCorrections('abîmé')).toEqual([]);
-    expect(parseStoredCorrections(JSON.stringify([{ ...stored[0], level: 'CE2' }, { sessionId: 3 }, null]))).toEqual([]);
+    expect(parseStoredCorrections(JSON.stringify([{ ...stored[0], level: 'CP' }, { sessionId: 3 }, null]))).toEqual([]);
+  });
+
+  it('garde la feuille d\'un élève de collège', () => {
+    const stored = mergeCorrections([], [row('s1', '2026-10-05T10:00:00.000Z')], [session('s1', '2026-10-01T09:00:00.000Z', { level: '6e' })]);
+    expect(stored.map((entry) => entry.level)).toEqual(['6e']);
+    expect(parseStoredCorrections(JSON.stringify(stored))).toEqual(stored);
   });
 });

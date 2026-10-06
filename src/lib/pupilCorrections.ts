@@ -1,4 +1,4 @@
-import { pupilKey, pupilLabel, type Level, type Pupil, type Trimester } from '../types';
+import { isLevel, pupilKey, pupilLabel, type Level, type Pupil, type Trimester } from '../types';
 import { cloudClient } from './cloud';
 import { worksheetFromRow } from './correction';
 import type { SessionResult } from './results';
@@ -76,7 +76,7 @@ export function parseStoredCorrections(raw: string | null): StoredCorrection[] {
       !isRecord(entry.pupil) ||
       typeof entry.pupil.firstName !== 'string' ||
       typeof entry.pupil.lastName !== 'string' ||
-      (entry.level !== 'CM1' && entry.level !== 'CM2') ||
+      !isLevel(entry.level) ||
       ![1, 2, 3].includes(entry.trimester as number) ||
       typeof entry.at !== 'string' ||
       typeof entry.correctedAt !== 'string' ||

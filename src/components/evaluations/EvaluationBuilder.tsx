@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ALL_SUBJECTS,
   DOMAIN_LABELS,
-  SUBJECT_DOMAINS,
   SUBJECT_LABELS,
   TRIMESTER_LABELS,
   type Domain,
@@ -22,6 +21,7 @@ import {
 } from '../../lib/calendrier';
 import type { ClassProblem } from '../../lib/classProblems';
 import type { ClassQuestion } from '../../lib/classQuestions';
+import { activitiesFor, notionsFor } from '../../lib/contenu';
 import {
   ADVISED_PER_DOMAIN,
   candidateOperations,
@@ -106,7 +106,12 @@ export function EvaluationBuilder({
     );
   }, [classId]);
 
-  const pools: Pool[] = subject === 'maths' ? [...SUBJECT_DOMAINS.maths, 'operations'] : SUBJECT_DOMAINS[subject];
+  // Seules les notions qui ont des questions pour le niveau de la classe se
+  // proposent (src/lib/contenu.ts) ; les opérations posées, quand il y a du
+  // calcul.
+  const notions = notionsFor(subject, level, trimester);
+  const pools: Pool[] =
+    subject === 'maths' && activitiesFor(subject, level, trimester).includes('posees') ? [...notions, 'operations'] : notions;
 
   const draw = (pool: Pool, count: number): EvaluationItem[] => {
     seed.current += 7919;
@@ -267,6 +272,11 @@ export function EvaluationBuilder({
             Choisissez chaque question. Conseil : trois à cinq questions par notion, quinze à vingt en tout, pour une
             séance de classe. L'élève les verra dans cet ordre de notions, sans correction.
           </p>
+          {pools.length === 0 && (
+            <p className="text-sm font-bold text-encre-douce">
+              Pas encore de questions dans cette matière pour ce niveau.
+            </p>
+          )}
           {pools.map((pool) => {
             const list = candidates[pool] ?? [];
             const count = countIn(pool);

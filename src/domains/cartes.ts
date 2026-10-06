@@ -92,10 +92,18 @@ const CITY_HINTS: Record<City, string> = {
   montpellier: 'Montpellier est au sud, près de la mer Méditerranée.',
 };
 
-/** Les villes de chaque niveau : les huit plus grandes au CM1, onze au CM2. */
+/** Les villes de chaque niveau : les huit plus grandes au CM1, onze au CM2.
+ *  Les autres niveaux n'ont pas encore de question sur la carte de France :
+ *  leur liste est vide. */
 export const CITY_POOL: Record<Level, City[]> = {
+  CE1: [],
+  CE2: [],
   CM1: ['paris', 'lyon', 'marseille', 'toulouse', 'bordeaux', 'lille', 'nantes', 'strasbourg'],
   CM2: ['paris', 'lyon', 'marseille', 'toulouse', 'bordeaux', 'lille', 'nantes', 'strasbourg', 'nice', 'rennes', 'montpellier'],
+  '6e': [],
+  '5e': [],
+  '4e': [],
+  '3e': [],
 };
 
 export const RIVER_NAMES: Record<River, string> = {
@@ -603,9 +611,9 @@ function directionQuestion(rng: Rng, level: Level): Draft {
 
 export interface MapMaker {
   name: string;
-  /** Le premier trimestre où la question apparaît, par niveau ; `null` si
-   *  elle n'est pas au programme de ce niveau. */
-  from: Record<Level, Trimester | null>;
+  /** Le premier trimestre où la question apparaît, par niveau ; `null`, ou
+   *  l'absence du niveau, si elle n'est pas au programme de ce niveau. */
+  from: Partial<Record<Level, Trimester | null>>;
   make: (rng: Rng, level: Level) => Draft;
 }
 
@@ -626,7 +634,7 @@ export const MAP_MAKERS: MapMaker[] = [
  *  celles des trimestres passés, à réviser. */
 export function mapMakersFor(level: Level, trimester: Trimester): { current: MapMaker[]; review: MapMaker[] } {
   const available = MAP_MAKERS.filter((maker) => {
-    const from = maker.from[level];
+    const from = maker.from[level] ?? null;
     return from !== null && from <= trimester;
   });
   return {

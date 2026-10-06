@@ -1,7 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Figure, Point } from '../lib/figures';
 import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
-import { stageOf, type Stage } from '../lib/progression';
+import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
 import { choose, type Family } from './geometrieCommun';
 import { CONSTRUCTION_FAMILIES } from './geometrieConstructions';
 import { MEASURE_FAMILIES } from './geometrieMesures';
@@ -400,7 +400,7 @@ const axesSymetrie: Family = {
   name: 'axes-symetrie',
   minStage: 3,
   make: (rng, stage) => {
-    const shape = rngPick(rng, SYMMETRY_SHAPES.filter((entry) => entry.minStage <= stage));
+    const shape = rngPick(rng, SYMMETRY_SHAPES.filter((entry) => isAvailableAt(entry.minStage, stage)));
     return {
       detail: shape.name,
       instruction: 'Un axe partage la figure en deux moitiés qui se superposent',
@@ -461,7 +461,7 @@ const proprietes: Family = {
   name: 'proprietes',
   minStage: 2,
   make: (rng, stage) => {
-    const item = rngPick(rng, PROPERTIES.filter((entry) => entry.minStage <= stage));
+    const item = rngPick(rng, PROPERTIES.filter((entry) => isAvailableAt(entry.minStage, stage)));
     return {
       detail: item.prompt.slice(0, 24),
       prompt: item.prompt,
@@ -545,7 +545,7 @@ function cycle(list: Family[], n: number): Family[] {
  */
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
   const stage = stageOf(level, trimester);
-  const available = FAMILIES.filter((family) => family.minStage <= stage);
+  const available = FAMILIES.filter((family) => isAvailableAt(family.minStage, stage));
   const recent = available.filter((family) => family.minStage === stage);
   const fromRecent = recent.length > 0 ? Math.ceil(count / 2) : 0;
   const picked = rngShuffle(rng, [

@@ -1,7 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngShuffle } from '../lib/seededRandom';
-import { stageOf, type Stage } from '../lib/progression';
+import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
 
 type Operation = '+' | '-' | '×' | '÷';
 
@@ -200,7 +200,8 @@ export function formatNumber(n: number): string {
 /**
  * Tire `count` opérations parmi les techniques déjà enseignées, en faisant le
  * tour de ces techniques avant d'en reproposer une. `posableOnly` ne garde que
- * celles qui s'écrivent en colonnes.
+ * celles qui s'écrivent en colonnes. Aucune technique à ce niveau : aucune
+ * opération, plutôt qu'un plantage.
  */
 export function buildOperations(
   level: Level,
@@ -213,6 +214,7 @@ export function buildOperations(
   const kinds = eligibleOperationKinds(level, trimester).filter(
     (kind) => !posableOnly || kind.posable
   );
+  if (kinds.length === 0) return [];
   const order = rngShuffle(rng, kinds);
   return Array.from({ length: count }, (_, index) =>
     order[index % order.length].build(rng, stage, posableOnly)
@@ -221,14 +223,14 @@ export function buildOperations(
 
 export function eligibleOperationKinds(level: Level, trimester: Trimester): OperationKind[] {
   const stage = stageOf(level, trimester);
-  return OPERATION_KINDS.filter((kind) => kind.minStage <= stage);
+  return OPERATION_KINDS.filter((kind) => isAvailableAt(kind.minStage, stage));
 }
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
   const questions: Question[] = [];
   const operations = buildOperations(level, trimester, rng, count);
 
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < operations.length; i++) {
     const { a, b, op, result, isDecimal } = operations[i];
     const distractors = distractorsForResult(rng, result, isDecimal);
     // Toutes les propositions sont écrites de la même façon : sinon le format

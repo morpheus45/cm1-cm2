@@ -1,4 +1,4 @@
-import { ALL_DOMAINS, ALL_SUBJECTS, pupilKey, SUBJECT_DOMAINS, subjectOf } from '../types';
+import { ALL_DOMAINS, ALL_SUBJECTS, isLevel, pupilKey, SUBJECT_DOMAINS, subjectOf } from '../types';
 import type { Activity, Domain, Level, Pupil, Subject, Trimester } from '../types';
 
 /** Ce qu'une séance a produit, notion par notion. */
@@ -173,7 +173,7 @@ export function parseResults(raw: string | null): SessionResult[] {
       typeof session.id === 'string' &&
       typeof session.at === 'string' &&
       !Number.isNaN(new Date(session.at).getTime()) &&
-      (session.level === 'CM1' || session.level === 'CM2') &&
+      isLevel(session.level) &&
       [1, 2, 3].includes(session.trimester as number) &&
       ALL_SUBJECTS.includes(session.subject as Subject) &&
       Array.isArray(session.domains) &&
@@ -286,10 +286,22 @@ export function weakestDomains(
  * vient des notions les plus fragiles de toutes ses séances.
  *
  * Un élève qui n'a encore rien fait travaille toute la matière.
+ *
+ * `available` limite le choix aux notions qui ont des questions pour le niveau
+ * de l'élève (src/lib/contenu.ts) ; par défaut, toute la matière.
  */
-export function revisionDomains(own: SessionResult[], subject: Subject, count: number): Domain[] {
-  if (own.length === 0) return [...SUBJECT_DOMAINS[subject]];
-  const general = weakestDomains(summariseByDomain(own), subject, SUBJECT_DOMAINS[subject].length);
+export function revisionDomains(
+  own: SessionResult[],
+  subject: Subject,
+  count: number,
+  available: Domain[] = SUBJECT_DOMAINS[subject]
+): Domain[] {
+  if (own.length === 0) return [...available];
+  const general = weakestDomains(
+    summariseByDomain(own).filter((summary) => available.includes(summary.domain)),
+    subject,
+    available.length
+  );
   const latest = own
     .filter((session) => session.activity === 'evaluation' && session.subject === subject)
     .sort((a, b) => b.at.localeCompare(a.at))[0];
@@ -300,7 +312,13 @@ export function revisionDomains(own: SessionResult[], subject: Subject, count: n
     return summary?.mastery !== null && summary?.mastery !== undefined && summary.mastery >= 3;
   };
   const shown = latest.domains
-    .filter((entry) => entry.total > 0 && subjectOf(entry.domain) === subject && masteryOf(entry.correct / entry.total) <= 2)
+    .filter(
+      (entry) =>
+        entry.total > 0 &&
+        subjectOf(entry.domain) === subject &&
+        available.includes(entry.domain) &&
+        masteryOf(entry.correct / entry.total) <= 2
+    )
     // Les lacunes d'abord ; à égalité, l'ordre des notions dans la matière.
     .sort((a, b) => a.correct / a.total - b.correct / b.total)
     .map((entry) => entry.domain)

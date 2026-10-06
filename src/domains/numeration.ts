@@ -123,9 +123,10 @@ function distractorsForNumber(rng: Rng, correct: number): number[] {
  * Taille des nombres dictés, étape par étape : 9 999 au CM1-T1, 99 999 au T2,
  * 999 999 au T3 ; le million au CM2-T1, le milliard à partir du CM2-T2.
  * Le nombre de chiffres est tiré dans un intervalle, donc une séance de fin
- * d'année revoit aussi les nombres du début d'année.
+ * d'année revoit aussi les nombres du début d'année. Une étape qui n'y figure
+ * pas n'a pas encore de nombres dictés (voir src/lib/contenu.ts).
  */
-const DIGIT_RANGE: Record<Stage, { min: number; max: number }> = {
+const DIGIT_RANGE: Partial<Record<Stage, { min: number; max: number }>> = {
   1: { min: 2, max: 4 },
   2: { min: 3, max: 5 },
   3: { min: 3, max: 6 },
@@ -162,7 +163,9 @@ const BANK_ITEMS: BankItem[] = [
 ];
 
 function randomDicteeNumber(rng: Rng, stage: Stage): number {
-  const { min: minDigits, max: maxDigits } = DIGIT_RANGE[stage];
+  const range = DIGIT_RANGE[stage];
+  if (!range) throw new Error(`Numération : aucune taille de nombre pour l'étape ${stage}.`);
+  const { min: minDigits, max: maxDigits } = range;
   const digits = rngInt(rng, minDigits, maxDigits);
   const min = Math.pow(10, digits - 1);
   const max = Math.pow(10, digits) - 1;

@@ -636,6 +636,52 @@ select pg_temp.attendu(
   + (select count(*) from public.worksheets where session_id::text like '77777777-%'), 0,
   'une évaluation supprimée ne laisse ni copie, ni séance, ni feuille');
 
+-- ------------------------------------------------ les niveaux, du CE1 à la 3e ---
+-- La base accepte les huit niveaux de l'application, pour les classes comme
+-- pour les séances (008_niveaux_ce1_3e.sql), et refuse tout autre.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+select pg_temp.attendu(
+  (select count(*)
+     from unnest(array['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e']) as n(level),
+          lateral public.creer_classe('Classe de ' || n.level, n.level)),
+  8, 'la maîtresse crée une classe pour chacun des huit niveaux');
+select pg_temp.doit_echouer(
+  $q$select * from public.creer_classe('Classe de CP', 'CP')$q$,
+  'classes_level_check', 'une classe d''un niveau inconnu doit être refusée');
+reset role;
+select pg_temp.attendu(
+  (select count(*) from public.classes where name = 'Classe de ' || level), 8,
+  'chaque classe garde le niveau demandé');
+
+-- Un élève dépose une séance dans la classe de chaque niveau, du CE1 à la 3e.
+create temp table classes_des_niveaux as
+  select level, join_code from public.classes where name = 'Classe de ' || level;
+grant select on classes_des_niveaux to anon;
+set role anon;
+select public.depose_seance(gen_random_uuid(), c.join_code, 'Élève ' || c.level, '', c.level, 1::smallint, 'maths', 'questions',
+  '[{"domain":"calcul","correct":3,"total":4}]')
+from classes_des_niveaux c;
+select pg_temp.doit_echouer(
+  $q$select public.depose_seance(gen_random_uuid(), (select join_code from classes_des_niveaux where level = 'CE1'),
+       'Élève', '', 'CP', 1::smallint, 'maths', 'questions', '[]')$q$,
+  'sessions_level_check', 'une séance d''un niveau inconnu doit être refusée');
+reset role;
+select pg_temp.attendu(
+  (select count(*) from public.sessions s join public.pupils p on p.id = s.pupil_id
+    where p.first_name = 'Élève ' || s.level), 8,
+  'une séance se dépose pour chacun des huit niveaux');
+
+-- La maîtresse lit la classe de 6e, et la séance de son élève.
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+select pg_temp.egal(
+  (select (c ->> 'level') || '/' || (c -> 'pupils' -> 0 -> 'sessions' -> 0 ->> 'level')
+     from jsonb_array_elements(public.lire_ma_classe()) c
+    where c ->> 'name' = 'Classe de 6e'),
+  '6e/6e', 'la maîtresse lit la classe de 6e et la séance de son élève');
+reset role;
+
 -- ------------------------------------------------------------ les droits ---
 -- Supabase accorde d'office tous les droits à anon et authenticated ; le
 -- lanceur reproduit ce réglage. Ce qui suit vérifie ce qu'il en reste après

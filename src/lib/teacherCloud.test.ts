@@ -64,6 +64,16 @@ describe('mapClasses', () => {
     expect(pupilIdFor(classe, 'Inconnu', '')).toBeNull();
   });
 
+  it('garde le niveau de la classe, du CE1 à la 3e', () => {
+    const levels = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
+    const classes = mapClasses(levels.map((level) => ({ ...raw[0], id: `c-${level}`, level, pupils: [] })));
+    expect(classes.map((entry) => entry.level)).toEqual(levels);
+  });
+
+  it('retombe sur le CM1 quand la base rend un niveau inconnu', () => {
+    expect(mapClasses([{ ...raw[0], level: 'CP', pupils: [] }])[0].level).toBe('CM1');
+  });
+
   it('rend une liste vide sur une réponse inattendue', () => {
     expect(mapClasses(null)).toEqual([]);
     expect(mapClasses({})).toEqual([]);
