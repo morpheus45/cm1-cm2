@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
 import {
-  ALL_SUBJECTS,
   DOMAIN_LABELS,
   SUBJECT_DOMAINS,
   SUBJECT_LABELS,
   TRIMESTER_LABELS,
   subjectOf,
   type Domain,
+  type Level,
   type Subject,
   type Trimester,
 } from '../types';
+import { hasContent, subjectsFor } from '../lib/contenu';
 import { checkClassQuestionDraft, isCustomisableDomain, type ClassQuestionDraft } from '../lib/classQuestions';
 import {
   addClassQuestion,
@@ -24,6 +25,8 @@ import { RainbowArc } from './ecole/RainbowArc';
 interface ClassQuestionsScreenProps {
   classId: string;
   className: string;
+  /** Le niveau de la classe : seules ses matières se proposent. */
+  level: Level;
   onClose: () => void;
 }
 
@@ -48,7 +51,7 @@ function firstCustomisableDomain(subject: Subject): Domain {
  * Ici, rien n'est recalculé : l'application vérifie la forme (un énoncé
  * assez long, des réponses distinctes), jamais si la réponse est juste.
  */
-export function ClassQuestionsScreen({ classId, className, onClose }: ClassQuestionsScreenProps) {
+export function ClassQuestionsScreen({ classId, className, level, onClose }: ClassQuestionsScreenProps) {
   const [subject, setSubject] = useState<Subject>('francais');
   const [domain, setDomain] = useState<Domain>(firstCustomisableDomain('francais'));
   const [trimestre, setTrimestre] = useState<Trimester>(1);
@@ -74,6 +77,12 @@ export function ClassQuestionsScreen({ classId, className, onClose }: ClassQuest
     void reload();
     // La classe ne change pas pendant que l'écran est ouvert.
   }, [classId]);
+
+  // Une question ajoutée dans une matière que le niveau n'a pas encore ne
+  // serait jamais posée à un élève (src/lib/contenu.ts) : au CE1, au CE2 et en
+  // 6e, ni l'histoire ni la géographie. Le 3e trimestre compte tout ce qui est
+  // ouvert dans l'année.
+  const subjects = subjectsFor(level, 3);
 
   const chooseSubject = (next: Subject) => {
     setSubject(next);
@@ -136,7 +145,7 @@ export function ClassQuestionsScreen({ classId, className, onClose }: ClassQuest
           </p>
 
           <div className="flex flex-wrap gap-2">
-            {ALL_SUBJECTS.map((entry) => (
+            {subjects.map((entry) => (
               <button key={entry} type="button" onClick={() => chooseSubject(entry)} aria-pressed={subject === entry} className={choice(subject === entry)}>
                 {SUBJECT_LABELS[entry]}
               </button>
@@ -144,7 +153,7 @@ export function ClassQuestionsScreen({ classId, className, onClose }: ClassQuest
           </div>
           <div className="flex flex-wrap gap-2">
             {SUBJECT_DOMAINS[subject]
-              .filter(isCustomisableDomain)
+              .filter((entry) => isCustomisableDomain(entry) && hasContent(entry, level, 3))
               .map((entry) => (
                 <button key={entry} type="button" onClick={() => setDomain(entry)} aria-pressed={domain === entry} className={choice(domain === entry)}>
                   {DOMAIN_LABELS[entry]}

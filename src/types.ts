@@ -43,8 +43,12 @@ export const CYCLE_OF_LEVEL: Record<Level, Cycle> = {
  * et à la maîtresse, pour créer la sienne. La base et le code savent déjà les
  * huit niveaux de `ALL_LEVELS`, mais un niveau n'entre dans cette liste
  * qu'une fois ses questions écrites : elle s'allongera au fil des contenus.
+ * Aujourd'hui, du CE1 à la 6e. Le CE1, le CE2 et la 6e n'ont que le français
+ * et les maths : leur histoire et leur géographie ne sont pas écrites, et
+ * `CONTENT_FROM` (src/lib/contenu.ts) les masque. La 5e, la 4e et la 3e
+ * attendent leurs questions.
  */
-export const AVAILABLE_LEVELS: Level[] = ['CM1', 'CM2'];
+export const AVAILABLE_LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
 
 /** Les niveaux du collège : l'élève y a des professeurs, plus de maîtresse. */
 const COLLEGE_LEVELS: Level[] = ['6e', '5e', '4e', '3e'];

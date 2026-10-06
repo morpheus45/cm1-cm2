@@ -19,6 +19,8 @@ import {
   type Noun,
 } from './accordsLexique';
 import { ALL_VERBS, PERSONS, type Verb } from './conjugaisonVerbes';
+import { generateNiveau } from './accordsNiveaux';
+import { estNiveauEcrit } from './francaisNiveaux';
 
 /**
  * « un », « une », « des » : jamais d'élision à écrire, contrairement à
@@ -218,6 +220,8 @@ function allocate(count: number, keys: PoolKey[]): Record<PoolKey, number> {
 }
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  // Le CE1, le CE2 et la 6e ont leurs propres listes et leurs propres familles de questions (accordsNiveaux.ts).
+  if (estNiveauEcrit(level)) return generateNiveau(level, trimester, rng, count);
   const stage = stageOf(level, trimester);
   const nouns = NOUNS.filter((noun) => isAvailableAt(noun.minStage, stage));
   const adjectives = ADJECTIVES.filter((adjective) => isAvailableAt(adjective.minStage, stage));

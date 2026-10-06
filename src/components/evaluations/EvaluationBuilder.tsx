@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  ALL_SUBJECTS,
   DOMAIN_LABELS,
   SUBJECT_LABELS,
   TRIMESTER_LABELS,
@@ -21,7 +20,7 @@ import {
 } from '../../lib/calendrier';
 import type { ClassProblem } from '../../lib/classProblems';
 import type { ClassQuestion } from '../../lib/classQuestions';
-import { activitiesFor, notionsFor } from '../../lib/contenu';
+import { activitiesFor, notionsFor, subjectsFor } from '../../lib/contenu';
 import {
   ADVISED_PER_DOMAIN,
   candidateOperations,
@@ -106,9 +105,10 @@ export function EvaluationBuilder({
     );
   }, [classId]);
 
-  // Seules les notions qui ont des questions pour le niveau de la classe se
-  // proposent (src/lib/contenu.ts) ; les opérations posées, quand il y a du
-  // calcul.
+  // Seules les matières et les notions qui ont des questions pour le niveau de
+  // la classe se proposent (src/lib/contenu.ts) : au CE1, au CE2 et en 6e, le
+  // français et les maths. Les opérations posées, quand il y a du calcul.
+  const subjects = subjectsFor(level, trimester);
   const notions = notionsFor(subject, level, trimester);
   const pools: Pool[] =
     subject === 'maths' && activitiesFor(subject, level, trimester).includes('posees') ? [...notions, 'operations'] : notions;
@@ -212,8 +212,12 @@ export function EvaluationBuilder({
           <h2 id="etape-1" className="text-lg font-bold text-encre">
             1. La matière et la période
           </h2>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4" role="group" aria-label="Matière">
-            {ALL_SUBJECTS.map((candidate) => (
+          <div
+            className={`grid grid-cols-2 gap-2 ${subjects.length > 2 ? 'sm:grid-cols-4' : ''}`}
+            role="group"
+            aria-label="Matière"
+          >
+            {subjects.map((candidate) => (
               <button
                 key={candidate}
                 type="button"

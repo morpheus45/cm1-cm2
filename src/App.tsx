@@ -65,7 +65,7 @@ import { RecapScreen } from './components/RecapScreen';
 import { WrittenOperationScreen } from './components/WrittenOperationScreen';
 import { WrittenRecapScreen } from './components/WrittenRecapScreen';
 import { TablesScreen } from './components/TablesScreen';
-import { buildTableFacts, type TableFact } from './domains/tables';
+import { buildTableFacts, tablesAuProgramme, TABLES_PER_SESSION, type TableFact } from './domains/tables';
 import { createRng } from './lib/seededRandom';
 
 // L'accès maîtresse — graphiques, correction, compte — n'est chargé qu'à
@@ -261,7 +261,10 @@ export function App() {
       options.activity === 'revision' ? revisionDomains(own, options.subject, 2, available) : options.domains;
 
     if (options.activity === 'tables') {
-      setTableFacts({ seed, facts: buildTableFacts(options.tables, createRng(seed)) });
+      setTableFacts({
+        seed,
+        facts: buildTableFacts(options.tables, createRng(seed), TABLES_PER_SESSION, tablesAuProgramme(options.level, options.trimester)),
+      });
       setDelivery(null);
       setScreen('tables');
       return;

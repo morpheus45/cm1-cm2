@@ -151,10 +151,18 @@ describe('availableAt : cumulatif à l\'intérieur d\'un cycle seulement', () =>
     expect(eligibleTemplateCount('5e', 3)).toBe(0);
     expect(buildOperations('5e', 3, createRng(1), 6, { posableOnly: true })).toEqual([]);
 
-    // La 6e est du cycle 3 : elle reprend tout ce que le CM1 et le CM2 ont
-    // enseigné.
-    expect(eligibleOperationKinds('6e', 1)).toHaveLength(eligibleOperationKinds('CM2', 3).length);
-    expect(eligibleTenses('6e', 1)).toEqual(eligibleTenses('CM2', 3));
-    expect(eligibleTemplateCount('6e', 1)).toBe(eligibleTemplateCount('CM2', 3));
+    // La 6e est du cycle 3. En calcul et en problèmes, elle a ses propres
+    // techniques et ses propres sortes de problèmes, écrites avec les nombres
+    // de son programme : les seuils du CM ne lui servent plus
+    // (calculNiveaux.test.ts, problemesNiveaux.test.ts).
+    expect(eligibleOperationKinds('6e', 1)).toHaveLength(11);
+    expect(eligibleOperationKinds('6e', 3)).toHaveLength(14);
+    expect(eligibleTemplateCount('6e', 1)).toBe(11);
+    expect(eligibleTemplateCount('6e', 3)).toBe(35);
+    // En conjugaison, la 6e a son propre programme (conjugaisonNiveaux.test.ts) : quatre temps à la
+    // rentrée, le passé simple et le plus-que-parfait au 2e trimestre, le conditionnel au 3e. Elle
+    // finit l'année avec les temps que le CM2 finit : ceux du cycle 3.
+    expect(eligibleTenses('6e', 1)).toEqual(['présent', 'imparfait', 'futur', 'passé composé']);
+    expect(eligibleTenses('6e', 3)).toEqual(eligibleTenses('CM2', 3));
   });
 });

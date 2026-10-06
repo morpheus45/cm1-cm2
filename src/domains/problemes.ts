@@ -2,6 +2,8 @@ import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngShuffle } from '../lib/seededRandom';
 import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
+import { genererCycle2, sortesDeProblemesCycle2 } from './problemesCycle2';
+import { genererSixieme, sortesDeProblemesSixieme } from './problemesSixieme';
 
 interface ProblemResult {
   prompt: string;
@@ -151,6 +153,9 @@ const PROBLEM_TEMPLATES: ProblemTemplate[] = [
 ];
 
 export function eligibleTemplateCount(level: Level, trimester: Trimester): number {
+  // Le CE1, le CE2 et la 6e ont leurs propres sortes de problèmes, écrites avec les nombres et les notions de leur programme.
+  if (level === 'CE1' || level === 'CE2') return sortesDeProblemesCycle2(level, trimester);
+  if (level === '6e') return sortesDeProblemesSixieme(trimester);
   const stage = stageOf(level, trimester);
   return PROBLEM_TEMPLATES.filter((template) => isAvailableAt(template.minStage, stage)).length;
 }
@@ -175,6 +180,8 @@ function distractorsAround(rng: Rng, correct: number, spread: number, howMany: n
 }
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  if (level === 'CE1' || level === 'CE2') return genererCycle2(level, trimester, rng, count);
+  if (level === '6e') return genererSixieme(trimester, rng, count);
   const stage = stageOf(level, trimester);
   const templates = PROBLEM_TEMPLATES.filter((template) => isAvailableAt(template.minStage, stage));
   const questions: Question[] = [];

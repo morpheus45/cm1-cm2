@@ -4,9 +4,12 @@ import { generate } from './orthographe';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Trimester } from '../types';
 
-const LEVELS: Level[] = ['CM1', 'CM2'];
+/** Les cinq niveaux dont l'orthographe est écrite. Le CE1, le CE2 et la 6e ont leurs mots, leurs trimestres et
+ *  leurs contrôles dans orthographeNiveaux.test.ts ; ici, ce que tous les niveaux ont en commun. */
+const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
+const CM_LEVELS: Level[] = ['CM1', 'CM2'];
 
-/** Mots attendus à chaque étape, familles cumulées. */
+/** Mots attendus à chaque étape du CM1 et du CM2, familles cumulées. */
 const ALLOWED_WORDS: Record<string, string[]> = {
   'CM1-1': ['a', 'à', 'et', 'est'],
   'CM1-2': ['a', 'à', 'et', 'est', 'on', 'ont'],
@@ -44,7 +47,7 @@ describe('orthographe generate', () => {
   });
 
   it('only uses homophone families already taught, answers and distractors alike', () => {
-    LEVELS.forEach((level) => {
+    CM_LEVELS.forEach((level) => {
       ALL_TRIMESTERS.forEach((trimester) => {
         const allowed = ALLOWED_WORDS[`${level}-${trimester}`];
         generate(level, trimester, createRng(8), 40)
@@ -85,5 +88,22 @@ describe('orthographe generate', () => {
     );
     const early = ['a', 'à', 'et', 'est'];
     expect(early.some((word) => words.has(word))).toBe(true);
+  });
+
+  it('returns the requested number of questions at every level, whatever the count', () => {
+    LEVELS.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => [1, 5, 12, 40].forEach((count) => expect(generate(level, trimester, createRng(9), count), `${level} T${trimester} ${count}`).toHaveLength(count)))
+    );
+  });
+
+  it('still revises the first homophones at the end of the cycle 2 and in 6e', () => {
+    (['CE2', '6e'] as Level[]).forEach((level) => {
+      const words = new Set(
+        generate(level, level === 'CE2' ? 3 : 1, createRng(31), 60)
+          .filter((q) => q.id.startsWith('orthographe-homophone'))
+          .map((q) => q.choices[q.correctIndex].toLowerCase())
+      );
+      expect(['a', 'à', 'et', 'est'].some((word) => words.has(word))).toBe(true);
+    });
   });
 });

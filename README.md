@@ -1,8 +1,10 @@
 # Exercices CM1-CM2
 
-Application d'entraînement pour élèves de CM1/CM2 : conjugaison, accords,
-orthographe et vocabulaire d'un côté, numération, calcul et problèmes de
-l'autre — alignée sur le programme du cycle 3.
+Application d'entraînement pour élèves du CE1 à la 6e : conjugaison, accords,
+orthographe et vocabulaire d'un côté, numération, calcul, problèmes et
+géométrie de l'autre — alignée sur les programmes des cycles 2 et 3. L'histoire
+et la géographie ne sont écrites que pour le CM1 et le CM2 : elles
+n'apparaissent pas aux autres niveaux.
 
 Deux règles la gouvernent :
 

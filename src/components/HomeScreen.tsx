@@ -9,14 +9,13 @@ import type { OpenEvaluation } from '../lib/evaluation';
 import type { EvaluationState } from '../lib/pupilEvaluations';
 import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cloud';
 import { receivedFor, type ReceivedCorrection, type StoredCorrection } from '../lib/pupilCorrections';
-import { activitiesFor, notionsFor } from '../lib/contenu';
+import { activitiesFor, notionsFor, subjectsFor } from '../lib/contenu';
 import { worksheetScore } from '../lib/worksheet';
 import { formatFrenchDate } from '../lib/worksheetPdf';
-import { ALL_TABLES } from '../domains/tables';
+import { ALL_TABLES, tablesAuProgramme } from '../domains/tables';
 import {
   ACTIVITY_HINTS,
   ACTIVITY_LABELS,
-  ALL_SUBJECTS,
   ALL_TRIMESTERS,
   AVAILABLE_LEVELS,
   DOMAIN_LABELS,
@@ -96,7 +95,7 @@ export function HomeScreen({
   // Ce que l'élève peut choisir est ce qui a des questions pour sa classe et
   // son trimestre : une matière, une séance ou une notion sans contenu n'est
   // pas proposée (src/lib/contenu.ts).
-  const subjects = ALL_SUBJECTS.filter((s) => notionsFor(s, level, trimester).length > 0);
+  const subjects = subjectsFor(level, trimester);
   const notions = notionsFor(subject, level, trimester);
   const activities = activitiesFor(subject, level, trimester);
 
@@ -116,7 +115,7 @@ export function HomeScreen({
   const moveTo = (nextLevel: Level, nextTrimester: Trimester) => {
     setLevel(nextLevel);
     setTrimester(nextTrimester);
-    const nextSubjects = ALL_SUBJECTS.filter((s) => notionsFor(s, nextLevel, nextTrimester).length > 0);
+    const nextSubjects = subjectsFor(nextLevel, nextTrimester);
     const nextSubject = nextSubjects.includes(subject) ? subject : nextSubjects[0];
     if (!nextSubject) return;
     const nextNotions = notionsFor(nextSubject, nextLevel, nextTrimester);
@@ -128,6 +127,10 @@ export function HomeScreen({
 
   const posingOperations = activity === 'posees';
   const practisingTables = activity === 'tables';
+  // Les tables au programme du niveau et du trimestre : de 2 à 10 du CM1 à la
+  // 6e, mais au CE1 celles de 2, 3, 4, 5 et 10 seulement.
+  const offeredTables = tablesAuProgramme(level, trimester);
+  const allTablesChosen = offeredTables.every((table) => tables.includes(table));
 
   const toggleTable = (table: number) => {
     setTables((prev) =>
@@ -163,7 +166,7 @@ export function HomeScreen({
     name.trim().length > 0 &&
     activities.includes(activity) &&
     (practisingTables
-      ? tables.length > 0
+      ? tables.some((table) => offeredTables.includes(table))
       : posingOperations || activity === 'revision' || chosenNotions.length > 0);
 
   const options = (): StartOptions => ({
@@ -236,13 +239,14 @@ export function HomeScreen({
         </Etape>
 
         <Etape numero={2} titre="Ta classe">
-          <div className="flex flex-wrap gap-3">
+          {/* Cinq classes : trois puis deux sur un téléphone, toutes sur une ligne dès que la place le permet. */}
+          <div className="grid grid-cols-3 gap-3 sm:grid-cols-5">
             {AVAILABLE_LEVELS.map((lvl) => (
               <Choix
                 key={lvl}
                 actif={level === lvl}
                 onClick={() => moveTo(lvl, trimester)}
-                className="min-w-[4.5rem] flex-1 py-3 text-xl"
+                className="py-3 text-xl"
               >
                 {LEVEL_LABELS[lvl]}
               </Choix>
@@ -313,7 +317,7 @@ export function HomeScreen({
             <div className="flex flex-col gap-2">
               <span className="text-base font-bold text-encre-douce">Les tables que tu révises</span>
               <div className="grid grid-cols-5 gap-2">
-                {ALL_TABLES.map((table) => (
+                {offeredTables.map((table) => (
                   <Choix
                     key={table}
                     actif={tables.includes(table)}
@@ -326,10 +330,16 @@ export function HomeScreen({
               </div>
               <button
                 type="button"
-                onClick={() => setTables(tables.length === ALL_TABLES.length ? [] : [...ALL_TABLES])}
+                onClick={() =>
+                  setTables(
+                    allTablesChosen
+                      ? tables.filter((table) => !offeredTables.includes(table))
+                      : ALL_TABLES.filter((table) => tables.includes(table) || offeredTables.includes(table))
+                  )
+                }
                 className="self-start text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
               >
-                {tables.length === ALL_TABLES.length ? 'Tout décocher' : 'Toutes les tables'}
+                {allTablesChosen ? 'Tout décocher' : 'Toutes les tables'}
               </button>
             </div>
           )}
