@@ -15,7 +15,8 @@ import { absQ, addQ, cmpQ, divQ, eqQ, evaluer, lireNombre, lireRationnel, mulQ, 
  */
 
 const NIVEAUX: Level[] = ['5e', '4e', '3e'];
-const GRAINES = 50;
+/** Cinquante graines par cellule suffisent à chaque exécution ; VITE_GRAINES_CYCLE4=2000 npm test pour une vérification plus longue. */
+const GRAINES = Number(import.meta.env.VITE_GRAINES_CYCLE4 ?? 50);
 
 function questions(level: Level, trimester: Trimester, count = 24, seeds = GRAINES): Question[] {
   return Array.from({ length: seeds }, (_, seed) => generate(level, trimester, createRng(seed * 37 + 11), count)).flat();

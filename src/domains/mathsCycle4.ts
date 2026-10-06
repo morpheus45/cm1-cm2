@@ -84,10 +84,10 @@ export const egaux = (a: Rat, b: Rat): boolean => a.n === b.n && a.d === b.d;
 export const valeur = (a: Rat): number => a.n / a.d;
 
 /** « 3/4 », « −3/4 », « 5 » : une fraction écrite, ou l'entier qu'elle vaut. */
-export const texteRat = (a: Rat): string => (a.d === 1 ? nb(a.n) : `${nb(a.n)}/${a.d}`);
+export const texteRat = (a: Rat): string => (a.d === 1 ? nb(a.n) : `${a.n < 0 ? MOINS : ''}${Math.abs(a.n)}/${a.d}`);
 
 /** Une fraction telle qu'on la donne, non simplifiée : « 6/8 ». */
-export const fraction = (n: number, d: number): string => `${nb(n)}/${d}`;
+export const fraction = (n: number, d: number): string => `${n < 0 ? MOINS : ''}${Math.abs(n)}/${d}`;
 
 /** Une fraction dans une expression : « (−3/4) » si elle est négative. */
 export const fractionEntre = (n: number, d: number): string => (n < 0 ? `(${fraction(n, d)})` : fraction(n, d));

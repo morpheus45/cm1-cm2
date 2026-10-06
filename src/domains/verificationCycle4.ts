@@ -354,5 +354,113 @@ export function lireEquation(texte: string, lettre = 'x'): Poly {
   return polyAdd(lirePolynome(gauche, lettre), lirePolynome(droite, lettre), -1);
 }
 
+// --- Lire une expression avec des lettres ---------------------------------------------------------------------------------
+
+/**
+ * Calcule une expression littérale pour des valeurs données des lettres : « 3x − 5 », « (x + 3)(x − 5) », « 2(x + 1)² »,
+ * « xy² », « x ÷ 3 ». Le produit sans signe (« 3x », « x(x − 5) », « xy ») est lu comme le lit un élève, l'exposant ne porte que sur
+ * ce qui le précède (« 2x² » = 2 × x²).
+ */
+export function evaluerAvecLettres(texte: string, valeurs: Record<string, Q>): Q {
+  const source = texte.replace(ESPACES, '');
+  const jetons: string[] = [];
+  for (let i = 0; i < source.length; ) {
+    const c = source[i];
+    const nombre = /^\d+(?:,\d+)?/.exec(source.slice(i));
+    if (nombre) {
+      jetons.push(nombre[0]);
+      i += nombre[0].length;
+    } else if (EXPOSANTS.includes(c) || c === '⁻') {
+      let j = i;
+      while (j < source.length && (EXPOSANTS.includes(source[j]) || source[j] === '⁻')) j++;
+      jetons.push(`^${source.slice(i, j).replace('⁻', '-').replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g, (x) => String(EXPOSANTS.indexOf(x)))}`);
+      i = j;
+    } else if (/\p{L}/u.test(c) && c !== '√') {
+      if (!(c in valeurs)) throw new Error(`Lettre sans valeur « ${c} » dans « ${texte} »`);
+      jetons.push(c);
+      i += 1;
+    } else if ('+×÷·*()'.includes(c) || estMoins(c)) {
+      jetons.push(estMoins(c) ? '-' : c === '·' || c === '*' ? '×' : c);
+      i += 1;
+    } else throw new Error(`Caractère inattendu « ${c} » dans « ${texte} »`);
+  }
+  let position = 0;
+  const voir = () => jetons[position];
+  const prendre = () => jetons[position++];
+  const estLettre = (jeton: string | undefined) => jeton !== undefined && /^\p{L}$/u.test(jeton);
+
+  const atome = (): Q => {
+    const jeton = prendre();
+    if (jeton === undefined) throw new Error(`Expression incomplète : ${texte}`);
+    if (jeton === '(') {
+      const dedans = somme();
+      if (prendre() !== ')') throw new Error(`Parenthèse manquante : ${texte}`);
+      return dedans;
+    }
+    if (estLettre(jeton)) return valeurs[jeton];
+    if (/^\d/.test(jeton)) return lireNombre(jeton) as Q;
+    throw new Error(`Jeton inattendu « ${jeton} » dans ${texte}`);
+  };
+  const puissance = (): Q => {
+    const base = atome();
+    const suivant = voir();
+    if (suivant !== undefined && suivant.startsWith('^')) {
+      prendre();
+      return puissanceQ(base, Number(suivant.slice(1)));
+    }
+    return base;
+  };
+  const facteur = (): Q => {
+    if (voir() === '-') {
+      prendre();
+      return negQ(facteur());
+    }
+    if (voir() === '+') {
+      prendre();
+      return facteur();
+    }
+    return puissance();
+  };
+  const terme = (): Q => {
+    let valeur = facteur();
+    for (;;) {
+      const suivant = voir();
+      if (suivant === '×') {
+        prendre();
+        valeur = mulQ(valeur, facteur());
+      } else if (suivant === '÷') {
+        prendre();
+        valeur = divQ(valeur, facteur());
+      } else if (suivant === '(' || estLettre(suivant)) {
+        // Le produit sans signe : « 3x », « x(x − 5) », « xy ».
+        valeur = mulQ(valeur, puissance());
+      } else return valeur;
+    }
+  };
+  function somme(): Q {
+    let valeur = terme();
+    while (voir() === '+' || voir() === '-') {
+      const op = prendre();
+      const droite = terme();
+      valeur = op === '+' ? addQ(valeur, droite) : subQ(valeur, droite);
+    }
+    return valeur;
+  }
+  const resultat = somme();
+  if (position !== jetons.length) throw new Error(`Reste de l'expression illisible : ${texte}`);
+  return resultat;
+}
+
+/** Les valeurs d'essai des lettres : assez de points pour qu'une identité de degré 4 au plus ne puisse pas être fausse sans qu'on le voie. */
+const POINTS_D_ESSAI = [-3, -2, 2, 3, 5, 7, 11].map((n) => q(n));
+
+/** Deux expressions littérales valent-elles la même chose pour toutes les valeurs des lettres ? Essayé en plusieurs points. */
+export function memeExpression(a: string, b: string, lettres: string[] = ['x']): boolean {
+  return POINTS_D_ESSAI.every((point, rang) => {
+    const valeurs = Object.fromEntries(lettres.map((lettre, indice) => [lettre, POINTS_D_ESSAI[(rang + 2 * indice) % POINTS_D_ESSAI.length] ?? point]));
+    return eqQ(evaluerAvecLettres(a, valeurs), evaluerAvecLettres(b, valeurs));
+  });
+}
+
 /** Les nombres entiers de 1 à n, pour les boucles des tests. */
 export const de1a = (n: number) => Array.from({ length: n }, (_, k) => k + 1);

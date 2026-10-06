@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { eqQ, evaluer, lireEquation, lireNombre, lirePolynome, lireRationnel, polyDegre, polyEgaux, polyEvaluer, q, racineQ } from './verificationCycle4';
+import { eqQ, evaluer, evaluerAvecLettres, lireEquation, lireNombre, lirePolynome, lireRationnel, memeExpression, polyDegre, polyEgaux, polyEvaluer, q, racineQ } from './verificationCycle4';
 
 /**
  * Les tests de la 5e, de la 4e et de la 3e refont les calculs des questions
@@ -106,5 +106,28 @@ describe('le lecteur de polynômes', () => {
     expect(polyEvaluer(lireEquation('5x + 3 = 2x + 12'), q(3)).n).toBe(0n);
     expect(polyEvaluer(lireEquation('(x − 3)(x + 5) = 0'), q(-5)).n).toBe(0n);
     expect(() => lireEquation('3x + 5')).toThrow();
+  });
+});
+
+describe('le lecteur d\'expressions littérales', () => {
+  it('calcule pour des valeurs des lettres, avec le produit sans signe', () => {
+    expect(eqQ(evaluerAvecLettres('3x − 5', { x: q(4) }), q(7))).toBe(true);
+    expect(eqQ(evaluerAvecLettres('2x²', { x: q(-3) }), q(18))).toBe(true);
+    expect(eqQ(evaluerAvecLettres('(x + 3)(x − 5)', { x: q(2) }), q(-15))).toBe(true);
+    expect(eqQ(evaluerAvecLettres('xy²', { x: q(2), y: q(3) }), q(18))).toBe(true);
+    expect(eqQ(evaluerAvecLettres('x ÷ 3', { x: q(12) }), q(4))).toBe(true);
+    expect(eqQ(evaluerAvecLettres('−x²', { x: q(5) }), q(-25))).toBe(true);
+    expect(() => evaluerAvecLettres('3z', { x: q(1) })).toThrow();
+  });
+
+  it('reconnaît deux expressions égales, et deux expressions qui ne le sont pas', () => {
+    expect(memeExpression('3(x + 2)', '3x + 6')).toBe(true);
+    expect(memeExpression('(x + 3)²', 'x² + 6x + 9')).toBe(true);
+    expect(memeExpression('(2x − 1)(x + 4)', '2x² + 7x − 4')).toBe(true);
+    expect(memeExpression('(x + 3)²', 'x² + 9')).toBe(false);
+    expect(memeExpression('3 × x × 4', '12x')).toBe(true);
+    expect(memeExpression('x × x', '2x')).toBe(false);
+    expect(memeExpression('3 × x × y', '3xy', ['x', 'y'])).toBe(true);
+    expect(memeExpression('3 × x × y', '3 + x + y', ['x', 'y'])).toBe(false);
   });
 });
