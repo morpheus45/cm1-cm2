@@ -13,6 +13,10 @@ import attendues from './empreintesFrancaisCM.json';
  * code d'avant ces trois niveaux. Si ce test échoue, c'est qu'un changement a
  * modifié ce que voient les élèves de CM1 ou de CM2 : il faut le corriger,
  * pas mettre la liste à jour.
+ *
+ * Une seule exception, voulue : 21 empreintes relevées à nouveau quand
+ * « je » a enfin été élidé devant une voyelle accentuée (« J'écoute »,
+ * « J'étais », au lieu de « Je écoute »).
  */
 const ATTENDUES = attendues as Record<string, string[]>;
 

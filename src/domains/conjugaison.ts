@@ -86,7 +86,7 @@ const SUBJECT_SLOTS: SubjectSlot[] = [
  *  forme, pas l'élision — elle se décide d'après la bonne réponse, la seule
  *  que la phrase doive rendre grammaticale. */
 function elides(subject: SubjectSlot, form: string): boolean {
-  return subject.person === 'je' && /^[aeiouyh]/i.test(form);
+  return subject.person === 'je' && /^[aeiouyhàâäéèêëîïôöùûü]/i.test(form);
 }
 
 function subjectWithBlank(subject: SubjectSlot, correctForm: string): string {
