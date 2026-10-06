@@ -651,6 +651,10 @@ describe('expressions, registres, racines', () => {
     });
   });
 
+  it('le sens d\'une expression se lit seul, comme un choix de réponse : jamais « le dominer », où « le » ne renvoie à rien', () => {
+    EXPRESSIONS.forEach((e) => expect(e.sens, e.expression).not.toMatch(/^(le|la|les|lui|leur|y|en)\s/i));
+  });
+
   it('aucune expression ne dit « coûter » : « coûter les yeux de la tête » s\'écrit aussi « couter »', () => {
     EXPRESSIONS.forEach((e) => expect(`${e.expression} ${e.sens}`).not.toMatch(/coût|coûter/i));
   });

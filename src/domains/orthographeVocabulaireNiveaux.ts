@@ -472,7 +472,7 @@ export const EXPRESSIONS: Expression[] = [
   expression(SIXIEME_T2, '6e', 'appeler un chat un chat', 'dire les choses franchement'),
   expression(SIXIEME_T2, '6e', "ne pas être dans son assiette", 'se sentir mal'),
   expression(SIXIEME_T2, '6e', 'faire coup double', 'obtenir deux résultats en une fois'),
-  expression(SIXIEME_T2, '6e', 'mener quelqu\'un par le bout du nez', 'le dominer'),
+  expression(SIXIEME_T2, '6e', 'mener quelqu\'un par le bout du nez', "faire faire à quelqu'un ce qu'on veut"),
   expression(SIXIEME_T2, '6e', 'se mettre en quatre', 'faire tout son possible'),
   expression(SIXIEME_T2, '6e', 'tomber des nues', 'être très surpris'),
   expression(SIXIEME_T2, '6e', "passer l'éponge", 'pardonner'),
