@@ -37,8 +37,9 @@ describe('les niveaux', () => {
 });
 
 describe('les niveaux que l\'application propose', () => {
-  it('sont le CM1 et le CM2, et rien d\'autre pour l\'instant', () => {
-    expect(AVAILABLE_LEVELS).toEqual(['CM1', 'CM2']);
+  it('sont le CE1, le CE2, le CM1, le CM2 et la 6e : la 5e, la 4e et la 3e attendent leurs questions', () => {
+    expect(AVAILABLE_LEVELS).toEqual(['CE1', 'CE2', 'CM1', 'CM2', '6e']);
+    (['5e', '4e', '3e'] as Level[]).forEach((level) => expect(AVAILABLE_LEVELS).not.toContain(level));
   });
 
   it('sont des niveaux connus, dans l\'ordre de la scolarité', () => {

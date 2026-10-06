@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   ALL_LEVELS,
+  AVAILABLE_LEVELS,
   CYCLE_OF_LEVEL,
   SUBJECT_DOMAINS,
   subjectOf,
@@ -9,7 +10,6 @@ import {
   type Question,
   type Trimester,
 } from '../types';
-import * as aleatoire from '../lib/seededRandom';
 import * as conjugaison from './conjugaison';
 import * as accords from './accords';
 import * as orthographe from './orthographe';
@@ -36,11 +36,11 @@ import * as geometrie from './geometrie';
  * Le point-virgule reste proscrit à tous les âges, et les parenthèses en
  * histoire et en géographie aussi.
  *
- * Les questions du CM1 et du CM2 passent par les séances, comme pour l'élève.
- * Celles du CE1, du CE2 et de la 6e (maths) passent directement par leurs
- * générateurs : ces niveaux ne sont pas encore ouverts dans src/lib/contenu.ts,
- * et leurs questions n'en doivent pas moins être lisibles par des enfants de
- * sept ans. Les seuils du cycle 4 attendent leur contenu.
+ * Les questions de chaque niveau ouvert (src/lib/contenu.ts) passent par les
+ * séances, comme pour l'élève. Celles du CE1, du CE2 et de la 6e passent aussi
+ * directement par leurs générateurs, avec bien plus de graines que les séances
+ * n'en tirent : elles doivent être lisibles par des enfants de sept ans. Les
+ * seuils du cycle 4 attendent leur contenu.
  */
 interface Seuils {
   /** Mots d'une phrase de la consigne ou de l'énoncé. */
@@ -72,7 +72,7 @@ const wordsOf = (sentence: string) => sentence.split(/\s+/).filter((token) => /[
 /** Une phrase s'arrête au point, au point d'exclamation ou d'interrogation, et aux deux-points. */
 const sentencesOf = (text: string) => text.split(/[.!?:…]+(?:\s|$)/).filter((part) => wordsOf(part).length > 0);
 
-/** Les maths des trois niveaux qui ne sont pas encore ouverts : les questions que leurs générateurs fabriquent. */
+/** Les maths du CE1, du CE2 et de la 6e : les questions que leurs générateurs fabriquent, en nombre. */
 const GENERATEURS_DES_NOUVEAUX_NIVEAUX = [numeration.generate, calcul.generate, problemes.generate, geometrie.generate];
 const NOUVEAUX_NIVEAUX: Level[] = ['CE1', 'CE2', '6e'];
 
@@ -129,13 +129,11 @@ describe('les seuils de lisibilité', () => {
 describe('ce que lit l\'élève', () => {
   const questions = everyQuestion();
 
-  it('passe en revue le CM1, le CM2, et les maths du CE1, du CE2 et de la 6e', () => {
+  it('passe en revue chaque niveau que l\'application propose', () => {
     // Sans cela, un niveau qui n'aurait plus aucune question passerait tous
     // les contrôles ci-dessous sans rien avoir été lu.
     const levels = new Set(questions.map((entry) => entry.level));
-    expect(levels.has('CM1')).toBe(true);
-    expect(levels.has('CM2')).toBe(true);
-    NOUVEAUX_NIVEAUX.forEach((level) => expect(levels.has(level), level).toBe(true));
+    AVAILABLE_LEVELS.forEach((level) => expect(levels.has(level), level).toBe(true));
   });
 
   it('n\'a jamais de point-virgule', () => {
@@ -185,11 +183,10 @@ describe('ce que lit l\'élève', () => {
 });
 
 /**
- * Le français du CE1, du CE2 et de la 6e. Ces niveaux ne sont pas encore
- * ouverts dans src/lib/contenu.ts : leurs questions ne passent donc pas par
- * les séances, mais par les trois générateurs de français, appelés
- * directement. Elles n'en doivent pas moins être lisibles par un enfant de
- * sept ans, avec les seuils de son cycle.
+ * Le français du CE1, du CE2 et de la 6e, tiré directement des trois
+ * générateurs de français, avec bien plus de graines que les séances n'en
+ * tirent. Ces questions doivent être lisibles par un enfant de sept ans, avec
+ * les seuils de son cycle.
  */
 const NIVEAUX_FRANCAIS_ECRITS: Level[] = ['CE1', 'CE2', '6e'];
 
@@ -197,7 +194,7 @@ function questionsFrancaisDesNouveauxNiveaux(): QuestionDuNiveau[] {
   return NIVEAUX_FRANCAIS_ECRITS.flatMap((level) =>
     TRIMESTERS.flatMap((trimester) =>
       [conjugaison.generate, accords.generate, orthographe.generate].flatMap((generer) =>
-        Array.from({ length: 60 }, (_, seed) => generer(level, trimester, aleatoire.createRng((seed + 1) * 7919), 12))
+        Array.from({ length: 60 }, (_, seed) => generer(level, trimester, createRng((seed + 1) * 7919), 12))
           .flat()
           .map((question) => ({ level, question }))
       )

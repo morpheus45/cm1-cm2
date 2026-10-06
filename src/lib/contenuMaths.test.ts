@@ -1,32 +1,20 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { activitiesFor, CONTENT_FROM, notionsFor } from './contenu';
+import { describe, expect, it } from 'vitest';
+import { activitiesFor, notionsFor } from './contenu';
 import { buildSession } from './sessionBuilder';
 import { buildWorksheet, isAnswerCorrect, OPERATIONS_PER_WORKSHEET } from './worksheet';
 import { candidateOperations, candidateQuestions } from './evaluation';
 import { questionSignature } from './questionHistory';
-import { ALL_DOMAINS, ALL_TRIMESTERS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS } from '../types';
+import { ALL_TRIMESTERS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS } from '../types';
 import type { Level, Question } from '../types';
 
 /**
- * Les maths du CE1, du CE2 et de la 6e sont écrites, mais leurs niveaux ne
- * sont pas ouverts dans src/lib/contenu.ts : l'ouvrir est une autre décision
- * (src/lib/contenu.test.ts vérifie qu'ils restent fermés). Ce test les ouvre
- * le temps de chaque essai, pour s'assurer que, le jour venu, tout ce qui
- * consomme ces questions fonctionne : les séances, la feuille d'opérations à
+ * Les maths du CE1, du CE2 et de la 6e sont ouvertes dans src/lib/contenu.ts.
+ * Ce test s'assure que tout ce qui consomme ces questions fonctionne, tel que
+ * l'élève et la maîtresse le vivent : les séances, la feuille d'opérations à
  * poser, les évaluations de la maîtresse et la mémoire des questions déjà vues.
  */
 const NOUVEAUX_NIVEAUX: Level[] = ['CE1', 'CE2', '6e'];
 const MATHS = SUBJECT_DOMAINS.maths;
-
-const original = structuredClone(CONTENT_FROM);
-
-beforeEach(() => {
-  MATHS.forEach((domain) => NOUVEAUX_NIVEAUX.forEach((level) => (CONTENT_FROM[domain][level] = 1)));
-});
-// La table est partagée : chaque essai la remet comme il l'a trouvée.
-afterEach(() => {
-  ALL_DOMAINS.forEach((domain) => (CONTENT_FROM[domain] = structuredClone(original[domain])));
-});
 
 /** Une question bien formée : des choix distincts dont un seul est la bonne
  *  réponse, ou une construction à faire au doigt, et toujours une explication. */
@@ -43,7 +31,7 @@ function verifierLaQuestion(question: Question, contexte: string) {
   expect(question.choices[question.correctIndex], contexte).toBeDefined();
 }
 
-describe('les maths du CE1, du CE2 et de la 6e, une fois ouvertes', () => {
+describe('les maths du CE1, du CE2 et de la 6e', () => {
   it('proposent les quatre notions et toutes les séances de la matière', () => {
     NOUVEAUX_NIVEAUX.forEach((level) =>
       ALL_TRIMESTERS.forEach((trimester) => {

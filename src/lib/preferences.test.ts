@@ -56,16 +56,19 @@ describe('parsePreferences', () => {
   });
 
   it('ignore les valeurs qu\'elle ne reconnaît pas', () => {
-    const stored = JSON.stringify({ name: 42, level: 'CE2', trimester: 7, subject: 'musique' });
+    const stored = JSON.stringify({ name: 42, level: 'CP', trimester: 7, subject: 'musique' });
     expect(parsePreferences(stored)).toEqual(DEFAULT_PREFERENCES);
   });
 
   it('ne reprend qu\'un niveau que l\'application propose', () => {
-    expect(parsePreferences(JSON.stringify({ level: 'CM2' })).level).toBe('CM2');
+    (['CE1', 'CE2', 'CM1', 'CM2', '6e'] as const).forEach((level) =>
+      expect(parsePreferences(JSON.stringify({ level })).level, level).toBe(level)
+    );
     // Un niveau que l'application connaît, mais n'offre pas encore, comme un
     // niveau inconnu : le CM1.
-    expect(parsePreferences(JSON.stringify({ level: '6e' })).level).toBe('CM1');
-    expect(parsePreferences(JSON.stringify({ level: 'CP' })).level).toBe('CM1');
+    ['5e', '4e', '3e', 'CP'].forEach((level) =>
+      expect(parsePreferences(JSON.stringify({ level })).level, level).toBe('CM1')
+    );
   });
 
   it('relit l\'histoire et la géographie, avec leurs notions', () => {
