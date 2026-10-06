@@ -14,6 +14,7 @@ import { createRng } from '../lib/seededRandom';
 import * as numeration from './numeration';
 import * as calcul from './calcul';
 import * as problemes from './problemes';
+import * as geometrie from './geometrie';
 
 /**
  * Les questions sont lues par des enfants de 8 à 11 ans : des phrases
@@ -68,7 +69,7 @@ const wordsOf = (sentence: string) => sentence.split(/\s+/).filter((token) => /[
 const sentencesOf = (text: string) => text.split(/[.!?:…]+(?:\s|$)/).filter((part) => wordsOf(part).length > 0);
 
 /** Les maths des trois niveaux qui ne sont pas encore ouverts : les questions que leurs générateurs fabriquent. */
-const GENERATEURS_DES_NOUVEAUX_NIVEAUX = [numeration.generate, calcul.generate, problemes.generate];
+const GENERATEURS_DES_NOUVEAUX_NIVEAUX = [numeration.generate, calcul.generate, problemes.generate, geometrie.generate];
 const NOUVEAUX_NIVEAUX: Level[] = ['CE1', 'CE2', '6e'];
 
 function questionsDesNouveauxNiveaux(): QuestionDuNiveau[] {
