@@ -152,12 +152,14 @@ describe('availableAt : cumulatif à l\'intérieur d\'un cycle seulement', () =>
     expect(buildOperations('5e', 3, createRng(1), 6, { posableOnly: true })).toEqual([]);
 
     // La 6e est du cycle 3 : en conjugaison, elle reprend tout ce que le CM1 et
-    // le CM2 ont enseigné. En calcul, elle a ses propres techniques, écrites
-    // avec les nombres de son programme : les seuils du CM ne lui servent plus
-    // (calculNiveaux.test.ts).
+    // le CM2 ont enseigné. En calcul et en problèmes, elle a ses propres
+    // techniques et ses propres sortes de problèmes, écrites avec les nombres
+    // de son programme : les seuils du CM ne lui servent plus
+    // (calculNiveaux.test.ts, problemesNiveaux.test.ts).
     expect(eligibleOperationKinds('6e', 1)).toHaveLength(11);
     expect(eligibleOperationKinds('6e', 3)).toHaveLength(14);
     expect(eligibleTenses('6e', 1)).toEqual(eligibleTenses('CM2', 3));
-    expect(eligibleTemplateCount('6e', 1)).toBe(eligibleTemplateCount('CM2', 3));
+    expect(eligibleTemplateCount('6e', 1)).toBe(11);
+    expect(eligibleTemplateCount('6e', 3)).toBe(35);
   });
 });
