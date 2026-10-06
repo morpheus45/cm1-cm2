@@ -20,6 +20,32 @@ export const plafond = (stage: Stage) => (stage <= -3 ? 1000 : stage <= 6 ? 1000
 
 export const nombresEn = (valeurs: number[], unite = '') => valeurs.map((valeur) => (unite ? `${valeur} ${unite}` : String(valeur)));
 
+// --- Des prix qui ont l'air vrais ---------------------------------------------------------------------------
+
+/** Un article et la fourchette de son prix, en euros : un cahier ne coûte pas 38 €, ni un jeu 2 €. */
+export interface ArticleAPrix {
+  /** « un cahier », « une règle ». */
+  un: string;
+  min: number;
+  max: number;
+}
+
+export const ARTICLES_A_PRIX: ArticleAPrix[] = [
+  { un: 'un cahier', min: 2, max: 6 },
+  { un: 'un stylo', min: 1, max: 5 },
+  { un: 'une règle', min: 1, max: 5 },
+  { un: 'une gomme', min: 1, max: 3 },
+  { un: 'une trousse', min: 4, max: 15 },
+  { un: 'une glace', min: 2, max: 6 },
+  { un: 'un gâteau', min: 3, max: 12 },
+  { un: 'un livre', min: 5, max: 20 },
+  { un: 'un jeu', min: 8, max: 35 },
+  { un: 'un puzzle', min: 6, max: 25 },
+  { un: 'un ballon', min: 3, max: 20 },
+  { un: 'une casquette', min: 5, max: 20 },
+  { un: 'un cartable', min: 15, max: 45 },
+];
+
 /** « 3 h », « 3 h 30 », « 14 h 05 » : l'heure comme on l'écrit à l'école. */
 export const heure = (h: number, minutes: number) => (minutes === 0 ? `${h} h` : `${h} h ${String(minutes).padStart(2, '0')}`);
 

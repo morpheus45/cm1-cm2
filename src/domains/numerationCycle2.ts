@@ -3,7 +3,7 @@ import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
 import { droiteGraduee, figurePartagee } from './figuresMaths';
 import { ecritureChiffree, numberToFrenchWords } from './nombresEnLettres';
-import { echanges, entierAvecBords, fabriquer, fauxNombres, type Brique, type Enonce } from './mathsCommun';
+import { accorde, echanges, entierAvecBords, fabriquer, fauxNombres, type Brique, type Enonce } from './mathsCommun';
 
 /**
  * La numération du CE1 et du CE2 (programme de mathématiques du cycle 2, 2025).
@@ -136,8 +136,9 @@ function decomposition(name: string, minStage: Stage, tirer: (rng: Rng, stage: S
         instruction: 'Choisis la bonne décomposition',
         prompt: `Décompose ${ecrit}`,
         correct: sommeDeValeurs(n),
+        // Des sommes comme la bonne : « 20 » ou « 9 » ne ressemblent pas à une décomposition, on les écarte.
         wrong: [
-          ...fauxDuNiveau(n, erreursDeNombre(n), stage, 1, true).map(sommeDeValeurs),
+          ...fauxDuNiveau(n, erreursDeNombre(n).filter((faux) => termes(faux).length >= 2), stage, 1, true).map(sommeDeValeurs),
           ...(chiffresSeuls !== sommeDeValeurs(n) ? [chiffresSeuls] : []),
         ],
         explanation: `${ecrit} = ${sommeDeValeurs(n)}.`,
@@ -217,14 +218,16 @@ function chiffres(name: string, minStage: Stage, tirer: (rng: Rng, stage: Stage)
   });
 }
 
-const echangesDeRang: Brique = forme('echanges-de-rang', -5, (rng) => {
-  const rang = rngInt(rng, 0, 2);
-  const [petit, grand] = [RANGS[rang], RANGS[rang + 1]];
+const echangesDeRang: Brique = forme('echanges-de-rang', -5, (rng, stage) => {
+  // Le CE1 ne connaît que les unités, les dizaines et les centaines : le millier est une notion du CE2.
+  const rangs = stage <= -3 ? RANGS.slice(0, 3) : RANGS;
+  const rang = rngInt(rng, 0, rangs.length - 2);
+  const [petit, grand] = [rangs[rang], rangs[rang + 1]];
   return {
     instruction: 'Complète',
     prompt: `10 ${petit.pluriel}, c'est 1 …`,
     correct: grand.nom,
-    wrong: RANGS.filter((candidat) => candidat !== grand).map((candidat) => candidat.nom),
+    wrong: rangs.filter((candidat) => candidat !== grand).map((candidat) => candidat.nom),
     explanation: `10 ${petit.pluriel} font 1 ${grand.nom}.`,
   };
 });
@@ -426,7 +429,7 @@ function droite(name: string, minStage: Stage, configs: { pas: number; debut: (r
         figure: droiteGraduee({ intervalles, etiquettes, fleche: rang }, alt),
         correct: ecritureChiffree(valeur(rang)),
         wrong: fauxNombres(valeur(rang), autres, { min: Math.max(0, premier), max: Math.min(plafond(stage), valeur(intervalles)) }).map(ecritureChiffree),
-        explanation: `On compte ${rang} graduations de ${ecritureChiffree(pas)} depuis ${ecritureChiffree(valeur(0))} : ${ecritureChiffree(valeur(rang))}.`,
+        explanation: `On compte ${rang} ${accorde(rang, 'graduation')} de ${ecritureChiffree(pas)} depuis ${ecritureChiffree(valeur(0))} : ${ecritureChiffree(valeur(rang))}.`,
       };
     }
     // « Quelle lettre est à la place de 350 ? » : quatre lettres, une seule au bon endroit.
@@ -440,7 +443,7 @@ function droite(name: string, minStage: Stage, configs: { pas: number; debut: (r
       figure: droiteGraduee({ intervalles, etiquettes, lettres: Object.fromEntries(rangs.map((rang, index) => [rang, lettres[index]])) }, alt),
       correct: lettres[cherche],
       wrong: lettres.filter((lettre) => lettre !== lettres[cherche]),
-      explanation: `${ecritureChiffree(valeur(rangs[cherche]))} est à ${rangs[cherche]} graduations de ${ecritureChiffree(valeur(0))} : c'est la lettre ${lettres[cherche]}.`,
+      explanation: `${ecritureChiffree(valeur(rangs[cherche]))} est à ${rangs[cherche]} ${accorde(rangs[cherche], 'graduation')} de ${ecritureChiffree(valeur(0))} : c'est la lettre ${lettres[cherche]}.`,
     };
   });
 }
@@ -643,7 +646,8 @@ function monnaie(name: string, minStage: Stage, maxEuros: number): Brique {
         explanation: `${euros} euro${euros > 1 ? 's' : ''}, une virgule, puis ${centimes} centimes : ${juste}.`,
       };
     }
-    const dit = (e: number, c: number) => `${e} euro${e > 1 ? 's' : ''} ${c} centime${c > 1 ? 's' : ''}`;
+    // « 76 euros », pas « 76 euros 0 centime » : on ne dit pas les centimes quand il n'y en a pas.
+    const dit = (e: number, c: number) => `${e} euro${e > 1 ? 's' : ''}${c > 0 ? ` ${c} centime${c > 1 ? 's' : ''}` : ''}`;
     return {
       instruction: 'Choisis ce que veut dire ce prix',
       prompt: juste,

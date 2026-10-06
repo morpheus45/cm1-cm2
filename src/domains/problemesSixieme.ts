@@ -3,7 +3,7 @@ import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
 import { schemaEnBarres, tableauADoubleEntree, tableauDeProportionnalite } from './figuresMaths';
 import { de, decimalAleatoire, deuxPrenoms, fabriquer, fauxNombres, il, OBJETS, pronom, texte, type Brique } from './mathsCommun';
-import { donnees, forme, heure, INSTRUCTION, INSTRUCTION_DONNEES } from './problemesCommun';
+import { ARTICLES_A_PRIX, donnees, forme, heure, INSTRUCTION, INSTRUCTION_DONNEES } from './problemesCommun';
 
 /**
  * Les problèmes de la 6e (programme de mathématiques du cycle 3, 2025).
@@ -96,14 +96,12 @@ const lu = (centiemesDuNombre: number, decimales: number) =>
 /** Les nombres de décimales de deux termes : le plus souvent, ils diffèrent (là où l'on se trompe). */
 const DECIMALES: [number, number][] = [[2, 1], [1, 2], [2, 1], [1, 2], [2, 2], [1, 1]];
 
-const ARTICLES = ['un livre', 'un jeu', 'une trousse', 'un puzzle', 'un cahier', 'un ballon', 'un sac', 'une casquette', 'un cartable'];
-
 const ARTICLES_PLURIELS = [
   { nom: 'cahiers', chacun: 'chacun' },
   { nom: 'stylos', chacun: 'chacun' },
   { nom: 'gommes', chacun: 'chacune' },
   { nom: 'règles', chacun: 'chacune' },
-  { nom: 'jeux', chacun: 'chacun' },
+  { nom: 'carnets', chacun: 'chacun' },
   { nom: 'glaces', chacun: 'chacune' },
   { nom: 'pains', chacun: 'chacun' },
   { nom: 'crayons', chacun: 'chacun' },
@@ -121,14 +119,18 @@ const heureDe = (minutes: number) => heure(Math.floor(minutes / 60), minutes % 6
 
 const GRANDEURS = [
   { un: 'Un sac de pommes', deux: 'Un sac de poires', verbe: 'pèse', unite: 'kg', maximum: 12, somme: 'Quelle est la masse des deux sacs ?', ecart: 'Quelle est la différence de masse ?' },
-  { un: 'Une planche', deux: 'Une autre planche', verbe: 'mesure', unite: 'm', maximum: 12, somme: 'Mises bout à bout, quelle longueur ont-elles ?', ecart: 'Quelle est la différence de longueur ?' },
-  { un: 'Un cahier', deux: 'Un stylo', verbe: 'coûte', unite: '€', maximum: 15, somme: 'Combien coûtent les deux ?', ecart: 'Quelle est la différence de prix ?' },
-  { un: 'Une bouteille', deux: 'Une carafe', verbe: 'contient', unite: 'L', maximum: 10, somme: 'Combien de litres y a-t-il en tout ?', ecart: 'Quelle est la différence de contenance ?' },
+  { un: 'Un ruban', deux: 'Une corde', verbe: 'mesure', unite: 'm', maximum: 12, somme: 'Quelle est la longueur totale ?', ecart: 'Quelle est la différence de longueur ?' },
+  { un: 'Un livre', deux: 'Un puzzle', verbe: 'coûte', unite: '€', minimum: 6, maximum: 15, somme: 'Combien coûtent les deux ?', ecart: 'Quelle est la différence de prix ?' },
+  { un: 'Un bidon', deux: 'Un seau', verbe: 'contient', unite: 'L', maximum: 10, somme: 'Combien de litres y a-t-il en tout ?', ecart: 'Quelle est la différence de contenance ?' },
 ];
 
 /** Un décimal pour cette grandeur : un prix s'écrit avec ses deux décimales, les autres ont une ou deux décimales. */
-const valeurDeGrandeur = (rng: Rng, g: { unite: string; maximum: number }, entierMin: number, entierMax: number, decimales: number) =>
-  g.unite === '€' ? prix(rng, entierMin, Math.min(entierMax, g.maximum)) : centiemes(rng, entierMin, Math.min(entierMax, g.maximum), decimales);
+const valeurDeGrandeur = (rng: Rng, g: { unite: string; minimum?: number; maximum: number }, entierMin: number, entierMax: number, decimales: number) => {
+  const haut = Math.min(entierMax, g.maximum);
+  // Un prix a un plancher (un livre ne coûte pas 1,05 €), sauf quand le plafond du tirage descend plus bas.
+  const bas = Math.max(entierMin, g.minimum ?? entierMin) <= haut ? Math.max(entierMin, g.minimum ?? entierMin) : entierMin;
+  return g.unite === '€' ? prix(rng, bas, haut) : centiemes(rng, bas, haut, decimales);
+};
 
 const decimauxAdditif = forme('decimaux-additif', 7, (rng) => {
   const g = rngPick(rng, GRANDEURS);
@@ -159,13 +161,17 @@ const decimauxSoustractif = forme('decimaux-soustractif', 7, (rng) => {
   const variante = rngInt(rng, 0, 2);
   if (variante === 0) {
     const [moi] = deuxPrenoms(rng);
-    const billet = rngPick(rng, [5, 10, 20, 50]);
-    const eurosDuPrix = rngInt(rng, Math.ceil(billet * 0.3), billet - 1);
+    const article = rngPick(rng, ARTICLES_A_PRIX);
+    // Un billet qui convient à l'article : le prix a l'air vrai et reste sous le billet.
+    const bas = (billet: number) => Math.max(article.min, Math.ceil(billet * 0.3));
+    const haut = (billet: number) => Math.min(article.max - 1, billet - 1);
+    const billet = rngPick(rng, [5, 10, 20, 50].filter((candidat) => bas(candidat) <= haut(candidat)));
+    const eurosDuPrix = rngInt(rng, bas(billet), haut(billet));
     const aPayer = eurosDuPrix * 100 + rngPick(rng, CENTIMES_USUELS);
     const rendu = billet * 100 - aPayer;
     return {
       instruction: INSTRUCTION,
-      prompt: `${moi.nom} achète ${rngPick(rng, ARTICLES)} à ${euros(aPayer)}. ${il(moi)} paie avec un billet de ${billet} €. Combien lui rend-on ?`,
+      prompt: `${moi.nom} achète ${article.un} à ${euros(aPayer)}. ${il(moi)} paie avec un billet de ${billet} €. Combien lui rend-on ?`,
       correct: euros(rendu),
       // Les euros et les centimes soustraits chacun de leur côté, sans l'échange ; un euro de trop ou de moins.
       wrong: fauxGrandeurs(rendu, [(billet - eurosDuPrix) * 100 + (aPayer % 100), rendu + 100, rendu - 100, rendu + 10, rendu - 10, aPayer, billet * 100 + aPayer], '€'),
@@ -176,7 +182,8 @@ const decimauxSoustractif = forme('decimaux-soustractif', 7, (rng) => {
   if (variante === 1) {
     const g = rngPick(rng, GRANDEURS);
     const [dp, dq] = g.unite === '€' ? [2, 2] : [da, db];
-    const a = valeurDeGrandeur(rng, g, 3, 20, dp);
+    // Le plus cher des deux dépasse d'au moins un euro le plancher des prix : l'autre en a encore un.
+    const a = valeurDeGrandeur(rng, g, g.unite === '€' ? 7 : 3, 20, dp);
     const b = valeurDeGrandeur(rng, g, 1, Math.floor(a / 100) - 1, dq);
     const reste = a - b;
     const d = Math.max(dp, dq);
@@ -204,7 +211,7 @@ const decimauxSoustractif = forme('decimaux-soustractif', 7, (rng) => {
 
 const PRODUITS = [
   { debut: 'Un stylo coûte', question: (n: number) => `Combien coûtent ${n} stylos ?`, unite: '€', entier: [1, 4] },
-  { debut: 'Un cahier coûte', question: (n: number) => `Quel est le prix de ${n} cahiers ?`, unite: '€', entier: [1, 5] },
+  { debut: 'Un cahier coûte', question: (n: number) => `Quel est le prix de ${n} cahiers ?`, unite: '€', entier: [2, 5] },
   { debut: 'Un pain coûte', question: (n: number) => `Combien paie-t-on pour ${n} pains ?`, unite: '€', entier: [1, 3] },
   { debut: 'Un paquet de farine pèse', question: (n: number) => `Combien pèsent ${n} paquets ?`, unite: 'kg', entier: [1, 5] },
   { debut: 'Une bouteille contient', question: (n: number) => `Combien de litres contiennent ${n} bouteilles ?`, unite: 'L', entier: [1, 3] },
@@ -429,7 +436,8 @@ const perimetre = forme('perimetre', 7, (rng) => {
   const dixiemes = (min: number, max: number, avecDecimale: boolean) => (avecDecimale ? rngInt(rng, min * 10 + 1, max * 10 - 1) : rngInt(rng, min, max) * 10);
   const ecrit = (t: number) => `${texte(t / 10)} ${unite}`;
   if (variante === 0 || variante === 1) {
-    const [longueur, largeur] = [dixiemes(8, 40, rng() < 0.4), dixiemes(3, 7, rng() < 0.4)];
+    // Un jardin est plus large qu'une bande de 3 m.
+    const [longueur, largeur] = variante === 1 ? [dixiemes(12, 40, rng() < 0.4), dixiemes(6, 11, rng() < 0.4)] : [dixiemes(8, 40, rng() < 0.4), dixiemes(3, 7, rng() < 0.4)];
     const p = 2 * (longueur + largeur);
     return {
       instruction: INSTRUCTION,
@@ -617,7 +625,7 @@ function pourcentage(name: string, minStage: Stage, valeurs: number[]): Brique {
     const base = pas * rngInt(rng, min, max);
     const part = (base * p) / 100;
     const variante = rngInt(rng, 0, 3);
-    const article = base <= 100 ? 'Un jeu' : base <= 300 ? 'Un vélo' : 'Un ordinateur';
+    const article = base <= 100 ? 'Un jeu vidéo' : base <= 300 ? 'Un vélo' : 'Un ordinateur';
     if (variante === 0) {
       return {
         instruction: INSTRUCTION,
@@ -881,10 +889,10 @@ const divisionDecimale = forme('division-decimale', 9, (rng) => {
 });
 
 const OBJETS_VENDUS = [
-  { nom: 'cahiers', unite: '€' },
-  { nom: 'stylos', unite: '€' },
-  { nom: 'glaces', unite: '€' },
-  { nom: 'tickets de cinéma', unite: '€' },
+  { nom: 'cahiers', un: 'cahier', unite: '€' },
+  { nom: 'stylos', un: 'stylo', unite: '€' },
+  { nom: 'glaces', un: 'glace', unite: '€' },
+  { nom: 'tickets de cinéma', un: 'ticket de cinéma', unite: '€' },
 ];
 
 const passageALUnite = forme('passage-unite', 9, (rng) => {
@@ -900,7 +908,7 @@ const passageALUnite = forme('passage-unite', 9, (rng) => {
       correct: euros(p2),
       // Le raisonnement additif (« 3 de plus, donc 3 € de plus »), le prix d'un seul, le prix non divisé.
       wrong: fauxGrandeurs(p2, [p1 + (n2 - n1) * 100, prixUnitaire, p1 * n2, p2 + 100, p2 - 100, ...(p2 % 100 === 0 ? [] : [p2 + 10, p2 - 10]), p1 * (n2 - n1), p2 * 2], '€'),
-      explanation: `1 ${objet.nom.replace(/s$/, '')} coûte ${euros(prixUnitaire)}. ${n2} × ${fixe(prixUnitaire, 2)} = ${fixe(p2, 2)}.`,
+      explanation: `1 ${objet.un} coûte ${euros(prixUnitaire)}. ${n2} × ${fixe(prixUnitaire, 2)} = ${fixe(p2, 2)}.`,
     };
   }
   const [par, n1] = [rngPick(rng, [4, 6, 8, 9, 12, 15]), rngInt(rng, 2, 6)];

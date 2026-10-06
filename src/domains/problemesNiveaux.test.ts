@@ -5,9 +5,9 @@ import { fitsInFrame, type Figure, type Shape } from '../lib/figures';
 import { availableAt, stageOf } from '../lib/progression';
 import { ALL_TRIMESTERS, type Level, type Question, type Trimester } from '../types';
 import { eligibleTemplateCount, generate } from './problemes';
-import { BRIQUES_CYCLE2 } from './problemesCycle2';
+import { BRIQUES_CYCLE2, PAIRES, PAIRES_GRANDES } from './problemesCycle2';
 import { BRIQUES_SIXIEME } from './problemesSixieme';
-import { THEMES } from './problemesCommun';
+import { ARTICLES_A_PRIX, THEMES } from './problemesCommun';
 
 /**
  * Les problèmes du CE1, du CE2 et de la 6e : chaque question est refaite ici
@@ -203,7 +203,8 @@ const ORACLES: Record<string, (question: Question) => Attendu> = {
   },
   argent: ({ prompt }) => {
     const [a, b] = nombresDe(prompt);
-    return nombre(prompt.includes('pour les deux') ? a + b : a - b, '€');
+    // Une différence de prix ne dépend pas de l'ordre où les deux prix sont dits.
+    return nombre(prompt.includes('pour les deux') ? a + b : Math.abs(a - b), '€');
   },
   longueurs: ({ prompt }) => {
     const [a, b] = nombresDe(prompt);
@@ -212,7 +213,7 @@ const ORACLES: Record<string, (question: Question) => Attendu> = {
   jours: ({ prompt }) => {
     const [, premier, second] = nombresDe(prompt);
     if (prompt.includes('Combien de semaines')) return nombre(premier / 7);
-    return nombre(prompt.includes('jours ?') && prompt.includes(' et ') ? 7 * premier + second : 7 * premier);
+    return nombre(/ et \d+ jours? \?$/.test(prompt) ? 7 * premier + second : 7 * premier);
   },
   tableau: (question) => donnees(question, lireTableau),
   pictogramme: (question) => donnees(question, lirePictogramme),
@@ -811,6 +812,45 @@ describe('les sortes de problèmes', () => {
     // Pas de fraction, de pourcentage ni de division euclidienne avant le 2e trimestre.
     questions('6e', 1).forEach((question) => {
       expect([question.prompt, ...question.choices].join(' '), question.prompt).not.toMatch(/\d\/\d|%|probable|échelle/);
+    });
+  });
+});
+
+describe('des quantités et des prix qui ont l\'air vrais', () => {
+  const enonces = () => parCellule((level, trimester) => questions(level, trimester, 24, 120)).flatMap(({ valeur }) => valeur.map((question) => question.prompt));
+  const echapper = (texte: string) => texte.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  it('donnent à chaque article un prix de sa fourchette : un cahier ne coûte pas 38 €', () => {
+    const prompts = enonces();
+    ARTICLES_A_PRIX.forEach(({ un, min, max }) => {
+      const motif = new RegExp(`(?:${echapper(un)}|${echapper(un.charAt(0).toUpperCase() + un.slice(1))}) (?:coûte|à) (\\d+)(?:,\\d+)? €`, 'g');
+      const prix = prompts.flatMap((prompt) => [...prompt.matchAll(motif)].map((m) => Number(m[1])));
+      expect(prix.length, `${un} n'est jamais acheté`).toBeGreaterThan(0);
+      prix.forEach((euros) => {
+        expect(euros, `${un} à ${euros} €`).toBeGreaterThanOrEqual(min);
+        expect(euros, `${un} à ${euros} €`).toBeLessThanOrEqual(max);
+      });
+    });
+  });
+
+  it('ne mettent dans un lieu que ce qu\'il peut contenir : pas 8 000 personnes dans un bus', () => {
+    const prompts = enonces();
+    [...PAIRES, ...PAIRES_GRANDES].forEach((paire) => {
+      const reunion = new RegExp(`^${echapper(paire.lieu)}, il y a (\\d+) ${echapper(paire.a)} et (\\d+) ${echapper(paire.b)}\\.`);
+      const complement = new RegExp(`^${echapper(paire.lieu)}, il y a (\\d+) [^.]+\\. \\d+ sont des ${echapper(paire.a)}\\. Les autres sont des ${echapper(paire.b)}\\.`);
+      prompts.forEach((prompt) => {
+        const [, a, b] = reunion.exec(prompt) ?? [];
+        if (a !== undefined) expect(Number(a) + Number(b), prompt).toBeLessThanOrEqual(paire.max);
+        const [, total] = complement.exec(prompt) ?? [];
+        if (total !== undefined) expect(Number(total), prompt).toBeLessThanOrEqual(paire.max);
+      });
+    });
+  });
+
+  it('réservent les milliers à des commerces et des écoles : un enfant ne possède pas 4 000 feutres', () => {
+    enonces().forEach((prompt) => {
+      const enfant = /^(?:Léa|Tom|Inès|Hugo|Zoé|Noé|Jade|Lucas|Emma|Nathan|Manon|Louis|Chloé|Adam|Lina|Yanis|Clara|Théo|Anna|Rayan|Sofia|Maël|Eva|Enzo) a (\d+) /.exec(prompt);
+      if (enfant) expect(Number(enfant[1]), prompt).toBeLessThan(1000);
     });
   });
 });

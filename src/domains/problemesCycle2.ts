@@ -3,8 +3,8 @@ import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
 import { diagrammeEnBarres } from './figuresMaths';
 import { tablesAuProgramme } from './tables';
-import { CONTENANTS, de, deuxPrenoms, fabriquer, fauxNombres, il, majuscule, OBJETS, pronom, type Brique } from './mathsCommun';
-import { donnees, forme, heure, INSTRUCTION, INSTRUCTION_DONNEES, nombresEn, plafond, THEMES } from './problemesCommun';
+import { accorde, CONTENANTS, de, deuxPrenoms, fabriquer, fauxNombres, il, majuscule, OBJETS, pronom, que, type Brique, type Prenom } from './mathsCommun';
+import { ARTICLES_A_PRIX, donnees, forme, heure, INSTRUCTION, INSTRUCTION_DONNEES, nombresEn, plafond, THEMES, type ArticleAPrix } from './problemesCommun';
 
 /**
  * Les problèmes du CE1 et du CE2 (programme de mathématiques du cycle 2, 2025).
@@ -69,31 +69,55 @@ function erreursAdditives(a: number, b: number, reponse: number, plus: boolean):
 
 // --- Les contextes : prix, longueurs, lieux --------------------------------------------------------------------
 
-const PAIRES = [
-  { lieu: 'Dans la cour', a: 'filles', b: 'garçons', total: "d'enfants" },
-  { lieu: 'Dans le pré', a: 'vaches', b: 'moutons', total: "d'animaux" },
-  { lieu: 'Dans le panier', a: 'pommes', b: 'poires', total: 'de fruits' },
-  { lieu: 'Dans le jardin', a: 'roses', b: 'tulipes', total: 'de fleurs' },
-  { lieu: 'Dans le bus', a: 'adultes', b: 'enfants', total: 'de personnes' },
-  { lieu: 'Dans la classe', a: 'filles', b: 'garçons', total: "d'élèves" },
-  { lieu: 'Au zoo', a: 'singes', b: 'lions', total: "d'animaux" },
-  { lieu: 'Au marché', a: 'tomates', b: 'carottes', total: 'de légumes' },
-  { lieu: 'Au parc', a: 'canards', b: 'cygnes', total: "d'oiseaux" },
-  { lieu: 'Dans la ferme', a: 'poules', b: 'lapins', total: "d'animaux" },
+/** Un lieu où l'on compte deux sortes de choses : `max` est le plus grand total qu'on y trouve vraiment. */
+export interface Paire {
+  lieu: string;
+  a: string;
+  b: string;
+  total: string;
+  max: number;
+}
+
+export const PAIRES: Paire[] = [
+  { lieu: 'Dans la cour', a: 'filles', b: 'garçons', total: "d'enfants", max: 200 },
+  { lieu: 'Dans le pré', a: 'vaches', b: 'moutons', total: "d'animaux", max: 200 },
+  { lieu: 'Dans le panier', a: 'pommes', b: 'poires', total: 'de fruits', max: 60 },
+  { lieu: 'Dans le jardin', a: 'roses', b: 'tulipes', total: 'de fleurs', max: 200 },
+  { lieu: 'Dans le bus', a: 'adultes', b: 'enfants', total: 'de personnes', max: 80 },
+  { lieu: 'Dans la classe', a: 'filles', b: 'garçons', total: "d'élèves", max: 30 },
+  { lieu: 'Au zoo', a: 'singes', b: 'zèbres', total: "d'animaux", max: 100 },
+  { lieu: 'Au marché', a: 'tomates', b: 'carottes', total: 'de légumes', max: 10000 },
+  { lieu: 'Au parc', a: 'canards', b: 'cygnes', total: "d'oiseaux", max: 100 },
+  { lieu: 'Dans la ferme', a: 'poules', b: 'lapins', total: "d'animaux", max: 300 },
 ];
 
-const ARTICLES_A_PRIX = ['un cahier', 'un stylo', 'une règle', 'un livre', 'une gomme', 'un jeu', 'une glace', 'un ballon', 'un gâteau', 'une trousse', 'un puzzle', 'une casquette'];
+/** Des lieux où l'on compte par milliers, pour les nombres de quatre chiffres du CE2. */
+export const PAIRES_GRANDES: Paire[] = [
+  { lieu: 'Dans le stade', a: 'adultes', b: 'enfants', total: 'de spectateurs', max: 10000 },
+  { lieu: 'Dans la bibliothèque', a: 'romans', b: 'albums', total: 'de livres', max: 10000 },
+  { lieu: 'Dans le verger', a: 'pommiers', b: 'poiriers', total: "d'arbres", max: 10000 },
+  { lieu: 'Dans la forêt', a: 'chênes', b: 'sapins', total: "d'arbres", max: 10000 },
+  { lieu: 'À la librairie', a: 'romans', b: 'bandes dessinées', total: 'de livres', max: 10000 },
+  { lieu: 'Dans le musée', a: 'tableaux', b: 'sculptures', total: "d'œuvres", max: 10000 },
+];
+
+/** Les lieux où l'on peut compter jusqu'à `limite` : quelques dizaines dans un panier, des milliers dans un stade. */
+const lieuxJusqua = (limite: number): Paire[] => (limite > 1000 ? [...PAIRES_GRANDES, ...PAIRES.filter(({ max }) => max > 1000)] : PAIRES);
 
 const RUBANS = ['un ruban', 'une ficelle', 'une corde', 'une planche', 'un fil', 'une baguette', 'une barre', 'un tuyau'];
 const autre = (objet: string) => objet.replace(/^(un|une) /, (_, article: string) => `${article} autre `);
 
+/** Là où des gens entrent et sortent : `min` et `max` sont la plus petite et la plus grande affluence qu'on y voit vraiment. */
 const SEQUENCES = [
-  { lieu: 'Dans le train', objet: 'voyageurs', sortent: 'descendent', entrent: 'montent' },
-  { lieu: 'Dans le bus', objet: 'passagers', sortent: 'descendent', entrent: 'montent' },
-  { lieu: 'Dans le camping', objet: 'campeurs', sortent: 'partent', entrent: 'arrivent' },
-  { lieu: 'Dans le cinéma', objet: 'spectateurs', sortent: 'sortent', entrent: 'entrent' },
-  { lieu: 'Dans le stade', objet: 'supporters', sortent: 'partent', entrent: 'arrivent' },
-  { lieu: 'Dans la salle', objet: 'personnes', sortent: 'partent', entrent: 'arrivent' },
+  { lieu: 'Dans le train', objet: 'voyageurs', sortent: 'descendent', entrent: 'montent', min: 20, max: 90 },
+  { lieu: 'Dans le bus', objet: 'passagers', sortent: 'descendent', entrent: 'montent', min: 20, max: 90 },
+  { lieu: 'Dans le camping', objet: 'campeurs', sortent: 'partent', entrent: 'arrivent', min: 20, max: 3000 },
+  { lieu: 'Dans le cinéma', objet: 'spectateurs', sortent: 'sortent', entrent: 'entrent', min: 30, max: 300 },
+  { lieu: 'Dans le stade', objet: 'supporters', sortent: 'partent', entrent: 'arrivent', min: 300, max: 3000 },
+  { lieu: 'Dans la salle', objet: 'personnes', sortent: 'partent', entrent: 'arrivent', min: 20, max: 500 },
+  { lieu: 'Dans le musée', objet: 'visiteurs', sortent: 'sortent', entrent: 'entrent', min: 20, max: 3000 },
+  { lieu: 'Dans la gare', objet: 'voyageurs', sortent: 'partent', entrent: 'arrivent', min: 20, max: 3000 },
+  { lieu: 'Dans le parc', objet: 'visiteurs', sortent: 'partent', entrent: 'arrivent', min: 20, max: 3000 },
 ];
 
 const ACTIVITES = ['Le film', 'Le spectacle', 'Le match', 'Le concert', 'Le cours', 'Le dessin animé', 'Le trajet', 'Le goûter'];
@@ -111,35 +135,71 @@ const RANGEES = [
 
 // --- Les problèmes à un pas : additifs et soustractifs -----------------------------------------------------------------
 
+/** Qui possède des milliers de choses : un commerce, une école — pas un enfant. */
+interface Stock extends Prenom {
+  objets: string[];
+  /** Ce qu'il fait quand il en reçoit, quand il en donne. */
+  entre: string;
+  sort: string;
+}
+
+const STOCKS: Stock[] = [
+  { nom: 'la librairie', fille: true, objets: ['livres', 'cahiers', 'stylos'], entre: 'reçoit', sort: 'vend' },
+  { nom: 'la bibliothèque', fille: true, objets: ['livres'], entre: 'reçoit', sort: 'prête' },
+  { nom: "l'école", fille: true, objets: ['cahiers', 'crayons', 'feutres', 'livres'], entre: 'reçoit', sort: 'utilise' },
+  { nom: 'le collège', fille: false, objets: ['cahiers', 'crayons', 'livres'], entre: 'reçoit', sort: 'utilise' },
+  { nom: 'la papeterie', fille: true, objets: ['cahiers', 'stylos', 'crayons', 'feutres', 'gommes'], entre: 'reçoit', sort: 'vend' },
+  { nom: 'le magasin de sport', fille: false, objets: ['ballons', 'casquettes'], entre: 'reçoit', sort: 'vend' },
+  { nom: 'la boulangerie', fille: true, objets: ['croissants', 'gâteaux', 'biscuits'], entre: 'prépare', sort: 'vend' },
+  { nom: 'le fermier', fille: false, objets: ['œufs', 'pommes', 'poires'], entre: 'ramasse', sort: 'vend' },
+];
+
+/** Un commerce ou une école, et une chose qu'il compte par milliers. */
+function unStock(rng: Rng): { stock: Stock; objet: string } {
+  const stock = rngPick(rng, STOCKS);
+  return { stock, objet: rngPick(rng, stock.objets) };
+}
+
 const ajout = forme('ajout', -5, (rng, stage) => {
-  const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
-  const [a, b] = termesDeLaSomme(rng, borne(rng, stage));
-  return {
+  const limite = borne(rng, stage);
+  const [a, b] = termesDeLaSomme(rng, limite);
+  const resultat = {
     instruction: INSTRUCTION,
-    prompt: `${moi.nom} a ${a} ${objet}. ${il(moi)} en gagne ${b}. Combien ${de(objet)} a-t-${pronom(moi)} maintenant ?`,
     correct: String(a + b),
     wrong: nombresEn(fauxEntiers(a + b, erreursAdditives(a, b, a + b, true), stage)),
     explanation: `On ajoute : ${a} + ${b} = ${a + b}.`,
   };
+  if (limite > 1000) {
+    const { stock, objet } = unStock(rng);
+    return { ...resultat, prompt: `${majuscule(stock.nom)} a ${a} ${objet}. ${il(stock)} en ${stock.entre} ${b}. Combien ${de(objet)} a-t-${pronom(stock)} maintenant ?` };
+  }
+  const [moi] = deuxPrenoms(rng);
+  const objet = rngPick(rng, OBJETS);
+  return { ...resultat, prompt: `${moi.nom} a ${a} ${objet}. ${il(moi)} en gagne ${b}. Combien ${de(objet)} a-t-${pronom(moi)} maintenant ?` };
 });
 
 const retrait = forme('retrait', -5, (rng, stage) => {
-  const [moi] = deuxPrenoms(rng);
-  const objet = rngPick(rng, OBJETS);
-  const [a, b] = termesDeLaDifference(rng, borne(rng, stage));
-  return {
+  const limite = borne(rng, stage);
+  const [a, b] = termesDeLaDifference(rng, limite);
+  const resultat = {
     instruction: INSTRUCTION,
-    prompt: `${moi.nom} a ${a} ${objet}. ${il(moi)} en perd ${b}. Combien lui en reste-t-il ?`,
     correct: String(a - b),
     wrong: nombresEn(fauxEntiers(a - b, erreursAdditives(a, b, a - b, false), stage)),
     explanation: `On retranche : ${a} − ${b} = ${a - b}.`,
   };
+  if (limite > 1000) {
+    const { stock, objet } = unStock(rng);
+    return { ...resultat, prompt: `${majuscule(stock.nom)} a ${a} ${objet}. ${il(stock)} en ${stock.sort} ${b}. Combien lui en reste-t-il ?` };
+  }
+  const [moi] = deuxPrenoms(rng);
+  const objet = rngPick(rng, OBJETS);
+  return { ...resultat, prompt: `${moi.nom} a ${a} ${objet}. ${il(moi)} en perd ${b}. Combien lui en reste-t-il ?` };
 });
 
 const reunion = forme('reunion', -5, (rng, stage) => {
-  const paire = rngPick(rng, PAIRES);
-  const [a, b] = termesDeLaSomme(rng, borne(rng, stage));
+  const limite = borne(rng, stage);
+  const paire = rngPick(rng, lieuxJusqua(limite));
+  const [a, b] = termesDeLaSomme(rng, Math.min(limite, paire.max));
   return {
     instruction: INSTRUCTION,
     prompt: `${paire.lieu}, il y a ${a} ${paire.a} et ${b} ${paire.b}. Combien y a-t-il ${paire.total} en tout ?`,
@@ -150,24 +210,26 @@ const reunion = forme('reunion', -5, (rng, stage) => {
 });
 
 const complement = forme('complement', -5, (rng, stage) => {
-  const paire = rngPick(rng, PAIRES);
-  const [total, partie] = termesDeLaDifference(rng, borne(rng, stage));
+  const limite = borne(rng, stage);
+  const paire = rngPick(rng, lieuxJusqua(limite));
+  const [total, partie] = termesDeLaDifference(rng, Math.min(limite, paire.max));
   return {
     instruction: INSTRUCTION,
-    prompt: `${paire.lieu}, il y a ${total} ${paire.total.replace(/^d'|^de /, '')}. ${partie} sont des ${paire.a}. Les autres sont des ${paire.b}. Combien y a-t-il de ${paire.b} ?`,
+    prompt: `${paire.lieu}, il y a ${total} ${paire.total.replace(/^d'|^de /, '')}. ${partie} sont des ${paire.a}. Les autres sont des ${paire.b}. Combien y a-t-il ${de(paire.b)} ?`,
     correct: String(total - partie),
     wrong: nombresEn(fauxEntiers(total - partie, erreursAdditives(total, partie, total - partie, false), stage)),
     explanation: `On cherche ce qui manque : ${total} − ${partie} = ${total - partie}.`,
   };
 });
 
+// Entre deux enfants, jamais plus de mille choses : au-delà, c'est l'affaire d'un commerce (voir `ajout`).
 const ecart = forme('ecart', -5, (rng, stage) => {
   const [premier, second] = deuxPrenoms(rng);
   const objet = rngPick(rng, OBJETS);
-  const [a, b] = termesDeLaDifference(rng, borne(rng, stage));
+  const [a, b] = termesDeLaDifference(rng, Math.min(borne(rng, stage), 999));
   return {
     instruction: INSTRUCTION,
-    prompt: `${premier.nom} a ${a} ${objet}. ${second.nom} a ${b} ${objet}. Combien ${de(objet)} ${premier.nom} a-t-${pronom(premier)} de plus que ${second.nom} ?`,
+    prompt: `${premier.nom} a ${a} ${objet}. ${second.nom} a ${b} ${objet}. Combien ${de(objet)} ${premier.nom} a-t-${pronom(premier)} de plus ${que(second.nom)} ?`,
     correct: String(a - b),
     wrong: nombresEn(fauxEntiers(a - b, erreursAdditives(a, b, a - b, false), stage)),
     explanation: `On compare : ${a} − ${b} = ${a - b}.`,
@@ -178,7 +240,8 @@ const comparaison = forme('comparaison', -5, (rng, stage) => {
   const [premier, second] = deuxPrenoms(rng);
   const objet = rngPick(rng, OBJETS);
   const plus = rng() < 0.5;
-  const [a, k] = plus ? termesDeLaSomme(rng, borne(rng, stage)) : termesDeLaDifference(rng, borne(rng, stage));
+  const limite = Math.min(borne(rng, stage), 999);
+  const [a, k] = plus ? termesDeLaSomme(rng, limite) : termesDeLaDifference(rng, limite);
   const reponse = plus ? a + k : a - k;
   return {
     instruction: INSTRUCTION,
@@ -190,15 +253,23 @@ const comparaison = forme('comparaison', -5, (rng, stage) => {
   };
 });
 
+/** Deux prix qui ont l'air vrais, de deux articles différents : leur somme tient sous `limite` euros. */
+function deuxPrix(rng: Rng, limite: number): { premier: ArticleAPrix; second: ArticleAPrix; a: number; b: number } {
+  const [premier, second] = rngShuffle(rng, ARTICLES_A_PRIX.filter(({ min }) => min * 2 <= limite)).slice(0, 2);
+  const a = rngInt(rng, premier.min, Math.min(premier.max, limite - second.min));
+  let b = rngInt(rng, second.min, Math.min(second.max, limite - a));
+  // Deux prix égaux ne feraient pas une différence : on retire le second.
+  for (let essai = 0; essai < 8 && b === a; essai++) b = rngInt(rng, second.min, Math.min(second.max, limite - a));
+  return { premier, second, a, b };
+}
+
 const argent = forme('argent', -5, (rng, stage) => {
-  const [premier, second] = rngShuffle(rng, ARTICLES_A_PRIX).slice(0, 2);
-  const limite = stage >= -2 ? 100 : 40;
-  const [a, b] = termesDeLaSomme(rng, limite);
-  const somme = rng() < 0.6;
-  if (somme) {
+  const { premier, second, a, b } = deuxPrix(rng, stage >= -2 ? 100 : 40);
+  const debut = `${majuscule(premier.un)} coûte ${a} €. ${majuscule(second.un)} coûte ${b} €.`;
+  if (rng() < 0.6 || a === b) {
     return {
       instruction: INSTRUCTION,
-      prompt: `${majuscule(premier)} coûte ${a} €. ${majuscule(second)} coûte ${b} €. Combien paie-t-on pour les deux ?`,
+      prompt: `${debut} Combien paie-t-on pour les deux ?`,
       correct: `${a + b} €`,
       wrong: nombresEn(fauxEntiers(a + b, erreursAdditives(a, b, a + b, true), stage), '€'),
       explanation: `On ajoute les prix : ${a} + ${b} = ${a + b}.`,
@@ -207,7 +278,7 @@ const argent = forme('argent', -5, (rng, stage) => {
   const [grand, petit] = [Math.max(a, b), Math.min(a, b)];
   return {
     instruction: INSTRUCTION,
-    prompt: `${majuscule(premier)} coûte ${grand} €. ${majuscule(second)} coûte ${petit} €. Quelle est la différence de prix ?`,
+    prompt: `${debut} Quelle est la différence de prix ?`,
     correct: `${grand - petit} €`,
     wrong: nombresEn(fauxEntiers(grand - petit, erreursAdditives(grand, petit, grand - petit, false), stage), '€'),
     explanation: `On compare les prix : ${grand} − ${petit} = ${grand - petit}.`,
@@ -255,7 +326,7 @@ const jours = forme('jours', -5, (rng) => {
     const total = 7 * semaines + enPlus;
     return {
       instruction: INSTRUCTION,
-      prompt: `Une semaine compte 7 jours. Combien de jours y a-t-il dans ${semaines} semaines et ${enPlus} jours ?`,
+      prompt: `Une semaine compte 7 jours. Combien de jours y a-t-il dans ${semaines} semaines et ${enPlus} ${accorde(enPlus, 'jour')} ?`,
       correct: String(total),
       // Les jours en plus oubliés, ou comptés comme une semaine de plus.
       wrong: nombresEn(fauxNombres(total, [7 * semaines, 7 * (semaines + 1), semaines + enPlus, 7 + enPlus, total + 1, total - 1, total + 7], { min: 2, max: 40 })),
@@ -401,7 +472,7 @@ const contenances = forme('contenances', -4, (rng, stage) => {
     const [a, b] = termesDeLaSomme(rng, 40);
     return {
       instruction: INSTRUCTION,
-      prompt: `Un seau contient ${a} L d'eau. On y verse ${b} L. Combien de litres y a-t-il ?`,
+      prompt: `Un bidon contient ${a} L d'eau. On y verse ${b} L. Combien de litres y a-t-il ?`,
       correct: `${a + b} L`,
       wrong: nombresEn(fauxEntiers(a + b, erreursAdditives(a, b, a + b, true), stage), 'L'),
       explanation: `${a} + ${b} = ${a + b}.`,
@@ -410,7 +481,7 @@ const contenances = forme('contenances', -4, (rng, stage) => {
   const [a, b] = termesDeLaDifference(rng, 40);
   return {
     instruction: INSTRUCTION,
-    prompt: `Il y a ${a} L de jus dans un bidon. On en boit ${b} L. Combien de litres reste-t-il ?`,
+    prompt: `Il y a ${a} L d'eau dans un réservoir. On en utilise ${b} L. Combien de litres reste-t-il ?`,
     correct: `${a - b} L`,
     wrong: nombresEn(fauxEntiers(a - b, erreursAdditives(a, b, a - b, false), stage), 'L'),
     explanation: `${a} − ${b} = ${a - b}.`,
@@ -451,7 +522,8 @@ const deuxEtapes = forme('deux-etapes', -3, (rng, stage) => {
     const { nom, chacun: ch } = rngPick(rng, ARTICLES_PLURIELS);
     const prix = rngPick(rng, [2, 3, 4, 5]);
     const n = rngInt(rng, 2, 5);
-    const billet = rngPick(rng, BILLETS.filter((candidat) => candidat > n * prix));
+    // Ni un billet qui ne paie pas, ni un billet démesuré : pas 50 € pour 4 €.
+    const billet = rngPick(rng, BILLETS.filter((candidat) => candidat > n * prix && candidat <= Math.max(10, 3 * n * prix)));
     const reponse = billet - n * prix;
     return {
       instruction: INSTRUCTION,
@@ -461,7 +533,7 @@ const deuxEtapes = forme('deux-etapes', -3, (rng, stage) => {
       explanation: `${n} × ${prix} = ${n * prix}, puis ${billet} − ${n * prix} = ${reponse}.`,
     };
   }
-  const sequence = rngPick(rng, SEQUENCES);
+  const sequence = rngPick(rng, SEQUENCES.filter(({ min, max }) => min <= 30 && max >= 90));
   const a = rngInt(rng, 30, 90);
   const [b, c] = [rngInt(rng, 5, 20), rngInt(rng, 5, 20)];
   const reponse = a - b + c;
@@ -491,7 +563,7 @@ const partage = forme('partage', -3, (rng, stage) => {
   const contenant = rngPick(rng, CONTENANTS);
   return {
     instruction: INSTRUCTION,
-    prompt: `On range ${total} ${contenant.objets} dans des ${contenant.pluriel} de ${k}. Combien faut-il de ${contenant.pluriel} ?`,
+    prompt: `On range ${total} ${contenant.objets} dans des ${contenant.pluriel} de ${k}. Combien faut-il ${de(contenant.pluriel)} ?`,
     correct: String(n),
     wrong: nombresEn(fauxEntiers(n, [total - k, total + k, n + 1, n - 1, k, total, n + 2], stage)),
     explanation: `${n} × ${k} = ${total}, donc il faut ${n} ${contenant.pluriel}.`,
@@ -501,11 +573,14 @@ const partage = forme('partage', -3, (rng, stage) => {
 const rendu = forme('rendu', -3, (rng, stage) => {
   const [moi] = deuxPrenoms(rng);
   const article = rngPick(rng, ARTICLES_A_PRIX);
-  const billet = rngPick(rng, BILLETS);
-  const prix = rngInt(rng, Math.ceil(billet * 0.2), Math.floor(billet * 0.9));
+  // Un billet qui convient à l'article : ni une gomme payée avec 50 €, ni un prix plus gros que le billet.
+  const basDuPrix = (billet: number) => Math.max(article.min, Math.ceil(billet * 0.2));
+  const hautDuPrix = (billet: number) => Math.min(article.max, Math.floor(billet * 0.9));
+  const billet = rngPick(rng, BILLETS.filter((candidat) => basDuPrix(candidat) <= hautDuPrix(candidat)));
+  const prix = rngInt(rng, basDuPrix(billet), hautDuPrix(billet));
   return {
     instruction: INSTRUCTION,
-    prompt: `${moi.nom} achète ${article} à ${prix} €. ${il(moi)} paie avec un billet de ${billet} €. Combien la vendeuse lui rend-elle ?`,
+    prompt: `${moi.nom} achète ${article.un} à ${prix} €. ${il(moi)} paie avec un billet de ${billet} €. Combien la vendeuse lui rend-elle ?`,
     correct: `${billet - prix} €`,
     wrong: nombresEn(fauxEntiers(billet - prix, [billet + prix, prix, billet, billet - prix + 1, billet - prix - 1, billet - prix + 10, billet - prix - 10], stage), '€'),
     explanation: `On cherche ce qui manque : ${billet} − ${prix} = ${billet - prix}.`,
@@ -515,7 +590,7 @@ const rendu = forme('rendu', -3, (rng, stage) => {
 // --- Le CE2 : plus de chiffres, des prix à virgule, des durées, la division ---------------------------------------------------------------------
 
 const deuxEtapesCE2 = forme('deux-etapes-ce2', -2, (rng, stage) => {
-  const sequence = rngPick(rng, SEQUENCES);
+  const sequence = rngPick(rng, SEQUENCES.filter(({ max }) => max >= 2500));
   const a = rngInt(rng, 300, 2500);
   const [b, c] = [rngInt(rng, 40, 250), rngInt(rng, 40, 250)];
   const reponse = a - b + c;
@@ -537,15 +612,16 @@ const CENTIMES_USUELS = [0, 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90];
 
 const prixDecimaux = forme('prix-decimaux', -2, (rng, stage) => {
   const [premier, second] = rngShuffle(rng, ARTICLES_A_PRIX).slice(0, 2);
-  const tirer = () => rngInt(rng, 1, 40) * 100 + rngPick(rng, CENTIMES_USUELS.filter((c) => c > 0));
-  const [a, b] = [tirer(), tirer()];
+  // Des euros dans la fourchette de l'article, et des centimes d'étiquette.
+  const tirer = (article: ArticleAPrix) => rngInt(rng, article.min, article.max - 1) * 100 + rngPick(rng, CENTIMES_USUELS.filter((c) => c > 0));
+  const [a, b] = [tirer(premier), tirer(second)];
   // Les euros ajoutés sans la retenue des centimes, la virgule oubliée, un euro ou dix centimes d'écart.
   const sansRetenue = (x: number, y: number) => (Math.floor(x / 100) + Math.floor(y / 100)) * 100 + ((x % 100) + (y % 100)) % 100;
   if (rng() < 0.6) {
     const somme = a + b;
     return {
       instruction: INSTRUCTION,
-      prompt: `${majuscule(premier)} coûte ${montant(a)}. ${majuscule(second)} coûte ${montant(b)}. Combien paie-t-on pour les deux ?`,
+      prompt: `${majuscule(premier.un)} coûte ${montant(a)}. ${majuscule(second.un)} coûte ${montant(b)}. Combien paie-t-on pour les deux ?`,
       correct: montant(somme),
       wrong: [sansRetenue(a, b), somme + 100, somme - 100, somme + 10, somme - 10, somme * 10]
         .filter((centimes) => centimes !== somme && centimes > 0)
@@ -554,17 +630,17 @@ const prixDecimaux = forme('prix-decimaux', -2, (rng, stage) => {
     };
   }
   const [moi] = deuxPrenoms(rng);
-  const billet = Math.ceil((Math.max(a, b) + 100) / 1000) * 1000;
-  const reste = billet - Math.max(a, b);
-  const prixPaye = Math.max(a, b);
+  // Le plus petit billet qui paie l'article, avec au moins un euro de monnaie à rendre.
+  const billet = [1000, 2000, 5000].find((candidat) => candidat >= a + 100)!;
+  const reste = billet - a;
   return {
     instruction: INSTRUCTION,
-    prompt: `${moi.nom} a ${montant(billet)}. ${il(moi)} achète ${rngPick(rng, ARTICLES_A_PRIX)} à ${montant(prixPaye)}. Combien lui reste-t-il ?`,
+    prompt: `${moi.nom} a ${montant(billet)}. ${il(moi)} achète ${premier.un} à ${montant(a)}. Combien lui reste-t-il ?`,
     correct: montant(reste),
-    wrong: [billet + prixPaye, prixPaye, reste + 100, reste - 100, reste + 10, reste - 10, Math.floor(billet / 100) * 100 - Math.floor(prixPaye / 100) * 100 + (prixPaye % 100)]
+    wrong: [billet + a, a, reste + 100, reste - 100, reste + 10, reste - 10, Math.floor(billet / 100) * 100 - Math.floor(a / 100) * 100 + (a % 100)]
       .filter((centimes) => centimes !== reste && centimes > 0)
       .map(montant),
-    explanation: `${montant(billet)} − ${montant(prixPaye)} = ${montant(reste)}.`,
+    explanation: `${montant(billet)} − ${montant(a)} = ${montant(reste)}.`,
   };
 });
 
@@ -634,18 +710,18 @@ const foisPlus = forme('fois-plus', -1, (rng, stage) => {
 
 const grandProduit = forme('grand-produit', -1, (rng, stage) => {
   const caisses = rngPick(rng, [
-    { contenant: 'caisses', objet: 'bouteilles' },
-    { contenant: 'cartons', objet: 'livres' },
-    { contenant: 'sachets', objet: 'bonbons' },
-    { contenant: 'boîtes', objet: 'crayons' },
-    { contenant: 'paquets', objet: 'biscuits' },
+    { qui: 'Un camion transporte', contenant: 'caisses', objet: 'bouteilles' },
+    { qui: 'Un camion transporte', contenant: 'cartons', objet: 'livres' },
+    { qui: 'Un confiseur prépare', contenant: 'sachets', objet: 'bonbons' },
+    { qui: 'Un magasin reçoit', contenant: 'boîtes', objet: 'crayons' },
+    { qui: 'Une boulangerie prépare', contenant: 'paquets', objet: 'biscuits' },
   ]);
   const [k, n] = [rngInt(rng, 12, 60), rngInt(rng, 3, 9)];
   const dizainesFois = stage >= 0 && rng() < 0.5;
   const [x, y] = dizainesFois ? [rngInt(rng, 12, 40), rngInt(rng, 11, 25)] : [k, n];
   return {
     instruction: INSTRUCTION,
-    prompt: `Un camion transporte ${y} ${caisses.contenant} de ${x} ${caisses.objet}. Combien ${de(caisses.objet)} transporte-t-il ?`,
+    prompt: `${caisses.qui} ${y} ${caisses.contenant} de ${x} ${caisses.objet}. Combien y a-t-il ${de(caisses.objet)} en tout ?`,
     correct: String(x * y),
     wrong: nombresEn(fauxNombres(x * y, [x + y, x * y + x, x * y - x, x * y + 10, x * y - 10, x * y + y, x * (y + 1), x * y + 100], { min: 1, max: 100000 })),
     explanation: `${y} × ${x} = ${x * y}.`,
@@ -754,10 +830,10 @@ const resteDeLaDivision = forme('reste-division', 0, (rng, stage) => {
   const sorte = rngInt(rng, 0, 2);
   const [reponse, question, explication, candidats] =
     sorte === 0
-      ? [boites, `Combien de ${contenant.pluriel} peut-on remplir complètement ?`, `${boites} × ${k} = ${boites * k}, et ${total} − ${boites * k} = ${reste}.`, [boites + 1, boites - 1, reste, total - k, boites + 2]]
+      ? [boites, `Combien ${de(contenant.pluriel)} peut-on remplir complètement ?`, `${boites} × ${k} = ${boites * k}, et ${total} − ${boites * k} = ${reste}.`, [boites + 1, boites - 1, reste, total - k, boites + 2]]
       : sorte === 1
         ? [reste, `Combien ${de(contenant.objets)} reste-t-il ?`, `${boites} × ${k} = ${boites * k}, et ${total} − ${boites * k} = ${reste}.`, [boites, reste + 1, reste - 1, k - reste, total - boites]]
-        : [boites + 1, `Combien faut-il de ${contenant.pluriel} pour tout ranger ?`, `${total} = ${boites} × ${k} + ${reste}. Il faut ${boites + 1} ${contenant.pluriel}.`, [boites, boites + 2, total - k, reste, boites - 1]];
+        : [boites + 1, `Combien faut-il ${de(contenant.pluriel)} pour tout ranger ?`, `${total} = ${boites} × ${k} + ${reste}. Il faut ${boites + 1} ${contenant.pluriel}.`, [boites, boites + 2, total - k, reste, boites - 1]];
   return {
     instruction: INSTRUCTION,
     prompt: `On a ${total} ${contenant.objets}. On les range dans des ${contenant.pluriel} de ${k}. ${question}`,
@@ -786,12 +862,15 @@ const troisEtapes = forme('trois-etapes', 0, (rng, stage) => {
 const renduDecimal = forme('rendu-decimal', 0, (rng, stage) => {
   const [moi] = deuxPrenoms(rng);
   const article = rngPick(rng, ARTICLES_A_PRIX);
-  const billet = rngPick(rng, [1000, 2000, 5000]);
-  const prix = rngInt(rng, 2, Math.floor(billet / 100) - 1) * 100 + rngPick(rng, [10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90]);
+  const prix = rngInt(rng, article.min, article.max - 1) * 100 + rngPick(rng, [10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90]);
+  // Un billet qui paie l'article avec au moins un euro de monnaie, et qui n'est pas démesuré : pas 50 € pour une gomme.
+  const billets = [1000, 2000, 5000].filter((candidat) => candidat >= prix + 100);
+  const raisonnables = billets.filter((candidat) => prix * 5 >= candidat);
+  const billet = rngPick(rng, raisonnables.length > 0 ? raisonnables : [billets[0]]);
   const reste = billet - prix;
   return {
     instruction: INSTRUCTION,
-    prompt: `${moi.nom} achète ${article} à ${montant(prix)}. ${il(moi)} paie avec ${montant(billet)}. Combien la vendeuse lui rend-elle ?`,
+    prompt: `${moi.nom} achète ${article.un} à ${montant(prix)}. ${il(moi)} paie avec ${montant(billet)}. Combien la vendeuse lui rend-elle ?`,
     correct: montant(reste),
     // Les euros et les centimes soustraits chacun de leur côté, sans l'échange.
     wrong: [billet + prix, reste + 100, reste - 100, reste + 10, reste - 10, Math.floor(billet / 100) * 100 - Math.floor(prix / 100) * 100 + (prix % 100)]

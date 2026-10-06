@@ -244,6 +244,13 @@ export const pronom = (personne: Prenom) => (personne.fille ? 'elle' : 'il');
  *  « h » aspiré dans les listes. */
 export const de = (nom: string) => (/^[aeiouyéèêàâîôûœh]/i.test(nom) ? `d'${nom}` : `de ${nom}`);
 
+/** « que Tom », « qu'Anna » : l'élision devant un prénom qui commence par une voyelle (le h aspiré de « Hugo »
+ *  n'élide pas). */
+export const que = (nom: string) => (/^[aeiouyéèêàâîôûœ]/i.test(nom) ? `qu'${nom}` : `que ${nom}`);
+
+/** « 1 jour », « 2 jours » : le pluriel dès 2, comme à l'école (0 et 1 restent au singulier). */
+export const accorde = (n: number, mot: string) => (n > 1 ? `${mot}s` : mot);
+
 export const majuscule = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
 
 /** Des choses qu'on compte, au pluriel : « 12 billes ». */

@@ -158,6 +158,19 @@ describe('ce que lit l\'élève', () => {
     );
   });
 
+  it('élide devant une voyelle dans les maths du CE1, du CE2 et de la 6e : « d\'enfants », jamais « de enfants »', () => {
+    // Les énoncés se composent à partir de listes de mots : un mot qui commence par une voyelle
+    // (enfants, étuis, œufs) ne doit pas rester seul derrière « de », « que » ou « ne ».
+    // « onze » n'élide pas : « de onze » est juste. (\b ne voit pas les lettres accentuées : « achète un » n'est pas « te un » ; et le nom d'un point, « de A », n'est pas un mot.)
+    questions
+      .filter(({ level }) => NOUVEAUX_NIVEAUX.includes(level))
+      .forEach(({ level, question: q }) =>
+        [q.instruction ?? '', q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) =>
+          expect(text, `${level} : ${text}`).not.toMatch(/(?<![\p{L}'’])(?:de|ne|se|que|me|te|je) (?!onz)[aeiouéèêâîôûœ]\p{L}/iu)
+        )
+      );
+  });
+
   it('n\'a pas de parenthèses en histoire et en géographie', () => {
     questions
       .filter(({ question: q }) => ['histoire', 'geographie'].includes(subjectOf(q.domain)))

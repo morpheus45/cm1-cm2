@@ -319,11 +319,13 @@ describe('les questions de numération du CE1, du CE2 et de la 6e', () => {
     });
   });
 
-  it('ont quatre propositions, sauf « < », « > », « = » qui en ont trois', () => {
-    parCellule((level, trimester) => questions(level, trimester, 12)).forEach(({ valeur }) =>
+  it('ont quatre propositions, sauf « < », « > », « = » et les trois rangs du CE1, qui en ont trois', () => {
+    parCellule((level, trimester) => questions(level, trimester, 12)).forEach(({ level, valeur }) =>
       valeur.forEach((question) => {
         const symboles = question.choices.every((choix) => ['<', '>', '='].includes(choix));
-        expect(question.choices, question.prompt).toHaveLength(symboles ? 3 : 4);
+        // Au CE1, « 10 unités, c'est 1 … » n'a que trois rangs à proposer : unité, dizaine, centaine.
+        const rangsDuCE1 = level === 'CE1' && /^10 .+, c'est 1 …$/.test(question.prompt);
+        expect(question.choices, question.prompt).toHaveLength(symboles || rangsDuCE1 ? 3 : 4);
       })
     );
   });
@@ -398,6 +400,14 @@ describe('les nombres du programme', () => {
         });
         if (!monnaie) [question.prompt, ...question.choices].forEach((texte) => expect(texte, question.prompt).not.toMatch(/\d,\d/));
       })
+    );
+  });
+
+  it('ne nomment au CE1 que les unités, les dizaines et les centaines : le millier est du CE2', () => {
+    ALL_TRIMESTERS.forEach((trimester) =>
+      questions('CE1', trimester).forEach((question) =>
+        [question.instruction ?? '', question.prompt, ...question.choices, question.explanation ?? ''].forEach((texte) => expect(texte, question.id).not.toMatch(/millier/))
+      )
     );
   });
 

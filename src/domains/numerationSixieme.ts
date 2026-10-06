@@ -3,7 +3,7 @@ import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { stageOf, type Stage } from '../lib/progression';
 import { droiteGraduee } from './figuresMaths';
 import { ecritureChiffree, numberToFrenchWords } from './nombresEnLettres';
-import { decimalAleatoire, echanges, entierAvecBords, fabriquer, fauxNombres, texte, type Brique, type Enonce } from './mathsCommun';
+import { accorde, decimalAleatoire, echanges, entierAvecBords, fabriquer, fauxNombres, texte, type Brique, type Enonce } from './mathsCommun';
 
 /**
  * La numération de la 6e (programme de mathématiques du cycle 3, 2025).
@@ -95,7 +95,11 @@ function enClasses(n: number): string {
 /** « 345 millions + 678 milliers + 912 unités », en classes. */
 function sommeEnClasses(n: number): string {
   const [m, k, u] = classesDe(n);
-  return [m > 0 ? `${ecritureChiffree(m)} millions` : '', k > 0 ? `${ecritureChiffree(k)} milliers` : '', u > 0 ? `${ecritureChiffree(u)} unités` : '']
+  return [
+    m > 0 ? `${ecritureChiffree(m)} ${accorde(m, 'million')}` : '',
+    k > 0 ? `${ecritureChiffree(k)} ${accorde(k, 'millier')}` : '',
+    u > 0 ? `${ecritureChiffree(u)} ${accorde(u, 'unité')}` : '',
+  ]
     .filter(Boolean)
     .join(' + ');
 }
@@ -182,7 +186,8 @@ const classesDuNombre = forme('classes', 7, (rng, stage) => {
       explanation: `Le chiffre ${unique} est celui des ${NOMS_DES_RANGS[rangUnique]} : il vaut ${ecritureChiffree(valeur)}.`,
     };
   }
-  const [rangDuHaut, nom] = rngPick(rng, [[3, 'milliers'], [6, 'millions']] as [number, string][]);
+  // On ne demande les millions que dans un nombre qui en a : « 0 million » ne ferait que dérouter.
+  const [rangDuHaut, nom] = rngPick(rng, ([[3, 'milliers'], [6, 'millions']] as [number, string][]).filter(([rangMin]) => n >= Math.pow(10, rangMin)));
   const [haut, bas] = [Math.floor(n / Math.pow(10, rangDuHaut)), n % Math.pow(10, rangDuHaut)];
   return {
     instruction: 'Compte toutes les parts',
@@ -734,7 +739,7 @@ const fractionSurDroite = forme('fraction-droite', 8, (rng) => {
     figure: droiteGraduee({ intervalles, etiquettes, fleche: k }, `Une droite graduée de 0 à ${unites}, avec ${d} parts égales entre deux entiers.`),
     correct: ecritFraction(k, d),
     wrong: fausses.filter(([a, b]) => a >= 1 && b >= 2 && !memeValeur(a, b, k, d)).map(([a, b]) => ecritFraction(a, b)),
-    explanation: `La flèche est à ${k} graduations de 0. Chaque graduation vaut 1/${d}. Donc ${ecritFraction(k, d)}.`,
+    explanation: `La flèche est à ${k} ${accorde(k, 'graduation')} de 0. Chaque graduation vaut 1/${d}. Donc ${ecritFraction(k, d)}.`,
   };
 });
 
