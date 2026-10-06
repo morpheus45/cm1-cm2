@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest';
-import { activitiesFor, CONTENT_FROM, hasContent, notionsFor } from './contenu';
+import { activitiesFor, CONTENT_FROM, hasContent, notionsFor, subjectsFor } from './contenu';
 import { buildSession, MIXED_SUBJECTS_ERROR } from './sessionBuilder';
 import { buildWorksheet } from './worksheet';
 import { candidateOperations, candidateQuestions } from './evaluation';
@@ -160,6 +160,38 @@ describe('les notions qui ont des questions', () => {
   });
 });
 
+describe('les matières qu\'on propose', () => {
+  it('sont les quatre, au CM1 et au CM2', () => {
+    WITH_EVERY_SUBJECT.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => expect(subjectsFor(level, trimester), `${level} T${trimester}`).toEqual(ALL_SUBJECTS))
+    );
+  });
+
+  it('sont le français et les maths, au CE1, au CE2 et en 6e : ni histoire ni géographie', () => {
+    FRENCH_AND_MATHS_ONLY.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => expect(subjectsFor(level, trimester), `${level} T${trimester}`).toEqual(SUBJECTS_WRITTEN))
+    );
+  });
+
+  it('ne sont aucune, dans les trois niveaux du collège qui restent', () => {
+    WITHOUT_CONTENT.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => expect(subjectsFor(level, trimester), `${level} T${trimester}`).toEqual([]))
+    );
+  });
+
+  it('sont exactement celles qui ont une séance à proposer', () => {
+    ALL_LEVELS.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) =>
+        ALL_SUBJECTS.forEach((subject) =>
+          expect(subjectsFor(level, trimester).includes(subject), `${subject} ${level} T${trimester}`).toBe(
+            activitiesFor(subject, level, trimester).length > 0
+          )
+        )
+      )
+    );
+  });
+});
+
 describe('une matière sans questions à un niveau ouvert', () => {
   it('ne fait planter aucune séance d\'histoire ni de géographie, et n\'en tire aucune question', () => {
     FRENCH_AND_MATHS_ONLY.forEach((level) =>
@@ -303,6 +335,8 @@ describe('un niveau couvert en partie', () => {
 
   it('retire aussi du choix une matière dont plus aucune notion n\'a de questions', () => {
     SUBJECT_DOMAINS.geographie.forEach((domain) => delete CONTENT_FROM[domain].CM1);
+    expect(subjectsFor('CM1', 1)).toEqual(['francais', 'maths', 'histoire']);
+    expect(subjectsFor('CM2', 1)).toEqual(ALL_SUBJECTS);
     expect(notionsFor('geographie', 'CM1', 1)).toEqual([]);
     expect(activitiesFor('geographie', 'CM1', 1)).toEqual([]);
     expect(notionsFor('geographie', 'CM2', 1)).toEqual(SUBJECT_DOMAINS.geographie);

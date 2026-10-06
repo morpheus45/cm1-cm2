@@ -75,13 +75,13 @@ const SECTIONS: Section[] = [
   {
     title: 'Les programmes',
     paragraphs: [
-      'Les exercices suivent les programmes de l\'Éducation nationale : français et mathématiques du cycle 3 (Bulletin officiel n° 16 du 17 avril 2025) ; histoire et géographie du CM1 (Bulletin officiel n° 22 du 28 mai 2026) ; au CM2, cette année encore, le programme d\'histoire et de géographie de 2020.',
+      'Les exercices suivent les programmes de l\'Éducation nationale : français et mathématiques des cycles 2 et 3 (Bulletin officiel n° 16 du 17 avril 2025) ; histoire et géographie du CM1 (Bulletin officiel n° 22 du 28 mai 2026) ; au CM2, cette année encore, le programme d\'histoire et de géographie de 2020. Le CE1, le CE2 et la 6e n\'ont, pour l\'instant, que le français et les mathématiques.',
     ],
   },
   {
     title: 'Qui publie ce site',
     items: [
-      'Ce cahier d\'exercices est réalisé à titre non professionnel, pour des classes de CM1 et de CM2. Il est gratuit.',
+      'Ce cahier d\'exercices est réalisé à titre non professionnel, pour des classes du CE1 à la 6e. Il est gratuit.',
       'Hébergement du site : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.',
       'Hébergement de l\'espace des classes : Supabase, centre de données de Francfort (Allemagne).',
       'Page mise à jour en septembre 2026.',

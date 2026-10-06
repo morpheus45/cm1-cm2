@@ -9,14 +9,13 @@ import type { OpenEvaluation } from '../lib/evaluation';
 import type { EvaluationState } from '../lib/pupilEvaluations';
 import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cloud';
 import { receivedFor, type ReceivedCorrection, type StoredCorrection } from '../lib/pupilCorrections';
-import { activitiesFor, notionsFor } from '../lib/contenu';
+import { activitiesFor, notionsFor, subjectsFor } from '../lib/contenu';
 import { worksheetScore } from '../lib/worksheet';
 import { formatFrenchDate } from '../lib/worksheetPdf';
 import { ALL_TABLES, tablesAuProgramme } from '../domains/tables';
 import {
   ACTIVITY_HINTS,
   ACTIVITY_LABELS,
-  ALL_SUBJECTS,
   ALL_TRIMESTERS,
   AVAILABLE_LEVELS,
   DOMAIN_LABELS,
@@ -96,7 +95,7 @@ export function HomeScreen({
   // Ce que l'élève peut choisir est ce qui a des questions pour sa classe et
   // son trimestre : une matière, une séance ou une notion sans contenu n'est
   // pas proposée (src/lib/contenu.ts).
-  const subjects = ALL_SUBJECTS.filter((s) => notionsFor(s, level, trimester).length > 0);
+  const subjects = subjectsFor(level, trimester);
   const notions = notionsFor(subject, level, trimester);
   const activities = activitiesFor(subject, level, trimester);
 
@@ -116,7 +115,7 @@ export function HomeScreen({
   const moveTo = (nextLevel: Level, nextTrimester: Trimester) => {
     setLevel(nextLevel);
     setTrimester(nextTrimester);
-    const nextSubjects = ALL_SUBJECTS.filter((s) => notionsFor(s, nextLevel, nextTrimester).length > 0);
+    const nextSubjects = subjectsFor(nextLevel, nextTrimester);
     const nextSubject = nextSubjects.includes(subject) ? subject : nextSubjects[0];
     if (!nextSubject) return;
     const nextNotions = notionsFor(nextSubject, nextLevel, nextTrimester);

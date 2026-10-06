@@ -1,4 +1,4 @@
-import { SUBJECT_ACTIVITIES, SUBJECT_DOMAINS } from '../types';
+import { ALL_SUBJECTS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS } from '../types';
 import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 
 /**
@@ -46,6 +46,16 @@ export function hasContent(domain: Domain, level: Level, trimester: Trimester): 
  *  matière. Vide quand le niveau n'a rien à proposer dans cette matière. */
 export function notionsFor(subject: Subject, level: Level, trimester: Trimester): Domain[] {
   return SUBJECT_DOMAINS[subject].filter((domain) => hasContent(domain, level, trimester));
+}
+
+/**
+ * Les matières qui ont au moins une notion avec des questions pour ce niveau,
+ * à ce trimestre, dans l'ordre habituel. Les autres — l'histoire et la
+ * géographie, au CE1, au CE2 et en 6e — ne sont proposées ni à l'élève ni à la
+ * maîtresse : ni carte vide, ni bouton qui ne mène à rien.
+ */
+export function subjectsFor(level: Level, trimester: Trimester): Subject[] {
+  return ALL_SUBJECTS.filter((subject) => notionsFor(subject, level, trimester).length > 0);
 }
 
 /** Les séances qui exigent des questions de calcul : poser une opération, ou

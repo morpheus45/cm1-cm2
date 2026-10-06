@@ -527,7 +527,12 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
 
   const classQuestionsScreen =
     showClassQuestions && current ? (
-      <ClassQuestionsScreen classId={current.id} className={current.name} onClose={() => setShowClassQuestions(false)} />
+      <ClassQuestionsScreen
+        classId={current.id}
+        className={current.name}
+        level={current.level}
+        onClose={() => setShowClassQuestions(false)}
+      />
     ) : null;
 
   const evaluationsScreen =
