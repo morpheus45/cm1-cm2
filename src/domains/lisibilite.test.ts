@@ -9,6 +9,10 @@ import {
   type Question,
   type Trimester,
 } from '../types';
+import * as aleatoire from '../lib/seededRandom';
+import * as conjugaison from './conjugaison';
+import * as accords from './accords';
+import * as orthographe from './orthographe';
 import { buildSession } from '../lib/sessionBuilder';
 
 /**
@@ -136,5 +140,87 @@ describe('ce que lit l\'élève', () => {
       .forEach(({ question: q }) =>
         [q.instruction ?? '', q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) => expect(text, text).not.toMatch(/[()]/))
       );
+  });
+});
+
+/**
+ * Le français du CE1, du CE2 et de la 6e. Ces niveaux ne sont pas encore
+ * ouverts dans src/lib/contenu.ts : leurs questions ne passent donc pas par
+ * les séances, mais par les trois générateurs de français, appelés
+ * directement. Elles n'en doivent pas moins être lisibles par un enfant de
+ * sept ans, avec les seuils de son cycle.
+ */
+const NIVEAUX_FRANCAIS_ECRITS: Level[] = ['CE1', 'CE2', '6e'];
+
+function questionsFrancaisDesNouveauxNiveaux(): QuestionDuNiveau[] {
+  return NIVEAUX_FRANCAIS_ECRITS.flatMap((level) =>
+    TRIMESTERS.flatMap((trimester) =>
+      [conjugaison.generate, accords.generate, orthographe.generate].flatMap((generer) =>
+        Array.from({ length: 60 }, (_, seed) => generer(level, trimester, aleatoire.createRng((seed + 1) * 7919), 12))
+          .flat()
+          .map((question) => ({ level, question }))
+      )
+    )
+  );
+}
+
+describe('ce que lit l\'élève en français, au CE1, au CE2 et en 6e', () => {
+  const questions = questionsFrancaisDesNouveauxNiveaux();
+
+  it('passe en revue chaque notion écrite, pour chacun des trois niveaux', () => {
+    // Sans cela, un niveau ou une notion sans question passerait tous les contrôles ci-dessous sans
+    // rien avoir été lu. La liste s'allonge à mesure que les notions sont écrites.
+    const notionsEcrites = ['conjugaison'];
+    NIVEAUX_FRANCAIS_ECRITS.forEach((level) =>
+      notionsEcrites.forEach((domaine) =>
+        expect(
+          questions.some(({ level: niveau, question }) => niveau === level && question.domain === domaine),
+          `${level} ${domaine}`
+        ).toBe(true)
+      )
+    );
+  });
+
+  it('n\'a jamais de point-virgule', () => {
+    questions.forEach(({ question: q }) =>
+      [q.instruction ?? '', q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) => expect(text, text).not.toContain(';'))
+    );
+  });
+
+  it('fait des phrases courtes, avec les seuils du cycle : douze mots au CE1 et au CE2, vingt en 6e', () => {
+    questions.forEach(({ level, question: q }) => {
+      const seuils = seuilsOf(level);
+      [q.instruction ?? '', q.prompt].flatMap(sentencesOf).forEach((sentence) =>
+        expect(wordsOf(sentence).length, `${level} : ${sentence}`).toBeLessThanOrEqual(seuils.phrase)
+      );
+      sentencesOf(q.explanation ?? '').forEach((sentence) =>
+        expect(wordsOf(sentence).length, `${level} : ${sentence}`).toBeLessThanOrEqual(seuils.explication)
+      );
+    });
+  });
+
+  it('propose des réponses qu\'on lit d\'un coup d\'œil : huit mots au plus au cycle 2', () => {
+    questions.forEach(({ level, question: q }) =>
+      q.choices.forEach((choice) => expect(wordsOf(choice).length, `${level} : ${choice}`).toBeLessThanOrEqual(seuilsOf(level).choix))
+    );
+  });
+
+  it('n\'a pas de parenthèses : les enfants de sept ans n\'en lisent pas', () => {
+    questions.forEach(({ level, question: q }) => {
+      if (level === '6e') return;
+      [q.instruction ?? '', q.prompt, ...q.choices].forEach((text) => expect(text, text).not.toMatch(/[()]/));
+    });
+  });
+
+  it('élide devant une voyelle : « d\'enfants », « j\'écoute », jamais « de enfants » ni « je écoute »', () => {
+    // Les phrases se composent à partir de listes de mots : un mot qui commence par une voyelle ou un
+    // h muet ne doit pas rester seul derrière « de », « que », « ne », « se », « je », « me », « te »,
+    // « le » ou « la ». « onze » n'élide pas (« de onze »), « honte » et « haie » ont un h aspiré
+    // (« de honte ») : seuls les h muets de nos listes sont cherchés.
+    const voyelle = "(?:[aeiouàâéèêîôûœ]|h(?:abit|omm|ôpit|iver|eure|istoire))";
+    const elision = new RegExp(`(?<![\\p{L}'’])(?:de|ne|se|que|me|te|je|le|la) (?!onz)${voyelle}\\p{L}*`, 'iu');
+    questions.forEach(({ level, question: q }) =>
+      [q.instruction ?? '', q.prompt, ...q.choices].forEach((text) => expect(text, `${level} : ${text}`).not.toMatch(elision))
+    );
   });
 });

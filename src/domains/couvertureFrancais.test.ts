@@ -13,7 +13,14 @@ import * as orthographe from './orthographe';
  * séance de 12 questions, en comptant les énoncés distincts
  * (instruction + énoncé).
  */
-const LEVELS: Level[] = ['CM1', 'CM2'];
+/** Les niveaux dont chaque notion écrit ses questions. Une notion rejoint la liste des cinq niveaux
+ *  quand ses questions du CE1, du CE2 et de la 6e sont écrites. */
+const CINQ_NIVEAUX: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
+const LEVELS_OF: Record<string, Level[]> = {
+  conjugaison: CINQ_NIVEAUX,
+  accords: ['CM1', 'CM2'],
+  orthographe: ['CM1', 'CM2'],
+};
 const DRAWS = 800;
 const QUESTIONS_PER_DRAW = 12;
 const MINIMUM_DISTINCT = 300;
@@ -38,7 +45,7 @@ describe('au moins 300 questions différentes par niveau et par trimestre', () =
   ];
 
   domains.forEach(([name, generate]) => {
-    LEVELS.forEach((level) => {
+    LEVELS_OF[name].forEach((level) => {
       ALL_TRIMESTERS.forEach((trimester) => {
         it(`${name} — ${level} trimestre ${trimester}`, () => {
           expect(distinctCount(generate, level, trimester)).toBeGreaterThanOrEqual(MINIMUM_DISTINCT);

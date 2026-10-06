@@ -3,6 +3,8 @@ import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
 import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
 import { ALL_VERBS, PERSONS, type Person, type Tense, type Verb } from './conjugaisonVerbes';
+import { generateNiveau, tempsEnseignes } from './conjugaisonNiveaux';
+import { estNiveauEcrit } from './francaisNiveaux';
 
 export type { Tense };
 
@@ -35,6 +37,8 @@ const TENSE_ORDER: Tense[] = [
 ];
 
 export function eligibleTenses(level: Level, trimester: Trimester): Tense[] {
+  // Le CE1, le CE2 et la 6e ont leur propre programme (conjugaisonNiveaux.ts).
+  if (estNiveauEcrit(level)) return tempsEnseignes(level, trimester);
   const stage = stageOf(level, trimester);
   return TENSE_ORDER.filter((tense) => isAvailableAt(TENSE_MIN_STAGE[tense], stage));
 }
@@ -177,6 +181,7 @@ function identificationQuestion(rng: Rng, index: number, candidate: Candidate, t
 const MIN_TENSES_FOR_IDENTIFICATION = 4;
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  if (estNiveauEcrit(level)) return generateNiveau(level, trimester, rng, count);
   const tenses = eligibleTenses(level, trimester);
   const canIdentify = tenses.length >= MIN_TENSES_FOR_IDENTIFICATION;
   const identificationCount = canIdentify ? Math.floor(count / 2) : 0;

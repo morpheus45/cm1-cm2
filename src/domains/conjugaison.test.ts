@@ -2,10 +2,17 @@ import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
 import { generate, eligibleTenses } from './conjugaison';
 import { ALL_VERBS, PERSONS, type Tense } from './conjugaisonVerbes';
+import { verbesEnseignes } from './conjugaisonNiveaux';
+import { estNiveauEcrit } from './francaisNiveaux';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Trimester } from '../types';
 
-const LEVELS: Level[] = ['CM1', 'CM2'];
+/** Du CE1 à la 6e : les questions de ces cinq niveaux ont les mêmes garanties.
+ *  Ce que le CE1, le CE2 et la 6e ont en propre est dans conjugaisonNiveaux.test.ts. */
+const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
+
+/** Les verbes qu'un niveau conjugue : ceux du CM, ou ceux de sa propre liste. */
+const verbsOf = (level: Level) => (estNiveauEcrit(level) ? verbesEnseignes(level) : ALL_VERBS);
 
 function tenseOfFormQuestion(instruction: string): string {
   return instruction.replace(/^Complète (au |à l')/, '').replace(/ — verbe .*$/, '');
@@ -15,6 +22,11 @@ describe('conjugaison generate', () => {
   it('returns the requested number of questions', () => {
     expect(generate('CM1', 1, createRng(1), 8)).toHaveLength(8);
     expect(generate('CM2', 3, createRng(1), 8)).toHaveLength(8);
+    LEVELS.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => {
+        [1, 4, 12, 40, 200].forEach((count) => expect(generate(level, trimester, createRng(count), count), `${level} T${trimester} × ${count}`).toHaveLength(count));
+      })
+    );
   });
 
   it('tags every question with domain "conjugaison"', () => {
@@ -55,7 +67,7 @@ describe('conjugaison generate', () => {
         generate(level, trimester, createRng(7), 40).forEach((q) => {
           if (q.id.startsWith('conjugaison-forme-')) {
             expect(allowed).toContain(tenseOfFormQuestion(q.instruction ?? ''));
-          } else {
+          } else if (q.id.startsWith('conjugaison-temps-')) {
             q.choices.forEach((choice) => expect(allowed).toContain(choice));
           }
         });
@@ -85,6 +97,14 @@ describe('conjugaison generate', () => {
     const questions = generate('CM2', 3, createRng(3), 12);
     const keys = questions.map((q) => q.prompt.replace(/\*\*.+?\*\*/, '...'));
     expect(new Set(keys).size).toBe(keys.length);
+    LEVELS.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => {
+        for (let seed = 1; seed <= 20; seed++) {
+          const signatures = generate(level, trimester, createRng(seed), 12).map((q) => `${q.instruction}|${q.prompt}`);
+          expect(new Set(signatures).size, `${level} T${trimester} graine ${seed}`).toBe(signatures.length);
+        }
+      })
+    );
   });
 
   it('writes the instruction in correct French for every tense', () => {
@@ -116,6 +136,7 @@ describe('conjugaison generate', () => {
       ALL_TRIMESTERS.forEach((trimester) => {
         for (let seed = 1; seed <= 40; seed++) {
           generate(level, trimester, createRng(seed * 7919 + 1), 12).forEach((q) => {
+            if (!q.id.startsWith('conjugaison-forme-') && !q.id.startsWith('conjugaison-temps-')) return;
             const tense = tenseOf(q);
             if (/\bdemain\b/.test(q.prompt)) expect(PAST_TENSES, q.prompt).not.toContain(tense);
             if (/\bhier\b/.test(q.prompt)) expect(NON_PAST_TENSES, q.prompt).not.toContain(tense);
@@ -147,7 +168,7 @@ describe('trouver le temps : une seule bonne réponse', () => {
             const form = /\*\*(.+?)\*\*/.exec(q.prompt)?.[1];
             expect(form).toBeTruthy();
             const correct = q.choices[q.correctIndex] as Tense;
-            for (const verb of ALL_VERBS) {
+            for (const verb of verbsOf(level)) {
               for (const person of PERSONS) {
                 if (verb.forms[correct]?.[person] !== form) continue;
                 for (const other of q.choices) {

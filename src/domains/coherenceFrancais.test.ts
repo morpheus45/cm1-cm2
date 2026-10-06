@@ -14,6 +14,17 @@ import {
   type Noun,
 } from './accordsLexique';
 import { ALL_VERBS } from './conjugaisonVerbes';
+import { ETRE_ET_AVOIR, IRREGULIERS_CE2_D_ABORD, IRREGULIERS_CE2_ENSUITE, VERBES_6E, VERBES_REGULIERS_CYCLE_2 } from './conjugaisonVerbesNiveaux';
+
+/** Tous les verbes dont une phrase sert à plusieurs sujets : ceux du CM, du cycle 2 et de la 6e. */
+const TOUS_LES_VERBES = [
+  ...ALL_VERBS,
+  ...ETRE_ET_AVOIR,
+  ...VERBES_REGULIERS_CYCLE_2,
+  ...IRREGULIERS_CE2_D_ABORD,
+  ...IRREGULIERS_CE2_ENSUITE,
+  ...VERBES_6E,
+];
 
 /**
  * Ce fichier vérifie, à partir du lexique lui-même (genre, nombre,
@@ -157,8 +168,9 @@ describe('accords — une seule bonne réponse, jamais une association absurde',
 
 describe('conjugaison — aucun possessif figé qui ne suit pas le sujet', () => {
   it("aucun complément de verbe ne porte un possessif (son/sa/ses/leur...) puisqu'il est réutilisé avec tous les sujets", () => {
-    const forbidden = /\b(son|sa|ses|ton|ta|tes|leur|leurs|notre|nos|votre|vos)\b/i;
-    ALL_VERBS.forEach((verb) => {
+    // Des limites de mots qui connaissent les lettres accentuées : « piéton » ne contient pas « ton ».
+    const forbidden = /(?<!\p{L})(son|sa|ses|ton|ta|tes|leur|leurs|notre|nos|votre|vos)(?!\p{L})/iu;
+    TOUS_LES_VERBES.forEach((verb) => {
       expect(verb.complement, verb.infinitive).not.toMatch(forbidden);
     });
   });
@@ -166,9 +178,9 @@ describe('conjugaison — aucun possessif figé qui ne suit pas le sujet', () =>
   it("« être » est suivi d'un lieu : rien à accorder, ni en genre ni en nombre", () => {
     // Un adjectif resterait faux pour une partie des sujets : « Elle est très
     // content », « Des filles sont très sage ». Un lieu convient à tous.
-    const etre = ALL_VERBS.find((verb) => verb.infinitive === 'être');
-    expect(etre).toBeDefined();
-    expect(etre!.complement).toMatch(/^(dans|sur|sous|devant|derrière|chez|à|au|aux) /);
+    const etres = TOUS_LES_VERBES.filter((verb) => verb.infinitive === 'être');
+    expect(etres.length).toBeGreaterThanOrEqual(3);
+    etres.forEach((etre) => expect(etre.complement).toMatch(/^(dans|sur|sous|devant|derrière|chez|à|au|aux) /));
   });
 });
 
