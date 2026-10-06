@@ -9,8 +9,8 @@ import {
   rangsDEmprunt,
   rangsDeRetenue,
 } from './calculErreurs';
-import { briqueDeTechnique, decimalesDe, MENTAL, operation, tableDeMultiplication, texte, type Technique } from './calculCommun';
-import { echanges, fabriquer, fauxNombres, type Brique, type Enonce } from './mathsCommun';
+import { briqueDeTechnique, MENTAL, operation, tableDeMultiplication, type Technique } from './calculCommun';
+import { decimalAleatoire, decimalesDe, echanges, fabriquer, fauxNombres, texte, type Brique, type Enonce } from './mathsCommun';
 
 /**
  * Le calcul de la 6e (programme de mathématiques du cycle 3, 2025).
@@ -46,15 +46,6 @@ const arrondiA = (n: number, decimales = 3) => {
 };
 
 const pgcd = (a: number, b: number): number => (b === 0 ? a : pgcd(b, a % b));
-
-/** Un décimal à `decimales` chiffres après la virgule, le dernier jamais nul :
- *  « 3,50 » ne serait qu'un « 3,5 » écrit autrement. */
-function decimalAleatoire(rng: Rng, entierMin: number, entierMax: number, decimales: number): number {
-  const echelle = Math.pow(10, decimales);
-  let fraction = rngInt(rng, 1, echelle - 1);
-  while (fraction % 10 === 0) fraction = rngInt(rng, 1, echelle - 1);
-  return (rngInt(rng, entierMin, entierMax) * echelle + fraction) / echelle;
-}
 
 /** Un décimal lu sans sa virgule : 12,25 devient 1225. */
 const sansVirgule = (n: number) => Number(String(n).replace('.', ''));

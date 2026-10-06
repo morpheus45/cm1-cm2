@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
 import { evaluateCalculation, parseFrenchNumber } from '../lib/classProblems';
 import { needsBrouillon } from '../lib/brouillon';
-import { stageOf, type Stage } from '../lib/progression';
+import { availableAt, stageOf, type Stage } from '../lib/progression';
 import { ALL_TRIMESTERS, type Level, type Question, type Trimester } from '../types';
 import { buildOperations, eligibleOperationKinds, generate } from './calcul';
 import { BRIQUES_CYCLE2 } from './calculCycle2';
@@ -29,11 +29,15 @@ const parCellule = <T>(faire: (level: Level, trimester: Trimester) => T) =>
 
 /** La brique qui a fabriqué la question : son nom est dans l'identifiant,
  *  « calcul-nom-rang-détail ». */
+const MOTIFS_DES_BRIQUES = {
+  cycle2: BRIQUES_CYCLE2.map((brique) => ({ nom: brique.name, motif: new RegExp(`^calcul-${brique.name}-\\d+-`) })),
+  sixieme: BRIQUES_6E.map((brique) => ({ nom: brique.name, motif: new RegExp(`^calcul-${brique.name}-\\d+-`) })),
+};
+
 function briqueDe(question: Question, level: Level): string {
-  const noms = (level === '6e' ? BRIQUES_6E : BRIQUES_CYCLE2).map((brique) => brique.name);
-  const trouves = noms.filter((nom) => new RegExp(`^calcul-${nom}-\\d+-`).test(question.id));
-  expect(trouves, question.id).toHaveLength(1);
-  return trouves[0];
+  const trouves = MOTIFS_DES_BRIQUES[level === '6e' ? 'sixieme' : 'cycle2'].filter(({ motif }) => motif.test(question.id));
+  if (trouves.length !== 1) throw new Error(`${question.id} : ${trouves.length} sortes de question possibles`);
+  return trouves[0].nom;
 }
 
 // --- Le calcul refait à partir de l'énoncé -------------------------------------------------------
@@ -266,6 +270,14 @@ describe('les nombres du programme', () => {
 describe('ce que chaque trimestre apporte', () => {
   const noms = (level: Level, trimester: Trimester) =>
     new Set(questions(level, trimester, 40, 30).map((question) => briqueDe(question, level)));
+
+  it('tire chaque sorte de question déjà enseignée : aucune n\'échappe aux vérifications', () => {
+    parCellule((level, trimester) => questions(level, trimester)).forEach(({ level, trimester, valeur }) => {
+      const attendues = availableAt(level === '6e' ? BRIQUES_6E : BRIQUES_CYCLE2, stageOf(level, trimester)).map((brique) => brique.name);
+      const tirees = new Set(valeur.map((question) => briqueDe(question, level)));
+      attendues.forEach((nom) => expect(tirees.has(nom), `${level} T${trimester} : ${nom}`).toBe(true));
+    });
+  });
 
   it('ne laisse sortir aucune sorte de question avant son étape', () => {
     parCellule((level, trimester) => questions(level, trimester)).forEach(({ level, trimester, valeur }) => {

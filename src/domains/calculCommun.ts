@@ -1,9 +1,11 @@
-import { formatFrenchNumber } from '../lib/classProblems';
 import type { BuiltOperation, OperationKind } from './calcul';
 import { rngInt, rngPick } from '../lib/seededRandom';
 import type { Stage } from '../lib/progression';
 import { erreursTable } from './calculErreurs';
-import { fauxNombres, type Brique } from './mathsCommun';
+import { decimalesDe, fauxNombres, texte, type Brique } from './mathsCommun';
+
+// Ces deux écritures sont partagées avec la numération : elles vivent dans mathsCommun.ts.
+export { decimalesDe, texte };
 
 /**
  * Ce que partagent le calcul du CE1, du CE2 et de la 6e : une technique est
@@ -22,9 +24,6 @@ export interface Technique extends OperationKind {
 
 export const MENTAL = 'Calcule dans ta tête';
 
-/** Un nombre écrit à la française : entier tel quel, décimal à la virgule. */
-export const texte = (n: number): string => (Number.isInteger(n) ? String(n) : formatFrenchNumber(n));
-
 export const operation = (a: number, b: number, op: BuiltOperation['op'], result: number, isDecimal = false): BuiltOperation => ({
   a,
   b,
@@ -32,15 +31,6 @@ export const operation = (a: number, b: number, op: BuiltOperation['op'], result
   result,
   isDecimal,
 });
-
-/** Le nombre de chiffres après la virgule (trois au plus, comme au programme
- *  de la 6e). */
-export function decimalesDe(n: number): number {
-  for (let decimales = 0; decimales < 3; decimales++) {
-    if (Math.abs(n * Math.pow(10, decimales) - Math.round(n * Math.pow(10, decimales))) < 1e-9) return decimales;
-  }
-  return 3;
-}
 
 /**
  * Une technique, prise comme question à choix : « Calcule » et l'opération.

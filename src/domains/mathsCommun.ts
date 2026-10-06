@@ -1,3 +1,4 @@
+import { formatFrenchNumber } from '../lib/classProblems';
 import type { Figure } from '../lib/figures';
 import type { Domain, Level, Question } from '../types';
 import { availableAt, type Stage, type Staged } from '../lib/progression';
@@ -170,6 +171,27 @@ export function fauxNombres(
 export function entierAvecBords(rng: Rng, min: number, max: number, bords: number[], unSur = 3): number {
   const valables = bords.filter((value) => value >= min && value <= max);
   return valables.length > 0 && rngInt(rng, 1, unSur) === 1 ? rngPick(rng, valables) : rngInt(rng, min, max);
+}
+
+/** Un nombre écrit à la française : entier tel quel, décimal à la virgule. */
+export const texte = (n: number): string => (Number.isInteger(n) ? String(n) : formatFrenchNumber(n));
+
+/** Le nombre de chiffres après la virgule (trois au plus, comme au programme
+ *  de la 6e). */
+export function decimalesDe(n: number): number {
+  for (let decimales = 0; decimales < 3; decimales++) {
+    if (Math.abs(n * Math.pow(10, decimales) - Math.round(n * Math.pow(10, decimales))) < 1e-9) return decimales;
+  }
+  return 3;
+}
+
+/** Un décimal à `decimales` chiffres après la virgule, le dernier jamais nul :
+ *  « 3,50 » ne serait qu'un « 3,5 » écrit autrement. */
+export function decimalAleatoire(rng: Rng, entierMin: number, entierMax: number, decimales: number): number {
+  const echelle = Math.pow(10, decimales);
+  let fraction = rngInt(rng, 1, echelle - 1);
+  while (fraction % 10 === 0) fraction = rngInt(rng, 1, echelle - 1);
+  return (rngInt(rng, entierMin, entierMax) * echelle + fraction) / echelle;
 }
 
 // --- Le français des énoncés -----------------------------------------------------------------
