@@ -170,7 +170,7 @@ describe('ce que lit l\'élève en français, au CE1, au CE2 et en 6e', () => {
   it('passe en revue chaque notion écrite, pour chacun des trois niveaux', () => {
     // Sans cela, un niveau ou une notion sans question passerait tous les contrôles ci-dessous sans
     // rien avoir été lu. La liste s'allonge à mesure que les notions sont écrites.
-    const notionsEcrites = ['conjugaison'];
+    const notionsEcrites = ['conjugaison', 'accords'];
     NIVEAUX_FRANCAIS_ECRITS.forEach((level) =>
       notionsEcrites.forEach((domaine) =>
         expect(

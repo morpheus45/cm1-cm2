@@ -18,7 +18,7 @@ import * as orthographe from './orthographe';
 const CINQ_NIVEAUX: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
 const LEVELS_OF: Record<string, Level[]> = {
   conjugaison: CINQ_NIVEAUX,
-  accords: ['CM1', 'CM2'],
+  accords: CINQ_NIVEAUX,
   orthographe: ['CM1', 'CM2'],
 };
 const DRAWS = 800;

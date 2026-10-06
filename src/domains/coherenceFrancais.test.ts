@@ -34,7 +34,9 @@ const TOUS_LES_VERBES = [
  * « des grandes filles/lampes », « Marion range ses/ces affaires », etc.
  */
 
-const LEVELS: Level[] = ['CM1', 'CM2'];
+/** Du CE1 à la 6e : les familles de questions du CM sont reconnues à leur identifiant ; celles du CE1, du
+ *  CE2 et de la 6e ont les leurs, vérifiées dans accordsNiveaux.test.ts et orthographeNiveaux.test.ts. */
+const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
 const NUMBERS: GrammaticalNumber[] = ['singulier', 'pluriel'];
 const GENDERS: Gender[] = ['m', 'f'];
 const SEEDS = Array.from({ length: 40 }, (_, i) => i * 733 + 11);
