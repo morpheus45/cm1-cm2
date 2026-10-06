@@ -239,13 +239,14 @@ export function HomeScreen({
         </Etape>
 
         <Etape numero={2} titre="Ta classe">
-          <div className="flex flex-wrap gap-3">
+          {/* Cinq classes : trois puis deux sur un téléphone, toutes sur une ligne dès que la place le permet. */}
+          <div className="grid grid-cols-3 gap-3 sm:grid-cols-5">
             {AVAILABLE_LEVELS.map((lvl) => (
               <Choix
                 key={lvl}
                 actif={level === lvl}
                 onClick={() => moveTo(lvl, trimester)}
-                className="min-w-[4.5rem] flex-1 py-3 text-xl"
+                className="py-3 text-xl"
               >
                 {LEVEL_LABELS[lvl]}
               </Choix>

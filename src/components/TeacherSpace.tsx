@@ -376,14 +376,15 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
                 onChange={(e) => setClassName(e.target.value)}
               />
             </label>
-            <div className="flex flex-wrap gap-3">
+            {/* Cinq niveaux : trois puis deux sur un téléphone, tous sur une ligne dès que la place le permet. */}
+            <div className="grid grid-cols-3 gap-3 sm:grid-cols-5">
               {AVAILABLE_LEVELS.map((lvl) => (
                 <button
                   key={lvl}
                   type="button"
                   onClick={() => setClassLevel(lvl)}
                   aria-pressed={classLevel === lvl}
-                  className={`etiquette min-w-[4.5rem] flex-1 py-3 text-lg ${classLevel === lvl ? '!bg-encre !text-white' : ''}`}
+                  className={`etiquette py-3 text-lg ${classLevel === lvl ? '!bg-encre !text-white' : ''}`}
                 >
                   {LEVEL_LABELS[lvl]}
                 </button>
