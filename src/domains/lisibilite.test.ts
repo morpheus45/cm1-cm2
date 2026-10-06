@@ -10,6 +10,11 @@ import {
   type Trimester,
 } from '../types';
 import { buildSession } from '../lib/sessionBuilder';
+import { createRng } from '../lib/seededRandom';
+import * as numeration from './numeration';
+import * as calcul from './calcul';
+import * as problemes from './problemes';
+import * as geometrie from './geometrie';
 
 /**
  * Les questions sont lues par des enfants de 8 à 11 ans : des phrases
@@ -27,9 +32,11 @@ import { buildSession } from '../lib/sessionBuilder';
  * Le point-virgule reste proscrit à tous les âges, et les parenthèses en
  * histoire et en géographie aussi.
  *
- * Seules les questions du CM1 et du CM2 sont écrites aujourd'hui : les seuils
- * du cycle 2 et du cycle 4 attendent leur contenu, et s'appliqueront d'eux-mêmes
- * dès qu'un niveau ouvre ses notions (src/lib/contenu.ts).
+ * Les questions du CM1 et du CM2 passent par les séances, comme pour l'élève.
+ * Celles du CE1, du CE2 et de la 6e (maths) passent directement par leurs
+ * générateurs : ces niveaux ne sont pas encore ouverts dans src/lib/contenu.ts,
+ * et leurs questions n'en doivent pas moins être lisibles par des enfants de
+ * sept ans. Les seuils du cycle 4 attendent leur contenu.
  */
 interface Seuils {
   /** Mots d'une phrase de la consigne ou de l'énoncé. */
@@ -61,7 +68,27 @@ const wordsOf = (sentence: string) => sentence.split(/\s+/).filter((token) => /[
 /** Une phrase s'arrête au point, au point d'exclamation ou d'interrogation, et aux deux-points. */
 const sentencesOf = (text: string) => text.split(/[.!?:…]+(?:\s|$)/).filter((part) => wordsOf(part).length > 0);
 
+/** Les maths des trois niveaux qui ne sont pas encore ouverts : les questions que leurs générateurs fabriquent. */
+const GENERATEURS_DES_NOUVEAUX_NIVEAUX = [numeration.generate, calcul.generate, problemes.generate, geometrie.generate];
+const NOUVEAUX_NIVEAUX: Level[] = ['CE1', 'CE2', '6e'];
+
+function questionsDesNouveauxNiveaux(): QuestionDuNiveau[] {
+  return NOUVEAUX_NIVEAUX.flatMap((level) =>
+    TRIMESTERS.flatMap((trimester) =>
+      GENERATEURS_DES_NOUVEAUX_NIVEAUX.flatMap((generer) =>
+        Array.from({ length: 60 }, (_, seed) => generer(level, trimester, createRng((seed + 1) * 7919), 12))
+          .flat()
+          .map((question) => ({ level, question }))
+      )
+    )
+  );
+}
+
 function everyQuestion(): QuestionDuNiveau[] {
+  return [...questionsDeLaBase(), ...questionsDesNouveauxNiveaux()];
+}
+
+function questionsDeLaBase(): QuestionDuNiveau[] {
   return Object.values(SUBJECT_DOMAINS).flatMap((domains) =>
     domains.flatMap((domain) =>
       ALL_LEVELS.flatMap((level) =>
@@ -98,12 +125,13 @@ describe('les seuils de lisibilité', () => {
 describe('ce que lit l\'élève', () => {
   const questions = everyQuestion();
 
-  it('passe en revue au moins le CM1 et le CM2', () => {
+  it('passe en revue le CM1, le CM2, et les maths du CE1, du CE2 et de la 6e', () => {
     // Sans cela, un niveau qui n'aurait plus aucune question passerait tous
     // les contrôles ci-dessous sans rien avoir été lu.
     const levels = new Set(questions.map((entry) => entry.level));
     expect(levels.has('CM1')).toBe(true);
     expect(levels.has('CM2')).toBe(true);
+    NOUVEAUX_NIVEAUX.forEach((level) => expect(levels.has(level), level).toBe(true));
   });
 
   it('n\'a jamais de point-virgule', () => {
@@ -128,6 +156,19 @@ describe('ce que lit l\'élève', () => {
     questions.forEach(({ level, question: q }) =>
       q.choices.forEach((choice) => expect(wordsOf(choice).length, `${level} : ${choice}`).toBeLessThanOrEqual(seuilsOf(level).choix))
     );
+  });
+
+  it('élide devant une voyelle dans les maths du CE1, du CE2 et de la 6e : « d\'enfants », jamais « de enfants »', () => {
+    // Les énoncés se composent à partir de listes de mots : un mot qui commence par une voyelle
+    // (enfants, étuis, œufs) ne doit pas rester seul derrière « de », « que » ou « ne ».
+    // « onze » n'élide pas : « de onze » est juste. (\b ne voit pas les lettres accentuées : « achète un » n'est pas « te un » ; et le nom d'un point, « de A », n'est pas un mot.)
+    questions
+      .filter(({ level }) => NOUVEAUX_NIVEAUX.includes(level))
+      .forEach(({ level, question: q }) =>
+        [q.instruction ?? '', q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) =>
+          expect(text, `${level} : ${text}`).not.toMatch(/(?<![\p{L}'’])(?:de|ne|se|que|me|te|je) (?!onz)[aeiouéèêâîôûœ]\p{L}/iu)
+        )
+      );
   });
 
   it('n\'a pas de parenthèses en histoire et en géographie', () => {

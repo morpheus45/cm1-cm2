@@ -1,7 +1,10 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngShuffle } from '../lib/seededRandom';
-import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
+import { availableAt, isAvailableAt, stageOf, type Stage } from '../lib/progression';
+import { formatFrenchNumber } from '../lib/classProblems';
+import { genererCycle2, TECHNIQUES_CYCLE2 } from './calculCycle2';
+import { genererSixieme, TECHNIQUES_6E } from './calculSixieme';
 
 type Operation = '+' | '-' | '×' | '÷';
 
@@ -193,8 +196,14 @@ function distractorsForResult(rng: Rng, correct: number, isDecimal: boolean): nu
   return Array.from(candidates);
 }
 
+/**
+ * Un nombre écrit comme à l'école : l'entier tel quel, le décimal à la virgule.
+ * Un seul chiffre après la virgule, comme au CM ; la 6e en veut jusqu'à trois
+ * (le millième), et le zéro inutile n'y est jamais écrit.
+ */
 export function formatNumber(n: number): string {
-  return Number.isInteger(n) ? String(n) : n.toFixed(1).replace('.', ',');
+  if (Number.isInteger(n)) return String(n);
+  return Math.abs(n * 10 - Math.round(n * 10)) < 1e-9 ? n.toFixed(1).replace('.', ',') : formatFrenchNumber(n);
 }
 
 /**
@@ -221,12 +230,22 @@ export function buildOperations(
   );
 }
 
+/**
+ * Les techniques enseignées à ce niveau, à ce trimestre. Le CE1, le CE2 et la
+ * 6e ont chacun leur liste (calculCycle2.ts, calculSixieme.ts), avec des
+ * nombres écrits pour eux : les seuils ci-dessous sont ceux du CM1 et du CM2,
+ * et ne servent qu'à eux.
+ */
 export function eligibleOperationKinds(level: Level, trimester: Trimester): OperationKind[] {
   const stage = stageOf(level, trimester);
+  if (level === 'CE1' || level === 'CE2') return availableAt(TECHNIQUES_CYCLE2, stage);
+  if (level === '6e') return availableAt(TECHNIQUES_6E, stage);
   return OPERATION_KINDS.filter((kind) => isAvailableAt(kind.minStage, stage));
 }
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  if (level === 'CE1' || level === 'CE2') return genererCycle2(level, trimester, rng, count);
+  if (level === '6e') return genererSixieme(level, trimester, rng, count);
   const questions: Question[] = [];
   const operations = buildOperations(level, trimester, rng, count);
 
