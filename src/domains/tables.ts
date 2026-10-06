@@ -1,9 +1,23 @@
+import type { Level, Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngShuffle } from '../lib/seededRandom';
 
 /** Les tables qu'on révise au cycle 3 : de 2 à 10. La table de 1 ne demande
  *  aucun entraînement. */
 export const ALL_TABLES = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+/**
+ * Les tables au programme, par niveau et par trimestre : les mêmes que celles
+ * des questions de calcul (calculCycle2.ts). Au CE1, les tables de 2 et de 10
+ * d'abord, puis celles de 5 et de 3, puis celle de 4 : les tables de 2, 3, 4,
+ * 5 et 10, et pas d'autres. Au CE2, le début des tables de 6 et de 7, puis
+ * toutes. Du CM1 à la 6e, de 2 à 10.
+ */
+export function tablesAuProgramme(level: Level, trimester: Trimester): number[] {
+  if (level === 'CE1') return trimester === 1 ? [2, 10] : trimester === 2 ? [2, 3, 5, 10] : [2, 3, 4, 5, 10];
+  if (level === 'CE2' && trimester === 1) return [2, 3, 4, 5, 6, 7, 10];
+  return [...ALL_TABLES];
+}
 
 /** Une série de tables : assez longue pour tout brasser, assez courte pour
  *  rester un rituel de quelques minutes. */
@@ -35,8 +49,11 @@ export function normaliseTables(candidates: unknown): number[] {
  * sur deux : « 7 × 4 » et « 4 × 7 » sont le même résultat, que l'élève doit
  * reconnaître dans les deux sens.
  */
-export function buildTableFacts(tables: number[], rng: Rng, count = TABLES_PER_SESSION): TableFact[] {
-  const chosen = normaliseTables(tables);
+export function buildTableFacts(tables: number[], rng: Rng, count = TABLES_PER_SESSION, allowed?: number[]): TableFact[] {
+  // Avec `allowed` (les tables au programme du niveau), une sélection qui en
+  // sort — enregistrée d'une année ou d'une classe à l'autre — est ramenée aux
+  // tables du programme ; sans lui, rien ne change.
+  const chosen = allowed ? restrictTables(tables, allowed) : normaliseTables(tables);
   const pool = chosen.flatMap((table) =>
     Array.from({ length: 9 }, (_, index) => ({ table, other: index + 2 }))
   );
@@ -58,6 +75,14 @@ export function buildTableFacts(tables: number[], rng: Rng, count = TABLES_PER_S
     const b = swap ? table : other;
     return { id: `table-${index}-${a}-${b}`, table, a, b, result: a * b };
   });
+}
+
+/** Les tables choisies qui sont au programme ; toutes celles du programme si
+ *  aucune des choisies n'y est. */
+function restrictTables(candidates: unknown, allowed: number[]): number[] {
+  const list = Array.isArray(candidates) ? candidates : [];
+  const kept = allowed.filter((table) => list.includes(table));
+  return kept.length > 0 ? kept : [...allowed];
 }
 
 function sameProduct(x: { table: number; other: number }, y: { table: number; other: number }): boolean {
