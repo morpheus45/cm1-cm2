@@ -3,6 +3,8 @@ import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
 import { availableAt, stageOf } from '../lib/progression';
 import { ANTONYM_ITEMS, HOMOPHONE_ITEMS, SYNONYM_ITEMS, type AntonymItem, type HomophoneItem, type SynonymItem } from './orthographeLexique';
+import { estNiveauEcrit } from './francaisNiveaux';
+import { generateNiveau } from './orthographeNiveaux';
 
 /** Le trou est-il en début de phrase ? Si oui toutes les propositions prennent
  *  une majuscule, sinon aucune : sans cela, la casse trahirait la paire
@@ -70,6 +72,8 @@ function antonymQuestion(index: number, rng: Rng, item: AntonymItem): Question {
 }
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  // Le CE1, le CE2 et la 6e ont leur propre orthographe, écrite à part : celle du CM1 et du CM2 ne change pas.
+  if (estNiveauEcrit(level)) return generateNiveau(level, trimester, rng, count);
   const stage = stageOf(level, trimester);
   const homophonePool = availableAt(HOMOPHONE_ITEMS, stage);
   const synonymPool = availableAt(SYNONYM_ITEMS, stage);

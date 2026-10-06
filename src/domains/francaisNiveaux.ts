@@ -156,6 +156,57 @@ export function fabriquerDistinctes<C>(
   return questions;
 }
 
+/**
+ * Comme `fabriquerDistinctes`, mais les candidats sont tirés par groupes : d'abord un groupe, puis un
+ * sous-groupe, puis un élément (voir `echantillonParGroupes`). Chaque groupe pèse autant que les autres,
+ * quelle que soit sa taille : les mille phrases de « son » ne couvrent pas les dix de « ou / où ».
+ */
+export function fabriquerDistinctesParGroupes<C>(
+  rng: Rng,
+  groupes: readonly (readonly (readonly C[])[])[],
+  n: number,
+  vues: Set<string>,
+  construire: (rng: Rng, candidat: C, rang: number) => Question | null
+): Question[] {
+  const questions: Question[] = [];
+  if (n <= 0) return questions;
+  for (const candidat of echantillonParGroupes(rng, groupes, n * 4 + 8)) {
+    if (questions.length >= n) break;
+    const question = construire(rng, candidat, questions.length);
+    if (!question) continue;
+    const cle = signature(question);
+    if (vues.has(cle)) continue;
+    vues.add(cle);
+    questions.push(question);
+  }
+  return questions;
+}
+
+/**
+ * Fabrique jusqu'à `n` questions distinctes par essais successifs : pour les questions qu'on compose au
+ * hasard (quatre mots à ranger, un intrus parmi trois mots) plutôt que d'en dresser la liste d'avance.
+ * Un essai peut échouer (`null`) ou retomber sur un énoncé déjà posé : on en refait, dans la limite de
+ * `essais`.
+ */
+export function fabriquerParEssais(
+  rng: Rng,
+  n: number,
+  vues: Set<string>,
+  essai: (rng: Rng, rang: number) => Question | null,
+  essais = n * 30 + 30
+): Question[] {
+  const questions: Question[] = [];
+  for (let tentative = 0; tentative < essais && questions.length < n; tentative++) {
+    const question = essai(rng, questions.length);
+    if (!question) continue;
+    const cle = signature(question);
+    if (vues.has(cle)) continue;
+    vues.add(cle);
+    questions.push(question);
+  }
+  return questions;
+}
+
 /** Une famille de questions : de quel poids elle pèse dans une séance, et
  *  comment elle en fabrique. */
 export interface Famille {

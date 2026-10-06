@@ -19,7 +19,7 @@ const CINQ_NIVEAUX: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
 const LEVELS_OF: Record<string, Level[]> = {
   conjugaison: CINQ_NIVEAUX,
   accords: CINQ_NIVEAUX,
-  orthographe: ['CM1', 'CM2'],
+  orthographe: CINQ_NIVEAUX,
 };
 const DRAWS = 800;
 const QUESTIONS_PER_DRAW = 12;
