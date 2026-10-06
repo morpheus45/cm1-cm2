@@ -5,7 +5,9 @@ import { ADJECTIVES } from './accordsLexique';
 import { ALL_TRIMESTERS } from '../types';
 import type { Level, Trimester } from '../types';
 
-const LEVELS: Level[] = ['CM1', 'CM2'];
+/** Du CE1 à la 6e : les questions de ces cinq niveaux ont les mêmes garanties.
+ *  Ce que le CE1, le CE2 et la 6e ont en propre est dans accordsNiveaux.test.ts. */
+const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
 const IRREGULAR_PLURALS = ['tableaux', 'journaux', 'bateaux', 'chevaux'];
 /** Les formes plurielles des adjectifs : un « des » suivi de l'une d'elles
  *  trahirait un adjectif déjà placé avant le nom, dans une question qui
@@ -16,6 +18,25 @@ describe('accords generate', () => {
   it('returns the requested number of questions', () => {
     expect(generate('CM1', 1, createRng(1), 8)).toHaveLength(8);
     expect(generate('CM2', 3, createRng(1), 8)).toHaveLength(8);
+    LEVELS.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => {
+        [1, 4, 12, 40, 200].forEach((count) =>
+          expect(generate(level, trimester, createRng(count), count), `${level} T${trimester} × ${count}`).toHaveLength(count)
+        );
+      })
+    );
+  });
+
+  it('never asks the same sentence twice in one session, at the levels written for the cycle 2 and the 6e', () => {
+    // Le CM1 et le CM2, qui ne doivent pas changer, peuvent encore répéter un énoncé dans une séance de douze questions.
+    (['CE1', 'CE2', '6e'] as Level[]).forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => {
+        for (let seed = 1; seed <= 20; seed++) {
+          const signatures = generate(level, trimester, createRng(seed), 12).map((q) => `${q.instruction}|${q.prompt}`);
+          expect(new Set(signatures).size, `${level} T${trimester} graine ${seed}`).toBe(signatures.length);
+        }
+      })
+    );
   });
 
   it('tags every question with domain "accords" and 4 unique choices', () => {

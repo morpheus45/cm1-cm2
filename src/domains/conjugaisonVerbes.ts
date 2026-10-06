@@ -35,7 +35,7 @@ export const ALL_TENSES: Tense[] = [
   'conditionnel présent',
 ];
 
-type Paradigm = Record<Person, string>;
+export type Paradigm = Record<Person, string>;
 
 export interface Verb {
   infinitive: string;
@@ -51,14 +51,14 @@ export interface Verb {
   forms: Record<Tense, Paradigm>;
 }
 
-function paradigm(je: string, tu: string, il: string, nous: string, vous: string, ils: string): Paradigm {
+export function paradigm(je: string, tu: string, il: string, nous: string, vous: string, ils: string): Paradigm {
   return { je, tu, il, nous, vous, ils };
 }
 
 // --- 1er groupe : radical + terminaisons, avec les variantes orthographiques
 // enseignées à l'école (-cer, -ger, -yer, e→è, consonne doublée). -------------
 
-type Pattern1 = 'regular' | 'cer' | 'ger' | 'yer' | 'e-accent' | 'double';
+export type Pattern1 = 'regular' | 'cer' | 'ger' | 'yer' | 'e-accent' | 'double';
 
 /** Le radical devant une terminaison qui commence par « a » ou « o » :
  *  commenc- devient commenç-, mang- devient mange-. */
@@ -185,23 +185,23 @@ function group2Forms(infinitive: string): Record<Tense, Paradigm> {
   };
 }
 
-function group1(infinitive: string, complement: string, pattern: Pattern1 = 'regular'): Verb {
+export function group1(infinitive: string, complement: string, pattern: Pattern1 = 'regular'): Verb {
   return { infinitive, complement, canCompound: true, forms: group1Forms(infinitive, pattern) };
 }
 
-function group2(infinitive: string, complement: string): Verb {
+export function group2(infinitive: string, complement: string): Verb {
   return { infinitive, complement, canCompound: true, forms: group2Forms(infinitive) };
 }
 
 // --- Auxiliaires, utilisés pour les temps composés des verbes ci-dessus. ---
 
-const AVOIR_PRESENT = paradigm('ai', 'as', 'a', 'avons', 'avez', 'ont');
-const AVOIR_IMPARFAIT = paradigm('avais', 'avais', 'avait', 'avions', 'aviez', 'avaient');
-const ETRE_PRESENT = paradigm('suis', 'es', 'est', 'sommes', 'êtes', 'sont');
+export const AVOIR_PRESENT = paradigm('ai', 'as', 'a', 'avons', 'avez', 'ont');
+export const AVOIR_IMPARFAIT = paradigm('avais', 'avais', 'avait', 'avions', 'aviez', 'avaient');
+export const ETRE_PRESENT = paradigm('suis', 'es', 'est', 'sommes', 'êtes', 'sont');
 
 // --- Verbes irréguliers : tables écrites en toutes lettres. -----------------
 
-function compoundWith(auxiliaire: Paradigm, participe: string): Paradigm {
+export function compoundWith(auxiliaire: Paradigm, participe: string): Paradigm {
   return paradigm(...PERSONS.map((person) => `${auxiliaire[person]} ${participe}`) as [string, string, string, string, string, string]);
 }
 

@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest';
 import { createRng } from '../lib/seededRandom';
 import { ALL_TRIMESTERS, type Level, type Trimester } from '../types';
 import { generate as generateAccords } from './accords';
+import { generate as generateConjugaison } from './conjugaison';
 import { generate as generateOrthographe } from './orthographe';
+import { MOTS_A_DEUX_GRAPHIES, NIVEAUX_ECRITS } from './francaisNiveaux';
 import {
   ADJECTIVES,
   NOUNS,
@@ -14,6 +16,17 @@ import {
   type Noun,
 } from './accordsLexique';
 import { ALL_VERBS } from './conjugaisonVerbes';
+import { ETRE_ET_AVOIR, IRREGULIERS_CE2_D_ABORD, IRREGULIERS_CE2_ENSUITE, VERBES_6E, VERBES_REGULIERS_CYCLE_2 } from './conjugaisonVerbesNiveaux';
+
+/** Tous les verbes dont une phrase sert à plusieurs sujets : ceux du CM, du cycle 2 et de la 6e. */
+const TOUS_LES_VERBES = [
+  ...ALL_VERBS,
+  ...ETRE_ET_AVOIR,
+  ...VERBES_REGULIERS_CYCLE_2,
+  ...IRREGULIERS_CE2_D_ABORD,
+  ...IRREGULIERS_CE2_ENSUITE,
+  ...VERBES_6E,
+];
 
 /**
  * Ce fichier vérifie, à partir du lexique lui-même (genre, nombre,
@@ -23,7 +36,9 @@ import { ALL_VERBS } from './conjugaisonVerbes';
  * « des grandes filles/lampes », « Marion range ses/ces affaires », etc.
  */
 
-const LEVELS: Level[] = ['CM1', 'CM2'];
+/** Du CE1 à la 6e : les familles de questions du CM sont reconnues à leur identifiant ; celles du CE1, du
+ *  CE2 et de la 6e ont les leurs, vérifiées dans accordsNiveaux.test.ts et orthographeNiveaux.test.ts. */
+const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
 const NUMBERS: GrammaticalNumber[] = ['singulier', 'pluriel'];
 const GENDERS: Gender[] = ['m', 'f'];
 const SEEDS = Array.from({ length: 40 }, (_, i) => i * 733 + 11);
@@ -157,8 +172,9 @@ describe('accords — une seule bonne réponse, jamais une association absurde',
 
 describe('conjugaison — aucun possessif figé qui ne suit pas le sujet', () => {
   it("aucun complément de verbe ne porte un possessif (son/sa/ses/leur...) puisqu'il est réutilisé avec tous les sujets", () => {
-    const forbidden = /\b(son|sa|ses|ton|ta|tes|leur|leurs|notre|nos|votre|vos)\b/i;
-    ALL_VERBS.forEach((verb) => {
+    // Des limites de mots qui connaissent les lettres accentuées : « piéton » ne contient pas « ton ».
+    const forbidden = /(?<!\p{L})(son|sa|ses|ton|ta|tes|leur|leurs|notre|nos|votre|vos)(?!\p{L})/iu;
+    TOUS_LES_VERBES.forEach((verb) => {
       expect(verb.complement, verb.infinitive).not.toMatch(forbidden);
     });
   });
@@ -166,9 +182,9 @@ describe('conjugaison — aucun possessif figé qui ne suit pas le sujet', () =>
   it("« être » est suivi d'un lieu : rien à accorder, ni en genre ni en nombre", () => {
     // Un adjectif resterait faux pour une partie des sujets : « Elle est très
     // content », « Des filles sont très sage ». Un lieu convient à tous.
-    const etre = ALL_VERBS.find((verb) => verb.infinitive === 'être');
-    expect(etre).toBeDefined();
-    expect(etre!.complement).toMatch(/^(dans|sur|sous|devant|derrière|chez|à|au|aux) /);
+    const etres = TOUS_LES_VERBES.filter((verb) => verb.infinitive === 'être');
+    expect(etres.length).toBeGreaterThanOrEqual(3);
+    etres.forEach((etre) => expect(etre.complement).toMatch(/^(dans|sur|sous|devant|derrière|chez|à|au|aux) /));
   });
 });
 
@@ -198,5 +214,28 @@ describe('orthographe — homophones : jamais deux mots possibles', () => {
       const correct = q.choices[q.correctIndex].toLowerCase();
       expect(pairPartnerAlsoFits(correct, q.prompt), q.prompt).toBe(false);
     });
+  });
+});
+
+// --- Les rectifications de 1990 : jamais une faute, jamais un mot de question --------------------------------
+
+describe('les trois notions du CE1, du CE2 et de la 6e : aucun mot à deux graphies depuis 1990', () => {
+  // « maître » et « maitre », « connaît » et « connait », « goûter » et « gouter » s'écrivent des deux façons :
+  // une question qui en employe un a l'air d'en corriger l'autre.
+  const motInterdit = new RegExp(`(?<![\\p{L}-])(${MOTS_A_DEUX_GRAPHIES.join('|')})(?![\\p{L}-])`, 'iu');
+  const generateurs = [generateConjugaison, generateAccords, generateOrthographe];
+
+  it('ni dans une consigne, ni dans un énoncé, ni dans un choix', () => {
+    NIVEAUX_ECRITS.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) =>
+        generateurs.forEach((generer) =>
+          SEEDS.slice(0, 15).forEach((seed) =>
+            generer(level, trimester, createRng(seed), 24).forEach((q) =>
+              [q.instruction ?? '', q.prompt, ...q.choices].forEach((texte) => expect(texte, `${level} T${trimester} : ${texte}`).not.toMatch(motInterdit))
+            )
+          )
+        )
+      )
+    );
   });
 });
