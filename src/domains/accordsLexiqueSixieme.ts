@@ -205,9 +205,10 @@ export const ADJECTIFS_6E: AdjectifEcrit[] = [
   ]),
   adjectif('beau', 'belle', 'beaux', 'belles', 'avant', TOUTES, 'bel'),
   adjectif('nouveau', 'nouvelle', 'nouveaux', 'nouvelles', 'avant', COURANTES, 'nouvel', ['château', 'village']),
-  adjectif('vieux', 'vieille', 'vieux', 'vieilles', 'avant', TOUTES, 'vieil', ['orage', 'tempête', 'vague', 'nuage', 'paysage']),
-  adjectif('petit', 'petite', 'petits', 'petites', 'avant', TOUTES),
-  adjectif('grand', 'grande', 'grands', 'grandes', 'avant', TOUTES),
+  adjectif('vieux', 'vieille', 'vieux', 'vieilles', 'avant', TOUTES, 'vieil', ['orage', 'tempête', 'vague', 'nuage', 'paysage', 'garçon', 'fille']),
+  // « Une petite amie » ne se dit pas d'une enfant ; « un petit oncle » et « une grande tante » sont des grands-oncles et des grands-tantes.
+  adjectif('petit', 'petite', 'petits', 'petites', 'avant', TOUTES, undefined, ['ami', 'amie', 'oncle', 'tante']),
+  adjectif('grand', 'grande', 'grands', 'grandes', 'avant', TOUTES, undefined, ['oncle', 'tante']),
   adjectif('gros', 'grosse', 'gros', 'grosses', 'avant', ['animal', 'objet', 'nature', 'nourriture'], undefined, [
     'rivière',
     'forêt',
@@ -260,10 +261,18 @@ export const SCENES: Scene[] = [
     lieux: [s('Dans le ciel'), s('Au-dessus de la forêt'), p('Au-dessus des champs'), p('Dans les nuages')],
     sujets: [
       ['oiseau', 'oiseaux', 'm'],
+      ['avion', 'avions', 'm'],
+      ['hélicoptère', 'hélicoptères', 'm'],
+    ],
+  },
+  // Les insectes ne volent pas dans les nuages : deux scènes pour « voler ».
+  {
+    verbe: 'voler',
+    lieux: [s('Dans le jardin'), p('Au-dessus des fleurs'), s('Dans la cuisine'), s('Près de la fenêtre')],
+    sujets: [
       ['papillon', 'papillons', 'm'],
       ['abeille', 'abeilles', 'f'],
       ['mouche', 'mouches', 'f'],
-      ['avion', 'avions', 'm'],
     ],
   },
   {
@@ -273,12 +282,12 @@ export const SCENES: Scene[] = [
       ['oiseau', 'oiseaux', 'm'],
       ['merle', 'merles', 'm'],
       ['rossignol', 'rossignols', 'm'],
-      ['coq', 'coqs', 'm'],
+      ['moineau', 'moineaux', 'm'],
     ],
   },
   {
     verbe: 'nager',
-    lieux: [s('Dans la rivière'), s('Dans le lac'), p('Dans les vagues'), s("Dans l'étang")],
+    lieux: [s('Dans la rivière'), s('Dans le lac'), p('Dans les mares'), s("Dans l'étang")],
     sujets: [
       ['poisson', 'poissons', 'm'],
       ['canard', 'canards', 'm'],
@@ -296,13 +305,23 @@ export const SCENES: Scene[] = [
       ['tulipe', 'tulipes', 'f'],
     ],
   },
+  // Les lampes ne brillent pas dans le ciel, ni les étoiles dans la cuisine : deux scènes pour « briller ».
   {
     verbe: 'briller',
-    lieux: [s('Dans le ciel'), s('Dans la nuit'), s('Au-dessus de la mer'), p('Sur les toits')],
+    lieux: [s('Dans le ciel'), s('Dans la nuit'), s('Au-dessus de la mer'), p('Au-dessus des toits')],
     sujets: [
       ['étoile', 'étoiles', 'f'],
+      ['planète', 'planètes', 'f'],
+      ['comète', 'comètes', 'f'],
+    ],
+  },
+  {
+    verbe: 'briller',
+    lieux: [s('Dans la rue'), s('Dans la cuisine'), p('Dans les maisons'), s('Au bord du chemin')],
+    sujets: [
       ['lampe', 'lampes', 'f'],
       ['lumière', 'lumières', 'f'],
+      ['bougie', 'bougies', 'f'],
     ],
   },
   {
@@ -312,7 +331,7 @@ export const SCENES: Scene[] = [
       ['voiture', 'voitures', 'f'],
       ['camion', 'camions', 'm'],
       ['vélo', 'vélos', 'm'],
-      ['train', 'trains', 'm'],
+      ['moto', 'motos', 'f'],
     ],
   },
   {
@@ -353,24 +372,42 @@ export const SCENES: Scene[] = [
       ['garçon', 'garçons', 'm'],
     ],
   },
+  // Les pommes ne tombent pas sur les vitres : deux scènes pour « tomber ».
   {
     verbe: 'tomber',
-    lieux: [s('Sur le toit'), p('Sur les vitres'), s('Dans le jardin')],
+    lieux: [s('Sur le toit'), p('Sur les vitres'), p('Sur les routes')],
     sujets: [
       ['goutte', 'gouttes', 'f'],
-      ['feuille', 'feuilles', 'f'],
       ['flocon', 'flocons', 'm'],
+      ['grêlon', 'grêlons', 'm'],
+    ],
+  },
+  {
+    verbe: 'tomber',
+    lieux: [s('Dans le jardin'), s("Dans l'herbe"), s('Sous le pommier')],
+    sujets: [
+      ['feuille', 'feuilles', 'f'],
       ['pomme', 'pommes', 'f'],
+      ['poire', 'poires', 'f'],
+    ],
+  },
+  // Le train n'arrive pas à la porte, le facteur pas sur le quai : deux scènes pour « arriver ».
+  {
+    verbe: 'arriver',
+    lieux: [s('À la gare'), s('Sur le quai'), s('À la station')],
+    sujets: [
+      ['train', 'trains', 'm'],
+      ['voyageur', 'voyageurs', 'm'],
+      ['autocar', 'autocars', 'm'],
     ],
   },
   {
     verbe: 'arriver',
-    lieux: [s('À la gare'), s('Sur le quai'), s('À la porte')],
+    lieux: [s('À la porte'), s('Chez le voisin'), s('À la maison')],
     sujets: [
-      ['train', 'trains', 'm'],
-      ['voyageur', 'voyageurs', 'm'],
       ['facteur', 'facteurs', 'm'],
       ['voisin', 'voisins', 'm'],
+      ['invité', 'invités', 'm'],
     ],
   },
   {
@@ -392,11 +429,11 @@ export const SCENES: Scene[] = [
 export const ACTIONS_DE_PERSONNES: [string, string][] = [
   ['chanter', 'à la chorale'],
   ['dessiner', 'un paysage'],
-  ['préparer', 'un exposé'],
+  ['préparer', 'un gâteau'],
   ['regarder', 'un documentaire'],
   ['écouter', 'la radio'],
   ['laver', 'la voiture'],
-  ['nettoyer', 'le tableau'],
+  ['nettoyer', 'la terrasse'],
   ['attendre', 'le bus'],
   ['répondre', 'aux questions'],
   ['lire', 'un roman'],
@@ -692,15 +729,20 @@ export interface SujetAvecAvoir {
   auxiliaire: string;
   /** « je » et « nous » se placent différemment : « que j'ai », « que nous avons ». */
   pronom: boolean;
+  /** Un adulte de la famille : il n'a ni devoir, ni leçon, ni exposé à rendre. */
+  adulte?: boolean;
 }
+
+/** Ce qu'un élève rend ou apprend : « Mon oncle a fini les devoirs » sonne faux. */
+export const TRAVAUX_D_ELEVE = ['exposé', 'devoir', 'leçon', 'exercice'];
 
 export const SUJETS_AVEC_AVOIR: SujetAvecAvoir[] = [
   ...['Léa', 'Paul', 'Nora', 'Tom', 'Camille', 'Hugo', 'Lucas', 'Manon', 'Sami', 'Lola'].map((texte) => ({ texte, auxiliaire: 'a', pronom: false })),
   { texte: 'Mon frère', auxiliaire: 'a', pronom: false },
   { texte: 'Ma sœur', auxiliaire: 'a', pronom: false },
-  { texte: 'Ma tante', auxiliaire: 'a', pronom: false },
-  { texte: 'Mon oncle', auxiliaire: 'a', pronom: false },
-  { texte: 'Mes parents', auxiliaire: 'ont', pronom: false },
+  { texte: 'Ma tante', auxiliaire: 'a', pronom: false, adulte: true },
+  { texte: 'Mon oncle', auxiliaire: 'a', pronom: false, adulte: true },
+  { texte: 'Mes parents', auxiliaire: 'ont', pronom: false, adulte: true },
   { texte: 'Mes cousins', auxiliaire: 'ont', pronom: false },
   { texte: 'Les enfants', auxiliaire: 'ont', pronom: false },
   { texte: 'Je', auxiliaire: 'ai', pronom: true },

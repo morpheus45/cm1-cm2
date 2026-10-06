@@ -209,6 +209,9 @@ describe('les paires d\'un adjectif et d\'un nom qui sonnent faux', () => {
     ['sportif', 'orage'], ['musical', 'orage'], ['musical', 'cahier'], ['courageux', 'orage'],
     ['content', 'table'], ['heureux', 'pomme'], ['fort', 'jardin'], ['timide', 'maison'], ['fatigué', 'cahier'],
     ['rapide', 'pomme'], ['délicieux', 'cahier'], ['neuf', 'chat'], ['neuf', 'garçon'],
+    // Les groupes qui ont un autre sens : « une petite amie », « un vieux garçon », « une bonne sœur », « un beau frère ».
+    ['petit', 'ami'], ['petit', 'amie'], ['petit', 'copain'], ['petit', 'copine'], ['petit', 'oncle'], ['petit', 'tante'], ['grand', 'oncle'], ['grand', 'tante'],
+    ['vieux', 'garçon'], ['vieux', 'fille'], ['bon', 'sœur'], ['beau', 'frère'], ['beau', 'sœur'], ['beau', 'maman'], ['beau', 'papa'],
   ];
 
   it.each([
@@ -222,6 +225,17 @@ describe('les paires d\'un adjectif et d\'un nom qui sonnent faux', () => {
       const permis = adjectif.categories.includes(nom.categorie) && !(adjectif.sauf ?? []).includes(nom.singulier);
       expect(permis, `« ${masculin} » ne se dit pas de « ${singulier} »`).toBe(false);
     });
+  });
+
+  it('ne pose, dans aucune question, un groupe qui change de sens : « une petite amie », « un vieux garçon », « une bonne sœur », « un beau frère »', () => {
+    const autreSens = /(?<![\p{L}])(petit|petite|petits|petites)\s+(ami|amie|amis|amies|copain|copine|copains|copines|oncles?|tantes?)(?![\p{L}])|(?<![\p{L}])(grand|grande|grands|grandes)\s+(oncles?|tantes?)(?![\p{L}])|(?<![\p{L}])(vieux|vieille|vieilles)\s+(garçons?|filles?)(?![\p{L}])|(?<![\p{L}])(bon|bonne|bons|bonnes)\s+sœurs?(?![\p{L}])|(?<![\p{L}])(beau|bel|belle|beaux|belles)\s+(frères?|sœurs?|mamans?|papas?)(?![\p{L}])/iu;
+    NIVEAUX.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) =>
+        questionsDe(level, trimester, 40).forEach((q) =>
+          expect(`${q.prompt} ${q.choices.join(' / ')}`, `${level} T${trimester}`).not.toMatch(autreSens)
+        )
+      )
+    );
   });
 
   it('ne laisse, parmi les adjectifs de couleur, que des noms qu\'on peut colorier : objets, vêtements, véhicules, maisons', () => {
@@ -640,6 +654,80 @@ describe('l\'accord du sujet et du verbe : une seule bonne réponse', () => {
   });
 });
 
+describe('les phrases à compléter ont un sens : qui fait quoi', () => {
+  // Une seconde saisie, écrite ici à part, des personnes et de ce qu'elles font.
+  const mot = (liste: string) => new RegExp(`(?<![\\p{L}])(${liste})(?![\\p{L}])`, 'iu');
+  const ECOLE = /(?<![\p{L}])(classe|devoirs?)(?![\p{L}])|à l'école/iu;
+  const ELEVE = mot('garçons?|filles?|voisins?|voisines?|amis?|amies?|copains?|copines?|cousins?|cousines?|frères?|sœurs?');
+  const ENFANT = mot('garçons?|filles?|cousins?|cousines?|frères?|sœurs?|amis?|amies?|copains?|copines?');
+  const SANS_ECOLE = mot('rois?|reines?|dames?|mamans?|papas?|clowns?|pirates?|fées?|bébés?|oncles?|tantes?|directeurs?|directrices?|boulangers?|boulangères?|infirmiers?|infirmières?|chanteurs?|chanteuses?|voyageurs?|voyageuses?|champions?|championnes?');
+  const sujetEtSuite = (q: Question) => {
+    const [sujet, ...suite] = q.prompt.split(' ... ');
+    return { sujet, suite: suite.join(' ... ') };
+  };
+
+  it('ne parle d\'école, de classe ou de devoirs que d\'un élève : « Le roi bavarde en classe », « La dame va à l\'école » sonnent faux', () => {
+    let vues = 0;
+    NIVEAUX.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) =>
+        questionsDe(level, trimester, 40)
+          .filter((q) => famille(q) === 'sujetverbe')
+          .forEach((q) => {
+            const { sujet, suite } = sujetEtSuite(q);
+            if (!ECOLE.test(suite)) return;
+            vues++;
+            expect(sujet, q.prompt).toMatch(ELEVE);
+            expect(sujet, q.prompt).not.toMatch(SANS_ECOLE);
+          })
+      )
+    );
+    // Le test voit bien des phrases d'école : « bavarder en classe », « décorer la classe », « faire les devoirs ».
+    expect(vues).toBeGreaterThan(20);
+  });
+
+  it('ne fait grandir « très vite » qu\'un enfant : « Un boulanger grandit très vite » sonne faux', () => {
+    let vues = 0;
+    ALL_TRIMESTERS.forEach((trimester) =>
+      questionsDe('6e', trimester, 40)
+        .filter((q) => famille(q) === 'sujetverbe' && q.id.split('-')[3] === 'grandir')
+        .forEach((q) => {
+          vues++;
+          const { sujet } = sujetEtSuite(q);
+          expect(sujet, q.prompt).toMatch(ENFANT);
+          expect(sujet, q.prompt).not.toMatch(mot('voisins?|voisines?'));
+          expect(sujet, q.prompt).not.toMatch(SANS_ECOLE);
+        })
+    );
+    expect(vues).toBeGreaterThan(5);
+  });
+
+  it('ne met jamais un bébé en sujet d\'un verbe d\'action : « Le bébé répare le vélo »', () => {
+    NIVEAUX.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) =>
+        questionsDe(level, trimester, 40)
+          .filter((q) => famille(q) === 'sujetverbe')
+          .forEach((q) => expect(sujetEtSuite(q).sujet, q.prompt).not.toMatch(mot('bébés?')))
+      )
+    );
+  });
+
+  it('ne répète jamais le nom du sujet dans la suite de la phrase : « Les voisins jouent aux échecs avec un voisin »', () => {
+    NIVEAUX.forEach((level) => {
+      const personnes = NOMS_DU[level].filter((nom) => nom.categorie === 'personne');
+      ALL_TRIMESTERS.forEach((trimester) =>
+        questionsDe(level, trimester, 40)
+          .filter((q) => famille(q) === 'sujetverbe')
+          .forEach((q) => {
+            const { sujet, suite } = sujetEtSuite(q);
+            personnes
+              .filter((nom) => mot(`${nom.singulier}|${nom.pluriel}`).test(sujet))
+              .forEach((nom) => expect(suite, q.prompt).not.toMatch(mot(`${nom.singulier}|${nom.pluriel}`)));
+          })
+      );
+    });
+  });
+});
+
 describe('l\'attribut : une seule bonne réponse', () => {
   it('ne propose qu\'une forme qui s\'accorde avec le sujet, au singulier ou au pluriel', () => {
     NIVEAUX.forEach((level) => {
@@ -670,7 +758,7 @@ describe('l\'attribut : une seule bonne réponse', () => {
   });
 
   it('ne qualifie jamais une chose, un animal ou une personne par un adjectif qui n\'a pas de sens en attribut', () => {
-    // « Le cahier est premier », « la voisine est vieille », « le cygne est mauvais » : non.
+    // « Le cahier est premier », « la voisine est vieille », « le cygne est mauvais », « la tante est bonne » : non.
     NIVEAUX.forEach((level) =>
       [2, 3].forEach((trimester) =>
         questionsDe(level, trimester as Trimester, 60)
@@ -678,7 +766,7 @@ describe('l\'attribut : une seule bonne réponse', () => {
           .forEach((q) => {
             expect(['premier', 'première', 'premiers', 'premières', 'dernier', 'dernière', 'derniers', 'dernières'], q.prompt).not.toContain(bonne(q));
             if (/^(Le|La|Les|L')\s?(voisin|voisine|ami|amie|garçon|fille|cousin|cousine|oncle|tante|chat|chien|cheval|lapin|mouton|vache|poule|canard)/.test(q.prompt)) {
-              expect(['vieux', 'vieille', 'vieilles', 'mauvais', 'mauvaise', 'mauvaises'], q.prompt).not.toContain(bonne(q));
+              expect(['vieux', 'vieille', 'vieilles', 'mauvais', 'mauvaise', 'mauvaises', 'bon', 'bons', 'bonne', 'bonnes'], q.prompt).not.toContain(bonne(q));
             }
           })
       )
@@ -761,6 +849,19 @@ describe('le sujet placé après le verbe (6e) : une seule bonne réponse', () =
     expect(dormeurs[0].lieux.map((lieu) => lieu.texte)).not.toContain('Dans la grange');
     expect(dormeurs[1].sujets.map(([singulier]) => singulier)).not.toContain('chat');
   });
+
+  it('ne met dans une scène que des lieux où le sujet peut être : pas d\'insecte dans les nuages, de lampe dans le ciel, de pomme sur les vitres, de train à la porte', () => {
+    // Chaque scène se croise lieu par lieu et sujet par sujet : « Dans les nuages volent des mouches » serait une phrase absurde.
+    const dans = (verbe: string, lieu: string) => SCENES.filter((scene) => scene.verbe === verbe && scene.lieux.some((candidat) => candidat.texte === lieu));
+    const sujetsDe = (scenes: typeof SCENES) => scenes.flatMap((scene) => scene.sujets.map(([singulier]) => singulier));
+    ['papillon', 'abeille', 'mouche'].forEach((insecte) => expect(sujetsDe(dans('voler', 'Dans les nuages')), insecte).not.toContain(insecte));
+    ['lampe', 'lumière', 'bougie'].forEach((objet) => expect(sujetsDe(dans('briller', 'Dans le ciel')), objet).not.toContain(objet));
+    ['pomme', 'feuille', 'poire'].forEach((fruit) => expect(sujetsDe(dans('tomber', 'Sur les vitres')), fruit).not.toContain(fruit));
+    expect(sujetsDe(dans('arriver', 'À la porte'))).not.toContain('train');
+    expect(sujetsDe(SCENES.filter((scene) => scene.verbe === 'rouler'))).not.toContain('train');
+    // Les vagues ne portent ni canards ni grenouilles.
+    expect(SCENES.flatMap((scene) => scene.lieux.map((lieu) => lieu.texte))).not.toContain('Dans les vagues');
+  });
 });
 
 describe('le sujet éloigné de son verbe, et plusieurs sujets (6e) : une seule bonne réponse', () => {
@@ -776,6 +877,16 @@ describe('le sujet éloigné de son verbe, et plusieurs sujets (6e) : une seule 
       // Toujours un article défini : « le frère de ma voisine », pas « un frère de ma voisine ».
       expect(q.prompt, q.prompt).not.toMatch(/^(Un|Une|Des) /);
     });
+  });
+
+  it('ne répète jamais un mot du complément dans la suite de la phrase : « Le chat du jardin court dans le jardin »', () => {
+    questionsDe('6e', 1, 80)
+      .filter((q) => famille(q) === 'eloigne')
+      .forEach((q) => {
+        const [sujet, suite] = q.prompt.split(' ... ');
+        const mot = sujet.split(' ').slice(-1)[0].replace(/s$/, '');
+        expect(suite, q.prompt).not.toContain(mot);
+      });
   });
 
   it('ne répète jamais le nom du sujet dans son complément : « les cousins de mes cousins »', () => {
@@ -903,6 +1014,21 @@ describe('le participe passé avec « avoir » (6e) : une seule bonne réponse',
     const vus = questionsDe('6e', 3, 150).filter((q) => famille(q) === 'participeavoir' && ['prendre', 'mettre', 'comprendre'].includes(q.id.split('-')[3]));
     expect(vus.length).toBeGreaterThan(0);
     vus.forEach((q) => expect(q.choices, q.prompt).toContain(q.id.split('-')[3]));
+  });
+
+  it('ne donne ni devoir, ni leçon, ni exposé, ni exercice à « mon oncle », « ma tante » ou « mes parents » : « Voici les devoirs que ma tante a finis »', () => {
+    let vues = 0;
+    [2, 3].forEach((trimester) =>
+      questionsDe('6e', trimester as Trimester, 150)
+        .filter((q) => famille(q) === 'participeavoir')
+        .forEach((q) => {
+          if (!/\b(mon oncle|ma tante|mes parents)\b/i.test(q.prompt)) return;
+          vues++;
+          expect(q.prompt, q.prompt).not.toMatch(/\b(expos[ée]s?|devoirs?|le[çc]ons?|exercices?)\b/i);
+        })
+    );
+    // Le test voit bien des adultes dans les phrases.
+    expect(vues).toBeGreaterThan(20);
   });
 
   it('associe à chaque verbe des objets qu\'on peut vraiment cueillir, écrire, perdre…', () => {

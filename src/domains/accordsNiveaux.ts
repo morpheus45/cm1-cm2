@@ -30,6 +30,7 @@ import {
   PRENOMS_6E,
   SCENES,
   SUJETS_AVEC_AVOIR,
+  TRAVAUX_D_ELEVE,
   type ComplementDuNom,
   type Participe,
   type SujetAvecAvoir,
@@ -449,7 +450,7 @@ const TEMPS_SIMPLES: Tense[] = ['présent', 'imparfait', 'futur'];
 function attributPossible(adjectif: AdjectifEcrit, categorie: Categorie): boolean {
   const mot = adjectif.masculinSingulier;
   if (mot === 'premier' || mot === 'dernier') return false;
-  if (mot === 'mauvais') return categorie === 'nourriture' || categorie === 'plat';
+  if (mot === 'mauvais' || mot === 'bon') return categorie === 'nourriture' || categorie === 'plat';
   // « Le cahier est vieux », « la maison est vieille » : de l'âge d'une chose, pas d'une personne, d'une fête ou d'un orage.
   if (mot === 'vieux') return ['objet', 'colorable', 'vehicule', 'lieu', 'nourriture', 'plat', 'plante'].includes(categorie);
   return true;
@@ -484,8 +485,29 @@ function groupeSujet(nom: NomEcrit, nombre: Nombre, adjectif: AdjectifEcrit | nu
   );
 }
 
+/** Les personnes qu'on envoie à l'école : « Le garçon bavarde en classe », pas « Le roi bavarde en classe ». */
+const ELEVES = ['garçon', 'fille', 'voisin', 'voisine', 'ami', 'amie', 'copain', 'copine', 'cousin', 'cousine', 'frère', 'sœur'];
+/** Celles qui grandissent « très vite » : un enfant, pas une infirmière ni un oncle. */
+const ENFANTS = ['garçon', 'fille', 'cousin', 'cousine', 'frère', 'sœur', 'ami', 'amie', 'copain', 'copine'];
+const SCENE_D_ECOLE = /\b(classe|devoirs?)\b|à l'école/;
+
+/**
+ * Le sujet convient-il au verbe et à ce qui le suit ? Une phrase qui a un sens : ni un roi ou un bébé « à l'école »
+ * ou « en classe », ni un boulanger qui « grandit très vite », ni deux fois le même mot (« Les voisins jouent aux
+ * échecs avec un voisin », « Une directrice dit la vérité au directeur »), ni un bébé qui répare un vélo.
+ */
+export function sujetConvient(nom: NomEcrit, verbe: Verb): boolean {
+  const mots: string[] = verbe.complement.toLowerCase().match(/\p{L}+/gu) ?? [];
+  if (mots.includes(nom.singulier) || mots.includes(nom.pluriel)) return false;
+  if (SCENE_D_ECOLE.test(verbe.complement)) return ELEVES.includes(nom.singulier);
+  if (verbe.infinitive === 'grandir') return ENFANTS.includes(nom.singulier);
+  return nom.singulier !== 'bébé';
+}
+
 function sujetVerbeQuestion(rng: Rng, rang: number, matiere: MatiereDuSujet, { verbe, temps }: CandidatSujet): Question | null {
-  const nom = rngPick(rng, matiere.personnes);
+  const possibles = matiere.personnes.filter((personne) => sujetConvient(personne, verbe));
+  if (possibles.length === 0) return null;
+  const nom = rngPick(rng, possibles);
   const nombre = rngPick(rng, NOMBRES);
   const compatibles = matiere.adjectifs.filter((adjectif) => adjectif.categories.includes(nom.categorie) && !groupeImpossible(adjectif, nom, nombre));
   const adjectif = matiere.avecAdjectifs && compatibles.length > 0 && rng() < 0.5 ? rngPick(rng, compatibles) : null;
@@ -1004,6 +1026,8 @@ function candidatsDe(level: Level, trimester: Trimester): Candidats {
         for (const complement of complementsDe(tete)) {
           if (complement.mot === tete.singulier) continue;
           for (const action of actions) {
+            // « Le chat du jardin court dans le jardin » : le même mot deux fois dans la phrase.
+            if (action[1].includes(complement.mot)) continue;
             for (const nombre of NOMBRES) eloignes.push({ tete, nombre, complement, action });
           }
         }
@@ -1033,7 +1057,11 @@ function candidatsDe(level: Level, trimester: Trimester): Candidats {
     for (const verbe of PARTICIPES_AVEC_AVOIR) {
       for (const objet of verbe.objets) {
         for (const nombre of NOMBRES) {
-          for (const sujet of SUJETS_AVEC_AVOIR) for (const cadre2 of cadres) participesAvoir.push({ verbe, objet, nombre, sujet, cadre: cadre2 });
+          for (const sujet of SUJETS_AVEC_AVOIR) {
+            // Ni devoir, ni leçon, ni exposé pour un oncle, une tante ou des parents.
+            if (sujet.adulte && TRAVAUX_D_ELEVE.includes(objet[0])) continue;
+            for (const cadre2 of cadres) participesAvoir.push({ verbe, objet, nombre, sujet, cadre: cadre2 });
+          }
         }
       }
     }

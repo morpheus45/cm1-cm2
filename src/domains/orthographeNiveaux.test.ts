@@ -21,6 +21,7 @@ import {
   FAMILLES_ALPHABETIQUES_6E,
   METAPHORES,
   MOTS_A_RANGER,
+  MOTS_COMPOSES,
   PERSONNIFICATIONS,
   PHRASES_SANS_FIGURE,
   POLYSEMIE,
@@ -527,9 +528,20 @@ describe('catégories, thèmes et champs lexicaux', () => {
     })
   );
 
-  it('les mots ambigus n\'y sont pas : « cheval » (animal et moyen de transport), « marron » (couleur et fruit), « basket » (sport et chaussure)', () => {
+  it('les mots ambigus n\'y sont pas : « cheval » (animal et moyen de transport), « marron » (couleur et fruit), « basket » (sport et chaussure), « orange » (fruit et couleur), « rose » (couleur et fleur), « kiwi » (fruit et oiseau)', () => {
     const mots = CATEGORIES.flatMap((groupe) => groupe.mots);
-    ['cheval', 'marron', 'basket', 'tomate', 'concombre', 'avocat'].forEach((mot) => expect(mots, mot).not.toContain(mot));
+    ['cheval', 'marron', 'basket', 'tomate', 'concombre', 'avocat', 'orange', 'rose', 'kiwi'].forEach((mot) => expect(mots, mot).not.toContain(mot));
+  });
+
+  it('les thèmes et les champs lexicaux n\'ont aucun mot qui irait aussi dans un groupe voisin : « ski » (la montagne et le sport), « ballon » (le sport et la fête), « gare » (le voyage et la ville), « note » (la musique et le collège)', () => {
+    // Une mauvaise réponse qui irait tout autant ferait deux bonnes réponses : « bougie, cadeau, invité » et « ballon ».
+    const mots = [...THEMES, ...CHAMPS_LEXICAUX].flatMap((groupe) => groupe.mots);
+    [
+      'ski', 'randonnée', 'ballon', 'spectacle', // la montagne, le sport, le cirque, la fête
+      'gare', 'hôtel', 'trajet', 'billet', 'escale', 'navire', 'équipage', // le voyage, la ville, la mer, le sport
+      'note', 'chorale', 'bulletin', 'carnet', 'contrôle', 'cantine', // la musique, le collège, la météo, le voyage, la cuisine
+      'éclair', 'mousse', // la météo et la forêt, la pâtisserie
+    ].forEach((mot) => expect(mots, mot).not.toContain(mot));
   });
 });
 
@@ -560,6 +572,27 @@ describe('préfixes et suffixes', () => {
     expect(sens.map((affixe) => affixe.sens).sort()).toEqual(['au-dessus', 'trop']);
     const mots = sens.flatMap((affixe) => affixe.mots);
     expect(new Set(mots).size).toBe(mots.length);
+  });
+});
+
+describe('mots composés', () => {
+  it('chaque mot composé est ses deux parties mises bout à bout, sans trait d\'union', () => {
+    MOTS_COMPOSES.forEach((compose) => {
+      expect(compose.parties.join(''), compose.mot).toBe(compose.mot);
+      expect(compose.mot, compose.mot).not.toContain('-');
+    });
+  });
+
+  it('deux mots composés d\'une même liste n\'ont jamais les mêmes deux parties', () => {
+    (['cycle2', '6e'] as const).forEach((pour) => {
+      const parties = MOTS_COMPOSES.filter((compose) => compose.pour === pour).map((compose) => compose.parties.join('+'));
+      expect(new Set(parties).size, pour).toBe(parties.length);
+    });
+  });
+
+  it('le CE2 les rencontre au 3e trimestre, la 6e aussi : pas avant', () => {
+    expect(MOTS_COMPOSES.filter((compose) => compose.pour === 'cycle2').every((compose) => compose.depuis === 0)).toBe(true);
+    expect(MOTS_COMPOSES.filter((compose) => compose.pour === '6e').every((compose) => compose.depuis === 9)).toBe(true);
   });
 });
 
@@ -721,10 +754,10 @@ const FAMILLES_PAR_CELLULE: Record<string, string[]> = {
   'CE1-3': ['homophone', 'participe', 'mot', 'prefixe', 'suffixe', 'theme', 'contraire', 'synonyme'],
   'CE2-1': ['homophone', 'mot', 'lettres', 'participe', 'prefixe', 'suffixe', 'famille', 'synonyme', 'alphabet'],
   'CE2-2': ['homophone', 'lettres', 'participe', 'contraire', 'polysemie', 'expression', 'prefixe', 'suffixe', 'synonyme'],
-  'CE2-3': ['homophone', 'lettres', 'participe', 'famille', 'categorie', 'theme', 'expression', 'polysemie', 'prefixe', 'suffixe'],
+  'CE2-3': ['homophone', 'lettres', 'participe', 'famille', 'compose', 'categorie', 'theme', 'expression', 'polysemie', 'prefixe', 'suffixe'],
   '6e-1': ['homophone', 'prefixe', 'suffixe', 'synonyme', 'contraire', 'famille', 'alphabet', 'dictionnaire', 'participe', 'mot'],
   '6e-2': ['homophone', 'polysemie', 'expression', 'registre', 'champ', 'nuance', 'racine', 'participe'],
-  '6e-3': ['homophone', 'figure', 'emprunt', 'famille', 'champ', 'racine', 'prefixe', 'suffixe', 'mot'],
+  '6e-3': ['homophone', 'figure', 'emprunt', 'famille', 'compose', 'champ', 'racine', 'prefixe', 'suffixe', 'mot'],
 };
 
 describe('le programme de chaque trimestre', () => {
@@ -904,6 +937,16 @@ describe('une seule bonne réponse', () => {
     toutesLesQuestions
       .filter(({ q }) => famille(q) === 'suffixe' && !q.id.endsWith('-sens'))
       .forEach(({ q }) => expect(q.choices.map((choix) => choix.toLowerCase()), q.prompt).not.toContain('-tion'));
+  });
+
+  it('mots composés : le mot est fait des deux mots de l\'énoncé, les trois autres d\'autres mots', () => {
+    toutesLesQuestions
+      .filter(({ q }) => famille(q) === 'compose')
+      .forEach(({ q }) => {
+        const [, premier, second] = q.prompt.match(/« (.*) » et « (.*) »/) as string[];
+        expect(q.choices[q.correctIndex], q.prompt).toBe(`${premier}${second}`);
+        q.choices.filter((_, indice) => indice !== q.correctIndex).forEach((mot) => expect(mot, `${q.prompt} → ${mot}`).not.toBe(`${premier}${second}`));
+      });
   });
 
   it('polysémie : la bonne définition est celle du sens qui contient la phrase', () => {

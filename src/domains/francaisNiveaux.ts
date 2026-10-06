@@ -38,6 +38,7 @@ export const MOTS_A_DEUX_GRAPHIES = [
   'flûte', 'flute', 'dîner', 'diner', 'dînette', 'dinette', 'nénuphar', 'nénufar', 'ognon', 'oignon', 'évènement', 'événement', 'chariot', 'charriot', 'week-end', 'weekend',
   'connaît', 'connait', 'plaît', 'plait', 'brûler', 'bruler', 'brûlant', 'brulant', 'paraît', 'paraitre', 'abîme', 'abime', 'aîné', 'chaîne', 'chaine', 'fraîche', 'fraiche',
   'quelquefois', 'cacahuète', 'cacahouète', 'bûche', 'dégoûtant', 'dégoutant', 'août', 'aout', 'entraînement', 'entrainement', 'entraîner', 'asseoir', 'assoir', 'assoit', 'assied',
+  'portemanteau', 'porte-manteau', 'portemanteaux',
 ];
 
 /** Le mot commence-t-il par une voyelle, accentuée ou non, ou par un h muet ?

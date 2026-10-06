@@ -298,7 +298,8 @@ function adjectif(
  */
 export const ADJECTIFS_CYCLE_2: AdjectifEcrit[] = [
   // CE1, 2e trimestre : l'accord de l'adjectif.
-  adjectif(-4, 'petit', 'petite', 'petits', 'petites', 'avant', TOUTES),
+  // « Une petite amie » et « un petit copain » ne se disent pas d'enfants : ces groupes ne sont pas posés.
+  adjectif(-4, 'petit', 'petite', 'petits', 'petites', 'avant', TOUTES, undefined, ['ami', 'amie', 'copain', 'copine']),
   adjectif(-4, 'grand', 'grande', 'grands', 'grandes', 'avant', TOUTES),
   adjectif(-4, 'joli', 'jolie', 'jolis', 'jolies', 'avant', TOUTES),
   adjectif(-4, 'noir', 'noire', 'noirs', 'noires', 'après', ['animal', ...COULEUR]),
@@ -316,7 +317,7 @@ export const ADJECTIFS_CYCLE_2: AdjectifEcrit[] = [
   adjectif(-4, 'rapide', 'rapide', 'rapides', 'rapides', 'après', [...VIVANTS, 'vehicule']),
   // Le féminin avec doublement de la consonne.
   adjectif(-4, 'gentil', 'gentille', 'gentils', 'gentilles', 'avant', VIVANTS),
-  adjectif(-4, 'bon', 'bonne', 'bons', 'bonnes', 'avant', [...VIVANTS, ...NOURRITURES, ...COULEUR]),
+  adjectif(-4, 'bon', 'bonne', 'bons', 'bonnes', 'avant', [...VIVANTS, ...NOURRITURES, ...COULEUR], undefined, ['sœur']),
   // CE1, 3e trimestre.
   adjectif(-3, 'chaud', 'chaude', 'chauds', 'chaudes', 'après', ['plat']),
   adjectif(-3, 'froid', 'froide', 'froids', 'froides', 'après', ['plat']),
@@ -329,9 +330,11 @@ export const ADJECTIFS_CYCLE_2: AdjectifEcrit[] = [
   adjectif(-1, 'heureux', 'heureuse', 'heureux', 'heureuses', 'après', VIVANTS),
   adjectif(-1, 'joyeux', 'joyeuse', 'joyeux', 'joyeuses', 'après', ['personne']),
   adjectif(-1, 'délicieux', 'délicieuse', 'délicieux', 'délicieuses', 'après', NOURRITURES),
-  adjectif(-1, 'beau', 'belle', 'beaux', 'belles', 'avant', TOUTES, 'bel'),
+  // « Un beau frère », « une belle maman » se lisent « beau-frère », « belle-maman » : ils ne sont pas posés.
+  adjectif(-1, 'beau', 'belle', 'beaux', 'belles', 'avant', TOUTES, 'bel', ['frère', 'sœur', 'maman', 'papa']),
   adjectif(-1, 'nouveau', 'nouvelle', 'nouveaux', 'nouvelles', 'avant', ['personne', 'animal', 'colorable', 'vehicule', 'plat'], 'nouvel'),
-  adjectif(-1, 'vieux', 'vieille', 'vieux', 'vieilles', 'avant', TOUTES, 'vieil'),
+  // « Un vieux garçon » et « une vieille fille » ont un autre sens.
+  adjectif(-1, 'vieux', 'vieille', 'vieux', 'vieilles', 'avant', TOUTES, 'vieil', ['garçon', 'fille']),
   adjectif(-1, 'sec', 'sèche', 'secs', 'sèches', 'après', ['plante']),
 ];
 

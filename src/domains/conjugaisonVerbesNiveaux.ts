@@ -133,11 +133,11 @@ const COMPLEMENTS_6E: Record<string, string> = {
   // 1er groupe
   aimer: 'les histoires de pirates.',
   jouer: 'aux échecs avec un voisin.',
-  chanter: 'à la chorale du collège.',
+  chanter: 'à la chorale du village.',
   regarder: 'un documentaire sur les volcans.',
   écouter: 'la radio dans la cuisine.',
   marcher: 'le long de la rivière.',
-  préparer: 'un exposé sur les dinosaures.',
+  préparer: 'un voyage en Écosse.',
   dessiner: 'le plan de la maison.',
   laver: 'les carreaux de la cuisine.',
   chercher: 'un livre à la bibliothèque.',
@@ -150,7 +150,7 @@ const COMPLEMENTS_6E: Record<string, string> = {
   manger: 'une salade de fruits.',
   ranger: 'les outils dans le garage.',
   nager: 'dans la rivière glacée.',
-  changer: 'de place avec un camarade.',
+  changer: 'de place avec un voisin.',
   nettoyer: 'la cage du hamster.',
   employer: 'des mots précis.',
   essuyer: 'la table avec une éponge.',
@@ -161,25 +161,25 @@ const COMPLEMENTS_6E: Record<string, string> = {
   jeter: 'les papiers à la poubelle.',
   rappeler: 'la règle à tout le monde.',
   // 2e groupe
-  finir: 'le devoir avant la sonnerie.',
+  finir: 'le travail avant midi.',
   choisir: 'un roman à la bibliothèque.',
   grandir: 'très vite.',
-  réussir: 'le contrôle de mathématiques.',
+  réussir: 'une recette difficile.',
   remplir: 'la bouteille au robinet.',
   punir: 'le chien désobéissant.',
-  rougir: 'de honte devant la classe.',
+  rougir: 'de honte devant tout le monde.',
   guérir: 'rapidement.',
   nourrir: 'les oiseaux en hiver.',
-  obéir: 'aux consignes du professeur.',
+  obéir: 'aux règles du jeu.',
   // 3e groupe
-  être: 'à la bibliothèque du collège.',
+  être: 'à la bibliothèque de la ville.',
   avoir: 'de la patience.',
   aller: 'au marché avec un ami.',
   faire: 'un gâteau pour la fête.',
   dire: 'la vérité au directeur.',
   venir: "à la fête de l'école.",
   prendre: 'le train de huit heures.',
-  pouvoir: 'sortir après les cours.',
+  pouvoir: 'sortir après le repas.',
   voir: 'un renard dans le champ.',
   vouloir: 'visiter le musée de la ville.',
 };
@@ -226,7 +226,7 @@ function troisiemeGroupe(infinitive: string, complement: string, spec: Troisieme
 /** Des verbes du 3e groupe de plus que les huit irréguliers du programme :
  *  la 6e conjugue « les verbes des trois groupes ». */
 const AUTRES_TROISIEME_GROUPE: Verb[] = [
-  troisiemeGroupe('partir', 'en voyage avec la classe.', {
+  troisiemeGroupe('partir', 'en voyage avec un ami.', {
     present: ['pars', 'pars', 'part', 'partons', 'partez', 'partent'],
     radicalImparfait: 'part',
     radicalFutur: 'partir',
@@ -234,7 +234,7 @@ const AUTRES_TROISIEME_GROUPE: Verb[] = [
     participe: 'parti',
     avecEtre: true,
   }),
-  troisiemeGroupe('sortir', 'du collège à cinq heures.', {
+  troisiemeGroupe('sortir', 'de la maison à cinq heures.', {
     present: ['sors', 'sors', 'sort', 'sortons', 'sortez', 'sortent'],
     radicalImparfait: 'sort',
     radicalFutur: 'sortir',
@@ -263,7 +263,7 @@ const AUTRES_TROISIEME_GROUPE: Verb[] = [
     passeSimple: ['écrivis', 'écrivis', 'écrivit', 'écrivîmes', 'écrivîtes', 'écrivirent'],
     participe: 'écrit',
   }),
-  troisiemeGroupe('savoir', 'la leçon par cœur.', {
+  troisiemeGroupe('savoir', 'la chanson par cœur.', {
     present: ['sais', 'sais', 'sait', 'savons', 'savez', 'savent'],
     radicalImparfait: 'sav',
     radicalFutur: 'saur',
@@ -277,21 +277,21 @@ const AUTRES_TROISIEME_GROUPE: Verb[] = [
     passeSimple: ['dormis', 'dormis', 'dormit', 'dormîmes', 'dormîtes', 'dormirent'],
     participe: 'dormi',
   }),
-  troisiemeGroupe('attendre', 'le bus devant le collège.', {
+  troisiemeGroupe('attendre', 'le bus devant la mairie.', {
     present: ['attends', 'attends', 'attend', 'attendons', 'attendez', 'attendent'],
     radicalImparfait: 'attend',
     radicalFutur: 'attendr',
     passeSimple: ['attendis', 'attendis', 'attendit', 'attendîmes', 'attendîtes', 'attendirent'],
     participe: 'attendu',
   }),
-  troisiemeGroupe('répondre', 'à la question du professeur.', {
+  troisiemeGroupe('répondre', 'à la question du guide.', {
     present: ['réponds', 'réponds', 'répond', 'répondons', 'répondez', 'répondent'],
     radicalImparfait: 'répond',
     radicalFutur: 'répondr',
     passeSimple: ['répondis', 'répondis', 'répondit', 'répondîmes', 'répondîtes', 'répondirent'],
     participe: 'répondu',
   }),
-  troisiemeGroupe('ouvrir', 'la fenêtre de la classe.', {
+  troisiemeGroupe('ouvrir', 'la fenêtre du salon.', {
     present: ['ouvre', 'ouvres', 'ouvre', 'ouvrons', 'ouvrez', 'ouvrent'],
     radicalImparfait: 'ouvr',
     radicalFutur: 'ouvrir',

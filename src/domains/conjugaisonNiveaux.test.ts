@@ -943,6 +943,35 @@ describe('les phrases des verbes', () => {
         if (nom.length > 3) expect(complements.includes(nom), sujet).toBe(false);
       });
   });
+
+  it('ne place aucune phrase d\'élève dans la bouche de « Ma grand-mère » ou de « Mon oncle » : « Mon oncle ouvre la fenêtre de la classe »', () => {
+    // Les sujets de 6e sont tantôt des enfants, tantôt des adultes de la
+    // famille : un complément de 6e ne parle ni de classe, ni de collège, ni de
+    // devoir, ni de professeur. La 6e garde son vocabulaire par les thèmes,
+    // pas par une scène de classe que n'importe quel sujet viendrait habiter.
+    const mondeScolaire = /classe|coll[eè]ge|sonnerie|professeur|ma[iî]tre|ma[iî]tresse|camarade|devoir|expos[ée]|contr[ôo]le|le[çc]on|consigne|r[ée]cr[ée]ation|cours\b|[ée]l[èe]ve|cartable/i;
+    VERBES_6E.forEach((verbe) => expect(mondeScolaire.test(verbe.complement), `${verbe.infinitive} : ${verbe.complement}`).toBe(false));
+    // Et dans les questions : l'adulte de la famille n'est jamais à l'école.
+    ALL_TRIMESTERS.forEach((trimester) =>
+      questionsDe('6e', trimester, 24)
+        .filter((q) => /^(Ma grand-mère|Mon oncle|Mes parents)/.test(q.prompt))
+        .forEach((q) => expect(mondeScolaire.test(q.prompt), q.prompt).toBe(false))
+    );
+  });
+
+  it('ne fait grandir « très vite » ni « Ma grand-mère », ni « Mon oncle », ni « Mes parents »', () => {
+    let vues = 0;
+    ALL_TRIMESTERS.forEach((trimester) =>
+      questionsDe('6e', trimester, 24)
+        .filter((q) => verbeDe(q) === 'grandir')
+        .forEach((q) => {
+          vues++;
+          expect(q.prompt, q.prompt).not.toMatch(/^(Ma grand-mère|Mon oncle|Mes parents)/);
+        })
+    );
+    // Le test voit bien des phrases de « grandir ».
+    expect(vues).toBeGreaterThan(10);
+  });
 });
 
 describe('le niveau d\'un enfant de sept ans', () => {

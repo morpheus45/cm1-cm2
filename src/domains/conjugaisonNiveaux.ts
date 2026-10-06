@@ -179,10 +179,12 @@ interface Sujet {
    *  d'accord. Au cycle 2, « aller » et « venir » ne se conjuguent au passé
    *  composé qu'avec un tel sujet. */
   masculinSingulier: boolean;
+  /** Un adulte de la famille : « Mon oncle grandit très vite » ne se dit pas. */
+  adulte: boolean;
 }
 
-function sujet(person: Person, text: string, masculinSingulier = false): Sujet {
-  return { person, text, troisieme: person === 'il' || person === 'ils', masculinSingulier };
+function sujet(person: Person, text: string, masculinSingulier = false, adulte = false): Sujet {
+  return { person, text, troisieme: person === 'il' || person === 'ils', masculinSingulier, adulte };
 }
 
 const SUJETS_CYCLE_2: Sujet[] = [
@@ -226,8 +228,8 @@ const SUJETS_6E: Sujet[] = [
   sujet('il', 'Inès'),
   sujet('il', 'Lucas', true),
   sujet('il', 'Manon'),
-  sujet('il', 'Ma grand-mère'),
-  sujet('il', 'Mon oncle', true),
+  sujet('il', 'Ma grand-mère', false, true),
+  sujet('il', 'Mon oncle', true, true),
   sujet('nous', 'Nous'),
   sujet('vous', 'Vous'),
   sujet('ils', 'Ils'),
@@ -236,7 +238,7 @@ const SUJETS_6E: Sujet[] = [
   sujet('ils', 'Mes cousines'),
   sujet('ils', 'Les jumelles'),
   sujet('ils', 'Mes camarades'),
-  sujet('ils', 'Mes parents'),
+  sujet('ils', 'Mes parents', false, true),
   sujet('ils', 'Les deux frères'),
 ];
 
@@ -284,6 +286,8 @@ interface Candidat {
  *  sujet « il » où le participe ne porte aucune marque. */
 function convient(level: Level, verbe: Verb, temps: Tense, sujetPhrase: Sujet): boolean {
   if (temps === 'passé simple' && !sujetPhrase.troisieme) return false;
+  // « grandir très vite » se dit d'un enfant, pas d'un oncle ni de parents.
+  if (verbe.infinitive === 'grandir' && sujetPhrase.adulte) return false;
   if (estCompose(temps) && seConjugueAvecEtre(verbe)) {
     return level !== '6e' && sujetPhrase.masculinSingulier;
   }

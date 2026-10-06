@@ -27,6 +27,7 @@ import {
   FAMILLES_ALPHABETIQUES_6E,
   METAPHORES,
   MOTS_A_RANGER,
+  MOTS_COMPOSES,
   PERSONNIFICATIONS,
   PHRASES_SANS_FIGURE,
   POLYSEMIE,
@@ -72,6 +73,7 @@ export type NomDeFamille =
   | 'contraire'
   | 'nuance'
   | 'famille'
+  | 'compose'
   | 'affixe'
   | 'polysemie'
   | 'categorie'
@@ -98,13 +100,14 @@ type Poids = Partial<Record<NomDeFamille, number>>;
  *    suffixes -eur, -ment, -ette ; familles de mots ; ordre alphabétique (3e lettre).
  *  - CE2-T2 : ou / où, ce / se, ces / ses, la / là ; antonymes ; sens propre et figuré (expressions) ;
  *    polysémie.
- *  - CE2-T3 : révision des homophones ; familles étendues ; regroupement par catégories et par thèmes.
+ *  - CE2-T3 : révision des homophones ; familles étendues et mots composés ; regroupement par catégories et par
+ *    thèmes.
  *  - 6e-T1 : les homophones du cycle 2 ; préfixes et suffixes (dé-, re-, in-, pré-, sur- ; -ment, -eur, -tion,
  *    -able) ; synonymes, antonymes ; familles ; ordre alphabétique et dictionnaire.
  *  - 6e-T2 : c'est / s'est, c'était / s'était, quel / qu'elle, la / là / l'a / l'as, leur / leurs, mes / mais ;
  *    polysémie, sens figuré, registres de langue, champ lexical, synonymes nuancés, étymologie.
- *  - 6e-T3 : quelque / quel que, plutôt / plus tôt, ni / n'y ; figures de style, emprunts ; familles
- *    étendues, champ lexical, étymologie.
+ *  - 6e-T3 : quelque / quel que, plutôt / plus tôt, ni / n'y ; figures de style, emprunts ; mots composés,
+ *    familles étendues, champ lexical, étymologie.
  */
 const PROGRAMME: Record<string, Poids> = {
   'CE1-1': { 'homophone-nouveau': 5, mot: 2, alphabet: 2, synonyme: 1, famille: 1 },
@@ -112,10 +115,10 @@ const PROGRAMME: Record<string, Poids> = {
   'CE1-3': { 'homophone-nouveau': 2, 'homophone-revision': 2, participe: 2, mot: 1, affixe: 2, theme: 1, contraire: 1, synonyme: 1 },
   'CE2-1': { 'homophone-revision': 4, mot: 1, lettres: 2, participe: 1, affixe: 2, famille: 1, synonyme: 1, alphabet: 1 },
   'CE2-2': { 'homophone-nouveau': 3, 'homophone-revision': 2, lettres: 1, participe: 1, contraire: 1, polysemie: 1, expression: 1, affixe: 1, synonyme: 1 },
-  'CE2-3': { 'homophone-revision': 4, lettres: 1, participe: 1, famille: 1, categorie: 1, theme: 1, expression: 1, polysemie: 1, affixe: 1 },
+  'CE2-3': { 'homophone-revision': 4, lettres: 1, participe: 1, famille: 1, compose: 1, categorie: 1, theme: 1, expression: 1, polysemie: 1, affixe: 1 },
   '6e-1': { 'homophone-nouveau': 5, affixe: 2, synonyme: 1, contraire: 1, famille: 1, alphabet: 1, dictionnaire: 1, participe: 1, mot: 1 },
   '6e-2': { 'homophone-nouveau': 3, 'homophone-revision': 2, polysemie: 1, expression: 1, registre: 1, theme: 1, nuance: 1, racine: 1, participe: 1 },
-  '6e-3': { 'homophone-nouveau': 2, 'homophone-revision': 2, figure: 2, emprunt: 1, famille: 1, theme: 1, racine: 1, affixe: 1, mot: 1 },
+  '6e-3': { 'homophone-nouveau': 2, 'homophone-revision': 2, figure: 2, emprunt: 1, famille: 1, compose: 1, theme: 1, racine: 1, affixe: 1, mot: 1 },
 };
 
 // --- De quoi construire les questions ------------------------------------------------------------------------------------
@@ -493,6 +496,32 @@ function familleDeMotsDeLaMemeFamille(level: Level, stage: Stage, poids: number)
   };
 }
 
+// --- Les mots composés -------------------------------------------------------------------------------------------------------------
+
+function familleDeComposes(level: Level, stage: Stage, poids: number): Famille {
+  const mots = memoiser(`composes|${level}|${stage}`, () => aLEtape(MOTS_COMPOSES, level, stage));
+  return {
+    nom: 'compose',
+    poids: mots.length >= 4 ? poids : 0,
+    fabriquer: (rng, n, vues) =>
+      fabriquerDistinctes(rng, mots, n, vues, (r, compose, rang) =>
+        // Les mauvaises réponses sont des mots composés eux aussi, avec d'autres parties : un seul est fait de ces deux mots.
+        question(
+          r,
+          identifiant('compose', rang, compose.mot),
+          'Trouve le mot formé de ces deux mots',
+          `« ${compose.parties[0]} » et « ${compose.parties[1]} »`,
+          compose.mot,
+          troisAutres(
+            r,
+            mots.map((autre) => autre.mot),
+            [compose.mot]
+          )
+        )
+      ),
+  };
+}
+
 // --- Préfixes et suffixes ------------------------------------------------------------------------------------------------------
 
 type CandidatAffixe =
@@ -811,6 +840,7 @@ function familles(level: Level, trimester: Trimester): Famille[] {
     familleDeRelations('contraire', CONTRAIRES, 'Trouve le contraire', (mot) => `Le contraire de « ${mot} » est...`, level, stage, p('contraire')),
     familleDeRelations('nuance', SYNONYMES_PLUS_FORTS, 'Trouve le mot plus fort', (mot) => `Un mot plus fort que « ${mot} » est...`, level, stage, p('nuance')),
     familleDeMotsDeLaMemeFamille(level, stage, p('famille')),
+    familleDeComposes(level, stage, p('compose')),
     familleDAffixes(level, stage, p('affixe')),
     famillePolysemique(level, stage, p('polysemie')),
     familleDeCategories(level, stage, p('categorie')),

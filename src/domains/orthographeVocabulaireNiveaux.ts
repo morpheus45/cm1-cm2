@@ -168,6 +168,44 @@ export const SYNONYMES_PLUS_FORTS: Relation[] = [
   relation(SIXIEME_T2, '6e', 'petit', 'minuscule', ['mince', 'court', 'moyen']),
 ];
 
+// --- Les mots composés ------------------------------------------------------------------------------------------------
+
+export interface MotCompose extends Element {
+  mot: string;
+  /** Les deux mots qui, mis bout à bout, donnent le mot composé : « porte » et « manteau ». */
+  parties: [string, string];
+}
+
+function compose(depuis: Stage, pour: Pour, mot: string, parties: [string, string]): MotCompose {
+  return { depuis, pour, mot, parties };
+}
+
+/**
+ * Des mots composés qui s'écrivent d'un seul tenant, sans trait d'union : « porte-clés » et « tire-bouchon » ont une
+ * graphie rectifiée en 1990 (« porteclés », « tirebouchon »), ceux-ci n'en ont qu'une.
+ */
+export const MOTS_COMPOSES: MotCompose[] = [
+  compose(CE2_T3, 'cycle2', 'parapluie', ['para', 'pluie']),
+  compose(CE2_T3, 'cycle2', 'portefeuille', ['porte', 'feuille']),
+  compose(CE2_T3, 'cycle2', 'tournevis', ['tourne', 'vis']),
+  compose(CE2_T3, 'cycle2', 'passeport', ['passe', 'port']),
+  compose(CE2_T3, 'cycle2', 'pourboire', ['pour', 'boire']),
+  compose(CE2_T3, 'cycle2', 'bonjour', ['bon', 'jour']),
+  compose(CE2_T3, 'cycle2', 'beaucoup', ['beau', 'coup']),
+  compose(CE2_T3, 'cycle2', 'longtemps', ['long', 'temps']),
+  compose(SIXIEME_T3, '6e', 'parapluie', ['para', 'pluie']),
+  compose(SIXIEME_T3, '6e', 'parachute', ['para', 'chute']),
+  compose(SIXIEME_T3, '6e', 'parasol', ['para', 'sol']),
+  compose(SIXIEME_T3, '6e', 'portefeuille', ['porte', 'feuille']),
+  compose(SIXIEME_T3, '6e', 'tournevis', ['tourne', 'vis']),
+  compose(SIXIEME_T3, '6e', 'passeport', ['passe', 'port']),
+  compose(SIXIEME_T3, '6e', 'pourboire', ['pour', 'boire']),
+  compose(SIXIEME_T3, '6e', 'vinaigre', ['vin', 'aigre']),
+  compose(SIXIEME_T3, '6e', 'bonhomme', ['bon', 'homme']),
+  compose(SIXIEME_T3, '6e', 'longtemps', ['long', 'temps']),
+  compose(SIXIEME_T3, '6e', 'beaucoup', ['beau', 'coup']),
+];
+
 // --- Les familles de mots ---------------------------------------------------------------------------------------------
 
 export interface Famille extends Element {
@@ -328,8 +366,8 @@ export const POLYSEMIE: MotAPlusieursSens[] = [
   ]),
   polysemie(CE1_T2, 'cycle2', 'pied', [
     { definition: 'le bout de la jambe', phrases: ["Léa a mal au **pied**.", 'Paul met sa chaussure au **pied**.', 'Le bébé tape du **pied**.'] },
-    { definition: "ce qui tient une table", phrases: ["Le **pied** de la table est cassé.", "Un **pied** de la chaise est plus court.", "Papa répare le **pied** du lit."] },
-    { definition: "le bas d'une montagne", phrases: ["Nous campons au **pied** de la montagne.", "Le village est au **pied** de la colline.", "Un chalet est au **pied** du mont."] },
+    { definition: "ce qui tient un meuble", phrases: ["Le **pied** de la table est cassé.", "Un **pied** de la chaise est plus court.", "Papa répare le **pied** du lit."] },
+    { definition: "le bas d'une montagne", phrases: ["Nous campons au **pied** de la montagne.", "Les skieurs attendent au **pied** de la montagne.", "Un chalet est au **pied** du mont Blanc."] },
   ]),
   polysemie(CE1_T2, 'cycle2', 'langue', [
     { definition: 'ce qui est dans la bouche', phrases: ["Le chat tire la **langue**.", 'Léa se mord la **langue**.', 'Paul montre sa **langue** au docteur.'] },
@@ -388,7 +426,7 @@ export const POLYSEMIE: MotAPlusieursSens[] = [
   ]),
   polysemie(SIXIEME_T2, '6e', 'plan', [
     { definition: "un dessin d'une ville ou d'une maison", phrases: ["Nous cherchons la rue sur le **plan**.", "L'architecte dessine le **plan** de la maison.", "Léa regarde le **plan** du métro."] },
-    { definition: "une surface plate", phrases: ["La table est un **plan** horizontal.", "Un **plan** incliné aide à monter la charge.", "La règle repose sur le **plan** de travail."] },
+    { definition: "une surface plate", phrases: ["La bille roule sur un **plan** horizontal.", "Un **plan** incliné aide à monter la charge.", "La règle repose sur le **plan** de travail."] },
   ]),
 ];
 
@@ -474,11 +512,12 @@ function groupe(depuis: Stage, pour: Pour, nom: string, mots: string[]): GroupeD
 
 /**
  * Des catégories : les mots d'une catégorie en sont tous, aucun n'entre dans une autre (pas de « cheval »,
- * qui est aussi un moyen de transport, ni de « marron », qui est aussi un fruit, ni de « tomate »).
+ * qui est aussi un moyen de transport, ni de « marron », qui est aussi un fruit, ni de « tomate », ni d'« orange »,
+ * qui est aussi une couleur, ni de « rose », qui est aussi une fleur, ni de « kiwi », qui est aussi un oiseau).
  */
 export const CATEGORIES: GroupeDeMots[] = [
   groupe(CE1_T2, 'cycle2', 'les animaux', ['chat', 'chien', 'lapin', 'vache', 'mouton', 'poule', 'canard', 'souris', 'tigre', 'lion', 'ours', 'singe', 'renard', 'cochon']),
-  groupe(CE1_T2, 'cycle2', 'les fruits', ['pomme', 'poire', 'cerise', 'fraise', 'banane', 'orange', 'raisin', 'prune', 'citron', 'abricot', 'kiwi']),
+  groupe(CE1_T2, 'cycle2', 'les fruits', ['pomme', 'poire', 'cerise', 'fraise', 'banane', 'raisin', 'prune', 'citron', 'abricot']),
   groupe(CE1_T2, 'cycle2', 'les légumes', ['carotte', 'poireau', 'chou', 'haricot', 'navet', 'radis', 'salade', 'épinard', 'betterave', 'brocoli']),
   groupe(CE1_T2, 'cycle2', 'les vêtements', ['pantalon', 'robe', 'chemise', 'manteau', 'pull', 'jupe', 'bonnet', 'écharpe', 'gant', 'chaussette']),
   groupe(CE1_T2, 'cycle2', 'les meubles', ['table', 'chaise', 'lit', 'armoire', 'bureau', 'canapé', 'fauteuil', 'étagère', 'commode']),
@@ -486,7 +525,7 @@ export const CATEGORIES: GroupeDeMots[] = [
   groupe(CE1_T2, 'cycle2', 'les moyens de transport', ['vélo', 'voiture', 'train', 'bateau', 'avion', 'bus', 'camion', 'moto', 'tramway']),
   groupe(CE1_T2, 'cycle2', 'les parties du corps', ['bras', 'jambe', 'tête', 'main', 'pied', 'genou', 'dos', 'oreille', 'nez', 'bouche']),
   groupe(CE1_T2, 'cycle2', 'les métiers', ['boulanger', 'médecin', 'maçon', 'pompier', 'facteur', 'pêcheur', 'cuisinier', 'jardinier', 'boucher', 'coiffeur']),
-  groupe(CE1_T2, 'cycle2', 'les couleurs', ['rouge', 'bleu', 'vert', 'jaune', 'noir', 'violet', 'gris', 'blanc', 'rose']),
+  groupe(CE1_T2, 'cycle2', 'les couleurs', ['rouge', 'bleu', 'vert', 'jaune', 'noir', 'violet', 'gris', 'blanc']),
   groupe(CE1_T2, 'cycle2', 'les instruments de musique', ['piano', 'guitare', 'tambour', 'trompette', 'violon', 'harpe', 'harmonica', 'xylophone']),
   groupe(CE1_T2, 'cycle2', 'les sports', ['football', 'tennis', 'judo', 'natation', 'handball', 'rugby', 'golf', 'boxe', 'ski']),
   groupe(CE1_T2, 'cycle2', 'les fleurs', ['tulipe', 'marguerite', 'muguet', 'pâquerette', 'coquelicot', 'tournesol', 'jonquille']),
@@ -495,7 +534,9 @@ export const CATEGORIES: GroupeDeMots[] = [
 
 /**
  * Des thèmes : les mots qu'on emploie quand on parle d'une même chose. Aucun mot n'est dans deux thèmes,
- * et aucun n'irait dans un autre (pas de « pelle » à la plage et au jardin, de « gâteau » à la fête et à la cuisine).
+ * et aucun n'irait dans un autre (pas de « pelle » à la plage et au jardin, de « gâteau » à la fête et à la cuisine,
+ * de « ski » ni de « randonnée » à la montagne, qui sont aussi des sports, de « ballon », qui est aussi à la fête,
+ * de « spectacle », qui est aussi à la fête).
  */
 export const THEMES: GroupeDeMots[] = [
   groupe(CE1_T3, 'cycle2', 'la mer', ['plage', 'vague', 'sable', 'bateau', 'coquillage', 'marin', 'phare', 'crabe']),
@@ -503,22 +544,27 @@ export const THEMES: GroupeDeMots[] = [
   groupe(CE1_T3, 'cycle2', 'la ferme', ['vache', 'tracteur', 'grange', 'poule', 'foin', 'cochon', 'fermier', 'étable']),
   groupe(CE1_T3, 'cycle2', 'le jardin', ['fleur', 'râteau', 'tondeuse', 'arrosoir', 'bêche', 'haie', 'pelouse', 'jardinier']),
   groupe(CE1_T3, 'cycle2', 'la cuisine', ['four', 'poêle', 'casserole', 'cuillère', 'assiette', 'évier', 'recette', 'tablier']),
-  groupe(CE1_T3, 'cycle2', 'la montagne', ['neige', 'ski', 'sommet', 'vallée', 'glacier', 'randonnée', 'chalet', 'alpiniste']),
+  groupe(CE1_T3, 'cycle2', 'la montagne', ['neige', 'marmotte', 'sommet', 'vallée', 'glacier', 'torrent', 'chalet', 'alpiniste']),
   groupe(CE1_T3, 'cycle2', 'la ville', ['rue', 'magasin', 'trottoir', 'bus', 'immeuble', 'avenue', 'passant', 'mairie']),
-  groupe(CE1_T3, 'cycle2', 'le cirque', ['clown', 'chapiteau', 'trapèze', 'jongleur', 'acrobate', 'funambule', 'dompteur', 'spectacle']),
-  groupe(CE1_T3, 'cycle2', 'le sport', ['ballon', 'équipe', 'arbitre', 'stade', 'match', 'terrain', 'coureur', 'médaille']),
+  groupe(CE1_T3, 'cycle2', 'le cirque', ['clown', 'chapiteau', 'trapèze', 'jongleur', 'acrobate', 'funambule', 'dompteur', 'piste']),
+  groupe(CE1_T3, 'cycle2', 'le sport', ['maillot', 'équipe', 'arbitre', 'stade', 'match', 'terrain', 'coureur', 'médaille']),
   groupe(CE1_T3, 'cycle2', 'la fête', ['bougie', 'cadeau', 'invité', 'musique', 'danse', 'guirlande', 'confettis', 'anniversaire']),
 ];
 
-/** Les champs lexicaux de la 6e : plus de mots, des mots plus rares. */
+/**
+ * Les champs lexicaux de la 6e : plus de mots, des mots plus rares. Aucun mot n'est d'un champ voisin non plus : pas
+ * de « gare » ni de « hôtel » (la ville), de « billet » (le concert), de « escale » ni de « navire » (la mer), de
+ * « note » ni de « chorale » (le collège), de « éclair » ni de « mousse » (la pâtisserie), de « bulletin » (la météo),
+ * de « carnet » ni de « contrôle » (le voyage).
+ */
 export const CHAMPS_LEXICAUX: GroupeDeMots[] = [
-  groupe(SIXIEME_T2, '6e', 'la mer', ['marée', 'phare', 'falaise', 'navire', 'équipage', 'océan', 'écume', 'récif', 'rivage', 'vague']),
-  groupe(SIXIEME_T2, '6e', 'la forêt', ['arbre', 'feuillage', 'clairière', 'sentier', 'mousse', 'branche', 'écureuil', 'chêne', 'fougère']),
-  groupe(SIXIEME_T2, '6e', 'la météo', ['pluie', 'orage', 'nuage', 'éclair', 'tonnerre', 'brouillard', 'averse', 'grêle', 'rafale']),
-  groupe(SIXIEME_T2, '6e', 'le collège', ['professeur', 'classe', 'cartable', 'devoir', 'contrôle', 'récréation', 'cantine', 'bulletin', 'carnet']),
+  groupe(SIXIEME_T2, '6e', 'la mer', ['marée', 'phare', 'falaise', 'galet', 'baleine', 'océan', 'écume', 'récif', 'rivage', 'vague']),
+  groupe(SIXIEME_T2, '6e', 'la forêt', ['arbre', 'feuillage', 'clairière', 'sentier', 'sapin', 'branche', 'écureuil', 'chêne', 'fougère']),
+  groupe(SIXIEME_T2, '6e', 'la météo', ['pluie', 'orage', 'nuage', 'verglas', 'tonnerre', 'brouillard', 'averse', 'grêle', 'rafale']),
+  groupe(SIXIEME_T2, '6e', 'le collège', ['professeur', 'classe', 'cartable', 'devoir', 'interrogation', 'récréation', 'surveillant', 'casier', 'cour']),
   groupe(SIXIEME_T2, '6e', 'la cuisine', ['four', 'casserole', 'recette', 'ingrédient', 'farine', 'cuisson', 'mijoter', 'éplucher', 'marmite']),
-  groupe(SIXIEME_T2, '6e', 'le voyage', ['valise', 'billet', 'gare', 'passeport', 'hôtel', 'trajet', 'bagage', 'escale', 'destination']),
-  groupe(SIXIEME_T2, '6e', 'la musique', ['note', 'mélodie', 'rythme', 'orchestre', 'concert', 'refrain', 'partition', 'chorale']),
+  groupe(SIXIEME_T2, '6e', 'le voyage', ['valise', 'passeport', 'visa', 'douane', 'touriste', 'séjour', 'bagage', 'itinéraire', 'destination', 'excursion']),
+  groupe(SIXIEME_T2, '6e', 'la musique', ['instrument', 'mélodie', 'rythme', 'orchestre', 'concert', 'refrain', 'partition', 'chanteur']),
   groupe(SIXIEME_T2, '6e', 'le sport', ['équipe', 'arbitre', 'stade', 'match', 'compétition', 'championnat', 'victoire', 'médaille']),
   groupe(SIXIEME_T2, '6e', 'la peur', ['frayeur', 'trembler', 'cauchemar', 'angoisse', 'fuir', 'effroi', 'frisson', 'terreur']),
   groupe(SIXIEME_T2, '6e', 'la ville', ['circulation', 'trottoir', 'immeuble', 'avenue', 'passant', 'boulevard', 'quartier', 'carrefour']),
