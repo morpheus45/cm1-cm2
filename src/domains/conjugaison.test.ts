@@ -183,3 +183,17 @@ describe('trouver le temps : une seule bonne réponse', () => {
     }
   });
 });
+
+describe('élision de « je »', () => {
+  it("écrit « J'écoute » et « J'étais », jamais « Je écoute » : les voyelles accentuées comptent", () => {
+    for (const level of ['CM1', 'CM2'] as const) {
+      for (const trimester of ALL_TRIMESTERS) {
+        for (let seed = 0; seed < 200; seed++) {
+          for (const q of generate(level, trimester, createRng(seed), 12)) {
+            expect(q.prompt.replace(/\*\*/g, ''), q.prompt).not.toMatch(/\bje [aeiouyàâäéèêëîïôöùûü]/i);
+          }
+        }
+      }
+    }
+  });
+});
