@@ -114,9 +114,14 @@ export function dixieme(rng: Rng, max: number): number {
  * bas.
  */
 export function faux(correct: number, candidats: number[], options: { min?: number; max?: number; decimales?: number } = {}): string[] {
+  return fauxEcrits(correct, candidats, nb, options);
+}
+
+/** Les mêmes erreurs, écrites comme on veut : avec leur unité (« 12,50 € »), en pourcentage, en fraction. */
+export function fauxEcrits(correct: number, candidats: number[], ecrire: (n: number) => string, options: { min?: number; max?: number; decimales?: number } = {}): string[] {
   // 0,2 et 0,20000000000000018 sont le même nombre pour l'élève : on nettoie avant de comparer.
   const net = (n: number) => Number(n.toFixed(9));
-  return fauxNombres(net(correct), candidats.map(net), { min: -1e9, ...options }).map(nb);
+  return fauxNombres(net(correct), candidats.map(net), { min: -1e9, ...options }).map(ecrire);
 }
 
 /** Les propositions « <, >, = » d'une comparaison : la bonne, et les deux autres. */

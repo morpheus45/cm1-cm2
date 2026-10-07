@@ -1,9 +1,10 @@
-import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL, type Level, type Question, type Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngShuffle } from '../lib/seededRandom';
 import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
 import { genererCycle2, sortesDeProblemesCycle2 } from './problemesCycle2';
 import { genererSixieme, sortesDeProblemesSixieme } from './problemesSixieme';
+import { genererCycle4 } from './problemesCycle4';
 
 interface ProblemResult {
   prompt: string;
@@ -182,6 +183,8 @@ function distractorsAround(rng: Rng, correct: number, spread: number, howMany: n
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
   if (level === 'CE1' || level === 'CE2') return genererCycle2(level, trimester, rng, count);
   if (level === '6e') return genererSixieme(trimester, rng, count);
+  // Au collège, les problèmes viennent de briques écrites avec les notions du cycle 4 (problemesCycle4.ts).
+  if (CYCLE_OF_LEVEL[level] === 4) return genererCycle4(level, trimester, rng, count);
   const stage = stageOf(level, trimester);
   const templates = PROBLEM_TEMPLATES.filter((template) => isAvailableAt(template.minStage, stage));
   const questions: Question[] = [];
