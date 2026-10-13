@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "Montesquieu",
-          "en": "Montesquieu (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "époque",
+          "en": "époque (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Voltaire",
-          "en": "Voltaire (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "période",
+          "en": "période (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Rousseau",
-          "en": "Rousseau (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "siècle",
+          "en": "siècle (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Diderot",
-          "en": "Diderot (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "roi",
+          "en": "roi (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Newton",
-          "en": "Newton (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "reine",
+          "en": "reine (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Déclaration Droits",
-          "en": "Déclaration Droits (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "guerre",
+          "en": "guerre (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Guillotine",
-          "en": "Guillotine (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "paix",
+          "en": "paix (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Terreur",
-          "en": "Terreur (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "révolution",
+          "en": "révolution (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Napoléon",
-          "en": "Napoléon (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "empire",
+          "en": "empire (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "vapeur",
-          "en": "vapeur (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "colonie",
+          "en": "colonie (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "chronologie",
+          "en": "chronologie (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "source",
+          "en": "source (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "monument",
+          "en": "monument (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "héritage",
+          "en": "héritage (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "tradition",
+          "en": "tradition (niveau 4e, tri 1)",
+          "theme": "registres / analyse"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "Montesquieu",
+          "enonce": "En Histoire, quel terme appartient au niveau 4e ?",
+          "bonne": "époque",
           "fausses": [
-            "Voltaire",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Montesquieu est un terme de Histoire."
+          "explication": "époque = concept clé du 4e en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau 4e ?",
-          "bonne": "Lumières, Révolution",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 4e couvre registres de langage",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le 4e couvre : Lumières, Révolution"
+          "explication": "Oui, registres de langage = contenu 4e"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: Rousseau)",
-          "bonne": "Rousseau",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est Rousseau."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus analyse texte : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine analyse texte"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "registres de langage est au programme 4e",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, registres de langage = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du 4e",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du 4e",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du 4e",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du 4e",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du 4e",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du 4e",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du 4e",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du 4e",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du 4e",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme 4e"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "Montesquieu",
-          "en": "Montesquieu (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "époque",
+          "en": "époque (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Voltaire",
-          "en": "Voltaire (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "période",
+          "en": "période (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Rousseau",
-          "en": "Rousseau (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "siècle",
+          "en": "siècle (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Diderot",
-          "en": "Diderot (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "roi",
+          "en": "roi (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Newton",
-          "en": "Newton (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "reine",
+          "en": "reine (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Déclaration Droits",
-          "en": "Déclaration Droits (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "guerre",
+          "en": "guerre (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Guillotine",
-          "en": "Guillotine (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "paix",
+          "en": "paix (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Terreur",
-          "en": "Terreur (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "révolution",
+          "en": "révolution (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Napoléon",
-          "en": "Napoléon (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "empire",
+          "en": "empire (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "vapeur",
-          "en": "vapeur (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "colonie",
+          "en": "colonie (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "chronologie",
+          "en": "chronologie (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "source",
+          "en": "source (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "monument",
+          "en": "monument (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "héritage",
+          "en": "héritage (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "tradition",
+          "en": "tradition (niveau 4e, tri 2)",
+          "theme": "registres / analyse"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "Montesquieu",
+          "enonce": "En Histoire, quel terme appartient au niveau 4e ?",
+          "bonne": "époque",
           "fausses": [
-            "Voltaire",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Montesquieu est un terme de Histoire."
+          "explication": "époque = concept clé du 4e en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau 4e ?",
-          "bonne": "Lumières, Révolution",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 4e couvre registres de langage",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le 4e couvre : Lumières, Révolution"
+          "explication": "Oui, registres de langage = contenu 4e"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: Rousseau)",
-          "bonne": "Rousseau",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est Rousseau."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus analyse texte : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine analyse texte"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "registres de langage est au programme 4e",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, registres de langage = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du 4e",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du 4e",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du 4e",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du 4e",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du 4e",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du 4e",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du 4e",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du 4e",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du 4e",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme 4e"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "Montesquieu",
-          "en": "Montesquieu (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "époque",
+          "en": "époque (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Voltaire",
-          "en": "Voltaire (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "période",
+          "en": "période (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Rousseau",
-          "en": "Rousseau (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "siècle",
+          "en": "siècle (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Diderot",
-          "en": "Diderot (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "roi",
+          "en": "roi (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Newton",
-          "en": "Newton (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "reine",
+          "en": "reine (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Déclaration Droits",
-          "en": "Déclaration Droits (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "guerre",
+          "en": "guerre (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Guillotine",
-          "en": "Guillotine (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "paix",
+          "en": "paix (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Terreur",
-          "en": "Terreur (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "révolution",
+          "en": "révolution (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "Napoléon",
-          "en": "Napoléon (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "empire",
+          "en": "empire (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "vapeur",
-          "en": "vapeur (Lumières, Révolution)",
-          "theme": "Lumières,"
+          "fr": "colonie",
+          "en": "colonie (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "chronologie",
+          "en": "chronologie (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "source",
+          "en": "source (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "monument",
+          "en": "monument (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "héritage",
+          "en": "héritage (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "tradition",
+          "en": "tradition (niveau 4e, tri 3)",
+          "theme": "registres / analyse"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "Montesquieu",
+          "enonce": "En Histoire, quel terme appartient au niveau 4e ?",
+          "bonne": "époque",
           "fausses": [
-            "Voltaire",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Montesquieu est un terme de Histoire."
+          "explication": "époque = concept clé du 4e en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau 4e ?",
-          "bonne": "Lumières, Révolution",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 4e couvre registres de langage",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le 4e couvre : Lumières, Révolution"
+          "explication": "Oui, registres de langage = contenu 4e"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: Rousseau)",
-          "bonne": "Rousseau",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est Rousseau."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus analyse texte : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine analyse texte"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "registres de langage est au programme 4e",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, registres de langage = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du 4e",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du 4e",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du 4e",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du 4e",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du 4e",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du 4e",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du 4e",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du 4e",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme 4e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du 4e",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme 4e"
         }
       ]
     }

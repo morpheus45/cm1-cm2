@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "1/2",
-          "en": "1/2 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "nombre",
+          "en": "nombre (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "1/3",
-          "en": "1/3 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "addition",
+          "en": "addition (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "1/4",
-          "en": "1/4 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "soustraction",
+          "en": "soustraction (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "multiplication",
+          "en": "multiplication (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "division",
+          "en": "division (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "fraction",
+          "en": "fraction (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
           "fr": "angle",
-          "en": "angle (fractions, géométrie)",
-          "theme": "fractions,"
+          "en": "angle (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "diagonale",
-          "en": "diagonale (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "carré",
+          "en": "carré (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "parallèle",
-          "en": "parallèle (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "triangle",
+          "en": "triangle (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "perpendiculaire",
-          "en": "perpendiculaire (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "cercle",
+          "en": "cercle (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "symétrie",
-          "en": "symétrie (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "périmètre",
+          "en": "périmètre (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "0.5",
-          "en": "0.5 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "aire",
+          "en": "aire (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "0.1",
-          "en": "0.1 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "équation",
+          "en": "équation (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "variable",
+          "en": "variable (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "graphique",
+          "en": "graphique (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "pourcentage",
+          "en": "pourcentage (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "moyenne",
+          "en": "moyenne (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "médiane",
+          "en": "médiane (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
-        },
-        {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
-        },
-        {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
-        },
-        {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
-        },
-        {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "formule",
+          "en": "formule (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Mathematiques ?",
-          "bonne": "1/2",
+          "enonce": "En Mathematiques, quel terme appartient au niveau CM1 ?",
+          "bonne": "nombre",
           "fausses": [
-            "1/3",
-            "non",
-            "peut-être"
+            "addition",
+            "soustraction",
+            "multiplication"
           ],
-          "explication": "1/2 est un terme de Mathematiques."
+          "explication": "nombre = concept clé du CM1 en Mathematiques"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM1 ?",
-          "bonne": "fractions, géométrie",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM1 couvre noms et verbes",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM1 couvre : fractions, géométrie"
+          "explication": "Oui, noms et verbes = contenu CM1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: 1/4)",
-          "bonne": "1/4",
+          "enonce": "Un concept important : ___",
+          "bonne": "division",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "fraction",
+            "décimal",
+            "angle"
           ],
-          "explication": "La réponse est 1/4."
+          "explication": "division = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus temps simple : quel terme ?",
+          "bonne": "carré",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est juste."
+          "explication": "carré = domaine temps simple"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "noms et verbes est au programme CM1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, noms et verbes = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM1",
+          "bonne": "fraction",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "décimal",
+            "angle",
+            "carré"
           ],
-          "explication": "C'est juste."
+          "explication": "fraction = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM1",
+          "bonne": "décimal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "angle",
+            "carré",
+            "triangle"
           ],
-          "explication": "C'est juste."
+          "explication": "décimal = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM1",
+          "bonne": "angle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "carré",
+            "triangle",
+            "cercle"
           ],
-          "explication": "C'est juste."
+          "explication": "angle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM1",
+          "bonne": "carré",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est juste."
+          "explication": "carré = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM1",
+          "bonne": "triangle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cercle",
+            "périmètre",
+            "aire"
           ],
-          "explication": "C'est juste."
+          "explication": "triangle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM1",
+          "bonne": "cercle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "périmètre",
+            "aire",
+            "équation"
           ],
-          "explication": "C'est juste."
+          "explication": "cercle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM1",
+          "bonne": "périmètre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aire",
+            "équation",
+            "variable"
           ],
-          "explication": "C'est juste."
+          "explication": "périmètre = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM1",
+          "bonne": "aire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "équation",
+            "variable",
+            "graphique"
           ],
-          "explication": "C'est juste."
+          "explication": "aire = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM1",
+          "bonne": "équation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "variable",
+            "graphique",
+            "pourcentage"
           ],
-          "explication": "C'est juste."
+          "explication": "équation = élément programme CM1"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "1/2",
-          "en": "1/2 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "nombre",
+          "en": "nombre (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "1/3",
-          "en": "1/3 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "addition",
+          "en": "addition (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "1/4",
-          "en": "1/4 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "soustraction",
+          "en": "soustraction (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "multiplication",
+          "en": "multiplication (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "division",
+          "en": "division (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "fraction",
+          "en": "fraction (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
           "fr": "angle",
-          "en": "angle (fractions, géométrie)",
-          "theme": "fractions,"
+          "en": "angle (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "diagonale",
-          "en": "diagonale (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "carré",
+          "en": "carré (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "parallèle",
-          "en": "parallèle (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "triangle",
+          "en": "triangle (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "perpendiculaire",
-          "en": "perpendiculaire (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "cercle",
+          "en": "cercle (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "symétrie",
-          "en": "symétrie (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "périmètre",
+          "en": "périmètre (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "0.5",
-          "en": "0.5 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "aire",
+          "en": "aire (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "0.1",
-          "en": "0.1 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "équation",
+          "en": "équation (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "variable",
+          "en": "variable (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "graphique",
+          "en": "graphique (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "pourcentage",
+          "en": "pourcentage (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "moyenne",
+          "en": "moyenne (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "médiane",
+          "en": "médiane (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
-        },
-        {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
-        },
-        {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
-        },
-        {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
-        },
-        {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "formule",
+          "en": "formule (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Mathematiques ?",
-          "bonne": "1/2",
+          "enonce": "En Mathematiques, quel terme appartient au niveau CM1 ?",
+          "bonne": "nombre",
           "fausses": [
-            "1/3",
-            "non",
-            "peut-être"
+            "addition",
+            "soustraction",
+            "multiplication"
           ],
-          "explication": "1/2 est un terme de Mathematiques."
+          "explication": "nombre = concept clé du CM1 en Mathematiques"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM1 ?",
-          "bonne": "fractions, géométrie",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM1 couvre noms et verbes",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM1 couvre : fractions, géométrie"
+          "explication": "Oui, noms et verbes = contenu CM1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: 1/4)",
-          "bonne": "1/4",
+          "enonce": "Un concept important : ___",
+          "bonne": "division",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "fraction",
+            "décimal",
+            "angle"
           ],
-          "explication": "La réponse est 1/4."
+          "explication": "division = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus temps simple : quel terme ?",
+          "bonne": "carré",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est juste."
+          "explication": "carré = domaine temps simple"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "noms et verbes est au programme CM1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, noms et verbes = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM1",
+          "bonne": "fraction",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "décimal",
+            "angle",
+            "carré"
           ],
-          "explication": "C'est juste."
+          "explication": "fraction = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM1",
+          "bonne": "décimal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "angle",
+            "carré",
+            "triangle"
           ],
-          "explication": "C'est juste."
+          "explication": "décimal = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM1",
+          "bonne": "angle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "carré",
+            "triangle",
+            "cercle"
           ],
-          "explication": "C'est juste."
+          "explication": "angle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM1",
+          "bonne": "carré",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est juste."
+          "explication": "carré = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM1",
+          "bonne": "triangle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cercle",
+            "périmètre",
+            "aire"
           ],
-          "explication": "C'est juste."
+          "explication": "triangle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM1",
+          "bonne": "cercle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "périmètre",
+            "aire",
+            "équation"
           ],
-          "explication": "C'est juste."
+          "explication": "cercle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM1",
+          "bonne": "périmètre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aire",
+            "équation",
+            "variable"
           ],
-          "explication": "C'est juste."
+          "explication": "périmètre = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM1",
+          "bonne": "aire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "équation",
+            "variable",
+            "graphique"
           ],
-          "explication": "C'est juste."
+          "explication": "aire = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM1",
+          "bonne": "équation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "variable",
+            "graphique",
+            "pourcentage"
           ],
-          "explication": "C'est juste."
+          "explication": "équation = élément programme CM1"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "1/2",
-          "en": "1/2 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "nombre",
+          "en": "nombre (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "1/3",
-          "en": "1/3 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "addition",
+          "en": "addition (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "1/4",
-          "en": "1/4 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "soustraction",
+          "en": "soustraction (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "multiplication",
+          "en": "multiplication (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "division",
+          "en": "division (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "fraction",
+          "en": "fraction (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
           "fr": "angle",
-          "en": "angle (fractions, géométrie)",
-          "theme": "fractions,"
+          "en": "angle (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "diagonale",
-          "en": "diagonale (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "carré",
+          "en": "carré (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "parallèle",
-          "en": "parallèle (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "triangle",
+          "en": "triangle (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "perpendiculaire",
-          "en": "perpendiculaire (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "cercle",
+          "en": "cercle (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "symétrie",
-          "en": "symétrie (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "périmètre",
+          "en": "périmètre (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "0.5",
-          "en": "0.5 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "aire",
+          "en": "aire (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "0.1",
-          "en": "0.1 (fractions, géométrie)",
-          "theme": "fractions,"
+          "fr": "équation",
+          "en": "équation (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "variable",
+          "en": "variable (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "graphique",
+          "en": "graphique (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "pourcentage",
+          "en": "pourcentage (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "moyenne",
+          "en": "moyenne (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "médiane",
+          "en": "médiane (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
-        },
-        {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
-        },
-        {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
-        },
-        {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
-        },
-        {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "formule",
+          "en": "formule (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Mathematiques ?",
-          "bonne": "1/2",
+          "enonce": "En Mathematiques, quel terme appartient au niveau CM1 ?",
+          "bonne": "nombre",
           "fausses": [
-            "1/3",
-            "non",
-            "peut-être"
+            "addition",
+            "soustraction",
+            "multiplication"
           ],
-          "explication": "1/2 est un terme de Mathematiques."
+          "explication": "nombre = concept clé du CM1 en Mathematiques"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM1 ?",
-          "bonne": "fractions, géométrie",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM1 couvre noms et verbes",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM1 couvre : fractions, géométrie"
+          "explication": "Oui, noms et verbes = contenu CM1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: 1/4)",
-          "bonne": "1/4",
+          "enonce": "Un concept important : ___",
+          "bonne": "division",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "fraction",
+            "décimal",
+            "angle"
           ],
-          "explication": "La réponse est 1/4."
+          "explication": "division = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus temps simple : quel terme ?",
+          "bonne": "carré",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est juste."
+          "explication": "carré = domaine temps simple"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "noms et verbes est au programme CM1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, noms et verbes = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM1",
+          "bonne": "fraction",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "décimal",
+            "angle",
+            "carré"
           ],
-          "explication": "C'est juste."
+          "explication": "fraction = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM1",
+          "bonne": "décimal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "angle",
+            "carré",
+            "triangle"
           ],
-          "explication": "C'est juste."
+          "explication": "décimal = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM1",
+          "bonne": "angle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "carré",
+            "triangle",
+            "cercle"
           ],
-          "explication": "C'est juste."
+          "explication": "angle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM1",
+          "bonne": "carré",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est juste."
+          "explication": "carré = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM1",
+          "bonne": "triangle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cercle",
+            "périmètre",
+            "aire"
           ],
-          "explication": "C'est juste."
+          "explication": "triangle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM1",
+          "bonne": "cercle",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "périmètre",
+            "aire",
+            "équation"
           ],
-          "explication": "C'est juste."
+          "explication": "cercle = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM1",
+          "bonne": "périmètre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aire",
+            "équation",
+            "variable"
           ],
-          "explication": "C'est juste."
+          "explication": "périmètre = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM1",
+          "bonne": "aire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "équation",
+            "variable",
+            "graphique"
           ],
-          "explication": "C'est juste."
+          "explication": "aire = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM1",
+          "bonne": "équation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "variable",
+            "graphique",
+            "pourcentage"
           ],
-          "explication": "C'est juste."
+          "explication": "équation = élément programme CM1"
         }
       ]
     }

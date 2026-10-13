@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "Noël",
-          "en": "Noël (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "époque",
+          "en": "époque (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "Pâques",
-          "en": "Pâques (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "période",
+          "en": "période (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "14 juillet",
-          "en": "14 juillet (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "siècle",
+          "en": "siècle (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "Toussaint",
-          "en": "Toussaint (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "anniversaire",
-          "en": "anniversaire (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "moyen-âge",
-          "en": "moyen-âge (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "chevalier",
-          "en": "chevalier (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "roi",
+          "en": "roi (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
           "fr": "reine",
-          "en": "reine (événements, fêtes)",
-          "theme": "événements,"
+          "en": "reine (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fête",
-          "en": "fête (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "guerre",
+          "en": "guerre (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "cérémonie",
-          "en": "cérémonie (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "paix",
+          "en": "paix (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "révolution",
+          "en": "révolution (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "empire",
+          "en": "empire (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "colonie",
+          "en": "colonie (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "chronologie",
+          "en": "chronologie (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "source",
+          "en": "source (niveau CE2, tri 1)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (niveau CE2, tri 1)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau CE2, tri 1)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "Noël",
+          "enonce": "En Histoire, quel terme appartient au niveau CE2 ?",
+          "bonne": "époque",
           "fausses": [
-            "Pâques",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Noël est un terme de Histoire."
+          "explication": "époque = concept clé du CE2 en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "événements, fêtes",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : événements, fêtes"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: 14 juillet)",
-          "bonne": "14 juillet",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est 14 juillet."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme CE2"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "Noël",
-          "en": "Noël (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "époque",
+          "en": "époque (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "Pâques",
-          "en": "Pâques (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "période",
+          "en": "période (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "14 juillet",
-          "en": "14 juillet (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "siècle",
+          "en": "siècle (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "Toussaint",
-          "en": "Toussaint (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "anniversaire",
-          "en": "anniversaire (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "moyen-âge",
-          "en": "moyen-âge (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "chevalier",
-          "en": "chevalier (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "roi",
+          "en": "roi (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
           "fr": "reine",
-          "en": "reine (événements, fêtes)",
-          "theme": "événements,"
+          "en": "reine (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fête",
-          "en": "fête (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "guerre",
+          "en": "guerre (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "cérémonie",
-          "en": "cérémonie (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "paix",
+          "en": "paix (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "révolution",
+          "en": "révolution (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "empire",
+          "en": "empire (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "colonie",
+          "en": "colonie (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "chronologie",
+          "en": "chronologie (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "source",
+          "en": "source (niveau CE2, tri 2)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (niveau CE2, tri 2)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau CE2, tri 2)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "Noël",
+          "enonce": "En Histoire, quel terme appartient au niveau CE2 ?",
+          "bonne": "époque",
           "fausses": [
-            "Pâques",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Noël est un terme de Histoire."
+          "explication": "époque = concept clé du CE2 en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "événements, fêtes",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : événements, fêtes"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: 14 juillet)",
-          "bonne": "14 juillet",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est 14 juillet."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme CE2"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "Noël",
-          "en": "Noël (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "époque",
+          "en": "époque (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "Pâques",
-          "en": "Pâques (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "période",
+          "en": "période (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "14 juillet",
-          "en": "14 juillet (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "siècle",
+          "en": "siècle (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "Toussaint",
-          "en": "Toussaint (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "anniversaire",
-          "en": "anniversaire (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "moyen-âge",
-          "en": "moyen-âge (événements, fêtes)",
-          "theme": "événements,"
-        },
-        {
-          "fr": "chevalier",
-          "en": "chevalier (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "roi",
+          "en": "roi (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
           "fr": "reine",
-          "en": "reine (événements, fêtes)",
-          "theme": "événements,"
+          "en": "reine (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fête",
-          "en": "fête (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "guerre",
+          "en": "guerre (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "cérémonie",
-          "en": "cérémonie (événements, fêtes)",
-          "theme": "événements,"
+          "fr": "paix",
+          "en": "paix (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "révolution",
+          "en": "révolution (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "empire",
+          "en": "empire (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "colonie",
+          "en": "colonie (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "chronologie",
+          "en": "chronologie (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "source",
+          "en": "source (niveau CE2, tri 3)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (niveau CE2, tri 3)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau CE2, tri 3)",
+          "theme": "colors / famille"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "Noël",
+          "enonce": "En Histoire, quel terme appartient au niveau CE2 ?",
+          "bonne": "époque",
           "fausses": [
-            "Pâques",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Noël est un terme de Histoire."
+          "explication": "époque = concept clé du CE2 en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "événements, fêtes",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : événements, fêtes"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: 14 juillet)",
-          "bonne": "14 juillet",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est 14 juillet."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme CE2"
         }
       ]
     }

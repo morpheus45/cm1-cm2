@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "préhistoire",
-          "en": "avant écriture",
-          "theme": "périodes"
+          "fr": "époque",
+          "en": "époque (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "antiquité",
-          "en": "Romains/Grecs",
-          "theme": "périodes"
+          "fr": "période",
+          "en": "période (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "moyen-âge",
-          "en": "châteaux",
-          "theme": "périodes"
+          "fr": "siècle",
+          "en": "siècle (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "renaissance",
-          "en": "art",
-          "theme": "périodes"
+          "fr": "roi",
+          "en": "roi (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "époque moderne",
-          "en": "aujourd'hui",
-          "theme": "périodes"
+          "fr": "reine",
+          "en": "reine (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Jules César",
-          "en": "Romain",
-          "theme": "personnages"
+          "fr": "guerre",
+          "en": "guerre (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Jeanne d'Arc",
-          "en": "France",
-          "theme": "personnages"
+          "fr": "paix",
+          "en": "paix (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Louis XIV",
-          "en": "roi",
-          "theme": "personnages"
+          "fr": "révolution",
+          "en": "révolution (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Napoléon",
-          "en": "empereur",
-          "theme": "personnages"
+          "fr": "empire",
+          "en": "empire (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Charlemagne",
-          "en": "roi franc",
-          "theme": "personnages"
+          "fr": "colonie",
+          "en": "colonie (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Révolution française",
-          "en": "1789",
-          "theme": "événements"
+          "fr": "indépendance",
+          "en": "indépendance (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "conquête de la Gaule",
-          "en": "-58",
-          "theme": "événements"
+          "fr": "civilisation",
+          "en": "civilisation (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Croisades",
-          "en": "11e-13e siècle",
-          "theme": "événements"
+          "fr": "événement",
+          "en": "événement (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Renaissance",
-          "en": "14e-16e siècle",
-          "theme": "événements"
-        },
-        {
-          "fr": "Révolution industrielle",
-          "en": "18e siècle",
-          "theme": "événements"
-        },
-        {
-          "fr": "monument",
-          "en": "construction",
-          "theme": "documents"
+          "fr": "personnage",
+          "en": "personnage (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "document",
-          "en": "preuve",
-          "theme": "documents"
+          "en": "document (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "musée",
-          "en": "collection",
-          "theme": "documents"
+          "fr": "chronologie",
+          "en": "chronologie (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "archive",
-          "en": "enregistrement",
-          "theme": "documents"
+          "fr": "source",
+          "en": "source (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "inscription",
-          "en": "texte",
-          "theme": "documents"
+          "fr": "monument",
+          "en": "monument (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qui était Jeanne d'Arc ?",
-          "bonne": "héroïne française",
+          "enonce": "En Histoire, quel terme appartient au niveau 6e ?",
+          "bonne": "époque",
           "fausses": [
-            "reine",
-            "sainte",
-            "prophète"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Jeanne d'Arc = héroïne française du 15e siècle."
+          "explication": "époque = concept clé du 6e en Histoire"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "La ___ française est un événement majeur de l'histoire en 1789.",
-          "bonne": "Révolution",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "Réforme",
-            "Renaissance",
-            "Croisade"
+            "Faux"
           ],
-          "explication": "Révolution française = 1789, changement majeur."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quel empereur français a conquis l'Europe ?",
-          "bonne": "Napoléon",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "Louis XIV",
-            "Charlemagne",
-            "Jules César"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "Napoléon = empereur français du 19e siècle."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "reine = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "empire = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "guerre",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "guerre = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "paix",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "paix = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "révolution",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "révolution = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "empire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "empire = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "colonie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "colonie = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "indépendance",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "indépendance = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "civilisation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "civilisation = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "événement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "événement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "personnage",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "personnage = élément programme 6e"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "préhistoire",
-          "en": "avant écriture",
-          "theme": "périodes"
+          "fr": "époque",
+          "en": "époque (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "antiquité",
-          "en": "Romains/Grecs",
-          "theme": "périodes"
+          "fr": "période",
+          "en": "période (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "moyen-âge",
-          "en": "châteaux",
-          "theme": "périodes"
+          "fr": "siècle",
+          "en": "siècle (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "renaissance",
-          "en": "art",
-          "theme": "périodes"
+          "fr": "roi",
+          "en": "roi (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "époque moderne",
-          "en": "aujourd'hui",
-          "theme": "périodes"
+          "fr": "reine",
+          "en": "reine (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Jules César",
-          "en": "Romain",
-          "theme": "personnages"
+          "fr": "guerre",
+          "en": "guerre (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Jeanne d'Arc",
-          "en": "France",
-          "theme": "personnages"
+          "fr": "paix",
+          "en": "paix (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Louis XIV",
-          "en": "roi",
-          "theme": "personnages"
+          "fr": "révolution",
+          "en": "révolution (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Napoléon",
-          "en": "empereur",
-          "theme": "personnages"
+          "fr": "empire",
+          "en": "empire (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Charlemagne",
-          "en": "roi franc",
-          "theme": "personnages"
+          "fr": "colonie",
+          "en": "colonie (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Révolution française",
-          "en": "1789",
-          "theme": "événements"
+          "fr": "indépendance",
+          "en": "indépendance (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "conquête de la Gaule",
-          "en": "-58",
-          "theme": "événements"
+          "fr": "civilisation",
+          "en": "civilisation (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Croisades",
-          "en": "11e-13e siècle",
-          "theme": "événements"
+          "fr": "événement",
+          "en": "événement (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Renaissance",
-          "en": "14e-16e siècle",
-          "theme": "événements"
-        },
-        {
-          "fr": "Révolution industrielle",
-          "en": "18e siècle",
-          "theme": "événements"
-        },
-        {
-          "fr": "monument",
-          "en": "construction",
-          "theme": "documents"
+          "fr": "personnage",
+          "en": "personnage (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "document",
-          "en": "preuve",
-          "theme": "documents"
+          "en": "document (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "musée",
-          "en": "collection",
-          "theme": "documents"
+          "fr": "chronologie",
+          "en": "chronologie (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "archive",
-          "en": "enregistrement",
-          "theme": "documents"
+          "fr": "source",
+          "en": "source (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "inscription",
-          "en": "texte",
-          "theme": "documents"
+          "fr": "monument",
+          "en": "monument (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qui était Jeanne d'Arc ?",
-          "bonne": "héroïne française",
+          "enonce": "En Histoire, quel terme appartient au niveau 6e ?",
+          "bonne": "époque",
           "fausses": [
-            "reine",
-            "sainte",
-            "prophète"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Jeanne d'Arc = héroïne française du 15e siècle."
+          "explication": "époque = concept clé du 6e en Histoire"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "La ___ française est un événement majeur de l'histoire en 1789.",
-          "bonne": "Révolution",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "Réforme",
-            "Renaissance",
-            "Croisade"
+            "Faux"
           ],
-          "explication": "Révolution française = 1789, changement majeur."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quel empereur français a conquis l'Europe ?",
-          "bonne": "Napoléon",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "Louis XIV",
-            "Charlemagne",
-            "Jules César"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "Napoléon = empereur français du 19e siècle."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "reine = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "empire = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "guerre",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "guerre = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "paix",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "paix = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "révolution",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "révolution = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "empire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "empire = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "colonie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "colonie = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "indépendance",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "indépendance = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "civilisation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "civilisation = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "événement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "événement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "personnage",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "personnage = élément programme 6e"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "préhistoire",
-          "en": "avant écriture",
-          "theme": "périodes"
+          "fr": "époque",
+          "en": "époque (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "antiquité",
-          "en": "Romains/Grecs",
-          "theme": "périodes"
+          "fr": "période",
+          "en": "période (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "moyen-âge",
-          "en": "châteaux",
-          "theme": "périodes"
+          "fr": "siècle",
+          "en": "siècle (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "renaissance",
-          "en": "art",
-          "theme": "périodes"
+          "fr": "roi",
+          "en": "roi (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "époque moderne",
-          "en": "aujourd'hui",
-          "theme": "périodes"
+          "fr": "reine",
+          "en": "reine (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Jules César",
-          "en": "Romain",
-          "theme": "personnages"
+          "fr": "guerre",
+          "en": "guerre (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Jeanne d'Arc",
-          "en": "France",
-          "theme": "personnages"
+          "fr": "paix",
+          "en": "paix (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Louis XIV",
-          "en": "roi",
-          "theme": "personnages"
+          "fr": "révolution",
+          "en": "révolution (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Napoléon",
-          "en": "empereur",
-          "theme": "personnages"
+          "fr": "empire",
+          "en": "empire (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Charlemagne",
-          "en": "roi franc",
-          "theme": "personnages"
+          "fr": "colonie",
+          "en": "colonie (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Révolution française",
-          "en": "1789",
-          "theme": "événements"
+          "fr": "indépendance",
+          "en": "indépendance (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "conquête de la Gaule",
-          "en": "-58",
-          "theme": "événements"
+          "fr": "civilisation",
+          "en": "civilisation (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Croisades",
-          "en": "11e-13e siècle",
-          "theme": "événements"
+          "fr": "événement",
+          "en": "événement (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Renaissance",
-          "en": "14e-16e siècle",
-          "theme": "événements"
-        },
-        {
-          "fr": "Révolution industrielle",
-          "en": "18e siècle",
-          "theme": "événements"
-        },
-        {
-          "fr": "monument",
-          "en": "construction",
-          "theme": "documents"
+          "fr": "personnage",
+          "en": "personnage (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "document",
-          "en": "preuve",
-          "theme": "documents"
+          "en": "document (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "musée",
-          "en": "collection",
-          "theme": "documents"
+          "fr": "chronologie",
+          "en": "chronologie (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "archive",
-          "en": "enregistrement",
-          "theme": "documents"
+          "fr": "source",
+          "en": "source (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "inscription",
-          "en": "texte",
-          "theme": "documents"
+          "fr": "monument",
+          "en": "monument (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qui était Jeanne d'Arc ?",
-          "bonne": "héroïne française",
+          "enonce": "En Histoire, quel terme appartient au niveau 6e ?",
+          "bonne": "époque",
           "fausses": [
-            "reine",
-            "sainte",
-            "prophète"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "Jeanne d'Arc = héroïne française du 15e siècle."
+          "explication": "époque = concept clé du 6e en Histoire"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "La ___ française est un événement majeur de l'histoire en 1789.",
-          "bonne": "Révolution",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "Réforme",
-            "Renaissance",
-            "Croisade"
+            "Faux"
           ],
-          "explication": "Révolution française = 1789, changement majeur."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quel empereur français a conquis l'Europe ?",
-          "bonne": "Napoléon",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "Louis XIV",
-            "Charlemagne",
-            "Jules César"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "Napoléon = empereur français du 19e siècle."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "reine = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "empire = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "guerre",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "guerre = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "paix",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "paix = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "révolution",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "révolution = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "empire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "empire = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "colonie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "colonie = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "indépendance",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "indépendance = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "civilisation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "civilisation = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "événement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "événement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "personnage",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "personnage = élément programme 6e"
         }
       ]
     }

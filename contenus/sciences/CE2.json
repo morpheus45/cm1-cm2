@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "racine",
-          "en": "racine (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "atome",
+          "en": "atome (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "tige",
-          "en": "tige (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "molécule",
+          "en": "molécule (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "feuille",
-          "en": "feuille (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "énergie",
+          "en": "énergie (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fleur",
-          "en": "fleur (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "force",
+          "en": "force (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fruit",
-          "en": "fruit (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "lumière",
+          "en": "lumière (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "solide",
-          "en": "solide (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "son",
+          "en": "son (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "liquide",
-          "en": "liquide (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "chaleur",
+          "en": "chaleur (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "gaz",
-          "en": "gaz (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "électricité",
+          "en": "électricité (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "eau",
-          "en": "eau (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "aimant",
+          "en": "aimant (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "pierre",
-          "en": "pierre (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "cellule",
+          "en": "cellule (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "plante",
+          "en": "plante (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "animal",
+          "en": "animal (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "écosystème",
+          "en": "écosystème (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "environnement",
+          "en": "environnement (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "évolution",
+          "en": "évolution (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "génétique",
+          "en": "génétique (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "chimie",
+          "en": "chimie (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "physique",
+          "en": "physique (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "biologie",
+          "en": "biologie (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "expérience",
+          "en": "expérience (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Sciences ?",
-          "bonne": "racine",
+          "enonce": "En Sciences, quel terme appartient au niveau CE2 ?",
+          "bonne": "atome",
           "fausses": [
-            "tige",
-            "non",
-            "peut-être"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "racine est un terme de Sciences."
+          "explication": "atome = concept clé du CE2 en Sciences"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "plantes, matière",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : plantes, matière"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: feuille)",
-          "bonne": "feuille",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "La réponse est feuille."
+          "explication": "lumière = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "son",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est juste."
+          "explication": "son = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "chaleur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est juste."
+          "explication": "chaleur = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "électricité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est juste."
+          "explication": "électricité = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "cellule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est juste."
+          "explication": "cellule = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "plante",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "plante = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "animal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est juste."
+          "explication": "animal = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "écosystème",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est juste."
+          "explication": "écosystème = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "environnement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est juste."
+          "explication": "environnement = élément programme CE2"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "racine",
-          "en": "racine (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "atome",
+          "en": "atome (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "tige",
-          "en": "tige (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "molécule",
+          "en": "molécule (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "feuille",
-          "en": "feuille (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "énergie",
+          "en": "énergie (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fleur",
-          "en": "fleur (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "force",
+          "en": "force (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fruit",
-          "en": "fruit (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "lumière",
+          "en": "lumière (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "solide",
-          "en": "solide (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "son",
+          "en": "son (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "liquide",
-          "en": "liquide (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "chaleur",
+          "en": "chaleur (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "gaz",
-          "en": "gaz (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "électricité",
+          "en": "électricité (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "eau",
-          "en": "eau (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "aimant",
+          "en": "aimant (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "pierre",
-          "en": "pierre (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "cellule",
+          "en": "cellule (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "plante",
+          "en": "plante (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "animal",
+          "en": "animal (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "écosystème",
+          "en": "écosystème (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "environnement",
+          "en": "environnement (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "évolution",
+          "en": "évolution (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "génétique",
+          "en": "génétique (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "chimie",
+          "en": "chimie (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "physique",
+          "en": "physique (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "biologie",
+          "en": "biologie (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "expérience",
+          "en": "expérience (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Sciences ?",
-          "bonne": "racine",
+          "enonce": "En Sciences, quel terme appartient au niveau CE2 ?",
+          "bonne": "atome",
           "fausses": [
-            "tige",
-            "non",
-            "peut-être"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "racine est un terme de Sciences."
+          "explication": "atome = concept clé du CE2 en Sciences"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "plantes, matière",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : plantes, matière"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: feuille)",
-          "bonne": "feuille",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "La réponse est feuille."
+          "explication": "lumière = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "son",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est juste."
+          "explication": "son = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "chaleur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est juste."
+          "explication": "chaleur = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "électricité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est juste."
+          "explication": "électricité = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "cellule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est juste."
+          "explication": "cellule = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "plante",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "plante = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "animal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est juste."
+          "explication": "animal = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "écosystème",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est juste."
+          "explication": "écosystème = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "environnement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est juste."
+          "explication": "environnement = élément programme CE2"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "racine",
-          "en": "racine (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "atome",
+          "en": "atome (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "tige",
-          "en": "tige (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "molécule",
+          "en": "molécule (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "feuille",
-          "en": "feuille (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "énergie",
+          "en": "énergie (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fleur",
-          "en": "fleur (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "force",
+          "en": "force (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "fruit",
-          "en": "fruit (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "lumière",
+          "en": "lumière (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "solide",
-          "en": "solide (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "son",
+          "en": "son (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "liquide",
-          "en": "liquide (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "chaleur",
+          "en": "chaleur (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "gaz",
-          "en": "gaz (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "électricité",
+          "en": "électricité (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "eau",
-          "en": "eau (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "aimant",
+          "en": "aimant (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "pierre",
-          "en": "pierre (plantes, matière)",
-          "theme": "plantes,"
+          "fr": "cellule",
+          "en": "cellule (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "plante",
+          "en": "plante (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "animal",
+          "en": "animal (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "écosystème",
+          "en": "écosystème (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "environnement",
+          "en": "environnement (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "évolution",
+          "en": "évolution (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "génétique",
+          "en": "génétique (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "chimie",
+          "en": "chimie (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "physique",
+          "en": "physique (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "biologie",
+          "en": "biologie (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "expérience",
+          "en": "expérience (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Sciences ?",
-          "bonne": "racine",
+          "enonce": "En Sciences, quel terme appartient au niveau CE2 ?",
+          "bonne": "atome",
           "fausses": [
-            "tige",
-            "non",
-            "peut-être"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "racine est un terme de Sciences."
+          "explication": "atome = concept clé du CE2 en Sciences"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "plantes, matière",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : plantes, matière"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: feuille)",
-          "bonne": "feuille",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "La réponse est feuille."
+          "explication": "lumière = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "son",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est juste."
+          "explication": "son = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "chaleur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est juste."
+          "explication": "chaleur = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "électricité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est juste."
+          "explication": "électricité = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "cellule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est juste."
+          "explication": "cellule = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "plante",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "plante = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "animal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est juste."
+          "explication": "animal = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "écosystème",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est juste."
+          "explication": "écosystème = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "environnement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est juste."
+          "explication": "environnement = élément programme CE2"
         }
       ]
     }

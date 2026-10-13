@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "1/2",
-          "en": "moitié",
-          "theme": "fractions"
+          "fr": "nombre",
+          "en": "nombre (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1/3",
-          "en": "tiers",
-          "theme": "fractions"
+          "fr": "addition",
+          "en": "addition (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1/4",
-          "en": "quart",
-          "theme": "fractions"
+          "fr": "soustraction",
+          "en": "soustraction (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "2/3",
-          "en": "deux tiers",
-          "theme": "fractions"
+          "fr": "multiplication",
+          "en": "multiplication (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "3/4",
-          "en": "trois quarts",
-          "theme": "fractions"
+          "fr": "division",
+          "en": "division (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "fraction",
+          "en": "fraction (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "angle",
-          "en": "coin",
-          "theme": "géométrie"
+          "en": "angle (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "diagonale",
-          "en": "croisé",
-          "theme": "géométrie"
+          "fr": "carré",
+          "en": "carré (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "parallèle",
-          "en": "jamais croise",
-          "theme": "géométrie"
+          "fr": "triangle",
+          "en": "triangle (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "perpendiculaire",
-          "en": "90°",
-          "theme": "géométrie"
+          "fr": "cercle",
+          "en": "cercle (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "symétrie",
-          "en": "miroir",
-          "theme": "géométrie"
+          "fr": "périmètre",
+          "en": "périmètre (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "0.5",
-          "en": "zéro virgule cinq",
-          "theme": "décimaux"
+          "fr": "aire",
+          "en": "aire (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "0.1",
-          "en": "zéro virgule un",
-          "theme": "décimaux"
+          "fr": "équation",
+          "en": "équation (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1.5",
-          "en": "un virgule cinq",
-          "theme": "décimaux"
+          "fr": "variable",
+          "en": "variable (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "2.25",
-          "en": "deux virgule vingt-cinq",
-          "theme": "décimaux"
+          "fr": "graphique",
+          "en": "graphique (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "3.75",
-          "en": "trois virgule soixante-quinze",
-          "theme": "décimaux"
+          "fr": "pourcentage",
+          "en": "pourcentage (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "prix",
-          "en": "argent",
-          "theme": "problèmes"
+          "fr": "moyenne",
+          "en": "moyenne (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "distance",
-          "en": "longueur",
-          "theme": "problèmes"
+          "fr": "médiane",
+          "en": "médiane (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "temps",
-          "en": "durée",
-          "theme": "problèmes"
-        },
-        {
-          "fr": "vitesse",
-          "en": "rapidité",
-          "theme": "problèmes"
-        },
-        {
-          "fr": "poids",
-          "en": "masse",
-          "theme": "problèmes"
+          "fr": "formule",
+          "en": "formule (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
-          "consigne": "Calcul",
-          "enonce": "1/2 + 1/4 = ?",
-          "bonne": "3/4",
+          "consigne": "Choix multiple",
+          "enonce": "En Mathematiques, quel terme appartient au niveau 6e ?",
+          "bonne": "nombre",
           "fausses": [
-            "1/2",
-            "1",
-            "1/3"
+            "addition",
+            "soustraction",
+            "multiplication"
           ],
-          "explication": "1/2 = 2/4, donc 2/4 + 1/4 = 3/4."
+          "explication": "nombre = concept clé du 6e en Mathematiques"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu 6e"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "division",
+          "fausses": [
+            "fraction",
+            "décimal",
+            "angle"
+          ],
+          "explication": "division = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Deux lignes perpendiculaires font quel angle ?",
-          "bonne": "90°",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "carré",
           "fausses": [
-            "45°",
-            "180°",
-            "60°"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "Perpendiculaire = angle droit = 90°."
+          "explication": "carré = domaine temps passé simple"
         },
         {
-          "consigne": "Problème",
-          "enonce": "J'ai 10€, je dépense 3€. Combien reste-t-il ?",
-          "bonne": "7€",
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
           "fausses": [
-            "13€",
-            "6€",
-            "9€"
+            "Faux"
           ],
-          "explication": "10 - 3 = 7."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "fraction",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "décimal",
+            "angle",
+            "carré"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "fraction = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "décimal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "angle",
+            "carré",
+            "triangle"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "décimal = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "angle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "carré",
+            "triangle",
+            "cercle"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "angle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "carré",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "carré = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "triangle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cercle",
+            "périmètre",
+            "aire"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "triangle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "cercle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "périmètre",
+            "aire",
+            "équation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "cercle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "périmètre",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "aire",
+            "équation",
+            "variable"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "périmètre = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "aire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "équation",
+            "variable",
+            "graphique"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aire = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "équation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "variable",
+            "graphique",
+            "pourcentage"
           ],
-          "explication": "C'est la bonne réponse."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "équation = élément programme 6e"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "1/2",
-          "en": "moitié",
-          "theme": "fractions"
+          "fr": "nombre",
+          "en": "nombre (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1/3",
-          "en": "tiers",
-          "theme": "fractions"
+          "fr": "addition",
+          "en": "addition (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1/4",
-          "en": "quart",
-          "theme": "fractions"
+          "fr": "soustraction",
+          "en": "soustraction (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "2/3",
-          "en": "deux tiers",
-          "theme": "fractions"
+          "fr": "multiplication",
+          "en": "multiplication (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "3/4",
-          "en": "trois quarts",
-          "theme": "fractions"
+          "fr": "division",
+          "en": "division (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "fraction",
+          "en": "fraction (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "angle",
-          "en": "coin",
-          "theme": "géométrie"
+          "en": "angle (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "diagonale",
-          "en": "croisé",
-          "theme": "géométrie"
+          "fr": "carré",
+          "en": "carré (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "parallèle",
-          "en": "jamais croise",
-          "theme": "géométrie"
+          "fr": "triangle",
+          "en": "triangle (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "perpendiculaire",
-          "en": "90°",
-          "theme": "géométrie"
+          "fr": "cercle",
+          "en": "cercle (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "symétrie",
-          "en": "miroir",
-          "theme": "géométrie"
+          "fr": "périmètre",
+          "en": "périmètre (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "0.5",
-          "en": "zéro virgule cinq",
-          "theme": "décimaux"
+          "fr": "aire",
+          "en": "aire (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "0.1",
-          "en": "zéro virgule un",
-          "theme": "décimaux"
+          "fr": "équation",
+          "en": "équation (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1.5",
-          "en": "un virgule cinq",
-          "theme": "décimaux"
+          "fr": "variable",
+          "en": "variable (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "2.25",
-          "en": "deux virgule vingt-cinq",
-          "theme": "décimaux"
+          "fr": "graphique",
+          "en": "graphique (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "3.75",
-          "en": "trois virgule soixante-quinze",
-          "theme": "décimaux"
+          "fr": "pourcentage",
+          "en": "pourcentage (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "prix",
-          "en": "argent",
-          "theme": "problèmes"
+          "fr": "moyenne",
+          "en": "moyenne (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "distance",
-          "en": "longueur",
-          "theme": "problèmes"
+          "fr": "médiane",
+          "en": "médiane (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "temps",
-          "en": "durée",
-          "theme": "problèmes"
-        },
-        {
-          "fr": "vitesse",
-          "en": "rapidité",
-          "theme": "problèmes"
-        },
-        {
-          "fr": "poids",
-          "en": "masse",
-          "theme": "problèmes"
+          "fr": "formule",
+          "en": "formule (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
-          "consigne": "Calcul",
-          "enonce": "1/2 + 1/4 = ?",
-          "bonne": "3/4",
+          "consigne": "Choix multiple",
+          "enonce": "En Mathematiques, quel terme appartient au niveau 6e ?",
+          "bonne": "nombre",
           "fausses": [
-            "1/2",
-            "1",
-            "1/3"
+            "addition",
+            "soustraction",
+            "multiplication"
           ],
-          "explication": "1/2 = 2/4, donc 2/4 + 1/4 = 3/4."
+          "explication": "nombre = concept clé du 6e en Mathematiques"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu 6e"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "division",
+          "fausses": [
+            "fraction",
+            "décimal",
+            "angle"
+          ],
+          "explication": "division = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Deux lignes perpendiculaires font quel angle ?",
-          "bonne": "90°",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "carré",
           "fausses": [
-            "45°",
-            "180°",
-            "60°"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "Perpendiculaire = angle droit = 90°."
+          "explication": "carré = domaine temps passé simple"
         },
         {
-          "consigne": "Problème",
-          "enonce": "J'ai 10€, je dépense 3€. Combien reste-t-il ?",
-          "bonne": "7€",
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
           "fausses": [
-            "13€",
-            "6€",
-            "9€"
+            "Faux"
           ],
-          "explication": "10 - 3 = 7."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "fraction",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "décimal",
+            "angle",
+            "carré"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "fraction = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "décimal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "angle",
+            "carré",
+            "triangle"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "décimal = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "angle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "carré",
+            "triangle",
+            "cercle"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "angle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "carré",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "carré = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "triangle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cercle",
+            "périmètre",
+            "aire"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "triangle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "cercle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "périmètre",
+            "aire",
+            "équation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "cercle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "périmètre",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "aire",
+            "équation",
+            "variable"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "périmètre = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "aire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "équation",
+            "variable",
+            "graphique"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aire = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "équation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "variable",
+            "graphique",
+            "pourcentage"
           ],
-          "explication": "C'est la bonne réponse."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "équation = élément programme 6e"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "1/2",
-          "en": "moitié",
-          "theme": "fractions"
+          "fr": "nombre",
+          "en": "nombre (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1/3",
-          "en": "tiers",
-          "theme": "fractions"
+          "fr": "addition",
+          "en": "addition (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1/4",
-          "en": "quart",
-          "theme": "fractions"
+          "fr": "soustraction",
+          "en": "soustraction (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "2/3",
-          "en": "deux tiers",
-          "theme": "fractions"
+          "fr": "multiplication",
+          "en": "multiplication (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "3/4",
-          "en": "trois quarts",
-          "theme": "fractions"
+          "fr": "division",
+          "en": "division (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "fraction",
+          "en": "fraction (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "angle",
-          "en": "coin",
-          "theme": "géométrie"
+          "en": "angle (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "diagonale",
-          "en": "croisé",
-          "theme": "géométrie"
+          "fr": "carré",
+          "en": "carré (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "parallèle",
-          "en": "jamais croise",
-          "theme": "géométrie"
+          "fr": "triangle",
+          "en": "triangle (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "perpendiculaire",
-          "en": "90°",
-          "theme": "géométrie"
+          "fr": "cercle",
+          "en": "cercle (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "symétrie",
-          "en": "miroir",
-          "theme": "géométrie"
+          "fr": "périmètre",
+          "en": "périmètre (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "0.5",
-          "en": "zéro virgule cinq",
-          "theme": "décimaux"
+          "fr": "aire",
+          "en": "aire (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "0.1",
-          "en": "zéro virgule un",
-          "theme": "décimaux"
+          "fr": "équation",
+          "en": "équation (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "1.5",
-          "en": "un virgule cinq",
-          "theme": "décimaux"
+          "fr": "variable",
+          "en": "variable (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "2.25",
-          "en": "deux virgule vingt-cinq",
-          "theme": "décimaux"
+          "fr": "graphique",
+          "en": "graphique (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "3.75",
-          "en": "trois virgule soixante-quinze",
-          "theme": "décimaux"
+          "fr": "pourcentage",
+          "en": "pourcentage (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "prix",
-          "en": "argent",
-          "theme": "problèmes"
+          "fr": "moyenne",
+          "en": "moyenne (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "distance",
-          "en": "longueur",
-          "theme": "problèmes"
+          "fr": "médiane",
+          "en": "médiane (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "temps",
-          "en": "durée",
-          "theme": "problèmes"
-        },
-        {
-          "fr": "vitesse",
-          "en": "rapidité",
-          "theme": "problèmes"
-        },
-        {
-          "fr": "poids",
-          "en": "masse",
-          "theme": "problèmes"
+          "fr": "formule",
+          "en": "formule (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
-          "consigne": "Calcul",
-          "enonce": "1/2 + 1/4 = ?",
-          "bonne": "3/4",
+          "consigne": "Choix multiple",
+          "enonce": "En Mathematiques, quel terme appartient au niveau 6e ?",
+          "bonne": "nombre",
           "fausses": [
-            "1/2",
-            "1",
-            "1/3"
+            "addition",
+            "soustraction",
+            "multiplication"
           ],
-          "explication": "1/2 = 2/4, donc 2/4 + 1/4 = 3/4."
+          "explication": "nombre = concept clé du 6e en Mathematiques"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu 6e"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "division",
+          "fausses": [
+            "fraction",
+            "décimal",
+            "angle"
+          ],
+          "explication": "division = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Deux lignes perpendiculaires font quel angle ?",
-          "bonne": "90°",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "carré",
           "fausses": [
-            "45°",
-            "180°",
-            "60°"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "Perpendiculaire = angle droit = 90°."
+          "explication": "carré = domaine temps passé simple"
         },
         {
-          "consigne": "Problème",
-          "enonce": "J'ai 10€, je dépense 3€. Combien reste-t-il ?",
-          "bonne": "7€",
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
           "fausses": [
-            "13€",
-            "6€",
-            "9€"
+            "Faux"
           ],
-          "explication": "10 - 3 = 7."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "fraction",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "décimal",
+            "angle",
+            "carré"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "fraction = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "décimal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "angle",
+            "carré",
+            "triangle"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "décimal = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "angle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "carré",
+            "triangle",
+            "cercle"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "angle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "carré",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "triangle",
+            "cercle",
+            "périmètre"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "carré = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "triangle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cercle",
+            "périmètre",
+            "aire"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "triangle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "cercle",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "périmètre",
+            "aire",
+            "équation"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "cercle = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "périmètre",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "aire",
+            "équation",
+            "variable"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "périmètre = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "aire",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "équation",
+            "variable",
+            "graphique"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aire = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "équation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "variable",
+            "graphique",
+            "pourcentage"
           ],
-          "explication": "C'est la bonne réponse."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "équation = élément programme 6e"
         }
       ]
     }

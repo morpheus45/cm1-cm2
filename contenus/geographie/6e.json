@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "Afrique",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "continent",
+          "en": "continent (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Asie",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "pays",
+          "en": "pays (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Europe",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "ville",
+          "en": "ville (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Amérique",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "montagne",
+          "en": "montagne (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Océanie",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "fleuve",
+          "en": "fleuve (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "France",
-          "en": "Europe",
-          "theme": "pays"
+          "fr": "océan",
+          "en": "océan (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Japon",
-          "en": "Asie",
-          "theme": "pays"
+          "fr": "île",
+          "en": "île (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Brésil",
-          "en": "Amérique",
-          "theme": "pays"
+          "fr": "climat",
+          "en": "climat (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Égypte",
-          "en": "Afrique",
-          "theme": "pays"
+          "fr": "ressource",
+          "en": "ressource (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Australie",
-          "en": "Océanie",
-          "theme": "pays"
+          "fr": "population",
+          "en": "population (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tropical",
-          "en": "chaud/humide",
-          "theme": "climat"
+          "fr": "densité",
+          "en": "densité (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "désertique",
-          "en": "sec",
-          "theme": "climat"
+          "fr": "culture",
+          "en": "culture (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tempéré",
-          "en": "4 saisons",
-          "theme": "climat"
+          "fr": "langue",
+          "en": "langue (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "polaire",
-          "en": "froid",
-          "theme": "climat"
+          "fr": "frontière",
+          "en": "frontière (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "montagnard",
-          "en": "altitude",
-          "theme": "climat"
+          "fr": "capitale",
+          "en": "capitale (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "pétrole",
-          "en": "énergie",
-          "theme": "ressources"
+          "fr": "latitude",
+          "en": "latitude (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "blé",
-          "en": "agriculture",
-          "theme": "ressources"
+          "fr": "longitude",
+          "en": "longitude (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "fer",
-          "en": "minerai",
-          "theme": "ressources"
+          "fr": "équateur",
+          "en": "équateur (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "eau",
-          "en": "ressource",
-          "theme": "ressources"
+          "fr": "pôle",
+          "en": "pôle (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "forêt",
-          "en": "bois",
-          "theme": "ressources"
+          "fr": "carte",
+          "en": "carte (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel est le plus grand continent ?",
-          "bonne": "Asie",
+          "enonce": "En Geographie, quel terme appartient au niveau 6e ?",
+          "bonne": "continent",
           "fausses": [
-            "Afrique",
-            "Europe",
-            "Amérique"
+            "pays",
+            "ville",
+            "montagne"
           ],
-          "explication": "L'Asie est le plus grand continent."
+          "explication": "continent = concept clé du 6e en Geographie"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Le climat ___ est caractérisé par beaucoup de chaleur et d'humidité.",
-          "bonne": "tropical",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "désertique",
-            "polaire",
-            "tempéré"
+            "Faux"
           ],
-          "explication": "Tropical = chaud et humide."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la ressource naturelle principale du Moyen-Orient ?",
-          "bonne": "pétrole",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "fleuve",
           "fausses": [
-            "blé",
-            "fer",
-            "eau"
+            "océan",
+            "île",
+            "climat"
           ],
-          "explication": "Le pétrole = ressource majeure du Moyen-Orient."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "fleuve = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "ressource",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "ressource = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "océan",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "île",
+            "climat",
+            "ressource"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "océan = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "île",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "climat",
+            "ressource",
+            "population"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "île = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "climat",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "ressource",
+            "population",
+            "densité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "climat = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "ressource",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "ressource = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "population",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "densité",
+            "culture",
+            "langue"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "population = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "densité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "culture",
+            "langue",
+            "frontière"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "densité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "culture",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "langue",
+            "frontière",
+            "capitale"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "culture = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "langue",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "frontière",
+            "capitale",
+            "latitude"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "langue = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "frontière",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "capitale",
+            "latitude",
+            "longitude"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "frontière = élément programme 6e"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "Afrique",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "continent",
+          "en": "continent (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Asie",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "pays",
+          "en": "pays (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Europe",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "ville",
+          "en": "ville (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Amérique",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "montagne",
+          "en": "montagne (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Océanie",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "fleuve",
+          "en": "fleuve (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "France",
-          "en": "Europe",
-          "theme": "pays"
+          "fr": "océan",
+          "en": "océan (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Japon",
-          "en": "Asie",
-          "theme": "pays"
+          "fr": "île",
+          "en": "île (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Brésil",
-          "en": "Amérique",
-          "theme": "pays"
+          "fr": "climat",
+          "en": "climat (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Égypte",
-          "en": "Afrique",
-          "theme": "pays"
+          "fr": "ressource",
+          "en": "ressource (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Australie",
-          "en": "Océanie",
-          "theme": "pays"
+          "fr": "population",
+          "en": "population (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tropical",
-          "en": "chaud/humide",
-          "theme": "climat"
+          "fr": "densité",
+          "en": "densité (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "désertique",
-          "en": "sec",
-          "theme": "climat"
+          "fr": "culture",
+          "en": "culture (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tempéré",
-          "en": "4 saisons",
-          "theme": "climat"
+          "fr": "langue",
+          "en": "langue (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "polaire",
-          "en": "froid",
-          "theme": "climat"
+          "fr": "frontière",
+          "en": "frontière (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "montagnard",
-          "en": "altitude",
-          "theme": "climat"
+          "fr": "capitale",
+          "en": "capitale (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "pétrole",
-          "en": "énergie",
-          "theme": "ressources"
+          "fr": "latitude",
+          "en": "latitude (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "blé",
-          "en": "agriculture",
-          "theme": "ressources"
+          "fr": "longitude",
+          "en": "longitude (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "fer",
-          "en": "minerai",
-          "theme": "ressources"
+          "fr": "équateur",
+          "en": "équateur (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "eau",
-          "en": "ressource",
-          "theme": "ressources"
+          "fr": "pôle",
+          "en": "pôle (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "forêt",
-          "en": "bois",
-          "theme": "ressources"
+          "fr": "carte",
+          "en": "carte (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel est le plus grand continent ?",
-          "bonne": "Asie",
+          "enonce": "En Geographie, quel terme appartient au niveau 6e ?",
+          "bonne": "continent",
           "fausses": [
-            "Afrique",
-            "Europe",
-            "Amérique"
+            "pays",
+            "ville",
+            "montagne"
           ],
-          "explication": "L'Asie est le plus grand continent."
+          "explication": "continent = concept clé du 6e en Geographie"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Le climat ___ est caractérisé par beaucoup de chaleur et d'humidité.",
-          "bonne": "tropical",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "désertique",
-            "polaire",
-            "tempéré"
+            "Faux"
           ],
-          "explication": "Tropical = chaud et humide."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la ressource naturelle principale du Moyen-Orient ?",
-          "bonne": "pétrole",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "fleuve",
           "fausses": [
-            "blé",
-            "fer",
-            "eau"
+            "océan",
+            "île",
+            "climat"
           ],
-          "explication": "Le pétrole = ressource majeure du Moyen-Orient."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "fleuve = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "ressource",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "ressource = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "océan",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "île",
+            "climat",
+            "ressource"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "océan = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "île",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "climat",
+            "ressource",
+            "population"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "île = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "climat",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "ressource",
+            "population",
+            "densité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "climat = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "ressource",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "ressource = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "population",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "densité",
+            "culture",
+            "langue"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "population = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "densité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "culture",
+            "langue",
+            "frontière"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "densité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "culture",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "langue",
+            "frontière",
+            "capitale"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "culture = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "langue",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "frontière",
+            "capitale",
+            "latitude"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "langue = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "frontière",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "capitale",
+            "latitude",
+            "longitude"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "frontière = élément programme 6e"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "Afrique",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "continent",
+          "en": "continent (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Asie",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "pays",
+          "en": "pays (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Europe",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "ville",
+          "en": "ville (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Amérique",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "montagne",
+          "en": "montagne (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Océanie",
-          "en": "continent",
-          "theme": "continents"
+          "fr": "fleuve",
+          "en": "fleuve (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "France",
-          "en": "Europe",
-          "theme": "pays"
+          "fr": "océan",
+          "en": "océan (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Japon",
-          "en": "Asie",
-          "theme": "pays"
+          "fr": "île",
+          "en": "île (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Brésil",
-          "en": "Amérique",
-          "theme": "pays"
+          "fr": "climat",
+          "en": "climat (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Égypte",
-          "en": "Afrique",
-          "theme": "pays"
+          "fr": "ressource",
+          "en": "ressource (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "Australie",
-          "en": "Océanie",
-          "theme": "pays"
+          "fr": "population",
+          "en": "population (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tropical",
-          "en": "chaud/humide",
-          "theme": "climat"
+          "fr": "densité",
+          "en": "densité (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "désertique",
-          "en": "sec",
-          "theme": "climat"
+          "fr": "culture",
+          "en": "culture (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tempéré",
-          "en": "4 saisons",
-          "theme": "climat"
+          "fr": "langue",
+          "en": "langue (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "polaire",
-          "en": "froid",
-          "theme": "climat"
+          "fr": "frontière",
+          "en": "frontière (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "montagnard",
-          "en": "altitude",
-          "theme": "climat"
+          "fr": "capitale",
+          "en": "capitale (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "pétrole",
-          "en": "énergie",
-          "theme": "ressources"
+          "fr": "latitude",
+          "en": "latitude (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "blé",
-          "en": "agriculture",
-          "theme": "ressources"
+          "fr": "longitude",
+          "en": "longitude (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "fer",
-          "en": "minerai",
-          "theme": "ressources"
+          "fr": "équateur",
+          "en": "équateur (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "eau",
-          "en": "ressource",
-          "theme": "ressources"
+          "fr": "pôle",
+          "en": "pôle (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "forêt",
-          "en": "bois",
-          "theme": "ressources"
+          "fr": "carte",
+          "en": "carte (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel est le plus grand continent ?",
-          "bonne": "Asie",
+          "enonce": "En Geographie, quel terme appartient au niveau 6e ?",
+          "bonne": "continent",
           "fausses": [
-            "Afrique",
-            "Europe",
-            "Amérique"
+            "pays",
+            "ville",
+            "montagne"
           ],
-          "explication": "L'Asie est le plus grand continent."
+          "explication": "continent = concept clé du 6e en Geographie"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Le climat ___ est caractérisé par beaucoup de chaleur et d'humidité.",
-          "bonne": "tropical",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "désertique",
-            "polaire",
-            "tempéré"
+            "Faux"
           ],
-          "explication": "Tropical = chaud et humide."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la ressource naturelle principale du Moyen-Orient ?",
-          "bonne": "pétrole",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "fleuve",
           "fausses": [
-            "blé",
-            "fer",
-            "eau"
+            "océan",
+            "île",
+            "climat"
           ],
-          "explication": "Le pétrole = ressource majeure du Moyen-Orient."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "fleuve = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "ressource",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "ressource = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "océan",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "île",
+            "climat",
+            "ressource"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "océan = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "île",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "climat",
+            "ressource",
+            "population"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "île = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "climat",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "ressource",
+            "population",
+            "densité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "climat = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "ressource",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "ressource = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "population",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "densité",
+            "culture",
+            "langue"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "population = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "densité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "culture",
+            "langue",
+            "frontière"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "densité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "culture",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "langue",
+            "frontière",
+            "capitale"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "culture = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "langue",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "frontière",
+            "capitale",
+            "latitude"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "langue = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "frontière",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "capitale",
+            "latitude",
+            "longitude"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "frontière = élément programme 6e"
         }
       ]
     }

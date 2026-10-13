@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "magasin",
-          "en": "magasin (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "continent",
+          "en": "continent (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "gare",
-          "en": "gare (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "pays",
+          "en": "pays (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "musée",
-          "en": "musée (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "ville",
+          "en": "ville (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "sud",
-          "en": "sud (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "montagne",
+          "en": "montagne (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "est",
-          "en": "est (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "fleuve",
+          "en": "fleuve (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "ouest",
-          "en": "ouest (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "océan",
+          "en": "océan (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "centre",
-          "en": "centre (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "île",
+          "en": "île (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "printemps",
-          "en": "printemps (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "climat",
+          "en": "climat (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "été",
-          "en": "été (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "ressource",
+          "en": "ressource (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "automne",
-          "en": "automne (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "population",
+          "en": "population (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "densité",
+          "en": "densité (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "culture",
+          "en": "culture (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "langue",
+          "en": "langue (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "frontière",
+          "en": "frontière (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "capitale",
+          "en": "capitale (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "latitude",
+          "en": "latitude (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "longitude",
+          "en": "longitude (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "équateur",
+          "en": "équateur (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "pôle",
+          "en": "pôle (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "carte",
+          "en": "carte (niveau CE2, tri 1)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Geographie ?",
-          "bonne": "magasin",
+          "enonce": "En Geographie, quel terme appartient au niveau CE2 ?",
+          "bonne": "continent",
           "fausses": [
-            "gare",
-            "non",
-            "peut-être"
+            "pays",
+            "ville",
+            "montagne"
           ],
-          "explication": "magasin est un terme de Geographie."
+          "explication": "continent = concept clé du CE2 en Geographie"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "lieux, orientations",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : lieux, orientations"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: musée)",
-          "bonne": "musée",
+          "enonce": "Un concept important : ___",
+          "bonne": "fleuve",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "océan",
+            "île",
+            "climat"
           ],
-          "explication": "La réponse est musée."
+          "explication": "fleuve = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "ressource",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est juste."
+          "explication": "ressource = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "océan",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "île",
+            "climat",
+            "ressource"
           ],
-          "explication": "C'est juste."
+          "explication": "océan = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "île",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "climat",
+            "ressource",
+            "population"
           ],
-          "explication": "C'est juste."
+          "explication": "île = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "climat",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "ressource",
+            "population",
+            "densité"
           ],
-          "explication": "C'est juste."
+          "explication": "climat = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "ressource",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est juste."
+          "explication": "ressource = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "population",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "densité",
+            "culture",
+            "langue"
           ],
-          "explication": "C'est juste."
+          "explication": "population = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "densité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "culture",
+            "langue",
+            "frontière"
           ],
-          "explication": "C'est juste."
+          "explication": "densité = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "culture",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "langue",
+            "frontière",
+            "capitale"
           ],
-          "explication": "C'est juste."
+          "explication": "culture = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "langue",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "frontière",
+            "capitale",
+            "latitude"
           ],
-          "explication": "C'est juste."
+          "explication": "langue = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "frontière",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "capitale",
+            "latitude",
+            "longitude"
           ],
-          "explication": "C'est juste."
+          "explication": "frontière = élément programme CE2"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "magasin",
-          "en": "magasin (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "continent",
+          "en": "continent (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "gare",
-          "en": "gare (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "pays",
+          "en": "pays (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "musée",
-          "en": "musée (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "ville",
+          "en": "ville (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "sud",
-          "en": "sud (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "montagne",
+          "en": "montagne (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "est",
-          "en": "est (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "fleuve",
+          "en": "fleuve (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "ouest",
-          "en": "ouest (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "océan",
+          "en": "océan (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "centre",
-          "en": "centre (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "île",
+          "en": "île (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "printemps",
-          "en": "printemps (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "climat",
+          "en": "climat (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "été",
-          "en": "été (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "ressource",
+          "en": "ressource (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "automne",
-          "en": "automne (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "population",
+          "en": "population (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "densité",
+          "en": "densité (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "culture",
+          "en": "culture (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "langue",
+          "en": "langue (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "frontière",
+          "en": "frontière (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "capitale",
+          "en": "capitale (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "latitude",
+          "en": "latitude (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "longitude",
+          "en": "longitude (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "équateur",
+          "en": "équateur (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "pôle",
+          "en": "pôle (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "carte",
+          "en": "carte (niveau CE2, tri 2)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Geographie ?",
-          "bonne": "magasin",
+          "enonce": "En Geographie, quel terme appartient au niveau CE2 ?",
+          "bonne": "continent",
           "fausses": [
-            "gare",
-            "non",
-            "peut-être"
+            "pays",
+            "ville",
+            "montagne"
           ],
-          "explication": "magasin est un terme de Geographie."
+          "explication": "continent = concept clé du CE2 en Geographie"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "lieux, orientations",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : lieux, orientations"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: musée)",
-          "bonne": "musée",
+          "enonce": "Un concept important : ___",
+          "bonne": "fleuve",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "océan",
+            "île",
+            "climat"
           ],
-          "explication": "La réponse est musée."
+          "explication": "fleuve = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "ressource",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est juste."
+          "explication": "ressource = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "océan",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "île",
+            "climat",
+            "ressource"
           ],
-          "explication": "C'est juste."
+          "explication": "océan = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "île",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "climat",
+            "ressource",
+            "population"
           ],
-          "explication": "C'est juste."
+          "explication": "île = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "climat",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "ressource",
+            "population",
+            "densité"
           ],
-          "explication": "C'est juste."
+          "explication": "climat = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "ressource",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est juste."
+          "explication": "ressource = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "population",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "densité",
+            "culture",
+            "langue"
           ],
-          "explication": "C'est juste."
+          "explication": "population = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "densité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "culture",
+            "langue",
+            "frontière"
           ],
-          "explication": "C'est juste."
+          "explication": "densité = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "culture",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "langue",
+            "frontière",
+            "capitale"
           ],
-          "explication": "C'est juste."
+          "explication": "culture = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "langue",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "frontière",
+            "capitale",
+            "latitude"
           ],
-          "explication": "C'est juste."
+          "explication": "langue = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "frontière",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "capitale",
+            "latitude",
+            "longitude"
           ],
-          "explication": "C'est juste."
+          "explication": "frontière = élément programme CE2"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "magasin",
-          "en": "magasin (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "continent",
+          "en": "continent (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "gare",
-          "en": "gare (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "pays",
+          "en": "pays (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "musée",
-          "en": "musée (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "ville",
+          "en": "ville (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "sud",
-          "en": "sud (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "montagne",
+          "en": "montagne (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "est",
-          "en": "est (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "fleuve",
+          "en": "fleuve (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "ouest",
-          "en": "ouest (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "océan",
+          "en": "océan (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "centre",
-          "en": "centre (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "île",
+          "en": "île (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "printemps",
-          "en": "printemps (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "climat",
+          "en": "climat (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "été",
-          "en": "été (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "ressource",
+          "en": "ressource (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "automne",
-          "en": "automne (lieux, orientations)",
-          "theme": "lieux,"
+          "fr": "population",
+          "en": "population (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "densité",
+          "en": "densité (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "culture",
+          "en": "culture (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "langue",
+          "en": "langue (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "frontière",
+          "en": "frontière (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "capitale",
+          "en": "capitale (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "latitude",
+          "en": "latitude (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "longitude",
+          "en": "longitude (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "équateur",
+          "en": "équateur (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "pôle",
+          "en": "pôle (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "carte",
+          "en": "carte (niveau CE2, tri 3)",
+          "theme": "colors / famille"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Geographie ?",
-          "bonne": "magasin",
+          "enonce": "En Geographie, quel terme appartient au niveau CE2 ?",
+          "bonne": "continent",
           "fausses": [
-            "gare",
-            "non",
-            "peut-être"
+            "pays",
+            "ville",
+            "montagne"
           ],
-          "explication": "magasin est un terme de Geographie."
+          "explication": "continent = concept clé du CE2 en Geographie"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
-          "bonne": "lieux, orientations",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE2 couvre colors et nombres",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE2 couvre : lieux, orientations"
+          "explication": "Oui, colors et nombres = contenu CE2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: musée)",
-          "bonne": "musée",
+          "enonce": "Un concept important : ___",
+          "bonne": "fleuve",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "océan",
+            "île",
+            "climat"
           ],
-          "explication": "La réponse est musée."
+          "explication": "fleuve = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus famille et animaux : quel terme ?",
+          "bonne": "ressource",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est juste."
+          "explication": "ressource = domaine famille et animaux"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "colors et nombres est au programme CE2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, colors et nombres = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE2",
+          "bonne": "océan",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "île",
+            "climat",
+            "ressource"
           ],
-          "explication": "C'est juste."
+          "explication": "océan = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE2",
+          "bonne": "île",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "climat",
+            "ressource",
+            "population"
           ],
-          "explication": "C'est juste."
+          "explication": "île = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE2",
+          "bonne": "climat",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "ressource",
+            "population",
+            "densité"
           ],
-          "explication": "C'est juste."
+          "explication": "climat = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE2",
+          "bonne": "ressource",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "population",
+            "densité",
+            "culture"
           ],
-          "explication": "C'est juste."
+          "explication": "ressource = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE2",
+          "bonne": "population",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "densité",
+            "culture",
+            "langue"
           ],
-          "explication": "C'est juste."
+          "explication": "population = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE2",
+          "bonne": "densité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "culture",
+            "langue",
+            "frontière"
           ],
-          "explication": "C'est juste."
+          "explication": "densité = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE2",
+          "bonne": "culture",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "langue",
+            "frontière",
+            "capitale"
           ],
-          "explication": "C'est juste."
+          "explication": "culture = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE2",
+          "bonne": "langue",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "frontière",
+            "capitale",
+            "latitude"
           ],
-          "explication": "C'est juste."
+          "explication": "langue = élément programme CE2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE2",
+          "bonne": "frontière",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "capitale",
+            "latitude",
+            "longitude"
           ],
-          "explication": "C'est juste."
+          "explication": "frontière = élément programme CE2"
         }
       ]
     }

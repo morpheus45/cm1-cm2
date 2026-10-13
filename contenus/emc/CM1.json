@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "vote",
-          "en": "vote (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "égalité",
-          "en": "égalité (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "liberté",
-          "en": "liberté (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "justice",
-          "en": "justice (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "loi",
-          "en": "loi (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "citoyen",
-          "en": "citoyen (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
           "fr": "droit",
-          "en": "droit (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "en": "droit (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
           "fr": "devoir",
-          "en": "devoir (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "en": "devoir (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "participation",
-          "en": "participation (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "fr": "liberté",
+          "en": "liberté (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "nation",
-          "en": "nation (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "fr": "égalité",
+          "en": "égalité (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "justice",
+          "en": "justice (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "citoyenneté",
+          "en": "citoyenneté (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "démocratie",
+          "en": "démocratie (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "vote",
+          "en": "vote (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "loi",
+          "en": "loi (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "constitution",
+          "en": "constitution (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "gouvernement",
+          "en": "gouvernement (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "parlement",
+          "en": "parlement (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "diversité",
+          "en": "diversité (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "tolérance",
+          "en": "tolérance (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "solidarité",
+          "en": "solidarité (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "paix",
+          "en": "paix (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (niveau CM1, tri 1)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "organisation",
+          "en": "organisation (niveau CM1, tri 1)",
+          "theme": "noms / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à EMC ?",
-          "bonne": "vote",
+          "enonce": "En EMC, quel terme appartient au niveau CM1 ?",
+          "bonne": "droit",
           "fausses": [
-            "égalité",
-            "non",
-            "peut-être"
+            "devoir",
+            "liberté",
+            "égalité"
           ],
-          "explication": "vote est un terme de EMC."
+          "explication": "droit = concept clé du CM1 en EMC"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM1 ?",
-          "bonne": "démocratie, citoyenneté",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM1 couvre noms et verbes",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM1 couvre : démocratie, citoyenneté"
+          "explication": "Oui, noms et verbes = contenu CM1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: liberté)",
-          "bonne": "liberté",
+          "enonce": "Un concept important : ___",
+          "bonne": "justice",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "citoyenneté",
+            "démocratie",
+            "vote"
           ],
-          "explication": "La réponse est liberté."
+          "explication": "justice = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus temps simple : quel terme ?",
+          "bonne": "loi",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est juste."
+          "explication": "loi = domaine temps simple"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "noms et verbes est au programme CM1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, noms et verbes = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM1",
+          "bonne": "citoyenneté",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "démocratie",
+            "vote",
+            "loi"
           ],
-          "explication": "C'est juste."
+          "explication": "citoyenneté = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM1",
+          "bonne": "démocratie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "vote",
+            "loi",
+            "constitution"
           ],
-          "explication": "C'est juste."
+          "explication": "démocratie = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM1",
+          "bonne": "vote",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "loi",
+            "constitution",
+            "gouvernement"
           ],
-          "explication": "C'est juste."
+          "explication": "vote = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM1",
+          "bonne": "loi",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est juste."
+          "explication": "loi = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM1",
+          "bonne": "constitution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "gouvernement",
+            "parlement",
+            "diversité"
           ],
-          "explication": "C'est juste."
+          "explication": "constitution = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM1",
+          "bonne": "gouvernement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "parlement",
+            "diversité",
+            "tolérance"
           ],
-          "explication": "C'est juste."
+          "explication": "gouvernement = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM1",
+          "bonne": "parlement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "diversité",
+            "tolérance",
+            "solidarité"
           ],
-          "explication": "C'est juste."
+          "explication": "parlement = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM1",
+          "bonne": "diversité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "tolérance",
+            "solidarité",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "diversité = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM1",
+          "bonne": "tolérance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "solidarité",
+            "environnement",
+            "développement"
           ],
-          "explication": "C'est juste."
+          "explication": "tolérance = élément programme CM1"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "vote",
-          "en": "vote (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "égalité",
-          "en": "égalité (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "liberté",
-          "en": "liberté (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "justice",
-          "en": "justice (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "loi",
-          "en": "loi (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "citoyen",
-          "en": "citoyen (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
           "fr": "droit",
-          "en": "droit (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "en": "droit (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
           "fr": "devoir",
-          "en": "devoir (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "en": "devoir (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "participation",
-          "en": "participation (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "fr": "liberté",
+          "en": "liberté (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "nation",
-          "en": "nation (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "fr": "égalité",
+          "en": "égalité (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "justice",
+          "en": "justice (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "citoyenneté",
+          "en": "citoyenneté (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "démocratie",
+          "en": "démocratie (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "vote",
+          "en": "vote (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "loi",
+          "en": "loi (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "constitution",
+          "en": "constitution (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "gouvernement",
+          "en": "gouvernement (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "parlement",
+          "en": "parlement (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "diversité",
+          "en": "diversité (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "tolérance",
+          "en": "tolérance (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "solidarité",
+          "en": "solidarité (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "paix",
+          "en": "paix (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (niveau CM1, tri 2)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "organisation",
+          "en": "organisation (niveau CM1, tri 2)",
+          "theme": "noms / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à EMC ?",
-          "bonne": "vote",
+          "enonce": "En EMC, quel terme appartient au niveau CM1 ?",
+          "bonne": "droit",
           "fausses": [
-            "égalité",
-            "non",
-            "peut-être"
+            "devoir",
+            "liberté",
+            "égalité"
           ],
-          "explication": "vote est un terme de EMC."
+          "explication": "droit = concept clé du CM1 en EMC"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM1 ?",
-          "bonne": "démocratie, citoyenneté",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM1 couvre noms et verbes",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM1 couvre : démocratie, citoyenneté"
+          "explication": "Oui, noms et verbes = contenu CM1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: liberté)",
-          "bonne": "liberté",
+          "enonce": "Un concept important : ___",
+          "bonne": "justice",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "citoyenneté",
+            "démocratie",
+            "vote"
           ],
-          "explication": "La réponse est liberté."
+          "explication": "justice = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus temps simple : quel terme ?",
+          "bonne": "loi",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est juste."
+          "explication": "loi = domaine temps simple"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "noms et verbes est au programme CM1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, noms et verbes = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM1",
+          "bonne": "citoyenneté",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "démocratie",
+            "vote",
+            "loi"
           ],
-          "explication": "C'est juste."
+          "explication": "citoyenneté = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM1",
+          "bonne": "démocratie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "vote",
+            "loi",
+            "constitution"
           ],
-          "explication": "C'est juste."
+          "explication": "démocratie = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM1",
+          "bonne": "vote",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "loi",
+            "constitution",
+            "gouvernement"
           ],
-          "explication": "C'est juste."
+          "explication": "vote = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM1",
+          "bonne": "loi",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est juste."
+          "explication": "loi = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM1",
+          "bonne": "constitution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "gouvernement",
+            "parlement",
+            "diversité"
           ],
-          "explication": "C'est juste."
+          "explication": "constitution = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM1",
+          "bonne": "gouvernement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "parlement",
+            "diversité",
+            "tolérance"
           ],
-          "explication": "C'est juste."
+          "explication": "gouvernement = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM1",
+          "bonne": "parlement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "diversité",
+            "tolérance",
+            "solidarité"
           ],
-          "explication": "C'est juste."
+          "explication": "parlement = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM1",
+          "bonne": "diversité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "tolérance",
+            "solidarité",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "diversité = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM1",
+          "bonne": "tolérance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "solidarité",
+            "environnement",
+            "développement"
           ],
-          "explication": "C'est juste."
+          "explication": "tolérance = élément programme CM1"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "vote",
-          "en": "vote (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "égalité",
-          "en": "égalité (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "liberté",
-          "en": "liberté (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "justice",
-          "en": "justice (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "loi",
-          "en": "loi (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
-          "fr": "citoyen",
-          "en": "citoyen (démocratie, citoyenneté)",
-          "theme": "démocratie,"
-        },
-        {
           "fr": "droit",
-          "en": "droit (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "en": "droit (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
           "fr": "devoir",
-          "en": "devoir (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "en": "devoir (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "participation",
-          "en": "participation (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "fr": "liberté",
+          "en": "liberté (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "nation",
-          "en": "nation (démocratie, citoyenneté)",
-          "theme": "démocratie,"
+          "fr": "égalité",
+          "en": "égalité (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "justice",
+          "en": "justice (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "citoyenneté",
+          "en": "citoyenneté (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "démocratie",
+          "en": "démocratie (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "vote",
+          "en": "vote (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "loi",
+          "en": "loi (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "constitution",
+          "en": "constitution (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "gouvernement",
+          "en": "gouvernement (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "parlement",
+          "en": "parlement (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "diversité",
+          "en": "diversité (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "tolérance",
+          "en": "tolérance (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "solidarité",
+          "en": "solidarité (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "paix",
+          "en": "paix (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (niveau CM1, tri 3)",
+          "theme": "noms / temps"
+        },
+        {
+          "fr": "organisation",
+          "en": "organisation (niveau CM1, tri 3)",
+          "theme": "noms / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à EMC ?",
-          "bonne": "vote",
+          "enonce": "En EMC, quel terme appartient au niveau CM1 ?",
+          "bonne": "droit",
           "fausses": [
-            "égalité",
-            "non",
-            "peut-être"
+            "devoir",
+            "liberté",
+            "égalité"
           ],
-          "explication": "vote est un terme de EMC."
+          "explication": "droit = concept clé du CM1 en EMC"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM1 ?",
-          "bonne": "démocratie, citoyenneté",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM1 couvre noms et verbes",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM1 couvre : démocratie, citoyenneté"
+          "explication": "Oui, noms et verbes = contenu CM1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: liberté)",
-          "bonne": "liberté",
+          "enonce": "Un concept important : ___",
+          "bonne": "justice",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "citoyenneté",
+            "démocratie",
+            "vote"
           ],
-          "explication": "La réponse est liberté."
+          "explication": "justice = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus temps simple : quel terme ?",
+          "bonne": "loi",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est juste."
+          "explication": "loi = domaine temps simple"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "noms et verbes est au programme CM1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, noms et verbes = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM1",
+          "bonne": "citoyenneté",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "démocratie",
+            "vote",
+            "loi"
           ],
-          "explication": "C'est juste."
+          "explication": "citoyenneté = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM1",
+          "bonne": "démocratie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "vote",
+            "loi",
+            "constitution"
           ],
-          "explication": "C'est juste."
+          "explication": "démocratie = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM1",
+          "bonne": "vote",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "loi",
+            "constitution",
+            "gouvernement"
           ],
-          "explication": "C'est juste."
+          "explication": "vote = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM1",
+          "bonne": "loi",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est juste."
+          "explication": "loi = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM1",
+          "bonne": "constitution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "gouvernement",
+            "parlement",
+            "diversité"
           ],
-          "explication": "C'est juste."
+          "explication": "constitution = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM1",
+          "bonne": "gouvernement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "parlement",
+            "diversité",
+            "tolérance"
           ],
-          "explication": "C'est juste."
+          "explication": "gouvernement = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM1",
+          "bonne": "parlement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "diversité",
+            "tolérance",
+            "solidarité"
           ],
-          "explication": "C'est juste."
+          "explication": "parlement = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM1",
+          "bonne": "diversité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "tolérance",
+            "solidarité",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "diversité = élément programme CM1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM1",
+          "bonne": "tolérance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "solidarité",
+            "environnement",
+            "développement"
           ],
-          "explication": "C'est juste."
+          "explication": "tolérance = élément programme CM1"
         }
       ]
     }

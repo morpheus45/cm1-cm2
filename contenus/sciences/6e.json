@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "électricité",
-          "en": "courant",
-          "theme": "énergie"
+          "fr": "atome",
+          "en": "atome (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "chaleur",
-          "en": "température",
-          "theme": "énergie"
+          "fr": "molécule",
+          "en": "molécule (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "force",
+          "en": "force (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "lumière",
-          "en": "photons",
-          "theme": "énergie"
+          "en": "lumière (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "son",
-          "en": "onde",
-          "theme": "énergie"
+          "en": "son (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "mouvement",
-          "en": "cinétique",
-          "theme": "énergie"
+          "fr": "chaleur",
+          "en": "chaleur (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "prédateur",
-          "en": "chasseur",
-          "theme": "écosystème"
+          "fr": "électricité",
+          "en": "électricité (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "proie",
-          "en": "mangé",
-          "theme": "écosystème"
+          "fr": "aimant",
+          "en": "aimant (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "chaîne alimentaire",
-          "en": "transfert",
-          "theme": "écosystème"
+          "fr": "cellule",
+          "en": "cellule (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "habitat",
-          "en": "lieu de vie",
-          "theme": "écosystème"
+          "fr": "plante",
+          "en": "plante (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "biodiversité",
-          "en": "variété",
-          "theme": "écosystème"
+          "fr": "animal",
+          "en": "animal (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "croûte terrestre",
-          "en": "surface",
-          "theme": "terre"
+          "fr": "écosystème",
+          "en": "écosystème (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "manteau",
-          "en": "intérieur",
-          "theme": "terre"
+          "fr": "environnement",
+          "en": "environnement (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "noyau",
-          "en": "centre",
-          "theme": "terre"
+          "fr": "évolution",
+          "en": "évolution (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tremblement de terre",
-          "en": "secousse",
-          "theme": "terre"
+          "fr": "génétique",
+          "en": "génétique (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "volcan",
-          "en": "éruption",
-          "theme": "terre"
+          "fr": "chimie",
+          "en": "chimie (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "soleil",
-          "en": "étoile",
-          "theme": "espace"
+          "fr": "physique",
+          "en": "physique (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "terre",
-          "en": "planète",
-          "theme": "espace"
+          "fr": "biologie",
+          "en": "biologie (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "lune",
-          "en": "satellite",
-          "theme": "espace"
-        },
-        {
-          "fr": "orbite",
-          "en": "trajectoire",
-          "theme": "espace"
-        },
-        {
-          "fr": "galaxie",
-          "en": "système",
-          "theme": "espace"
+          "fr": "expérience",
+          "en": "expérience (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce qu'un prédateur ?",
-          "bonne": "un animal qui chasse",
+          "enonce": "En Sciences, quel terme appartient au niveau 6e ?",
+          "bonne": "atome",
           "fausses": [
-            "un animal mangé",
-            "une plante",
-            "un minéral"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "Prédateur = qui chasse d'autres animaux."
+          "explication": "atome = concept clé du 6e en Sciences"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "La ___ tourne autour du soleil.",
-          "bonne": "Terre",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "Lune",
-            "Mars",
-            "Jupiter"
+            "Faux"
           ],
-          "explication": "La Terre = notre planète, orbite solaire."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quel est le centre de notre système solaire ?",
-          "bonne": "Soleil",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "Terre",
-            "Lune",
-            "Jupiter"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "Le Soleil = centre du système solaire."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "lumière = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aimant = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "son",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "son = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "chaleur",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "chaleur = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "électricité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "électricité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "aimant",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aimant = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "cellule",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "cellule = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "plante",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "plante = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "animal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "animal = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "écosystème",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "écosystème = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "environnement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "environnement = élément programme 6e"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "électricité",
-          "en": "courant",
-          "theme": "énergie"
+          "fr": "atome",
+          "en": "atome (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "chaleur",
-          "en": "température",
-          "theme": "énergie"
+          "fr": "molécule",
+          "en": "molécule (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "force",
+          "en": "force (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "lumière",
-          "en": "photons",
-          "theme": "énergie"
+          "en": "lumière (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "son",
-          "en": "onde",
-          "theme": "énergie"
+          "en": "son (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "mouvement",
-          "en": "cinétique",
-          "theme": "énergie"
+          "fr": "chaleur",
+          "en": "chaleur (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "prédateur",
-          "en": "chasseur",
-          "theme": "écosystème"
+          "fr": "électricité",
+          "en": "électricité (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "proie",
-          "en": "mangé",
-          "theme": "écosystème"
+          "fr": "aimant",
+          "en": "aimant (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "chaîne alimentaire",
-          "en": "transfert",
-          "theme": "écosystème"
+          "fr": "cellule",
+          "en": "cellule (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "habitat",
-          "en": "lieu de vie",
-          "theme": "écosystème"
+          "fr": "plante",
+          "en": "plante (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "biodiversité",
-          "en": "variété",
-          "theme": "écosystème"
+          "fr": "animal",
+          "en": "animal (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "croûte terrestre",
-          "en": "surface",
-          "theme": "terre"
+          "fr": "écosystème",
+          "en": "écosystème (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "manteau",
-          "en": "intérieur",
-          "theme": "terre"
+          "fr": "environnement",
+          "en": "environnement (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "noyau",
-          "en": "centre",
-          "theme": "terre"
+          "fr": "évolution",
+          "en": "évolution (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tremblement de terre",
-          "en": "secousse",
-          "theme": "terre"
+          "fr": "génétique",
+          "en": "génétique (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "volcan",
-          "en": "éruption",
-          "theme": "terre"
+          "fr": "chimie",
+          "en": "chimie (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "soleil",
-          "en": "étoile",
-          "theme": "espace"
+          "fr": "physique",
+          "en": "physique (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "terre",
-          "en": "planète",
-          "theme": "espace"
+          "fr": "biologie",
+          "en": "biologie (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "lune",
-          "en": "satellite",
-          "theme": "espace"
-        },
-        {
-          "fr": "orbite",
-          "en": "trajectoire",
-          "theme": "espace"
-        },
-        {
-          "fr": "galaxie",
-          "en": "système",
-          "theme": "espace"
+          "fr": "expérience",
+          "en": "expérience (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce qu'un prédateur ?",
-          "bonne": "un animal qui chasse",
+          "enonce": "En Sciences, quel terme appartient au niveau 6e ?",
+          "bonne": "atome",
           "fausses": [
-            "un animal mangé",
-            "une plante",
-            "un minéral"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "Prédateur = qui chasse d'autres animaux."
+          "explication": "atome = concept clé du 6e en Sciences"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "La ___ tourne autour du soleil.",
-          "bonne": "Terre",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "Lune",
-            "Mars",
-            "Jupiter"
+            "Faux"
           ],
-          "explication": "La Terre = notre planète, orbite solaire."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quel est le centre de notre système solaire ?",
-          "bonne": "Soleil",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "Terre",
-            "Lune",
-            "Jupiter"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "Le Soleil = centre du système solaire."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "lumière = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aimant = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "son",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "son = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "chaleur",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "chaleur = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "électricité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "électricité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "aimant",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aimant = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "cellule",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "cellule = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "plante",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "plante = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "animal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "animal = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "écosystème",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "écosystème = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "environnement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "environnement = élément programme 6e"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "électricité",
-          "en": "courant",
-          "theme": "énergie"
+          "fr": "atome",
+          "en": "atome (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "chaleur",
-          "en": "température",
-          "theme": "énergie"
+          "fr": "molécule",
+          "en": "molécule (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "force",
+          "en": "force (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "lumière",
-          "en": "photons",
-          "theme": "énergie"
+          "en": "lumière (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "son",
-          "en": "onde",
-          "theme": "énergie"
+          "en": "son (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "mouvement",
-          "en": "cinétique",
-          "theme": "énergie"
+          "fr": "chaleur",
+          "en": "chaleur (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "prédateur",
-          "en": "chasseur",
-          "theme": "écosystème"
+          "fr": "électricité",
+          "en": "électricité (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "proie",
-          "en": "mangé",
-          "theme": "écosystème"
+          "fr": "aimant",
+          "en": "aimant (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "chaîne alimentaire",
-          "en": "transfert",
-          "theme": "écosystème"
+          "fr": "cellule",
+          "en": "cellule (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "habitat",
-          "en": "lieu de vie",
-          "theme": "écosystème"
+          "fr": "plante",
+          "en": "plante (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "biodiversité",
-          "en": "variété",
-          "theme": "écosystème"
+          "fr": "animal",
+          "en": "animal (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "croûte terrestre",
-          "en": "surface",
-          "theme": "terre"
+          "fr": "écosystème",
+          "en": "écosystème (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "manteau",
-          "en": "intérieur",
-          "theme": "terre"
+          "fr": "environnement",
+          "en": "environnement (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "noyau",
-          "en": "centre",
-          "theme": "terre"
+          "fr": "évolution",
+          "en": "évolution (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "tremblement de terre",
-          "en": "secousse",
-          "theme": "terre"
+          "fr": "génétique",
+          "en": "génétique (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "volcan",
-          "en": "éruption",
-          "theme": "terre"
+          "fr": "chimie",
+          "en": "chimie (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "soleil",
-          "en": "étoile",
-          "theme": "espace"
+          "fr": "physique",
+          "en": "physique (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "terre",
-          "en": "planète",
-          "theme": "espace"
+          "fr": "biologie",
+          "en": "biologie (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "lune",
-          "en": "satellite",
-          "theme": "espace"
-        },
-        {
-          "fr": "orbite",
-          "en": "trajectoire",
-          "theme": "espace"
-        },
-        {
-          "fr": "galaxie",
-          "en": "système",
-          "theme": "espace"
+          "fr": "expérience",
+          "en": "expérience (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce qu'un prédateur ?",
-          "bonne": "un animal qui chasse",
+          "enonce": "En Sciences, quel terme appartient au niveau 6e ?",
+          "bonne": "atome",
           "fausses": [
-            "un animal mangé",
-            "une plante",
-            "un minéral"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "Prédateur = qui chasse d'autres animaux."
+          "explication": "atome = concept clé du 6e en Sciences"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "La ___ tourne autour du soleil.",
-          "bonne": "Terre",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "Lune",
-            "Mars",
-            "Jupiter"
+            "Faux"
           ],
-          "explication": "La Terre = notre planète, orbite solaire."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quel est le centre de notre système solaire ?",
-          "bonne": "Soleil",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "Terre",
-            "Lune",
-            "Jupiter"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "Le Soleil = centre du système solaire."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "lumière = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aimant = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "son",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "son = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "chaleur",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "chaleur = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "électricité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "électricité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "aimant",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "aimant = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "cellule",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "cellule = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "plante",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "plante = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "animal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "animal = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "écosystème",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "écosystème = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "environnement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "environnement = élément programme 6e"
         }
       ]
     }

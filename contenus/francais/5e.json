@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "é",
-          "en": "é (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "mot",
+          "en": "mot (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "è",
-          "en": "è (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "phrase",
+          "en": "phrase (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "ç",
-          "en": "ç (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "lettre",
+          "en": "lettre (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "ê",
-          "en": "ê (orthographe, styles)",
-          "theme": "orthographe,"
-        },
-        {
-          "fr": "à",
-          "en": "à (orthographe, styles)",
-          "theme": "orthographe,"
-        },
-        {
-          "fr": "sujet",
-          "en": "sujet (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "son",
+          "en": "son (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
           "fr": "verbe",
-          "en": "verbe (orthographe, styles)",
-          "theme": "orthographe,"
+          "en": "verbe (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "style narratif",
-          "en": "style narratif (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "nom",
+          "en": "nom (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "style descriptif",
-          "en": "style descriptif (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "adjectif",
+          "en": "adjectif (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "comparaison",
-          "en": "comparaison (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "sujet",
+          "en": "sujet (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "présent",
+          "en": "présent (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "passé",
+          "en": "passé (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "futur",
+          "en": "futur (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "majuscule",
+          "en": "majuscule (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "point",
+          "en": "point (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "virgule",
+          "en": "virgule (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "dialogue",
+          "en": "dialogue (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "histoire",
+          "en": "histoire (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "description",
+          "en": "description (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "rime",
+          "en": "rime (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
+        },
+        {
+          "fr": "strophe",
+          "en": "strophe (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
+        },
+        {
+          "fr": "auteur",
+          "en": "auteur (niveau 5e, tri 1)",
+          "theme": "vocabulaire / textes"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Francais ?",
-          "bonne": "é",
+          "enonce": "En Francais, quel terme appartient au niveau 5e ?",
+          "bonne": "mot",
           "fausses": [
-            "è",
-            "non",
-            "peut-être"
+            "phrase",
+            "lettre",
+            "son"
           ],
-          "explication": "é est un terme de Francais."
+          "explication": "mot = concept clé du 5e en Francais"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau 5e ?",
-          "bonne": "orthographe, styles",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 5e couvre vocabulaire avancé",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le 5e couvre : orthographe, styles"
+          "explication": "Oui, vocabulaire avancé = contenu 5e"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: ç)",
-          "bonne": "ç",
+          "enonce": "Un concept important : ___",
+          "bonne": "verbe",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "nom",
+            "adjectif",
+            "sujet"
           ],
-          "explication": "La réponse est ç."
+          "explication": "verbe = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus textes courts : quel terme ?",
+          "bonne": "présent",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "passé",
+            "futur",
+            "majuscule"
           ],
-          "explication": "C'est juste."
+          "explication": "présent = domaine textes courts"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "vocabulaire avancé est au programme 5e",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, vocabulaire avancé = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du 5e",
+          "bonne": "nom",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "adjectif",
+            "sujet",
+            "présent"
           ],
-          "explication": "C'est juste."
+          "explication": "nom = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du 5e",
+          "bonne": "adjectif",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "sujet",
+            "présent",
+            "passé"
           ],
-          "explication": "C'est juste."
+          "explication": "adjectif = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du 5e",
+          "bonne": "sujet",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "présent",
+            "passé",
+            "futur"
           ],
-          "explication": "C'est juste."
+          "explication": "sujet = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du 5e",
+          "bonne": "présent",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "passé",
+            "futur",
+            "majuscule"
           ],
-          "explication": "C'est juste."
+          "explication": "présent = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du 5e",
+          "bonne": "passé",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "futur",
+            "majuscule",
+            "point"
           ],
-          "explication": "C'est juste."
+          "explication": "passé = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du 5e",
+          "bonne": "futur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "majuscule",
+            "point",
+            "virgule"
           ],
-          "explication": "C'est juste."
+          "explication": "futur = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du 5e",
+          "bonne": "majuscule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "point",
+            "virgule",
+            "dialogue"
           ],
-          "explication": "C'est juste."
+          "explication": "majuscule = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du 5e",
+          "bonne": "point",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "virgule",
+            "dialogue",
+            "histoire"
           ],
-          "explication": "C'est juste."
+          "explication": "point = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du 5e",
+          "bonne": "virgule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "dialogue",
+            "histoire",
+            "description"
           ],
-          "explication": "C'est juste."
+          "explication": "virgule = élément programme 5e"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "é",
-          "en": "é (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "mot",
+          "en": "mot (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "è",
-          "en": "è (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "phrase",
+          "en": "phrase (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "ç",
-          "en": "ç (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "lettre",
+          "en": "lettre (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "ê",
-          "en": "ê (orthographe, styles)",
-          "theme": "orthographe,"
-        },
-        {
-          "fr": "à",
-          "en": "à (orthographe, styles)",
-          "theme": "orthographe,"
-        },
-        {
-          "fr": "sujet",
-          "en": "sujet (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "son",
+          "en": "son (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
           "fr": "verbe",
-          "en": "verbe (orthographe, styles)",
-          "theme": "orthographe,"
+          "en": "verbe (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "style narratif",
-          "en": "style narratif (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "nom",
+          "en": "nom (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "style descriptif",
-          "en": "style descriptif (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "adjectif",
+          "en": "adjectif (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "comparaison",
-          "en": "comparaison (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "sujet",
+          "en": "sujet (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "présent",
+          "en": "présent (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "passé",
+          "en": "passé (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "futur",
+          "en": "futur (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "majuscule",
+          "en": "majuscule (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "point",
+          "en": "point (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "virgule",
+          "en": "virgule (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "dialogue",
+          "en": "dialogue (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "histoire",
+          "en": "histoire (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "description",
+          "en": "description (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "rime",
+          "en": "rime (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
+        },
+        {
+          "fr": "strophe",
+          "en": "strophe (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
+        },
+        {
+          "fr": "auteur",
+          "en": "auteur (niveau 5e, tri 2)",
+          "theme": "vocabulaire / textes"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Francais ?",
-          "bonne": "é",
+          "enonce": "En Francais, quel terme appartient au niveau 5e ?",
+          "bonne": "mot",
           "fausses": [
-            "è",
-            "non",
-            "peut-être"
+            "phrase",
+            "lettre",
+            "son"
           ],
-          "explication": "é est un terme de Francais."
+          "explication": "mot = concept clé du 5e en Francais"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau 5e ?",
-          "bonne": "orthographe, styles",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 5e couvre vocabulaire avancé",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le 5e couvre : orthographe, styles"
+          "explication": "Oui, vocabulaire avancé = contenu 5e"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: ç)",
-          "bonne": "ç",
+          "enonce": "Un concept important : ___",
+          "bonne": "verbe",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "nom",
+            "adjectif",
+            "sujet"
           ],
-          "explication": "La réponse est ç."
+          "explication": "verbe = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus textes courts : quel terme ?",
+          "bonne": "présent",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "passé",
+            "futur",
+            "majuscule"
           ],
-          "explication": "C'est juste."
+          "explication": "présent = domaine textes courts"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "vocabulaire avancé est au programme 5e",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, vocabulaire avancé = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du 5e",
+          "bonne": "nom",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "adjectif",
+            "sujet",
+            "présent"
           ],
-          "explication": "C'est juste."
+          "explication": "nom = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du 5e",
+          "bonne": "adjectif",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "sujet",
+            "présent",
+            "passé"
           ],
-          "explication": "C'est juste."
+          "explication": "adjectif = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du 5e",
+          "bonne": "sujet",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "présent",
+            "passé",
+            "futur"
           ],
-          "explication": "C'est juste."
+          "explication": "sujet = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du 5e",
+          "bonne": "présent",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "passé",
+            "futur",
+            "majuscule"
           ],
-          "explication": "C'est juste."
+          "explication": "présent = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du 5e",
+          "bonne": "passé",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "futur",
+            "majuscule",
+            "point"
           ],
-          "explication": "C'est juste."
+          "explication": "passé = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du 5e",
+          "bonne": "futur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "majuscule",
+            "point",
+            "virgule"
           ],
-          "explication": "C'est juste."
+          "explication": "futur = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du 5e",
+          "bonne": "majuscule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "point",
+            "virgule",
+            "dialogue"
           ],
-          "explication": "C'est juste."
+          "explication": "majuscule = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du 5e",
+          "bonne": "point",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "virgule",
+            "dialogue",
+            "histoire"
           ],
-          "explication": "C'est juste."
+          "explication": "point = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du 5e",
+          "bonne": "virgule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "dialogue",
+            "histoire",
+            "description"
           ],
-          "explication": "C'est juste."
+          "explication": "virgule = élément programme 5e"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "é",
-          "en": "é (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "mot",
+          "en": "mot (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "è",
-          "en": "è (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "phrase",
+          "en": "phrase (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "ç",
-          "en": "ç (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "lettre",
+          "en": "lettre (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "ê",
-          "en": "ê (orthographe, styles)",
-          "theme": "orthographe,"
-        },
-        {
-          "fr": "à",
-          "en": "à (orthographe, styles)",
-          "theme": "orthographe,"
-        },
-        {
-          "fr": "sujet",
-          "en": "sujet (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "son",
+          "en": "son (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
           "fr": "verbe",
-          "en": "verbe (orthographe, styles)",
-          "theme": "orthographe,"
+          "en": "verbe (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "style narratif",
-          "en": "style narratif (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "nom",
+          "en": "nom (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "style descriptif",
-          "en": "style descriptif (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "adjectif",
+          "en": "adjectif (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "comparaison",
-          "en": "comparaison (orthographe, styles)",
-          "theme": "orthographe,"
+          "fr": "sujet",
+          "en": "sujet (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "présent",
+          "en": "présent (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "passé",
+          "en": "passé (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "futur",
+          "en": "futur (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "majuscule",
+          "en": "majuscule (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "point",
+          "en": "point (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "virgule",
+          "en": "virgule (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "dialogue",
+          "en": "dialogue (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "histoire",
+          "en": "histoire (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "description",
+          "en": "description (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "rime",
+          "en": "rime (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
+        },
+        {
+          "fr": "strophe",
+          "en": "strophe (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
+        },
+        {
+          "fr": "auteur",
+          "en": "auteur (niveau 5e, tri 3)",
+          "theme": "vocabulaire / textes"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Francais ?",
-          "bonne": "é",
+          "enonce": "En Francais, quel terme appartient au niveau 5e ?",
+          "bonne": "mot",
           "fausses": [
-            "è",
-            "non",
-            "peut-être"
+            "phrase",
+            "lettre",
+            "son"
           ],
-          "explication": "é est un terme de Francais."
+          "explication": "mot = concept clé du 5e en Francais"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau 5e ?",
-          "bonne": "orthographe, styles",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 5e couvre vocabulaire avancé",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le 5e couvre : orthographe, styles"
+          "explication": "Oui, vocabulaire avancé = contenu 5e"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: ç)",
-          "bonne": "ç",
+          "enonce": "Un concept important : ___",
+          "bonne": "verbe",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "nom",
+            "adjectif",
+            "sujet"
           ],
-          "explication": "La réponse est ç."
+          "explication": "verbe = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus textes courts : quel terme ?",
+          "bonne": "présent",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "passé",
+            "futur",
+            "majuscule"
           ],
-          "explication": "C'est juste."
+          "explication": "présent = domaine textes courts"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "vocabulaire avancé est au programme 5e",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, vocabulaire avancé = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du 5e",
+          "bonne": "nom",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "adjectif",
+            "sujet",
+            "présent"
           ],
-          "explication": "C'est juste."
+          "explication": "nom = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du 5e",
+          "bonne": "adjectif",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "sujet",
+            "présent",
+            "passé"
           ],
-          "explication": "C'est juste."
+          "explication": "adjectif = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du 5e",
+          "bonne": "sujet",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "présent",
+            "passé",
+            "futur"
           ],
-          "explication": "C'est juste."
+          "explication": "sujet = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du 5e",
+          "bonne": "présent",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "passé",
+            "futur",
+            "majuscule"
           ],
-          "explication": "C'est juste."
+          "explication": "présent = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du 5e",
+          "bonne": "passé",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "futur",
+            "majuscule",
+            "point"
           ],
-          "explication": "C'est juste."
+          "explication": "passé = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du 5e",
+          "bonne": "futur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "majuscule",
+            "point",
+            "virgule"
           ],
-          "explication": "C'est juste."
+          "explication": "futur = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du 5e",
+          "bonne": "majuscule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "point",
+            "virgule",
+            "dialogue"
           ],
-          "explication": "C'est juste."
+          "explication": "majuscule = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du 5e",
+          "bonne": "point",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "virgule",
+            "dialogue",
+            "histoire"
           ],
-          "explication": "C'est juste."
+          "explication": "point = élément programme 5e"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du 5e",
+          "bonne": "virgule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "dialogue",
+            "histoire",
+            "description"
           ],
-          "explication": "C'est juste."
+          "explication": "virgule = élément programme 5e"
         }
       ]
     }

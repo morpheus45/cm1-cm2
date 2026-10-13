@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "vote",
-          "en": "choix",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "égalité",
-          "en": "parité",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "liberté",
-          "en": "autonomie",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "justice",
-          "en": "équité",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "loi",
-          "en": "règle",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "citoyen",
-          "en": "membre",
-          "theme": "citoyenneté"
-        },
-        {
           "fr": "droit",
-          "en": "privilège",
-          "theme": "citoyenneté"
+          "en": "droit (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "devoir",
-          "en": "obligation",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "participation",
-          "en": "implication",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "nation",
-          "en": "pays",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "dignité",
-          "en": "respect",
-          "theme": "droits_humains"
-        },
-        {
-          "fr": "égalité",
-          "en": "parité",
-          "theme": "droits_humains"
+          "en": "devoir (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "liberté",
-          "en": "autonomie",
-          "theme": "droits_humains"
+          "en": "liberté (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "santé",
-          "en": "bien-être",
-          "theme": "droits_humains"
+          "fr": "égalité",
+          "en": "égalité (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "éducation",
-          "en": "apprentissage",
-          "theme": "droits_humains"
+          "fr": "justice",
+          "en": "justice (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "honnêteté",
-          "en": "vérité",
-          "theme": "valeurs"
+          "fr": "citoyenneté",
+          "en": "citoyenneté (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "solidarité",
-          "en": "entraide",
-          "theme": "valeurs"
+          "fr": "démocratie",
+          "en": "démocratie (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "vote",
+          "en": "vote (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "loi",
+          "en": "loi (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "constitution",
+          "en": "constitution (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "gouvernement",
+          "en": "gouvernement (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "parlement",
+          "en": "parlement (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "diversité",
+          "en": "diversité (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "tolérance",
-          "en": "acceptation",
-          "theme": "valeurs"
+          "en": "tolérance (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "courage",
-          "en": "bravure",
-          "theme": "valeurs"
+          "fr": "solidarité",
+          "en": "solidarité (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "générosité",
-          "en": "don",
-          "theme": "valeurs"
+          "fr": "environnement",
+          "en": "environnement (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "paix",
+          "en": "paix (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "organisation",
+          "en": "organisation (niveau 6e, tri 1)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce qu'un vote ?",
-          "bonne": "choisir par scrutin",
+          "enonce": "En EMC, quel terme appartient au niveau 6e ?",
+          "bonne": "droit",
           "fausses": [
-            "commander",
-            "punir",
-            "ignorer"
+            "devoir",
+            "liberté",
+            "égalité"
           ],
-          "explication": "Vote = procédé démocratique de choix."
+          "explication": "droit = concept clé du 6e en EMC"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Tous les citoyens ont l'égalité de ___.",
-          "bonne": "droits",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "fortune",
-            "taille",
-            "couleur"
+            "Faux"
           ],
-          "explication": "Égalité des droits = principe démocratique."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce que la tolérance ?",
-          "bonne": "accepter les différences",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "justice",
           "fausses": [
-            "tout permet",
-            "ignorer",
-            "dominer"
+            "citoyenneté",
+            "démocratie",
+            "vote"
           ],
-          "explication": "Tolérance = accepter et respecter les différences."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "justice = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "loi",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "loi = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "citoyenneté",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "démocratie",
+            "vote",
+            "loi"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "citoyenneté = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "démocratie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "vote",
+            "loi",
+            "constitution"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "démocratie = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "vote",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "loi",
+            "constitution",
+            "gouvernement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "vote = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "loi",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "loi = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "constitution",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "gouvernement",
+            "parlement",
+            "diversité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "constitution = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "gouvernement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "parlement",
+            "diversité",
+            "tolérance"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "gouvernement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "parlement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "diversité",
+            "tolérance",
+            "solidarité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "parlement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "diversité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "tolérance",
+            "solidarité",
+            "environnement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "diversité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "tolérance",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "solidarité",
+            "environnement",
+            "développement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "tolérance = élément programme 6e"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "vote",
-          "en": "choix",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "égalité",
-          "en": "parité",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "liberté",
-          "en": "autonomie",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "justice",
-          "en": "équité",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "loi",
-          "en": "règle",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "citoyen",
-          "en": "membre",
-          "theme": "citoyenneté"
-        },
-        {
           "fr": "droit",
-          "en": "privilège",
-          "theme": "citoyenneté"
+          "en": "droit (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "devoir",
-          "en": "obligation",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "participation",
-          "en": "implication",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "nation",
-          "en": "pays",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "dignité",
-          "en": "respect",
-          "theme": "droits_humains"
-        },
-        {
-          "fr": "égalité",
-          "en": "parité",
-          "theme": "droits_humains"
+          "en": "devoir (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "liberté",
-          "en": "autonomie",
-          "theme": "droits_humains"
+          "en": "liberté (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "santé",
-          "en": "bien-être",
-          "theme": "droits_humains"
+          "fr": "égalité",
+          "en": "égalité (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "éducation",
-          "en": "apprentissage",
-          "theme": "droits_humains"
+          "fr": "justice",
+          "en": "justice (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "honnêteté",
-          "en": "vérité",
-          "theme": "valeurs"
+          "fr": "citoyenneté",
+          "en": "citoyenneté (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "solidarité",
-          "en": "entraide",
-          "theme": "valeurs"
+          "fr": "démocratie",
+          "en": "démocratie (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "vote",
+          "en": "vote (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "loi",
+          "en": "loi (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "constitution",
+          "en": "constitution (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "gouvernement",
+          "en": "gouvernement (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "parlement",
+          "en": "parlement (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "diversité",
+          "en": "diversité (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "tolérance",
-          "en": "acceptation",
-          "theme": "valeurs"
+          "en": "tolérance (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "courage",
-          "en": "bravure",
-          "theme": "valeurs"
+          "fr": "solidarité",
+          "en": "solidarité (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "générosité",
-          "en": "don",
-          "theme": "valeurs"
+          "fr": "environnement",
+          "en": "environnement (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "paix",
+          "en": "paix (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "organisation",
+          "en": "organisation (niveau 6e, tri 2)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce qu'un vote ?",
-          "bonne": "choisir par scrutin",
+          "enonce": "En EMC, quel terme appartient au niveau 6e ?",
+          "bonne": "droit",
           "fausses": [
-            "commander",
-            "punir",
-            "ignorer"
+            "devoir",
+            "liberté",
+            "égalité"
           ],
-          "explication": "Vote = procédé démocratique de choix."
+          "explication": "droit = concept clé du 6e en EMC"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Tous les citoyens ont l'égalité de ___.",
-          "bonne": "droits",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "fortune",
-            "taille",
-            "couleur"
+            "Faux"
           ],
-          "explication": "Égalité des droits = principe démocratique."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce que la tolérance ?",
-          "bonne": "accepter les différences",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "justice",
           "fausses": [
-            "tout permet",
-            "ignorer",
-            "dominer"
+            "citoyenneté",
+            "démocratie",
+            "vote"
           ],
-          "explication": "Tolérance = accepter et respecter les différences."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "justice = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "loi",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "loi = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "citoyenneté",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "démocratie",
+            "vote",
+            "loi"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "citoyenneté = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "démocratie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "vote",
+            "loi",
+            "constitution"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "démocratie = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "vote",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "loi",
+            "constitution",
+            "gouvernement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "vote = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "loi",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "loi = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "constitution",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "gouvernement",
+            "parlement",
+            "diversité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "constitution = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "gouvernement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "parlement",
+            "diversité",
+            "tolérance"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "gouvernement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "parlement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "diversité",
+            "tolérance",
+            "solidarité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "parlement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "diversité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "tolérance",
+            "solidarité",
+            "environnement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "diversité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "tolérance",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "solidarité",
+            "environnement",
+            "développement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "tolérance = élément programme 6e"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "vote",
-          "en": "choix",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "égalité",
-          "en": "parité",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "liberté",
-          "en": "autonomie",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "justice",
-          "en": "équité",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "loi",
-          "en": "règle",
-          "theme": "démocratie"
-        },
-        {
-          "fr": "citoyen",
-          "en": "membre",
-          "theme": "citoyenneté"
-        },
-        {
           "fr": "droit",
-          "en": "privilège",
-          "theme": "citoyenneté"
+          "en": "droit (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "devoir",
-          "en": "obligation",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "participation",
-          "en": "implication",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "nation",
-          "en": "pays",
-          "theme": "citoyenneté"
-        },
-        {
-          "fr": "dignité",
-          "en": "respect",
-          "theme": "droits_humains"
-        },
-        {
-          "fr": "égalité",
-          "en": "parité",
-          "theme": "droits_humains"
+          "en": "devoir (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "liberté",
-          "en": "autonomie",
-          "theme": "droits_humains"
+          "en": "liberté (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "santé",
-          "en": "bien-être",
-          "theme": "droits_humains"
+          "fr": "égalité",
+          "en": "égalité (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "éducation",
-          "en": "apprentissage",
-          "theme": "droits_humains"
+          "fr": "justice",
+          "en": "justice (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "honnêteté",
-          "en": "vérité",
-          "theme": "valeurs"
+          "fr": "citoyenneté",
+          "en": "citoyenneté (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "solidarité",
-          "en": "entraide",
-          "theme": "valeurs"
+          "fr": "démocratie",
+          "en": "démocratie (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "vote",
+          "en": "vote (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "loi",
+          "en": "loi (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "constitution",
+          "en": "constitution (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "gouvernement",
+          "en": "gouvernement (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "parlement",
+          "en": "parlement (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "diversité",
+          "en": "diversité (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
           "fr": "tolérance",
-          "en": "acceptation",
-          "theme": "valeurs"
+          "en": "tolérance (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "courage",
-          "en": "bravure",
-          "theme": "valeurs"
+          "fr": "solidarité",
+          "en": "solidarité (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         },
         {
-          "fr": "générosité",
-          "en": "don",
-          "theme": "valeurs"
+          "fr": "environnement",
+          "en": "environnement (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "paix",
+          "en": "paix (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
+        },
+        {
+          "fr": "organisation",
+          "en": "organisation (niveau 6e, tri 3)",
+          "theme": "conjugaison / temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce qu'un vote ?",
-          "bonne": "choisir par scrutin",
+          "enonce": "En EMC, quel terme appartient au niveau 6e ?",
+          "bonne": "droit",
           "fausses": [
-            "commander",
-            "punir",
-            "ignorer"
+            "devoir",
+            "liberté",
+            "égalité"
           ],
-          "explication": "Vote = procédé démocratique de choix."
+          "explication": "droit = concept clé du 6e en EMC"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Tous les citoyens ont l'égalité de ___.",
-          "bonne": "droits",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le 6e couvre conjugaison présent",
+          "bonne": "Vrai",
           "fausses": [
-            "fortune",
-            "taille",
-            "couleur"
+            "Faux"
           ],
-          "explication": "Égalité des droits = principe démocratique."
+          "explication": "Oui, conjugaison présent = contenu 6e"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Qu'est-ce que la tolérance ?",
-          "bonne": "accepter les différences",
+          "consigne": "Remplir le blanc",
+          "enonce": "Un concept important : ___",
+          "bonne": "justice",
           "fausses": [
-            "tout permet",
-            "ignorer",
-            "dominer"
+            "citoyenneté",
+            "démocratie",
+            "vote"
           ],
-          "explication": "Tolérance = accepter et respecter les différences."
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
-          "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
-          ],
-          "explication": "C'est la bonne réponse."
+          "explication": "justice = élément du programme"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Focus temps passé simple : quel terme ?",
+          "bonne": "loi",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "loi = domaine temps passé simple"
+        },
+        {
+          "consigne": "Vrai ou Faux",
+          "enonce": "conjugaison présent est au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Oui, conjugaison présent = contenu officiel"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 6 : concept du 6e",
+          "bonne": "citoyenneté",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "démocratie",
+            "vote",
+            "loi"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "citoyenneté = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 7 : concept du 6e",
+          "bonne": "démocratie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "vote",
+            "loi",
+            "constitution"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "démocratie = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 8 : concept du 6e",
+          "bonne": "vote",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "loi",
+            "constitution",
+            "gouvernement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "vote = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 9 : concept du 6e",
+          "bonne": "loi",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "constitution",
+            "gouvernement",
+            "parlement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "loi = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 10 : concept du 6e",
+          "bonne": "constitution",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "gouvernement",
+            "parlement",
+            "diversité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "constitution = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 11 : concept du 6e",
+          "bonne": "gouvernement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "parlement",
+            "diversité",
+            "tolérance"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "gouvernement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 12 : concept du 6e",
+          "bonne": "parlement",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "diversité",
+            "tolérance",
+            "solidarité"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "parlement = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 13 : concept du 6e",
+          "bonne": "diversité",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "tolérance",
+            "solidarité",
+            "environnement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "diversité = élément programme 6e"
         },
         {
           "consigne": "Choix multiple",
-          "enonce": "Quelle est la bonne réponse ?",
-          "bonne": "réponse",
+          "enonce": "Question 14 : concept du 6e",
+          "bonne": "tolérance",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "solidarité",
+            "environnement",
+            "développement"
           ],
-          "explication": "C'est la bonne réponse."
+          "explication": "tolérance = élément programme 6e"
         }
       ]
     }

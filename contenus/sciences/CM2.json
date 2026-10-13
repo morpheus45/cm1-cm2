@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "croûte terrestre",
-          "en": "croûte terrestre (terre, espace)",
-          "theme": "terre,"
+          "fr": "atome",
+          "en": "atome (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "manteau",
-          "en": "manteau (terre, espace)",
-          "theme": "terre,"
+          "fr": "molécule",
+          "en": "molécule (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "noyau",
-          "en": "noyau (terre, espace)",
-          "theme": "terre,"
+          "fr": "énergie",
+          "en": "énergie (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "tremblement",
-          "en": "tremblement (terre, espace)",
-          "theme": "terre,"
+          "fr": "force",
+          "en": "force (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "volcan",
-          "en": "volcan (terre, espace)",
-          "theme": "terre,"
+          "fr": "lumière",
+          "en": "lumière (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "soleil",
-          "en": "soleil (terre, espace)",
-          "theme": "terre,"
+          "fr": "son",
+          "en": "son (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "terre",
-          "en": "terre (terre, espace)",
-          "theme": "terre,"
+          "fr": "chaleur",
+          "en": "chaleur (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "lune",
-          "en": "lune (terre, espace)",
-          "theme": "terre,"
+          "fr": "électricité",
+          "en": "électricité (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "orbite",
-          "en": "orbite (terre, espace)",
-          "theme": "terre,"
+          "fr": "aimant",
+          "en": "aimant (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "galaxie",
-          "en": "galaxie (terre, espace)",
-          "theme": "terre,"
+          "fr": "cellule",
+          "en": "cellule (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "plante",
+          "en": "plante (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "animal",
+          "en": "animal (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "écosystème",
+          "en": "écosystème (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "environnement",
+          "en": "environnement (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "évolution",
+          "en": "évolution (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "génétique",
+          "en": "génétique (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "chimie",
+          "en": "chimie (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "physique",
+          "en": "physique (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "biologie",
+          "en": "biologie (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "expérience",
+          "en": "expérience (niveau CM2, tri 1)",
+          "theme": "pluriels / accord"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Sciences ?",
-          "bonne": "croûte terrestre",
+          "enonce": "En Sciences, quel terme appartient au niveau CM2 ?",
+          "bonne": "atome",
           "fausses": [
-            "manteau",
-            "non",
-            "peut-être"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "croûte terrestre est un terme de Sciences."
+          "explication": "atome = concept clé du CM2 en Sciences"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM2 ?",
-          "bonne": "terre, espace",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM2 couvre pluriels",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM2 couvre : terre, espace"
+          "explication": "Oui, pluriels = contenu CM2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: noyau)",
-          "bonne": "noyau",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "La réponse est noyau."
+          "explication": "lumière = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus accord : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = domaine accord"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "pluriels est au programme CM2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, pluriels = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM2",
+          "bonne": "son",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est juste."
+          "explication": "son = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM2",
+          "bonne": "chaleur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est juste."
+          "explication": "chaleur = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM2",
+          "bonne": "électricité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est juste."
+          "explication": "électricité = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM2",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM2",
+          "bonne": "cellule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est juste."
+          "explication": "cellule = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM2",
+          "bonne": "plante",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "plante = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM2",
+          "bonne": "animal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est juste."
+          "explication": "animal = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM2",
+          "bonne": "écosystème",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est juste."
+          "explication": "écosystème = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM2",
+          "bonne": "environnement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est juste."
+          "explication": "environnement = élément programme CM2"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "croûte terrestre",
-          "en": "croûte terrestre (terre, espace)",
-          "theme": "terre,"
+          "fr": "atome",
+          "en": "atome (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "manteau",
-          "en": "manteau (terre, espace)",
-          "theme": "terre,"
+          "fr": "molécule",
+          "en": "molécule (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "noyau",
-          "en": "noyau (terre, espace)",
-          "theme": "terre,"
+          "fr": "énergie",
+          "en": "énergie (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "tremblement",
-          "en": "tremblement (terre, espace)",
-          "theme": "terre,"
+          "fr": "force",
+          "en": "force (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "volcan",
-          "en": "volcan (terre, espace)",
-          "theme": "terre,"
+          "fr": "lumière",
+          "en": "lumière (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "soleil",
-          "en": "soleil (terre, espace)",
-          "theme": "terre,"
+          "fr": "son",
+          "en": "son (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "terre",
-          "en": "terre (terre, espace)",
-          "theme": "terre,"
+          "fr": "chaleur",
+          "en": "chaleur (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "lune",
-          "en": "lune (terre, espace)",
-          "theme": "terre,"
+          "fr": "électricité",
+          "en": "électricité (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "orbite",
-          "en": "orbite (terre, espace)",
-          "theme": "terre,"
+          "fr": "aimant",
+          "en": "aimant (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "galaxie",
-          "en": "galaxie (terre, espace)",
-          "theme": "terre,"
+          "fr": "cellule",
+          "en": "cellule (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "plante",
+          "en": "plante (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "animal",
+          "en": "animal (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "écosystème",
+          "en": "écosystème (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "environnement",
+          "en": "environnement (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "évolution",
+          "en": "évolution (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "génétique",
+          "en": "génétique (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "chimie",
+          "en": "chimie (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "physique",
+          "en": "physique (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "biologie",
+          "en": "biologie (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "expérience",
+          "en": "expérience (niveau CM2, tri 2)",
+          "theme": "pluriels / accord"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Sciences ?",
-          "bonne": "croûte terrestre",
+          "enonce": "En Sciences, quel terme appartient au niveau CM2 ?",
+          "bonne": "atome",
           "fausses": [
-            "manteau",
-            "non",
-            "peut-être"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "croûte terrestre est un terme de Sciences."
+          "explication": "atome = concept clé du CM2 en Sciences"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM2 ?",
-          "bonne": "terre, espace",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM2 couvre pluriels",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM2 couvre : terre, espace"
+          "explication": "Oui, pluriels = contenu CM2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: noyau)",
-          "bonne": "noyau",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "La réponse est noyau."
+          "explication": "lumière = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus accord : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = domaine accord"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "pluriels est au programme CM2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, pluriels = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM2",
+          "bonne": "son",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est juste."
+          "explication": "son = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM2",
+          "bonne": "chaleur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est juste."
+          "explication": "chaleur = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM2",
+          "bonne": "électricité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est juste."
+          "explication": "électricité = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM2",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM2",
+          "bonne": "cellule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est juste."
+          "explication": "cellule = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM2",
+          "bonne": "plante",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "plante = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM2",
+          "bonne": "animal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est juste."
+          "explication": "animal = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM2",
+          "bonne": "écosystème",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est juste."
+          "explication": "écosystème = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM2",
+          "bonne": "environnement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est juste."
+          "explication": "environnement = élément programme CM2"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "croûte terrestre",
-          "en": "croûte terrestre (terre, espace)",
-          "theme": "terre,"
+          "fr": "atome",
+          "en": "atome (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "manteau",
-          "en": "manteau (terre, espace)",
-          "theme": "terre,"
+          "fr": "molécule",
+          "en": "molécule (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "noyau",
-          "en": "noyau (terre, espace)",
-          "theme": "terre,"
+          "fr": "énergie",
+          "en": "énergie (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "tremblement",
-          "en": "tremblement (terre, espace)",
-          "theme": "terre,"
+          "fr": "force",
+          "en": "force (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "volcan",
-          "en": "volcan (terre, espace)",
-          "theme": "terre,"
+          "fr": "lumière",
+          "en": "lumière (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "soleil",
-          "en": "soleil (terre, espace)",
-          "theme": "terre,"
+          "fr": "son",
+          "en": "son (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "terre",
-          "en": "terre (terre, espace)",
-          "theme": "terre,"
+          "fr": "chaleur",
+          "en": "chaleur (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "lune",
-          "en": "lune (terre, espace)",
-          "theme": "terre,"
+          "fr": "électricité",
+          "en": "électricité (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "orbite",
-          "en": "orbite (terre, espace)",
-          "theme": "terre,"
+          "fr": "aimant",
+          "en": "aimant (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "galaxie",
-          "en": "galaxie (terre, espace)",
-          "theme": "terre,"
+          "fr": "cellule",
+          "en": "cellule (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "plante",
+          "en": "plante (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "animal",
+          "en": "animal (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "écosystème",
+          "en": "écosystème (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "environnement",
+          "en": "environnement (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "évolution",
+          "en": "évolution (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "génétique",
+          "en": "génétique (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "chimie",
+          "en": "chimie (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "physique",
+          "en": "physique (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "biologie",
+          "en": "biologie (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "expérience",
+          "en": "expérience (niveau CM2, tri 3)",
+          "theme": "pluriels / accord"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Sciences ?",
-          "bonne": "croûte terrestre",
+          "enonce": "En Sciences, quel terme appartient au niveau CM2 ?",
+          "bonne": "atome",
           "fausses": [
-            "manteau",
-            "non",
-            "peut-être"
+            "molécule",
+            "énergie",
+            "force"
           ],
-          "explication": "croûte terrestre est un terme de Sciences."
+          "explication": "atome = concept clé du CM2 en Sciences"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CM2 ?",
-          "bonne": "terre, espace",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CM2 couvre pluriels",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CM2 couvre : terre, espace"
+          "explication": "Oui, pluriels = contenu CM2"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: noyau)",
-          "bonne": "noyau",
+          "enonce": "Un concept important : ___",
+          "bonne": "lumière",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "son",
+            "chaleur",
+            "électricité"
           ],
-          "explication": "La réponse est noyau."
+          "explication": "lumière = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus accord : quel terme ?",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = domaine accord"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "pluriels est au programme CM2",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, pluriels = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CM2",
+          "bonne": "son",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "chaleur",
+            "électricité",
+            "aimant"
           ],
-          "explication": "C'est juste."
+          "explication": "son = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CM2",
+          "bonne": "chaleur",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "électricité",
+            "aimant",
+            "cellule"
           ],
-          "explication": "C'est juste."
+          "explication": "chaleur = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CM2",
+          "bonne": "électricité",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "aimant",
+            "cellule",
+            "plante"
           ],
-          "explication": "C'est juste."
+          "explication": "électricité = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CM2",
+          "bonne": "aimant",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "cellule",
+            "plante",
+            "animal"
           ],
-          "explication": "C'est juste."
+          "explication": "aimant = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CM2",
+          "bonne": "cellule",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "plante",
+            "animal",
+            "écosystème"
           ],
-          "explication": "C'est juste."
+          "explication": "cellule = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CM2",
+          "bonne": "plante",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "animal",
+            "écosystème",
+            "environnement"
           ],
-          "explication": "C'est juste."
+          "explication": "plante = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CM2",
+          "bonne": "animal",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "écosystème",
+            "environnement",
+            "évolution"
           ],
-          "explication": "C'est juste."
+          "explication": "animal = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CM2",
+          "bonne": "écosystème",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "environnement",
+            "évolution",
+            "génétique"
           ],
-          "explication": "C'est juste."
+          "explication": "écosystème = élément programme CM2"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CM2",
+          "bonne": "environnement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "évolution",
+            "génétique",
+            "chimie"
           ],
-          "explication": "C'est juste."
+          "explication": "environnement = élément programme CM2"
         }
       ]
     }

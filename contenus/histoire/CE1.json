@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "hier",
-          "en": "hier (temps, famille)",
-          "theme": "temps,"
+          "fr": "époque",
+          "en": "époque (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "aujourd'hui",
-          "en": "aujourd'hui (temps, famille)",
-          "theme": "temps,"
+          "fr": "période",
+          "en": "période (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "demain",
-          "en": "demain (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "longtemps",
-          "en": "longtemps (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "grand-mère",
-          "en": "grand-mère (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "grand-père",
-          "en": "grand-père (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "maman",
-          "en": "maman (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "papa",
-          "en": "papa (temps, famille)",
-          "theme": "temps,"
+          "fr": "siècle",
+          "en": "siècle (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
           "fr": "roi",
-          "en": "roi (temps, famille)",
-          "theme": "temps,"
+          "en": "roi (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "château",
-          "en": "château (temps, famille)",
-          "theme": "temps,"
+          "fr": "reine",
+          "en": "reine (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "guerre",
+          "en": "guerre (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "paix",
+          "en": "paix (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "révolution",
+          "en": "révolution (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "empire",
+          "en": "empire (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "colonie",
+          "en": "colonie (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "chronologie",
+          "en": "chronologie (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "source",
+          "en": "source (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau CE1, tri 1)",
+          "theme": "premiers / salutations"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "hier",
+          "enonce": "En Histoire, quel terme appartient au niveau CE1 ?",
+          "bonne": "époque",
           "fausses": [
-            "aujourd'hui",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "hier est un terme de Histoire."
+          "explication": "époque = concept clé du CE1 en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE1 ?",
-          "bonne": "temps, famille",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE1 couvre premiers mots",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE1 couvre : temps, famille"
+          "explication": "Oui, premiers mots = contenu CE1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: demain)",
-          "bonne": "demain",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est demain."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus salutations : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine salutations"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "premiers mots est au programme CE1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, premiers mots = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE1",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE1",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE1",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE1",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE1",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE1",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE1",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE1",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE1",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme CE1"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "hier",
-          "en": "hier (temps, famille)",
-          "theme": "temps,"
+          "fr": "époque",
+          "en": "époque (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "aujourd'hui",
-          "en": "aujourd'hui (temps, famille)",
-          "theme": "temps,"
+          "fr": "période",
+          "en": "période (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "demain",
-          "en": "demain (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "longtemps",
-          "en": "longtemps (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "grand-mère",
-          "en": "grand-mère (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "grand-père",
-          "en": "grand-père (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "maman",
-          "en": "maman (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "papa",
-          "en": "papa (temps, famille)",
-          "theme": "temps,"
+          "fr": "siècle",
+          "en": "siècle (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
           "fr": "roi",
-          "en": "roi (temps, famille)",
-          "theme": "temps,"
+          "en": "roi (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "château",
-          "en": "château (temps, famille)",
-          "theme": "temps,"
+          "fr": "reine",
+          "en": "reine (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "guerre",
+          "en": "guerre (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "paix",
+          "en": "paix (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "révolution",
+          "en": "révolution (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "empire",
+          "en": "empire (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "colonie",
+          "en": "colonie (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "chronologie",
+          "en": "chronologie (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "source",
+          "en": "source (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau CE1, tri 2)",
+          "theme": "premiers / salutations"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "hier",
+          "enonce": "En Histoire, quel terme appartient au niveau CE1 ?",
+          "bonne": "époque",
           "fausses": [
-            "aujourd'hui",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "hier est un terme de Histoire."
+          "explication": "époque = concept clé du CE1 en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE1 ?",
-          "bonne": "temps, famille",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE1 couvre premiers mots",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE1 couvre : temps, famille"
+          "explication": "Oui, premiers mots = contenu CE1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: demain)",
-          "bonne": "demain",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est demain."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus salutations : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine salutations"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "premiers mots est au programme CE1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, premiers mots = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE1",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE1",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE1",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE1",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE1",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE1",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE1",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE1",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE1",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme CE1"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "hier",
-          "en": "hier (temps, famille)",
-          "theme": "temps,"
+          "fr": "époque",
+          "en": "époque (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "aujourd'hui",
-          "en": "aujourd'hui (temps, famille)",
-          "theme": "temps,"
+          "fr": "période",
+          "en": "période (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "demain",
-          "en": "demain (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "longtemps",
-          "en": "longtemps (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "grand-mère",
-          "en": "grand-mère (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "grand-père",
-          "en": "grand-père (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "maman",
-          "en": "maman (temps, famille)",
-          "theme": "temps,"
-        },
-        {
-          "fr": "papa",
-          "en": "papa (temps, famille)",
-          "theme": "temps,"
+          "fr": "siècle",
+          "en": "siècle (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
           "fr": "roi",
-          "en": "roi (temps, famille)",
-          "theme": "temps,"
+          "en": "roi (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "château",
-          "en": "château (temps, famille)",
-          "theme": "temps,"
+          "fr": "reine",
+          "en": "reine (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t10",
-          "en": "def10",
-          "theme": "gen"
+          "fr": "guerre",
+          "en": "guerre (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t11",
-          "en": "def11",
-          "theme": "gen"
+          "fr": "paix",
+          "en": "paix (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t12",
-          "en": "def12",
-          "theme": "gen"
+          "fr": "révolution",
+          "en": "révolution (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t13",
-          "en": "def13",
-          "theme": "gen"
+          "fr": "empire",
+          "en": "empire (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t14",
-          "en": "def14",
-          "theme": "gen"
+          "fr": "colonie",
+          "en": "colonie (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t15",
-          "en": "def15",
-          "theme": "gen"
+          "fr": "indépendance",
+          "en": "indépendance (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t16",
-          "en": "def16",
-          "theme": "gen"
+          "fr": "civilisation",
+          "en": "civilisation (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t17",
-          "en": "def17",
-          "theme": "gen"
+          "fr": "événement",
+          "en": "événement (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t18",
-          "en": "def18",
-          "theme": "gen"
+          "fr": "personnage",
+          "en": "personnage (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         },
         {
-          "fr": "t19",
-          "en": "def19",
-          "theme": "gen"
+          "fr": "document",
+          "en": "document (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "chronologie",
+          "en": "chronologie (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "source",
+          "en": "source (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "héritage",
+          "en": "héritage (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition (niveau CE1, tri 3)",
+          "theme": "premiers / salutations"
         }
       ],
       "questions": [
         {
           "consigne": "Choix multiple",
-          "enonce": "Quel mot appartient à Histoire ?",
-          "bonne": "hier",
+          "enonce": "En Histoire, quel terme appartient au niveau CE1 ?",
+          "bonne": "époque",
           "fausses": [
-            "aujourd'hui",
-            "non",
-            "peut-être"
+            "période",
+            "siècle",
+            "roi"
           ],
-          "explication": "hier est un terme de Histoire."
+          "explication": "époque = concept clé du CE1 en Histoire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Quelle est une caractéristique du niveau CE1 ?",
-          "bonne": "temps, famille",
+          "consigne": "Vrai ou Faux",
+          "enonce": "Le CE1 couvre premiers mots",
+          "bonne": "Vrai",
           "fausses": [
-            "autre1",
-            "autre2",
-            "autre3"
+            "Faux"
           ],
-          "explication": "Le CE1 couvre : temps, famille"
+          "explication": "Oui, premiers mots = contenu CE1"
         },
         {
           "consigne": "Remplir le blanc",
-          "enonce": "Un terme important : ___ (indice: demain)",
-          "bonne": "demain",
+          "enonce": "Un concept important : ___",
+          "bonne": "reine",
           "fausses": [
-            "non",
-            "pas ca",
-            "faux"
+            "guerre",
+            "paix",
+            "révolution"
           ],
-          "explication": "La réponse est demain."
+          "explication": "reine = élément du programme"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Focus salutations : quel terme ?",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = domaine salutations"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Vrai ou Faux",
+          "enonce": "premiers mots est au programme CE1",
+          "bonne": "Vrai",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "Faux"
           ],
-          "explication": "C'est juste."
+          "explication": "Oui, premiers mots = contenu officiel"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 6 : concept du CE1",
+          "bonne": "guerre",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "paix",
+            "révolution",
+            "empire"
           ],
-          "explication": "C'est juste."
+          "explication": "guerre = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 7 : concept du CE1",
+          "bonne": "paix",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "révolution",
+            "empire",
+            "colonie"
           ],
-          "explication": "C'est juste."
+          "explication": "paix = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 8 : concept du CE1",
+          "bonne": "révolution",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "empire",
+            "colonie",
+            "indépendance"
           ],
-          "explication": "C'est juste."
+          "explication": "révolution = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 9 : concept du CE1",
+          "bonne": "empire",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "colonie",
+            "indépendance",
+            "civilisation"
           ],
-          "explication": "C'est juste."
+          "explication": "empire = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 10 : concept du CE1",
+          "bonne": "colonie",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "indépendance",
+            "civilisation",
+            "événement"
           ],
-          "explication": "C'est juste."
+          "explication": "colonie = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 11 : concept du CE1",
+          "bonne": "indépendance",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "civilisation",
+            "événement",
+            "personnage"
           ],
-          "explication": "C'est juste."
+          "explication": "indépendance = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 12 : concept du CE1",
+          "bonne": "civilisation",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "événement",
+            "personnage",
+            "document"
           ],
-          "explication": "C'est juste."
+          "explication": "civilisation = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 13 : concept du CE1",
+          "bonne": "événement",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "personnage",
+            "document",
+            "chronologie"
           ],
-          "explication": "C'est juste."
+          "explication": "événement = élément programme CE1"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Quelle réponse ?",
-          "bonne": "correcte",
+          "consigne": "Choix multiple",
+          "enonce": "Question 14 : concept du CE1",
+          "bonne": "personnage",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "document",
+            "chronologie",
+            "source"
           ],
-          "explication": "C'est juste."
+          "explication": "personnage = élément programme CE1"
         }
       ]
     }
