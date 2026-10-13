@@ -1,0 +1,785 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "a",
+          "en": "a",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "e",
+          "en": "e",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "i",
+          "en": "i",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "o",
+          "en": "o",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "u",
+          "en": "u",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "la",
+          "en": "la",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "le",
+          "en": "le",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "un",
+          "en": "un",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "une",
+          "en": "une",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "de",
+          "en": "de",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "cat",
+          "en": "cat",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "dog",
+          "en": "dog",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "et",
+          "en": "et",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ou",
+          "en": "ou",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "nous",
+          "en": "nous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "vous",
+          "en": "vous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "il",
+          "en": "il",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "elle",
+          "en": "elle",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ils",
+          "en": "ils",
+          "theme": "Apprentissage lecture"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"a\" ?",
+          "bonne": "a",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"a\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"e\" ?",
+          "bonne": "e",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"e\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"i\" ?",
+          "bonne": "i",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"i\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"o\" ?",
+          "bonne": "o",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"o\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"u\" ?",
+          "bonne": "u",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"u\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"la\" ?",
+          "bonne": "la",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"la\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"le\" ?",
+          "bonne": "le",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"le\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"un\" ?",
+          "bonne": "un",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"un\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"une\" ?",
+          "bonne": "une",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"une\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"de\" ?",
+          "bonne": "de",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"de\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cat\" ?",
+          "bonne": "cat",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"cat\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dog\" ?",
+          "bonne": "dog",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"dog\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"et\" ?",
+          "bonne": "et",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"et\" car elle appartient au thème: Apprentissage lecture"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "a",
+          "en": "a",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "e",
+          "en": "e",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "i",
+          "en": "i",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "o",
+          "en": "o",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "u",
+          "en": "u",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "la",
+          "en": "la",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "le",
+          "en": "le",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "un",
+          "en": "un",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "une",
+          "en": "une",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "de",
+          "en": "de",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "cat",
+          "en": "cat",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "dog",
+          "en": "dog",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "et",
+          "en": "et",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ou",
+          "en": "ou",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "nous",
+          "en": "nous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "vous",
+          "en": "vous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "il",
+          "en": "il",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "elle",
+          "en": "elle",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ils",
+          "en": "ils",
+          "theme": "Apprentissage lecture"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"a\" ?",
+          "bonne": "a",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"a\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"e\" ?",
+          "bonne": "e",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"e\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"i\" ?",
+          "bonne": "i",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"i\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"o\" ?",
+          "bonne": "o",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"o\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"u\" ?",
+          "bonne": "u",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"u\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"la\" ?",
+          "bonne": "la",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"la\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"le\" ?",
+          "bonne": "le",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"le\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"un\" ?",
+          "bonne": "un",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"un\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"une\" ?",
+          "bonne": "une",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"une\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"de\" ?",
+          "bonne": "de",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"de\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cat\" ?",
+          "bonne": "cat",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"cat\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dog\" ?",
+          "bonne": "dog",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"dog\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"et\" ?",
+          "bonne": "et",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"et\" car elle appartient au thème: Apprentissage lecture"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "a",
+          "en": "a",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "e",
+          "en": "e",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "i",
+          "en": "i",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "o",
+          "en": "o",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "u",
+          "en": "u",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "la",
+          "en": "la",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "le",
+          "en": "le",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "un",
+          "en": "un",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "une",
+          "en": "une",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "de",
+          "en": "de",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "cat",
+          "en": "cat",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "dog",
+          "en": "dog",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "et",
+          "en": "et",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ou",
+          "en": "ou",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "nous",
+          "en": "nous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "vous",
+          "en": "vous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "il",
+          "en": "il",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "elle",
+          "en": "elle",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ils",
+          "en": "ils",
+          "theme": "Apprentissage lecture"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"a\" ?",
+          "bonne": "a",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"a\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"e\" ?",
+          "bonne": "e",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"e\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"i\" ?",
+          "bonne": "i",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"i\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"o\" ?",
+          "bonne": "o",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"o\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"u\" ?",
+          "bonne": "u",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"u\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"la\" ?",
+          "bonne": "la",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"la\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"le\" ?",
+          "bonne": "le",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"le\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"un\" ?",
+          "bonne": "un",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"un\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"une\" ?",
+          "bonne": "une",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"une\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"de\" ?",
+          "bonne": "de",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"de\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cat\" ?",
+          "bonne": "cat",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"cat\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dog\" ?",
+          "bonne": "dog",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"dog\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"et\" ?",
+          "bonne": "et",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"et\" car elle appartient au thème: Apprentissage lecture"
+        }
+      ]
+    }
+  }
+}

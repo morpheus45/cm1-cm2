@@ -1,0 +1,761 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
+        },
+        {
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
+        },
+        {
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 6e",
+          "bonne": "terme1",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Bonne réponse"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est au programme"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "terme2",
+          "fausses": [
+            "terme3"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Niveau 6e____",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "Confirmation"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Contenu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
+        },
+        {
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
+        },
+        {
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 6e",
+          "bonne": "terme1",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Bonne réponse"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est au programme"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "terme2",
+          "fausses": [
+            "terme3"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Niveau 6e____",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "Confirmation"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Contenu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
+        },
+        {
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
+        },
+        {
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
+        },
+        {
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 6e",
+          "bonne": "terme1",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Bonne réponse"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est au programme"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "terme2",
+          "fausses": [
+            "terme3"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Niveau 6e____",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "Confirmation"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Contenu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E14"
+        }
+      ]
+    }
+  }
+}

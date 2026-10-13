@@ -1,0 +1,785 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "red",
+          "en": "red",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "blue",
+          "en": "blue",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "green",
+          "en": "green",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "yellow",
+          "en": "yellow",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "orange",
+          "en": "orange",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "purple",
+          "en": "purple",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "pink",
+          "en": "pink",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "black",
+          "en": "black",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "white",
+          "en": "white",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "brown",
+          "en": "brown",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "one",
+          "en": "one",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "two",
+          "en": "two",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "three",
+          "en": "three",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "four",
+          "en": "four",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "five",
+          "en": "five",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "six",
+          "en": "six",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "seven",
+          "en": "seven",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "eight",
+          "en": "eight",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "nine",
+          "en": "nine",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "ten",
+          "en": "ten",
+          "theme": "Couleurs et chiffres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"red\" ?",
+          "bonne": "red",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"red\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"blue\" ?",
+          "bonne": "blue",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"blue\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"green\" ?",
+          "bonne": "green",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"green\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"yellow\" ?",
+          "bonne": "yellow",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"yellow\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"orange\" ?",
+          "bonne": "orange",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"orange\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"purple\" ?",
+          "bonne": "purple",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"purple\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pink\" ?",
+          "bonne": "pink",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"pink\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"black\" ?",
+          "bonne": "black",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"black\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"white\" ?",
+          "bonne": "white",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"white\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brown\" ?",
+          "bonne": "brown",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"brown\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"one\" ?",
+          "bonne": "one",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"one\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"two\" ?",
+          "bonne": "two",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"two\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"three\" ?",
+          "bonne": "three",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"three\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"four\" ?",
+          "bonne": "four",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"four\" car elle appartient au thème: Couleurs et chiffres"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "red",
+          "en": "red",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "blue",
+          "en": "blue",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "green",
+          "en": "green",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "yellow",
+          "en": "yellow",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "orange",
+          "en": "orange",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "purple",
+          "en": "purple",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "pink",
+          "en": "pink",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "black",
+          "en": "black",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "white",
+          "en": "white",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "brown",
+          "en": "brown",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "one",
+          "en": "one",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "two",
+          "en": "two",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "three",
+          "en": "three",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "four",
+          "en": "four",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "five",
+          "en": "five",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "six",
+          "en": "six",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "seven",
+          "en": "seven",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "eight",
+          "en": "eight",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "nine",
+          "en": "nine",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "ten",
+          "en": "ten",
+          "theme": "Couleurs et chiffres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"red\" ?",
+          "bonne": "red",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"red\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"blue\" ?",
+          "bonne": "blue",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"blue\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"green\" ?",
+          "bonne": "green",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"green\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"yellow\" ?",
+          "bonne": "yellow",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"yellow\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"orange\" ?",
+          "bonne": "orange",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"orange\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"purple\" ?",
+          "bonne": "purple",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"purple\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pink\" ?",
+          "bonne": "pink",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"pink\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"black\" ?",
+          "bonne": "black",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"black\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"white\" ?",
+          "bonne": "white",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"white\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brown\" ?",
+          "bonne": "brown",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"brown\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"one\" ?",
+          "bonne": "one",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"one\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"two\" ?",
+          "bonne": "two",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"two\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"three\" ?",
+          "bonne": "three",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"three\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"four\" ?",
+          "bonne": "four",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"four\" car elle appartient au thème: Couleurs et chiffres"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "red",
+          "en": "red",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "blue",
+          "en": "blue",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "green",
+          "en": "green",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "yellow",
+          "en": "yellow",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "orange",
+          "en": "orange",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "purple",
+          "en": "purple",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "pink",
+          "en": "pink",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "black",
+          "en": "black",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "white",
+          "en": "white",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "brown",
+          "en": "brown",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "one",
+          "en": "one",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "two",
+          "en": "two",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "three",
+          "en": "three",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "four",
+          "en": "four",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "five",
+          "en": "five",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "six",
+          "en": "six",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "seven",
+          "en": "seven",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "eight",
+          "en": "eight",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "nine",
+          "en": "nine",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "ten",
+          "en": "ten",
+          "theme": "Couleurs et chiffres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"red\" ?",
+          "bonne": "red",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"red\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"blue\" ?",
+          "bonne": "blue",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"blue\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"green\" ?",
+          "bonne": "green",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"green\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"yellow\" ?",
+          "bonne": "yellow",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"yellow\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"orange\" ?",
+          "bonne": "orange",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"orange\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"purple\" ?",
+          "bonne": "purple",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"purple\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pink\" ?",
+          "bonne": "pink",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"pink\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"black\" ?",
+          "bonne": "black",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"black\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"white\" ?",
+          "bonne": "white",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"white\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brown\" ?",
+          "bonne": "brown",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"brown\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"one\" ?",
+          "bonne": "one",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"one\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"two\" ?",
+          "bonne": "two",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"two\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"three\" ?",
+          "bonne": "three",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"three\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"four\" ?",
+          "bonne": "four",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"four\" car elle appartient au thème: Couleurs et chiffres"
+        }
+      ]
+    }
+  }
+}

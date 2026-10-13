@@ -1,0 +1,773 @@
+{
+  "niveau": "CM1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "Afrique",
+          "en": "Afrique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Asie",
+          "en": "Asie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Europe",
+          "en": "Europe (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Amérique",
+          "en": "Amérique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Océanie",
+          "en": "Océanie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "France",
+          "en": "France (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Japon",
+          "en": "Japon (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Brésil",
+          "en": "Brésil (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Égypte",
+          "en": "Égypte (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Australie",
+          "en": "Australie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "tropical",
+          "en": "tropical (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "désertique",
+          "en": "désertique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "tempéré",
+          "en": "tempéré (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "polaire",
+          "en": "polaire (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "population",
+          "en": "population (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "ville",
+          "en": "ville (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "campagne",
+          "en": "campagne (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "océan",
+          "en": "océan (continents et pays)",
+          "theme": "continents"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CM1",
+          "bonne": "Afrique",
+          "fausses": [
+            "Asie",
+            "Europe",
+            "Amérique"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: continents et pays",
+          "bonne": "Asie",
+          "fausses": [
+            "Europe",
+            "Amérique",
+            "Océanie"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Afrique",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Afrique",
+          "en": "Afrique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Asie",
+          "en": "Asie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Europe",
+          "en": "Europe (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Amérique",
+          "en": "Amérique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Océanie",
+          "en": "Océanie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "France",
+          "en": "France (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Japon",
+          "en": "Japon (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Brésil",
+          "en": "Brésil (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Égypte",
+          "en": "Égypte (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Australie",
+          "en": "Australie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "tropical",
+          "en": "tropical (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "désertique",
+          "en": "désertique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "tempéré",
+          "en": "tempéré (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "polaire",
+          "en": "polaire (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "population",
+          "en": "population (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "ville",
+          "en": "ville (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "campagne",
+          "en": "campagne (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "océan",
+          "en": "océan (continents et pays)",
+          "theme": "continents"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CM1",
+          "bonne": "Afrique",
+          "fausses": [
+            "Asie",
+            "Europe",
+            "Amérique"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: continents et pays",
+          "bonne": "Asie",
+          "fausses": [
+            "Europe",
+            "Amérique",
+            "Océanie"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Afrique",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "Afrique",
+          "en": "Afrique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Asie",
+          "en": "Asie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Europe",
+          "en": "Europe (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Amérique",
+          "en": "Amérique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Océanie",
+          "en": "Océanie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "France",
+          "en": "France (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Japon",
+          "en": "Japon (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Brésil",
+          "en": "Brésil (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Égypte",
+          "en": "Égypte (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "Australie",
+          "en": "Australie (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "tropical",
+          "en": "tropical (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "désertique",
+          "en": "désertique (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "tempéré",
+          "en": "tempéré (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "polaire",
+          "en": "polaire (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "population",
+          "en": "population (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "ville",
+          "en": "ville (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "campagne",
+          "en": "campagne (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (continents et pays)",
+          "theme": "continents"
+        },
+        {
+          "fr": "océan",
+          "en": "océan (continents et pays)",
+          "theme": "continents"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CM1",
+          "bonne": "Afrique",
+          "fausses": [
+            "Asie",
+            "Europe",
+            "Amérique"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: continents et pays",
+          "bonne": "Asie",
+          "fausses": [
+            "Europe",
+            "Amérique",
+            "Océanie"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Afrique",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

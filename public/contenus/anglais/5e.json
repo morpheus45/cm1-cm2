@@ -1,0 +1,785 @@
+{
+  "niveau": "5e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "pollution",
+          "en": "pollution",
+          "theme": "environnement"
+        },
+        {
+          "fr": "recycling",
+          "en": "recycling",
+          "theme": "environnement"
+        },
+        {
+          "fr": "energy",
+          "en": "energy",
+          "theme": "environnement"
+        },
+        {
+          "fr": "climate",
+          "en": "climate",
+          "theme": "environnement"
+        },
+        {
+          "fr": "sustainability",
+          "en": "sustainability",
+          "theme": "environnement"
+        },
+        {
+          "fr": "nature",
+          "en": "nature",
+          "theme": "environnement"
+        },
+        {
+          "fr": "ecosystem",
+          "en": "ecosystem",
+          "theme": "environnement"
+        },
+        {
+          "fr": "species",
+          "en": "species",
+          "theme": "environnement"
+        },
+        {
+          "fr": "conservation",
+          "en": "conservation",
+          "theme": "environnement"
+        },
+        {
+          "fr": "organic",
+          "en": "organic",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "environnement"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "environnement"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"pollution\" to French:",
+          "bonne": "pollution",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"pollution\" means \"pollution\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"recycling\" to French:",
+          "bonne": "recycling",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"recycling\" means \"recycling\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"energy\" to French:",
+          "bonne": "energy",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"energy\" means \"energy\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"climate\" to French:",
+          "bonne": "climate",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"climate\" means \"climate\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"sustainability\" to French:",
+          "bonne": "sustainability",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"sustainability\" means \"sustainability\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"nature\" to French:",
+          "bonne": "nature",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"nature\" means \"nature\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"ecosystem\" to French:",
+          "bonne": "ecosystem",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"ecosystem\" means \"ecosystem\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"species\" to French:",
+          "bonne": "species",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"species\" means \"species\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"conservation\" to French:",
+          "bonne": "conservation",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"conservation\" means \"conservation\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"organic\" to French:",
+          "bonne": "organic",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"organic\" means \"organic\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: environnement"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: environnement"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "art",
+          "en": "art",
+          "theme": "culture"
+        },
+        {
+          "fr": "music",
+          "en": "music",
+          "theme": "culture"
+        },
+        {
+          "fr": "literature",
+          "en": "literature",
+          "theme": "culture"
+        },
+        {
+          "fr": "history",
+          "en": "history",
+          "theme": "culture"
+        },
+        {
+          "fr": "tradition",
+          "en": "tradition",
+          "theme": "culture"
+        },
+        {
+          "fr": "celebration",
+          "en": "celebration",
+          "theme": "culture"
+        },
+        {
+          "fr": "museum",
+          "en": "museum",
+          "theme": "culture"
+        },
+        {
+          "fr": "theater",
+          "en": "theater",
+          "theme": "culture"
+        },
+        {
+          "fr": "cinema",
+          "en": "cinema",
+          "theme": "culture"
+        },
+        {
+          "fr": "gallery",
+          "en": "gallery",
+          "theme": "culture"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "culture"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "culture"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "culture"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "culture"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "culture"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "culture"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "culture"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "culture"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "culture"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "culture"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"art\" to French:",
+          "bonne": "art",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"art\" means \"art\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"music\" to French:",
+          "bonne": "music",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"music\" means \"music\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"literature\" to French:",
+          "bonne": "literature",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"literature\" means \"literature\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"history\" to French:",
+          "bonne": "history",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"history\" means \"history\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"tradition\" to French:",
+          "bonne": "tradition",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"tradition\" means \"tradition\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"celebration\" to French:",
+          "bonne": "celebration",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"celebration\" means \"celebration\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"museum\" to French:",
+          "bonne": "museum",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"museum\" means \"museum\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"theater\" to French:",
+          "bonne": "theater",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"theater\" means \"theater\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"cinema\" to French:",
+          "bonne": "cinema",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"cinema\" means \"cinema\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"gallery\" to French:",
+          "bonne": "gallery",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"gallery\" means \"gallery\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: culture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: culture"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "community",
+          "en": "community",
+          "theme": "société"
+        },
+        {
+          "fr": "government",
+          "en": "government",
+          "theme": "société"
+        },
+        {
+          "fr": "law",
+          "en": "law",
+          "theme": "société"
+        },
+        {
+          "fr": "rights",
+          "en": "rights",
+          "theme": "société"
+        },
+        {
+          "fr": "responsibility",
+          "en": "responsibility",
+          "theme": "société"
+        },
+        {
+          "fr": "equality",
+          "en": "equality",
+          "theme": "société"
+        },
+        {
+          "fr": "justice",
+          "en": "justice",
+          "theme": "société"
+        },
+        {
+          "fr": "peace",
+          "en": "peace",
+          "theme": "société"
+        },
+        {
+          "fr": "cooperation",
+          "en": "cooperation",
+          "theme": "société"
+        },
+        {
+          "fr": "citizenship",
+          "en": "citizenship",
+          "theme": "société"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "société"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "société"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "société"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "société"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "société"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "société"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "société"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "société"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "société"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "société"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"community\" to French:",
+          "bonne": "community",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"community\" means \"community\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"government\" to French:",
+          "bonne": "government",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"government\" means \"government\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"law\" to French:",
+          "bonne": "law",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"law\" means \"law\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"rights\" to French:",
+          "bonne": "rights",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"rights\" means \"rights\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"responsibility\" to French:",
+          "bonne": "responsibility",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"responsibility\" means \"responsibility\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"equality\" to French:",
+          "bonne": "equality",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"equality\" means \"equality\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"justice\" to French:",
+          "bonne": "justice",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"justice\" means \"justice\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"peace\" to French:",
+          "bonne": "peace",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"peace\" means \"peace\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"cooperation\" to French:",
+          "bonne": "cooperation",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"cooperation\" means \"cooperation\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"citizenship\" to French:",
+          "bonne": "citizenship",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"citizenship\" means \"citizenship\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: société"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: société"
+        }
+      ]
+    }
+  }
+}

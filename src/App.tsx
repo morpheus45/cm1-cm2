@@ -60,6 +60,8 @@ import { CorrectedSheetScreen } from './components/CorrectedSheetScreen';
 import { EvaluationDoneScreen, EvaluationScreen } from './components/EvaluationScreen';
 import { HomeScreen, type ClassEvaluations, type StartOptions } from './components/HomeScreen';
 import { InformationsScreen } from './components/InformationsScreen';
+import { LevelsPage } from './components/LevelsPage';
+import { PedagogieScreen } from './components/PedagogieScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { RecapScreen } from './components/RecapScreen';
 import { WrittenOperationScreen } from './components/WrittenOperationScreen';
@@ -75,7 +77,7 @@ const TeacherSpace = lazy(() =>
   import('./components/TeacherSpace').then((module) => ({ default: module.TeacherSpace }))
 );
 
-type Screen = 'home' | 'tables' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee' | 'evaluation' | 'evaluationFin';
+type Screen = 'home' | 'levels' | 'pedagogie' | 'tables' | 'question' | 'recap' | 'pose' | 'poseRecap' | 'corrigee' | 'evaluation' | 'evaluationFin';
 
 /** L'évaluation qu'un élève est en train de faire. */
 interface TakenEvaluation {
@@ -187,12 +189,34 @@ export function App() {
   // Les informations pour les familles : une page qu'on peut aussi ouvrir
   // directement, par un lien donné aux parents.
   const [infoView, setInfoView] = useState(() => window.location.hash === '#informations');
+  // Niveau scolaire depuis l'URL : #ce1, #ce2, #cm1, #cm2, #6e, #5e, #4e, #3e
+  const [selectedLevel, setSelectedLevel] = useState<Level | null>(() => {
+    const hash = window.location.hash.slice(1);
+    const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
+    const lower = hash.toLowerCase();
+    return LEVELS.find(l => l.toLowerCase() === lower) ?? null;
+  });
 
   useEffect(() => {
     const sync = () => {
-      setTeacherView(window.location.hash === '#maitresse');
-      setInfoView(window.location.hash === '#informations');
+      const hash = window.location.hash.slice(1);
+      const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
+      const lower = hash.toLowerCase();
+      const level = LEVELS.find(l => l.toLowerCase() === lower);
+
+      if (level) {
+        setSelectedLevel(level);
+        setScreen('pedagogie');
+        setTeacherView(false);
+        setInfoView(false);
+      } else {
+        setTeacherView(hash === 'maitresse');
+        setInfoView(hash === 'informations');
+        setSelectedLevel(null);
+      }
     };
+
+    sync(); // Sync on mount
     window.addEventListener('hashchange', sync);
     return () => window.removeEventListener('hashchange', sync);
   }, []);
@@ -462,6 +486,10 @@ export function App() {
     );
   }
 
+  if (screen === 'levels') {
+    return <LevelsPage />;
+  }
+
   if (teacherView) {
     return (
       <Suspense fallback={<p className="min-h-screen py-16 text-center text-encre-douce">Chargement…</p>}>
@@ -494,10 +522,30 @@ export function App() {
       evaluationStateOf={evaluationStateOf}
       onStartEvaluation={startEvaluation}
       onRefreshEvaluations={refreshEvaluations}
+      onPedagogie={() => setScreen('pedagogie')}
+      onLevels={() => setScreen('levels')}
     />
   );
 
   if (screen === 'home') return home;
+
+  if (screen === 'pedagogie') {
+    return (
+      <div>
+        <button
+          onClick={() => {
+            window.location.hash = '';
+            setScreen('home');
+            setSelectedLevel(null);
+          }}
+          className="fixed top-4 left-4 z-50 px-4 py-2 bg-white text-purple-600 border-2 border-purple-600 rounded-lg hover:bg-purple-50 font-semibold transition"
+        >
+          ← Retour
+        </button>
+        <PedagogieScreen initialLevel={selectedLevel ?? undefined} />
+      </div>
+    );
+  }
 
   if (screen === 'evaluation' && taking) {
     return (

@@ -1,0 +1,785 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "computer",
+          "en": "computer",
+          "theme": "technologie"
+        },
+        {
+          "fr": "phone",
+          "en": "phone",
+          "theme": "technologie"
+        },
+        {
+          "fr": "tablet",
+          "en": "tablet",
+          "theme": "technologie"
+        },
+        {
+          "fr": "internet",
+          "en": "internet",
+          "theme": "technologie"
+        },
+        {
+          "fr": "email",
+          "en": "email",
+          "theme": "technologie"
+        },
+        {
+          "fr": "website",
+          "en": "website",
+          "theme": "technologie"
+        },
+        {
+          "fr": "software",
+          "en": "software",
+          "theme": "technologie"
+        },
+        {
+          "fr": "hardware",
+          "en": "hardware",
+          "theme": "technologie"
+        },
+        {
+          "fr": "keyboard",
+          "en": "keyboard",
+          "theme": "technologie"
+        },
+        {
+          "fr": "screen",
+          "en": "screen",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "technologie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"computer\" to French:",
+          "bonne": "computer",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"computer\" means \"computer\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"phone\" to French:",
+          "bonne": "phone",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"phone\" means \"phone\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"tablet\" to French:",
+          "bonne": "tablet",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"tablet\" means \"tablet\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"internet\" to French:",
+          "bonne": "internet",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"internet\" means \"internet\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"email\" to French:",
+          "bonne": "email",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"email\" means \"email\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"website\" to French:",
+          "bonne": "website",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"website\" means \"website\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"software\" to French:",
+          "bonne": "software",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"software\" means \"software\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"hardware\" to French:",
+          "bonne": "hardware",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"hardware\" means \"hardware\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"keyboard\" to French:",
+          "bonne": "keyboard",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"keyboard\" means \"keyboard\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"screen\" to French:",
+          "bonne": "screen",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"screen\" means \"screen\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: technologie"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "airport",
+          "en": "airport",
+          "theme": "voyages"
+        },
+        {
+          "fr": "train station",
+          "en": "train station",
+          "theme": "voyages"
+        },
+        {
+          "fr": "hotel",
+          "en": "hotel",
+          "theme": "voyages"
+        },
+        {
+          "fr": "country",
+          "en": "country",
+          "theme": "voyages"
+        },
+        {
+          "fr": "city",
+          "en": "city",
+          "theme": "voyages"
+        },
+        {
+          "fr": "village",
+          "en": "village",
+          "theme": "voyages"
+        },
+        {
+          "fr": "map",
+          "en": "map",
+          "theme": "voyages"
+        },
+        {
+          "fr": "ticket",
+          "en": "ticket",
+          "theme": "voyages"
+        },
+        {
+          "fr": "luggage",
+          "en": "luggage",
+          "theme": "voyages"
+        },
+        {
+          "fr": "passport",
+          "en": "passport",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "voyages"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "voyages"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"airport\" to French:",
+          "bonne": "airport",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"airport\" means \"airport\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"train station\" to French:",
+          "bonne": "train station",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"train station\" means \"train station\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"hotel\" to French:",
+          "bonne": "hotel",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"hotel\" means \"hotel\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"country\" to French:",
+          "bonne": "country",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"country\" means \"country\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"city\" to French:",
+          "bonne": "city",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"city\" means \"city\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"village\" to French:",
+          "bonne": "village",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"village\" means \"village\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"map\" to French:",
+          "bonne": "map",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"map\" means \"map\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"ticket\" to French:",
+          "bonne": "ticket",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"ticket\" means \"ticket\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"luggage\" to French:",
+          "bonne": "luggage",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"luggage\" means \"luggage\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"passport\" to French:",
+          "bonne": "passport",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"passport\" means \"passport\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: voyages"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: voyages"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "hospital",
+          "en": "hospital",
+          "theme": "santé"
+        },
+        {
+          "fr": "doctor",
+          "en": "doctor",
+          "theme": "santé"
+        },
+        {
+          "fr": "medicine",
+          "en": "medicine",
+          "theme": "santé"
+        },
+        {
+          "fr": "health",
+          "en": "health",
+          "theme": "santé"
+        },
+        {
+          "fr": "exercise",
+          "en": "exercise",
+          "theme": "santé"
+        },
+        {
+          "fr": "sleep",
+          "en": "sleep",
+          "theme": "santé"
+        },
+        {
+          "fr": "nutrition",
+          "en": "nutrition",
+          "theme": "santé"
+        },
+        {
+          "fr": "illness",
+          "en": "illness",
+          "theme": "santé"
+        },
+        {
+          "fr": "injury",
+          "en": "injury",
+          "theme": "santé"
+        },
+        {
+          "fr": "care",
+          "en": "care",
+          "theme": "santé"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "santé"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "santé"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "santé"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "santé"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "santé"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "santé"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "santé"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "santé"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "santé"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "santé"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"hospital\" to French:",
+          "bonne": "hospital",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"hospital\" means \"hospital\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"doctor\" to French:",
+          "bonne": "doctor",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"doctor\" means \"doctor\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"medicine\" to French:",
+          "bonne": "medicine",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"medicine\" means \"medicine\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"health\" to French:",
+          "bonne": "health",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"health\" means \"health\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"exercise\" to French:",
+          "bonne": "exercise",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"exercise\" means \"exercise\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"sleep\" to French:",
+          "bonne": "sleep",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"sleep\" means \"sleep\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"nutrition\" to French:",
+          "bonne": "nutrition",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"nutrition\" means \"nutrition\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"illness\" to French:",
+          "bonne": "illness",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"illness\" means \"illness\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"injury\" to French:",
+          "bonne": "injury",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"injury\" means \"injury\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"care\" to French:",
+          "bonne": "care",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"care\" means \"care\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: santé"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: santé"
+        }
+      ]
+    }
+  }
+}

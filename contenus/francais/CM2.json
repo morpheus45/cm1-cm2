@@ -1,0 +1,654 @@
+{
+  "niveau": "CM2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "pronom personnel",
+          "en": "je, tu",
+          "theme": "je,"
+        },
+        {
+          "fr": "pronom possessif",
+          "en": "mon, ton",
+          "theme": "mon,"
+        },
+        {
+          "fr": "pronom démonstratif",
+          "en": "ce, cela",
+          "theme": "ce,"
+        },
+        {
+          "fr": "adjectif possessif",
+          "en": "mon, ton",
+          "theme": "mon,"
+        },
+        {
+          "fr": "adjectif démonstratif",
+          "en": "ce, cet",
+          "theme": "ce,"
+        },
+        {
+          "fr": "négation",
+          "en": "ne...pas",
+          "theme": "ne...pas"
+        },
+        {
+          "fr": "interrogation",
+          "en": "est-ce que",
+          "theme": "est-ce"
+        },
+        {
+          "fr": "exclamation",
+          "en": "wow",
+          "theme": "wow"
+        },
+        {
+          "fr": "imparfait",
+          "en": "habitude",
+          "theme": "habitude"
+        },
+        {
+          "fr": "passé récent",
+          "en": "vient de",
+          "theme": "vient"
+        },
+        {
+          "fr": "futur proche",
+          "en": "va+inf",
+          "theme": "va+inf"
+        },
+        {
+          "fr": "présent continu",
+          "en": "être+ant",
+          "theme": "être+ant"
+        },
+        {
+          "fr": "accord sujet-verbe",
+          "en": "concordance",
+          "theme": "concordance"
+        },
+        {
+          "fr": "accord adjectif-nom",
+          "en": "nombre genre",
+          "theme": "nombre"
+        },
+        {
+          "fr": "inversion",
+          "en": "verbe avant sujet",
+          "theme": "verbe"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Pronom perso='je' ?",
+          "bonne": "1ère singulier",
+          "fausses": [
+            "2e",
+            "3e"
+          ],
+          "explication": "pronom"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Adjectif poss='mon' ou ___",
+          "bonne": "ma",
+          "fausses": [
+            "son",
+            "sa"
+          ],
+          "explication": "adjectif"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Démonstratif='ce' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "démonstratif"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Négation='ne...pas'",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "négation"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Interrogation='___ tu ?'",
+          "bonne": "est-ce que",
+          "fausses": [
+            "pourquoi",
+            "comment"
+          ],
+          "explication": "interrogation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Exclamation=?",
+          "bonne": "wow",
+          "fausses": [
+            "oui",
+            "non"
+          ],
+          "explication": "exclamation"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Imparfait=habitude",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "imparfait"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Passé récent='___ mangé'",
+          "bonne": "vient de",
+          "fausses": [
+            "va",
+            "est"
+          ],
+          "explication": "passé"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Futur proche='va ___' ?",
+          "bonne": "infinitif",
+          "fausses": [
+            "participe",
+            "participe passé"
+          ],
+          "explication": "futur"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Présent continu='être+ant'",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "présent"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Accord sujet-verbe ?",
+          "bonne": "concordance",
+          "fausses": [
+            "relation",
+            "séparation"
+          ],
+          "explication": "accord"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Accord adj-nom=nombre ___",
+          "bonne": "genre",
+          "fausses": [
+            "temps",
+            "personne"
+          ],
+          "explication": "accord"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Inversion='mange-tu' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "inversion"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Pronom=remplace",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "pronom"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "phrase simple",
+          "en": "un verbe",
+          "theme": "un"
+        },
+        {
+          "fr": "phrase complexe",
+          "en": "plusieurs",
+          "theme": "plusieurs"
+        },
+        {
+          "fr": "proposition indépendante",
+          "en": "autonome",
+          "theme": "autonome"
+        },
+        {
+          "fr": "proposition subordonnée",
+          "en": "dépend",
+          "theme": "dépend"
+        },
+        {
+          "fr": "conjonction de coordination",
+          "en": "et, ou",
+          "theme": "et,"
+        },
+        {
+          "fr": "conjonction de subordination",
+          "en": "que, si",
+          "theme": "que,"
+        },
+        {
+          "fr": "virgule",
+          "en": "pause",
+          "theme": "pause"
+        },
+        {
+          "fr": "point-virgule",
+          "en": "pause forte",
+          "theme": "pause"
+        },
+        {
+          "fr": "deux-points",
+          "en": "introduction",
+          "theme": "introduction"
+        },
+        {
+          "fr": "guillemets",
+          "en": "dialogue",
+          "theme": "dialogue"
+        },
+        {
+          "fr": "tiret",
+          "en": "séparation",
+          "theme": "séparation"
+        },
+        {
+          "fr": "parenthèses",
+          "en": "précision",
+          "theme": "précision"
+        },
+        {
+          "fr": "abréviation",
+          "en": "raccourci",
+          "theme": "raccourci"
+        },
+        {
+          "fr": "élision",
+          "en": "apostrophe",
+          "theme": "apostrophe"
+        },
+        {
+          "fr": "liaison",
+          "en": "prononciation",
+          "theme": "prononciation"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Phrase simple=?",
+          "bonne": "un verbe",
+          "fausses": [
+            "deux verbes",
+            "trois verbes"
+          ],
+          "explication": "phrase"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Phrase complexe=___ verbes",
+          "bonne": "plusieurs",
+          "fausses": [
+            "un",
+            "zéro"
+          ],
+          "explication": "phrase"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Prop indép=?",
+          "bonne": "autonome",
+          "fausses": [
+            "dépend",
+            "introduit"
+          ],
+          "explication": "prop"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Prop subord=dépend",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "subord"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Conj coord='et' ou ___",
+          "bonne": "ou",
+          "fausses": [
+            "que",
+            "si"
+          ],
+          "explication": "conj"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Conj subord='que' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "subord"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Virgule=?",
+          "bonne": "pause",
+          "fausses": [
+            "fin",
+            "début"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Point-virgule=pause ___",
+          "bonne": "forte",
+          "fausses": [
+            "légère",
+            "moyenne"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Deux-points=?",
+          "bonne": "introduction",
+          "fausses": [
+            "fin",
+            "pause"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Guillemets=dialogue",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "guillemets"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Tiret=___",
+          "bonne": "séparation",
+          "fausses": [
+            "pause",
+            "introduction"
+          ],
+          "explication": "tiret"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Parenthèses=?",
+          "bonne": "précision",
+          "fausses": [
+            "séparation",
+            "fin"
+          ],
+          "explication": "parenthèses"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Abréviation=raccourci",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "abréviation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Élision=?",
+          "bonne": "apostrophe",
+          "fausses": [
+            "tiret",
+            "virgule"
+          ],
+          "explication": "élision"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "auteur",
+          "en": "écrit",
+          "theme": "écrit"
+        },
+        {
+          "fr": "narrateur",
+          "en": "raconte",
+          "theme": "raconte"
+        },
+        {
+          "fr": "personnage",
+          "en": "acteur",
+          "theme": "acteur"
+        },
+        {
+          "fr": "action",
+          "en": "événement",
+          "theme": "événement"
+        },
+        {
+          "fr": "lieu",
+          "en": "où",
+          "theme": "où"
+        },
+        {
+          "fr": "temps",
+          "en": "quand",
+          "theme": "quand"
+        },
+        {
+          "fr": "intrigue",
+          "en": "plot",
+          "theme": "plot"
+        },
+        {
+          "fr": "dénouement",
+          "en": "fin",
+          "theme": "fin"
+        },
+        {
+          "fr": "climax",
+          "en": "tension",
+          "theme": "tension"
+        },
+        {
+          "fr": "exposition",
+          "en": "début",
+          "theme": "début"
+        },
+        {
+          "fr": "chronologie",
+          "en": "ordre",
+          "theme": "ordre"
+        },
+        {
+          "fr": "flashback",
+          "en": "retour",
+          "theme": "retour"
+        },
+        {
+          "fr": "anticipation",
+          "en": "avant",
+          "theme": "avant"
+        },
+        {
+          "fr": "symbolique",
+          "en": "sens caché",
+          "theme": "sens"
+        },
+        {
+          "fr": "thème",
+          "en": "sujet",
+          "theme": "sujet"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Auteur=?",
+          "bonne": "écrit livre",
+          "fausses": [
+            "raconte",
+            "lit"
+          ],
+          "explication": "auteur"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Narrateur=___",
+          "bonne": "raconte",
+          "fausses": [
+            "écrit",
+            "personnage"
+          ],
+          "explication": "narrateur"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Personnage=?",
+          "bonne": "acteur",
+          "fausses": [
+            "auteur",
+            "lecteur"
+          ],
+          "explication": "personnage"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Action=événement",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "action"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Lieu=___",
+          "bonne": "où",
+          "fausses": [
+            "quand",
+            "qui"
+          ],
+          "explication": "lieu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Temps=?",
+          "bonne": "quand",
+          "fausses": [
+            "où",
+            "qui"
+          ],
+          "explication": "temps"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Intrigue=plot",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "intrigue"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Dénouement=?",
+          "bonne": "fin",
+          "fausses": [
+            "début",
+            "milieu"
+          ],
+          "explication": "dénouement"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Climax=___ tension",
+          "bonne": "point",
+          "fausses": [
+            "ligne",
+            "moment"
+          ],
+          "explication": "climax"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Exposition=?",
+          "bonne": "début",
+          "fausses": [
+            "fin",
+            "milieu"
+          ],
+          "explication": "exposition"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Chronologie=ordre",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "chronologie"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Flashback=?",
+          "bonne": "retour passé",
+          "fausses": [
+            "futur",
+            "présent"
+          ],
+          "explication": "flashback"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Anticipation=avant ___",
+          "bonne": "événement",
+          "fausses": [
+            "passé",
+            "présent"
+          ],
+          "explication": "anticipation"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Symbolique=sens caché",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "symbolique"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "droit",
+          "en": "droit",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "devoir",
+          "en": "devoir",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "liberté",
+          "en": "liberté",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "égalité",
+          "en": "égalité",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "justice",
+          "en": "justice",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "égalité fille-garçon",
+          "en": "égalité fille-garçon",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "discrimination",
+          "en": "discrimination",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "maltraitance",
+          "en": "maltraitance",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "protection",
+          "en": "protection",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "loi",
+          "en": "loi",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "police",
+          "en": "police",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "pompier",
+          "en": "pompier",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "maire",
+          "en": "maire",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "citoyen",
+          "en": "citoyen",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "nation",
+          "en": "nation",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "drapeau",
+          "en": "drapeau",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "hymne",
+          "en": "hymne",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "République",
+          "en": "République",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "démocratie",
+          "en": "démocratie",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "vote",
+          "en": "vote",
+          "theme": "Droits et responsabilités"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"droit\" ?",
+          "bonne": "droit",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"droit\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"devoir\" ?",
+          "bonne": "devoir",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"devoir\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"liberté\" ?",
+          "bonne": "liberté",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"liberté\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égalité\" ?",
+          "bonne": "égalité",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"égalité\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"justice\" ?",
+          "bonne": "justice",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"justice\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égalité fille-garçon\" ?",
+          "bonne": "égalité fille-garçon",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"égalité fille-garçon\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"discrimination\" ?",
+          "bonne": "discrimination",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"discrimination\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maltraitance\" ?",
+          "bonne": "maltraitance",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"maltraitance\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"protection\" ?",
+          "bonne": "protection",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"protection\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"loi\" ?",
+          "bonne": "loi",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"loi\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"police\" ?",
+          "bonne": "police",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"police\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pompier\" ?",
+          "bonne": "pompier",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"pompier\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maire\" ?",
+          "bonne": "maire",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"maire\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"citoyen\" ?",
+          "bonne": "citoyen",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"citoyen\" car elle appartient au thème: Droits et responsabilités"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "droit",
+          "en": "droit",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "devoir",
+          "en": "devoir",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "liberté",
+          "en": "liberté",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "égalité",
+          "en": "égalité",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "justice",
+          "en": "justice",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "égalité fille-garçon",
+          "en": "égalité fille-garçon",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "discrimination",
+          "en": "discrimination",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "maltraitance",
+          "en": "maltraitance",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "protection",
+          "en": "protection",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "loi",
+          "en": "loi",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "police",
+          "en": "police",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "pompier",
+          "en": "pompier",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "maire",
+          "en": "maire",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "citoyen",
+          "en": "citoyen",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "nation",
+          "en": "nation",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "drapeau",
+          "en": "drapeau",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "hymne",
+          "en": "hymne",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "République",
+          "en": "République",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "démocratie",
+          "en": "démocratie",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "vote",
+          "en": "vote",
+          "theme": "Droits et responsabilités"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"droit\" ?",
+          "bonne": "droit",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"droit\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"devoir\" ?",
+          "bonne": "devoir",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"devoir\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"liberté\" ?",
+          "bonne": "liberté",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"liberté\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égalité\" ?",
+          "bonne": "égalité",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"égalité\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"justice\" ?",
+          "bonne": "justice",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"justice\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égalité fille-garçon\" ?",
+          "bonne": "égalité fille-garçon",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"égalité fille-garçon\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"discrimination\" ?",
+          "bonne": "discrimination",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"discrimination\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maltraitance\" ?",
+          "bonne": "maltraitance",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"maltraitance\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"protection\" ?",
+          "bonne": "protection",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"protection\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"loi\" ?",
+          "bonne": "loi",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"loi\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"police\" ?",
+          "bonne": "police",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"police\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pompier\" ?",
+          "bonne": "pompier",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"pompier\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maire\" ?",
+          "bonne": "maire",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"maire\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"citoyen\" ?",
+          "bonne": "citoyen",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"citoyen\" car elle appartient au thème: Droits et responsabilités"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "droit",
+          "en": "droit",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "devoir",
+          "en": "devoir",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "liberté",
+          "en": "liberté",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "égalité",
+          "en": "égalité",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "justice",
+          "en": "justice",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "égalité fille-garçon",
+          "en": "égalité fille-garçon",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "discrimination",
+          "en": "discrimination",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "maltraitance",
+          "en": "maltraitance",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "protection",
+          "en": "protection",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "loi",
+          "en": "loi",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "police",
+          "en": "police",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "pompier",
+          "en": "pompier",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "maire",
+          "en": "maire",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "citoyen",
+          "en": "citoyen",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "nation",
+          "en": "nation",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "drapeau",
+          "en": "drapeau",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "hymne",
+          "en": "hymne",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "République",
+          "en": "République",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "démocratie",
+          "en": "démocratie",
+          "theme": "Droits et responsabilités"
+        },
+        {
+          "fr": "vote",
+          "en": "vote",
+          "theme": "Droits et responsabilités"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"droit\" ?",
+          "bonne": "droit",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"droit\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"devoir\" ?",
+          "bonne": "devoir",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"devoir\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"liberté\" ?",
+          "bonne": "liberté",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"liberté\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égalité\" ?",
+          "bonne": "égalité",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"égalité\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"justice\" ?",
+          "bonne": "justice",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"justice\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égalité fille-garçon\" ?",
+          "bonne": "égalité fille-garçon",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"égalité fille-garçon\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"discrimination\" ?",
+          "bonne": "discrimination",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"discrimination\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maltraitance\" ?",
+          "bonne": "maltraitance",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"maltraitance\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"protection\" ?",
+          "bonne": "protection",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"protection\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"loi\" ?",
+          "bonne": "loi",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"loi\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"police\" ?",
+          "bonne": "police",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"police\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pompier\" ?",
+          "bonne": "pompier",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"pompier\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maire\" ?",
+          "bonne": "maire",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"maire\" car elle appartient au thème: Droits et responsabilités"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"citoyen\" ?",
+          "bonne": "citoyen",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"citoyen\" car elle appartient au thème: Droits et responsabilités"
+        }
+      ]
+    }
+  }
+}

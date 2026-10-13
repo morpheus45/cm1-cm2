@@ -34,6 +34,12 @@ export const CONTENT_FROM: Record<Domain, Partial<Record<Level, Trimester>>> = {
   cartes: { CM1: 1, CM2: 1 },
   habiter: { CM1: 1, CM2: 1 },
   'mots-geographie': { CM1: 1, CM2: 1 },
+  'vocabulaire-anglais': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
+  'grammaire-anglais': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
+  'sciences-vivant': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
+  'sciences-physique': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
+  'emc-citoyennete': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
+  'emc-droits': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
 };
 
 /** La notion a-t-elle des questions pour ce niveau, à ce trimestre ? */

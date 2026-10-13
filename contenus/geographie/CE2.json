@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "France",
+          "en": "France",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "région",
+          "en": "région",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "département",
+          "en": "département",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "commune",
+          "en": "commune",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "bourg",
+          "en": "bourg",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "métropole",
+          "en": "métropole",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "capitale",
+          "en": "capitale",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "nord",
+          "en": "nord",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "sud",
+          "en": "sud",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "ouest",
+          "en": "ouest",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "route",
+          "en": "route",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "chemin",
+          "en": "chemin",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "pont",
+          "en": "pont",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "gare",
+          "en": "gare",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "port",
+          "en": "port",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "vallée",
+          "en": "vallée",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "lac",
+          "en": "lac",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "frontière",
+          "en": "frontière",
+          "theme": "Lieux et directions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"France\" ?",
+          "bonne": "France",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"France\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"région\" ?",
+          "bonne": "région",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"région\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"département\" ?",
+          "bonne": "département",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"département\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"commune\" ?",
+          "bonne": "commune",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"commune\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"bourg\" ?",
+          "bonne": "bourg",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"bourg\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"métropole\" ?",
+          "bonne": "métropole",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"métropole\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"capitale\" ?",
+          "bonne": "capitale",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"capitale\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"nord\" ?",
+          "bonne": "nord",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"nord\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sud\" ?",
+          "bonne": "sud",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"sud\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ouest\" ?",
+          "bonne": "ouest",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"ouest\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"route\" ?",
+          "bonne": "route",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"route\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chemin\" ?",
+          "bonne": "chemin",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"chemin\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pont\" ?",
+          "bonne": "pont",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"pont\" car elle appartient au thème: Lieux et directions"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "France",
+          "en": "France",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "région",
+          "en": "région",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "département",
+          "en": "département",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "commune",
+          "en": "commune",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "bourg",
+          "en": "bourg",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "métropole",
+          "en": "métropole",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "capitale",
+          "en": "capitale",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "nord",
+          "en": "nord",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "sud",
+          "en": "sud",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "ouest",
+          "en": "ouest",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "route",
+          "en": "route",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "chemin",
+          "en": "chemin",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "pont",
+          "en": "pont",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "gare",
+          "en": "gare",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "port",
+          "en": "port",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "vallée",
+          "en": "vallée",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "lac",
+          "en": "lac",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "frontière",
+          "en": "frontière",
+          "theme": "Lieux et directions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"France\" ?",
+          "bonne": "France",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"France\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"région\" ?",
+          "bonne": "région",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"région\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"département\" ?",
+          "bonne": "département",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"département\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"commune\" ?",
+          "bonne": "commune",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"commune\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"bourg\" ?",
+          "bonne": "bourg",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"bourg\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"métropole\" ?",
+          "bonne": "métropole",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"métropole\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"capitale\" ?",
+          "bonne": "capitale",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"capitale\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"nord\" ?",
+          "bonne": "nord",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"nord\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sud\" ?",
+          "bonne": "sud",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"sud\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ouest\" ?",
+          "bonne": "ouest",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"ouest\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"route\" ?",
+          "bonne": "route",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"route\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chemin\" ?",
+          "bonne": "chemin",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"chemin\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pont\" ?",
+          "bonne": "pont",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"pont\" car elle appartient au thème: Lieux et directions"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "France",
+          "en": "France",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "région",
+          "en": "région",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "département",
+          "en": "département",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "commune",
+          "en": "commune",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "bourg",
+          "en": "bourg",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "métropole",
+          "en": "métropole",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "capitale",
+          "en": "capitale",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "nord",
+          "en": "nord",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "sud",
+          "en": "sud",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "ouest",
+          "en": "ouest",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "route",
+          "en": "route",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "chemin",
+          "en": "chemin",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "pont",
+          "en": "pont",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "gare",
+          "en": "gare",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "port",
+          "en": "port",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "vallée",
+          "en": "vallée",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "lac",
+          "en": "lac",
+          "theme": "Lieux et directions"
+        },
+        {
+          "fr": "frontière",
+          "en": "frontière",
+          "theme": "Lieux et directions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"France\" ?",
+          "bonne": "France",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"France\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"région\" ?",
+          "bonne": "région",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"région\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"département\" ?",
+          "bonne": "département",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"département\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"commune\" ?",
+          "bonne": "commune",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"commune\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"bourg\" ?",
+          "bonne": "bourg",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"bourg\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"métropole\" ?",
+          "bonne": "métropole",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"métropole\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"capitale\" ?",
+          "bonne": "capitale",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"capitale\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"nord\" ?",
+          "bonne": "nord",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"nord\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sud\" ?",
+          "bonne": "sud",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"sud\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ouest\" ?",
+          "bonne": "ouest",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"ouest\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"route\" ?",
+          "bonne": "route",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"route\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chemin\" ?",
+          "bonne": "chemin",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"chemin\" car elle appartient au thème: Lieux et directions"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pont\" ?",
+          "bonne": "pont",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"pont\" car elle appartient au thème: Lieux et directions"
+        }
+      ]
+    }
+  }
+}

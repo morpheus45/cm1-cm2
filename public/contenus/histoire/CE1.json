@@ -1,0 +1,785 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "hier",
+          "en": "hier",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "aujourd'hui",
+          "en": "aujourd'hui",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "demain",
+          "en": "demain",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "matin",
+          "en": "matin",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "midi",
+          "en": "midi",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "soir",
+          "en": "soir",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "jour",
+          "en": "jour",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "semaine",
+          "en": "semaine",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "mois",
+          "en": "mois",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "année",
+          "en": "année",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "saison",
+          "en": "saison",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "printemps",
+          "en": "printemps",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "été",
+          "en": "été",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "automne",
+          "en": "automne",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "hiver",
+          "en": "hiver",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "passé",
+          "en": "passé",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "présent",
+          "en": "présent",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "futur",
+          "en": "futur",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "ancien",
+          "en": "ancien",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "récent",
+          "en": "récent",
+          "theme": "Temps et événements"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hier\" ?",
+          "bonne": "hier",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"hier\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"aujourd'hui\" ?",
+          "bonne": "aujourd'hui",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"aujourd'hui\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"demain\" ?",
+          "bonne": "demain",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"demain\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"matin\" ?",
+          "bonne": "matin",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"matin\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"midi\" ?",
+          "bonne": "midi",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"midi\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"soir\" ?",
+          "bonne": "soir",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"soir\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"jour\" ?",
+          "bonne": "jour",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"jour\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"semaine\" ?",
+          "bonne": "semaine",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"semaine\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mois\" ?",
+          "bonne": "mois",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"mois\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"année\" ?",
+          "bonne": "année",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"année\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"saison\" ?",
+          "bonne": "saison",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"saison\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"printemps\" ?",
+          "bonne": "printemps",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"printemps\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"été\" ?",
+          "bonne": "été",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"été\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"automne\" ?",
+          "bonne": "automne",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"automne\" car elle appartient au thème: Temps et événements"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "hier",
+          "en": "hier",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "aujourd'hui",
+          "en": "aujourd'hui",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "demain",
+          "en": "demain",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "matin",
+          "en": "matin",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "midi",
+          "en": "midi",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "soir",
+          "en": "soir",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "jour",
+          "en": "jour",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "semaine",
+          "en": "semaine",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "mois",
+          "en": "mois",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "année",
+          "en": "année",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "saison",
+          "en": "saison",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "printemps",
+          "en": "printemps",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "été",
+          "en": "été",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "automne",
+          "en": "automne",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "hiver",
+          "en": "hiver",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "passé",
+          "en": "passé",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "présent",
+          "en": "présent",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "futur",
+          "en": "futur",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "ancien",
+          "en": "ancien",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "récent",
+          "en": "récent",
+          "theme": "Temps et événements"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hier\" ?",
+          "bonne": "hier",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"hier\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"aujourd'hui\" ?",
+          "bonne": "aujourd'hui",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"aujourd'hui\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"demain\" ?",
+          "bonne": "demain",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"demain\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"matin\" ?",
+          "bonne": "matin",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"matin\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"midi\" ?",
+          "bonne": "midi",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"midi\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"soir\" ?",
+          "bonne": "soir",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"soir\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"jour\" ?",
+          "bonne": "jour",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"jour\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"semaine\" ?",
+          "bonne": "semaine",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"semaine\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mois\" ?",
+          "bonne": "mois",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"mois\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"année\" ?",
+          "bonne": "année",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"année\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"saison\" ?",
+          "bonne": "saison",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"saison\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"printemps\" ?",
+          "bonne": "printemps",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"printemps\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"été\" ?",
+          "bonne": "été",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"été\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"automne\" ?",
+          "bonne": "automne",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"automne\" car elle appartient au thème: Temps et événements"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "hier",
+          "en": "hier",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "aujourd'hui",
+          "en": "aujourd'hui",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "demain",
+          "en": "demain",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "matin",
+          "en": "matin",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "midi",
+          "en": "midi",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "soir",
+          "en": "soir",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "jour",
+          "en": "jour",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "semaine",
+          "en": "semaine",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "mois",
+          "en": "mois",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "année",
+          "en": "année",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "saison",
+          "en": "saison",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "printemps",
+          "en": "printemps",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "été",
+          "en": "été",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "automne",
+          "en": "automne",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "hiver",
+          "en": "hiver",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "passé",
+          "en": "passé",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "présent",
+          "en": "présent",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "futur",
+          "en": "futur",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "ancien",
+          "en": "ancien",
+          "theme": "Temps et événements"
+        },
+        {
+          "fr": "récent",
+          "en": "récent",
+          "theme": "Temps et événements"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hier\" ?",
+          "bonne": "hier",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"hier\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"aujourd'hui\" ?",
+          "bonne": "aujourd'hui",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"aujourd'hui\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"demain\" ?",
+          "bonne": "demain",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"demain\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"matin\" ?",
+          "bonne": "matin",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"matin\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"midi\" ?",
+          "bonne": "midi",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"midi\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"soir\" ?",
+          "bonne": "soir",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"soir\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"jour\" ?",
+          "bonne": "jour",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"jour\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"semaine\" ?",
+          "bonne": "semaine",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"semaine\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mois\" ?",
+          "bonne": "mois",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"mois\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"année\" ?",
+          "bonne": "année",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"année\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"saison\" ?",
+          "bonne": "saison",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"saison\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"printemps\" ?",
+          "bonne": "printemps",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"printemps\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"été\" ?",
+          "bonne": "été",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"été\" car elle appartient au thème: Temps et événements"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"automne\" ?",
+          "bonne": "automne",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"automne\" car elle appartient au thème: Temps et événements"
+        }
+      ]
+    }
+  }
+}

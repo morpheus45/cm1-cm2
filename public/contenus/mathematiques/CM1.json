@@ -1,0 +1,773 @@
+{
+  "niveau": "CM1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "fraction",
+          "en": "fraction (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "numérateur",
+          "en": "numérateur (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "dénominateur",
+          "en": "dénominateur (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "centième",
+          "en": "centième (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "dixième",
+          "en": "dixième (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "pourcentage",
+          "en": "pourcentage (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "arrondir",
+          "en": "arrondir (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "comparer",
+          "en": "comparer (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "ordonner",
+          "en": "ordonner (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "pair",
+          "en": "pair (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "impair",
+          "en": "impair (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "aire",
+          "en": "aire (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "périmètre",
+          "en": "périmètre (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "double",
+          "en": "double (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "fractions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CM1",
+          "bonne": "fraction",
+          "fausses": [
+            "numérateur",
+            "dénominateur",
+            "décimal"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: fractions et décimaux",
+          "bonne": "numérateur",
+          "fausses": [
+            "dénominateur",
+            "décimal",
+            "centième"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "fraction",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "fraction",
+          "en": "fraction (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "numérateur",
+          "en": "numérateur (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "dénominateur",
+          "en": "dénominateur (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "centième",
+          "en": "centième (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "dixième",
+          "en": "dixième (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "pourcentage",
+          "en": "pourcentage (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "arrondir",
+          "en": "arrondir (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "comparer",
+          "en": "comparer (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "ordonner",
+          "en": "ordonner (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "pair",
+          "en": "pair (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "impair",
+          "en": "impair (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "aire",
+          "en": "aire (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "périmètre",
+          "en": "périmètre (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "double",
+          "en": "double (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "fractions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CM1",
+          "bonne": "fraction",
+          "fausses": [
+            "numérateur",
+            "dénominateur",
+            "décimal"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: fractions et décimaux",
+          "bonne": "numérateur",
+          "fausses": [
+            "dénominateur",
+            "décimal",
+            "centième"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "fraction",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "fraction",
+          "en": "fraction (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "numérateur",
+          "en": "numérateur (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "dénominateur",
+          "en": "dénominateur (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "décimal",
+          "en": "décimal (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "centième",
+          "en": "centième (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "dixième",
+          "en": "dixième (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "pourcentage",
+          "en": "pourcentage (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "arrondir",
+          "en": "arrondir (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "comparer",
+          "en": "comparer (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "ordonner",
+          "en": "ordonner (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "pair",
+          "en": "pair (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "impair",
+          "en": "impair (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "aire",
+          "en": "aire (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "périmètre",
+          "en": "périmètre (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "double",
+          "en": "double (fractions et décimaux)",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "fractions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "fractions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CM1",
+          "bonne": "fraction",
+          "fausses": [
+            "numérateur",
+            "dénominateur",
+            "décimal"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: fractions et décimaux",
+          "bonne": "numérateur",
+          "fausses": [
+            "dénominateur",
+            "décimal",
+            "centième"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "fraction",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "niveau": "4e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "money",
+          "en": "money",
+          "theme": "économie"
+        },
+        {
+          "fr": "business",
+          "en": "business",
+          "theme": "économie"
+        },
+        {
+          "fr": "trade",
+          "en": "trade",
+          "theme": "économie"
+        },
+        {
+          "fr": "profit",
+          "en": "profit",
+          "theme": "économie"
+        },
+        {
+          "fr": "cost",
+          "en": "cost",
+          "theme": "économie"
+        },
+        {
+          "fr": "investment",
+          "en": "investment",
+          "theme": "économie"
+        },
+        {
+          "fr": "market",
+          "en": "market",
+          "theme": "économie"
+        },
+        {
+          "fr": "currency",
+          "en": "currency",
+          "theme": "économie"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce",
+          "theme": "économie"
+        },
+        {
+          "fr": "economy",
+          "en": "economy",
+          "theme": "économie"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "économie"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "économie"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "économie"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "économie"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "économie"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "économie"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "économie"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "économie"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "économie"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "économie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"money\" to French:",
+          "bonne": "money",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"money\" means \"money\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"business\" to French:",
+          "bonne": "business",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"business\" means \"business\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"trade\" to French:",
+          "bonne": "trade",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"trade\" means \"trade\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"profit\" to French:",
+          "bonne": "profit",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"profit\" means \"profit\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"cost\" to French:",
+          "bonne": "cost",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"cost\" means \"cost\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"investment\" to French:",
+          "bonne": "investment",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"investment\" means \"investment\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"market\" to French:",
+          "bonne": "market",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"market\" means \"market\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"currency\" to French:",
+          "bonne": "currency",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"currency\" means \"currency\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"commerce\" to French:",
+          "bonne": "commerce",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"commerce\" means \"commerce\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"economy\" to French:",
+          "bonne": "economy",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"economy\" means \"economy\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: économie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: économie"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "atom",
+          "en": "atom",
+          "theme": "science"
+        },
+        {
+          "fr": "molecule",
+          "en": "molecule",
+          "theme": "science"
+        },
+        {
+          "fr": "energy",
+          "en": "energy",
+          "theme": "science"
+        },
+        {
+          "fr": "force",
+          "en": "force",
+          "theme": "science"
+        },
+        {
+          "fr": "gravity",
+          "en": "gravity",
+          "theme": "science"
+        },
+        {
+          "fr": "magnetism",
+          "en": "magnetism",
+          "theme": "science"
+        },
+        {
+          "fr": "electricity",
+          "en": "electricity",
+          "theme": "science"
+        },
+        {
+          "fr": "physics",
+          "en": "physics",
+          "theme": "science"
+        },
+        {
+          "fr": "chemistry",
+          "en": "chemistry",
+          "theme": "science"
+        },
+        {
+          "fr": "biology",
+          "en": "biology",
+          "theme": "science"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "science"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "science"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "science"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "science"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "science"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "science"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "science"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "science"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "science"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "science"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"atom\" to French:",
+          "bonne": "atom",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"atom\" means \"atom\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"molecule\" to French:",
+          "bonne": "molecule",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"molecule\" means \"molecule\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"energy\" to French:",
+          "bonne": "energy",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"energy\" means \"energy\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"force\" to French:",
+          "bonne": "force",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"force\" means \"force\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"gravity\" to French:",
+          "bonne": "gravity",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"gravity\" means \"gravity\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"magnetism\" to French:",
+          "bonne": "magnetism",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"magnetism\" means \"magnetism\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"electricity\" to French:",
+          "bonne": "electricity",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"electricity\" means \"electricity\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"physics\" to French:",
+          "bonne": "physics",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"physics\" means \"physics\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"chemistry\" to French:",
+          "bonne": "chemistry",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"chemistry\" means \"chemistry\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"biology\" to French:",
+          "bonne": "biology",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"biology\" means \"biology\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: science"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: science"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "artificial intelligence",
+          "en": "artificial intelligence",
+          "theme": "technologie"
+        },
+        {
+          "fr": "robot",
+          "en": "robot",
+          "theme": "technologie"
+        },
+        {
+          "fr": "programming",
+          "en": "programming",
+          "theme": "technologie"
+        },
+        {
+          "fr": "innovation",
+          "en": "innovation",
+          "theme": "technologie"
+        },
+        {
+          "fr": "technology",
+          "en": "technology",
+          "theme": "technologie"
+        },
+        {
+          "fr": "internet",
+          "en": "internet",
+          "theme": "technologie"
+        },
+        {
+          "fr": "data",
+          "en": "data",
+          "theme": "technologie"
+        },
+        {
+          "fr": "algorithm",
+          "en": "algorithm",
+          "theme": "technologie"
+        },
+        {
+          "fr": "digital",
+          "en": "digital",
+          "theme": "technologie"
+        },
+        {
+          "fr": "cyber",
+          "en": "cyber",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "technologie"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "technologie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"artificial intelligence\" to French:",
+          "bonne": "artificial intelligence",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"artificial intelligence\" means \"artificial intelligence\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"robot\" to French:",
+          "bonne": "robot",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"robot\" means \"robot\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"programming\" to French:",
+          "bonne": "programming",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"programming\" means \"programming\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"innovation\" to French:",
+          "bonne": "innovation",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"innovation\" means \"innovation\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"technology\" to French:",
+          "bonne": "technology",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"technology\" means \"technology\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"internet\" to French:",
+          "bonne": "internet",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"internet\" means \"internet\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"data\" to French:",
+          "bonne": "data",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"data\" means \"data\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"algorithm\" to French:",
+          "bonne": "algorithm",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"algorithm\" means \"algorithm\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"digital\" to French:",
+          "bonne": "digital",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"digital\" means \"digital\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"cyber\" to French:",
+          "bonne": "cyber",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"cyber\" means \"cyber\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: technologie"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: technologie"
+        }
+      ]
+    }
+  }
+}

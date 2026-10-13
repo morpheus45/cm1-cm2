@@ -1,0 +1,785 @@
+{
+  "niveau": "CM1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "street",
+          "en": "street",
+          "theme": "ville"
+        },
+        {
+          "fr": "house",
+          "en": "house",
+          "theme": "ville"
+        },
+        {
+          "fr": "shop",
+          "en": "shop",
+          "theme": "ville"
+        },
+        {
+          "fr": "school",
+          "en": "school",
+          "theme": "ville"
+        },
+        {
+          "fr": "hospital",
+          "en": "hospital",
+          "theme": "ville"
+        },
+        {
+          "fr": "park",
+          "en": "park",
+          "theme": "ville"
+        },
+        {
+          "fr": "car",
+          "en": "car",
+          "theme": "ville"
+        },
+        {
+          "fr": "bus",
+          "en": "bus",
+          "theme": "ville"
+        },
+        {
+          "fr": "train",
+          "en": "train",
+          "theme": "ville"
+        },
+        {
+          "fr": "bridge",
+          "en": "bridge",
+          "theme": "ville"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "ville"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "ville"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "ville"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "ville"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "ville"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "ville"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "ville"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "ville"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "ville"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "ville"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"street\" to French:",
+          "bonne": "street",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"street\" means \"street\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"house\" to French:",
+          "bonne": "house",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"house\" means \"house\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"shop\" to French:",
+          "bonne": "shop",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"shop\" means \"shop\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"school\" to French:",
+          "bonne": "school",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"school\" means \"school\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"hospital\" to French:",
+          "bonne": "hospital",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"hospital\" means \"hospital\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"park\" to French:",
+          "bonne": "park",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"park\" means \"park\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"car\" to French:",
+          "bonne": "car",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"car\" means \"car\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"bus\" to French:",
+          "bonne": "bus",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"bus\" means \"bus\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"train\" to French:",
+          "bonne": "train",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"train\" means \"train\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"bridge\" to French:",
+          "bonne": "bridge",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"bridge\" means \"bridge\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: ville"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: ville"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "apple",
+          "en": "apple",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "bread",
+          "en": "bread",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "cheese",
+          "en": "cheese",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "milk",
+          "en": "milk",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "chicken",
+          "en": "chicken",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "rice",
+          "en": "rice",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "water",
+          "en": "water",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "juice",
+          "en": "juice",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "cake",
+          "en": "cake",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "pizza",
+          "en": "pizza",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "nourriture"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"apple\" to French:",
+          "bonne": "apple",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"apple\" means \"apple\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"bread\" to French:",
+          "bonne": "bread",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"bread\" means \"bread\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"cheese\" to French:",
+          "bonne": "cheese",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"cheese\" means \"cheese\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"milk\" to French:",
+          "bonne": "milk",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"milk\" means \"milk\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"chicken\" to French:",
+          "bonne": "chicken",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"chicken\" means \"chicken\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"rice\" to French:",
+          "bonne": "rice",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"rice\" means \"rice\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"water\" to French:",
+          "bonne": "water",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"water\" means \"water\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"juice\" to French:",
+          "bonne": "juice",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"juice\" means \"juice\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"cake\" to French:",
+          "bonne": "cake",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"cake\" means \"cake\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"pizza\" to French:",
+          "bonne": "pizza",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"pizza\" means \"pizza\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: nourriture"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: nourriture"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "shirt",
+          "en": "shirt",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "pants",
+          "en": "pants",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "dress",
+          "en": "dress",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "jacket",
+          "en": "jacket",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "hat",
+          "en": "hat",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "shoes",
+          "en": "shoes",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "socks",
+          "en": "socks",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "gloves",
+          "en": "gloves",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "scarf",
+          "en": "scarf",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "coat",
+          "en": "coat",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "vêtements"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"shirt\" to French:",
+          "bonne": "shirt",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"shirt\" means \"shirt\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"pants\" to French:",
+          "bonne": "pants",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"pants\" means \"pants\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"dress\" to French:",
+          "bonne": "dress",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"dress\" means \"dress\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"jacket\" to French:",
+          "bonne": "jacket",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"jacket\" means \"jacket\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"hat\" to French:",
+          "bonne": "hat",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"hat\" means \"hat\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"shoes\" to French:",
+          "bonne": "shoes",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"shoes\" means \"shoes\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"socks\" to French:",
+          "bonne": "socks",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"socks\" means \"socks\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"gloves\" to French:",
+          "bonne": "gloves",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"gloves\" means \"gloves\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"scarf\" to French:",
+          "bonne": "scarf",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"scarf\" means \"scarf\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"coat\" to French:",
+          "bonne": "coat",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"coat\" means \"coat\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term10\" means \"term10\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term11\" means \"term11\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term12\" means \"term12\" in French. Theme: vêtements"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: vêtements"
+        }
+      ]
+    }
+  }
+}

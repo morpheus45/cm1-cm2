@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "squelette",
+          "en": "squelette",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "muscle",
+          "en": "muscle",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "os",
+          "en": "os",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "cerveau",
+          "en": "cerveau",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "poumon",
+          "en": "poumon",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "estomac",
+          "en": "estomac",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "santé",
+          "en": "santé",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "hygiène",
+          "en": "hygiène",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "maladie",
+          "en": "maladie",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "microbe",
+          "en": "microbe",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "vaccination",
+          "en": "vaccination",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "alimentation",
+          "en": "alimentation",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sport",
+          "en": "sport",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sommeil",
+          "en": "sommeil",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "toxique",
+          "en": "toxique",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "poison",
+          "en": "poison",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "premier secours",
+          "en": "premier secours",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "médecin",
+          "en": "médecin",
+          "theme": "Corps et santé"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"squelette\" ?",
+          "bonne": "squelette",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"squelette\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"muscle\" ?",
+          "bonne": "muscle",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"muscle\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"os\" ?",
+          "bonne": "os",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"os\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cerveau\" ?",
+          "bonne": "cerveau",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"cerveau\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cœur\" ?",
+          "bonne": "cœur",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"cœur\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poumon\" ?",
+          "bonne": "poumon",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"poumon\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"estomac\" ?",
+          "bonne": "estomac",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"estomac\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"santé\" ?",
+          "bonne": "santé",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"santé\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hygiène\" ?",
+          "bonne": "hygiène",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"hygiène\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maladie\" ?",
+          "bonne": "maladie",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"maladie\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"microbe\" ?",
+          "bonne": "microbe",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"microbe\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"vaccination\" ?",
+          "bonne": "vaccination",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"vaccination\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"alimentation\" ?",
+          "bonne": "alimentation",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"alimentation\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sport\" ?",
+          "bonne": "sport",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"sport\" car elle appartient au thème: Corps et santé"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "squelette",
+          "en": "squelette",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "muscle",
+          "en": "muscle",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "os",
+          "en": "os",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "cerveau",
+          "en": "cerveau",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "poumon",
+          "en": "poumon",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "estomac",
+          "en": "estomac",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "santé",
+          "en": "santé",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "hygiène",
+          "en": "hygiène",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "maladie",
+          "en": "maladie",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "microbe",
+          "en": "microbe",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "vaccination",
+          "en": "vaccination",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "alimentation",
+          "en": "alimentation",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sport",
+          "en": "sport",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sommeil",
+          "en": "sommeil",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "toxique",
+          "en": "toxique",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "poison",
+          "en": "poison",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "premier secours",
+          "en": "premier secours",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "médecin",
+          "en": "médecin",
+          "theme": "Corps et santé"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"squelette\" ?",
+          "bonne": "squelette",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"squelette\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"muscle\" ?",
+          "bonne": "muscle",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"muscle\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"os\" ?",
+          "bonne": "os",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"os\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cerveau\" ?",
+          "bonne": "cerveau",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"cerveau\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cœur\" ?",
+          "bonne": "cœur",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"cœur\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poumon\" ?",
+          "bonne": "poumon",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"poumon\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"estomac\" ?",
+          "bonne": "estomac",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"estomac\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"santé\" ?",
+          "bonne": "santé",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"santé\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hygiène\" ?",
+          "bonne": "hygiène",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"hygiène\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maladie\" ?",
+          "bonne": "maladie",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"maladie\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"microbe\" ?",
+          "bonne": "microbe",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"microbe\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"vaccination\" ?",
+          "bonne": "vaccination",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"vaccination\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"alimentation\" ?",
+          "bonne": "alimentation",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"alimentation\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sport\" ?",
+          "bonne": "sport",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"sport\" car elle appartient au thème: Corps et santé"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "squelette",
+          "en": "squelette",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "muscle",
+          "en": "muscle",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "os",
+          "en": "os",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "cerveau",
+          "en": "cerveau",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "poumon",
+          "en": "poumon",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "estomac",
+          "en": "estomac",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "santé",
+          "en": "santé",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "hygiène",
+          "en": "hygiène",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "maladie",
+          "en": "maladie",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "microbe",
+          "en": "microbe",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "vaccination",
+          "en": "vaccination",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "alimentation",
+          "en": "alimentation",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sport",
+          "en": "sport",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sommeil",
+          "en": "sommeil",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "toxique",
+          "en": "toxique",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "poison",
+          "en": "poison",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "premier secours",
+          "en": "premier secours",
+          "theme": "Corps et santé"
+        },
+        {
+          "fr": "médecin",
+          "en": "médecin",
+          "theme": "Corps et santé"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"squelette\" ?",
+          "bonne": "squelette",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"squelette\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"muscle\" ?",
+          "bonne": "muscle",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"muscle\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"os\" ?",
+          "bonne": "os",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"os\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cerveau\" ?",
+          "bonne": "cerveau",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"cerveau\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cœur\" ?",
+          "bonne": "cœur",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"cœur\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poumon\" ?",
+          "bonne": "poumon",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"poumon\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"estomac\" ?",
+          "bonne": "estomac",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"estomac\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"santé\" ?",
+          "bonne": "santé",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"santé\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hygiène\" ?",
+          "bonne": "hygiène",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"hygiène\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maladie\" ?",
+          "bonne": "maladie",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"maladie\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"microbe\" ?",
+          "bonne": "microbe",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"microbe\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"vaccination\" ?",
+          "bonne": "vaccination",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"vaccination\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"alimentation\" ?",
+          "bonne": "alimentation",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"alimentation\" car elle appartient au thème: Corps et santé"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sport\" ?",
+          "bonne": "sport",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"sport\" car elle appartient au thème: Corps et santé"
+        }
+      ]
+    }
+  }
+}

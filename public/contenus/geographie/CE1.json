@@ -1,0 +1,785 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "maison",
+          "en": "maison",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "école",
+          "en": "école",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "rue",
+          "en": "rue",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "parc",
+          "en": "parc",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "rivière",
+          "en": "rivière",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "mer",
+          "en": "mer",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "plage",
+          "en": "plage",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "ville",
+          "en": "ville",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "village",
+          "en": "village",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "campagne",
+          "en": "campagne",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "arbre",
+          "en": "arbre",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "fleur",
+          "en": "fleur",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "animal",
+          "en": "animal",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "eau",
+          "en": "eau",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "terre",
+          "en": "terre",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "ciel",
+          "en": "ciel",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "jour",
+          "en": "jour",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "nuit",
+          "en": "nuit",
+          "theme": "Mon environnement"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maison\" ?",
+          "bonne": "maison",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"maison\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"école\" ?",
+          "bonne": "école",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"école\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"rue\" ?",
+          "bonne": "rue",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"rue\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"parc\" ?",
+          "bonne": "parc",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"parc\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"forêt\" ?",
+          "bonne": "forêt",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"forêt\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"rivière\" ?",
+          "bonne": "rivière",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"rivière\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"montagne\" ?",
+          "bonne": "montagne",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"montagne\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mer\" ?",
+          "bonne": "mer",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"mer\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"plage\" ?",
+          "bonne": "plage",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"plage\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ville\" ?",
+          "bonne": "ville",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"ville\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"village\" ?",
+          "bonne": "village",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"village\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"campagne\" ?",
+          "bonne": "campagne",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"campagne\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"arbre\" ?",
+          "bonne": "arbre",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"arbre\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fleur\" ?",
+          "bonne": "fleur",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"fleur\" car elle appartient au thème: Mon environnement"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "maison",
+          "en": "maison",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "école",
+          "en": "école",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "rue",
+          "en": "rue",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "parc",
+          "en": "parc",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "rivière",
+          "en": "rivière",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "mer",
+          "en": "mer",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "plage",
+          "en": "plage",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "ville",
+          "en": "ville",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "village",
+          "en": "village",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "campagne",
+          "en": "campagne",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "arbre",
+          "en": "arbre",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "fleur",
+          "en": "fleur",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "animal",
+          "en": "animal",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "eau",
+          "en": "eau",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "terre",
+          "en": "terre",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "ciel",
+          "en": "ciel",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "jour",
+          "en": "jour",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "nuit",
+          "en": "nuit",
+          "theme": "Mon environnement"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maison\" ?",
+          "bonne": "maison",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"maison\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"école\" ?",
+          "bonne": "école",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"école\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"rue\" ?",
+          "bonne": "rue",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"rue\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"parc\" ?",
+          "bonne": "parc",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"parc\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"forêt\" ?",
+          "bonne": "forêt",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"forêt\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"rivière\" ?",
+          "bonne": "rivière",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"rivière\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"montagne\" ?",
+          "bonne": "montagne",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"montagne\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mer\" ?",
+          "bonne": "mer",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"mer\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"plage\" ?",
+          "bonne": "plage",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"plage\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ville\" ?",
+          "bonne": "ville",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"ville\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"village\" ?",
+          "bonne": "village",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"village\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"campagne\" ?",
+          "bonne": "campagne",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"campagne\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"arbre\" ?",
+          "bonne": "arbre",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"arbre\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fleur\" ?",
+          "bonne": "fleur",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"fleur\" car elle appartient au thème: Mon environnement"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "maison",
+          "en": "maison",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "école",
+          "en": "école",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "rue",
+          "en": "rue",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "parc",
+          "en": "parc",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "rivière",
+          "en": "rivière",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "mer",
+          "en": "mer",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "plage",
+          "en": "plage",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "ville",
+          "en": "ville",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "village",
+          "en": "village",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "campagne",
+          "en": "campagne",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "arbre",
+          "en": "arbre",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "fleur",
+          "en": "fleur",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "animal",
+          "en": "animal",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "eau",
+          "en": "eau",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "terre",
+          "en": "terre",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "ciel",
+          "en": "ciel",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "jour",
+          "en": "jour",
+          "theme": "Mon environnement"
+        },
+        {
+          "fr": "nuit",
+          "en": "nuit",
+          "theme": "Mon environnement"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maison\" ?",
+          "bonne": "maison",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"maison\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"école\" ?",
+          "bonne": "école",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"école\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"rue\" ?",
+          "bonne": "rue",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"rue\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"parc\" ?",
+          "bonne": "parc",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"parc\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"forêt\" ?",
+          "bonne": "forêt",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"forêt\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"rivière\" ?",
+          "bonne": "rivière",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"rivière\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"montagne\" ?",
+          "bonne": "montagne",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"montagne\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mer\" ?",
+          "bonne": "mer",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"mer\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"plage\" ?",
+          "bonne": "plage",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"plage\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ville\" ?",
+          "bonne": "ville",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"ville\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"village\" ?",
+          "bonne": "village",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"village\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"campagne\" ?",
+          "bonne": "campagne",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"campagne\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"arbre\" ?",
+          "bonne": "arbre",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"arbre\" car elle appartient au thème: Mon environnement"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fleur\" ?",
+          "bonne": "fleur",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"fleur\" car elle appartient au thème: Mon environnement"
+        }
+      ]
+    }
+  }
+}

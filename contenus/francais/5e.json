@@ -1,0 +1,654 @@
+{
+  "niveau": "5e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "homonyme",
+          "en": "écriture identique",
+          "theme": "écriture"
+        },
+        {
+          "fr": "homophone",
+          "en": "son identique",
+          "theme": "son"
+        },
+        {
+          "fr": "synonyme",
+          "en": "sens voisin",
+          "theme": "sens"
+        },
+        {
+          "fr": "antonyme",
+          "en": "sens opposé",
+          "theme": "sens"
+        },
+        {
+          "fr": "étymologie",
+          "en": "origine",
+          "theme": "origine"
+        },
+        {
+          "fr": "préfixe",
+          "en": "début",
+          "theme": "début"
+        },
+        {
+          "fr": "suffixe",
+          "en": "fin",
+          "theme": "fin"
+        },
+        {
+          "fr": "racine",
+          "en": "base",
+          "theme": "base"
+        },
+        {
+          "fr": "morphologie",
+          "en": "forme",
+          "theme": "forme"
+        },
+        {
+          "fr": "dérivation",
+          "en": "par ajout",
+          "theme": "par"
+        },
+        {
+          "fr": "composition",
+          "en": "deux mots",
+          "theme": "deux"
+        },
+        {
+          "fr": "registre soutenu",
+          "en": "formel",
+          "theme": "formel"
+        },
+        {
+          "fr": "registre courant",
+          "en": "normal",
+          "theme": "normal"
+        },
+        {
+          "fr": "registre familier",
+          "en": "décontracté",
+          "theme": "décontracté"
+        },
+        {
+          "fr": "champ lexical",
+          "en": "même thème",
+          "theme": "même"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Homonyme='son' ?",
+          "bonne": "possession",
+          "fausses": [
+            "sonner",
+            "sont"
+          ],
+          "explication": "homonyme"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Synonyme='rapide' ?",
+          "bonne": "vite",
+          "fausses": [
+            "lent",
+            "nouveau"
+          ],
+          "explication": "synonyme"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = origine mot",
+          "bonne": "étymologie",
+          "fausses": [
+            "phonétique",
+            "morphologie"
+          ],
+          "explication": "étymologie"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Antonyme='blanc' ?",
+          "bonne": "noir",
+          "fausses": [
+            "gris",
+            "clair"
+          ],
+          "explication": "antonyme"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Suffixe=début",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "suffixe"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Préfixe 'refaire' ?",
+          "bonne": "re",
+          "fausses": [
+            "faire",
+            "re-faire"
+          ],
+          "explication": "préfixe"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = base mot",
+          "bonne": "racine",
+          "fausses": [
+            "suffixe",
+            "préfixe"
+          ],
+          "explication": "racine"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Suffixe 'heureux' ?",
+          "bonne": "-eux",
+          "fausses": [
+            "heur",
+            "h"
+          ],
+          "explication": "suffixe"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Homonyme=même sens",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "homonyme"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "'J'ai la flemme' registre ?",
+          "bonne": "familier",
+          "fausses": [
+            "soutenu",
+            "poétique"
+          ],
+          "explication": "registre"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = sens voisin",
+          "bonne": "synonyme",
+          "fausses": [
+            "antonyme",
+            "homonyme"
+          ],
+          "explication": "synonyme"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Composition=?",
+          "bonne": "deux mots",
+          "fausses": [
+            "deux sons",
+            "deux sens"
+          ],
+          "explication": "composition"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Soutenu=formel",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "soutenu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "'Puis-je aider ?' registre ?",
+          "bonne": "soutenu",
+          "fausses": [
+            "familier",
+            "courant"
+          ],
+          "explication": "registre"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "figure de style",
+          "en": "technique",
+          "theme": "technique"
+        },
+        {
+          "fr": "comparaison",
+          "en": "avec comme",
+          "theme": "avec"
+        },
+        {
+          "fr": "métaphore",
+          "en": "implicite",
+          "theme": "implicite"
+        },
+        {
+          "fr": "personnification",
+          "en": "humain",
+          "theme": "humain"
+        },
+        {
+          "fr": "allitération",
+          "en": "sons répétés",
+          "theme": "sons"
+        },
+        {
+          "fr": "onomatopée",
+          "en": "bruit",
+          "theme": "bruit"
+        },
+        {
+          "fr": "hyperbole",
+          "en": "exagération",
+          "theme": "exagération"
+        },
+        {
+          "fr": "litote",
+          "en": "atténuation",
+          "theme": "atténuation"
+        },
+        {
+          "fr": "paradoxe",
+          "en": "contradiction",
+          "theme": "contradiction"
+        },
+        {
+          "fr": "ironie",
+          "en": "contraire",
+          "theme": "contraire"
+        },
+        {
+          "fr": "oxymore",
+          "en": "contraste",
+          "theme": "contraste"
+        },
+        {
+          "fr": "énumération",
+          "en": "liste",
+          "theme": "liste"
+        },
+        {
+          "fr": "rythme",
+          "en": "cadence",
+          "theme": "cadence"
+        },
+        {
+          "fr": "sonorité",
+          "en": "musique",
+          "theme": "musique"
+        },
+        {
+          "fr": "assonance",
+          "en": "voyelles",
+          "theme": "voyelles"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Comparaison=?",
+          "bonne": "comme",
+          "fausses": [
+            "mais",
+            "car"
+          ],
+          "explication": "comparaison"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = humain objet",
+          "bonne": "personnification",
+          "fausses": [
+            "allitération",
+            "comparaison"
+          ],
+          "explication": "personnification"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Onomatopée ?",
+          "bonne": "plouf",
+          "fausses": [
+            "belle",
+            "courir"
+          ],
+          "explication": "onomatopée"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Hyperbole=exagère",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "hyperbole"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Allitération=?",
+          "bonne": "sons répétés",
+          "fausses": [
+            "mots répétés",
+            "sens répétés"
+          ],
+          "explication": "allitération"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = sans comme",
+          "bonne": "métaphore",
+          "fausses": [
+            "comparaison",
+            "allitération"
+          ],
+          "explication": "métaphore"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Litote=?",
+          "bonne": "atténuation",
+          "fausses": [
+            "exagération",
+            "répétition"
+          ],
+          "explication": "litote"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Ironie=toujours vrai",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "ironie"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Oxymore=?",
+          "bonne": "contraste",
+          "fausses": [
+            "identique",
+            "similaire"
+          ],
+          "explication": "oxymore"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = cadence",
+          "bonne": "rythme",
+          "fausses": [
+            "sonorité",
+            "figure"
+          ],
+          "explication": "rythme"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Paradoxe=?",
+          "bonne": "moins c'est plus",
+          "fausses": [
+            "c'est bon",
+            "c'est faux"
+          ],
+          "explication": "paradoxe"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Énumération=liste",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "énumération"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Sonorité=?",
+          "bonne": "musique",
+          "fausses": [
+            "sens",
+            "grammaire"
+          ],
+          "explication": "sonorité"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Assonance=___ répétées",
+          "bonne": "voyelles",
+          "fausses": [
+            "consonnes",
+            "syllabes"
+          ],
+          "explication": "assonance"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "type texte narratif",
+          "en": "raconte",
+          "theme": "raconte"
+        },
+        {
+          "fr": "type descriptif",
+          "en": "peint",
+          "theme": "peint"
+        },
+        {
+          "fr": "type explicatif",
+          "en": "pourquoi",
+          "theme": "pourquoi"
+        },
+        {
+          "fr": "type argumentatif",
+          "en": "convainc",
+          "theme": "convainc"
+        },
+        {
+          "fr": "dialogue",
+          "en": "conversation",
+          "theme": "conversation"
+        },
+        {
+          "fr": "monologue",
+          "en": "un seul",
+          "theme": "un"
+        },
+        {
+          "fr": "élève",
+          "en": "scolaire",
+          "theme": "scolaire"
+        },
+        {
+          "fr": "lycée",
+          "en": "après collège",
+          "theme": "après"
+        },
+        {
+          "fr": "université",
+          "en": "sup",
+          "theme": "sup"
+        },
+        {
+          "fr": "dissertation",
+          "en": "essai",
+          "theme": "essai"
+        },
+        {
+          "fr": "commentaire",
+          "en": "analyse",
+          "theme": "analyse"
+        },
+        {
+          "fr": "écriture créative",
+          "en": "inventer",
+          "theme": "inventer"
+        },
+        {
+          "fr": "rédaction",
+          "en": "écrire",
+          "theme": "écrire"
+        },
+        {
+          "fr": "résumé",
+          "en": "court",
+          "theme": "court"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Narratif=?",
+          "bonne": "raconte",
+          "fausses": [
+            "décrit",
+            "explique"
+          ],
+          "explication": "narratif"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = peint",
+          "bonne": "descriptif",
+          "fausses": [
+            "narratif",
+            "explicatif"
+          ],
+          "explication": "descriptif"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Argumentatif=?",
+          "bonne": "convainc",
+          "fausses": [
+            "raconter",
+            "décrire"
+          ],
+          "explication": "argumentatif"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Monologue=deux",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "monologue"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Dissertation=?",
+          "bonne": "essai",
+          "fausses": [
+            "dialogue",
+            "histoire"
+          ],
+          "explication": "dissertation"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = analyse",
+          "bonne": "commentaire",
+          "fausses": [
+            "rédaction",
+            "résumé"
+          ],
+          "explication": "commentaire"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Créative=inventer",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "créative"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Rédaction=?",
+          "bonne": "écrire",
+          "fausses": [
+            "parler",
+            "dessiner"
+          ],
+          "explication": "rédaction"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ = court résumé",
+          "bonne": "résumé",
+          "fausses": [
+            "essai",
+            "dialogue"
+          ],
+          "explication": "résumé"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Lycée=?",
+          "bonne": "post-collège",
+          "fausses": [
+            "primaire",
+            "université"
+          ],
+          "explication": "lycée"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Explicatif=convainc",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "explicatif"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Théâtre=?",
+          "bonne": "dialogué",
+          "fausses": [
+            "narratif",
+            "poétique"
+          ],
+          "explication": "théâtre"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Université=?",
+          "bonne": "sup",
+          "fausses": [
+            "lycée",
+            "collège"
+          ],
+          "explication": "université"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Descriptif=beaucoup ___",
+          "bonne": "adjectifs",
+          "fausses": [
+            "verbes",
+            "noms"
+          ],
+          "explication": "descriptif"
+        }
+      ]
+    }
+  }
+}

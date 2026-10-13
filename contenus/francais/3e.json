@@ -1,0 +1,659 @@
+{
+  "niveau": "3e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "littérature ancienne",
+          "en": "antique",
+          "theme": "antique"
+        },
+        {
+          "fr": "Molière",
+          "en": "comédie",
+          "theme": "comédie"
+        },
+        {
+          "fr": "La Fontaine",
+          "en": "fables",
+          "theme": "fables"
+        },
+        {
+          "fr": "Corneille",
+          "en": "tragédie",
+          "theme": "tragédie"
+        },
+        {
+          "fr": "Racine",
+          "en": "tragédie",
+          "theme": "tragédie"
+        },
+        {
+          "fr": "Marivaux",
+          "en": "comédie",
+          "theme": "comédie"
+        },
+        {
+          "fr": "Renaissance",
+          "en": "14-16e",
+          "theme": "14-16e"
+        },
+        {
+          "fr": "Humanisme",
+          "en": "valeur",
+          "theme": "valeur"
+        },
+        {
+          "fr": "Réforme",
+          "en": "religieuse",
+          "theme": "religieuse"
+        },
+        {
+          "fr": "Gutenberg",
+          "en": "imprimerie",
+          "theme": "imprimerie"
+        },
+        {
+          "fr": "Machiavel",
+          "en": "politique",
+          "theme": "politique"
+        },
+        {
+          "fr": "Martin Luther",
+          "en": "protestants",
+          "theme": "protestants"
+        },
+        {
+          "fr": "Calvin",
+          "en": "genève",
+          "theme": "genève"
+        },
+        {
+          "fr": "Catholicisme",
+          "en": "rome",
+          "theme": "rome"
+        },
+        {
+          "fr": "Léonard Vinci",
+          "en": "génie",
+          "theme": "génie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Molière=?",
+          "bonne": "comédie",
+          "fausses": [
+            "tragédie",
+            "roman"
+          ],
+          "explication": "Molière"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Fontaine écrit ___",
+          "bonne": "fables",
+          "fausses": [
+            "drames",
+            "essais"
+          ],
+          "explication": "Fontaine"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Corneille=?",
+          "bonne": "tragédie",
+          "fausses": [
+            "comédie",
+            "poésie"
+          ],
+          "explication": "Corneille"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Gutenberg=imprimerie",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Gutenberg"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Renaissance=?",
+          "bonne": "14-16e",
+          "fausses": [
+            "12-14e",
+            "16-18e"
+          ],
+          "explication": "Renaissance"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Léonard=___",
+          "bonne": "génie",
+          "fausses": [
+            "roi",
+            "pape"
+          ],
+          "explication": "Léonard"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Humanisme=?",
+          "bonne": "humain",
+          "fausses": [
+            "divin",
+            "argent"
+          ],
+          "explication": "Humanisme"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Machiavel=morale",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "Machiavel"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Luther=?",
+          "bonne": "protestants",
+          "fausses": [
+            "catholiques",
+            "juifs"
+          ],
+          "explication": "Luther"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Calvin=___",
+          "bonne": "genève",
+          "fausses": [
+            "paris",
+            "rome"
+          ],
+          "explication": "Calvin"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Réforme=religieuse",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Réforme"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Marivaux=?",
+          "bonne": "comédie",
+          "fausses": [
+            "tragédie",
+            "roman"
+          ],
+          "explication": "Marivaux"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Racine=?",
+          "bonne": "tragédie",
+          "fausses": [
+            "comédie",
+            "fable"
+          ],
+          "explication": "Racine"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Catholicisme=___",
+          "bonne": "rome",
+          "fausses": [
+            "genève",
+            "wittenberg"
+          ],
+          "explication": "Catholicisme"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Siècle Lumières",
+          "en": "18e",
+          "theme": "18e"
+        },
+        {
+          "fr": "Montesquieu",
+          "en": "séparation",
+          "theme": "séparation"
+        },
+        {
+          "fr": "Voltaire",
+          "en": "liberté",
+          "theme": "liberté"
+        },
+        {
+          "fr": "Rousseau",
+          "en": "contrat",
+          "theme": "contrat"
+        },
+        {
+          "fr": "Diderot",
+          "en": "Encyclopédie",
+          "theme": "Encyclopédie"
+        },
+        {
+          "fr": "Newton",
+          "en": "sciences",
+          "theme": "sciences"
+        },
+        {
+          "fr": "Révolution",
+          "en": "1789",
+          "theme": "1789"
+        },
+        {
+          "fr": "DDHC",
+          "en": "égalité",
+          "theme": "égalité"
+        },
+        {
+          "fr": "Guillotine",
+          "en": "exécutions",
+          "theme": "exécutions"
+        },
+        {
+          "fr": "Terreur",
+          "en": "1793-94",
+          "theme": "1793-94"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "coup",
+          "theme": "coup"
+        },
+        {
+          "fr": "Révolution industrielle",
+          "en": "vapeur",
+          "theme": "vapeur"
+        },
+        {
+          "fr": "Charbon",
+          "en": "énergie",
+          "theme": "énergie"
+        },
+        {
+          "fr": "Usines",
+          "en": "manufactures",
+          "theme": "manufactures"
+        },
+        {
+          "fr": "États-Unis",
+          "en": "1776",
+          "theme": "1776"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Lumières=?",
+          "bonne": "18e philo",
+          "fausses": [
+            "17e art",
+            "19e science"
+          ],
+          "explication": "Lumières"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Montesquieu=séparation ___",
+          "bonne": "pouvoirs",
+          "fausses": [
+            "nations",
+            "religions"
+          ],
+          "explication": "Montesquieu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Voltaire=?",
+          "bonne": "liberté",
+          "fausses": [
+            "égalité",
+            "fraternité"
+          ],
+          "explication": "Voltaire"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Rousseau=Contrat",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Rousseau"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Diderot=?",
+          "bonne": "Encyclopédie",
+          "fausses": [
+            "dictionnaire",
+            "journal"
+          ],
+          "explication": "Diderot"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Newton=sciences",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Newton"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Révolution=?",
+          "bonne": "1789",
+          "fausses": [
+            "1776",
+            "1798"
+          ],
+          "explication": "Révolution"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "DDHC=___",
+          "bonne": "égalité",
+          "fausses": [
+            "ordre",
+            "hiérarchie"
+          ],
+          "explication": "DDHC"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Guillotine=?",
+          "bonne": "exécutions",
+          "fausses": [
+            "débat",
+            "vote"
+          ],
+          "explication": "Guillotine"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Terreur=1793-94",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Terreur"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "18-Brumaire=?",
+          "bonne": "Napoléon",
+          "fausses": [
+            "Robespierre",
+            "Danton"
+          ],
+          "explication": "18-Brumaire"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Industrielle=?",
+          "bonne": "vapeur",
+          "fausses": [
+            "électricité",
+            "pétrole"
+          ],
+          "explication": "Industrielle"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Charbon=___ industrie",
+          "bonne": "énergie",
+          "fausses": [
+            "fermes",
+            "cathédrales"
+          ],
+          "explication": "Charbon"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "USA=?",
+          "bonne": "1776",
+          "fausses": [
+            "1789",
+            "1798"
+          ],
+          "explication": "USA"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "19e siècle",
+          "en": "empire",
+          "theme": "empire"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "expansion",
+          "theme": "expansion"
+        },
+        {
+          "fr": "Restauration",
+          "en": "monarchie",
+          "theme": "monarchie"
+        },
+        {
+          "fr": "Congrès Vienne",
+          "en": "ordre",
+          "theme": "ordre"
+        },
+        {
+          "fr": "Nationalisme",
+          "en": "nation",
+          "theme": "nation"
+        },
+        {
+          "fr": "Libéralisme",
+          "en": "liberté",
+          "theme": "liberté"
+        },
+        {
+          "fr": "Colonialisme",
+          "en": "empire",
+          "theme": "empire"
+        },
+        {
+          "fr": "Afrique",
+          "en": "partition",
+          "theme": "partition"
+        },
+        {
+          "fr": "Asie",
+          "en": "exploitation",
+          "theme": "exploitation"
+        },
+        {
+          "fr": "Indépendance",
+          "en": "liberté",
+          "theme": "liberté"
+        },
+        {
+          "fr": "Première Guerre",
+          "en": "1914-18",
+          "theme": "1914-18"
+        },
+        {
+          "fr": "Tranchées",
+          "en": "front",
+          "theme": "front"
+        },
+        {
+          "fr": "Armistice",
+          "en": "fin",
+          "theme": "fin"
+        },
+        {
+          "fr": "Versailles",
+          "en": "paix",
+          "theme": "paix"
+        },
+        {
+          "fr": "Entre-deux-guerres",
+          "en": "crise",
+          "theme": "crise"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "19e=?",
+          "bonne": "empire",
+          "fausses": [
+            "renaissance",
+            "moyen-âge"
+          ],
+          "explication": "19e"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Napoléon=expansion",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Napoléon"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Restauration=?",
+          "bonne": "monarchie",
+          "fausses": [
+            "empire",
+            "démocratie"
+          ],
+          "explication": "Restauration"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Vienne=___",
+          "bonne": "ordre",
+          "fausses": [
+            "paix",
+            "guerre"
+          ],
+          "explication": "Vienne"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Nationalisme=?",
+          "bonne": "nation",
+          "fausses": [
+            "religion",
+            "classe"
+          ],
+          "explication": "Nationalisme"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Libéralisme=liberté",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Libéralisme"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Colonialisme=?",
+          "bonne": "empire",
+          "fausses": [
+            "paix",
+            "égalité"
+          ],
+          "explication": "Colonialisme"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Afrique=___",
+          "bonne": "partition",
+          "fausses": [
+            "unification",
+            "indépendance"
+          ],
+          "explication": "Afrique"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Asie=?",
+          "bonne": "exploitation",
+          "fausses": [
+            "unification",
+            "paix"
+          ],
+          "explication": "Asie"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Indépendance=liberté",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Indépendance"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "1ère Guerre=?",
+          "bonne": "1914-18",
+          "fausses": [
+            "1900-10",
+            "1920-30"
+          ],
+          "explication": "Guerre"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Tranchées=___",
+          "bonne": "front",
+          "fausses": [
+            "arrière",
+            "ville"
+          ],
+          "explication": "Tranchées"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Armistice=?",
+          "bonne": "fin",
+          "fausses": [
+            "début",
+            "milieu"
+          ],
+          "explication": "Armistice"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Versailles=___",
+          "bonne": "paix",
+          "fausses": [
+            "guerre",
+            "alliance"
+          ],
+          "explication": "Versailles"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "10",
+          "en": "10",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "20",
+          "en": "20",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "30",
+          "en": "30",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "40",
+          "en": "40",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "50",
+          "en": "50",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "100",
+          "en": "100",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "200",
+          "en": "200",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "centaine",
+          "en": "centaine",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "multiplication",
+          "en": "multiplication",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "division",
+          "en": "division",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "table",
+          "en": "table",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "fois",
+          "en": "fois",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "partagé",
+          "en": "partagé",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "nombre pair",
+          "en": "nombre pair",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "nombre impair",
+          "en": "nombre impair",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "double",
+          "en": "double",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "moitié",
+          "en": "moitié",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "comparaison",
+          "en": "comparaison",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "ordre",
+          "en": "ordre",
+          "theme": "Nombres 0-200"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"10\" ?",
+          "bonne": "10",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"10\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"20\" ?",
+          "bonne": "20",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"20\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"30\" ?",
+          "bonne": "30",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"30\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"40\" ?",
+          "bonne": "40",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"40\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"50\" ?",
+          "bonne": "50",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"50\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"100\" ?",
+          "bonne": "100",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"100\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"200\" ?",
+          "bonne": "200",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"200\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"centaine\" ?",
+          "bonne": "centaine",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"centaine\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dizaine\" ?",
+          "bonne": "dizaine",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"dizaine\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"multiplication\" ?",
+          "bonne": "multiplication",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"multiplication\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"division\" ?",
+          "bonne": "division",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"division\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"table\" ?",
+          "bonne": "table",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"table\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fois\" ?",
+          "bonne": "fois",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"fois\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"partagé\" ?",
+          "bonne": "partagé",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"partagé\" car elle appartient au thème: Nombres 0-200"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "10",
+          "en": "10",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "20",
+          "en": "20",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "30",
+          "en": "30",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "40",
+          "en": "40",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "50",
+          "en": "50",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "100",
+          "en": "100",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "200",
+          "en": "200",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "centaine",
+          "en": "centaine",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "multiplication",
+          "en": "multiplication",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "division",
+          "en": "division",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "table",
+          "en": "table",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "fois",
+          "en": "fois",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "partagé",
+          "en": "partagé",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "nombre pair",
+          "en": "nombre pair",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "nombre impair",
+          "en": "nombre impair",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "double",
+          "en": "double",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "moitié",
+          "en": "moitié",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "comparaison",
+          "en": "comparaison",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "ordre",
+          "en": "ordre",
+          "theme": "Nombres 0-200"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"10\" ?",
+          "bonne": "10",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"10\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"20\" ?",
+          "bonne": "20",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"20\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"30\" ?",
+          "bonne": "30",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"30\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"40\" ?",
+          "bonne": "40",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"40\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"50\" ?",
+          "bonne": "50",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"50\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"100\" ?",
+          "bonne": "100",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"100\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"200\" ?",
+          "bonne": "200",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"200\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"centaine\" ?",
+          "bonne": "centaine",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"centaine\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dizaine\" ?",
+          "bonne": "dizaine",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"dizaine\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"multiplication\" ?",
+          "bonne": "multiplication",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"multiplication\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"division\" ?",
+          "bonne": "division",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"division\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"table\" ?",
+          "bonne": "table",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"table\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fois\" ?",
+          "bonne": "fois",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"fois\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"partagé\" ?",
+          "bonne": "partagé",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"partagé\" car elle appartient au thème: Nombres 0-200"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "10",
+          "en": "10",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "20",
+          "en": "20",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "30",
+          "en": "30",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "40",
+          "en": "40",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "50",
+          "en": "50",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "100",
+          "en": "100",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "200",
+          "en": "200",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "centaine",
+          "en": "centaine",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "multiplication",
+          "en": "multiplication",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "division",
+          "en": "division",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "table",
+          "en": "table",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "fois",
+          "en": "fois",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "partagé",
+          "en": "partagé",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "nombre pair",
+          "en": "nombre pair",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "nombre impair",
+          "en": "nombre impair",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "double",
+          "en": "double",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "moitié",
+          "en": "moitié",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "comparaison",
+          "en": "comparaison",
+          "theme": "Nombres 0-200"
+        },
+        {
+          "fr": "ordre",
+          "en": "ordre",
+          "theme": "Nombres 0-200"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"10\" ?",
+          "bonne": "10",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"10\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"20\" ?",
+          "bonne": "20",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"20\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"30\" ?",
+          "bonne": "30",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"30\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"40\" ?",
+          "bonne": "40",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"40\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"50\" ?",
+          "bonne": "50",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"50\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"100\" ?",
+          "bonne": "100",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"100\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"200\" ?",
+          "bonne": "200",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"200\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"centaine\" ?",
+          "bonne": "centaine",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"centaine\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dizaine\" ?",
+          "bonne": "dizaine",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"dizaine\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"multiplication\" ?",
+          "bonne": "multiplication",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"multiplication\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"division\" ?",
+          "bonne": "division",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"division\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"table\" ?",
+          "bonne": "table",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"table\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fois\" ?",
+          "bonne": "fois",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"fois\" car elle appartient au thème: Nombres 0-200"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"partagé\" ?",
+          "bonne": "partagé",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"partagé\" car elle appartient au thème: Nombres 0-200"
+        }
+      ]
+    }
+  }
+}

@@ -59,6 +59,10 @@ interface HomeScreenProps {
   onStartEvaluation?: (evaluation: OpenEvaluation, options: StartOptions) => void;
   /** Demande les évaluations ouvertes de la classe dont le code est écrit. */
   onRefreshEvaluations?: (joinCode: string) => void;
+  /** Accès à la section pédagogie. */
+  onPedagogie?: () => void;
+  /** Accès rapide par niveau scolaire. */
+  onLevels?: () => void;
 }
 
 /** L'accueil redemande les évaluations ouvertes à ce rythme : une évaluation
@@ -74,6 +78,8 @@ export function HomeScreen({
   evaluationStateOf,
   onStartEvaluation,
   onRefreshEvaluations,
+  onPedagogie,
+  onLevels,
 }: HomeScreenProps) {
   const [name, setName] = useState(initial.name);
   const [lastName, setLastName] = useState(initial.lastName);
@@ -185,6 +191,25 @@ export function HomeScreen({
     <div className="min-h-screen px-4 pb-12 pt-3">
       <div className="mx-auto flex max-w-md flex-col gap-5">
         <SchoolTitle subtitle="Mon cahier d'exercices" />
+
+        <div className="space-y-3">
+          {onPedagogie && (
+            <button
+              onClick={onPedagogie}
+              className="w-full rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition"
+            >
+              📚 Apprendre (Vocabulaire & Notions)
+            </button>
+          )}
+          {onLevels && (
+            <button
+              onClick={onLevels}
+              className="w-full rounded-lg bg-gradient-to-br from-indigo-500 to-blue-600 px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition"
+            >
+              🎓 Accès rapide par niveau
+            </button>
+          )}
+        </div>
 
         {classEvaluations.length > 0 && onStartEvaluation && (
           <Evaluations

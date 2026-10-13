@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "château",
+          "en": "château",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "église",
+          "en": "église",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "monastère",
+          "en": "monastère",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "roi",
+          "en": "roi",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "reine",
+          "en": "reine",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "nobleman",
+          "en": "nobleman",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "paysan",
+          "en": "paysan",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "marchand",
+          "en": "marchand",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "moyen-âge",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "renaissance",
+          "en": "renaissance",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "chronologie",
+          "en": "chronologie",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "date",
+          "en": "date",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "époque",
+          "en": "époque",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "siècle",
+          "en": "siècle",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "antique",
+          "en": "antique",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "guerre",
+          "en": "guerre",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "paix",
+          "en": "paix",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "découverte",
+          "en": "découverte",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "invention",
+          "en": "invention",
+          "theme": "Histoire locale"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"château\" ?",
+          "bonne": "château",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"château\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"église\" ?",
+          "bonne": "église",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"église\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"monastère\" ?",
+          "bonne": "monastère",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"monastère\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chevalier\" ?",
+          "bonne": "chevalier",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"chevalier\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"roi\" ?",
+          "bonne": "roi",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"roi\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"reine\" ?",
+          "bonne": "reine",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"reine\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"nobleman\" ?",
+          "bonne": "nobleman",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"nobleman\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"paysan\" ?",
+          "bonne": "paysan",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"paysan\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"marchand\" ?",
+          "bonne": "marchand",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"marchand\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"moyen-âge\" ?",
+          "bonne": "moyen-âge",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"moyen-âge\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"renaissance\" ?",
+          "bonne": "renaissance",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"renaissance\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chronologie\" ?",
+          "bonne": "chronologie",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"chronologie\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"date\" ?",
+          "bonne": "date",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"date\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"époque\" ?",
+          "bonne": "époque",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"époque\" car elle appartient au thème: Histoire locale"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "château",
+          "en": "château",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "église",
+          "en": "église",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "monastère",
+          "en": "monastère",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "roi",
+          "en": "roi",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "reine",
+          "en": "reine",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "nobleman",
+          "en": "nobleman",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "paysan",
+          "en": "paysan",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "marchand",
+          "en": "marchand",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "moyen-âge",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "renaissance",
+          "en": "renaissance",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "chronologie",
+          "en": "chronologie",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "date",
+          "en": "date",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "époque",
+          "en": "époque",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "siècle",
+          "en": "siècle",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "antique",
+          "en": "antique",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "guerre",
+          "en": "guerre",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "paix",
+          "en": "paix",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "découverte",
+          "en": "découverte",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "invention",
+          "en": "invention",
+          "theme": "Histoire locale"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"château\" ?",
+          "bonne": "château",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"château\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"église\" ?",
+          "bonne": "église",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"église\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"monastère\" ?",
+          "bonne": "monastère",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"monastère\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chevalier\" ?",
+          "bonne": "chevalier",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"chevalier\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"roi\" ?",
+          "bonne": "roi",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"roi\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"reine\" ?",
+          "bonne": "reine",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"reine\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"nobleman\" ?",
+          "bonne": "nobleman",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"nobleman\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"paysan\" ?",
+          "bonne": "paysan",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"paysan\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"marchand\" ?",
+          "bonne": "marchand",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"marchand\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"moyen-âge\" ?",
+          "bonne": "moyen-âge",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"moyen-âge\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"renaissance\" ?",
+          "bonne": "renaissance",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"renaissance\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chronologie\" ?",
+          "bonne": "chronologie",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"chronologie\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"date\" ?",
+          "bonne": "date",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"date\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"époque\" ?",
+          "bonne": "époque",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"époque\" car elle appartient au thème: Histoire locale"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "château",
+          "en": "château",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "église",
+          "en": "église",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "monastère",
+          "en": "monastère",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "roi",
+          "en": "roi",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "reine",
+          "en": "reine",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "nobleman",
+          "en": "nobleman",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "paysan",
+          "en": "paysan",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "marchand",
+          "en": "marchand",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "moyen-âge",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "renaissance",
+          "en": "renaissance",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "chronologie",
+          "en": "chronologie",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "date",
+          "en": "date",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "époque",
+          "en": "époque",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "siècle",
+          "en": "siècle",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "antique",
+          "en": "antique",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "guerre",
+          "en": "guerre",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "paix",
+          "en": "paix",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "découverte",
+          "en": "découverte",
+          "theme": "Histoire locale"
+        },
+        {
+          "fr": "invention",
+          "en": "invention",
+          "theme": "Histoire locale"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"château\" ?",
+          "bonne": "château",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"château\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"église\" ?",
+          "bonne": "église",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"église\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"monastère\" ?",
+          "bonne": "monastère",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"monastère\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chevalier\" ?",
+          "bonne": "chevalier",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"chevalier\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"roi\" ?",
+          "bonne": "roi",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"roi\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"reine\" ?",
+          "bonne": "reine",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"reine\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"nobleman\" ?",
+          "bonne": "nobleman",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"nobleman\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"paysan\" ?",
+          "bonne": "paysan",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"paysan\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"marchand\" ?",
+          "bonne": "marchand",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"marchand\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"moyen-âge\" ?",
+          "bonne": "moyen-âge",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"moyen-âge\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"renaissance\" ?",
+          "bonne": "renaissance",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"renaissance\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chronologie\" ?",
+          "bonne": "chronologie",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"chronologie\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"date\" ?",
+          "bonne": "date",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"date\" car elle appartient au thème: Histoire locale"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"époque\" ?",
+          "bonne": "époque",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"époque\" car elle appartient au thème: Histoire locale"
+        }
+      ]
+    }
+  }
+}

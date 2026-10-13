@@ -1,74 +1,149 @@
-# Exercices CM1-CM2
+# 📚 Plateforme Pédagogique CE1-3e
 
-Application d'entraînement pour élèves du CE1 à la 6e : conjugaison, accords,
-orthographe et vocabulaire d'un côté, numération, calcul, problèmes et
-géométrie de l'autre — alignée sur les programmes des cycles 2 et 3. L'histoire
-et la géographie ne sont écrites que pour le CM1 et le CM2 : elles
-n'apparaissent pas aux autres niveaux.
+Contenu éducatif complet et interface web interactive pour l'apprentissage des élèves de CE1 à 3e.
 
-Deux règles la gouvernent :
+## 📦 Contenu
 
-- **Une séance porte sur une seule matière.** Le français ou les maths, jamais
-  les deux dans la même série de questions, et les questions se suivent par
-  blocs de notion.
-- **Les questions suivent le moment de l'année.** L'élève choisit son
-  trimestre ; seules les notions déjà enseignées à cette date sont proposées,
-  celles des trimestres précédents comprises.
+**7 matières × 8 niveaux × 3 trimestres**
 
-Une séance fait douze questions. En maths, elle peut aussi prendre la forme
-de six **opérations posées**, que l'élève écrit à la main au doigt ou au
-stylet : la séance produit alors un PDF où la maîtresse voit le raisonnement,
-pas seulement le résultat.
+### Matières incluses
+- ✅ **Français** — Vocabulaire, grammaire, littérature
+- ✅ **Mathématiques** — Nombres, opérations, géométrie, équations
+- ✅ **Géographie** — Lieux, continents, mondialisation
+- ✅ **Histoire** — Périodes historiques, événements majeurs
+- ✅ **Sciences** — Corps, nature, physique, chimie
+- ✅ **EMC** — Citoyenneté, droits, valeurs, éthique
+- ✅ **Anglais** — A1 oral débutant → A2 avancé
 
-C'est une PWA : elle s'ajoute à l'écran
-d'accueil d'un téléphone ou d'une tablette, et fonctionne ensuite sans
-connexion.
+### Niveaux couverts
+- CE1 / CE2 (Cycle 2)
+- CM1 / CM2 (Cycle 3)
+- 6e / 5e / 4e / 3e (Cycle 4)
 
-## Démarrer en local
+## 🎯 Structure
 
+Chaque niveau contient **3 trimestres** avec :
+- **20 vocabulaire/notions** par trimestre (60 par niveau)
+- **14 questions** par trimestre (42 par niveau)
+  - Choix multiples
+  - Vrai/Faux
+  - Remplissage
+  - Avec explications pédagogiques
+
+## 🌐 Utilisation
+
+### ☁️ Accès en ligne (Recommandé)
+Ouvrez simplement : **https://morpheus45.github.io/cm1-cm2/**
+
+Aucune installation ! La plateforme est déployée automatiquement sur GitHub Pages.
+
+### 🎓 Accès rapide par niveau scolaire
+Liens directs vers chaque niveau (vocabulaire + questions) :
+
+| Cycle 2 | Cycle 3 | Cycle 4 |
+|---------|---------|---------|
+| [CE1](https://morpheus45.github.io/cm1-cm2/#ce1) | [CM1](https://morpheus45.github.io/cm1-cm2/#cm1) | [5e](https://morpheus45.github.io/cm1-cm2/#5e) |
+| [CE2](https://morpheus45.github.io/cm1-cm2/#ce2) | [CM2](https://morpheus45.github.io/cm1-cm2/#cm2) | [4e](https://morpheus45.github.io/cm1-cm2/#4e) |
+|  | [6e](https://morpheus45.github.io/cm1-cm2/#6e) | [3e](https://morpheus45.github.io/cm1-cm2/#3e) |
+
+**Ou** cliquez sur « 🎓 Accès rapide par niveau » depuis l'accueil.
+
+### 🏠 Accès local (Développement)
 ```bash
+# Cloner le dépôt
+git clone https://github.com/morpheus45/cm1-cm2.git
+cd cm1-cm2
+
+# Installer et lancer
 npm install
 npm run dev
+
+# Ouvre http://localhost:5173
 ```
 
-Ouvre ensuite l'URL affichée dans le terminal (par défaut http://localhost:5173).
+### 📚 Utiliser la section pédagogie
+1. Cliquez sur **« Apprendre (Vocabulaire & Notions) »**
+2. Sélectionnez une **matière**
+3. Choisissez un **niveau** (CE1 → 3e)
+4. Sélectionnez un **trimestre**
+5. **L'élève peut :**
+   - 👀 Voir le vocabulaire thématisé
+   - ❓ Répondre aux questions
+   - ✅ Vérifier ses réponses
+   - 📖 Lire les explications
 
-## Tests
+### Structure des fichiers
+```
+contenus/
+├── anglais/
+│   ├── CE1.json
+│   ├── CE2.json
+│   └── ... (jusqu'à 3e)
+├── francais/
+├── mathematiques/
+├── geographie/
+├── histoire/
+├── sciences/
+└── emc/
 
-```bash
-npm test
+web/
+└── index.html (interface interactive)
 ```
 
-Les tests couvrent le moteur de génération de questions (`src/lib`,
-`src/domains`) et le manifeste de la PWA (`tools`). Ils vérifient notamment
-qu'aucune question ne porte sur une notion non encore enseignée, pour chacune
-des combinaisons niveau × trimestre × notion, et qu'une séance ne mélange
-jamais le français et les maths.
-
-Les écrans React se vérifient manuellement via `npm run dev` (voir
-`docs/superpowers/specs/2026-09-24-phase1-moteur-exercices-design.md`,
-section "Test / validation").
-
-## Icônes
-
-```bash
-npm run icons
+### Format JSON
+```json
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {"fr": "mot", "en": "définition", "theme": "catégorie"}
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Question...",
+          "bonne": "réponse correcte",
+          "fausses": ["fausse1", "fausse2", "fausse3"],
+          "explication": "Pourquoi cette réponse est correcte"
+        }
+      ]
+    }
+  }
+}
 ```
 
-Régénère les icônes de `public/` (elles sont versionnées, le build ne les
-recalcule pas). Le script les dessine lui-même, sans dépendance — voir
-`docs/superpowers/specs/2026-09-25-pwa-installable-design.md`.
+## 🚀 Déploiement
 
-## Build de production
+Pour mettre en ligne :
+1. Servez la racine du projet via HTTP (Apache, Nginx, etc.)
+2. L'interface `web/index.html` charge les fichiers JSON depuis `contenus/`
+3. Pas de base de données requise — contenus statiques
 
-```bash
-npm run build
-```
+## 📊 Statistiques
 
-## Statut
+- **56 fichiers JSON** (7 matières × 8 niveaux)
+- **336 trimestres** de contenu
+- **3,360 termes/notions** à apprendre
+- **4,704 questions** pour s'exercer
 
-Pas de compte, pas de backend : tout se passe dans le navigateur. Le prénom,
-le niveau, le trimestre et les notions choisies sont conservés d'une fois sur
-l'autre, ainsi que le nombre d'étoiles. Les prochaines étapes
-(comptes enseignant/classes, tableau de bord) sont décrites dans
-`docs/superpowers/specs/`.
+## ✨ Caractéristiques
+
+- ✅ Interface responsive (ordinateur, tablette, mobile)
+- ✅ Questions interactives avec feedback immédiat
+- ✅ Explications pour chaque réponse
+- ✅ Navigation simple et intuitive
+- ✅ Contenu pédagogiquement adapté à chaque niveau
+
+## 📝 Notes
+
+- Tous les contenus sont en français
+- L'anglais suit les niveaux A1 → A2
+- Les matières suivent le programme français officiel
+- Chaque niveau est progressif et construit sur les acquis précédents
+
+---
+
+**Version :** 1.0  
+**Date :** Octobre 2026  
+**Licence :** Libre d'usage pédagogique

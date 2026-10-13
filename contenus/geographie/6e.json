@@ -1,0 +1,773 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "relief",
+          "en": "relief (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "altitude",
+          "en": "altitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "latitude",
+          "en": "latitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "longitude",
+          "en": "longitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "équateur",
+          "en": "équateur (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "pôles",
+          "en": "pôles (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "fuseaux horaires",
+          "en": "fuseaux horaires (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "densité",
+          "en": "densité (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "croissance",
+          "en": "croissance (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "migration",
+          "en": "migration (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "secteurs économiques",
+          "en": "secteurs économiques (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "ressources naturelles",
+          "en": "ressources naturelles (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "pollution",
+          "en": "pollution (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "géographie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 6e",
+          "bonne": "relief",
+          "fausses": [
+            "altitude",
+            "latitude",
+            "longitude"
+          ],
+          "explication": "Explication 6e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: géographie physique et humaine",
+          "bonne": "altitude",
+          "fausses": [
+            "latitude",
+            "longitude",
+            "équateur"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "relief",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 6e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "relief",
+          "en": "relief (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "altitude",
+          "en": "altitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "latitude",
+          "en": "latitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "longitude",
+          "en": "longitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "équateur",
+          "en": "équateur (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "pôles",
+          "en": "pôles (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "fuseaux horaires",
+          "en": "fuseaux horaires (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "densité",
+          "en": "densité (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "croissance",
+          "en": "croissance (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "migration",
+          "en": "migration (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "secteurs économiques",
+          "en": "secteurs économiques (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "ressources naturelles",
+          "en": "ressources naturelles (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "pollution",
+          "en": "pollution (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "géographie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 6e",
+          "bonne": "relief",
+          "fausses": [
+            "altitude",
+            "latitude",
+            "longitude"
+          ],
+          "explication": "Explication 6e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: géographie physique et humaine",
+          "bonne": "altitude",
+          "fausses": [
+            "latitude",
+            "longitude",
+            "équateur"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "relief",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 6e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "relief",
+          "en": "relief (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "altitude",
+          "en": "altitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "latitude",
+          "en": "latitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "longitude",
+          "en": "longitude (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "équateur",
+          "en": "équateur (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "pôles",
+          "en": "pôles (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "fuseaux horaires",
+          "en": "fuseaux horaires (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "densité",
+          "en": "densité (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "croissance",
+          "en": "croissance (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "migration",
+          "en": "migration (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "secteurs économiques",
+          "en": "secteurs économiques (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "ressources naturelles",
+          "en": "ressources naturelles (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "pollution",
+          "en": "pollution (géographie physique et humaine)",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "géographie"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "géographie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 6e",
+          "bonne": "relief",
+          "fausses": [
+            "altitude",
+            "latitude",
+            "longitude"
+          ],
+          "explication": "Explication 6e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: géographie physique et humaine",
+          "bonne": "altitude",
+          "fausses": [
+            "latitude",
+            "longitude",
+            "équateur"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "relief",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 6e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}
