@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { DysType } from '../types/accessibility';
+import type { CertificateData, CompetencyScore } from '../types/competencies';
+import { calculateMasteryLevel } from '../types/competencies';
 
 interface ProgressRecord {
   date: string;
@@ -26,6 +28,7 @@ interface ProgressTrackerProps {
   level: string;
   questionsAnswered: number;
   correctAnswers: number;
+  onCertificateGenerated?: (certificate: CertificateData) => void;
 }
 
 const ENCOURAGEMENTS: Record<DysType, string[]> = {
@@ -92,6 +95,7 @@ export function ProgressTracker({
   level,
   questionsAnswered,
   correctAnswers,
+  onCertificateGenerated,
 }: ProgressTrackerProps) {
   const [progress, setProgress] = useState<ChildProgress>(() => {
     try {
@@ -177,6 +181,50 @@ export function ProgressTracker({
       ? '📈 En progression !'
       : '➡️ Stable'
     : '🌟 Nouveau départ';
+
+  const generateCertificate = (levelKey: string): CertificateData => {
+    const subjects = ['Français', 'Mathématiques', 'Géographie', 'Histoire', 'Sciences', 'EMC', 'Anglais'];
+
+    const competencies: CompetencyScore[] = subjects.map((subject) => {
+      const subjectRecords = progress.records.filter((r) => r.subject === subject);
+      const totalCorrect = subjectRecords.reduce((sum, r) => sum + r.correct, 0);
+      const totalAnswered = subjectRecords.reduce((sum, r) => sum + r.questionsAnswered, 0);
+      const percentage = totalAnswered > 0 ? (totalCorrect / totalAnswered) * 100 : 0;
+
+      return {
+        subject,
+        level: levelKey,
+        percentage: Math.round(percentage),
+        masteryLevel: calculateMasteryLevel(percentage),
+        questionsAnswered: totalAnswered,
+        correctAnswers: totalCorrect,
+      };
+    });
+
+    const overallPercentage = competencies.length > 0
+      ? competencies.reduce((sum, c) => sum + c.percentage, 0) / competencies.length
+      : 0;
+
+    const strengths = competencies
+      .filter((c) => c.percentage >= 85)
+      .map((c) => `${c.subject}: ${c.percentage}%`);
+
+    const areasToImprove = competencies
+      .filter((c) => c.percentage < 80)
+      .map((c) => `${c.subject}: ${c.percentage}%`);
+
+    return {
+      childName,
+      level: levelKey,
+      date: new Date().toISOString(),
+      competencies,
+      overallLevel: calculateMasteryLevel(overallPercentage),
+      overallPercentage: Math.round(overallPercentage),
+      canProgressToNextLevel: overallPercentage >= 80,
+      strengths,
+      areasToImprove,
+    };
+  };
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
@@ -277,6 +325,16 @@ export function ProgressTracker({
           className="w-full mt-6 px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-lg hover:from-green-600 hover:to-emerald-700 transition"
         >
           ✅ Enregistrer cette séance
+        </button>
+      )}
+
+      {/* Bouton pour afficher le certificat */}
+      {progress.records.length > 0 && (
+        <button
+          onClick={() => onCertificateGenerated?.(generateCertificate(level))}
+          className="w-full mt-4 px-4 py-3 bg-gradient-to-r from-yellow-500 to-orange-600 text-white font-bold rounded-lg hover:from-yellow-600 hover:to-orange-700 transition"
+        >
+          🎓 Voir mon Certificat de Compétences
         </button>
       )}
     </div>

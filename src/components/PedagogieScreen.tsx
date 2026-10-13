@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Level } from '../types';
+import type { CertificateData } from '../types/competencies';
+import { useCompetencies } from '../hooks/useCompetencies';
 
 type Subject = 'francais' | 'mathematiques' | 'geographie' | 'histoire' | 'sciences' | 'emc' | 'anglais';
 
@@ -36,15 +38,19 @@ const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
 
 interface PedagogieScreenProps {
   initialLevel?: Level;
+  childName?: string;
+  onCertificateGenerated?: (certificate: CertificateData) => void;
+  onBack?: () => void;
 }
 
-export function PedagogieScreen({ initialLevel }: PedagogieScreenProps) {
+export function PedagogieScreen({ initialLevel, childName = 'Élève', onCertificateGenerated, onBack }: PedagogieScreenProps) {
   const [subject, setSubject] = useState<Subject>('francais');
   const [level, setLevel] = useState<Level>(initialLevel ?? 'CE1');
   const [trimester, setTrimester] = useState('1');
   const [content, setContent] = useState<PedagogieContent | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [loading, setLoading] = useState(false);
+  const competencies = useCompetencies(childName);
 
   useEffect(() => {
     setLoading(true);
