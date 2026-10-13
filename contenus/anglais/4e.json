@@ -4,780 +4,780 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "word0",
-          "en": "word0",
-          "theme": "general"
+          "fr": "money",
+          "en": "money",
+          "theme": "économie"
         },
         {
-          "fr": "word1",
-          "en": "word1",
-          "theme": "general"
+          "fr": "business",
+          "en": "business",
+          "theme": "économie"
         },
         {
-          "fr": "word2",
-          "en": "word2",
-          "theme": "general"
+          "fr": "trade",
+          "en": "trade",
+          "theme": "économie"
         },
         {
-          "fr": "word3",
-          "en": "word3",
-          "theme": "general"
+          "fr": "profit",
+          "en": "profit",
+          "theme": "économie"
         },
         {
-          "fr": "word4",
-          "en": "word4",
-          "theme": "general"
+          "fr": "cost",
+          "en": "cost",
+          "theme": "économie"
         },
         {
-          "fr": "word5",
-          "en": "word5",
-          "theme": "general"
+          "fr": "investment",
+          "en": "investment",
+          "theme": "économie"
         },
         {
-          "fr": "word6",
-          "en": "word6",
-          "theme": "general"
+          "fr": "market",
+          "en": "market",
+          "theme": "économie"
         },
         {
-          "fr": "word7",
-          "en": "word7",
-          "theme": "general"
+          "fr": "currency",
+          "en": "currency",
+          "theme": "économie"
         },
         {
-          "fr": "word8",
-          "en": "word8",
-          "theme": "general"
+          "fr": "commerce",
+          "en": "commerce",
+          "theme": "économie"
         },
         {
-          "fr": "word9",
-          "en": "word9",
-          "theme": "general"
+          "fr": "economy",
+          "en": "economy",
+          "theme": "économie"
         },
         {
-          "fr": "word10",
-          "en": "word10",
-          "theme": "general"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "économie"
         },
         {
-          "fr": "word11",
-          "en": "word11",
-          "theme": "general"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "économie"
         },
         {
-          "fr": "word12",
-          "en": "word12",
-          "theme": "general"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "économie"
         },
         {
-          "fr": "word13",
-          "en": "word13",
-          "theme": "general"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "économie"
         },
         {
-          "fr": "word14",
-          "en": "word14",
-          "theme": "general"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "économie"
         },
         {
-          "fr": "word15",
-          "en": "word15",
-          "theme": "general"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "économie"
         },
         {
-          "fr": "word16",
-          "en": "word16",
-          "theme": "general"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "économie"
         },
         {
-          "fr": "word17",
-          "en": "word17",
-          "theme": "general"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "économie"
         },
         {
-          "fr": "word18",
-          "en": "word18",
-          "theme": "general"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "économie"
         },
         {
-          "fr": "word19",
-          "en": "word19",
-          "theme": "general"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "économie"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"money\" to French:",
+          "bonne": "money",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"money\" means \"money\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"business\" to French:",
+          "bonne": "business",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"business\" means \"business\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"trade\" to French:",
+          "bonne": "trade",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"trade\" means \"trade\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"profit\" to French:",
+          "bonne": "profit",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"profit\" means \"profit\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"cost\" to French:",
+          "bonne": "cost",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"cost\" means \"cost\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"investment\" to French:",
+          "bonne": "investment",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"investment\" means \"investment\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"market\" to French:",
+          "bonne": "market",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"market\" means \"market\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"currency\" to French:",
+          "bonne": "currency",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"currency\" means \"currency\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"commerce\" to French:",
+          "bonne": "commerce",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"commerce\" means \"commerce\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"economy\" to French:",
+          "bonne": "economy",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"economy\" means \"economy\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: économie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: économie"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "word0",
-          "en": "word0",
-          "theme": "general"
+          "fr": "atom",
+          "en": "atom",
+          "theme": "science"
         },
         {
-          "fr": "word1",
-          "en": "word1",
-          "theme": "general"
+          "fr": "molecule",
+          "en": "molecule",
+          "theme": "science"
         },
         {
-          "fr": "word2",
-          "en": "word2",
-          "theme": "general"
+          "fr": "energy",
+          "en": "energy",
+          "theme": "science"
         },
         {
-          "fr": "word3",
-          "en": "word3",
-          "theme": "general"
+          "fr": "force",
+          "en": "force",
+          "theme": "science"
         },
         {
-          "fr": "word4",
-          "en": "word4",
-          "theme": "general"
+          "fr": "gravity",
+          "en": "gravity",
+          "theme": "science"
         },
         {
-          "fr": "word5",
-          "en": "word5",
-          "theme": "general"
+          "fr": "magnetism",
+          "en": "magnetism",
+          "theme": "science"
         },
         {
-          "fr": "word6",
-          "en": "word6",
-          "theme": "general"
+          "fr": "electricity",
+          "en": "electricity",
+          "theme": "science"
         },
         {
-          "fr": "word7",
-          "en": "word7",
-          "theme": "general"
+          "fr": "physics",
+          "en": "physics",
+          "theme": "science"
         },
         {
-          "fr": "word8",
-          "en": "word8",
-          "theme": "general"
+          "fr": "chemistry",
+          "en": "chemistry",
+          "theme": "science"
         },
         {
-          "fr": "word9",
-          "en": "word9",
-          "theme": "general"
+          "fr": "biology",
+          "en": "biology",
+          "theme": "science"
         },
         {
-          "fr": "word10",
-          "en": "word10",
-          "theme": "general"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "science"
         },
         {
-          "fr": "word11",
-          "en": "word11",
-          "theme": "general"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "science"
         },
         {
-          "fr": "word12",
-          "en": "word12",
-          "theme": "general"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "science"
         },
         {
-          "fr": "word13",
-          "en": "word13",
-          "theme": "general"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "science"
         },
         {
-          "fr": "word14",
-          "en": "word14",
-          "theme": "general"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "science"
         },
         {
-          "fr": "word15",
-          "en": "word15",
-          "theme": "general"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "science"
         },
         {
-          "fr": "word16",
-          "en": "word16",
-          "theme": "general"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "science"
         },
         {
-          "fr": "word17",
-          "en": "word17",
-          "theme": "general"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "science"
         },
         {
-          "fr": "word18",
-          "en": "word18",
-          "theme": "general"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "science"
         },
         {
-          "fr": "word19",
-          "en": "word19",
-          "theme": "general"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "science"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"atom\" to French:",
+          "bonne": "atom",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"atom\" means \"atom\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"molecule\" to French:",
+          "bonne": "molecule",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"molecule\" means \"molecule\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"energy\" to French:",
+          "bonne": "energy",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"energy\" means \"energy\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"force\" to French:",
+          "bonne": "force",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"force\" means \"force\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"gravity\" to French:",
+          "bonne": "gravity",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"gravity\" means \"gravity\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"magnetism\" to French:",
+          "bonne": "magnetism",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"magnetism\" means \"magnetism\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"electricity\" to French:",
+          "bonne": "electricity",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"electricity\" means \"electricity\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"physics\" to French:",
+          "bonne": "physics",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"physics\" means \"physics\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"chemistry\" to French:",
+          "bonne": "chemistry",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"chemistry\" means \"chemistry\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"biology\" to French:",
+          "bonne": "biology",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"biology\" means \"biology\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: science"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: science"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "word0",
-          "en": "word0",
-          "theme": "general"
+          "fr": "artificial intelligence",
+          "en": "artificial intelligence",
+          "theme": "technologie"
         },
         {
-          "fr": "word1",
-          "en": "word1",
-          "theme": "general"
+          "fr": "robot",
+          "en": "robot",
+          "theme": "technologie"
         },
         {
-          "fr": "word2",
-          "en": "word2",
-          "theme": "general"
+          "fr": "programming",
+          "en": "programming",
+          "theme": "technologie"
         },
         {
-          "fr": "word3",
-          "en": "word3",
-          "theme": "general"
+          "fr": "innovation",
+          "en": "innovation",
+          "theme": "technologie"
         },
         {
-          "fr": "word4",
-          "en": "word4",
-          "theme": "general"
+          "fr": "technology",
+          "en": "technology",
+          "theme": "technologie"
         },
         {
-          "fr": "word5",
-          "en": "word5",
-          "theme": "general"
+          "fr": "internet",
+          "en": "internet",
+          "theme": "technologie"
         },
         {
-          "fr": "word6",
-          "en": "word6",
-          "theme": "general"
+          "fr": "data",
+          "en": "data",
+          "theme": "technologie"
         },
         {
-          "fr": "word7",
-          "en": "word7",
-          "theme": "general"
+          "fr": "algorithm",
+          "en": "algorithm",
+          "theme": "technologie"
         },
         {
-          "fr": "word8",
-          "en": "word8",
-          "theme": "general"
+          "fr": "digital",
+          "en": "digital",
+          "theme": "technologie"
         },
         {
-          "fr": "word9",
-          "en": "word9",
-          "theme": "general"
+          "fr": "cyber",
+          "en": "cyber",
+          "theme": "technologie"
         },
         {
-          "fr": "word10",
-          "en": "word10",
-          "theme": "general"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "technologie"
         },
         {
-          "fr": "word11",
-          "en": "word11",
-          "theme": "general"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "technologie"
         },
         {
-          "fr": "word12",
-          "en": "word12",
-          "theme": "general"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "technologie"
         },
         {
-          "fr": "word13",
-          "en": "word13",
-          "theme": "general"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "technologie"
         },
         {
-          "fr": "word14",
-          "en": "word14",
-          "theme": "general"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "technologie"
         },
         {
-          "fr": "word15",
-          "en": "word15",
-          "theme": "general"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "technologie"
         },
         {
-          "fr": "word16",
-          "en": "word16",
-          "theme": "general"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "technologie"
         },
         {
-          "fr": "word17",
-          "en": "word17",
-          "theme": "general"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "technologie"
         },
         {
-          "fr": "word18",
-          "en": "word18",
-          "theme": "general"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "technologie"
         },
         {
-          "fr": "word19",
-          "en": "word19",
-          "theme": "general"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "technologie"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"artificial intelligence\" to French:",
+          "bonne": "artificial intelligence",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"artificial intelligence\" means \"artificial intelligence\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"robot\" to French:",
+          "bonne": "robot",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"robot\" means \"robot\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"programming\" to French:",
+          "bonne": "programming",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"programming\" means \"programming\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"innovation\" to French:",
+          "bonne": "innovation",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"innovation\" means \"innovation\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"technology\" to French:",
+          "bonne": "technology",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"technology\" means \"technology\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"internet\" to French:",
+          "bonne": "internet",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"internet\" means \"internet\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"data\" to French:",
+          "bonne": "data",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"data\" means \"data\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"algorithm\" to French:",
+          "bonne": "algorithm",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"algorithm\" means \"algorithm\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"digital\" to French:",
+          "bonne": "digital",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"digital\" means \"digital\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"cyber\" to French:",
+          "bonne": "cyber",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"cyber\" means \"cyber\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: technologie"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: technologie"
         }
       ]
     }

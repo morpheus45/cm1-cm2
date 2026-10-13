@@ -4,780 +4,780 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "word0",
-          "en": "word0",
-          "theme": "general"
+          "fr": "international",
+          "en": "international",
+          "theme": "globalisation"
         },
         {
-          "fr": "word1",
-          "en": "word1",
-          "theme": "general"
+          "fr": "culture exchange",
+          "en": "culture exchange",
+          "theme": "globalisation"
         },
         {
-          "fr": "word2",
-          "en": "word2",
-          "theme": "general"
+          "fr": "immigration",
+          "en": "immigration",
+          "theme": "globalisation"
         },
         {
-          "fr": "word3",
-          "en": "word3",
-          "theme": "general"
+          "fr": "multiculturalism",
+          "en": "multiculturalism",
+          "theme": "globalisation"
         },
         {
-          "fr": "word4",
-          "en": "word4",
-          "theme": "general"
+          "fr": "globalization",
+          "en": "globalization",
+          "theme": "globalisation"
         },
         {
-          "fr": "word5",
-          "en": "word5",
-          "theme": "general"
+          "fr": "diversity",
+          "en": "diversity",
+          "theme": "globalisation"
         },
         {
-          "fr": "word6",
-          "en": "word6",
-          "theme": "general"
+          "fr": "cooperation",
+          "en": "cooperation",
+          "theme": "globalisation"
         },
         {
-          "fr": "word7",
-          "en": "word7",
-          "theme": "general"
+          "fr": "diplomacy",
+          "en": "diplomacy",
+          "theme": "globalisation"
         },
         {
-          "fr": "word8",
-          "en": "word8",
-          "theme": "general"
+          "fr": "conflict",
+          "en": "conflict",
+          "theme": "globalisation"
         },
         {
-          "fr": "word9",
-          "en": "word9",
-          "theme": "general"
+          "fr": "development",
+          "en": "development",
+          "theme": "globalisation"
         },
         {
-          "fr": "word10",
-          "en": "word10",
-          "theme": "general"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "globalisation"
         },
         {
-          "fr": "word11",
-          "en": "word11",
-          "theme": "general"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "globalisation"
         },
         {
-          "fr": "word12",
-          "en": "word12",
-          "theme": "general"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "globalisation"
         },
         {
-          "fr": "word13",
-          "en": "word13",
-          "theme": "general"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "globalisation"
         },
         {
-          "fr": "word14",
-          "en": "word14",
-          "theme": "general"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "globalisation"
         },
         {
-          "fr": "word15",
-          "en": "word15",
-          "theme": "general"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "globalisation"
         },
         {
-          "fr": "word16",
-          "en": "word16",
-          "theme": "general"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "globalisation"
         },
         {
-          "fr": "word17",
-          "en": "word17",
-          "theme": "general"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "globalisation"
         },
         {
-          "fr": "word18",
-          "en": "word18",
-          "theme": "general"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "globalisation"
         },
         {
-          "fr": "word19",
-          "en": "word19",
-          "theme": "general"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "globalisation"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"international\" to French:",
+          "bonne": "international",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"international\" means \"international\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"culture exchange\" to French:",
+          "bonne": "culture exchange",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"culture exchange\" means \"culture exchange\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"immigration\" to French:",
+          "bonne": "immigration",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"immigration\" means \"immigration\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"multiculturalism\" to French:",
+          "bonne": "multiculturalism",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"multiculturalism\" means \"multiculturalism\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"globalization\" to French:",
+          "bonne": "globalization",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"globalization\" means \"globalization\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"diversity\" to French:",
+          "bonne": "diversity",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"diversity\" means \"diversity\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"cooperation\" to French:",
+          "bonne": "cooperation",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"cooperation\" means \"cooperation\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"diplomacy\" to French:",
+          "bonne": "diplomacy",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"diplomacy\" means \"diplomacy\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"conflict\" to French:",
+          "bonne": "conflict",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"conflict\" means \"conflict\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"development\" to French:",
+          "bonne": "development",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"development\" means \"development\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: globalisation"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: globalisation"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "word0",
-          "en": "word0",
-          "theme": "general"
+          "fr": "career",
+          "en": "career",
+          "theme": "futur"
         },
         {
-          "fr": "word1",
-          "en": "word1",
-          "theme": "general"
+          "fr": "university",
+          "en": "university",
+          "theme": "futur"
         },
         {
-          "fr": "word2",
-          "en": "word2",
-          "theme": "general"
+          "fr": "profession",
+          "en": "profession",
+          "theme": "futur"
         },
         {
-          "fr": "word3",
-          "en": "word3",
-          "theme": "general"
+          "fr": "ambition",
+          "en": "ambition",
+          "theme": "futur"
         },
         {
-          "fr": "word4",
-          "en": "word4",
-          "theme": "general"
+          "fr": "opportunity",
+          "en": "opportunity",
+          "theme": "futur"
         },
         {
-          "fr": "word5",
-          "en": "word5",
-          "theme": "general"
+          "fr": "challenge",
+          "en": "challenge",
+          "theme": "futur"
         },
         {
-          "fr": "word6",
-          "en": "word6",
-          "theme": "general"
+          "fr": "success",
+          "en": "success",
+          "theme": "futur"
         },
         {
-          "fr": "word7",
-          "en": "word7",
-          "theme": "general"
+          "fr": "failure",
+          "en": "failure",
+          "theme": "futur"
         },
         {
-          "fr": "word8",
-          "en": "word8",
-          "theme": "general"
+          "fr": "perseverance",
+          "en": "perseverance",
+          "theme": "futur"
         },
         {
-          "fr": "word9",
-          "en": "word9",
-          "theme": "general"
+          "fr": "innovation",
+          "en": "innovation",
+          "theme": "futur"
         },
         {
-          "fr": "word10",
-          "en": "word10",
-          "theme": "general"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "futur"
         },
         {
-          "fr": "word11",
-          "en": "word11",
-          "theme": "general"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "futur"
         },
         {
-          "fr": "word12",
-          "en": "word12",
-          "theme": "general"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "futur"
         },
         {
-          "fr": "word13",
-          "en": "word13",
-          "theme": "general"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "futur"
         },
         {
-          "fr": "word14",
-          "en": "word14",
-          "theme": "general"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "futur"
         },
         {
-          "fr": "word15",
-          "en": "word15",
-          "theme": "general"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "futur"
         },
         {
-          "fr": "word16",
-          "en": "word16",
-          "theme": "general"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "futur"
         },
         {
-          "fr": "word17",
-          "en": "word17",
-          "theme": "general"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "futur"
         },
         {
-          "fr": "word18",
-          "en": "word18",
-          "theme": "general"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "futur"
         },
         {
-          "fr": "word19",
-          "en": "word19",
-          "theme": "general"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "futur"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"career\" to French:",
+          "bonne": "career",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"career\" means \"career\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"university\" to French:",
+          "bonne": "university",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"university\" means \"university\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"profession\" to French:",
+          "bonne": "profession",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"profession\" means \"profession\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"ambition\" to French:",
+          "bonne": "ambition",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"ambition\" means \"ambition\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"opportunity\" to French:",
+          "bonne": "opportunity",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"opportunity\" means \"opportunity\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"challenge\" to French:",
+          "bonne": "challenge",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"challenge\" means \"challenge\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"success\" to French:",
+          "bonne": "success",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"success\" means \"success\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"failure\" to French:",
+          "bonne": "failure",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"failure\" means \"failure\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"perseverance\" to French:",
+          "bonne": "perseverance",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"perseverance\" means \"perseverance\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"innovation\" to French:",
+          "bonne": "innovation",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"innovation\" means \"innovation\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: futur"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: futur"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "word0",
-          "en": "word0",
-          "theme": "general"
+          "fr": "citizenship",
+          "en": "citizenship",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word1",
-          "en": "word1",
-          "theme": "general"
+          "fr": "ethics",
+          "en": "ethics",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word2",
-          "en": "word2",
-          "theme": "general"
+          "fr": "moral",
+          "en": "moral",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word3",
-          "en": "word3",
-          "theme": "general"
+          "fr": "sustainable",
+          "en": "sustainable",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word4",
-          "en": "word4",
-          "theme": "general"
+          "fr": "environment",
+          "en": "environment",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word5",
-          "en": "word5",
-          "theme": "general"
+          "fr": "social",
+          "en": "social",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word6",
-          "en": "word6",
-          "theme": "general"
+          "fr": "justice",
+          "en": "justice",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word7",
-          "en": "word7",
-          "theme": "general"
+          "fr": "human rights",
+          "en": "human rights",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word8",
-          "en": "word8",
-          "theme": "general"
+          "fr": "discrimination",
+          "en": "discrimination",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word9",
-          "en": "word9",
-          "theme": "general"
+          "fr": "tolerance",
+          "en": "tolerance",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word10",
-          "en": "word10",
-          "theme": "general"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word11",
-          "en": "word11",
-          "theme": "general"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word12",
-          "en": "word12",
-          "theme": "general"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word13",
-          "en": "word13",
-          "theme": "general"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word14",
-          "en": "word14",
-          "theme": "general"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word15",
-          "en": "word15",
-          "theme": "general"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word16",
-          "en": "word16",
-          "theme": "general"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word17",
-          "en": "word17",
-          "theme": "general"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word18",
-          "en": "word18",
-          "theme": "general"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "responsabilité"
         },
         {
-          "fr": "word19",
-          "en": "word19",
-          "theme": "general"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "responsabilité"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"citizenship\" to French:",
+          "bonne": "citizenship",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"citizenship\" means \"citizenship\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"ethics\" to French:",
+          "bonne": "ethics",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"ethics\" means \"ethics\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"moral\" to French:",
+          "bonne": "moral",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"moral\" means \"moral\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"sustainable\" to French:",
+          "bonne": "sustainable",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"sustainable\" means \"sustainable\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"environment\" to French:",
+          "bonne": "environment",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"environment\" means \"environment\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"social\" to French:",
+          "bonne": "social",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"social\" means \"social\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"justice\" to French:",
+          "bonne": "justice",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"justice\" means \"justice\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"human rights\" to French:",
+          "bonne": "human rights",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"human rights\" means \"human rights\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"discrimination\" to French:",
+          "bonne": "discrimination",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"discrimination\" means \"discrimination\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"tolerance\" to French:",
+          "bonne": "tolerance",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"tolerance\" means \"tolerance\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: responsabilité"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: responsabilité"
         }
       ]
     }

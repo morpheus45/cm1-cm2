@@ -24,760 +24,760 @@
           "theme": "couleurs"
         },
         {
-          "fr": "blanc",
+          "fr": "orange",
+          "en": "orange",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "purple",
+          "en": "purple",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "pink",
+          "en": "pink",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "black",
+          "en": "black",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "white",
           "en": "white",
           "theme": "couleurs"
         },
         {
-          "fr": "un",
-          "en": "one",
-          "theme": "nombres"
+          "fr": "brown",
+          "en": "brown",
+          "theme": "couleurs"
         },
         {
-          "fr": "deux",
-          "en": "two",
-          "theme": "nombres"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "couleurs"
         },
         {
-          "fr": "trois",
-          "en": "three",
-          "theme": "nombres"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "couleurs"
         },
         {
-          "fr": "quatre",
-          "en": "four",
-          "theme": "nombres"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "couleurs"
         },
         {
-          "fr": "cinq",
-          "en": "five",
-          "theme": "nombres"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "couleurs"
         },
         {
-          "fr": "tête",
-          "en": "head",
-          "theme": "corps"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "couleurs"
         },
         {
-          "fr": "main",
-          "en": "hand",
-          "theme": "corps"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "couleurs"
         },
         {
-          "fr": "pied",
-          "en": "foot",
-          "theme": "corps"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "couleurs"
         },
         {
-          "fr": "oeil",
-          "en": "eye",
-          "theme": "corps"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "couleurs"
         },
         {
-          "fr": "nez",
-          "en": "nose",
-          "theme": "corps"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "couleurs"
         },
         {
-          "fr": "chat",
-          "en": "cat",
-          "theme": "animaux"
-        },
-        {
-          "fr": "chien",
-          "en": "dog",
-          "theme": "animaux"
-        },
-        {
-          "fr": "oiseau",
-          "en": "bird",
-          "theme": "animaux"
-        },
-        {
-          "fr": "poisson",
-          "en": "fish",
-          "theme": "animaux"
-        },
-        {
-          "fr": "souris",
-          "en": "mouse",
-          "theme": "animaux"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "couleurs"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What colour is the sky?",
-          "bonne": "blue",
+          "consigne": "Traduction",
+          "enonce": "Translate \"red\" to French:",
+          "bonne": "rouge",
           "fausses": [
-            "green",
-            "yellow",
-            "red"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Le ciel est bleu."
+          "explication": "\"red\" means \"rouge\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "How do you say 'chat' in English?",
-          "bonne": "cat",
+          "consigne": "Traduction",
+          "enonce": "Translate \"blue\" to French:",
+          "bonne": "bleu",
           "fausses": [
-            "dog",
-            "bird",
-            "fish"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Chat = cat en anglais."
+          "explication": "\"blue\" means \"bleu\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What do you say when you meet someone?",
-          "bonne": "hello",
+          "consigne": "Traduction",
+          "enonce": "Translate \"green\" to French:",
+          "bonne": "vert",
           "fausses": [
-            "goodbye",
-            "thank you",
-            "please"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Hello veut dire bonjour."
+          "explication": "\"green\" means \"vert\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Complete the sentence",
-          "enonce": "I have got ___ eyes.",
-          "bonne": "two",
+          "consigne": "Traduction",
+          "enonce": "Translate \"yellow\" to French:",
+          "bonne": "jaune",
           "fausses": [
-            "one",
-            "three",
-            "four"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Nous avons deux yeux."
+          "explication": "\"yellow\" means \"jaune\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "Which number comes after four?",
-          "bonne": "five",
+          "consigne": "Traduction",
+          "enonce": "Translate \"orange\" to French:",
+          "bonne": "orange",
           "fausses": [
-            "three",
-            "six",
-            "two"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Quatre + 1 = cinq (five)."
+          "explication": "\"orange\" means \"orange\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"purple\" to French:",
+          "bonne": "purple",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"purple\" means \"purple\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"pink\" to French:",
+          "bonne": "pink",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"pink\" means \"pink\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"black\" to French:",
+          "bonne": "black",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"black\" means \"black\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"white\" to French:",
+          "bonne": "white",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"white\" means \"white\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"brown\" to French:",
+          "bonne": "brown",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"brown\" means \"brown\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: couleurs"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: couleurs"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "rouge",
-          "en": "red",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "bleu",
-          "en": "blue",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "vert",
-          "en": "green",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "jaune",
-          "en": "yellow",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "blanc",
-          "en": "white",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "un",
+          "fr": "one",
           "en": "one",
-          "theme": "nombres"
+          "theme": "chiffres"
         },
         {
-          "fr": "deux",
+          "fr": "two",
           "en": "two",
-          "theme": "nombres"
+          "theme": "chiffres"
         },
         {
-          "fr": "trois",
+          "fr": "three",
           "en": "three",
-          "theme": "nombres"
+          "theme": "chiffres"
         },
         {
-          "fr": "quatre",
+          "fr": "four",
           "en": "four",
-          "theme": "nombres"
+          "theme": "chiffres"
         },
         {
-          "fr": "cinq",
+          "fr": "five",
           "en": "five",
-          "theme": "nombres"
+          "theme": "chiffres"
         },
         {
-          "fr": "tête",
-          "en": "head",
-          "theme": "corps"
+          "fr": "six",
+          "en": "six",
+          "theme": "chiffres"
         },
         {
-          "fr": "main",
-          "en": "hand",
-          "theme": "corps"
+          "fr": "seven",
+          "en": "seven",
+          "theme": "chiffres"
         },
         {
-          "fr": "pied",
-          "en": "foot",
-          "theme": "corps"
+          "fr": "eight",
+          "en": "eight",
+          "theme": "chiffres"
         },
         {
-          "fr": "oeil",
-          "en": "eye",
-          "theme": "corps"
+          "fr": "nine",
+          "en": "nine",
+          "theme": "chiffres"
         },
         {
-          "fr": "nez",
-          "en": "nose",
-          "theme": "corps"
+          "fr": "ten",
+          "en": "ten",
+          "theme": "chiffres"
         },
         {
-          "fr": "chat",
-          "en": "cat",
-          "theme": "animaux"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "chiffres"
         },
         {
-          "fr": "chien",
-          "en": "dog",
-          "theme": "animaux"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "chiffres"
         },
         {
-          "fr": "oiseau",
-          "en": "bird",
-          "theme": "animaux"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "chiffres"
         },
         {
-          "fr": "poisson",
-          "en": "fish",
-          "theme": "animaux"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "chiffres"
         },
         {
-          "fr": "souris",
-          "en": "mouse",
-          "theme": "animaux"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "chiffres"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "chiffres"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "chiffres"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "chiffres"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "chiffres"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "chiffres"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What colour is the sky?",
-          "bonne": "blue",
+          "consigne": "Traduction",
+          "enonce": "Translate \"one\" to French:",
+          "bonne": "one",
           "fausses": [
-            "green",
-            "yellow",
-            "red"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Le ciel est bleu."
+          "explication": "\"one\" means \"one\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "How do you say 'chat' in English?",
-          "bonne": "cat",
-          "fausses": [
-            "dog",
-            "bird",
-            "fish"
-          ],
-          "explication": "Chat = cat en anglais."
-        },
-        {
-          "consigne": "Choose the correct answer",
-          "enonce": "What do you say when you meet someone?",
-          "bonne": "hello",
-          "fausses": [
-            "goodbye",
-            "thank you",
-            "please"
-          ],
-          "explication": "Hello veut dire bonjour."
-        },
-        {
-          "consigne": "Complete the sentence",
-          "enonce": "I have got ___ eyes.",
+          "consigne": "Traduction",
+          "enonce": "Translate \"two\" to French:",
           "bonne": "two",
           "fausses": [
-            "one",
-            "three",
-            "four"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Nous avons deux yeux."
+          "explication": "\"two\" means \"two\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "Which number comes after four?",
+          "consigne": "Traduction",
+          "enonce": "Translate \"three\" to French:",
+          "bonne": "three",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"three\" means \"three\" in French. Theme: chiffres"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"four\" to French:",
+          "bonne": "four",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"four\" means \"four\" in French. Theme: chiffres"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"five\" to French:",
           "bonne": "five",
           "fausses": [
-            "three",
-            "six",
-            "two"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Quatre + 1 = cinq (five)."
+          "explication": "\"five\" means \"five\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"six\" to French:",
+          "bonne": "six",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"six\" means \"six\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"seven\" to French:",
+          "bonne": "seven",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"seven\" means \"seven\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"eight\" to French:",
+          "bonne": "eight",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"eight\" means \"eight\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"nine\" to French:",
+          "bonne": "nine",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"nine\" means \"nine\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"ten\" to French:",
+          "bonne": "ten",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"ten\" means \"ten\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: chiffres"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: chiffres"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "rouge",
-          "en": "red",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "bleu",
-          "en": "blue",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "vert",
-          "en": "green",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "jaune",
-          "en": "yellow",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "blanc",
-          "en": "white",
-          "theme": "couleurs"
-        },
-        {
-          "fr": "un",
-          "en": "one",
-          "theme": "nombres"
-        },
-        {
-          "fr": "deux",
-          "en": "two",
-          "theme": "nombres"
-        },
-        {
-          "fr": "trois",
-          "en": "three",
-          "theme": "nombres"
-        },
-        {
-          "fr": "quatre",
-          "en": "four",
-          "theme": "nombres"
-        },
-        {
-          "fr": "cinq",
-          "en": "five",
-          "theme": "nombres"
-        },
-        {
-          "fr": "tête",
-          "en": "head",
-          "theme": "corps"
-        },
-        {
-          "fr": "main",
-          "en": "hand",
-          "theme": "corps"
-        },
-        {
-          "fr": "pied",
-          "en": "foot",
-          "theme": "corps"
-        },
-        {
-          "fr": "oeil",
-          "en": "eye",
-          "theme": "corps"
-        },
-        {
-          "fr": "nez",
-          "en": "nose",
-          "theme": "corps"
-        },
-        {
-          "fr": "chat",
+          "fr": "cat",
           "en": "cat",
           "theme": "animaux"
         },
         {
-          "fr": "chien",
+          "fr": "dog",
           "en": "dog",
           "theme": "animaux"
         },
         {
-          "fr": "oiseau",
+          "fr": "bird",
           "en": "bird",
           "theme": "animaux"
         },
         {
-          "fr": "poisson",
+          "fr": "fish",
           "en": "fish",
           "theme": "animaux"
         },
         {
-          "fr": "souris",
-          "en": "mouse",
+          "fr": "elephant",
+          "en": "elephant",
+          "theme": "animaux"
+        },
+        {
+          "fr": "lion",
+          "en": "lion",
+          "theme": "animaux"
+        },
+        {
+          "fr": "monkey",
+          "en": "monkey",
+          "theme": "animaux"
+        },
+        {
+          "fr": "duck",
+          "en": "duck",
+          "theme": "animaux"
+        },
+        {
+          "fr": "horse",
+          "en": "horse",
+          "theme": "animaux"
+        },
+        {
+          "fr": "pig",
+          "en": "pig",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "animaux"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
           "theme": "animaux"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What colour is the sky?",
-          "bonne": "blue",
-          "fausses": [
-            "green",
-            "yellow",
-            "red"
-          ],
-          "explication": "Le ciel est bleu."
-        },
-        {
-          "consigne": "Choose the correct answer",
-          "enonce": "How do you say 'chat' in English?",
+          "consigne": "Traduction",
+          "enonce": "Translate \"cat\" to French:",
           "bonne": "cat",
           "fausses": [
-            "dog",
-            "bird",
-            "fish"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Chat = cat en anglais."
+          "explication": "\"cat\" means \"cat\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What do you say when you meet someone?",
-          "bonne": "hello",
+          "consigne": "Traduction",
+          "enonce": "Translate \"dog\" to French:",
+          "bonne": "dog",
           "fausses": [
-            "goodbye",
-            "thank you",
-            "please"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Hello veut dire bonjour."
+          "explication": "\"dog\" means \"dog\" in French. Theme: animaux"
         },
         {
-          "consigne": "Complete the sentence",
-          "enonce": "I have got ___ eyes.",
-          "bonne": "two",
+          "consigne": "Traduction",
+          "enonce": "Translate \"bird\" to French:",
+          "bonne": "bird",
           "fausses": [
-            "one",
-            "three",
-            "four"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Nous avons deux yeux."
+          "explication": "\"bird\" means \"bird\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "Which number comes after four?",
-          "bonne": "five",
+          "consigne": "Traduction",
+          "enonce": "Translate \"fish\" to French:",
+          "bonne": "fish",
           "fausses": [
-            "three",
-            "six",
-            "two"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Quatre + 1 = cinq (five)."
+          "explication": "\"fish\" means \"fish\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"elephant\" to French:",
+          "bonne": "elephant",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"elephant\" means \"elephant\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"lion\" to French:",
+          "bonne": "lion",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"lion\" means \"lion\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"monkey\" to French:",
+          "bonne": "monkey",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"monkey\" means \"monkey\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"duck\" to French:",
+          "bonne": "duck",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"duck\" means \"duck\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"horse\" to French:",
+          "bonne": "horse",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"horse\" means \"horse\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"pig\" to French:",
+          "bonne": "pig",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"pig\" means \"pig\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: animaux"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: animaux"
+        },
+        {
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
+          "fausses": [
+            "faux0",
+            "faux1",
+            "faux2"
+          ],
+          "explication": "\"term13\" means \"term13\" in French. Theme: animaux"
         }
       ]
     }

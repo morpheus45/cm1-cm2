@@ -19,765 +19,765 @@
           "theme": "école"
         },
         {
-          "fr": "tableau",
-          "en": "board",
-          "theme": "école"
-        },
-        {
           "fr": "bureau",
           "en": "desk",
           "theme": "école"
         },
         {
-          "fr": "chemise",
-          "en": "shirt",
-          "theme": "vêtements"
-        },
-        {
-          "fr": "pantalon",
-          "en": "trousers",
-          "theme": "vêtements"
-        },
-        {
-          "fr": "chaussures",
-          "en": "shoes",
-          "theme": "vêtements"
-        },
-        {
-          "fr": "chapeau",
-          "en": "hat",
-          "theme": "vêtements"
-        },
-        {
-          "fr": "robe",
-          "en": "dress",
-          "theme": "vêtements"
-        },
-        {
-          "fr": "pain",
-          "en": "bread",
-          "theme": "nourriture"
-        },
-        {
-          "fr": "fromage",
-          "en": "cheese",
-          "theme": "nourriture"
-        },
-        {
-          "fr": "pomme",
-          "en": "apple",
-          "theme": "nourriture"
-        },
-        {
-          "fr": "lait",
-          "en": "milk",
-          "theme": "nourriture"
-        },
-        {
-          "fr": "oeuf",
-          "en": "egg",
-          "theme": "nourriture"
-        },
-        {
-          "fr": "porte",
-          "en": "door",
-          "theme": "maison"
-        },
-        {
-          "fr": "fenêtre",
-          "en": "window",
-          "theme": "maison"
-        },
-        {
-          "fr": "lit",
-          "en": "bed",
-          "theme": "maison"
-        },
-        {
-          "fr": "table",
-          "en": "table",
-          "theme": "maison"
-        },
-        {
-          "fr": "chaise",
+          "fr": "chair",
           "en": "chair",
-          "theme": "maison"
+          "theme": "école"
+        },
+        {
+          "fr": "professeur",
+          "en": "teacher",
+          "theme": "école"
+        },
+        {
+          "fr": "student",
+          "en": "student",
+          "theme": "école"
+        },
+        {
+          "fr": "classroom",
+          "en": "classroom",
+          "theme": "école"
+        },
+        {
+          "fr": "blackboard",
+          "en": "blackboard",
+          "theme": "école"
+        },
+        {
+          "fr": "notebook",
+          "en": "notebook",
+          "theme": "école"
+        },
+        {
+          "fr": "term10",
+          "en": "term10",
+          "theme": "école"
+        },
+        {
+          "fr": "term11",
+          "en": "term11",
+          "theme": "école"
+        },
+        {
+          "fr": "term12",
+          "en": "term12",
+          "theme": "école"
+        },
+        {
+          "fr": "term13",
+          "en": "term13",
+          "theme": "école"
+        },
+        {
+          "fr": "term14",
+          "en": "term14",
+          "theme": "école"
+        },
+        {
+          "fr": "term15",
+          "en": "term15",
+          "theme": "école"
+        },
+        {
+          "fr": "term16",
+          "en": "term16",
+          "theme": "école"
+        },
+        {
+          "fr": "term17",
+          "en": "term17",
+          "theme": "école"
+        },
+        {
+          "fr": "term18",
+          "en": "term18",
+          "theme": "école"
+        },
+        {
+          "fr": "term19",
+          "en": "term19",
+          "theme": "école"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"book\" to French:",
+          "bonne": "livre",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"book\" means \"livre\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"pen\" to French:",
+          "bonne": "stylo",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"pen\" means \"stylo\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"pencil\" to French:",
+          "bonne": "crayon",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"pencil\" means \"crayon\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"desk\" to French:",
+          "bonne": "bureau",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"desk\" means \"bureau\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"chair\" to French:",
+          "bonne": "chair",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"chair\" means \"chair\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"teacher\" to French:",
+          "bonne": "professeur",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"teacher\" means \"professeur\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"student\" to French:",
+          "bonne": "student",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"student\" means \"student\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"classroom\" to French:",
+          "bonne": "classroom",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"classroom\" means \"classroom\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"blackboard\" to French:",
+          "bonne": "blackboard",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"blackboard\" means \"blackboard\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"notebook\" to French:",
+          "bonne": "notebook",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"notebook\" means \"notebook\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: école"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: école"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "livre",
-          "en": "book",
-          "theme": "école"
+          "fr": "mother",
+          "en": "mother",
+          "theme": "famille"
         },
         {
-          "fr": "stylo",
-          "en": "pen",
-          "theme": "école"
+          "fr": "father",
+          "en": "father",
+          "theme": "famille"
         },
         {
-          "fr": "crayon",
-          "en": "pencil",
-          "theme": "école"
+          "fr": "sister",
+          "en": "sister",
+          "theme": "famille"
         },
         {
-          "fr": "tableau",
-          "en": "board",
-          "theme": "école"
+          "fr": "brother",
+          "en": "brother",
+          "theme": "famille"
         },
         {
-          "fr": "bureau",
-          "en": "desk",
-          "theme": "école"
+          "fr": "grandmother",
+          "en": "grandmother",
+          "theme": "famille"
         },
         {
-          "fr": "chemise",
-          "en": "shirt",
-          "theme": "vêtements"
+          "fr": "grandfather",
+          "en": "grandfather",
+          "theme": "famille"
         },
         {
-          "fr": "pantalon",
-          "en": "trousers",
-          "theme": "vêtements"
+          "fr": "cousin",
+          "en": "cousin",
+          "theme": "famille"
         },
         {
-          "fr": "chaussures",
-          "en": "shoes",
-          "theme": "vêtements"
+          "fr": "uncle",
+          "en": "uncle",
+          "theme": "famille"
         },
         {
-          "fr": "chapeau",
-          "en": "hat",
-          "theme": "vêtements"
+          "fr": "aunt",
+          "en": "aunt",
+          "theme": "famille"
         },
         {
-          "fr": "robe",
-          "en": "dress",
-          "theme": "vêtements"
+          "fr": "baby",
+          "en": "baby",
+          "theme": "famille"
         },
         {
-          "fr": "pain",
-          "en": "bread",
-          "theme": "nourriture"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "famille"
         },
         {
-          "fr": "fromage",
-          "en": "cheese",
-          "theme": "nourriture"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "famille"
         },
         {
-          "fr": "pomme",
-          "en": "apple",
-          "theme": "nourriture"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "famille"
         },
         {
-          "fr": "lait",
-          "en": "milk",
-          "theme": "nourriture"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "famille"
         },
         {
-          "fr": "oeuf",
-          "en": "egg",
-          "theme": "nourriture"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "famille"
         },
         {
-          "fr": "porte",
-          "en": "door",
-          "theme": "maison"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "famille"
         },
         {
-          "fr": "fenêtre",
-          "en": "window",
-          "theme": "maison"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "famille"
         },
         {
-          "fr": "lit",
-          "en": "bed",
-          "theme": "maison"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "famille"
         },
         {
-          "fr": "table",
-          "en": "table",
-          "theme": "maison"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "famille"
         },
         {
-          "fr": "chaise",
-          "en": "chair",
-          "theme": "maison"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "famille"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"mother\" to French:",
+          "bonne": "mother",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"mother\" means \"mother\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"father\" to French:",
+          "bonne": "father",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"father\" means \"father\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"sister\" to French:",
+          "bonne": "sister",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"sister\" means \"sister\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"brother\" to French:",
+          "bonne": "brother",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"brother\" means \"brother\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"grandmother\" to French:",
+          "bonne": "grandmother",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"grandmother\" means \"grandmother\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"grandfather\" to French:",
+          "bonne": "grandfather",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"grandfather\" means \"grandfather\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"cousin\" to French:",
+          "bonne": "cousin",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"cousin\" means \"cousin\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"uncle\" to French:",
+          "bonne": "uncle",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"uncle\" means \"uncle\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"aunt\" to French:",
+          "bonne": "aunt",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"aunt\" means \"aunt\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"baby\" to French:",
+          "bonne": "baby",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"baby\" means \"baby\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: famille"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: famille"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "livre",
-          "en": "book",
-          "theme": "école"
+          "fr": "head",
+          "en": "head",
+          "theme": "corps"
         },
         {
-          "fr": "stylo",
-          "en": "pen",
-          "theme": "école"
+          "fr": "arm",
+          "en": "arm",
+          "theme": "corps"
         },
         {
-          "fr": "crayon",
-          "en": "pencil",
-          "theme": "école"
+          "fr": "leg",
+          "en": "leg",
+          "theme": "corps"
         },
         {
-          "fr": "tableau",
-          "en": "board",
-          "theme": "école"
+          "fr": "hand",
+          "en": "hand",
+          "theme": "corps"
         },
         {
-          "fr": "bureau",
-          "en": "desk",
-          "theme": "école"
+          "fr": "foot",
+          "en": "foot",
+          "theme": "corps"
         },
         {
-          "fr": "chemise",
-          "en": "shirt",
-          "theme": "vêtements"
+          "fr": "eye",
+          "en": "eye",
+          "theme": "corps"
         },
         {
-          "fr": "pantalon",
-          "en": "trousers",
-          "theme": "vêtements"
+          "fr": "ear",
+          "en": "ear",
+          "theme": "corps"
         },
         {
-          "fr": "chaussures",
-          "en": "shoes",
-          "theme": "vêtements"
+          "fr": "nose",
+          "en": "nose",
+          "theme": "corps"
         },
         {
-          "fr": "chapeau",
-          "en": "hat",
-          "theme": "vêtements"
+          "fr": "mouth",
+          "en": "mouth",
+          "theme": "corps"
         },
         {
-          "fr": "robe",
-          "en": "dress",
-          "theme": "vêtements"
+          "fr": "hair",
+          "en": "hair",
+          "theme": "corps"
         },
         {
-          "fr": "pain",
-          "en": "bread",
-          "theme": "nourriture"
+          "fr": "term10",
+          "en": "term10",
+          "theme": "corps"
         },
         {
-          "fr": "fromage",
-          "en": "cheese",
-          "theme": "nourriture"
+          "fr": "term11",
+          "en": "term11",
+          "theme": "corps"
         },
         {
-          "fr": "pomme",
-          "en": "apple",
-          "theme": "nourriture"
+          "fr": "term12",
+          "en": "term12",
+          "theme": "corps"
         },
         {
-          "fr": "lait",
-          "en": "milk",
-          "theme": "nourriture"
+          "fr": "term13",
+          "en": "term13",
+          "theme": "corps"
         },
         {
-          "fr": "oeuf",
-          "en": "egg",
-          "theme": "nourriture"
+          "fr": "term14",
+          "en": "term14",
+          "theme": "corps"
         },
         {
-          "fr": "porte",
-          "en": "door",
-          "theme": "maison"
+          "fr": "term15",
+          "en": "term15",
+          "theme": "corps"
         },
         {
-          "fr": "fenêtre",
-          "en": "window",
-          "theme": "maison"
+          "fr": "term16",
+          "en": "term16",
+          "theme": "corps"
         },
         {
-          "fr": "lit",
-          "en": "bed",
-          "theme": "maison"
+          "fr": "term17",
+          "en": "term17",
+          "theme": "corps"
         },
         {
-          "fr": "table",
-          "en": "table",
-          "theme": "maison"
+          "fr": "term18",
+          "en": "term18",
+          "theme": "corps"
         },
         {
-          "fr": "chaise",
-          "en": "chair",
-          "theme": "maison"
+          "fr": "term19",
+          "en": "term19",
+          "theme": "corps"
         }
       ],
       "questions": [
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"head\" to French:",
+          "bonne": "head",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"head\" means \"head\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"arm\" to French:",
+          "bonne": "arm",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"arm\" means \"arm\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"leg\" to French:",
+          "bonne": "leg",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"leg\" means \"leg\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"hand\" to French:",
+          "bonne": "hand",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"hand\" means \"hand\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"foot\" to French:",
+          "bonne": "foot",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"foot\" means \"foot\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"eye\" to French:",
+          "bonne": "eye",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"eye\" means \"eye\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"ear\" to French:",
+          "bonne": "ear",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"ear\" means \"ear\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"nose\" to French:",
+          "bonne": "nose",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"nose\" means \"nose\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"mouth\" to French:",
+          "bonne": "mouth",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"mouth\" means \"mouth\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"hair\" to French:",
+          "bonne": "hair",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"hair\" means \"hair\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term10\" to French:",
+          "bonne": "term10",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term10\" means \"term10\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term11\" to French:",
+          "bonne": "term11",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term11\" means \"term11\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term12\" to French:",
+          "bonne": "term12",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term12\" means \"term12\" in French. Theme: corps"
         },
         {
-          "consigne": "Choose the correct answer",
-          "enonce": "What is the English word for 'livre'?",
-          "bonne": "book",
+          "consigne": "Traduction",
+          "enonce": "Translate \"term13\" to French:",
+          "bonne": "term13",
           "fausses": [
-            "pen",
-            "desk",
-            "chair"
+            "faux0",
+            "faux1",
+            "faux2"
           ],
-          "explication": "Livre = book en anglais."
+          "explication": "\"term13\" means \"term13\" in French. Theme: corps"
         }
       ]
     }
