@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "magasin",
+          "en": "magasin (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "gare",
+          "en": "gare (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "musée",
+          "en": "musée (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "sud",
+          "en": "sud (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "est",
+          "en": "est (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "ouest",
+          "en": "ouest (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "centre",
+          "en": "centre (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "printemps",
+          "en": "printemps (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "été",
+          "en": "été (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "automne",
+          "en": "automne (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Geographie ?",
+          "bonne": "magasin",
+          "fausses": [
+            "gare",
+            "non",
+            "peut-être"
+          ],
+          "explication": "magasin est un terme de Geographie."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
+          "bonne": "lieux, orientations",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE2 couvre : lieux, orientations"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: musée)",
+          "bonne": "musée",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est musée."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "magasin",
+          "en": "magasin (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "gare",
+          "en": "gare (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "musée",
+          "en": "musée (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "sud",
+          "en": "sud (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "est",
+          "en": "est (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "ouest",
+          "en": "ouest (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "centre",
+          "en": "centre (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "printemps",
+          "en": "printemps (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "été",
+          "en": "été (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "automne",
+          "en": "automne (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Geographie ?",
+          "bonne": "magasin",
+          "fausses": [
+            "gare",
+            "non",
+            "peut-être"
+          ],
+          "explication": "magasin est un terme de Geographie."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
+          "bonne": "lieux, orientations",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE2 couvre : lieux, orientations"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: musée)",
+          "bonne": "musée",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est musée."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "magasin",
+          "en": "magasin (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "gare",
+          "en": "gare (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "musée",
+          "en": "musée (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "sud",
+          "en": "sud (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "est",
+          "en": "est (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "ouest",
+          "en": "ouest (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "centre",
+          "en": "centre (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "printemps",
+          "en": "printemps (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "été",
+          "en": "été (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "automne",
+          "en": "automne (lieux, orientations)",
+          "theme": "lieux,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Geographie ?",
+          "bonne": "magasin",
+          "fausses": [
+            "gare",
+            "non",
+            "peut-être"
+          ],
+          "explication": "magasin est un terme de Geographie."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
+          "bonne": "lieux, orientations",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE2 couvre : lieux, orientations"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: musée)",
+          "bonne": "musée",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est musée."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    }
+  }
+}

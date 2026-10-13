@@ -1,0 +1,785 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "vote",
+          "en": "choix",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "égalité",
+          "en": "parité",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "liberté",
+          "en": "autonomie",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "justice",
+          "en": "équité",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "loi",
+          "en": "règle",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "citoyen",
+          "en": "membre",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "droit",
+          "en": "privilège",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "devoir",
+          "en": "obligation",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "participation",
+          "en": "implication",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "nation",
+          "en": "pays",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "dignité",
+          "en": "respect",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "égalité",
+          "en": "parité",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "liberté",
+          "en": "autonomie",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "santé",
+          "en": "bien-être",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "éducation",
+          "en": "apprentissage",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "honnêteté",
+          "en": "vérité",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "solidarité",
+          "en": "entraide",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "tolérance",
+          "en": "acceptation",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "courage",
+          "en": "bravure",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "générosité",
+          "en": "don",
+          "theme": "valeurs"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce qu'un vote ?",
+          "bonne": "choisir par scrutin",
+          "fausses": [
+            "commander",
+            "punir",
+            "ignorer"
+          ],
+          "explication": "Vote = procédé démocratique de choix."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Tous les citoyens ont l'égalité de ___.",
+          "bonne": "droits",
+          "fausses": [
+            "fortune",
+            "taille",
+            "couleur"
+          ],
+          "explication": "Égalité des droits = principe démocratique."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce que la tolérance ?",
+          "bonne": "accepter les différences",
+          "fausses": [
+            "tout permet",
+            "ignorer",
+            "dominer"
+          ],
+          "explication": "Tolérance = accepter et respecter les différences."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "vote",
+          "en": "choix",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "égalité",
+          "en": "parité",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "liberté",
+          "en": "autonomie",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "justice",
+          "en": "équité",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "loi",
+          "en": "règle",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "citoyen",
+          "en": "membre",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "droit",
+          "en": "privilège",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "devoir",
+          "en": "obligation",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "participation",
+          "en": "implication",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "nation",
+          "en": "pays",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "dignité",
+          "en": "respect",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "égalité",
+          "en": "parité",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "liberté",
+          "en": "autonomie",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "santé",
+          "en": "bien-être",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "éducation",
+          "en": "apprentissage",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "honnêteté",
+          "en": "vérité",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "solidarité",
+          "en": "entraide",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "tolérance",
+          "en": "acceptation",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "courage",
+          "en": "bravure",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "générosité",
+          "en": "don",
+          "theme": "valeurs"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce qu'un vote ?",
+          "bonne": "choisir par scrutin",
+          "fausses": [
+            "commander",
+            "punir",
+            "ignorer"
+          ],
+          "explication": "Vote = procédé démocratique de choix."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Tous les citoyens ont l'égalité de ___.",
+          "bonne": "droits",
+          "fausses": [
+            "fortune",
+            "taille",
+            "couleur"
+          ],
+          "explication": "Égalité des droits = principe démocratique."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce que la tolérance ?",
+          "bonne": "accepter les différences",
+          "fausses": [
+            "tout permet",
+            "ignorer",
+            "dominer"
+          ],
+          "explication": "Tolérance = accepter et respecter les différences."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "vote",
+          "en": "choix",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "égalité",
+          "en": "parité",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "liberté",
+          "en": "autonomie",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "justice",
+          "en": "équité",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "loi",
+          "en": "règle",
+          "theme": "démocratie"
+        },
+        {
+          "fr": "citoyen",
+          "en": "membre",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "droit",
+          "en": "privilège",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "devoir",
+          "en": "obligation",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "participation",
+          "en": "implication",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "nation",
+          "en": "pays",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "dignité",
+          "en": "respect",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "égalité",
+          "en": "parité",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "liberté",
+          "en": "autonomie",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "santé",
+          "en": "bien-être",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "éducation",
+          "en": "apprentissage",
+          "theme": "droits_humains"
+        },
+        {
+          "fr": "honnêteté",
+          "en": "vérité",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "solidarité",
+          "en": "entraide",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "tolérance",
+          "en": "acceptation",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "courage",
+          "en": "bravure",
+          "theme": "valeurs"
+        },
+        {
+          "fr": "générosité",
+          "en": "don",
+          "theme": "valeurs"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce qu'un vote ?",
+          "bonne": "choisir par scrutin",
+          "fausses": [
+            "commander",
+            "punir",
+            "ignorer"
+          ],
+          "explication": "Vote = procédé démocratique de choix."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Tous les citoyens ont l'égalité de ___.",
+          "bonne": "droits",
+          "fausses": [
+            "fortune",
+            "taille",
+            "couleur"
+          ],
+          "explication": "Égalité des droits = principe démocratique."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce que la tolérance ?",
+          "bonne": "accepter les différences",
+          "fausses": [
+            "tout permet",
+            "ignorer",
+            "dominer"
+          ],
+          "explication": "Tolérance = accepter et respecter les différences."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    }
+  }
+}

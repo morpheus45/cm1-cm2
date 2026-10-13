@@ -1,0 +1,785 @@
+{
+  "niveau": "3e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "log",
+          "en": "log (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "ln",
+          "en": "ln (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "base",
+          "en": "base (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "exposant",
+          "en": "exposant (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "angle",
+          "en": "angle (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "hypoténuse",
+          "en": "hypoténuse (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "opposé",
+          "en": "opposé (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "adjacent",
+          "en": "adjacent (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "sinus",
+          "en": "sinus (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "cosinus",
+          "en": "cosinus (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Mathematiques ?",
+          "bonne": "log",
+          "fausses": [
+            "ln",
+            "non",
+            "peut-être"
+          ],
+          "explication": "log est un terme de Mathematiques."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau 3e ?",
+          "bonne": "logarithmes, trigonométrie",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le 3e couvre : logarithmes, trigonométrie"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: base)",
+          "bonne": "base",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est base."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "log",
+          "en": "log (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "ln",
+          "en": "ln (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "base",
+          "en": "base (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "exposant",
+          "en": "exposant (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "angle",
+          "en": "angle (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "hypoténuse",
+          "en": "hypoténuse (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "opposé",
+          "en": "opposé (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "adjacent",
+          "en": "adjacent (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "sinus",
+          "en": "sinus (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "cosinus",
+          "en": "cosinus (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Mathematiques ?",
+          "bonne": "log",
+          "fausses": [
+            "ln",
+            "non",
+            "peut-être"
+          ],
+          "explication": "log est un terme de Mathematiques."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau 3e ?",
+          "bonne": "logarithmes, trigonométrie",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le 3e couvre : logarithmes, trigonométrie"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: base)",
+          "bonne": "base",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est base."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "log",
+          "en": "log (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "ln",
+          "en": "ln (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "base",
+          "en": "base (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "exposant",
+          "en": "exposant (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "angle",
+          "en": "angle (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "hypoténuse",
+          "en": "hypoténuse (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "opposé",
+          "en": "opposé (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "adjacent",
+          "en": "adjacent (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "sinus",
+          "en": "sinus (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "cosinus",
+          "en": "cosinus (logarithmes, trigonométrie)",
+          "theme": "logarithmes,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Mathematiques ?",
+          "bonne": "log",
+          "fausses": [
+            "ln",
+            "non",
+            "peut-être"
+          ],
+          "explication": "log est un terme de Mathematiques."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau 3e ?",
+          "bonne": "logarithmes, trigonométrie",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le 3e couvre : logarithmes, trigonométrie"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: base)",
+          "bonne": "base",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est base."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "électricité",
+          "en": "courant",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaleur",
+          "en": "température",
+          "theme": "énergie"
+        },
+        {
+          "fr": "lumière",
+          "en": "photons",
+          "theme": "énergie"
+        },
+        {
+          "fr": "son",
+          "en": "onde",
+          "theme": "énergie"
+        },
+        {
+          "fr": "mouvement",
+          "en": "cinétique",
+          "theme": "énergie"
+        },
+        {
+          "fr": "prédateur",
+          "en": "chasseur",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "proie",
+          "en": "mangé",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "chaîne alimentaire",
+          "en": "transfert",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "habitat",
+          "en": "lieu de vie",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "biodiversité",
+          "en": "variété",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "croûte terrestre",
+          "en": "surface",
+          "theme": "terre"
+        },
+        {
+          "fr": "manteau",
+          "en": "intérieur",
+          "theme": "terre"
+        },
+        {
+          "fr": "noyau",
+          "en": "centre",
+          "theme": "terre"
+        },
+        {
+          "fr": "tremblement de terre",
+          "en": "secousse",
+          "theme": "terre"
+        },
+        {
+          "fr": "volcan",
+          "en": "éruption",
+          "theme": "terre"
+        },
+        {
+          "fr": "soleil",
+          "en": "étoile",
+          "theme": "espace"
+        },
+        {
+          "fr": "terre",
+          "en": "planète",
+          "theme": "espace"
+        },
+        {
+          "fr": "lune",
+          "en": "satellite",
+          "theme": "espace"
+        },
+        {
+          "fr": "orbite",
+          "en": "trajectoire",
+          "theme": "espace"
+        },
+        {
+          "fr": "galaxie",
+          "en": "système",
+          "theme": "espace"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce qu'un prédateur ?",
+          "bonne": "un animal qui chasse",
+          "fausses": [
+            "un animal mangé",
+            "une plante",
+            "un minéral"
+          ],
+          "explication": "Prédateur = qui chasse d'autres animaux."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "La ___ tourne autour du soleil.",
+          "bonne": "Terre",
+          "fausses": [
+            "Lune",
+            "Mars",
+            "Jupiter"
+          ],
+          "explication": "La Terre = notre planète, orbite solaire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le centre de notre système solaire ?",
+          "bonne": "Soleil",
+          "fausses": [
+            "Terre",
+            "Lune",
+            "Jupiter"
+          ],
+          "explication": "Le Soleil = centre du système solaire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "électricité",
+          "en": "courant",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaleur",
+          "en": "température",
+          "theme": "énergie"
+        },
+        {
+          "fr": "lumière",
+          "en": "photons",
+          "theme": "énergie"
+        },
+        {
+          "fr": "son",
+          "en": "onde",
+          "theme": "énergie"
+        },
+        {
+          "fr": "mouvement",
+          "en": "cinétique",
+          "theme": "énergie"
+        },
+        {
+          "fr": "prédateur",
+          "en": "chasseur",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "proie",
+          "en": "mangé",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "chaîne alimentaire",
+          "en": "transfert",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "habitat",
+          "en": "lieu de vie",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "biodiversité",
+          "en": "variété",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "croûte terrestre",
+          "en": "surface",
+          "theme": "terre"
+        },
+        {
+          "fr": "manteau",
+          "en": "intérieur",
+          "theme": "terre"
+        },
+        {
+          "fr": "noyau",
+          "en": "centre",
+          "theme": "terre"
+        },
+        {
+          "fr": "tremblement de terre",
+          "en": "secousse",
+          "theme": "terre"
+        },
+        {
+          "fr": "volcan",
+          "en": "éruption",
+          "theme": "terre"
+        },
+        {
+          "fr": "soleil",
+          "en": "étoile",
+          "theme": "espace"
+        },
+        {
+          "fr": "terre",
+          "en": "planète",
+          "theme": "espace"
+        },
+        {
+          "fr": "lune",
+          "en": "satellite",
+          "theme": "espace"
+        },
+        {
+          "fr": "orbite",
+          "en": "trajectoire",
+          "theme": "espace"
+        },
+        {
+          "fr": "galaxie",
+          "en": "système",
+          "theme": "espace"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce qu'un prédateur ?",
+          "bonne": "un animal qui chasse",
+          "fausses": [
+            "un animal mangé",
+            "une plante",
+            "un minéral"
+          ],
+          "explication": "Prédateur = qui chasse d'autres animaux."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "La ___ tourne autour du soleil.",
+          "bonne": "Terre",
+          "fausses": [
+            "Lune",
+            "Mars",
+            "Jupiter"
+          ],
+          "explication": "La Terre = notre planète, orbite solaire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le centre de notre système solaire ?",
+          "bonne": "Soleil",
+          "fausses": [
+            "Terre",
+            "Lune",
+            "Jupiter"
+          ],
+          "explication": "Le Soleil = centre du système solaire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "électricité",
+          "en": "courant",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaleur",
+          "en": "température",
+          "theme": "énergie"
+        },
+        {
+          "fr": "lumière",
+          "en": "photons",
+          "theme": "énergie"
+        },
+        {
+          "fr": "son",
+          "en": "onde",
+          "theme": "énergie"
+        },
+        {
+          "fr": "mouvement",
+          "en": "cinétique",
+          "theme": "énergie"
+        },
+        {
+          "fr": "prédateur",
+          "en": "chasseur",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "proie",
+          "en": "mangé",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "chaîne alimentaire",
+          "en": "transfert",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "habitat",
+          "en": "lieu de vie",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "biodiversité",
+          "en": "variété",
+          "theme": "écosystème"
+        },
+        {
+          "fr": "croûte terrestre",
+          "en": "surface",
+          "theme": "terre"
+        },
+        {
+          "fr": "manteau",
+          "en": "intérieur",
+          "theme": "terre"
+        },
+        {
+          "fr": "noyau",
+          "en": "centre",
+          "theme": "terre"
+        },
+        {
+          "fr": "tremblement de terre",
+          "en": "secousse",
+          "theme": "terre"
+        },
+        {
+          "fr": "volcan",
+          "en": "éruption",
+          "theme": "terre"
+        },
+        {
+          "fr": "soleil",
+          "en": "étoile",
+          "theme": "espace"
+        },
+        {
+          "fr": "terre",
+          "en": "planète",
+          "theme": "espace"
+        },
+        {
+          "fr": "lune",
+          "en": "satellite",
+          "theme": "espace"
+        },
+        {
+          "fr": "orbite",
+          "en": "trajectoire",
+          "theme": "espace"
+        },
+        {
+          "fr": "galaxie",
+          "en": "système",
+          "theme": "espace"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qu'est-ce qu'un prédateur ?",
+          "bonne": "un animal qui chasse",
+          "fausses": [
+            "un animal mangé",
+            "une plante",
+            "un minéral"
+          ],
+          "explication": "Prédateur = qui chasse d'autres animaux."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "La ___ tourne autour du soleil.",
+          "bonne": "Terre",
+          "fausses": [
+            "Lune",
+            "Mars",
+            "Jupiter"
+          ],
+          "explication": "La Terre = notre planète, orbite solaire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le centre de notre système solaire ?",
+          "bonne": "Soleil",
+          "fausses": [
+            "Terre",
+            "Lune",
+            "Jupiter"
+          ],
+          "explication": "Le Soleil = centre du système solaire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    }
+  }
+}

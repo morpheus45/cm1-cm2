@@ -1,0 +1,785 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "maison",
+          "en": "maison (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "rue",
+          "en": "rue (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "école",
+          "en": "école (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "parc",
+          "en": "parc (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "désert",
+          "en": "désert (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "île",
+          "en": "île (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "nord",
+          "en": "nord (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Geographie ?",
+          "bonne": "maison",
+          "fausses": [
+            "rue",
+            "non",
+            "peut-être"
+          ],
+          "explication": "maison est un terme de Geographie."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE1 ?",
+          "bonne": "espace, nature",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE1 couvre : espace, nature"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: école)",
+          "bonne": "école",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est école."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "maison",
+          "en": "maison (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "rue",
+          "en": "rue (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "école",
+          "en": "école (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "parc",
+          "en": "parc (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "désert",
+          "en": "désert (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "île",
+          "en": "île (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "nord",
+          "en": "nord (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Geographie ?",
+          "bonne": "maison",
+          "fausses": [
+            "rue",
+            "non",
+            "peut-être"
+          ],
+          "explication": "maison est un terme de Geographie."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE1 ?",
+          "bonne": "espace, nature",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE1 couvre : espace, nature"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: école)",
+          "bonne": "école",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est école."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "maison",
+          "en": "maison (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "rue",
+          "en": "rue (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "école",
+          "en": "école (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "parc",
+          "en": "parc (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "désert",
+          "en": "désert (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "île",
+          "en": "île (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "nord",
+          "en": "nord (espace, nature)",
+          "theme": "espace,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Geographie ?",
+          "bonne": "maison",
+          "fausses": [
+            "rue",
+            "non",
+            "peut-être"
+          ],
+          "explication": "maison est un terme de Geographie."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE1 ?",
+          "bonne": "espace, nature",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE1 couvre : espace, nature"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: école)",
+          "bonne": "école",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est école."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    }
+  }
+}

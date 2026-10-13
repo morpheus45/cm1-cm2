@@ -1,0 +1,785 @@
+{
+  "niveau": "5e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "é",
+          "en": "é (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "è",
+          "en": "è (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "ç",
+          "en": "ç (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "ê",
+          "en": "ê (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "à",
+          "en": "à (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "sujet",
+          "en": "sujet (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "verbe",
+          "en": "verbe (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "style narratif",
+          "en": "style narratif (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "style descriptif",
+          "en": "style descriptif (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "comparaison",
+          "en": "comparaison (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Francais ?",
+          "bonne": "é",
+          "fausses": [
+            "è",
+            "non",
+            "peut-être"
+          ],
+          "explication": "é est un terme de Francais."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau 5e ?",
+          "bonne": "orthographe, styles",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le 5e couvre : orthographe, styles"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: ç)",
+          "bonne": "ç",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est ç."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "é",
+          "en": "é (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "è",
+          "en": "è (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "ç",
+          "en": "ç (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "ê",
+          "en": "ê (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "à",
+          "en": "à (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "sujet",
+          "en": "sujet (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "verbe",
+          "en": "verbe (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "style narratif",
+          "en": "style narratif (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "style descriptif",
+          "en": "style descriptif (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "comparaison",
+          "en": "comparaison (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Francais ?",
+          "bonne": "é",
+          "fausses": [
+            "è",
+            "non",
+            "peut-être"
+          ],
+          "explication": "é est un terme de Francais."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau 5e ?",
+          "bonne": "orthographe, styles",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le 5e couvre : orthographe, styles"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: ç)",
+          "bonne": "ç",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est ç."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "é",
+          "en": "é (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "è",
+          "en": "è (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "ç",
+          "en": "ç (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "ê",
+          "en": "ê (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "à",
+          "en": "à (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "sujet",
+          "en": "sujet (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "verbe",
+          "en": "verbe (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "style narratif",
+          "en": "style narratif (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "style descriptif",
+          "en": "style descriptif (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "comparaison",
+          "en": "comparaison (orthographe, styles)",
+          "theme": "orthographe,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Francais ?",
+          "bonne": "é",
+          "fausses": [
+            "è",
+            "non",
+            "peut-être"
+          ],
+          "explication": "é est un terme de Francais."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau 5e ?",
+          "bonne": "orthographe, styles",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le 5e couvre : orthographe, styles"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: ç)",
+          "bonne": "ç",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est ç."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "Noël",
+          "en": "Noël (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "Pâques",
+          "en": "Pâques (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "14 juillet",
+          "en": "14 juillet (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "Toussaint",
+          "en": "Toussaint (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "anniversaire",
+          "en": "anniversaire (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "moyen-âge (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "reine",
+          "en": "reine (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "fête",
+          "en": "fête (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "cérémonie",
+          "en": "cérémonie (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Histoire ?",
+          "bonne": "Noël",
+          "fausses": [
+            "Pâques",
+            "non",
+            "peut-être"
+          ],
+          "explication": "Noël est un terme de Histoire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
+          "bonne": "événements, fêtes",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE2 couvre : événements, fêtes"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: 14 juillet)",
+          "bonne": "14 juillet",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est 14 juillet."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Noël",
+          "en": "Noël (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "Pâques",
+          "en": "Pâques (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "14 juillet",
+          "en": "14 juillet (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "Toussaint",
+          "en": "Toussaint (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "anniversaire",
+          "en": "anniversaire (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "moyen-âge (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "reine",
+          "en": "reine (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "fête",
+          "en": "fête (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "cérémonie",
+          "en": "cérémonie (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Histoire ?",
+          "bonne": "Noël",
+          "fausses": [
+            "Pâques",
+            "non",
+            "peut-être"
+          ],
+          "explication": "Noël est un terme de Histoire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
+          "bonne": "événements, fêtes",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE2 couvre : événements, fêtes"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: 14 juillet)",
+          "bonne": "14 juillet",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est 14 juillet."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "Noël",
+          "en": "Noël (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "Pâques",
+          "en": "Pâques (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "14 juillet",
+          "en": "14 juillet (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "Toussaint",
+          "en": "Toussaint (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "anniversaire",
+          "en": "anniversaire (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "moyen-âge (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "reine",
+          "en": "reine (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "fête",
+          "en": "fête (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "cérémonie",
+          "en": "cérémonie (événements, fêtes)",
+          "theme": "événements,"
+        },
+        {
+          "fr": "t10",
+          "en": "def10",
+          "theme": "gen"
+        },
+        {
+          "fr": "t11",
+          "en": "def11",
+          "theme": "gen"
+        },
+        {
+          "fr": "t12",
+          "en": "def12",
+          "theme": "gen"
+        },
+        {
+          "fr": "t13",
+          "en": "def13",
+          "theme": "gen"
+        },
+        {
+          "fr": "t14",
+          "en": "def14",
+          "theme": "gen"
+        },
+        {
+          "fr": "t15",
+          "en": "def15",
+          "theme": "gen"
+        },
+        {
+          "fr": "t16",
+          "en": "def16",
+          "theme": "gen"
+        },
+        {
+          "fr": "t17",
+          "en": "def17",
+          "theme": "gen"
+        },
+        {
+          "fr": "t18",
+          "en": "def18",
+          "theme": "gen"
+        },
+        {
+          "fr": "t19",
+          "en": "def19",
+          "theme": "gen"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel mot appartient à Histoire ?",
+          "bonne": "Noël",
+          "fausses": [
+            "Pâques",
+            "non",
+            "peut-être"
+          ],
+          "explication": "Noël est un terme de Histoire."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est une caractéristique du niveau CE2 ?",
+          "bonne": "événements, fêtes",
+          "fausses": [
+            "autre1",
+            "autre2",
+            "autre3"
+          ],
+          "explication": "Le CE2 couvre : événements, fêtes"
+        },
+        {
+          "consigne": "Remplir le blanc",
+          "enonce": "Un terme important : ___ (indice: 14 juillet)",
+          "bonne": "14 juillet",
+          "fausses": [
+            "non",
+            "pas ca",
+            "faux"
+          ],
+          "explication": "La réponse est 14 juillet."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Quelle réponse ?",
+          "bonne": "correcte",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "C'est juste."
+        }
+      ]
+    }
+  }
+}

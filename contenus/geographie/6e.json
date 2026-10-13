@@ -1,0 +1,785 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "Afrique",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Asie",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Europe",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Amérique",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Océanie",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "France",
+          "en": "Europe",
+          "theme": "pays"
+        },
+        {
+          "fr": "Japon",
+          "en": "Asie",
+          "theme": "pays"
+        },
+        {
+          "fr": "Brésil",
+          "en": "Amérique",
+          "theme": "pays"
+        },
+        {
+          "fr": "Égypte",
+          "en": "Afrique",
+          "theme": "pays"
+        },
+        {
+          "fr": "Australie",
+          "en": "Océanie",
+          "theme": "pays"
+        },
+        {
+          "fr": "tropical",
+          "en": "chaud/humide",
+          "theme": "climat"
+        },
+        {
+          "fr": "désertique",
+          "en": "sec",
+          "theme": "climat"
+        },
+        {
+          "fr": "tempéré",
+          "en": "4 saisons",
+          "theme": "climat"
+        },
+        {
+          "fr": "polaire",
+          "en": "froid",
+          "theme": "climat"
+        },
+        {
+          "fr": "montagnard",
+          "en": "altitude",
+          "theme": "climat"
+        },
+        {
+          "fr": "pétrole",
+          "en": "énergie",
+          "theme": "ressources"
+        },
+        {
+          "fr": "blé",
+          "en": "agriculture",
+          "theme": "ressources"
+        },
+        {
+          "fr": "fer",
+          "en": "minerai",
+          "theme": "ressources"
+        },
+        {
+          "fr": "eau",
+          "en": "ressource",
+          "theme": "ressources"
+        },
+        {
+          "fr": "forêt",
+          "en": "bois",
+          "theme": "ressources"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le plus grand continent ?",
+          "bonne": "Asie",
+          "fausses": [
+            "Afrique",
+            "Europe",
+            "Amérique"
+          ],
+          "explication": "L'Asie est le plus grand continent."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Le climat ___ est caractérisé par beaucoup de chaleur et d'humidité.",
+          "bonne": "tropical",
+          "fausses": [
+            "désertique",
+            "polaire",
+            "tempéré"
+          ],
+          "explication": "Tropical = chaud et humide."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la ressource naturelle principale du Moyen-Orient ?",
+          "bonne": "pétrole",
+          "fausses": [
+            "blé",
+            "fer",
+            "eau"
+          ],
+          "explication": "Le pétrole = ressource majeure du Moyen-Orient."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Afrique",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Asie",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Europe",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Amérique",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Océanie",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "France",
+          "en": "Europe",
+          "theme": "pays"
+        },
+        {
+          "fr": "Japon",
+          "en": "Asie",
+          "theme": "pays"
+        },
+        {
+          "fr": "Brésil",
+          "en": "Amérique",
+          "theme": "pays"
+        },
+        {
+          "fr": "Égypte",
+          "en": "Afrique",
+          "theme": "pays"
+        },
+        {
+          "fr": "Australie",
+          "en": "Océanie",
+          "theme": "pays"
+        },
+        {
+          "fr": "tropical",
+          "en": "chaud/humide",
+          "theme": "climat"
+        },
+        {
+          "fr": "désertique",
+          "en": "sec",
+          "theme": "climat"
+        },
+        {
+          "fr": "tempéré",
+          "en": "4 saisons",
+          "theme": "climat"
+        },
+        {
+          "fr": "polaire",
+          "en": "froid",
+          "theme": "climat"
+        },
+        {
+          "fr": "montagnard",
+          "en": "altitude",
+          "theme": "climat"
+        },
+        {
+          "fr": "pétrole",
+          "en": "énergie",
+          "theme": "ressources"
+        },
+        {
+          "fr": "blé",
+          "en": "agriculture",
+          "theme": "ressources"
+        },
+        {
+          "fr": "fer",
+          "en": "minerai",
+          "theme": "ressources"
+        },
+        {
+          "fr": "eau",
+          "en": "ressource",
+          "theme": "ressources"
+        },
+        {
+          "fr": "forêt",
+          "en": "bois",
+          "theme": "ressources"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le plus grand continent ?",
+          "bonne": "Asie",
+          "fausses": [
+            "Afrique",
+            "Europe",
+            "Amérique"
+          ],
+          "explication": "L'Asie est le plus grand continent."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Le climat ___ est caractérisé par beaucoup de chaleur et d'humidité.",
+          "bonne": "tropical",
+          "fausses": [
+            "désertique",
+            "polaire",
+            "tempéré"
+          ],
+          "explication": "Tropical = chaud et humide."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la ressource naturelle principale du Moyen-Orient ?",
+          "bonne": "pétrole",
+          "fausses": [
+            "blé",
+            "fer",
+            "eau"
+          ],
+          "explication": "Le pétrole = ressource majeure du Moyen-Orient."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "Afrique",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Asie",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Europe",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Amérique",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "Océanie",
+          "en": "continent",
+          "theme": "continents"
+        },
+        {
+          "fr": "France",
+          "en": "Europe",
+          "theme": "pays"
+        },
+        {
+          "fr": "Japon",
+          "en": "Asie",
+          "theme": "pays"
+        },
+        {
+          "fr": "Brésil",
+          "en": "Amérique",
+          "theme": "pays"
+        },
+        {
+          "fr": "Égypte",
+          "en": "Afrique",
+          "theme": "pays"
+        },
+        {
+          "fr": "Australie",
+          "en": "Océanie",
+          "theme": "pays"
+        },
+        {
+          "fr": "tropical",
+          "en": "chaud/humide",
+          "theme": "climat"
+        },
+        {
+          "fr": "désertique",
+          "en": "sec",
+          "theme": "climat"
+        },
+        {
+          "fr": "tempéré",
+          "en": "4 saisons",
+          "theme": "climat"
+        },
+        {
+          "fr": "polaire",
+          "en": "froid",
+          "theme": "climat"
+        },
+        {
+          "fr": "montagnard",
+          "en": "altitude",
+          "theme": "climat"
+        },
+        {
+          "fr": "pétrole",
+          "en": "énergie",
+          "theme": "ressources"
+        },
+        {
+          "fr": "blé",
+          "en": "agriculture",
+          "theme": "ressources"
+        },
+        {
+          "fr": "fer",
+          "en": "minerai",
+          "theme": "ressources"
+        },
+        {
+          "fr": "eau",
+          "en": "ressource",
+          "theme": "ressources"
+        },
+        {
+          "fr": "forêt",
+          "en": "bois",
+          "theme": "ressources"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le plus grand continent ?",
+          "bonne": "Asie",
+          "fausses": [
+            "Afrique",
+            "Europe",
+            "Amérique"
+          ],
+          "explication": "L'Asie est le plus grand continent."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Le climat ___ est caractérisé par beaucoup de chaleur et d'humidité.",
+          "bonne": "tropical",
+          "fausses": [
+            "désertique",
+            "polaire",
+            "tempéré"
+          ],
+          "explication": "Tropical = chaud et humide."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la ressource naturelle principale du Moyen-Orient ?",
+          "bonne": "pétrole",
+          "fausses": [
+            "blé",
+            "fer",
+            "eau"
+          ],
+          "explication": "Le pétrole = ressource majeure du Moyen-Orient."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    }
+  }
+}

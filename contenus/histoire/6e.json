@@ -1,0 +1,785 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "préhistoire",
+          "en": "avant écriture",
+          "theme": "périodes"
+        },
+        {
+          "fr": "antiquité",
+          "en": "Romains/Grecs",
+          "theme": "périodes"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "châteaux",
+          "theme": "périodes"
+        },
+        {
+          "fr": "renaissance",
+          "en": "art",
+          "theme": "périodes"
+        },
+        {
+          "fr": "époque moderne",
+          "en": "aujourd'hui",
+          "theme": "périodes"
+        },
+        {
+          "fr": "Jules César",
+          "en": "Romain",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Jeanne d'Arc",
+          "en": "France",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Louis XIV",
+          "en": "roi",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "empereur",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Charlemagne",
+          "en": "roi franc",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Révolution française",
+          "en": "1789",
+          "theme": "événements"
+        },
+        {
+          "fr": "conquête de la Gaule",
+          "en": "-58",
+          "theme": "événements"
+        },
+        {
+          "fr": "Croisades",
+          "en": "11e-13e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "Renaissance",
+          "en": "14e-16e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "Révolution industrielle",
+          "en": "18e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "monument",
+          "en": "construction",
+          "theme": "documents"
+        },
+        {
+          "fr": "document",
+          "en": "preuve",
+          "theme": "documents"
+        },
+        {
+          "fr": "musée",
+          "en": "collection",
+          "theme": "documents"
+        },
+        {
+          "fr": "archive",
+          "en": "enregistrement",
+          "theme": "documents"
+        },
+        {
+          "fr": "inscription",
+          "en": "texte",
+          "theme": "documents"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qui était Jeanne d'Arc ?",
+          "bonne": "héroïne française",
+          "fausses": [
+            "reine",
+            "sainte",
+            "prophète"
+          ],
+          "explication": "Jeanne d'Arc = héroïne française du 15e siècle."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "La ___ française est un événement majeur de l'histoire en 1789.",
+          "bonne": "Révolution",
+          "fausses": [
+            "Réforme",
+            "Renaissance",
+            "Croisade"
+          ],
+          "explication": "Révolution française = 1789, changement majeur."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel empereur français a conquis l'Europe ?",
+          "bonne": "Napoléon",
+          "fausses": [
+            "Louis XIV",
+            "Charlemagne",
+            "Jules César"
+          ],
+          "explication": "Napoléon = empereur français du 19e siècle."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "préhistoire",
+          "en": "avant écriture",
+          "theme": "périodes"
+        },
+        {
+          "fr": "antiquité",
+          "en": "Romains/Grecs",
+          "theme": "périodes"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "châteaux",
+          "theme": "périodes"
+        },
+        {
+          "fr": "renaissance",
+          "en": "art",
+          "theme": "périodes"
+        },
+        {
+          "fr": "époque moderne",
+          "en": "aujourd'hui",
+          "theme": "périodes"
+        },
+        {
+          "fr": "Jules César",
+          "en": "Romain",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Jeanne d'Arc",
+          "en": "France",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Louis XIV",
+          "en": "roi",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "empereur",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Charlemagne",
+          "en": "roi franc",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Révolution française",
+          "en": "1789",
+          "theme": "événements"
+        },
+        {
+          "fr": "conquête de la Gaule",
+          "en": "-58",
+          "theme": "événements"
+        },
+        {
+          "fr": "Croisades",
+          "en": "11e-13e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "Renaissance",
+          "en": "14e-16e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "Révolution industrielle",
+          "en": "18e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "monument",
+          "en": "construction",
+          "theme": "documents"
+        },
+        {
+          "fr": "document",
+          "en": "preuve",
+          "theme": "documents"
+        },
+        {
+          "fr": "musée",
+          "en": "collection",
+          "theme": "documents"
+        },
+        {
+          "fr": "archive",
+          "en": "enregistrement",
+          "theme": "documents"
+        },
+        {
+          "fr": "inscription",
+          "en": "texte",
+          "theme": "documents"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qui était Jeanne d'Arc ?",
+          "bonne": "héroïne française",
+          "fausses": [
+            "reine",
+            "sainte",
+            "prophète"
+          ],
+          "explication": "Jeanne d'Arc = héroïne française du 15e siècle."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "La ___ française est un événement majeur de l'histoire en 1789.",
+          "bonne": "Révolution",
+          "fausses": [
+            "Réforme",
+            "Renaissance",
+            "Croisade"
+          ],
+          "explication": "Révolution française = 1789, changement majeur."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel empereur français a conquis l'Europe ?",
+          "bonne": "Napoléon",
+          "fausses": [
+            "Louis XIV",
+            "Charlemagne",
+            "Jules César"
+          ],
+          "explication": "Napoléon = empereur français du 19e siècle."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "préhistoire",
+          "en": "avant écriture",
+          "theme": "périodes"
+        },
+        {
+          "fr": "antiquité",
+          "en": "Romains/Grecs",
+          "theme": "périodes"
+        },
+        {
+          "fr": "moyen-âge",
+          "en": "châteaux",
+          "theme": "périodes"
+        },
+        {
+          "fr": "renaissance",
+          "en": "art",
+          "theme": "périodes"
+        },
+        {
+          "fr": "époque moderne",
+          "en": "aujourd'hui",
+          "theme": "périodes"
+        },
+        {
+          "fr": "Jules César",
+          "en": "Romain",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Jeanne d'Arc",
+          "en": "France",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Louis XIV",
+          "en": "roi",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "empereur",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Charlemagne",
+          "en": "roi franc",
+          "theme": "personnages"
+        },
+        {
+          "fr": "Révolution française",
+          "en": "1789",
+          "theme": "événements"
+        },
+        {
+          "fr": "conquête de la Gaule",
+          "en": "-58",
+          "theme": "événements"
+        },
+        {
+          "fr": "Croisades",
+          "en": "11e-13e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "Renaissance",
+          "en": "14e-16e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "Révolution industrielle",
+          "en": "18e siècle",
+          "theme": "événements"
+        },
+        {
+          "fr": "monument",
+          "en": "construction",
+          "theme": "documents"
+        },
+        {
+          "fr": "document",
+          "en": "preuve",
+          "theme": "documents"
+        },
+        {
+          "fr": "musée",
+          "en": "collection",
+          "theme": "documents"
+        },
+        {
+          "fr": "archive",
+          "en": "enregistrement",
+          "theme": "documents"
+        },
+        {
+          "fr": "inscription",
+          "en": "texte",
+          "theme": "documents"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Qui était Jeanne d'Arc ?",
+          "bonne": "héroïne française",
+          "fausses": [
+            "reine",
+            "sainte",
+            "prophète"
+          ],
+          "explication": "Jeanne d'Arc = héroïne française du 15e siècle."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "La ___ française est un événement majeur de l'histoire en 1789.",
+          "bonne": "Révolution",
+          "fausses": [
+            "Réforme",
+            "Renaissance",
+            "Croisade"
+          ],
+          "explication": "Révolution française = 1789, changement majeur."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel empereur français a conquis l'Europe ?",
+          "bonne": "Napoléon",
+          "fausses": [
+            "Louis XIV",
+            "Charlemagne",
+            "Jules César"
+          ],
+          "explication": "Napoléon = empereur français du 19e siècle."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    }
+  }
+}

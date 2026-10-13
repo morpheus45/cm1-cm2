@@ -1,0 +1,785 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "1/2",
+          "en": "moitié",
+          "theme": "fractions"
+        },
+        {
+          "fr": "1/3",
+          "en": "tiers",
+          "theme": "fractions"
+        },
+        {
+          "fr": "1/4",
+          "en": "quart",
+          "theme": "fractions"
+        },
+        {
+          "fr": "2/3",
+          "en": "deux tiers",
+          "theme": "fractions"
+        },
+        {
+          "fr": "3/4",
+          "en": "trois quarts",
+          "theme": "fractions"
+        },
+        {
+          "fr": "angle",
+          "en": "coin",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "diagonale",
+          "en": "croisé",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "parallèle",
+          "en": "jamais croise",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "perpendiculaire",
+          "en": "90°",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "symétrie",
+          "en": "miroir",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "0.5",
+          "en": "zéro virgule cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "0.1",
+          "en": "zéro virgule un",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "1.5",
+          "en": "un virgule cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "2.25",
+          "en": "deux virgule vingt-cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "3.75",
+          "en": "trois virgule soixante-quinze",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "prix",
+          "en": "argent",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "distance",
+          "en": "longueur",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "temps",
+          "en": "durée",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "vitesse",
+          "en": "rapidité",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "poids",
+          "en": "masse",
+          "theme": "problèmes"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Calcul",
+          "enonce": "1/2 + 1/4 = ?",
+          "bonne": "3/4",
+          "fausses": [
+            "1/2",
+            "1",
+            "1/3"
+          ],
+          "explication": "1/2 = 2/4, donc 2/4 + 1/4 = 3/4."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Deux lignes perpendiculaires font quel angle ?",
+          "bonne": "90°",
+          "fausses": [
+            "45°",
+            "180°",
+            "60°"
+          ],
+          "explication": "Perpendiculaire = angle droit = 90°."
+        },
+        {
+          "consigne": "Problème",
+          "enonce": "J'ai 10€, je dépense 3€. Combien reste-t-il ?",
+          "bonne": "7€",
+          "fausses": [
+            "13€",
+            "6€",
+            "9€"
+          ],
+          "explication": "10 - 3 = 7."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "1/2",
+          "en": "moitié",
+          "theme": "fractions"
+        },
+        {
+          "fr": "1/3",
+          "en": "tiers",
+          "theme": "fractions"
+        },
+        {
+          "fr": "1/4",
+          "en": "quart",
+          "theme": "fractions"
+        },
+        {
+          "fr": "2/3",
+          "en": "deux tiers",
+          "theme": "fractions"
+        },
+        {
+          "fr": "3/4",
+          "en": "trois quarts",
+          "theme": "fractions"
+        },
+        {
+          "fr": "angle",
+          "en": "coin",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "diagonale",
+          "en": "croisé",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "parallèle",
+          "en": "jamais croise",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "perpendiculaire",
+          "en": "90°",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "symétrie",
+          "en": "miroir",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "0.5",
+          "en": "zéro virgule cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "0.1",
+          "en": "zéro virgule un",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "1.5",
+          "en": "un virgule cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "2.25",
+          "en": "deux virgule vingt-cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "3.75",
+          "en": "trois virgule soixante-quinze",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "prix",
+          "en": "argent",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "distance",
+          "en": "longueur",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "temps",
+          "en": "durée",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "vitesse",
+          "en": "rapidité",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "poids",
+          "en": "masse",
+          "theme": "problèmes"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Calcul",
+          "enonce": "1/2 + 1/4 = ?",
+          "bonne": "3/4",
+          "fausses": [
+            "1/2",
+            "1",
+            "1/3"
+          ],
+          "explication": "1/2 = 2/4, donc 2/4 + 1/4 = 3/4."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Deux lignes perpendiculaires font quel angle ?",
+          "bonne": "90°",
+          "fausses": [
+            "45°",
+            "180°",
+            "60°"
+          ],
+          "explication": "Perpendiculaire = angle droit = 90°."
+        },
+        {
+          "consigne": "Problème",
+          "enonce": "J'ai 10€, je dépense 3€. Combien reste-t-il ?",
+          "bonne": "7€",
+          "fausses": [
+            "13€",
+            "6€",
+            "9€"
+          ],
+          "explication": "10 - 3 = 7."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "1/2",
+          "en": "moitié",
+          "theme": "fractions"
+        },
+        {
+          "fr": "1/3",
+          "en": "tiers",
+          "theme": "fractions"
+        },
+        {
+          "fr": "1/4",
+          "en": "quart",
+          "theme": "fractions"
+        },
+        {
+          "fr": "2/3",
+          "en": "deux tiers",
+          "theme": "fractions"
+        },
+        {
+          "fr": "3/4",
+          "en": "trois quarts",
+          "theme": "fractions"
+        },
+        {
+          "fr": "angle",
+          "en": "coin",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "diagonale",
+          "en": "croisé",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "parallèle",
+          "en": "jamais croise",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "perpendiculaire",
+          "en": "90°",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "symétrie",
+          "en": "miroir",
+          "theme": "géométrie"
+        },
+        {
+          "fr": "0.5",
+          "en": "zéro virgule cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "0.1",
+          "en": "zéro virgule un",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "1.5",
+          "en": "un virgule cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "2.25",
+          "en": "deux virgule vingt-cinq",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "3.75",
+          "en": "trois virgule soixante-quinze",
+          "theme": "décimaux"
+        },
+        {
+          "fr": "prix",
+          "en": "argent",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "distance",
+          "en": "longueur",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "temps",
+          "en": "durée",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "vitesse",
+          "en": "rapidité",
+          "theme": "problèmes"
+        },
+        {
+          "fr": "poids",
+          "en": "masse",
+          "theme": "problèmes"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Calcul",
+          "enonce": "1/2 + 1/4 = ?",
+          "bonne": "3/4",
+          "fausses": [
+            "1/2",
+            "1",
+            "1/3"
+          ],
+          "explication": "1/2 = 2/4, donc 2/4 + 1/4 = 3/4."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Deux lignes perpendiculaires font quel angle ?",
+          "bonne": "90°",
+          "fausses": [
+            "45°",
+            "180°",
+            "60°"
+          ],
+          "explication": "Perpendiculaire = angle droit = 90°."
+        },
+        {
+          "consigne": "Problème",
+          "enonce": "J'ai 10€, je dépense 3€. Combien reste-t-il ?",
+          "bonne": "7€",
+          "fausses": [
+            "13€",
+            "6€",
+            "9€"
+          ],
+          "explication": "10 - 3 = 7."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    }
+  }
+}

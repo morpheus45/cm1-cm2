@@ -1,0 +1,785 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "nom",
+          "en": "mot",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "verbe",
+          "en": "action",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "adjectif",
+          "en": "description",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "adverbe",
+          "en": "manière",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "préposition",
+          "en": "relation",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "je suis",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "tu vas",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "il/elle est",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "nous avons",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "vous faites",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "passé",
+          "en": "avant",
+          "theme": "temps"
+        },
+        {
+          "fr": "présent",
+          "en": "maintenant",
+          "theme": "temps"
+        },
+        {
+          "fr": "futur",
+          "en": "après",
+          "theme": "temps"
+        },
+        {
+          "fr": "imparfait",
+          "en": "habitude",
+          "theme": "temps"
+        },
+        {
+          "fr": "passé composé",
+          "en": "récent",
+          "theme": "temps"
+        },
+        {
+          "fr": "conte",
+          "en": "histoire",
+          "theme": "littérature"
+        },
+        {
+          "fr": "fable",
+          "en": "leçon",
+          "theme": "littérature"
+        },
+        {
+          "fr": "poème",
+          "en": "vers",
+          "theme": "littérature"
+        },
+        {
+          "fr": "roman",
+          "en": "histoire longue",
+          "theme": "littérature"
+        },
+        {
+          "fr": "théâtre",
+          "en": "dialogue",
+          "theme": "littérature"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le verbe : 'Je cours vite' ?",
+          "bonne": "cours",
+          "fausses": [
+            "je",
+            "vite",
+            "j"
+          ],
+          "explication": "Le verbe est l'action : courir = cours."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Passé composé : J'___ mangé.",
+          "bonne": "ai",
+          "fausses": [
+            "suis",
+            "ont",
+            "as"
+          ],
+          "explication": "J'ai mangé = passé composé."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Une fable de qui ?",
+          "bonne": "La Fontaine",
+          "fausses": [
+            "Molière",
+            "Racine",
+            "Corneille"
+          ],
+          "explication": "Les Fables = La Fontaine."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "nom",
+          "en": "mot",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "verbe",
+          "en": "action",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "adjectif",
+          "en": "description",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "adverbe",
+          "en": "manière",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "préposition",
+          "en": "relation",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "je suis",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "tu vas",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "il/elle est",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "nous avons",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "vous faites",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "passé",
+          "en": "avant",
+          "theme": "temps"
+        },
+        {
+          "fr": "présent",
+          "en": "maintenant",
+          "theme": "temps"
+        },
+        {
+          "fr": "futur",
+          "en": "après",
+          "theme": "temps"
+        },
+        {
+          "fr": "imparfait",
+          "en": "habitude",
+          "theme": "temps"
+        },
+        {
+          "fr": "passé composé",
+          "en": "récent",
+          "theme": "temps"
+        },
+        {
+          "fr": "conte",
+          "en": "histoire",
+          "theme": "littérature"
+        },
+        {
+          "fr": "fable",
+          "en": "leçon",
+          "theme": "littérature"
+        },
+        {
+          "fr": "poème",
+          "en": "vers",
+          "theme": "littérature"
+        },
+        {
+          "fr": "roman",
+          "en": "histoire longue",
+          "theme": "littérature"
+        },
+        {
+          "fr": "théâtre",
+          "en": "dialogue",
+          "theme": "littérature"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le verbe : 'Je cours vite' ?",
+          "bonne": "cours",
+          "fausses": [
+            "je",
+            "vite",
+            "j"
+          ],
+          "explication": "Le verbe est l'action : courir = cours."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Passé composé : J'___ mangé.",
+          "bonne": "ai",
+          "fausses": [
+            "suis",
+            "ont",
+            "as"
+          ],
+          "explication": "J'ai mangé = passé composé."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Une fable de qui ?",
+          "bonne": "La Fontaine",
+          "fausses": [
+            "Molière",
+            "Racine",
+            "Corneille"
+          ],
+          "explication": "Les Fables = La Fontaine."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "nom",
+          "en": "mot",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "verbe",
+          "en": "action",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "adjectif",
+          "en": "description",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "adverbe",
+          "en": "manière",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "préposition",
+          "en": "relation",
+          "theme": "grammaire"
+        },
+        {
+          "fr": "je suis",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "tu vas",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "il/elle est",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "nous avons",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "vous faites",
+          "en": "présent",
+          "theme": "conjugaison"
+        },
+        {
+          "fr": "passé",
+          "en": "avant",
+          "theme": "temps"
+        },
+        {
+          "fr": "présent",
+          "en": "maintenant",
+          "theme": "temps"
+        },
+        {
+          "fr": "futur",
+          "en": "après",
+          "theme": "temps"
+        },
+        {
+          "fr": "imparfait",
+          "en": "habitude",
+          "theme": "temps"
+        },
+        {
+          "fr": "passé composé",
+          "en": "récent",
+          "theme": "temps"
+        },
+        {
+          "fr": "conte",
+          "en": "histoire",
+          "theme": "littérature"
+        },
+        {
+          "fr": "fable",
+          "en": "leçon",
+          "theme": "littérature"
+        },
+        {
+          "fr": "poème",
+          "en": "vers",
+          "theme": "littérature"
+        },
+        {
+          "fr": "roman",
+          "en": "histoire longue",
+          "theme": "littérature"
+        },
+        {
+          "fr": "théâtre",
+          "en": "dialogue",
+          "theme": "littérature"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quel est le verbe : 'Je cours vite' ?",
+          "bonne": "cours",
+          "fausses": [
+            "je",
+            "vite",
+            "j"
+          ],
+          "explication": "Le verbe est l'action : courir = cours."
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Passé composé : J'___ mangé.",
+          "bonne": "ai",
+          "fausses": [
+            "suis",
+            "ont",
+            "as"
+          ],
+          "explication": "J'ai mangé = passé composé."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Une fable de qui ?",
+          "bonne": "La Fontaine",
+          "fausses": [
+            "Molière",
+            "Racine",
+            "Corneille"
+          ],
+          "explication": "Les Fables = La Fontaine."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        },
+        {
+          "consigne": "Choix multiple",
+          "enonce": "Quelle est la bonne réponse ?",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "C'est la bonne réponse."
+        }
+      ]
+    }
+  }
+}
