@@ -88,25 +88,30 @@ export function PedagogieScreen({ initialLevel }: PedagogieScreenProps) {
         <div className="mb-6">
           <h1 className="text-3xl font-bold text-purple-900 mb-6">📚 Pédagogie</h1>
 
-          {/* Selectors */}
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Matière</label>
-              <select
-                value={subject}
-                onChange={(e) => setSubject(e.target.value as Subject)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-purple-600"
-              >
-                {SUBJECTS.map((s) => (
-                  <option key={s.id} value={s.id}>
-                    {s.label}
-                  </option>
-                ))}
-              </select>
+          {/* Matières - Grille visible */}
+          <div className="mb-8">
+            <label className="block text-sm font-semibold text-gray-700 mb-3">📚 Matière</label>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+              {SUBJECTS.map((s) => (
+                <button
+                  key={s.id}
+                  onClick={() => setSubject(s.id)}
+                  className={`px-4 py-2 rounded-lg font-semibold transition ${
+                    subject === s.id
+                      ? 'bg-purple-600 text-white shadow-lg'
+                      : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-purple-600'
+                  }`}
+                >
+                  {s.label}
+                </button>
+              ))}
             </div>
+          </div>
 
+          {/* Niveau et Trimestre - Sélecteurs */}
+          <div className="grid grid-cols-2 gap-4 mb-6">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Niveau</label>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">🎓 Niveau</label>
               <select
                 value={level}
                 onChange={(e) => setLevel(e.target.value as Level)}
@@ -121,7 +126,7 @@ export function PedagogieScreen({ initialLevel }: PedagogieScreenProps) {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Trimestre</label>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">📅 Trimestre</label>
               <select
                 value={trimester}
                 onChange={(e) => setTrimester(e.target.value)}
