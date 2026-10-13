@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme Pédagogique - CE1 à 3e</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); overflow: hidden; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.1em; opacity: 0.9; }
+        .controls { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; padding: 30px; background: #f8f9fa; }
+        .control-group { display: flex; flex-direction: column; }
+        .control-group label { font-weight: bold; margin-bottom: 8px; color: #333; }
+        .control-group select { padding: 10px; border: 2px solid #667eea; border-radius: 5px; font-size: 1em; }
+        .btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 30px; border-radius: 5px; cursor: pointer; font-size: 1em; font-weight: bold; transition: transform 0.2s; }
+        .btn:hover { transform: scale(1.05); }
+        .content { padding: 30px; }
+        .vocab-section, .questions-section { margin-bottom: 40px; }
+        .section-title { font-size: 1.8em; color: #667eea; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+        .vocab-card { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #667eea; }
+        .vocab-card .fr { font-weight: bold; color: #333; font-size: 1.1em; }
+        .vocab-card .en { color: #666; font-style: italic; }
+        .vocab-card .theme { font-size: 0.85em; color: #999; margin-top: 5px; }
+        .question { background: #f8f9fa; padding: 20px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #764ba2; }
+        .question-text { font-weight: bold; margin-bottom: 15px; color: #333; font-size: 1.1em; }
+        .answer-options { display: grid; grid-template-columns: 1fr; gap: 10px; }
+        .answer-option { padding: 12px; border: 2px solid #ddd; border-radius: 5px; cursor: pointer; transition: all 0.2s; background: white; }
+        .answer-option:hover { background: #f0f0f0; border-color: #667eea; }
+        .answer-option.selected { background: #667eea; color: white; border-color: #667eea; }
+        .answer-option.correct { background: #28a745; color: white; border-color: #28a745; }
+        .answer-option.incorrect { background: #dc3545; color: white; border-color: #dc3545; }
+        .explanation { margin-top: 10px; padding: 10px; background: #e8f4f8; border-radius: 5px; border-left: 3px solid #17a2b8; color: #333; }
+        .progress { background: #e8f4f8; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .progress p { font-size: 1.1em; color: #333; }
+        .loading { text-align: center; padding: 40px; }
+        .loading p { font-size: 1.2em; color: #667eea; }
+        @media (max-width: 768px) {
+            .controls { grid-template-columns: 1fr; }
+            header h1 { font-size: 1.8em; }
+            .vocab-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Plateforme Pédagogique</h1>
+            <p>Apprentissage progressif CE1 à 3e</p>
+        </header>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="matiere">Matière :</label>
+                <select id="matiere" onchange="loadContent()">
+                    <option value="">-- Sélectionner --</option>
+                    <option value="francais">Français</option>
+                    <option value="mathematiques">Mathématiques</option>
+                    <option value="geographie">Géographie</option>
+                    <option value="histoire">Histoire</option>
+                    <option value="sciences">Sciences</option>
+                    <option value="emc">EMC</option>
+                    <option value="anglais">Anglais</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="niveau">Niveau :</label>
+                <select id="niveau" onchange="loadContent()">
+                    <option value="">-- Sélectionner --</option>
+                    <option value="CE1">CE1</option>
+                    <option value="CE2">CE2</option>
+                    <option value="CM1">CM1</option>
+                    <option value="CM2">CM2</option>
+                    <option value="6e">6e</option>
+                    <option value="5e">5e</option>
+                    <option value="4e">4e</option>
+                    <option value="3e">3e</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="trimestre">Trimestre :</label>
+                <select id="trimestre" onchange="loadContent()">
+                    <option value="">-- Sélectionner --</option>
+                    <option value="1">Trimestre 1</option>
+                    <option value="2">Trimestre 2</option>
+                    <option value="3">Trimestre 3</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="content" id="content">
+            <p style="text-align: center; color: #999; padding: 40px;">Sélectionnez une matière, un niveau et un trimestre pour commencer</p>
+        </div>
+    </div>
+
+    <script>
+        async function loadContent() {
+            const matiere = document.getElementById('matiere').value;
+            const niveau = document.getElementById('niveau').value;
+            const trimestre = document.getElementById('trimestre').value;
+            
+            if (!matiere || !niveau || !trimestre) {
+                document.getElementById('content').innerHTML = '<p style="text-align: center; color: #999; padding: 40px;">Sélectionnez une matière, un niveau et un trimestre</p>';
+                return;
+            }
+            
+            document.getElementById('content').innerHTML = '<div class="loading"><p>Chargement...</p></div>';
+            
+            try {
+                const response = await fetch(`../contenus/${matiere}/${niveau}.json`);
+                if (!response.ok) throw new Error('Fichier non trouvé');
+                
+                const data = await response.json();
+                const trimData = data.trimestres[trimestre];
+                
+                let html = `<div class="progress"><p>📖 ${data.niveau} - Trimestre ${trimestre}</p></div>`;
+                
+                // Vocabulaire
+                html += `<div class="vocab-section">
+                    <div class="section-title">📝 Vocabulaire & Notions</div>
+                    <div class="vocab-grid">`;
+                
+                trimData.vocabulaire.forEach(vocab => {
+                    html += `<div class="vocab-card">
+                        <div class="fr">${vocab.fr}</div>
+                        <div class="en">${vocab.en}</div>
+                        <div class="theme">${vocab.theme}</div>
+                    </div>`;
+                });
+                
+                html += `</div></div>`;
+                
+                // Questions
+                html += `<div class="questions-section">
+                    <div class="section-title">❓ Questions & Exercices</div>`;
+                
+                trimData.questions.forEach((q, idx) => {
+                    const answerId = `answer_${idx}`;
+                    html += `<div class="question">
+                        <div class="question-text">${idx + 1}. ${q.consigne}</div>
+                        <div class="question-text" style="font-weight: normal; font-size: 1em; margin-bottom: 10px;">${q.enonce}</div>
+                        <div class="answer-options">`;
+                    
+                    [q.bonne, ...q.fausses].sort(() => Math.random() - 0.5).forEach(option => {
+                        html += `<div class="answer-option" onclick="checkAnswer(this, '${q.bonne}', '${q.explication}')">
+                            ${option}
+                        </div>`;
+                    });
+                    
+                    html += `</div></div>`;
+                });
+                
+                html += `</div>`;
+                document.getElementById('content').innerHTML = html;
+                
+            } catch (error) {
+                document.getElementById('content').innerHTML = `<p style="color: red; padding: 20px;">Erreur : ${error.message}</p>`;
+            }
+        }
+        
+        function checkAnswer(element, correct, explication) {
+            const parent = element.parentElement;
+            
+            // Désactiver tous les boutons
+            parent.querySelectorAll('.answer-option').forEach(btn => {
+                btn.style.pointerEvents = 'none';
+                if (btn.textContent.trim() === correct) {
+                    btn.classList.add('correct');
+                } else if (btn.classList.contains('selected') && btn.textContent.trim() !== correct) {
+                    btn.classList.add('incorrect');
+                }
+            });
+            
+            element.classList.add('selected');
+            
+            // Afficher explication
+            if (!parent.nextElementSibling?.classList.contains('explanation')) {
+                const exp = document.createElement('div');
+                exp.className = 'explanation';
+                exp.innerHTML = `<strong>Explication :</strong> ${explication}`;
+                parent.parentElement.insertBefore(exp, parent.nextElementSibling);
+            }
+        }
+    </script>
+</body>
+</html>
