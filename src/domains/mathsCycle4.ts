@@ -79,7 +79,6 @@ export function rat(n: number, d = 1): Rat {
 export const plus = (a: Rat, b: Rat): Rat => rat(a.n * b.d + b.n * a.d, a.d * b.d);
 export const moins = (a: Rat, b: Rat): Rat => rat(a.n * b.d - b.n * a.d, a.d * b.d);
 export const fois = (a: Rat, b: Rat): Rat => rat(a.n * b.n, a.d * b.d);
-export const surRat = (a: Rat, b: Rat): Rat => rat(a.n * b.d, a.d * b.n);
 export const egaux = (a: Rat, b: Rat): boolean => a.n === b.n && a.d === b.d;
 export const valeur = (a: Rat): number => a.n / a.d;
 
@@ -88,9 +87,6 @@ export const texteRat = (a: Rat): string => (a.d === 1 ? nb(a.n) : `${a.n < 0 ? 
 
 /** Une fraction telle qu'on la donne, non simplifiée : « 6/8 ». */
 export const fraction = (n: number, d: number): string => `${n < 0 ? MOINS : ''}${Math.abs(n)}/${d}`;
-
-/** Une fraction dans une expression : « (−3/4) » si elle est négative. */
-export const fractionEntre = (n: number, d: number): string => (n < 0 ? `(${fraction(n, d)})` : fraction(n, d));
 
 // --- Des nombres au hasard, et des erreurs d'élève ---------------------------------------------------------------
 

@@ -38,7 +38,6 @@ export const cmpQ = (a: Q, b: Q) => {
   return x < y ? -1 : x > y ? 1 : 0;
 };
 export const absQ = (a: Q) => q(absB(a.n), a.d);
-export const estEntier = (a: Q) => a.d === 1n;
 export const signeQ = (a: Q) => (a.n < 0n ? -1 : a.n > 0n ? 1 : 0);
 
 export function puissanceQ(a: Q, exposant: number): Q {
@@ -63,9 +62,6 @@ export function racineQ(a: Q): Q | null {
   const [x, y] = [racine(a.n), racine(a.d)];
   return x === null || y === null ? null : q(x, y);
 }
-
-/** 3/4 → 0,75 : une valeur en nombre flottant, pour comparer des ordres de grandeur seulement. */
-export const versNombre = (a: Q) => Number(a.n) / Number(a.d);
 
 // --- Lire un nombre écrit ------------------------------------------------------------------------------------------
 
@@ -257,13 +253,6 @@ export function polyEvaluer(a: Poly, valeur: Q): Q {
   a.forEach((coefficient, degre) => (total = addQ(total, mulQ(coefficient, puissanceQ(valeur, degre)))));
   return total;
 }
-
-/** « x² − 5x + 6 » mis en forme normale : « 1 x^2 − 5 x^1 + 6 x^0 » (pour les messages d'erreur des tests). */
-export const polyEnTexte = (a: Poly) =>
-  [...a.entries()]
-    .sort(([x], [y]) => y - x)
-    .map(([degre, coefficient]) => `${coefficient.n}${coefficient.d === 1n ? '' : `/${coefficient.d}`}x^${degre}`)
-    .join(' + ') || '0';
 
 /** Lit un polynôme en `lettre` : « 3(x + 2) − x² », « (2x − 1)(x + 4) », « −x(x − 5) ». */
 export function lirePolynome(texte: string, lettre = 'x'): Poly {
@@ -461,6 +450,3 @@ export function memeExpression(a: string, b: string, lettres: string[] = ['x']):
     return eqQ(evaluerAvecLettres(a, valeurs), evaluerAvecLettres(b, valeurs));
   });
 }
-
-/** Les nombres entiers de 1 à n, pour les boucles des tests. */
-export const de1a = (n: number) => Array.from({ length: n }, (_, k) => k + 1);
