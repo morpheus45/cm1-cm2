@@ -50,19 +50,30 @@ export type Trace = (px: (x: number) => number, py: (y: number) => number) => Sh
  * dessine : une droite, des points. Les axes passent par l'origine quand elle
  * est dans le cadre ; sinon ils longent le bord. Ce qu'on lit est exact : le
  * quadrillage est tracé à chaque graduation.
+ *
+ * Un repère « orthonormé » donne la même longueur à l'unité sur les deux axes :
+ * c'est celui de la géométrie, où un angle droit doit avoir l'air droit. Le
+ * repère par défaut remplit son cadre, comme celui d'un graphique de
+ * proportionnalité.
  */
-export function repere(x: Axe, y: Axe, tracer: Trace, alt: string): Figure {
-  const { gauche, droite, haut, bas } = CADRE_DU_REPERE;
+export function repere(x: Axe, y: Axe, tracer: Trace, alt: string, options: { orthonorme?: boolean } = {}): Figure {
+  let { gauche, droite, haut, bas } = CADRE_DU_REPERE;
+  if (options.orthonorme) {
+    const echelle = Math.min((droite - gauche) / (x.max - x.min), (bas - haut) / (y.max - y.min));
+    const [largeur, hauteur] = [(x.max - x.min) * echelle, (y.max - y.min) * echelle];
+    const [nouvelleGauche, nouveauHaut] = [gauche + (droite - gauche - largeur) / 2, haut + (bas - haut - hauteur) / 2];
+    [gauche, droite, haut, bas] = [arrondi(nouvelleGauche), arrondi(nouvelleGauche + largeur), arrondi(nouveauHaut), arrondi(nouveauHaut + hauteur)];
+  }
   const px = (valeur: number) => arrondi(gauche + ((valeur - x.min) / (x.max - x.min)) * (droite - gauche));
   const py = (valeur: number) => arrondi(bas - ((valeur - y.min) / (y.max - y.min)) * (bas - haut));
   const shapes: Shape[] = [];
   graduations(x).forEach((valeur, rang) => {
     shapes.push({ kind: 'segment', from: [px(valeur), haut], to: [px(valeur), bas], ink: 'pale', width: 1 });
-    if (rang % (x.etiquette ?? 1) === 0) shapes.push({ kind: 'text', at: [px(valeur), RANG_DES_GRADUATIONS.ligneX], text: nb(valeur), anchor: 'middle', size: 11 });
+    if (rang % (x.etiquette ?? 1) === 0) shapes.push({ kind: 'text', at: [px(valeur), bas + 15], text: nb(valeur), anchor: 'middle', size: 11 });
   });
   graduations(y).forEach((valeur, rang) => {
     shapes.push({ kind: 'segment', from: [gauche, py(valeur)], to: [droite, py(valeur)], ink: 'pale', width: 1 });
-    if (rang % (y.etiquette ?? 1) === 0) shapes.push({ kind: 'text', at: [RANG_DES_GRADUATIONS.colonneY, py(valeur) + 4], text: nb(valeur), anchor: 'end', size: 11 });
+    if (rang % (y.etiquette ?? 1) === 0) shapes.push({ kind: 'text', at: [gauche - 8, py(valeur) + 4], text: nb(valeur), anchor: 'end', size: 11 });
   });
   const abscisseDeLAxe = x.min <= 0 && x.max >= 0 ? px(0) : gauche;
   const ordonneeDeLAxe = y.min <= 0 && y.max >= 0 ? py(0) : bas;
@@ -70,7 +81,7 @@ export function repere(x: Axe, y: Axe, tracer: Trace, alt: string): Figure {
     { kind: 'segment', from: [abscisseDeLAxe, haut - 6], to: [abscisseDeLAxe, bas], width: 2.2 },
     { kind: 'segment', from: [gauche, ordonneeDeLAxe], to: [droite + 6, ordonneeDeLAxe], width: 2.2 },
     { kind: 'text', at: [gauche + 4, 14], text: y.nom, anchor: 'start', size: 12, bold: true },
-    { kind: 'text', at: [droite, HAUTEUR - 6], text: x.nom, anchor: 'end', size: 12, bold: true }
+    { kind: 'text', at: [Math.max(droite, 200), HAUTEUR - 6], text: x.nom, anchor: 'end', size: 12, bold: true }
   );
   shapes.push(...tracer(px, py));
   return { width: LARGEUR, height: HAUTEUR, shapes, alt };
@@ -85,6 +96,20 @@ export const pointDuRepere = (px: (x: number) => number, py: (y: number) => numb
   fill: true,
 });
 
+/** Une flèche en pointillés d'un point du repère à un autre : un trait et les deux barbes de sa pointe. */
+export function flecheDuRepere(px: (x: number) => number, py: (y: number) => number, de: Point, vers: Point): Shape[] {
+  const [debut, fin]: Point[] = [[px(de[0]), py(de[1])], [px(vers[0]), py(vers[1])]];
+  const direction = (Math.atan2(debut[1] - fin[1], debut[0] - fin[0]) * 180) / Math.PI;
+  const barbe = (ecart: number): Shape => ({
+    kind: 'segment',
+    from: fin,
+    to: [arrondi(fin[0] + 9 * Math.cos(((direction + ecart) * Math.PI) / 180)), arrondi(fin[1] + 9 * Math.sin(((direction + ecart) * Math.PI) / 180))],
+    ink: 'couleur',
+    width: 2,
+  });
+  return [{ kind: 'segment', from: debut, to: fin, ink: 'couleur', dashed: true, width: 2 }, barbe(28), barbe(-28)];
+}
+
 /** Une droite d'équation y = a·x + b, tracée de l'abscisse `de` à l'abscisse `a`. */
 export const droiteDuRepere = (px: (x: number) => number, py: (y: number) => number, pente: number, ordonnee: number, de: number, jusqua: number): Shape => ({
   kind: 'segment',
@@ -97,7 +122,7 @@ export const droiteDuRepere = (px: (x: number) => number, py: (y: number) => num
 // --- Le diagramme circulaire ---------------------------------------------------------------------
 
 const CENTRE_DU_DISQUE: Point = [150, 100];
-const RAYON_DU_DISQUE = 50;
+const RAYON_DU_DISQUE = 56;
 
 /** Les angles d'un diagramme circulaire : la part de 100 % occupe 360°, on part du haut et l'on tourne dans le sens des aiguilles d'une montre. */
 export function anglesDuDiagramme(pourcentages: number[]): { debut: number; fin: number }[] {
