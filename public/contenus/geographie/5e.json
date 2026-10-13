@@ -1,0 +1,773 @@
+{
+  "niveau": "5e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "Bassin méditerranéen",
+          "en": "Bassin méditerranéen (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Sahara",
+          "en": "Sahara (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amazonie",
+          "en": "Amazonie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Sibérie",
+          "en": "Sibérie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Andes",
+          "en": "Andes (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "densité",
+          "en": "densité (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "croissance",
+          "en": "croissance (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "migration",
+          "en": "migration (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur primaire",
+          "en": "secteur primaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur secondaire",
+          "en": "secteur secondaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur tertiaire",
+          "en": "secteur tertiaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "PIB",
+          "en": "PIB (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "régions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "régions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "régions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "régions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "régions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 5e",
+          "bonne": "Bassin méditerranéen",
+          "fausses": [
+            "Sahara",
+            "Amazonie",
+            "Sibérie"
+          ],
+          "explication": "Explication 5e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 5e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: régions géographiques",
+          "bonne": "Sahara",
+          "fausses": [
+            "Amazonie",
+            "Sibérie",
+            "Andes"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Bassin méditerranéen",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 5e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Bassin méditerranéen",
+          "en": "Bassin méditerranéen (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Sahara",
+          "en": "Sahara (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amazonie",
+          "en": "Amazonie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Sibérie",
+          "en": "Sibérie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Andes",
+          "en": "Andes (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "densité",
+          "en": "densité (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "croissance",
+          "en": "croissance (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "migration",
+          "en": "migration (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur primaire",
+          "en": "secteur primaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur secondaire",
+          "en": "secteur secondaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur tertiaire",
+          "en": "secteur tertiaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "PIB",
+          "en": "PIB (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "régions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "régions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "régions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "régions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "régions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 5e",
+          "bonne": "Bassin méditerranéen",
+          "fausses": [
+            "Sahara",
+            "Amazonie",
+            "Sibérie"
+          ],
+          "explication": "Explication 5e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 5e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: régions géographiques",
+          "bonne": "Sahara",
+          "fausses": [
+            "Amazonie",
+            "Sibérie",
+            "Andes"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Bassin méditerranéen",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 5e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "Bassin méditerranéen",
+          "en": "Bassin méditerranéen (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Sahara",
+          "en": "Sahara (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amazonie",
+          "en": "Amazonie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Sibérie",
+          "en": "Sibérie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Andes",
+          "en": "Andes (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "densité",
+          "en": "densité (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "croissance",
+          "en": "croissance (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "migration",
+          "en": "migration (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur primaire",
+          "en": "secteur primaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur secondaire",
+          "en": "secteur secondaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "secteur tertiaire",
+          "en": "secteur tertiaire (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "PIB",
+          "en": "PIB (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce (régions géographiques)",
+          "theme": "régions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "régions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "régions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "régions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "régions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "régions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 5e",
+          "bonne": "Bassin méditerranéen",
+          "fausses": [
+            "Sahara",
+            "Amazonie",
+            "Sibérie"
+          ],
+          "explication": "Explication 5e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 5e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: régions géographiques",
+          "bonne": "Sahara",
+          "fausses": [
+            "Amazonie",
+            "Sibérie",
+            "Andes"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Bassin méditerranéen",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 5e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

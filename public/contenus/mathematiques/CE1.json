@@ -1,0 +1,773 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "1",
+          "en": "1 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "2",
+          "en": "2 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "3",
+          "en": "3 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "4",
+          "en": "4 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "5",
+          "en": "5 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "6",
+          "en": "6 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "7",
+          "en": "7 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "8",
+          "en": "8 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "9",
+          "en": "9 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "10",
+          "en": "10 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "+",
+          "en": "+ (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "-",
+          "en": "- (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "×",
+          "en": "× (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "÷",
+          "en": "÷ (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "=",
+          "en": "= (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "pair",
+          "en": "pair (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "impair",
+          "en": "impair (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "carré",
+          "en": "carré (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "triangle",
+          "en": "triangle (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cercle",
+          "en": "cercle (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CE1",
+          "bonne": "1",
+          "fausses": [
+            "2",
+            "3",
+            "4"
+          ],
+          "explication": "Explication CE1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CE1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres 1-10 et opérations",
+          "bonne": "2",
+          "fausses": [
+            "3",
+            "4",
+            "5"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "1",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "1",
+          "en": "1 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "2",
+          "en": "2 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "3",
+          "en": "3 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "4",
+          "en": "4 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "5",
+          "en": "5 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "6",
+          "en": "6 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "7",
+          "en": "7 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "8",
+          "en": "8 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "9",
+          "en": "9 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "10",
+          "en": "10 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "+",
+          "en": "+ (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "-",
+          "en": "- (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "×",
+          "en": "× (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "÷",
+          "en": "÷ (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "=",
+          "en": "= (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "pair",
+          "en": "pair (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "impair",
+          "en": "impair (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "carré",
+          "en": "carré (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "triangle",
+          "en": "triangle (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cercle",
+          "en": "cercle (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CE1",
+          "bonne": "1",
+          "fausses": [
+            "2",
+            "3",
+            "4"
+          ],
+          "explication": "Explication CE1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CE1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres 1-10 et opérations",
+          "bonne": "2",
+          "fausses": [
+            "3",
+            "4",
+            "5"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "1",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "1",
+          "en": "1 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "2",
+          "en": "2 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "3",
+          "en": "3 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "4",
+          "en": "4 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "5",
+          "en": "5 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "6",
+          "en": "6 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "7",
+          "en": "7 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "8",
+          "en": "8 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "9",
+          "en": "9 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "10",
+          "en": "10 (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "+",
+          "en": "+ (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "-",
+          "en": "- (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "×",
+          "en": "× (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "÷",
+          "en": "÷ (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "=",
+          "en": "= (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "pair",
+          "en": "pair (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "impair",
+          "en": "impair (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "carré",
+          "en": "carré (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "triangle",
+          "en": "triangle (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cercle",
+          "en": "cercle (nombres 1-10 et opérations)",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CE1",
+          "bonne": "1",
+          "fausses": [
+            "2",
+            "3",
+            "4"
+          ],
+          "explication": "Explication CE1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CE1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres 1-10 et opérations",
+          "bonne": "2",
+          "fausses": [
+            "3",
+            "4",
+            "5"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "1",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

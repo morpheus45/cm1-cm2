@@ -1,0 +1,773 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "passé",
+          "en": "passé (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "présent",
+          "en": "présent (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "futur",
+          "en": "futur (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "ancêtre",
+          "en": "ancêtre (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "générations",
+          "en": "générations (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "château fort",
+          "en": "château fort (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "paysan",
+          "en": "paysan (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "roi",
+          "en": "roi (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "reine",
+          "en": "reine (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "Moyen Âge",
+          "en": "Moyen Âge (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "Renaissance",
+          "en": "Renaissance (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "époque",
+          "en": "époque (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "évolution",
+          "en": "évolution (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "histoire"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau CE2",
+          "bonne": "passé",
+          "fausses": [
+            "présent",
+            "futur",
+            "ancêtre"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: histoire simple",
+          "bonne": "présent",
+          "fausses": [
+            "futur",
+            "ancêtre",
+            "générations"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "passé",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "passé",
+          "en": "passé (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "présent",
+          "en": "présent (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "futur",
+          "en": "futur (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "ancêtre",
+          "en": "ancêtre (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "générations",
+          "en": "générations (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "château fort",
+          "en": "château fort (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "paysan",
+          "en": "paysan (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "roi",
+          "en": "roi (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "reine",
+          "en": "reine (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "Moyen Âge",
+          "en": "Moyen Âge (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "Renaissance",
+          "en": "Renaissance (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "époque",
+          "en": "époque (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "évolution",
+          "en": "évolution (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "histoire"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau CE2",
+          "bonne": "passé",
+          "fausses": [
+            "présent",
+            "futur",
+            "ancêtre"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: histoire simple",
+          "bonne": "présent",
+          "fausses": [
+            "futur",
+            "ancêtre",
+            "générations"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "passé",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "passé",
+          "en": "passé (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "présent",
+          "en": "présent (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "futur",
+          "en": "futur (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "ancêtre",
+          "en": "ancêtre (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "générations",
+          "en": "générations (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "monument",
+          "en": "monument (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "château fort",
+          "en": "château fort (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "chevalier",
+          "en": "chevalier (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "paysan",
+          "en": "paysan (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "roi",
+          "en": "roi (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "reine",
+          "en": "reine (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "Moyen Âge",
+          "en": "Moyen Âge (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "Renaissance",
+          "en": "Renaissance (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "époque",
+          "en": "époque (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "évolution",
+          "en": "évolution (histoire simple)",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "histoire"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "histoire"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau CE2",
+          "bonne": "passé",
+          "fausses": [
+            "présent",
+            "futur",
+            "ancêtre"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: histoire simple",
+          "bonne": "présent",
+          "fausses": [
+            "futur",
+            "ancêtre",
+            "générations"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "passé",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,773 @@
+{
+  "niveau": "CM2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "Asie du Sud",
+          "en": "Asie du Sud (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Asie du Sudouest",
+          "en": "Asie du Sudouest (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Afrique du Nord",
+          "en": "Afrique du Nord (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Afrique subsaharienne",
+          "en": "Afrique subsaharienne (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amérique latine",
+          "en": "Amérique latine (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amérique du Nord",
+          "en": "Amérique du Nord (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Europe",
+          "en": "Europe (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Océanie",
+          "en": "Océanie (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat équatorial",
+          "en": "climat équatorial (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat tropical",
+          "en": "climat tropical (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat aride",
+          "en": "climat aride (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat tempéré",
+          "en": "climat tempéré (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat continental",
+          "en": "climat continental (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat méditerranéen",
+          "en": "climat méditerranéen (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "relief",
+          "en": "relief (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "régions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "régions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "régions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "régions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "régions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CM2",
+          "bonne": "Asie du Sud",
+          "fausses": [
+            "Asie du Sudouest",
+            "Afrique du Nord",
+            "Afrique subsaharienne"
+          ],
+          "explication": "Explication CM2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CM2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: régions du monde",
+          "bonne": "Asie du Sudouest",
+          "fausses": [
+            "Afrique du Nord",
+            "Afrique subsaharienne",
+            "Amérique latine"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Asie du Sud",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Asie du Sud",
+          "en": "Asie du Sud (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Asie du Sudouest",
+          "en": "Asie du Sudouest (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Afrique du Nord",
+          "en": "Afrique du Nord (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Afrique subsaharienne",
+          "en": "Afrique subsaharienne (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amérique latine",
+          "en": "Amérique latine (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amérique du Nord",
+          "en": "Amérique du Nord (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Europe",
+          "en": "Europe (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Océanie",
+          "en": "Océanie (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat équatorial",
+          "en": "climat équatorial (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat tropical",
+          "en": "climat tropical (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat aride",
+          "en": "climat aride (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat tempéré",
+          "en": "climat tempéré (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat continental",
+          "en": "climat continental (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat méditerranéen",
+          "en": "climat méditerranéen (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "relief",
+          "en": "relief (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "régions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "régions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "régions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "régions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "régions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CM2",
+          "bonne": "Asie du Sud",
+          "fausses": [
+            "Asie du Sudouest",
+            "Afrique du Nord",
+            "Afrique subsaharienne"
+          ],
+          "explication": "Explication CM2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CM2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: régions du monde",
+          "bonne": "Asie du Sudouest",
+          "fausses": [
+            "Afrique du Nord",
+            "Afrique subsaharienne",
+            "Amérique latine"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Asie du Sud",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "Asie du Sud",
+          "en": "Asie du Sud (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Asie du Sudouest",
+          "en": "Asie du Sudouest (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Afrique du Nord",
+          "en": "Afrique du Nord (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Afrique subsaharienne",
+          "en": "Afrique subsaharienne (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amérique latine",
+          "en": "Amérique latine (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Amérique du Nord",
+          "en": "Amérique du Nord (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Europe",
+          "en": "Europe (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "Océanie",
+          "en": "Océanie (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat équatorial",
+          "en": "climat équatorial (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat tropical",
+          "en": "climat tropical (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat aride",
+          "en": "climat aride (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat tempéré",
+          "en": "climat tempéré (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat continental",
+          "en": "climat continental (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "climat méditerranéen",
+          "en": "climat méditerranéen (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "relief",
+          "en": "relief (régions du monde)",
+          "theme": "régions"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "régions"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "régions"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "régions"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "régions"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "régions"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CM2",
+          "bonne": "Asie du Sud",
+          "fausses": [
+            "Asie du Sudouest",
+            "Afrique du Nord",
+            "Afrique subsaharienne"
+          ],
+          "explication": "Explication CM2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CM2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: régions du monde",
+          "bonne": "Asie du Sudouest",
+          "fausses": [
+            "Afrique du Nord",
+            "Afrique subsaharienne",
+            "Amérique latine"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Asie du Sud",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

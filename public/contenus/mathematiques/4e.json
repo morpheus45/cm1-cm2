@@ -1,0 +1,773 @@
+{
+  "niveau": "4e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "puissance négative",
+          "en": "puissance négative (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "racine n-ième",
+          "en": "racine n-ième (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "théorème Pythagore",
+          "en": "théorème Pythagore (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "théorème Thalès",
+          "en": "théorème Thalès (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "trigonométrie",
+          "en": "trigonométrie (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "cosinus",
+          "en": "cosinus (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "sinus",
+          "en": "sinus (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "tangente",
+          "en": "tangente (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "calcul littéral",
+          "en": "calcul littéral (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "factorisation avancée",
+          "en": "factorisation avancée (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "équation produit",
+          "en": "équation produit (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "inéquation 1°",
+          "en": "inéquation 1° (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "ensemble solution",
+          "en": "ensemble solution (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "intervalle",
+          "en": "intervalle (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "cas égalité",
+          "en": "cas égalité (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "Pythagore"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 4e",
+          "bonne": "puissance négative",
+          "fausses": [
+            "racine n-ième",
+            "théorème Pythagore",
+            "théorème Thalès"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: Pythagore et Thalès",
+          "bonne": "racine n-ième",
+          "fausses": [
+            "théorème Pythagore",
+            "théorème Thalès",
+            "trigonométrie"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "puissance négative",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "puissance négative",
+          "en": "puissance négative (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "racine n-ième",
+          "en": "racine n-ième (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "théorème Pythagore",
+          "en": "théorème Pythagore (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "théorème Thalès",
+          "en": "théorème Thalès (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "trigonométrie",
+          "en": "trigonométrie (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "cosinus",
+          "en": "cosinus (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "sinus",
+          "en": "sinus (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "tangente",
+          "en": "tangente (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "calcul littéral",
+          "en": "calcul littéral (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "factorisation avancée",
+          "en": "factorisation avancée (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "équation produit",
+          "en": "équation produit (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "inéquation 1°",
+          "en": "inéquation 1° (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "ensemble solution",
+          "en": "ensemble solution (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "intervalle",
+          "en": "intervalle (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "cas égalité",
+          "en": "cas égalité (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "Pythagore"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 4e",
+          "bonne": "puissance négative",
+          "fausses": [
+            "racine n-ième",
+            "théorème Pythagore",
+            "théorème Thalès"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: Pythagore et Thalès",
+          "bonne": "racine n-ième",
+          "fausses": [
+            "théorème Pythagore",
+            "théorème Thalès",
+            "trigonométrie"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "puissance négative",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "puissance négative",
+          "en": "puissance négative (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "racine n-ième",
+          "en": "racine n-ième (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "théorème Pythagore",
+          "en": "théorème Pythagore (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "théorème Thalès",
+          "en": "théorème Thalès (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "trigonométrie",
+          "en": "trigonométrie (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "cosinus",
+          "en": "cosinus (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "sinus",
+          "en": "sinus (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "tangente",
+          "en": "tangente (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "calcul littéral",
+          "en": "calcul littéral (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "factorisation avancée",
+          "en": "factorisation avancée (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "équation produit",
+          "en": "équation produit (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "inéquation 1°",
+          "en": "inéquation 1° (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "ensemble solution",
+          "en": "ensemble solution (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "intervalle",
+          "en": "intervalle (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "cas égalité",
+          "en": "cas égalité (Pythagore et Thalès)",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "Pythagore"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "Pythagore"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 4e",
+          "bonne": "puissance négative",
+          "fausses": [
+            "racine n-ième",
+            "théorème Pythagore",
+            "théorème Thalès"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: Pythagore et Thalès",
+          "bonne": "racine n-ième",
+          "fausses": [
+            "théorème Pythagore",
+            "théorème Thalès",
+            "trigonométrie"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "puissance négative",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

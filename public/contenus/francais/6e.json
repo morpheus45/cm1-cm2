@@ -1,0 +1,658 @@
+{
+  "niveau": "6e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "analyse grammaticale",
+          "en": "étude mots",
+          "theme": "étude"
+        },
+        {
+          "fr": "analyse logique",
+          "en": "propositions",
+          "theme": "propositions"
+        },
+        {
+          "fr": "phrase complexe",
+          "en": "plusieurs",
+          "theme": "plusieurs"
+        },
+        {
+          "fr": "relative",
+          "en": "qui, que, où",
+          "theme": "qui,"
+        },
+        {
+          "fr": "complétive",
+          "en": "que dit",
+          "theme": "que"
+        },
+        {
+          "fr": "adverbiale",
+          "en": "complément",
+          "theme": "complément"
+        },
+        {
+          "fr": "concessive",
+          "en": "bien que",
+          "theme": "bien"
+        },
+        {
+          "fr": "causale",
+          "en": "parce que",
+          "theme": "parce"
+        },
+        {
+          "fr": "hypothétique",
+          "en": "si",
+          "theme": "si"
+        },
+        {
+          "fr": "temporelle",
+          "en": "quand",
+          "theme": "quand"
+        },
+        {
+          "fr": "complémentaire",
+          "en": "appose",
+          "theme": "appose"
+        },
+        {
+          "fr": "parenthétique",
+          "en": "intercalée",
+          "theme": "intercalée"
+        },
+        {
+          "fr": "juxtaposition",
+          "en": ";",
+          "theme": ";"
+        },
+        {
+          "fr": "coordination",
+          "en": "et, ou",
+          "theme": "et,"
+        },
+        {
+          "fr": "subordination",
+          "en": "que, si",
+          "theme": "que,"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Analyse gramm=?",
+          "bonne": "mots",
+          "fausses": [
+            "phrases",
+            "sens"
+          ],
+          "explication": "grammaire"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Analyse log=___",
+          "bonne": "propositions",
+          "fausses": [
+            "mots",
+            "lettres"
+          ],
+          "explication": "logique"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Relative='qui' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "relative"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Complétive='que'",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "complétive"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Causale=?",
+          "bonne": "parce que",
+          "fausses": [
+            "bien que",
+            "si"
+          ],
+          "explication": "causale"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Hypothétique=___",
+          "bonne": "si",
+          "fausses": [
+            "et",
+            "ou"
+          ],
+          "explication": "hypothétique"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Temporelle=?",
+          "bonne": "quand",
+          "fausses": [
+            "où",
+            "pourquoi"
+          ],
+          "explication": "temporelle"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Concessive='bien que'",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "concessive"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Juxtaposition=?",
+          "bonne": "point-virgule",
+          "fausses": [
+            "virgule",
+            "point"
+          ],
+          "explication": "juxtaposition"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Coordination='et' ou ___",
+          "bonne": "ou",
+          "fausses": [
+            "que",
+            "si"
+          ],
+          "explication": "coordination"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Subordination=dépendance",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "subordination"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Parenthétique=?",
+          "bonne": "intercalée",
+          "fausses": [
+            "début",
+            "fin"
+          ],
+          "explication": "parenthétique"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Adverbiale=___",
+          "bonne": "complément",
+          "fausses": [
+            "sujet",
+            "verbe"
+          ],
+          "explication": "adverbiale"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Complémentaire=?",
+          "bonne": "appose",
+          "fausses": [
+            "coordination",
+            "subordination"
+          ],
+          "explication": "complémentaire"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "genre littéraire",
+          "en": "catégorie",
+          "theme": "catégorie"
+        },
+        {
+          "fr": "roman",
+          "en": "long récit",
+          "theme": "long"
+        },
+        {
+          "fr": "nouvelle",
+          "en": "court récit",
+          "theme": "court"
+        },
+        {
+          "fr": "poésie",
+          "en": "vers rimes",
+          "theme": "vers"
+        },
+        {
+          "fr": "théâtre",
+          "en": "dialogué",
+          "theme": "dialogué"
+        },
+        {
+          "fr": "essai",
+          "en": "réflexion",
+          "theme": "réflexion"
+        },
+        {
+          "fr": "autobiographie",
+          "en": "vie propre",
+          "theme": "vie"
+        },
+        {
+          "fr": "biographie",
+          "en": "vie autre",
+          "theme": "vie"
+        },
+        {
+          "fr": "conte",
+          "en": "imaginaire",
+          "theme": "imaginaire"
+        },
+        {
+          "fr": "fable",
+          "en": "morale",
+          "theme": "morale"
+        },
+        {
+          "fr": "légende",
+          "en": "populaire",
+          "theme": "populaire"
+        },
+        {
+          "fr": "mythe",
+          "en": "divin",
+          "theme": "divin"
+        },
+        {
+          "fr": "épopée",
+          "en": "héroïque",
+          "theme": "héroïque"
+        },
+        {
+          "fr": "roman historique",
+          "en": "époque",
+          "theme": "époque"
+        },
+        {
+          "fr": "fantastique",
+          "en": "surnaturel",
+          "theme": "surnaturel"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Genre=?",
+          "bonne": "catégorie",
+          "fausses": [
+            "type",
+            "classe"
+          ],
+          "explication": "genre"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Roman=___ récit",
+          "bonne": "long",
+          "fausses": [
+            "court",
+            "moyen"
+          ],
+          "explication": "roman"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Nouvelle=?",
+          "bonne": "court récit",
+          "fausses": [
+            "long",
+            "moyen"
+          ],
+          "explication": "nouvelle"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Poésie=vers+rimes",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "poésie"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Théâtre=?",
+          "bonne": "dialogué",
+          "fausses": [
+            "narratif",
+            "poétique"
+          ],
+          "explication": "théâtre"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Essai=___",
+          "bonne": "réflexion",
+          "fausses": [
+            "histoire",
+            "aventure"
+          ],
+          "explication": "essai"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Autobio=?",
+          "bonne": "vie propre",
+          "fausses": [
+            "vie autre",
+            "imaginaire"
+          ],
+          "explication": "autobio"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Biographie=vie autre",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "biographie"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Conte=?",
+          "bonne": "imaginaire",
+          "fausses": [
+            "réel",
+            "historique"
+          ],
+          "explication": "conte"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Fable=___ morale",
+          "bonne": "leçon",
+          "fausses": [
+            "histoire",
+            "aventure"
+          ],
+          "explication": "fable"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Légende=?",
+          "bonne": "populaire",
+          "fausses": [
+            "divine",
+            "réelle"
+          ],
+          "explication": "légende"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Mythe=divin",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "mythe"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Épopée=?",
+          "bonne": "héroïque",
+          "fausses": [
+            "comique",
+            "tragique"
+          ],
+          "explication": "épopée"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Roman historique=___ époque",
+          "bonne": "dans",
+          "fausses": [
+            "avant",
+            "après"
+          ],
+          "explication": "historique"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "style direct",
+          "en": "guillemets",
+          "theme": "guillemets"
+        },
+        {
+          "fr": "style indirect",
+          "en": "que dit",
+          "theme": "que"
+        },
+        {
+          "fr": "style indirect libre",
+          "en": "mélange",
+          "theme": "mélange"
+        },
+        {
+          "fr": "focalisation zéro",
+          "en": "omniscient",
+          "theme": "omniscient"
+        },
+        {
+          "fr": "focalisation interne",
+          "en": "personnage",
+          "theme": "personnage"
+        },
+        {
+          "fr": "focalisation externe",
+          "en": "observateur",
+          "theme": "observateur"
+        },
+        {
+          "fr": "voix narrative",
+          "en": "narrative",
+          "theme": "narrative"
+        },
+        {
+          "fr": "temporalité",
+          "en": "temps",
+          "theme": "temps"
+        },
+        {
+          "fr": "analepse",
+          "en": "retour",
+          "theme": "retour"
+        },
+        {
+          "fr": "prolepse",
+          "en": "anticipation",
+          "theme": "anticipation"
+        },
+        {
+          "fr": "ellipse",
+          "en": "saut",
+          "theme": "saut"
+        },
+        {
+          "fr": "pause narrative",
+          "en": "description",
+          "theme": "description"
+        },
+        {
+          "fr": "résumé",
+          "en": "condensé",
+          "theme": "condensé"
+        },
+        {
+          "fr": "scène",
+          "en": "dialogué",
+          "theme": "dialogué"
+        },
+        {
+          "fr": "description",
+          "en": "statique",
+          "theme": "statique"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Style direct=?",
+          "bonne": "guillemets",
+          "fausses": [
+            "que",
+            "indirect"
+          ],
+          "explication": "style"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Style indirect=___ dit",
+          "bonne": "que",
+          "fausses": [
+            "et",
+            "ou"
+          ],
+          "explication": "indirect"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Indirect libre=?",
+          "bonne": "mélange",
+          "fausses": [
+            "pur direct",
+            "pur indirect"
+          ],
+          "explication": "libre"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Focu zéro=omniscient",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "focalisation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Focu interne=?",
+          "bonne": "personnage",
+          "fausses": [
+            "observateur",
+            "omniscient"
+          ],
+          "explication": "focalisation"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Focu externe=___",
+          "bonne": "observateur",
+          "fausses": [
+            "personnage",
+            "omniscient"
+          ],
+          "explication": "focalisation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Voix=?",
+          "bonne": "narrative",
+          "fausses": [
+            "dialogue",
+            "description"
+          ],
+          "explication": "voix"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Temporalité=temps",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "temps"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Analepse=?",
+          "bonne": "retour",
+          "fausses": [
+            "avant",
+            "après"
+          ],
+          "explication": "analepse"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Prolepse=___",
+          "bonne": "anticipation",
+          "fausses": [
+            "retour",
+            "arrêt"
+          ],
+          "explication": "prolepse"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Ellipse=?",
+          "bonne": "saut",
+          "fausses": [
+            "pause",
+            "résumé"
+          ],
+          "explication": "ellipse"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Pause=description",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "pause"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Résumé=?",
+          "bonne": "condensé",
+          "fausses": [
+            "dialogué",
+            "statique"
+          ],
+          "explication": "résumé"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Scène=___ dialogué",
+          "bonne": "très",
+          "fausses": [
+            "peu",
+            "non"
+          ],
+          "explication": "scène"
+        }
+      ]
+    }
+  }
+}

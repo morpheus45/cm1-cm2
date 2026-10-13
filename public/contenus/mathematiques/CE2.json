@@ -1,0 +1,773 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "11",
+          "en": "11 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "12",
+          "en": "12 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "20",
+          "en": "20 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "30",
+          "en": "30 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "40",
+          "en": "40 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "50",
+          "en": "50 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "60",
+          "en": "60 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "70",
+          "en": "70 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "80",
+          "en": "80 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "90",
+          "en": "90 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "100",
+          "en": "100 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/2",
+          "en": "1/2 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/3",
+          "en": "1/3 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/4",
+          "en": "1/4 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "double",
+          "en": "double (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "moitié",
+          "en": "moitié (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "unité",
+          "en": "unité (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "centaine",
+          "en": "centaine (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "croissant",
+          "en": "croissant (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CE2",
+          "bonne": "11",
+          "fausses": [
+            "12",
+            "20",
+            "30"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres 11-100 et fractions simples",
+          "bonne": "12",
+          "fausses": [
+            "20",
+            "30",
+            "40"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "11",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "11",
+          "en": "11 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "12",
+          "en": "12 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "20",
+          "en": "20 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "30",
+          "en": "30 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "40",
+          "en": "40 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "50",
+          "en": "50 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "60",
+          "en": "60 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "70",
+          "en": "70 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "80",
+          "en": "80 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "90",
+          "en": "90 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "100",
+          "en": "100 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/2",
+          "en": "1/2 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/3",
+          "en": "1/3 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/4",
+          "en": "1/4 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "double",
+          "en": "double (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "moitié",
+          "en": "moitié (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "unité",
+          "en": "unité (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "centaine",
+          "en": "centaine (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "croissant",
+          "en": "croissant (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CE2",
+          "bonne": "11",
+          "fausses": [
+            "12",
+            "20",
+            "30"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres 11-100 et fractions simples",
+          "bonne": "12",
+          "fausses": [
+            "20",
+            "30",
+            "40"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "11",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "11",
+          "en": "11 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "12",
+          "en": "12 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "20",
+          "en": "20 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "30",
+          "en": "30 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "40",
+          "en": "40 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "50",
+          "en": "50 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "60",
+          "en": "60 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "70",
+          "en": "70 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "80",
+          "en": "80 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "90",
+          "en": "90 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "100",
+          "en": "100 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/2",
+          "en": "1/2 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/3",
+          "en": "1/3 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "1/4",
+          "en": "1/4 (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "double",
+          "en": "double (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "moitié",
+          "en": "moitié (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "unité",
+          "en": "unité (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "centaine",
+          "en": "centaine (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "croissant",
+          "en": "croissant (nombres 11-100 et fractions simples)",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CE2",
+          "bonne": "11",
+          "fausses": [
+            "12",
+            "20",
+            "30"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres 11-100 et fractions simples",
+          "bonne": "12",
+          "fausses": [
+            "20",
+            "30",
+            "40"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "11",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

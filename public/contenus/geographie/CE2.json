@@ -1,0 +1,773 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "village",
+          "en": "village (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ville",
+          "en": "ville (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "région",
+          "en": "région (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "mer",
+          "en": "mer (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "océan",
+          "en": "océan (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "désert",
+          "en": "désert (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "île",
+          "en": "île (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "habitants",
+          "en": "habitants (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "population",
+          "en": "population (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "climat",
+          "en": "climat (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "saisons",
+          "en": "saisons (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "jour",
+          "en": "jour (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "nuit",
+          "en": "nuit (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ombre",
+          "en": "ombre (localisation et environnement)",
+          "theme": "localisation"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CE2",
+          "bonne": "village",
+          "fausses": [
+            "ville",
+            "région",
+            "montagne"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: localisation et environnement",
+          "bonne": "ville",
+          "fausses": [
+            "région",
+            "montagne",
+            "fleuve"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "village",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "village",
+          "en": "village (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ville",
+          "en": "ville (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "région",
+          "en": "région (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "mer",
+          "en": "mer (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "océan",
+          "en": "océan (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "désert",
+          "en": "désert (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "île",
+          "en": "île (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "habitants",
+          "en": "habitants (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "population",
+          "en": "population (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "climat",
+          "en": "climat (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "saisons",
+          "en": "saisons (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "jour",
+          "en": "jour (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "nuit",
+          "en": "nuit (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ombre",
+          "en": "ombre (localisation et environnement)",
+          "theme": "localisation"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CE2",
+          "bonne": "village",
+          "fausses": [
+            "ville",
+            "région",
+            "montagne"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: localisation et environnement",
+          "bonne": "ville",
+          "fausses": [
+            "région",
+            "montagne",
+            "fleuve"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "village",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "village",
+          "en": "village (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ville",
+          "en": "ville (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "région",
+          "en": "région (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "montagne",
+          "en": "montagne (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "mer",
+          "en": "mer (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "océan",
+          "en": "océan (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "désert",
+          "en": "désert (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "forêt",
+          "en": "forêt (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "île",
+          "en": "île (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "habitants",
+          "en": "habitants (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "population",
+          "en": "population (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "climat",
+          "en": "climat (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "saisons",
+          "en": "saisons (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "jour",
+          "en": "jour (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "nuit",
+          "en": "nuit (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (localisation et environnement)",
+          "theme": "localisation"
+        },
+        {
+          "fr": "ombre",
+          "en": "ombre (localisation et environnement)",
+          "theme": "localisation"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau CE2",
+          "bonne": "village",
+          "fausses": [
+            "ville",
+            "région",
+            "montagne"
+          ],
+          "explication": "Explication CE2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme CE2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: localisation et environnement",
+          "bonne": "ville",
+          "fausses": [
+            "région",
+            "montagne",
+            "fleuve"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "village",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CE2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

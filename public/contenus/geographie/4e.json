@@ -1,0 +1,773 @@
+{
+  "niveau": "4e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "frontière",
+          "en": "frontière (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "souveraineté",
+          "en": "souveraineté (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "alliance",
+          "en": "alliance (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "ONU",
+          "en": "ONU (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "pays développé",
+          "en": "pays développé (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "pays en développement",
+          "en": "pays en développement (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "IDH",
+          "en": "IDH (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "inégalités",
+          "en": "inégalités (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "énergies",
+          "en": "énergies (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "transport",
+          "en": "transport (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "technologie",
+          "en": "technologie (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "géopolitique"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 4e",
+          "bonne": "frontière",
+          "fausses": [
+            "souveraineté",
+            "conflit",
+            "alliance"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: géopolitique et développement",
+          "bonne": "souveraineté",
+          "fausses": [
+            "conflit",
+            "alliance",
+            "ONU"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "frontière",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "frontière",
+          "en": "frontière (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "souveraineté",
+          "en": "souveraineté (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "alliance",
+          "en": "alliance (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "ONU",
+          "en": "ONU (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "pays développé",
+          "en": "pays développé (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "pays en développement",
+          "en": "pays en développement (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "IDH",
+          "en": "IDH (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "inégalités",
+          "en": "inégalités (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "énergies",
+          "en": "énergies (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "transport",
+          "en": "transport (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "technologie",
+          "en": "technologie (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "géopolitique"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 4e",
+          "bonne": "frontière",
+          "fausses": [
+            "souveraineté",
+            "conflit",
+            "alliance"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: géopolitique et développement",
+          "bonne": "souveraineté",
+          "fausses": [
+            "conflit",
+            "alliance",
+            "ONU"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "frontière",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "frontière",
+          "en": "frontière (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "souveraineté",
+          "en": "souveraineté (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "conflit",
+          "en": "conflit (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "alliance",
+          "en": "alliance (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "ONU",
+          "en": "ONU (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "pays développé",
+          "en": "pays développé (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "pays en développement",
+          "en": "pays en développement (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "IDH",
+          "en": "IDH (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "inégalités",
+          "en": "inégalités (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "environnement",
+          "en": "environnement (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "énergies",
+          "en": "énergies (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "transport",
+          "en": "transport (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "technologie",
+          "en": "technologie (géopolitique et développement)",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "géopolitique"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "géopolitique"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Geographie niveau 4e",
+          "bonne": "frontière",
+          "fausses": [
+            "souveraineté",
+            "conflit",
+            "alliance"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Geographie au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Geographie"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: géopolitique et développement",
+          "bonne": "souveraineté",
+          "fausses": [
+            "conflit",
+            "alliance",
+            "ONU"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "frontière",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

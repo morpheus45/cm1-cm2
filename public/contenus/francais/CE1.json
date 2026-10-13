@@ -1,0 +1,763 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "a",
+          "en": "lettre 1",
+          "theme": "lettre"
+        },
+        {
+          "fr": "b",
+          "en": "lettre 2",
+          "theme": "lettre"
+        },
+        {
+          "fr": "c",
+          "en": "lettre 3",
+          "theme": "lettre"
+        },
+        {
+          "fr": "chat",
+          "en": "animal",
+          "theme": "animal"
+        },
+        {
+          "fr": "soleil",
+          "en": "astre",
+          "theme": "astre"
+        },
+        {
+          "fr": "maman",
+          "en": "mère",
+          "theme": "mère"
+        },
+        {
+          "fr": "papa",
+          "en": "père",
+          "theme": "père"
+        },
+        {
+          "fr": "maison",
+          "en": "habitation",
+          "theme": "habitation"
+        },
+        {
+          "fr": "école",
+          "en": "lieu étude",
+          "theme": "lieu"
+        },
+        {
+          "fr": "pain",
+          "en": "aliment",
+          "theme": "aliment"
+        },
+        {
+          "fr": "eau",
+          "en": "boisson",
+          "theme": "boisson"
+        },
+        {
+          "fr": "feu",
+          "en": "chaleur",
+          "theme": "chaleur"
+        },
+        {
+          "fr": "rouge",
+          "en": "couleur",
+          "theme": "couleur"
+        },
+        {
+          "fr": "bleu",
+          "en": "couleur",
+          "theme": "couleur"
+        },
+        {
+          "fr": "vert",
+          "en": "couleur",
+          "theme": "couleur"
+        },
+        {
+          "fr": "un",
+          "en": "nombre",
+          "theme": "nombre"
+        },
+        {
+          "fr": "deux",
+          "en": "nombre",
+          "theme": "nombre"
+        },
+        {
+          "fr": "trois",
+          "en": "nombre",
+          "theme": "nombre"
+        },
+        {
+          "fr": "bonjour",
+          "en": "salutation",
+          "theme": "salutation"
+        },
+        {
+          "fr": "au revoir",
+          "en": "adieu",
+          "theme": "adieu"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Quel son 'ch' ?",
+          "bonne": "doux",
+          "fausses": [
+            "dur",
+            "grave",
+            "aigu"
+          ],
+          "explication": "ch=doux"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "J'aime mon ___",
+          "bonne": "chat",
+          "fausses": [
+            "soleil",
+            "pain",
+            "eau"
+          ],
+          "explication": "aimer"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Soleil brille nuit",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "soleil=jour"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Rime 'chat' ?",
+          "bonne": "rat",
+          "fausses": [
+            "soleil",
+            "eau",
+            "feu"
+          ],
+          "explication": "rime"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Couleur herbe ?",
+          "bonne": "vert",
+          "fausses": [
+            "bleu",
+            "rouge",
+            "noir"
+          ],
+          "explication": "herbe"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "J'habite ___",
+          "bonne": "maison",
+          "fausses": [
+            "école",
+            "pain",
+            "route"
+          ],
+          "explication": "habite"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Lettre après 'a' ?",
+          "bonne": "b",
+          "fausses": [
+            "c",
+            "d",
+            "z"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "On s'assoit ___",
+          "bonne": "chaise",
+          "fausses": [
+            "table",
+            "porte",
+            "fenêtre"
+          ],
+          "explication": "chaise"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Chien=animal",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "chien"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Opposé jour ?",
+          "bonne": "nuit",
+          "fausses": [
+            "matin",
+            "soir",
+            "lumière"
+          ],
+          "explication": "nuit"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "On mange du ___",
+          "bonne": "pain",
+          "fausses": [
+            "feu",
+            "chaise",
+            "soleil"
+          ],
+          "explication": "pain"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Animal aboie ?",
+          "bonne": "chien",
+          "fausses": [
+            "chat",
+            "oiseau",
+            "poisson"
+          ],
+          "explication": "aboie"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Eau=solide",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "eau=liquide"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Nombre après 2 ?",
+          "bonne": "3",
+          "fausses": [
+            "1",
+            "4",
+            "5"
+          ],
+          "explication": "nombre"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "d",
+          "en": "lettre 4",
+          "theme": "lettre"
+        },
+        {
+          "fr": "e",
+          "en": "lettre 5",
+          "theme": "lettre"
+        },
+        {
+          "fr": "f",
+          "en": "lettre 6",
+          "theme": "lettre"
+        },
+        {
+          "fr": "g",
+          "en": "lettre 7",
+          "theme": "lettre"
+        },
+        {
+          "fr": "h",
+          "en": "lettre 8",
+          "theme": "lettre"
+        },
+        {
+          "fr": "i",
+          "en": "lettre 9",
+          "theme": "lettre"
+        },
+        {
+          "fr": "j",
+          "en": "lettre 10",
+          "theme": "lettre"
+        },
+        {
+          "fr": "k",
+          "en": "lettre 11",
+          "theme": "lettre"
+        },
+        {
+          "fr": "l",
+          "en": "lettre 12",
+          "theme": "lettre"
+        },
+        {
+          "fr": "m",
+          "en": "lettre 13",
+          "theme": "lettre"
+        },
+        {
+          "fr": "n",
+          "en": "lettre 14",
+          "theme": "lettre"
+        },
+        {
+          "fr": "o",
+          "en": "lettre 15",
+          "theme": "lettre"
+        },
+        {
+          "fr": "p",
+          "en": "lettre 16",
+          "theme": "lettre"
+        },
+        {
+          "fr": "q",
+          "en": "lettre 17",
+          "theme": "lettre"
+        },
+        {
+          "fr": "r",
+          "en": "lettre 18",
+          "theme": "lettre"
+        },
+        {
+          "fr": "s",
+          "en": "lettre 19",
+          "theme": "lettre"
+        },
+        {
+          "fr": "t",
+          "en": "lettre 20",
+          "theme": "lettre"
+        },
+        {
+          "fr": "u",
+          "en": "lettre 21",
+          "theme": "lettre"
+        },
+        {
+          "fr": "v",
+          "en": "lettre 22",
+          "theme": "lettre"
+        },
+        {
+          "fr": "w",
+          "en": "lettre 23",
+          "theme": "lettre"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Lettre 'd' ?",
+          "bonne": "quatrième",
+          "fausses": [
+            "troisième",
+            "cinquième",
+            "sixième"
+          ],
+          "explication": "d"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Alphabet après 's' ?",
+          "bonne": "t",
+          "fausses": [
+            "u",
+            "v",
+            "w"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Total lettres alphabet ?",
+          "bonne": "26",
+          "fausses": [
+            "24",
+            "25",
+            "27"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Voyelle='a'",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "voyelle"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Consonne='b' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "consonne"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Lettre entre 'p' et 'r' ?",
+          "bonne": "q",
+          "fausses": [
+            "o",
+            "s",
+            "t"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Son 'j' ?",
+          "bonne": "ja",
+          "fausses": [
+            "je",
+            "ji",
+            "jo"
+          ],
+          "explication": "phonétique"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Rime 'matin' ?",
+          "bonne": "pain",
+          "fausses": [
+            "chat",
+            "soleil",
+            "nuit"
+          ],
+          "explication": "rime"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Son 'ch'=consonne",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "consonne"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Nombre 0 s'appelle ?",
+          "bonne": "zéro",
+          "fausses": [
+            "rien",
+            "vide",
+            "néant"
+          ],
+          "explication": "nombre"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Après 9 ?",
+          "bonne": "10",
+          "fausses": [
+            "8",
+            "11",
+            "12"
+          ],
+          "explication": "nombre"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Voyelle='e' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "voyelle"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "'y'=voyelle",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "y"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Début alphabet ?",
+          "bonne": "a",
+          "fausses": [
+            "b",
+            "z",
+            "m"
+          ],
+          "explication": "alphabet"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "x",
+          "en": "lettre 24",
+          "theme": "lettre"
+        },
+        {
+          "fr": "y",
+          "en": "lettre 25",
+          "theme": "lettre"
+        },
+        {
+          "fr": "z",
+          "en": "lettre 26",
+          "theme": "lettre"
+        },
+        {
+          "fr": "je",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "tu",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "il",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "elle",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "nous",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "vous",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "ils",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "elles",
+          "en": "pronom",
+          "theme": "pronom"
+        },
+        {
+          "fr": "oui",
+          "en": "affirmation",
+          "theme": "affirmation"
+        },
+        {
+          "fr": "non",
+          "en": "négation",
+          "theme": "négation"
+        },
+        {
+          "fr": "merci",
+          "en": "politesse",
+          "theme": "politesse"
+        },
+        {
+          "fr": "s'il plaît",
+          "en": "politesse",
+          "theme": "politesse"
+        },
+        {
+          "fr": "bonjour",
+          "en": "salutation",
+          "theme": "salutation"
+        },
+        {
+          "fr": "au revoir",
+          "en": "adieu",
+          "theme": "adieu"
+        },
+        {
+          "fr": "excusez",
+          "en": "politesse",
+          "theme": "politesse"
+        },
+        {
+          "fr": "pardon",
+          "en": "politesse",
+          "theme": "politesse"
+        },
+        {
+          "fr": "aidez",
+          "en": "action",
+          "theme": "action"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Dernière lettre ?",
+          "bonne": "z",
+          "fausses": [
+            "y",
+            "w",
+            "x"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Pronom 'moi' ?",
+          "bonne": "je",
+          "fausses": [
+            "tu",
+            "il",
+            "elle"
+          ],
+          "explication": "pronom"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Pronom pluriel ?",
+          "bonne": "nous",
+          "fausses": [
+            "je",
+            "tu",
+            "il"
+          ],
+          "explication": "pronom"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Vous=singulier",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "vous"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Avant 'au revoir' dit ___",
+          "bonne": "bonjour",
+          "fausses": [
+            "merci",
+            "oui",
+            "non"
+          ],
+          "explication": "salutation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Politesse ?",
+          "bonne": "s'il plaît",
+          "fausses": [
+            "oui",
+            "non",
+            "merci"
+          ],
+          "explication": "politesse"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Je=2ème personne",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "je"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "On dit '___ revoir' départ",
+          "bonne": "au",
+          "fausses": [
+            "bon",
+            "oui",
+            "merci"
+          ],
+          "explication": "au revoir"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Affirmation ?",
+          "bonne": "oui",
+          "fausses": [
+            "non",
+            "peut-être",
+            "moyen"
+          ],
+          "explication": "oui"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Pronoms plural='ils' ou ___",
+          "bonne": "elles",
+          "fausses": [
+            "elle",
+            "il",
+            "elle"
+          ],
+          "explication": "pronom"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Remercie : dit ___",
+          "bonne": "merci",
+          "fausses": [
+            "s'il plaît",
+            "oui",
+            "non"
+          ],
+          "explication": "merci"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Tu=vous",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "tu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Après 'merci' répond ___",
+          "bonne": "de rien",
+          "fausses": [
+            "oui",
+            "non",
+            "peut-être"
+          ],
+          "explication": "politesse"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Demande pardon : ___",
+          "bonne": "pardon",
+          "fausses": [
+            "merci",
+            "oui",
+            "non"
+          ],
+          "explication": "pardon"
+        }
+      ]
+    }
+  }
+}

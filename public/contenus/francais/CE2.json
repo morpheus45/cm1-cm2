@@ -1,0 +1,679 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "k",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "l",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "m",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "n",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "o",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "p",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "qu",
+          "en": "digramme",
+          "theme": "digramme"
+        },
+        {
+          "fr": "r",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "s",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "t",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "u",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "v",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "w",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "x",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "y",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "z",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "voyelle",
+          "en": "son ouvert",
+          "theme": "son"
+        },
+        {
+          "fr": "consonne",
+          "en": "son fermé",
+          "theme": "son"
+        },
+        {
+          "fr": "son",
+          "en": "bruit",
+          "theme": "bruit"
+        },
+        {
+          "fr": "rime",
+          "en": "ressemblance",
+          "theme": "ressemblance"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Après 'k' ?",
+          "bonne": "l",
+          "fausses": [
+            "j",
+            "m"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Digramme 'qu' = son ___",
+          "bonne": "k",
+          "fausses": [
+            "q",
+            "w"
+          ],
+          "explication": "digramme"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Voyelle='a'",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "voyelle"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Consonne='b' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "consonne"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Rime 'maison' ?",
+          "bonne": "raison",
+          "fausses": [
+            "chat",
+            "soleil"
+          ],
+          "explication": "rime"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Son 'j' ?",
+          "bonne": "jeu",
+          "fausses": [
+            "je",
+            "ji"
+          ],
+          "explication": "phonétique"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Son 'ch'=consonne",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "consonne"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Après 't' ?",
+          "bonne": "u",
+          "fausses": [
+            "s",
+            "v"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Entre 'p' et 'r' ?",
+          "bonne": "q",
+          "fausses": [
+            "o",
+            "s"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Rime=son identique",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "rime"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Après 'w' ?",
+          "bonne": "x",
+          "fausses": [
+            "v",
+            "y"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Voyelle après 't' ?",
+          "bonne": "u",
+          "fausses": [
+            "s",
+            "v"
+          ],
+          "explication": "voyelle"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Consonne après 's' ?",
+          "bonne": "t",
+          "fausses": [
+            "u",
+            "v"
+          ],
+          "explication": "consonne"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "'y'=voyelle",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "y"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "sujet",
+          "en": "qui agit",
+          "theme": "qui"
+        },
+        {
+          "fr": "verbe",
+          "en": "action",
+          "theme": "action"
+        },
+        {
+          "fr": "complément",
+          "en": "précise",
+          "theme": "précise"
+        },
+        {
+          "fr": "présent",
+          "en": "maintenant",
+          "theme": "maintenant"
+        },
+        {
+          "fr": "passé",
+          "en": "avant",
+          "theme": "avant"
+        },
+        {
+          "fr": "futur",
+          "en": "après",
+          "theme": "après"
+        },
+        {
+          "fr": "singulier",
+          "en": "un",
+          "theme": "un"
+        },
+        {
+          "fr": "pluriel",
+          "en": "plusieurs",
+          "theme": "plusieurs"
+        },
+        {
+          "fr": "genre",
+          "en": "masculin/féminin",
+          "theme": "masculin/féminin"
+        },
+        {
+          "fr": "accord",
+          "en": "concordance",
+          "theme": "concordance"
+        },
+        {
+          "fr": "majuscule",
+          "en": "grande",
+          "theme": "grande"
+        },
+        {
+          "fr": "minuscule",
+          "en": "petite",
+          "theme": "petite"
+        },
+        {
+          "fr": "point",
+          "en": "fin",
+          "theme": "fin"
+        },
+        {
+          "fr": "virgule",
+          "en": "pause",
+          "theme": "pause"
+        },
+        {
+          "fr": "phrase",
+          "en": "sens complet",
+          "theme": "sens"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Sujet 'chat dort' ?",
+          "bonne": "chat",
+          "fausses": [
+            "dort",
+            "le"
+          ],
+          "explication": "sujet"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Verbe 'je ___' ?",
+          "bonne": "vais",
+          "fausses": [
+            "viens",
+            "reste"
+          ],
+          "explication": "verbe"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Complément 'je vais ___' ?",
+          "bonne": "école",
+          "fausses": [
+            "marche",
+            "dors"
+          ],
+          "explication": "complément"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Présent=maintenant",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "présent"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Passé=?",
+          "bonne": "avant",
+          "fausses": [
+            "après",
+            "maintenant"
+          ],
+          "explication": "passé"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Futur=___",
+          "bonne": "après",
+          "fausses": [
+            "avant",
+            "maintenant"
+          ],
+          "explication": "futur"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Singulier='un' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "singulier"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Pluriel='plusieurs' ou ___",
+          "bonne": "beaucoup",
+          "fausses": [
+            "un",
+            "seul"
+          ],
+          "explication": "pluriel"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Genre=?",
+          "bonne": "masculin/féminin",
+          "fausses": [
+            "singulier/pluriel"
+          ],
+          "explication": "genre"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Accord=concordance",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "accord"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Majuscule début ?",
+          "bonne": "phrase",
+          "fausses": [
+            "mot",
+            "ligne"
+          ],
+          "explication": "majuscule"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Fin phrase = ___",
+          "bonne": "point",
+          "fausses": [
+            "virgule",
+            "trait"
+          ],
+          "explication": "point"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Virgule=?",
+          "bonne": "pause",
+          "fausses": [
+            "fin",
+            "début"
+          ],
+          "explication": "virgule"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Phrase=sens complet",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "phrase"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "adjectif",
+          "en": "qualité",
+          "theme": "qualité"
+        },
+        {
+          "fr": "adverbe",
+          "en": "manière",
+          "theme": "manière"
+        },
+        {
+          "fr": "préposition",
+          "en": "relation",
+          "theme": "relation"
+        },
+        {
+          "fr": "article",
+          "en": "le, la",
+          "theme": "le,"
+        },
+        {
+          "fr": "pronom",
+          "en": "remplace",
+          "theme": "remplace"
+        },
+        {
+          "fr": "dialogue",
+          "en": "conversation",
+          "theme": "conversation"
+        },
+        {
+          "fr": "narration",
+          "en": "raconte",
+          "theme": "raconte"
+        },
+        {
+          "fr": "description",
+          "en": "peint",
+          "theme": "peint"
+        },
+        {
+          "fr": "ponctuation",
+          "en": "clarté",
+          "theme": "clarté"
+        },
+        {
+          "fr": "titre",
+          "en": "nom",
+          "theme": "nom"
+        },
+        {
+          "fr": "auteur",
+          "en": "écrit",
+          "theme": "écrit"
+        },
+        {
+          "fr": "lecteur",
+          "en": "lit",
+          "theme": "lit"
+        },
+        {
+          "fr": "mot",
+          "en": "unité",
+          "theme": "unité"
+        },
+        {
+          "fr": "sens",
+          "en": "signification",
+          "theme": "signification"
+        },
+        {
+          "fr": "contexte",
+          "en": "environnement",
+          "theme": "environnement"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Adjectif 'grand' décrit ?",
+          "bonne": "qualité",
+          "fausses": [
+            "action",
+            "relation"
+          ],
+          "explication": "adjectif"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "___ modifie verbe",
+          "bonne": "adverbe",
+          "fausses": [
+            "adjectif",
+            "préposition"
+          ],
+          "explication": "adverbe"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Préposition 'dans' ?",
+          "bonne": "relation",
+          "fausses": [
+            "action",
+            "qualité"
+          ],
+          "explication": "préposition"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Article='le', 'la'",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "article"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Pronom ___ le nom",
+          "bonne": "remplace",
+          "fausses": [
+            "décrit",
+            "modifie"
+          ],
+          "explication": "pronom"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Dialogue=?",
+          "bonne": "conversation",
+          "fausses": [
+            "narration",
+            "description"
+          ],
+          "explication": "dialogue"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Narration=raconte",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "narration"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Description=?",
+          "bonne": "peint",
+          "fausses": [
+            "raconte",
+            "dialogue"
+          ],
+          "explication": "description"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Ponctuation=___ texte",
+          "bonne": "clarté",
+          "fausses": [
+            "beauté",
+            "longueur"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Titre=?",
+          "bonne": "nom texte",
+          "fausses": [
+            "premier mot",
+            "dernier mot"
+          ],
+          "explication": "titre"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Auteur=écrit",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "auteur"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Lecteur=?",
+          "bonne": "lit",
+          "fausses": [
+            "écrit",
+            "dessine"
+          ],
+          "explication": "lecteur"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Mot=___ langage",
+          "bonne": "unité",
+          "fausses": [
+            "phrase",
+            "lettre"
+          ],
+          "explication": "mot"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Sens=signification",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "sens"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,773 @@
+{
+  "niveau": "CM2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "nombre premier",
+          "en": "nombre premier (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "nombre composé",
+          "en": "nombre composé (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "multiple",
+          "en": "multiple (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "diviseur",
+          "en": "diviseur (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "puissance",
+          "en": "puissance (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "carré",
+          "en": "carré (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cube",
+          "en": "cube (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "racine carrée",
+          "en": "racine carrée (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "équation",
+          "en": "équation (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "variable",
+          "en": "variable (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "coefficient",
+          "en": "coefficient (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "terme",
+          "en": "terme (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "commutativité",
+          "en": "commutativité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "associativité",
+          "en": "associativité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "distributivité",
+          "en": "distributivité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CM2",
+          "bonne": "nombre premier",
+          "fausses": [
+            "nombre composé",
+            "multiple",
+            "diviseur"
+          ],
+          "explication": "Explication CM2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CM2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres premiers et puissances",
+          "bonne": "nombre composé",
+          "fausses": [
+            "multiple",
+            "diviseur",
+            "puissance"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "nombre premier",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "nombre premier",
+          "en": "nombre premier (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "nombre composé",
+          "en": "nombre composé (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "multiple",
+          "en": "multiple (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "diviseur",
+          "en": "diviseur (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "puissance",
+          "en": "puissance (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "carré",
+          "en": "carré (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cube",
+          "en": "cube (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "racine carrée",
+          "en": "racine carrée (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "équation",
+          "en": "équation (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "variable",
+          "en": "variable (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "coefficient",
+          "en": "coefficient (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "terme",
+          "en": "terme (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "commutativité",
+          "en": "commutativité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "associativité",
+          "en": "associativité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "distributivité",
+          "en": "distributivité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CM2",
+          "bonne": "nombre premier",
+          "fausses": [
+            "nombre composé",
+            "multiple",
+            "diviseur"
+          ],
+          "explication": "Explication CM2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CM2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres premiers et puissances",
+          "bonne": "nombre composé",
+          "fausses": [
+            "multiple",
+            "diviseur",
+            "puissance"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "nombre premier",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "nombre premier",
+          "en": "nombre premier (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "nombre composé",
+          "en": "nombre composé (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "multiple",
+          "en": "multiple (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "diviseur",
+          "en": "diviseur (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "puissance",
+          "en": "puissance (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "carré",
+          "en": "carré (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cube",
+          "en": "cube (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "racine carrée",
+          "en": "racine carrée (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "équation",
+          "en": "équation (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "variable",
+          "en": "variable (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "coefficient",
+          "en": "coefficient (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "terme",
+          "en": "terme (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "commutativité",
+          "en": "commutativité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "associativité",
+          "en": "associativité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "distributivité",
+          "en": "distributivité (nombres premiers et puissances)",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "nombres"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "nombres"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau CM2",
+          "bonne": "nombre premier",
+          "fausses": [
+            "nombre composé",
+            "multiple",
+            "diviseur"
+          ],
+          "explication": "Explication CM2"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme CM2",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: nombres premiers et puissances",
+          "bonne": "nombre composé",
+          "fausses": [
+            "multiple",
+            "diviseur",
+            "puissance"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "nombre premier",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

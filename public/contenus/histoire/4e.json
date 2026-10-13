@@ -1,0 +1,773 @@
+{
+  "niveau": "4e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "Montesquieu",
+          "en": "Montesquieu (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Voltaire",
+          "en": "Voltaire (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Rousseau",
+          "en": "Rousseau (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Diderot",
+          "en": "Diderot (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Newton",
+          "en": "Newton (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Déclaration Droits",
+          "en": "Déclaration Droits (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Guillotine",
+          "en": "Guillotine (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Terreur",
+          "en": "Terreur (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "Napoléon (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Empire",
+          "en": "Empire (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Révolution industrielle",
+          "en": "Révolution industrielle (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "vapeur",
+          "en": "vapeur (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "charbon",
+          "en": "charbon (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "usines",
+          "en": "usines (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "ouvriers",
+          "en": "ouvriers (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "Siècle"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau 4e",
+          "bonne": "Montesquieu",
+          "fausses": [
+            "Voltaire",
+            "Rousseau",
+            "Diderot"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: Siècle des Lumières et Révolution",
+          "bonne": "Voltaire",
+          "fausses": [
+            "Rousseau",
+            "Diderot",
+            "Newton"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Montesquieu",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Montesquieu",
+          "en": "Montesquieu (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Voltaire",
+          "en": "Voltaire (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Rousseau",
+          "en": "Rousseau (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Diderot",
+          "en": "Diderot (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Newton",
+          "en": "Newton (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Déclaration Droits",
+          "en": "Déclaration Droits (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Guillotine",
+          "en": "Guillotine (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Terreur",
+          "en": "Terreur (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "Napoléon (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Empire",
+          "en": "Empire (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Révolution industrielle",
+          "en": "Révolution industrielle (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "vapeur",
+          "en": "vapeur (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "charbon",
+          "en": "charbon (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "usines",
+          "en": "usines (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "ouvriers",
+          "en": "ouvriers (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "Siècle"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau 4e",
+          "bonne": "Montesquieu",
+          "fausses": [
+            "Voltaire",
+            "Rousseau",
+            "Diderot"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: Siècle des Lumières et Révolution",
+          "bonne": "Voltaire",
+          "fausses": [
+            "Rousseau",
+            "Diderot",
+            "Newton"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Montesquieu",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "Montesquieu",
+          "en": "Montesquieu (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Voltaire",
+          "en": "Voltaire (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Rousseau",
+          "en": "Rousseau (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Diderot",
+          "en": "Diderot (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Newton",
+          "en": "Newton (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Déclaration Droits",
+          "en": "Déclaration Droits (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Guillotine",
+          "en": "Guillotine (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Terreur",
+          "en": "Terreur (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Napoléon",
+          "en": "Napoléon (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Empire",
+          "en": "Empire (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "Révolution industrielle",
+          "en": "Révolution industrielle (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "vapeur",
+          "en": "vapeur (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "charbon",
+          "en": "charbon (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "usines",
+          "en": "usines (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "ouvriers",
+          "en": "ouvriers (Siècle des Lumières et Révolution)",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "Siècle"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "Siècle"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau 4e",
+          "bonne": "Montesquieu",
+          "fausses": [
+            "Voltaire",
+            "Rousseau",
+            "Diderot"
+          ],
+          "explication": "Explication 4e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme 4e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: Siècle des Lumières et Révolution",
+          "bonne": "Voltaire",
+          "fausses": [
+            "Rousseau",
+            "Diderot",
+            "Newton"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Montesquieu",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 4e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

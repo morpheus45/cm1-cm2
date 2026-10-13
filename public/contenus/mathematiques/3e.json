@@ -1,0 +1,773 @@
+{
+  "niveau": "3e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "équation 2° degré",
+          "en": "équation 2° degré (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "discriminant",
+          "en": "discriminant (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "racines réelles",
+          "en": "racines réelles (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "parabole",
+          "en": "parabole (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "fonction quadratique",
+          "en": "fonction quadratique (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume pyramide",
+          "en": "volume pyramide (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume cône",
+          "en": "volume cône (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume sphère",
+          "en": "volume sphère (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "géométrie 3D",
+          "en": "géométrie 3D (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "section plane",
+          "en": "section plane (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "projection orthogonale",
+          "en": "projection orthogonale (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "plans parallèles",
+          "en": "plans parallèles (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "orthogonalité",
+          "en": "orthogonalité (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "calcul volumes",
+          "en": "calcul volumes (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "formule",
+          "en": "formule (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "équations"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "équations"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "équations"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "équations"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "équations"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 3e",
+          "bonne": "équation 2° degré",
+          "fausses": [
+            "discriminant",
+            "racines réelles",
+            "parabole"
+          ],
+          "explication": "Explication 3e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 3e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: équations 2° et géométrie 3D",
+          "bonne": "discriminant",
+          "fausses": [
+            "racines réelles",
+            "parabole",
+            "fonction quadratique"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "équation 2° degré",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 3e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "équation 2° degré",
+          "en": "équation 2° degré (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "discriminant",
+          "en": "discriminant (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "racines réelles",
+          "en": "racines réelles (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "parabole",
+          "en": "parabole (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "fonction quadratique",
+          "en": "fonction quadratique (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume pyramide",
+          "en": "volume pyramide (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume cône",
+          "en": "volume cône (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume sphère",
+          "en": "volume sphère (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "géométrie 3D",
+          "en": "géométrie 3D (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "section plane",
+          "en": "section plane (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "projection orthogonale",
+          "en": "projection orthogonale (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "plans parallèles",
+          "en": "plans parallèles (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "orthogonalité",
+          "en": "orthogonalité (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "calcul volumes",
+          "en": "calcul volumes (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "formule",
+          "en": "formule (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "équations"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "équations"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "équations"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "équations"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "équations"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 3e",
+          "bonne": "équation 2° degré",
+          "fausses": [
+            "discriminant",
+            "racines réelles",
+            "parabole"
+          ],
+          "explication": "Explication 3e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 3e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: équations 2° et géométrie 3D",
+          "bonne": "discriminant",
+          "fausses": [
+            "racines réelles",
+            "parabole",
+            "fonction quadratique"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "équation 2° degré",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 3e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "équation 2° degré",
+          "en": "équation 2° degré (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "discriminant",
+          "en": "discriminant (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "racines réelles",
+          "en": "racines réelles (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "parabole",
+          "en": "parabole (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "fonction quadratique",
+          "en": "fonction quadratique (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume pyramide",
+          "en": "volume pyramide (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume cône",
+          "en": "volume cône (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "volume sphère",
+          "en": "volume sphère (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "géométrie 3D",
+          "en": "géométrie 3D (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "section plane",
+          "en": "section plane (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "projection orthogonale",
+          "en": "projection orthogonale (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "plans parallèles",
+          "en": "plans parallèles (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "orthogonalité",
+          "en": "orthogonalité (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "calcul volumes",
+          "en": "calcul volumes (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "formule",
+          "en": "formule (équations 2° et géométrie 3D)",
+          "theme": "équations"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "équations"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "équations"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "équations"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "équations"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "équations"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 3e",
+          "bonne": "équation 2° degré",
+          "fausses": [
+            "discriminant",
+            "racines réelles",
+            "parabole"
+          ],
+          "explication": "Explication 3e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 3e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: équations 2° et géométrie 3D",
+          "bonne": "discriminant",
+          "fausses": [
+            "racines réelles",
+            "parabole",
+            "fonction quadratique"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "équation 2° degré",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 3e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

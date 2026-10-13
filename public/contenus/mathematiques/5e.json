@@ -1,0 +1,773 @@
+{
+  "niveau": "5e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "puissance",
+          "en": "puissance (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "notation scientifique",
+          "en": "notation scientifique (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "racine carrée",
+          "en": "racine carrée (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "ordre de grandeur",
+          "en": "ordre de grandeur (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "factorisation",
+          "en": "factorisation (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "identité remarquable",
+          "en": "identité remarquable (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "équation 1er degré",
+          "en": "équation 1er degré (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "inéquation",
+          "en": "inéquation (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "expression littérale",
+          "en": "expression littérale (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "terme",
+          "en": "terme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "coefficient",
+          "en": "coefficient (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "monôme",
+          "en": "monôme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "polynôme",
+          "en": "polynôme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "variable",
+          "en": "variable (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "puissances"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 5e",
+          "bonne": "puissance",
+          "fausses": [
+            "notation scientifique",
+            "racine carrée",
+            "ordre de grandeur"
+          ],
+          "explication": "Explication 5e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 5e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: puissances et factorisation",
+          "bonne": "notation scientifique",
+          "fausses": [
+            "racine carrée",
+            "ordre de grandeur",
+            "factorisation"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "puissance",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 5e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "puissance",
+          "en": "puissance (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "notation scientifique",
+          "en": "notation scientifique (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "racine carrée",
+          "en": "racine carrée (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "ordre de grandeur",
+          "en": "ordre de grandeur (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "factorisation",
+          "en": "factorisation (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "identité remarquable",
+          "en": "identité remarquable (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "équation 1er degré",
+          "en": "équation 1er degré (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "inéquation",
+          "en": "inéquation (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "expression littérale",
+          "en": "expression littérale (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "terme",
+          "en": "terme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "coefficient",
+          "en": "coefficient (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "monôme",
+          "en": "monôme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "polynôme",
+          "en": "polynôme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "variable",
+          "en": "variable (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "puissances"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 5e",
+          "bonne": "puissance",
+          "fausses": [
+            "notation scientifique",
+            "racine carrée",
+            "ordre de grandeur"
+          ],
+          "explication": "Explication 5e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 5e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: puissances et factorisation",
+          "bonne": "notation scientifique",
+          "fausses": [
+            "racine carrée",
+            "ordre de grandeur",
+            "factorisation"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "puissance",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 5e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "puissance",
+          "en": "puissance (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "notation scientifique",
+          "en": "notation scientifique (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "racine carrée",
+          "en": "racine carrée (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "ordre de grandeur",
+          "en": "ordre de grandeur (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "factorisation",
+          "en": "factorisation (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "développement",
+          "en": "développement (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "identité remarquable",
+          "en": "identité remarquable (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "équation 1er degré",
+          "en": "équation 1er degré (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "inéquation",
+          "en": "inéquation (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "expression littérale",
+          "en": "expression littérale (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "terme",
+          "en": "terme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "coefficient",
+          "en": "coefficient (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "monôme",
+          "en": "monôme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "polynôme",
+          "en": "polynôme (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "variable",
+          "en": "variable (puissances et factorisation)",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "puissances"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "puissances"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Mathematiques niveau 5e",
+          "bonne": "puissance",
+          "fausses": [
+            "notation scientifique",
+            "racine carrée",
+            "ordre de grandeur"
+          ],
+          "explication": "Explication 5e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 5e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: puissances et factorisation",
+          "bonne": "notation scientifique",
+          "fausses": [
+            "racine carrée",
+            "ordre de grandeur",
+            "factorisation"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "puissance",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 5e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

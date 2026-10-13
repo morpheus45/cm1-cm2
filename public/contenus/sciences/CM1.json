@@ -1,0 +1,773 @@
+{
+  "niveau": "CM1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "électricité",
+          "en": "électricité (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaleur",
+          "en": "chaleur (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "son",
+          "en": "son (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "mouvement",
+          "en": "mouvement (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "force",
+          "en": "force (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "prédateur",
+          "en": "prédateur (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "proie",
+          "en": "proie (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaîne alimentaire",
+          "en": "chaîne alimentaire (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "habitat",
+          "en": "habitat (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "biodiversité",
+          "en": "biodiversité (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "croûte terrestre",
+          "en": "croûte terrestre (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "manteau",
+          "en": "manteau (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "noyau",
+          "en": "noyau (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "volcan",
+          "en": "volcan (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "énergie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Sciences niveau CM1",
+          "bonne": "électricité",
+          "fausses": [
+            "chaleur",
+            "lumière",
+            "son"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Sciences au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Sciences"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: énergie et écosystème",
+          "bonne": "chaleur",
+          "fausses": [
+            "lumière",
+            "son",
+            "mouvement"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "électricité",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "électricité",
+          "en": "électricité (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaleur",
+          "en": "chaleur (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "son",
+          "en": "son (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "mouvement",
+          "en": "mouvement (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "force",
+          "en": "force (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "prédateur",
+          "en": "prédateur (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "proie",
+          "en": "proie (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaîne alimentaire",
+          "en": "chaîne alimentaire (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "habitat",
+          "en": "habitat (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "biodiversité",
+          "en": "biodiversité (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "croûte terrestre",
+          "en": "croûte terrestre (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "manteau",
+          "en": "manteau (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "noyau",
+          "en": "noyau (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "volcan",
+          "en": "volcan (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "énergie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Sciences niveau CM1",
+          "bonne": "électricité",
+          "fausses": [
+            "chaleur",
+            "lumière",
+            "son"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Sciences au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Sciences"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: énergie et écosystème",
+          "bonne": "chaleur",
+          "fausses": [
+            "lumière",
+            "son",
+            "mouvement"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "électricité",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "électricité",
+          "en": "électricité (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaleur",
+          "en": "chaleur (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "son",
+          "en": "son (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "mouvement",
+          "en": "mouvement (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "force",
+          "en": "force (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "prédateur",
+          "en": "prédateur (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "proie",
+          "en": "proie (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "chaîne alimentaire",
+          "en": "chaîne alimentaire (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "habitat",
+          "en": "habitat (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "biodiversité",
+          "en": "biodiversité (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "croûte terrestre",
+          "en": "croûte terrestre (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "manteau",
+          "en": "manteau (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "noyau",
+          "en": "noyau (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "volcan",
+          "en": "volcan (énergie et écosystème)",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "énergie"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "énergie"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Sciences niveau CM1",
+          "bonne": "électricité",
+          "fausses": [
+            "chaleur",
+            "lumière",
+            "son"
+          ],
+          "explication": "Explication CM1"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Sciences au programme CM1",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Sciences"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: énergie et écosystème",
+          "bonne": "chaleur",
+          "fausses": [
+            "lumière",
+            "son",
+            "mouvement"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "électricité",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est CM1"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}

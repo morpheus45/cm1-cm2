@@ -1,0 +1,773 @@
+{
+  "niveau": "3e",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "Napoléon",
+          "en": "Napoléon (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "restauration",
+          "en": "restauration (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "nationalisme",
+          "en": "nationalisme (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "colonialisme",
+          "en": "colonialisme (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Afrique partitionnée",
+          "en": "Afrique partitionnée (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Asie exploitée",
+          "en": "Asie exploitée (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "indépendance",
+          "en": "indépendance (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Première Guerre Mondiale",
+          "en": "Première Guerre Mondiale (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "1914-1918",
+          "en": "1914-1918 (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "tranchées",
+          "en": "tranchées (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "armistice",
+          "en": "armistice (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Traité Versailles",
+          "en": "Traité Versailles (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "SDN",
+          "en": "SDN (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Entre-deux-guerres",
+          "en": "Entre-deux-guerres (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "19e-20e"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau 3e",
+          "bonne": "Napoléon",
+          "fausses": [
+            "restauration",
+            "nationalisme",
+            "colonialisme"
+          ],
+          "explication": "Explication 3e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme 3e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: 19e-20e siècles",
+          "bonne": "restauration",
+          "fausses": [
+            "nationalisme",
+            "colonialisme",
+            "Afrique partitionnée"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Napoléon",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 3e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "Napoléon",
+          "en": "Napoléon (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "restauration",
+          "en": "restauration (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "nationalisme",
+          "en": "nationalisme (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "colonialisme",
+          "en": "colonialisme (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Afrique partitionnée",
+          "en": "Afrique partitionnée (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Asie exploitée",
+          "en": "Asie exploitée (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "indépendance",
+          "en": "indépendance (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Première Guerre Mondiale",
+          "en": "Première Guerre Mondiale (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "1914-1918",
+          "en": "1914-1918 (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "tranchées",
+          "en": "tranchées (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "armistice",
+          "en": "armistice (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Traité Versailles",
+          "en": "Traité Versailles (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "SDN",
+          "en": "SDN (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Entre-deux-guerres",
+          "en": "Entre-deux-guerres (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "19e-20e"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau 3e",
+          "bonne": "Napoléon",
+          "fausses": [
+            "restauration",
+            "nationalisme",
+            "colonialisme"
+          ],
+          "explication": "Explication 3e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme 3e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: 19e-20e siècles",
+          "bonne": "restauration",
+          "fausses": [
+            "nationalisme",
+            "colonialisme",
+            "Afrique partitionnée"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Napoléon",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 3e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "Napoléon",
+          "en": "Napoléon (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "restauration",
+          "en": "restauration (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "nationalisme",
+          "en": "nationalisme (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "colonialisme",
+          "en": "colonialisme (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Afrique partitionnée",
+          "en": "Afrique partitionnée (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Asie exploitée",
+          "en": "Asie exploitée (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "indépendance",
+          "en": "indépendance (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Première Guerre Mondiale",
+          "en": "Première Guerre Mondiale (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "1914-1918",
+          "en": "1914-1918 (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "tranchées",
+          "en": "tranchées (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "armistice",
+          "en": "armistice (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Traité Versailles",
+          "en": "Traité Versailles (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "SDN",
+          "en": "SDN (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "Entre-deux-guerres",
+          "en": "Entre-deux-guerres (19e-20e siècles)",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "19e-20e"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "19e-20e"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choix",
+          "enonce": "Concept Histoire niveau 3e",
+          "bonne": "Napoléon",
+          "fausses": [
+            "restauration",
+            "nationalisme",
+            "colonialisme"
+          ],
+          "explication": "Explication 3e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Histoire au programme 3e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Histoire"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: 19e-20e siècles",
+          "bonne": "restauration",
+          "fausses": [
+            "nationalisme",
+            "colonialisme",
+            "Afrique partitionnée"
+          ],
+          "explication": "Remplissage"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Thème principal",
+          "bonne": "Napoléon",
+          "fausses": [
+            "non",
+            "peut-être",
+            "autre"
+          ],
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 3e"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 6"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 7"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 8"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 9"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 10"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
+          "fausses": [
+            "faux1",
+            "faux2",
+            "faux3"
+          ],
+          "explication": "Explication 14"
+        }
+      ]
+    }
+  }
+}
