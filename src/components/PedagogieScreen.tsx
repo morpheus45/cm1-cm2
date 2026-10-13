@@ -108,34 +108,43 @@ export function PedagogieScreen({ initialLevel }: PedagogieScreenProps) {
             </div>
           </div>
 
-          {/* Niveau et Trimestre - Sélecteurs */}
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">🎓 Niveau</label>
-              <select
-                value={level}
-                onChange={(e) => setLevel(e.target.value as Level)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-purple-600"
-              >
-                {LEVELS.map((l) => (
-                  <option key={l} value={l}>
-                    {l}
-                  </option>
-                ))}
-              </select>
+          {/* Niveaux - Grille visible */}
+          <div className="mb-8">
+            <label className="block text-sm font-semibold text-gray-700 mb-3">🎓 Niveau</label>
+            <div className="grid grid-cols-4 md:grid-cols-8 gap-2">
+              {LEVELS.map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setLevel(l)}
+                  className={`px-3 py-2 rounded-lg font-semibold transition text-sm ${
+                    level === l
+                      ? 'bg-indigo-600 text-white shadow-lg'
+                      : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-indigo-600'
+                  }`}
+                >
+                  {l}
+                </button>
+              ))}
             </div>
+          </div>
 
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">📅 Trimestre</label>
-              <select
-                value={trimester}
-                onChange={(e) => setTrimester(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-purple-600"
-              >
-                <option value="1">T1</option>
-                <option value="2">T2</option>
-                <option value="3">T3</option>
-              </select>
+          {/* Trimestre - Sélecteur */}
+          <div className="mb-6">
+            <label className="block text-sm font-semibold text-gray-700 mb-2">📅 Trimestre</label>
+            <div className="grid grid-cols-3 gap-3">
+              {['1', '2', '3'].map((t) => (
+                <button
+                  key={t}
+                  onClick={() => setTrimester(t)}
+                  className={`px-4 py-2 rounded-lg font-semibold transition ${
+                    trimester === t
+                      ? 'bg-blue-600 text-white shadow-lg'
+                      : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-blue-600'
+                  }`}
+                >
+                  Trimestre {t}
+                </button>
+              ))}
             </div>
           </div>
         </div>
