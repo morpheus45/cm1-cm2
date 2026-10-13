@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Einstein",
+          "en": "Einstein",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "espace-temps",
+          "en": "espace-temps",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "force",
-          "en": "force (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "E=mc²",
+          "en": "E=mc²",
+          "theme": "contenus"
         },
         {
           "fr": "lumière",
-          "en": "lumière (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "en": "lumière",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "noyau",
+          "en": "noyau",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "radioactivité",
+          "en": "radioactivité",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "fission",
+          "en": "fission",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "fusion",
+          "en": "fusion",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "demi-vie",
+          "en": "demi-vie",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "trou",
+          "en": "trou",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "big bang",
+          "en": "big bang",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "expansion",
+          "en": "expansion",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "rayonnement",
+          "en": "rayonnement",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "étoile",
+          "en": "étoile",
+          "theme": "contenus"
+        },
+        {
+          "fr": "planète",
+          "en": "planète",
+          "theme": "contenus"
         },
         {
           "fr": "génétique",
-          "en": "génétique (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "en": "génétique",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "clonage",
+          "en": "clonage",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "protéine",
+          "en": "protéine",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "ARN",
+          "en": "ARN",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "gènes",
+          "en": "gènes",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 3e ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 3e",
+          "bonne": "Einstein",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "espace-temps",
+            "E=mc²",
+            "lumière"
           ],
-          "explication": "atome = concept clé du 3e en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "espace-temps",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "E=mc²",
+            "lumière",
+            "noyau"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau 3e____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine essai argumenté"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "V/F",
+          "enonce": "Programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme 3e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme 3e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme 3e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 3e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 3e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 3e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 3e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 3e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 3e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Einstein",
+          "en": "Einstein",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "espace-temps",
+          "en": "espace-temps",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "force",
-          "en": "force (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "E=mc²",
+          "en": "E=mc²",
+          "theme": "contenus"
         },
         {
           "fr": "lumière",
-          "en": "lumière (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "en": "lumière",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "noyau",
+          "en": "noyau",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "radioactivité",
+          "en": "radioactivité",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "fission",
+          "en": "fission",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "fusion",
+          "en": "fusion",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "demi-vie",
+          "en": "demi-vie",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "trou",
+          "en": "trou",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "big bang",
+          "en": "big bang",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "expansion",
+          "en": "expansion",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "rayonnement",
+          "en": "rayonnement",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "étoile",
+          "en": "étoile",
+          "theme": "contenus"
+        },
+        {
+          "fr": "planète",
+          "en": "planète",
+          "theme": "contenus"
         },
         {
           "fr": "génétique",
-          "en": "génétique (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "en": "génétique",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "clonage",
+          "en": "clonage",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "protéine",
+          "en": "protéine",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "ARN",
+          "en": "ARN",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "gènes",
+          "en": "gènes",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 3e ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 3e",
+          "bonne": "Einstein",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "espace-temps",
+            "E=mc²",
+            "lumière"
           ],
-          "explication": "atome = concept clé du 3e en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "espace-temps",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "E=mc²",
+            "lumière",
+            "noyau"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau 3e____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine essai argumenté"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "V/F",
+          "enonce": "Programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme 3e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme 3e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme 3e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 3e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 3e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 3e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 3e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 3e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 3e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Einstein",
+          "en": "Einstein",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "espace-temps",
+          "en": "espace-temps",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "force",
-          "en": "force (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "E=mc²",
+          "en": "E=mc²",
+          "theme": "contenus"
         },
         {
           "fr": "lumière",
-          "en": "lumière (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "en": "lumière",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "noyau",
+          "en": "noyau",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "radioactivité",
+          "en": "radioactivité",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "fission",
+          "en": "fission",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "fusion",
+          "en": "fusion",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "demi-vie",
+          "en": "demi-vie",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "trou",
+          "en": "trou",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "big bang",
+          "en": "big bang",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "expansion",
+          "en": "expansion",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "rayonnement",
+          "en": "rayonnement",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "étoile",
+          "en": "étoile",
+          "theme": "contenus"
+        },
+        {
+          "fr": "planète",
+          "en": "planète",
+          "theme": "contenus"
         },
         {
           "fr": "génétique",
-          "en": "génétique (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "en": "génétique",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "clonage",
+          "en": "clonage",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "protéine",
+          "en": "protéine",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "ARN",
+          "en": "ARN",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "gènes",
+          "en": "gènes",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 3e ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 3e",
+          "bonne": "Einstein",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "espace-temps",
+            "E=mc²",
+            "lumière"
           ],
-          "explication": "atome = concept clé du 3e en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "espace-temps",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "E=mc²",
+            "lumière",
+            "noyau"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau 3e____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine essai argumenté"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "V/F",
+          "enonce": "Programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme 3e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme 3e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme 3e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 3e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 3e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 3e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 3e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 3e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 3e"
+          "explication": "E14"
         }
       ]
     }

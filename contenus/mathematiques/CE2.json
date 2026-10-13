@@ -4,768 +4,700 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "nombre",
-          "en": "nombre (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "11",
+          "en": "onze",
+          "theme": "onze"
         },
         {
-          "fr": "addition",
-          "en": "addition (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "12",
+          "en": "douze",
+          "theme": "douze"
         },
         {
-          "fr": "soustraction",
-          "en": "soustraction (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "13",
+          "en": "treize",
+          "theme": "treize"
         },
         {
-          "fr": "multiplication",
-          "en": "multiplication (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "14",
+          "en": "quatorze",
+          "theme": "quatorze"
         },
         {
-          "fr": "division",
-          "en": "division (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "15",
+          "en": "quinze",
+          "theme": "quinze"
         },
         {
-          "fr": "fraction",
-          "en": "fraction (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "16",
+          "en": "seize",
+          "theme": "seize"
         },
         {
-          "fr": "décimal",
-          "en": "décimal (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "17",
+          "en": "dix-sept",
+          "theme": "dix-sept"
         },
         {
-          "fr": "angle",
-          "en": "angle (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "18",
+          "en": "dix-huit",
+          "theme": "dix-huit"
         },
         {
-          "fr": "carré",
-          "en": "carré (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "19",
+          "en": "dix-neuf",
+          "theme": "dix-neuf"
         },
         {
-          "fr": "triangle",
-          "en": "triangle (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "20",
+          "en": "vingt",
+          "theme": "vingt"
         },
         {
-          "fr": "cercle",
-          "en": "cercle (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "pairs",
+          "en": "divisible 2",
+          "theme": "divisible"
         },
         {
-          "fr": "périmètre",
-          "en": "périmètre (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "impairs",
+          "en": "non divisible",
+          "theme": "non"
         },
         {
-          "fr": "aire",
-          "en": "aire (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "dizaine",
+          "en": "10",
+          "theme": "10"
         },
         {
-          "fr": "équation",
-          "en": "équation (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "unité",
+          "en": "1",
+          "theme": "1"
         },
         {
-          "fr": "variable",
-          "en": "variable (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "ensemble",
+          "en": "groupe",
+          "theme": "groupe"
         },
         {
-          "fr": "graphique",
-          "en": "graphique (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "collection",
+          "en": "group",
+          "theme": "group"
         },
         {
-          "fr": "pourcentage",
-          "en": "pourcentage (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "nombre croissant",
+          "en": "augmente",
+          "theme": "augmente"
         },
         {
-          "fr": "moyenne",
-          "en": "moyenne (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "nombre décroissant",
+          "en": "diminue",
+          "theme": "diminue"
         },
         {
-          "fr": "médiane",
-          "en": "médiane (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "double",
+          "en": "×2",
+          "theme": "×2"
         },
         {
-          "fr": "formule",
-          "en": "formule (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "moitié",
+          "en": "÷2",
+          "theme": "÷2"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Mathematiques, quel terme appartient au niveau CE2 ?",
-          "bonne": "nombre",
+          "consigne": "Choix",
+          "enonce": "Après 10 ?",
+          "bonne": "11",
           "fausses": [
-            "addition",
-            "soustraction",
-            "multiplication"
+            "9",
+            "12"
           ],
-          "explication": "nombre = concept clé du CE2 en Mathematiques"
+          "explication": "onze"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "Remplir",
+          "enonce": "12 + ___ = 20",
+          "bonne": "8",
+          "fausses": [
+            "7",
+            "9"
+          ],
+          "explication": "addition"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Pair exemple ?",
+          "bonne": "12",
+          "fausses": [
+            "13",
+            "15"
+          ],
+          "explication": "pair"
+        },
+        {
+          "consigne": "Calcul",
+          "enonce": "14 - 5 = ?",
+          "bonne": "9",
+          "fausses": [
+            "8",
+            "10"
+          ],
+          "explication": "soustraction"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Double 5 ?",
+          "bonne": "10",
+          "fausses": [
+            "15",
+            "3"
+          ],
+          "explication": "double"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Moitié 20 = ___",
+          "bonne": "10",
+          "fausses": [
+            "8",
+            "12"
+          ],
+          "explication": "moitié"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Croissant ?",
+          "bonne": "petit→grand",
+          "fausses": [
+            "grand→petit"
+          ],
+          "explication": "croissant"
+        },
+        {
+          "consigne": "Calcul",
+          "enonce": "4 × 3 = ?",
+          "bonne": "12",
+          "fausses": [
+            "11",
+            "13"
+          ],
+          "explication": "multiplication"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "18 impair",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "impair"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Dizaine 13 ?",
+          "bonne": "1",
+          "fausses": [
+            "3",
+            "13"
+          ],
+          "explication": "dizaine"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "15 = dizaine + ___",
+          "bonne": "5",
+          "fausses": [
+            "4",
+            "6"
+          ],
+          "explication": "unité"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Après 19 ?",
+          "bonne": "20",
+          "fausses": [
+            "18",
+            "21"
+          ],
+          "explication": "vingt"
+        },
+        {
+          "consigne": "Calcul",
+          "enonce": "20 ÷ 2 = ?",
+          "bonne": "10",
+          "fausses": [
+            "8",
+            "12"
+          ],
+          "explication": "division"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Ensemble=groupe",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
-        },
-        {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "division",
-          "fausses": [
-            "fraction",
-            "décimal",
-            "angle"
-          ],
-          "explication": "division = élément du programme"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "carré",
-          "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
-          ],
-          "explication": "carré = domaine famille et animaux"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, colors et nombres = contenu officiel"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "fraction",
-          "fausses": [
-            "décimal",
-            "angle",
-            "carré"
-          ],
-          "explication": "fraction = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "décimal",
-          "fausses": [
-            "angle",
-            "carré",
-            "triangle"
-          ],
-          "explication": "décimal = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "angle",
-          "fausses": [
-            "carré",
-            "triangle",
-            "cercle"
-          ],
-          "explication": "angle = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "carré",
-          "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
-          ],
-          "explication": "carré = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "triangle",
-          "fausses": [
-            "cercle",
-            "périmètre",
-            "aire"
-          ],
-          "explication": "triangle = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "cercle",
-          "fausses": [
-            "périmètre",
-            "aire",
-            "équation"
-          ],
-          "explication": "cercle = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "périmètre",
-          "fausses": [
-            "aire",
-            "équation",
-            "variable"
-          ],
-          "explication": "périmètre = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "aire",
-          "fausses": [
-            "équation",
-            "variable",
-            "graphique"
-          ],
-          "explication": "aire = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "équation",
-          "fausses": [
-            "variable",
-            "graphique",
-            "pourcentage"
-          ],
-          "explication": "équation = élément programme CE2"
+          "explication": "ensemble"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "nombre",
-          "en": "nombre (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "30",
+          "en": "trente",
+          "theme": "trente"
         },
         {
-          "fr": "addition",
-          "en": "addition (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "40",
+          "en": "quarante",
+          "theme": "quarante"
         },
         {
-          "fr": "soustraction",
-          "en": "soustraction (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "50",
+          "en": "cinquante",
+          "theme": "cinquante"
         },
         {
-          "fr": "multiplication",
-          "en": "multiplication (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "60",
+          "en": "soixante",
+          "theme": "soixante"
         },
         {
-          "fr": "division",
-          "en": "division (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "70",
+          "en": "soixante-dix",
+          "theme": "soixante-dix"
+        },
+        {
+          "fr": "80",
+          "en": "quatre-vingts",
+          "theme": "quatre-vingts"
+        },
+        {
+          "fr": "90",
+          "en": "quatre-vingt-dix",
+          "theme": "quatre-vingt-dix"
+        },
+        {
+          "fr": "100",
+          "en": "cent",
+          "theme": "cent"
+        },
+        {
+          "fr": "addition simple",
+          "en": "1+1",
+          "theme": "1+1"
+        },
+        {
+          "fr": "soustraction simple",
+          "en": "10-5",
+          "theme": "10-5"
+        },
+        {
+          "fr": "multiplication simple",
+          "en": "3×2",
+          "theme": "3×2"
+        },
+        {
+          "fr": "division simple",
+          "en": "6÷2",
+          "theme": "6÷2"
+        },
+        {
+          "fr": "commutativité",
+          "en": "ordre",
+          "theme": "ordre"
+        },
+        {
+          "fr": "associativité",
+          "en": "groupement",
+          "theme": "groupement"
+        },
+        {
+          "fr": "distributivité",
+          "en": "répartition",
+          "theme": "répartition"
+        },
+        {
+          "fr": "addition réitérée",
+          "en": "multiplication",
+          "theme": "multiplication"
         },
         {
           "fr": "fraction",
-          "en": "fraction (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "partie",
+          "theme": "partie"
         },
         {
-          "fr": "décimal",
-          "en": "décimal (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "demi",
+          "en": "1/2",
+          "theme": "1/2"
         },
         {
-          "fr": "angle",
-          "en": "angle (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "tiers",
+          "en": "1/3",
+          "theme": "1/3"
         },
         {
-          "fr": "carré",
-          "en": "carré (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "triangle",
-          "en": "triangle (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "cercle",
-          "en": "cercle (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "périmètre",
-          "en": "périmètre (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "aire",
-          "en": "aire (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "équation",
-          "en": "équation (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "variable",
-          "en": "variable (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "graphique",
-          "en": "graphique (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "pourcentage",
-          "en": "pourcentage (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "moyenne",
-          "en": "moyenne (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "médiane",
-          "en": "médiane (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "formule",
-          "en": "formule (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "quart",
+          "en": "1/4",
+          "theme": "1/4"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Mathematiques, quel terme appartient au niveau CE2 ?",
-          "bonne": "nombre",
+          "consigne": "Choix",
+          "enonce": "30 = trente ?",
+          "bonne": "oui",
           "fausses": [
-            "addition",
-            "soustraction",
-            "multiplication"
+            "non"
           ],
-          "explication": "nombre = concept clé du CE2 en Mathematiques"
+          "explication": "trente"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "Remplir",
+          "enonce": "50 + ___ = 100",
+          "bonne": "50",
+          "fausses": [
+            "25",
+            "75"
+          ],
+          "explication": "addition"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "80 s'écrit ?",
+          "bonne": "quatre-vingts",
+          "fausses": [
+            "huitante",
+            "octante"
+          ],
+          "explication": "80"
+        },
+        {
+          "consigne": "Calcul",
+          "enonce": "60 - 20 = ?",
+          "bonne": "40",
+          "fausses": [
+            "30",
+            "50"
+          ],
+          "explication": "soustraction"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "3 × 4 = 4 × 3 ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "commutativité"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "100 ÷ 10 = ___",
+          "bonne": "10",
+          "fausses": [
+            "5",
+            "20"
+          ],
+          "explication": "division"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "(2+3)+4 = 2+(3+4)",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "associativité"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "division",
+          "consigne": "Choix",
+          "enonce": "1/2 = ?",
+          "bonne": "demi",
           "fausses": [
-            "fraction",
-            "décimal",
-            "angle"
+            "tiers",
+            "quart"
           ],
-          "explication": "division = élément du programme"
+          "explication": "demi"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "carré",
+          "consigne": "Calc",
+          "enonce": "90 + 10 = ?",
+          "bonne": "100",
           "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
+            "80",
+            "110"
           ],
-          "explication": "carré = domaine famille et animaux"
+          "explication": "addition"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
+          "consigne": "Choix",
+          "enonce": "1/3 = ?",
+          "bonne": "tiers",
+          "fausses": [
+            "demi",
+            "quart"
+          ],
+          "explication": "tiers"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Fraction ___ partie",
+          "bonne": "=",
+          "fausses": [
+            "<",
+            ">"
+          ],
+          "explication": "fraction"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Après 80 ?",
+          "bonne": "90",
+          "fausses": [
+            "70",
+            "100"
+          ],
+          "explication": "90"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Distributivité répart",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu officiel"
+          "explication": "distributivité"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "fraction",
+          "consigne": "Choix",
+          "enonce": "1/4 = ?",
+          "bonne": "quart",
           "fausses": [
-            "décimal",
-            "angle",
-            "carré"
+            "demi",
+            "tiers"
           ],
-          "explication": "fraction = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "décimal",
-          "fausses": [
-            "angle",
-            "carré",
-            "triangle"
-          ],
-          "explication": "décimal = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "angle",
-          "fausses": [
-            "carré",
-            "triangle",
-            "cercle"
-          ],
-          "explication": "angle = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "carré",
-          "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
-          ],
-          "explication": "carré = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "triangle",
-          "fausses": [
-            "cercle",
-            "périmètre",
-            "aire"
-          ],
-          "explication": "triangle = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "cercle",
-          "fausses": [
-            "périmètre",
-            "aire",
-            "équation"
-          ],
-          "explication": "cercle = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "périmètre",
-          "fausses": [
-            "aire",
-            "équation",
-            "variable"
-          ],
-          "explication": "périmètre = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "aire",
-          "fausses": [
-            "équation",
-            "variable",
-            "graphique"
-          ],
-          "explication": "aire = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "équation",
-          "fausses": [
-            "variable",
-            "graphique",
-            "pourcentage"
-          ],
-          "explication": "équation = élément programme CE2"
+          "explication": "quart"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "nombre",
-          "en": "nombre (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "nombre négatif",
+          "en": "moins",
+          "theme": "moins"
         },
         {
-          "fr": "addition",
-          "en": "addition (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "zéro",
+          "en": "0",
+          "theme": "0"
         },
         {
-          "fr": "soustraction",
-          "en": "soustraction (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "nombre positif",
+          "en": "plus",
+          "theme": "plus"
         },
         {
-          "fr": "multiplication",
-          "en": "multiplication (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "nombre entier",
+          "en": "sans virgule",
+          "theme": "sans"
         },
         {
-          "fr": "division",
-          "en": "division (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "nombre décimal",
+          "en": "virgule",
+          "theme": "virgule"
         },
         {
-          "fr": "fraction",
-          "en": "fraction (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "virgule",
+          "en": "séparateur",
+          "theme": "séparateur"
         },
         {
-          "fr": "décimal",
-          "en": "décimal (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "dixième",
+          "en": "0,1",
+          "theme": "0,1"
         },
         {
-          "fr": "angle",
-          "en": "angle (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "centième",
+          "en": "0,01",
+          "theme": "0,01"
         },
         {
-          "fr": "carré",
-          "en": "carré (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "arrondir",
+          "en": "approximer",
+          "theme": "approximer"
         },
         {
-          "fr": "triangle",
-          "en": "triangle (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "encadrer",
+          "en": "entre",
+          "theme": "entre"
         },
         {
-          "fr": "cercle",
-          "en": "cercle (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "comparer",
+          "en": "inégalité",
+          "theme": "inégalité"
         },
         {
-          "fr": "périmètre",
-          "en": "périmètre (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "ordonner",
+          "en": "classer",
+          "theme": "classer"
         },
         {
-          "fr": "aire",
-          "en": "aire (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "croître",
+          "en": "augmenter",
+          "theme": "augmenter"
         },
         {
-          "fr": "équation",
-          "en": "équation (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "décroître",
+          "en": "diminuer",
+          "theme": "diminuer"
         },
         {
-          "fr": "variable",
-          "en": "variable (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "graphique",
-          "en": "graphique (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "pourcentage",
-          "en": "pourcentage (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "moyenne",
-          "en": "moyenne (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "médiane",
-          "en": "médiane (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "formule",
-          "en": "formule (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "suite",
+          "en": "séquence",
+          "theme": "séquence"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Mathematiques, quel terme appartient au niveau CE2 ?",
-          "bonne": "nombre",
+          "consigne": "Choix",
+          "enonce": "Négatif = ?",
+          "bonne": "moins",
           "fausses": [
-            "addition",
-            "soustraction",
-            "multiplication"
+            "plus",
+            "zéro"
           ],
-          "explication": "nombre = concept clé du CE2 en Mathematiques"
+          "explication": "négatif"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "Remplir",
+          "enonce": "Zéro = ___",
+          "bonne": "0",
+          "fausses": [
+            "1",
+            "-1"
+          ],
+          "explication": "zéro"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Positif = ?",
+          "bonne": "plus",
+          "fausses": [
+            "moins",
+            "zéro"
+          ],
+          "explication": "positif"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Entier=sans virgule",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "entier"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "division",
+          "consigne": "Choix",
+          "enonce": "Décimal = ?",
+          "bonne": "virgule",
           "fausses": [
-            "fraction",
-            "décimal",
-            "angle"
+            "point",
+            "tiret"
           ],
-          "explication": "division = élément du programme"
+          "explication": "décimal"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "carré",
+          "consigne": "Remplir",
+          "enonce": "0,5 = ___",
+          "bonne": "cinq dixièmes",
           "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
+            "cinq centièmes"
           ],
-          "explication": "carré = domaine famille et animaux"
+          "explication": "décimal"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
+          "consigne": "Choix",
+          "enonce": "0,01 = ?",
+          "bonne": "centième",
+          "fausses": [
+            "dixième",
+            "unité"
+          ],
+          "explication": "centième"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Arrondir=approximer",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu officiel"
+          "explication": "arrondir"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "fraction",
+          "consigne": "Choix",
+          "enonce": "Encadrer 5 ?",
+          "bonne": "4 < 5 < 6",
           "fausses": [
-            "décimal",
-            "angle",
-            "carré"
+            "3 < 5 < 7"
           ],
-          "explication": "fraction = élément programme CE2"
+          "explication": "encadrer"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "décimal",
+          "consigne": "Remplir",
+          "enonce": "Comparer=___ inégalité",
+          "bonne": "utiliser",
           "fausses": [
-            "angle",
-            "carré",
-            "triangle"
+            "écrire",
+            "dire"
           ],
-          "explication": "décimal = élément programme CE2"
+          "explication": "comparer"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "angle",
+          "consigne": "Choix",
+          "enonce": "5 < 10 ?",
+          "bonne": "oui",
           "fausses": [
-            "carré",
-            "triangle",
-            "cercle"
+            "non"
           ],
-          "explication": "angle = élément programme CE2"
+          "explication": "inégalité"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "carré",
+          "consigne": "Vrai/Faux",
+          "enonce": "Croître=augmenter",
+          "bonne": "Vrai",
           "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
+            "Faux"
           ],
-          "explication": "carré = élément programme CE2"
+          "explication": "croître"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "triangle",
+          "consigne": "Choix",
+          "enonce": "Décroître = ?",
+          "bonne": "diminuer",
           "fausses": [
-            "cercle",
-            "périmètre",
-            "aire"
+            "rester",
+            "augmenter"
           ],
-          "explication": "triangle = élément programme CE2"
+          "explication": "décroître"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "cercle",
+          "consigne": "Remplir",
+          "enonce": "Suite = ___ séquence",
+          "bonne": "une",
           "fausses": [
-            "périmètre",
-            "aire",
-            "équation"
+            "deux",
+            "trois"
           ],
-          "explication": "cercle = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "périmètre",
-          "fausses": [
-            "aire",
-            "équation",
-            "variable"
-          ],
-          "explication": "périmètre = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "aire",
-          "fausses": [
-            "équation",
-            "variable",
-            "graphique"
-          ],
-          "explication": "aire = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "équation",
-          "fausses": [
-            "variable",
-            "graphique",
-            "pourcentage"
-          ],
-          "explication": "équation = élément programme CE2"
+          "explication": "suite"
         }
       ]
     }

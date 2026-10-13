@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Afrique",
+          "en": "Afrique",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Asie",
+          "en": "Asie",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Europe",
+          "en": "Europe",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Amérique",
+          "en": "Amérique",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Océanie",
+          "en": "Océanie",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "France",
+          "en": "France",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Japon",
+          "en": "Japon",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Brésil",
+          "en": "Brésil",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Égypte",
+          "en": "Égypte",
+          "theme": "contenus"
+        },
+        {
+          "fr": "Australie",
+          "en": "Australie",
+          "theme": "contenus"
+        },
+        {
+          "fr": "tropical",
+          "en": "tropical",
+          "theme": "contenus"
+        },
+        {
+          "fr": "désertique",
+          "en": "désertique",
+          "theme": "contenus"
+        },
+        {
+          "fr": "tempéré",
+          "en": "tempéré",
+          "theme": "contenus"
+        },
+        {
+          "fr": "polaire",
+          "en": "polaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources",
+          "theme": "contenus"
         },
         {
           "fr": "population",
-          "en": "population (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "en": "population",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "ville",
+          "en": "ville",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "campagne",
+          "en": "campagne",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "capitale",
-          "en": "capitale (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "latitude",
-          "en": "latitude (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "longitude",
-          "en": "longitude (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "carte",
-          "en": "carte (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "océan",
+          "en": "océan",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau CM1 ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau CM1",
+          "bonne": "Afrique",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "Asie",
+            "Europe",
+            "Amérique"
           ],
-          "explication": "continent = concept clé du CM1 en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM1 couvre noms et verbes",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu CM1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "Asie",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "Europe",
+            "Amérique",
+            "Océanie"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps simple : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau CM1____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine temps simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "noms et verbes est au programme CM1",
+          "consigne": "V/F",
+          "enonce": "Programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM1",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme CM1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM1",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme CM1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM1",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme CM1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM1",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme CM1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM1",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme CM1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM1",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme CM1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM1",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme CM1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM1",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme CM1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM1",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme CM1"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Afrique",
+          "en": "Afrique",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Asie",
+          "en": "Asie",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Europe",
+          "en": "Europe",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Amérique",
+          "en": "Amérique",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Océanie",
+          "en": "Océanie",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "France",
+          "en": "France",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Japon",
+          "en": "Japon",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Brésil",
+          "en": "Brésil",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Égypte",
+          "en": "Égypte",
+          "theme": "contenus"
+        },
+        {
+          "fr": "Australie",
+          "en": "Australie",
+          "theme": "contenus"
+        },
+        {
+          "fr": "tropical",
+          "en": "tropical",
+          "theme": "contenus"
+        },
+        {
+          "fr": "désertique",
+          "en": "désertique",
+          "theme": "contenus"
+        },
+        {
+          "fr": "tempéré",
+          "en": "tempéré",
+          "theme": "contenus"
+        },
+        {
+          "fr": "polaire",
+          "en": "polaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources",
+          "theme": "contenus"
         },
         {
           "fr": "population",
-          "en": "population (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "en": "population",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "ville",
+          "en": "ville",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "campagne",
+          "en": "campagne",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "capitale",
-          "en": "capitale (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "latitude",
-          "en": "latitude (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "longitude",
-          "en": "longitude (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "carte",
-          "en": "carte (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "océan",
+          "en": "océan",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau CM1 ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau CM1",
+          "bonne": "Afrique",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "Asie",
+            "Europe",
+            "Amérique"
           ],
-          "explication": "continent = concept clé du CM1 en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM1 couvre noms et verbes",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu CM1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "Asie",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "Europe",
+            "Amérique",
+            "Océanie"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps simple : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau CM1____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine temps simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "noms et verbes est au programme CM1",
+          "consigne": "V/F",
+          "enonce": "Programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM1",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme CM1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM1",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme CM1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM1",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme CM1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM1",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme CM1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM1",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme CM1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM1",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme CM1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM1",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme CM1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM1",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme CM1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM1",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme CM1"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Afrique",
+          "en": "Afrique",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Asie",
+          "en": "Asie",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Europe",
+          "en": "Europe",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Amérique",
+          "en": "Amérique",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Océanie",
+          "en": "Océanie",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "France",
+          "en": "France",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Japon",
+          "en": "Japon",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Brésil",
+          "en": "Brésil",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Égypte",
+          "en": "Égypte",
+          "theme": "contenus"
+        },
+        {
+          "fr": "Australie",
+          "en": "Australie",
+          "theme": "contenus"
+        },
+        {
+          "fr": "tropical",
+          "en": "tropical",
+          "theme": "contenus"
+        },
+        {
+          "fr": "désertique",
+          "en": "désertique",
+          "theme": "contenus"
+        },
+        {
+          "fr": "tempéré",
+          "en": "tempéré",
+          "theme": "contenus"
+        },
+        {
+          "fr": "polaire",
+          "en": "polaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "ressources",
+          "en": "ressources",
+          "theme": "contenus"
         },
         {
           "fr": "population",
-          "en": "population (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "en": "population",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "ville",
+          "en": "ville",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "campagne",
+          "en": "campagne",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "montagne",
+          "en": "montagne",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "capitale",
-          "en": "capitale (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "latitude",
-          "en": "latitude (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "longitude",
-          "en": "longitude (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "carte",
-          "en": "carte (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "océan",
+          "en": "océan",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau CM1 ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau CM1",
+          "bonne": "Afrique",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "Asie",
+            "Europe",
+            "Amérique"
           ],
-          "explication": "continent = concept clé du CM1 en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM1 couvre noms et verbes",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu CM1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "Asie",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "Europe",
+            "Amérique",
+            "Océanie"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps simple : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau CM1____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine temps simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "noms et verbes est au programme CM1",
+          "consigne": "V/F",
+          "enonce": "Programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM1",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme CM1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM1",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme CM1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM1",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme CM1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM1",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme CM1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM1",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme CM1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM1",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme CM1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM1",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme CM1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM1",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme CM1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM1",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme CM1"
+          "explication": "E14"
         }
       ]
     }

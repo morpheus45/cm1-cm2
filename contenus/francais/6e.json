@@ -4,768 +4,653 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "analyse grammaticale",
+          "en": "étude mots",
+          "theme": "étude"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "analyse logique",
+          "en": "propositions",
+          "theme": "propositions"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "phrase complexe",
+          "en": "plusieurs",
+          "theme": "plusieurs"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "relative",
+          "en": "qui, que, où",
+          "theme": "qui,"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "complétive",
+          "en": "que dit",
+          "theme": "que"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "adverbiale",
+          "en": "complément",
+          "theme": "complément"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "concessive",
+          "en": "bien que",
+          "theme": "bien"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "causale",
+          "en": "parce que",
+          "theme": "parce"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "hypothétique",
+          "en": "si",
+          "theme": "si"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "temporelle",
+          "en": "quand",
+          "theme": "quand"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "complémentaire",
+          "en": "appose",
+          "theme": "appose"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "parenthétique",
+          "en": "intercalée",
+          "theme": "intercalée"
         },
         {
-          "fr": "point",
-          "en": "point (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "juxtaposition",
+          "en": ";",
+          "theme": ";"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "coordination",
+          "en": "et, ou",
+          "theme": "et,"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "subordination",
+          "en": "que, si",
+          "theme": "que,"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau 6e ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Analyse gramm=?",
+          "bonne": "mots",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "phrases",
+            "sens"
           ],
-          "explication": "mot = concept clé du 6e en Francais"
+          "explication": "grammaire"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 6e couvre conjugaison présent",
+          "consigne": "Remplir",
+          "enonce": "Analyse log=___",
+          "bonne": "propositions",
+          "fausses": [
+            "mots",
+            "lettres"
+          ],
+          "explication": "logique"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Relative='qui' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "relative"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Complétive='que'",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu 6e"
+          "explication": "complétive"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Causale=?",
+          "bonne": "parce que",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "bien que",
+            "si"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "causale"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps passé simple : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Hypothétique=___",
+          "bonne": "si",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "et",
+            "ou"
           ],
-          "explication": "présent = domaine temps passé simple"
+          "explication": "hypothétique"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "conjugaison présent est au programme 6e",
+          "consigne": "Choix",
+          "enonce": "Temporelle=?",
+          "bonne": "quand",
+          "fausses": [
+            "où",
+            "pourquoi"
+          ],
+          "explication": "temporelle"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Concessive='bien que'",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu officiel"
+          "explication": "concessive"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 6e",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Juxtaposition=?",
+          "bonne": "point-virgule",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
-          ],
-          "explication": "nom = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 6e",
-          "bonne": "adjectif",
-          "fausses": [
-            "sujet",
-            "présent",
-            "passé"
-          ],
-          "explication": "adjectif = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 6e",
-          "bonne": "sujet",
-          "fausses": [
-            "présent",
-            "passé",
-            "futur"
-          ],
-          "explication": "sujet = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 6e",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 6e",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
+            "virgule",
             "point"
           ],
-          "explication": "passé = élément programme 6e"
+          "explication": "juxtaposition"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 6e",
-          "bonne": "futur",
+          "consigne": "Remplir",
+          "enonce": "Coordination='et' ou ___",
+          "bonne": "ou",
           "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
+            "que",
+            "si"
           ],
-          "explication": "futur = élément programme 6e"
+          "explication": "coordination"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 6e",
-          "bonne": "majuscule",
+          "consigne": "Vrai/Faux",
+          "enonce": "Subordination=dépendance",
+          "bonne": "Vrai",
           "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
+            "Faux"
           ],
-          "explication": "majuscule = élément programme 6e"
+          "explication": "subordination"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 6e",
-          "bonne": "point",
+          "consigne": "Choix",
+          "enonce": "Parenthétique=?",
+          "bonne": "intercalée",
           "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
+            "début",
+            "fin"
           ],
-          "explication": "point = élément programme 6e"
+          "explication": "parenthétique"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 6e",
-          "bonne": "virgule",
+          "consigne": "Remplir",
+          "enonce": "Adverbiale=___",
+          "bonne": "complément",
           "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
+            "sujet",
+            "verbe"
           ],
-          "explication": "virgule = élément programme 6e"
+          "explication": "adverbiale"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Complémentaire=?",
+          "bonne": "appose",
+          "fausses": [
+            "coordination",
+            "subordination"
+          ],
+          "explication": "complémentaire"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "genre littéraire",
+          "en": "catégorie",
+          "theme": "catégorie"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "roman",
+          "en": "long récit",
+          "theme": "long"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "nouvelle",
+          "en": "court récit",
+          "theme": "court"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "poésie",
+          "en": "vers rimes",
+          "theme": "vers"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "théâtre",
+          "en": "dialogué",
+          "theme": "dialogué"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "essai",
+          "en": "réflexion",
+          "theme": "réflexion"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "autobiographie",
+          "en": "vie propre",
+          "theme": "vie"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "biographie",
+          "en": "vie autre",
+          "theme": "vie"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "conte",
+          "en": "imaginaire",
+          "theme": "imaginaire"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "fable",
+          "en": "morale",
+          "theme": "morale"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "légende",
+          "en": "populaire",
+          "theme": "populaire"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "mythe",
+          "en": "divin",
+          "theme": "divin"
         },
         {
-          "fr": "point",
-          "en": "point (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "épopée",
+          "en": "héroïque",
+          "theme": "héroïque"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "roman historique",
+          "en": "époque",
+          "theme": "époque"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "fantastique",
+          "en": "surnaturel",
+          "theme": "surnaturel"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau 6e ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Genre=?",
+          "bonne": "catégorie",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "type",
+            "classe"
           ],
-          "explication": "mot = concept clé du 6e en Francais"
+          "explication": "genre"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 6e couvre conjugaison présent",
+          "consigne": "Remplir",
+          "enonce": "Roman=___ récit",
+          "bonne": "long",
+          "fausses": [
+            "court",
+            "moyen"
+          ],
+          "explication": "roman"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Nouvelle=?",
+          "bonne": "court récit",
+          "fausses": [
+            "long",
+            "moyen"
+          ],
+          "explication": "nouvelle"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Poésie=vers+rimes",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu 6e"
+          "explication": "poésie"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Théâtre=?",
+          "bonne": "dialogué",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "narratif",
+            "poétique"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "théâtre"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps passé simple : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Essai=___",
+          "bonne": "réflexion",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = domaine temps passé simple"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "conjugaison présent est au programme 6e",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, conjugaison présent = contenu officiel"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 6e",
-          "bonne": "nom",
-          "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
-          ],
-          "explication": "nom = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 6e",
-          "bonne": "adjectif",
-          "fausses": [
-            "sujet",
-            "présent",
-            "passé"
-          ],
-          "explication": "adjectif = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 6e",
-          "bonne": "sujet",
-          "fausses": [
-            "présent",
-            "passé",
-            "futur"
-          ],
-          "explication": "sujet = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 6e",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 6e",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 6e",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 6e",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 6e",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 6e",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
             "histoire",
-            "description"
+            "aventure"
           ],
-          "explication": "virgule = élément programme 6e"
+          "explication": "essai"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Autobio=?",
+          "bonne": "vie propre",
+          "fausses": [
+            "vie autre",
+            "imaginaire"
+          ],
+          "explication": "autobio"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Biographie=vie autre",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "biographie"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Conte=?",
+          "bonne": "imaginaire",
+          "fausses": [
+            "réel",
+            "historique"
+          ],
+          "explication": "conte"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Fable=___ morale",
+          "bonne": "leçon",
+          "fausses": [
+            "histoire",
+            "aventure"
+          ],
+          "explication": "fable"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Légende=?",
+          "bonne": "populaire",
+          "fausses": [
+            "divine",
+            "réelle"
+          ],
+          "explication": "légende"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Mythe=divin",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "mythe"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Épopée=?",
+          "bonne": "héroïque",
+          "fausses": [
+            "comique",
+            "tragique"
+          ],
+          "explication": "épopée"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Roman historique=___ époque",
+          "bonne": "dans",
+          "fausses": [
+            "avant",
+            "après"
+          ],
+          "explication": "historique"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "style direct",
+          "en": "guillemets",
+          "theme": "guillemets"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "style indirect",
+          "en": "que dit",
+          "theme": "que"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "style indirect libre",
+          "en": "mélange",
+          "theme": "mélange"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "focalisation zéro",
+          "en": "omniscient",
+          "theme": "omniscient"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "focalisation interne",
+          "en": "personnage",
+          "theme": "personnage"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "focalisation externe",
+          "en": "observateur",
+          "theme": "observateur"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "voix narrative",
+          "en": "narrative",
+          "theme": "narrative"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "temporalité",
+          "en": "temps",
+          "theme": "temps"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "analepse",
+          "en": "retour",
+          "theme": "retour"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "prolepse",
+          "en": "anticipation",
+          "theme": "anticipation"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "ellipse",
+          "en": "saut",
+          "theme": "saut"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "pause narrative",
+          "en": "description",
+          "theme": "description"
         },
         {
-          "fr": "point",
-          "en": "point (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "résumé",
+          "en": "condensé",
+          "theme": "condensé"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "dialogue",
-          "en": "dialogue (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "scène",
+          "en": "dialogué",
+          "theme": "dialogué"
         },
         {
           "fr": "description",
-          "en": "description (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "en": "statique",
+          "theme": "statique"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau 6e ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Style direct=?",
+          "bonne": "guillemets",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "que",
+            "indirect"
           ],
-          "explication": "mot = concept clé du 6e en Francais"
+          "explication": "style"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 6e couvre conjugaison présent",
+          "consigne": "Remplir",
+          "enonce": "Style indirect=___ dit",
+          "bonne": "que",
+          "fausses": [
+            "et",
+            "ou"
+          ],
+          "explication": "indirect"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Indirect libre=?",
+          "bonne": "mélange",
+          "fausses": [
+            "pur direct",
+            "pur indirect"
+          ],
+          "explication": "libre"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Focu zéro=omniscient",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu 6e"
+          "explication": "focalisation"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Focu interne=?",
+          "bonne": "personnage",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "observateur",
+            "omniscient"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "focalisation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps passé simple : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Focu externe=___",
+          "bonne": "observateur",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "personnage",
+            "omniscient"
           ],
-          "explication": "présent = domaine temps passé simple"
+          "explication": "focalisation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "conjugaison présent est au programme 6e",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, conjugaison présent = contenu officiel"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 6e",
-          "bonne": "nom",
-          "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
-          ],
-          "explication": "nom = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 6e",
-          "bonne": "adjectif",
-          "fausses": [
-            "sujet",
-            "présent",
-            "passé"
-          ],
-          "explication": "adjectif = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 6e",
-          "bonne": "sujet",
-          "fausses": [
-            "présent",
-            "passé",
-            "futur"
-          ],
-          "explication": "sujet = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 6e",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 6e",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 6e",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 6e",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 6e",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme 6e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 6e",
-          "bonne": "virgule",
+          "consigne": "Choix",
+          "enonce": "Voix=?",
+          "bonne": "narrative",
           "fausses": [
             "dialogue",
-            "histoire",
             "description"
           ],
-          "explication": "virgule = élément programme 6e"
+          "explication": "voix"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Temporalité=temps",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "temps"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Analepse=?",
+          "bonne": "retour",
+          "fausses": [
+            "avant",
+            "après"
+          ],
+          "explication": "analepse"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Prolepse=___",
+          "bonne": "anticipation",
+          "fausses": [
+            "retour",
+            "arrêt"
+          ],
+          "explication": "prolepse"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Ellipse=?",
+          "bonne": "saut",
+          "fausses": [
+            "pause",
+            "résumé"
+          ],
+          "explication": "ellipse"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Pause=description",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "pause"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Résumé=?",
+          "bonne": "condensé",
+          "fausses": [
+            "dialogué",
+            "statique"
+          ],
+          "explication": "résumé"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Scène=___ dialogué",
+          "bonne": "très",
+          "fausses": [
+            "peu",
+            "non"
+          ],
+          "explication": "scène"
         }
       ]
     }

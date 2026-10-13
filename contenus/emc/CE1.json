@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "respecter",
+          "en": "respecter",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "partager",
+          "en": "partager",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "écouter",
+          "en": "écouter",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "aider",
+          "en": "aider",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "honnêteté",
+          "en": "honnêteté",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "famille",
+          "en": "famille",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "école",
+          "en": "école",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "amis",
+          "en": "amis",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "communauté",
+          "en": "communauté",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "citoyen",
+          "en": "citoyen",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "nourriture",
+          "en": "nourriture",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "éducation",
+          "en": "éducation",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "santé",
+          "en": "santé",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "jeu",
+          "en": "jeu",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "obéissance",
+          "en": "obéissance",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "soin",
+          "en": "soin",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "ordre",
+          "en": "ordre",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "propreté",
+          "en": "propreté",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "travail",
+          "en": "travail",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau CE1 ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau CE1",
+          "bonne": "respecter",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "partager",
+            "écouter",
+            "aider"
           ],
-          "explication": "droit = concept clé du CE1 en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "partager",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "écouter",
+            "aider",
+            "honnêteté"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme CE1"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "respecter",
+          "en": "respecter",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "partager",
+          "en": "partager",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "écouter",
+          "en": "écouter",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "aider",
+          "en": "aider",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "honnêteté",
+          "en": "honnêteté",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "famille",
+          "en": "famille",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "école",
+          "en": "école",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "amis",
+          "en": "amis",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "communauté",
+          "en": "communauté",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "citoyen",
+          "en": "citoyen",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "nourriture",
+          "en": "nourriture",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "éducation",
+          "en": "éducation",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "santé",
+          "en": "santé",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "jeu",
+          "en": "jeu",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "obéissance",
+          "en": "obéissance",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "soin",
+          "en": "soin",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "ordre",
+          "en": "ordre",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "propreté",
+          "en": "propreté",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "travail",
+          "en": "travail",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau CE1 ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau CE1",
+          "bonne": "respecter",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "partager",
+            "écouter",
+            "aider"
           ],
-          "explication": "droit = concept clé du CE1 en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "partager",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "écouter",
+            "aider",
+            "honnêteté"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme CE1"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "respecter",
+          "en": "respecter",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "partager",
+          "en": "partager",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "écouter",
+          "en": "écouter",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "aider",
+          "en": "aider",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "honnêteté",
+          "en": "honnêteté",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "famille",
+          "en": "famille",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "école",
+          "en": "école",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "amis",
+          "en": "amis",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "communauté",
+          "en": "communauté",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "citoyen",
+          "en": "citoyen",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "nourriture",
+          "en": "nourriture",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "éducation",
+          "en": "éducation",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "santé",
+          "en": "santé",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "jeu",
+          "en": "jeu",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "obéissance",
+          "en": "obéissance",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "soin",
+          "en": "soin",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "ordre",
+          "en": "ordre",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "propreté",
+          "en": "propreté",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "travail",
+          "en": "travail",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau CE1 ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau CE1",
+          "bonne": "respecter",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "partager",
+            "écouter",
+            "aider"
           ],
-          "explication": "droit = concept clé du CE1 en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "partager",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "écouter",
+            "aider",
+            "honnêteté"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme CE1"
+          "explication": "E14"
         }
       ]
     }

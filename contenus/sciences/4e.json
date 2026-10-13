@@ -4,768 +4,756 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "force",
-          "en": "force (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "génétique",
-          "en": "génétique (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 4e ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "atome = concept clé du 4e en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "terme2",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "terme3"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 4e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "force",
-          "en": "force (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "génétique",
-          "en": "génétique (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 4e ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "atome = concept clé du 4e en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "terme2",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "terme3"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 4e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "force",
-          "en": "force (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "génétique",
-          "en": "génétique (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 4e ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "atome = concept clé du 4e en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "terme2",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "terme3"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 4e"
+          "explication": "E14"
         }
       ]
     }

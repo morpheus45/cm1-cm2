@@ -4,768 +4,756 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau CE2 ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau CE2",
+          "bonne": "terme1",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "droit = concept clé du CE2 en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "terme2",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "terme3"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau CE2____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine famille et animaux"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
+          "consigne": "V/F",
+          "enonce": "Programme CE2",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme CE2"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme CE2"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme CE2"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme CE2"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme CE2"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme CE2"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme CE2"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme CE2"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme CE2"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau CE2 ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau CE2",
+          "bonne": "terme1",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "droit = concept clé du CE2 en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "terme2",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "terme3"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau CE2____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine famille et animaux"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
+          "consigne": "V/F",
+          "enonce": "Programme CE2",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme CE2"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme CE2"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme CE2"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme CE2"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme CE2"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme CE2"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme CE2"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme CE2"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme CE2"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau CE2 ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau CE2",
+          "bonne": "terme1",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "droit = concept clé du CE2 en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "terme2",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "terme3"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau CE2____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine famille et animaux"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
+          "consigne": "V/F",
+          "enonce": "Programme CE2",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme CE2"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme CE2"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme CE2"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme CE2"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme CE2"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme CE2"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme CE2"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme CE2"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme CE2"
+          "explication": "E14"
         }
       ]
     }

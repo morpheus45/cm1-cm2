@@ -4,768 +4,674 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "k",
+          "en": "lettre",
+          "theme": "lettre"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "l",
+          "en": "lettre",
+          "theme": "lettre"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "fr": "m",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "n",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "o",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "p",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "qu",
+          "en": "digramme",
+          "theme": "digramme"
+        },
+        {
+          "fr": "r",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "s",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "t",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "u",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "v",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "w",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "x",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "y",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "z",
+          "en": "lettre",
+          "theme": "lettre"
+        },
+        {
+          "fr": "voyelle",
+          "en": "son ouvert",
+          "theme": "son"
+        },
+        {
+          "fr": "consonne",
+          "en": "son fermé",
+          "theme": "son"
         },
         {
           "fr": "son",
-          "en": "son (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "verbe",
-          "en": "verbe (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "nom",
-          "en": "nom (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "sujet",
-          "en": "sujet (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "présent",
-          "en": "présent (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "passé",
-          "en": "passé (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "futur",
-          "en": "futur (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "point",
-          "en": "point (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "virgule",
-          "en": "virgule (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "en": "bruit",
+          "theme": "bruit"
         },
         {
           "fr": "rime",
-          "en": "rime (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau CE2, tri 1)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau CE2, tri 1)",
-          "theme": "colors / famille"
+          "en": "ressemblance",
+          "theme": "ressemblance"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CE2 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Après 'k' ?",
+          "bonne": "l",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "j",
+            "m"
           ],
-          "explication": "mot = concept clé du CE2 en Francais"
+          "explication": "alphabet"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "Remplir",
+          "enonce": "Digramme 'qu' = son ___",
+          "bonne": "k",
+          "fausses": [
+            "q",
+            "w"
+          ],
+          "explication": "digramme"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Voyelle='a'",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "voyelle"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Consonne='b' ?",
+          "bonne": "oui",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "non"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "consonne"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Rime 'maison' ?",
+          "bonne": "raison",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "chat",
+            "soleil"
           ],
-          "explication": "présent = domaine famille et animaux"
+          "explication": "rime"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
+          "consigne": "Choix",
+          "enonce": "Son 'j' ?",
+          "bonne": "jeu",
+          "fausses": [
+            "je",
+            "ji"
+          ],
+          "explication": "phonétique"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Son 'ch'=consonne",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu officiel"
+          "explication": "consonne"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Après 't' ?",
+          "bonne": "u",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "s",
+            "v"
           ],
-          "explication": "nom = élément programme CE2"
+          "explication": "alphabet"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "adjectif",
+          "consigne": "Remplir",
+          "enonce": "Entre 'p' et 'r' ?",
+          "bonne": "q",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "o",
+            "s"
           ],
-          "explication": "adjectif = élément programme CE2"
+          "explication": "alphabet"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "sujet",
+          "consigne": "Vrai/Faux",
+          "enonce": "Rime=son identique",
+          "bonne": "Vrai",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "Faux"
           ],
-          "explication": "sujet = élément programme CE2"
+          "explication": "rime"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Après 'w' ?",
+          "bonne": "x",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "v",
+            "y"
           ],
-          "explication": "présent = élément programme CE2"
+          "explication": "alphabet"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "passé",
+          "consigne": "Remplir",
+          "enonce": "Voyelle après 't' ?",
+          "bonne": "u",
           "fausses": [
-            "futur",
-            "majuscule",
-            "point"
+            "s",
+            "v"
           ],
-          "explication": "passé = élément programme CE2"
+          "explication": "voyelle"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "futur",
+          "consigne": "Choix",
+          "enonce": "Consonne après 's' ?",
+          "bonne": "t",
           "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
+            "u",
+            "v"
           ],
-          "explication": "futur = élément programme CE2"
+          "explication": "consonne"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "majuscule",
+          "consigne": "Vrai/Faux",
+          "enonce": "'y'=voyelle",
+          "bonne": "Faux",
           "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
+            "Vrai"
           ],
-          "explication": "majuscule = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme CE2"
+          "explication": "y"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "phrase",
-          "en": "phrase (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "lettre",
-          "en": "lettre (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "son",
-          "en": "son (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "sujet",
+          "en": "qui agit",
+          "theme": "qui"
         },
         {
           "fr": "verbe",
-          "en": "verbe (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "action",
+          "theme": "action"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "sujet",
-          "en": "sujet (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "complément",
+          "en": "précise",
+          "theme": "précise"
         },
         {
           "fr": "présent",
-          "en": "présent (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "maintenant",
+          "theme": "maintenant"
         },
         {
           "fr": "passé",
-          "en": "passé (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "avant",
+          "theme": "avant"
         },
         {
           "fr": "futur",
-          "en": "futur (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "après",
+          "theme": "après"
+        },
+        {
+          "fr": "singulier",
+          "en": "un",
+          "theme": "un"
+        },
+        {
+          "fr": "pluriel",
+          "en": "plusieurs",
+          "theme": "plusieurs"
+        },
+        {
+          "fr": "genre",
+          "en": "masculin/féminin",
+          "theme": "masculin/féminin"
+        },
+        {
+          "fr": "accord",
+          "en": "concordance",
+          "theme": "concordance"
         },
         {
           "fr": "majuscule",
-          "en": "majuscule (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "grande",
+          "theme": "grande"
+        },
+        {
+          "fr": "minuscule",
+          "en": "petite",
+          "theme": "petite"
         },
         {
           "fr": "point",
-          "en": "point (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "fin",
+          "theme": "fin"
         },
         {
           "fr": "virgule",
-          "en": "virgule (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "en": "pause",
+          "theme": "pause"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau CE2, tri 2)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau CE2, tri 2)",
-          "theme": "colors / famille"
+          "fr": "phrase",
+          "en": "sens complet",
+          "theme": "sens"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CE2 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Sujet 'chat dort' ?",
+          "bonne": "chat",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "dort",
+            "le"
           ],
-          "explication": "mot = concept clé du CE2 en Francais"
+          "explication": "sujet"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "Remplir",
+          "enonce": "Verbe 'je ___' ?",
+          "bonne": "vais",
+          "fausses": [
+            "viens",
+            "reste"
+          ],
+          "explication": "verbe"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Complément 'je vais ___' ?",
+          "bonne": "école",
+          "fausses": [
+            "marche",
+            "dors"
+          ],
+          "explication": "complément"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Présent=maintenant",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "présent"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Passé=?",
+          "bonne": "avant",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "après",
+            "maintenant"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "passé"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Futur=___",
+          "bonne": "après",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "avant",
+            "maintenant"
           ],
-          "explication": "présent = domaine famille et animaux"
+          "explication": "futur"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
+          "consigne": "Choix",
+          "enonce": "Singulier='un' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "singulier"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Pluriel='plusieurs' ou ___",
+          "bonne": "beaucoup",
+          "fausses": [
+            "un",
+            "seul"
+          ],
+          "explication": "pluriel"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Genre=?",
+          "bonne": "masculin/féminin",
+          "fausses": [
+            "singulier/pluriel"
+          ],
+          "explication": "genre"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Accord=concordance",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu officiel"
+          "explication": "accord"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Majuscule début ?",
+          "bonne": "phrase",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "mot",
+            "ligne"
           ],
-          "explication": "nom = élément programme CE2"
+          "explication": "majuscule"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "adjectif",
-          "fausses": [
-            "sujet",
-            "présent",
-            "passé"
-          ],
-          "explication": "adjectif = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "sujet",
-          "fausses": [
-            "présent",
-            "passé",
-            "futur"
-          ],
-          "explication": "sujet = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
+          "consigne": "Remplir",
+          "enonce": "Fin phrase = ___",
           "bonne": "point",
           "fausses": [
             "virgule",
-            "dialogue",
-            "histoire"
+            "trait"
           ],
-          "explication": "point = élément programme CE2"
+          "explication": "point"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "virgule",
+          "consigne": "Choix",
+          "enonce": "Virgule=?",
+          "bonne": "pause",
           "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
+            "fin",
+            "début"
           ],
-          "explication": "virgule = élément programme CE2"
+          "explication": "virgule"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Phrase=sens complet",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "phrase"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "phrase",
-          "en": "phrase (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "lettre",
-          "en": "lettre (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "son",
-          "en": "son (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "verbe",
-          "en": "verbe (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "nom",
-          "en": "nom (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
           "fr": "adjectif",
-          "en": "adjectif (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "en": "qualité",
+          "theme": "qualité"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "adverbe",
+          "en": "manière",
+          "theme": "manière"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "préposition",
+          "en": "relation",
+          "theme": "relation"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "article",
+          "en": "le, la",
+          "theme": "le,"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "point",
-          "en": "point (niveau CE2, tri 3)",
-          "theme": "colors / famille"
-        },
-        {
-          "fr": "virgule",
-          "en": "virgule (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "pronom",
+          "en": "remplace",
+          "theme": "remplace"
         },
         {
           "fr": "dialogue",
-          "en": "dialogue (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "en": "conversation",
+          "theme": "conversation"
         },
         {
-          "fr": "histoire",
-          "en": "histoire (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "narration",
+          "en": "raconte",
+          "theme": "raconte"
         },
         {
           "fr": "description",
-          "en": "description (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "en": "peint",
+          "theme": "peint"
         },
         {
-          "fr": "rime",
-          "en": "rime (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "ponctuation",
+          "en": "clarté",
+          "theme": "clarté"
         },
         {
-          "fr": "strophe",
-          "en": "strophe (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "fr": "titre",
+          "en": "nom",
+          "theme": "nom"
         },
         {
           "fr": "auteur",
-          "en": "auteur (niveau CE2, tri 3)",
-          "theme": "colors / famille"
+          "en": "écrit",
+          "theme": "écrit"
+        },
+        {
+          "fr": "lecteur",
+          "en": "lit",
+          "theme": "lit"
+        },
+        {
+          "fr": "mot",
+          "en": "unité",
+          "theme": "unité"
+        },
+        {
+          "fr": "sens",
+          "en": "signification",
+          "theme": "signification"
+        },
+        {
+          "fr": "contexte",
+          "en": "environnement",
+          "theme": "environnement"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CE2 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Adjectif 'grand' décrit ?",
+          "bonne": "qualité",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "action",
+            "relation"
           ],
-          "explication": "mot = concept clé du CE2 en Francais"
+          "explication": "adjectif"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE2 couvre colors et nombres",
+          "consigne": "Remplir",
+          "enonce": "___ modifie verbe",
+          "bonne": "adverbe",
+          "fausses": [
+            "adjectif",
+            "préposition"
+          ],
+          "explication": "adverbe"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Préposition 'dans' ?",
+          "bonne": "relation",
+          "fausses": [
+            "action",
+            "qualité"
+          ],
+          "explication": "préposition"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Article='le', 'la'",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, colors et nombres = contenu CE2"
+          "explication": "article"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Remplir",
+          "enonce": "Pronom ___ le nom",
+          "bonne": "remplace",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "décrit",
+            "modifie"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "pronom"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus famille et animaux : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Dialogue=?",
+          "bonne": "conversation",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = domaine famille et animaux"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "colors et nombres est au programme CE2",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, colors et nombres = contenu officiel"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE2",
-          "bonne": "nom",
-          "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
-          ],
-          "explication": "nom = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE2",
-          "bonne": "adjectif",
-          "fausses": [
-            "sujet",
-            "présent",
-            "passé"
-          ],
-          "explication": "adjectif = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE2",
-          "bonne": "sujet",
-          "fausses": [
-            "présent",
-            "passé",
-            "futur"
-          ],
-          "explication": "sujet = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE2",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE2",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE2",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE2",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE2",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme CE2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE2",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
+            "narration",
             "description"
           ],
-          "explication": "virgule = élément programme CE2"
+          "explication": "dialogue"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Narration=raconte",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "narration"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Description=?",
+          "bonne": "peint",
+          "fausses": [
+            "raconte",
+            "dialogue"
+          ],
+          "explication": "description"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Ponctuation=___ texte",
+          "bonne": "clarté",
+          "fausses": [
+            "beauté",
+            "longueur"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Titre=?",
+          "bonne": "nom texte",
+          "fausses": [
+            "premier mot",
+            "dernier mot"
+          ],
+          "explication": "titre"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Auteur=écrit",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "auteur"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Lecteur=?",
+          "bonne": "lit",
+          "fausses": [
+            "écrit",
+            "dessine"
+          ],
+          "explication": "lecteur"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Mot=___ langage",
+          "bonne": "unité",
+          "fausses": [
+            "phrase",
+            "lettre"
+          ],
+          "explication": "mot"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Sens=signification",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "sens"
         }
       ]
     }

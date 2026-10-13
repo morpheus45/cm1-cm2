@@ -4,768 +4,756 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau 4e ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "droit = concept clé du 4e en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "terme2",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "terme3"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme 4e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau 4e ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "droit = concept clé du 4e en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "terme2",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "terme3"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme 4e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "droit",
-          "en": "droit (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "devoir",
-          "en": "devoir (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "liberté",
-          "en": "liberté (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "égalité",
-          "en": "égalité (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "justice",
-          "en": "justice (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "citoyenneté",
-          "en": "citoyenneté (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "démocratie",
-          "en": "démocratie (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "vote",
-          "en": "vote (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "loi",
-          "en": "loi (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "constitution",
-          "en": "constitution (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "parlement",
-          "en": "parlement (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "diversité",
-          "en": "diversité (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "développement",
-          "en": "développement (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "conflit",
-          "en": "conflit (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "organisation",
-          "en": "organisation (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En EMC, quel terme appartient au niveau 4e ?",
-          "bonne": "droit",
+          "consigne": "Choix",
+          "enonce": "Thème EMC niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "devoir",
-            "liberté",
-            "égalité"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "droit = concept clé du 4e en EMC"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "EMC au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "justice",
+          "consigne": "Rempl",
+          "enonce": "Un terme de EMC____",
+          "bonne": "terme2",
           "fausses": [
-            "citoyenneté",
-            "démocratie",
-            "vote"
+            "terme3"
           ],
-          "explication": "justice = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "non"
           ],
-          "explication": "loi = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "citoyenneté",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "démocratie",
-            "vote",
-            "loi"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "citoyenneté = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "démocratie",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "vote",
-            "loi",
-            "constitution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "démocratie = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "vote",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "loi",
-            "constitution",
-            "gouvernement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "vote = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "loi",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "constitution",
-            "gouvernement",
-            "parlement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "loi = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "constitution",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "gouvernement",
-            "parlement",
-            "diversité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "constitution = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "gouvernement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "parlement",
-            "diversité",
-            "tolérance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "gouvernement = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "parlement",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "diversité",
-            "tolérance",
-            "solidarité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "parlement = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "diversité",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "tolérance",
-            "solidarité",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "diversité = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "tolérance",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "solidarité",
-            "environnement",
-            "développement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "tolérance = élément programme 4e"
+          "explication": "E14"
         }
       ]
     }

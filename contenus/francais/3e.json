@@ -4,768 +4,654 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "littérature ancienne",
+          "en": "antique",
+          "theme": "antique"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Molière",
+          "en": "comédie",
+          "theme": "comédie"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "La Fontaine",
+          "en": "fables",
+          "theme": "fables"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Corneille",
+          "en": "tragédie",
+          "theme": "tragédie"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Racine",
+          "en": "tragédie",
+          "theme": "tragédie"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Marivaux",
+          "en": "comédie",
+          "theme": "comédie"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Renaissance",
+          "en": "14-16e",
+          "theme": "14-16e"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Humanisme",
+          "en": "valeur",
+          "theme": "valeur"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Réforme",
+          "en": "religieuse",
+          "theme": "religieuse"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Gutenberg",
+          "en": "imprimerie",
+          "theme": "imprimerie"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Machiavel",
+          "en": "politique",
+          "theme": "politique"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Martin Luther",
+          "en": "protestants",
+          "theme": "protestants"
         },
         {
-          "fr": "point",
-          "en": "point (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Calvin",
+          "en": "genève",
+          "theme": "genève"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Catholicisme",
+          "en": "rome",
+          "theme": "rome"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "Léonard Vinci",
+          "en": "génie",
+          "theme": "génie"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau 3e ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Molière=?",
+          "bonne": "comédie",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "tragédie",
+            "roman"
           ],
-          "explication": "mot = concept clé du 3e en Francais"
+          "explication": "Molière"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "Remplir",
+          "enonce": "Fontaine écrit ___",
+          "bonne": "fables",
+          "fausses": [
+            "drames",
+            "essais"
+          ],
+          "explication": "Fontaine"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Corneille=?",
+          "bonne": "tragédie",
+          "fausses": [
+            "comédie",
+            "poésie"
+          ],
+          "explication": "Corneille"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Gutenberg=imprimerie",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "Gutenberg"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Renaissance=?",
+          "bonne": "14-16e",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "12-14e",
+            "16-18e"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "Renaissance"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Léonard=___",
+          "bonne": "génie",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "roi",
+            "pape"
           ],
-          "explication": "présent = domaine essai argumenté"
+          "explication": "Léonard"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "Choix",
+          "enonce": "Humanisme=?",
+          "bonne": "humain",
+          "fausses": [
+            "divin",
+            "argent"
+          ],
+          "explication": "Humanisme"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Machiavel=morale",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "Machiavel"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Luther=?",
+          "bonne": "protestants",
+          "fausses": [
+            "catholiques",
+            "juifs"
+          ],
+          "explication": "Luther"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Calvin=___",
+          "bonne": "genève",
+          "fausses": [
+            "paris",
+            "rome"
+          ],
+          "explication": "Calvin"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Réforme=religieuse",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Réforme"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Marivaux=?",
+          "bonne": "comédie",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "tragédie",
+            "roman"
           ],
-          "explication": "nom = élément programme 3e"
+          "explication": "Marivaux"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "adjectif",
+          "consigne": "Choix",
+          "enonce": "Racine=?",
+          "bonne": "tragédie",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "comédie",
+            "fable"
           ],
-          "explication": "adjectif = élément programme 3e"
+          "explication": "Racine"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "sujet",
+          "consigne": "Remplir",
+          "enonce": "Catholicisme=___",
+          "bonne": "rome",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "genève",
+            "wittenberg"
           ],
-          "explication": "sujet = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme 3e"
+          "explication": "Catholicisme"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Siècle Lumières",
+          "en": "18e",
+          "theme": "18e"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Montesquieu",
+          "en": "séparation",
+          "theme": "séparation"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Voltaire",
+          "en": "liberté",
+          "theme": "liberté"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Rousseau",
+          "en": "contrat",
+          "theme": "contrat"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Diderot",
+          "en": "Encyclopédie",
+          "theme": "Encyclopédie"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Newton",
+          "en": "sciences",
+          "theme": "sciences"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Révolution",
+          "en": "1789",
+          "theme": "1789"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "DDHC",
+          "en": "égalité",
+          "theme": "égalité"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Guillotine",
+          "en": "exécutions",
+          "theme": "exécutions"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Terreur",
+          "en": "1793-94",
+          "theme": "1793-94"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Napoléon",
+          "en": "coup",
+          "theme": "coup"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Révolution industrielle",
+          "en": "vapeur",
+          "theme": "vapeur"
         },
         {
-          "fr": "point",
-          "en": "point (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Charbon",
+          "en": "énergie",
+          "theme": "énergie"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "Usines",
+          "en": "manufactures",
+          "theme": "manufactures"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "États-Unis",
+          "en": "1776",
+          "theme": "1776"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau 3e ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Lumières=?",
+          "bonne": "18e philo",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "17e art",
+            "19e science"
           ],
-          "explication": "mot = concept clé du 3e en Francais"
+          "explication": "Lumières"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "Remplir",
+          "enonce": "Montesquieu=séparation ___",
+          "bonne": "pouvoirs",
+          "fausses": [
+            "nations",
+            "religions"
+          ],
+          "explication": "Montesquieu"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Voltaire=?",
+          "bonne": "liberté",
+          "fausses": [
+            "égalité",
+            "fraternité"
+          ],
+          "explication": "Voltaire"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Rousseau=Contrat",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "Rousseau"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Diderot=?",
+          "bonne": "Encyclopédie",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "dictionnaire",
+            "journal"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "Diderot"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = domaine essai argumenté"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "Vrai/Faux",
+          "enonce": "Newton=sciences",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Newton"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Révolution=?",
+          "bonne": "1789",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "1776",
+            "1798"
           ],
-          "explication": "nom = élément programme 3e"
+          "explication": "Révolution"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "adjectif",
+          "consigne": "Remplir",
+          "enonce": "DDHC=___",
+          "bonne": "égalité",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "ordre",
+            "hiérarchie"
           ],
-          "explication": "adjectif = élément programme 3e"
+          "explication": "DDHC"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "sujet",
+          "consigne": "Choix",
+          "enonce": "Guillotine=?",
+          "bonne": "exécutions",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "débat",
+            "vote"
           ],
-          "explication": "sujet = élément programme 3e"
+          "explication": "Guillotine"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "présent",
+          "consigne": "Vrai/Faux",
+          "enonce": "Terreur=1793-94",
+          "bonne": "Vrai",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "Faux"
           ],
-          "explication": "présent = élément programme 3e"
+          "explication": "Terreur"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "passé",
+          "consigne": "Choix",
+          "enonce": "18-Brumaire=?",
+          "bonne": "Napoléon",
           "fausses": [
-            "futur",
-            "majuscule",
-            "point"
+            "Robespierre",
+            "Danton"
           ],
-          "explication": "passé = élément programme 3e"
+          "explication": "18-Brumaire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "futur",
+          "consigne": "Choix",
+          "enonce": "Industrielle=?",
+          "bonne": "vapeur",
           "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
+            "électricité",
+            "pétrole"
           ],
-          "explication": "futur = élément programme 3e"
+          "explication": "Industrielle"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "majuscule",
+          "consigne": "Remplir",
+          "enonce": "Charbon=___ industrie",
+          "bonne": "énergie",
           "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
+            "fermes",
+            "cathédrales"
           ],
-          "explication": "majuscule = élément programme 3e"
+          "explication": "Charbon"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "point",
+          "consigne": "Choix",
+          "enonce": "USA=?",
+          "bonne": "1776",
           "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
+            "1789",
+            "1798"
           ],
-          "explication": "point = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme 3e"
+          "explication": "USA"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "19e siècle",
+          "en": "empire",
+          "theme": "empire"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Napoléon",
+          "en": "expansion",
+          "theme": "expansion"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Restauration",
+          "en": "monarchie",
+          "theme": "monarchie"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Congrès Vienne",
+          "en": "ordre",
+          "theme": "ordre"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Nationalisme",
+          "en": "nation",
+          "theme": "nation"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Libéralisme",
+          "en": "liberté",
+          "theme": "liberté"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Colonialisme",
+          "en": "empire",
+          "theme": "empire"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Afrique",
+          "en": "partition",
+          "theme": "partition"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Asie",
+          "en": "exploitation",
+          "theme": "exploitation"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Indépendance",
+          "en": "liberté",
+          "theme": "liberté"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Première Guerre",
+          "en": "1914-18",
+          "theme": "1914-18"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Tranchées",
+          "en": "front",
+          "theme": "front"
         },
         {
-          "fr": "point",
-          "en": "point (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Armistice",
+          "en": "fin",
+          "theme": "fin"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Versailles",
+          "en": "paix",
+          "theme": "paix"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "Entre-deux-guerres",
+          "en": "crise",
+          "theme": "crise"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau 3e ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "19e=?",
+          "bonne": "empire",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "renaissance",
+            "moyen-âge"
           ],
-          "explication": "mot = concept clé du 3e en Francais"
+          "explication": "19e"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "Vrai/Faux",
+          "enonce": "Napoléon=expansion",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "Napoléon"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Restauration=?",
+          "bonne": "monarchie",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "empire",
+            "démocratie"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "Restauration"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Vienne=___",
+          "bonne": "ordre",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "paix",
+            "guerre"
           ],
-          "explication": "présent = domaine essai argumenté"
+          "explication": "Vienne"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "Choix",
+          "enonce": "Nationalisme=?",
+          "bonne": "nation",
+          "fausses": [
+            "religion",
+            "classe"
+          ],
+          "explication": "Nationalisme"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Libéralisme=liberté",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Libéralisme"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Colonialisme=?",
+          "bonne": "empire",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "paix",
+            "égalité"
           ],
-          "explication": "nom = élément programme 3e"
+          "explication": "Colonialisme"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "adjectif",
+          "consigne": "Remplir",
+          "enonce": "Afrique=___",
+          "bonne": "partition",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "unification",
+            "indépendance"
           ],
-          "explication": "adjectif = élément programme 3e"
+          "explication": "Afrique"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "sujet",
+          "consigne": "Choix",
+          "enonce": "Asie=?",
+          "bonne": "exploitation",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "unification",
+            "paix"
           ],
-          "explication": "sujet = élément programme 3e"
+          "explication": "Asie"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "présent",
+          "consigne": "Vrai/Faux",
+          "enonce": "Indépendance=liberté",
+          "bonne": "Vrai",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "Faux"
           ],
-          "explication": "présent = élément programme 3e"
+          "explication": "Indépendance"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "passé",
+          "consigne": "Choix",
+          "enonce": "1ère Guerre=?",
+          "bonne": "1914-18",
           "fausses": [
-            "futur",
-            "majuscule",
-            "point"
+            "1900-10",
+            "1920-30"
           ],
-          "explication": "passé = élément programme 3e"
+          "explication": "Guerre"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "futur",
+          "consigne": "Remplir",
+          "enonce": "Tranchées=___",
+          "bonne": "front",
           "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
+            "arrière",
+            "ville"
           ],
-          "explication": "futur = élément programme 3e"
+          "explication": "Tranchées"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "majuscule",
+          "consigne": "Choix",
+          "enonce": "Armistice=?",
+          "bonne": "fin",
           "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
+            "début",
+            "milieu"
           ],
-          "explication": "majuscule = élément programme 3e"
+          "explication": "Armistice"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "point",
+          "consigne": "Remplir",
+          "enonce": "Versailles=___",
+          "bonne": "paix",
           "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
+            "guerre",
+            "alliance"
           ],
-          "explication": "point = élément programme 3e"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme 3e"
+          "explication": "Versailles"
         }
       ]
     }

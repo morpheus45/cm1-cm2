@@ -4,768 +4,649 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "pronom personnel",
+          "en": "je, tu",
+          "theme": "je,"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "pronom possessif",
+          "en": "mon, ton",
+          "theme": "mon,"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "pronom démonstratif",
+          "en": "ce, cela",
+          "theme": "ce,"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "adjectif possessif",
+          "en": "mon, ton",
+          "theme": "mon,"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "adjectif démonstratif",
+          "en": "ce, cet",
+          "theme": "ce,"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "négation",
+          "en": "ne...pas",
+          "theme": "ne...pas"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "interrogation",
+          "en": "est-ce que",
+          "theme": "est-ce"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "exclamation",
+          "en": "wow",
+          "theme": "wow"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "imparfait",
+          "en": "habitude",
+          "theme": "habitude"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "passé récent",
+          "en": "vient de",
+          "theme": "vient"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "futur proche",
+          "en": "va+inf",
+          "theme": "va+inf"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "présent continu",
+          "en": "être+ant",
+          "theme": "être+ant"
         },
         {
-          "fr": "point",
-          "en": "point (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "accord sujet-verbe",
+          "en": "concordance",
+          "theme": "concordance"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "accord adjectif-nom",
+          "en": "nombre genre",
+          "theme": "nombre"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "auteur",
-          "en": "auteur (niveau CM2, tri 1)",
-          "theme": "pluriels / accord"
+          "fr": "inversion",
+          "en": "verbe avant sujet",
+          "theme": "verbe"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CM2 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Pronom perso='je' ?",
+          "bonne": "1ère singulier",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "2e",
+            "3e"
           ],
-          "explication": "mot = concept clé du CM2 en Francais"
+          "explication": "pronom"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM2 couvre pluriels",
+          "consigne": "Remplir",
+          "enonce": "Adjectif poss='mon' ou ___",
+          "bonne": "ma",
+          "fausses": [
+            "son",
+            "sa"
+          ],
+          "explication": "adjectif"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Démonstratif='ce' ?",
+          "bonne": "oui",
+          "fausses": [
+            "non"
+          ],
+          "explication": "démonstratif"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Négation='ne...pas'",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, pluriels = contenu CM2"
+          "explication": "négation"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Remplir",
+          "enonce": "Interrogation='___ tu ?'",
+          "bonne": "est-ce que",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "pourquoi",
+            "comment"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "interrogation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus accord : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Exclamation=?",
+          "bonne": "wow",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "oui",
+            "non"
           ],
-          "explication": "présent = domaine accord"
+          "explication": "exclamation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "pluriels est au programme CM2",
+          "consigne": "Vrai/Faux",
+          "enonce": "Imparfait=habitude",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, pluriels = contenu officiel"
+          "explication": "imparfait"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM2",
-          "bonne": "nom",
+          "consigne": "Remplir",
+          "enonce": "Passé récent='___ mangé'",
+          "bonne": "vient de",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "va",
+            "est"
           ],
-          "explication": "nom = élément programme CM2"
+          "explication": "passé"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM2",
-          "bonne": "adjectif",
+          "consigne": "Choix",
+          "enonce": "Futur proche='va ___' ?",
+          "bonne": "infinitif",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "participe",
+            "participe passé"
           ],
-          "explication": "adjectif = élément programme CM2"
+          "explication": "futur"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM2",
-          "bonne": "sujet",
+          "consigne": "Vrai/Faux",
+          "enonce": "Présent continu='être+ant'",
+          "bonne": "Vrai",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "Faux"
           ],
-          "explication": "sujet = élément programme CM2"
+          "explication": "présent"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM2",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Accord sujet-verbe ?",
+          "bonne": "concordance",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "relation",
+            "séparation"
           ],
-          "explication": "présent = élément programme CM2"
+          "explication": "accord"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM2",
-          "bonne": "passé",
+          "consigne": "Remplir",
+          "enonce": "Accord adj-nom=nombre ___",
+          "bonne": "genre",
           "fausses": [
-            "futur",
-            "majuscule",
-            "point"
+            "temps",
+            "personne"
           ],
-          "explication": "passé = élément programme CM2"
+          "explication": "accord"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM2",
-          "bonne": "futur",
+          "consigne": "Choix",
+          "enonce": "Inversion='mange-tu' ?",
+          "bonne": "oui",
           "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
+            "non"
           ],
-          "explication": "futur = élément programme CM2"
+          "explication": "inversion"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM2",
-          "bonne": "majuscule",
+          "consigne": "Vrai/Faux",
+          "enonce": "Pronom=remplace",
+          "bonne": "Vrai",
           "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
+            "Faux"
           ],
-          "explication": "majuscule = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM2",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM2",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme CM2"
+          "explication": "pronom"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "phrase simple",
+          "en": "un verbe",
+          "theme": "un"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "phrase complexe",
+          "en": "plusieurs",
+          "theme": "plusieurs"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "proposition indépendante",
+          "en": "autonome",
+          "theme": "autonome"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "proposition subordonnée",
+          "en": "dépend",
+          "theme": "dépend"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "conjonction de coordination",
+          "en": "et, ou",
+          "theme": "et,"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "sujet",
-          "en": "sujet (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "présent",
-          "en": "présent (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "passé",
-          "en": "passé (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "futur",
-          "en": "futur (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "point",
-          "en": "point (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "conjonction de subordination",
+          "en": "que, si",
+          "theme": "que,"
         },
         {
           "fr": "virgule",
-          "en": "virgule (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "en": "pause",
+          "theme": "pause"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "point-virgule",
+          "en": "pause forte",
+          "theme": "pause"
         },
         {
-          "fr": "histoire",
-          "en": "histoire (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "deux-points",
+          "en": "introduction",
+          "theme": "introduction"
         },
         {
-          "fr": "description",
-          "en": "description (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "guillemets",
+          "en": "dialogue",
+          "theme": "dialogue"
         },
         {
-          "fr": "rime",
-          "en": "rime (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "tiret",
+          "en": "séparation",
+          "theme": "séparation"
         },
         {
-          "fr": "strophe",
-          "en": "strophe (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "parenthèses",
+          "en": "précision",
+          "theme": "précision"
         },
         {
-          "fr": "auteur",
-          "en": "auteur (niveau CM2, tri 2)",
-          "theme": "pluriels / accord"
+          "fr": "abréviation",
+          "en": "raccourci",
+          "theme": "raccourci"
+        },
+        {
+          "fr": "élision",
+          "en": "apostrophe",
+          "theme": "apostrophe"
+        },
+        {
+          "fr": "liaison",
+          "en": "prononciation",
+          "theme": "prononciation"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CM2 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Phrase simple=?",
+          "bonne": "un verbe",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "deux verbes",
+            "trois verbes"
           ],
-          "explication": "mot = concept clé du CM2 en Francais"
+          "explication": "phrase"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM2 couvre pluriels",
+          "consigne": "Remplir",
+          "enonce": "Phrase complexe=___ verbes",
+          "bonne": "plusieurs",
+          "fausses": [
+            "un",
+            "zéro"
+          ],
+          "explication": "phrase"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Prop indép=?",
+          "bonne": "autonome",
+          "fausses": [
+            "dépend",
+            "introduit"
+          ],
+          "explication": "prop"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Prop subord=dépend",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, pluriels = contenu CM2"
+          "explication": "subord"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Remplir",
+          "enonce": "Conj coord='et' ou ___",
+          "bonne": "ou",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "que",
+            "si"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "conj"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus accord : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Conj subord='que' ?",
+          "bonne": "oui",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "non"
           ],
-          "explication": "présent = domaine accord"
+          "explication": "subord"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "pluriels est au programme CM2",
+          "consigne": "Choix",
+          "enonce": "Virgule=?",
+          "bonne": "pause",
+          "fausses": [
+            "fin",
+            "début"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Point-virgule=pause ___",
+          "bonne": "forte",
+          "fausses": [
+            "légère",
+            "moyenne"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Deux-points=?",
+          "bonne": "introduction",
+          "fausses": [
+            "fin",
+            "pause"
+          ],
+          "explication": "ponctuation"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Guillemets=dialogue",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, pluriels = contenu officiel"
+          "explication": "guillemets"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM2",
-          "bonne": "nom",
+          "consigne": "Remplir",
+          "enonce": "Tiret=___",
+          "bonne": "séparation",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "pause",
+            "introduction"
           ],
-          "explication": "nom = élément programme CM2"
+          "explication": "tiret"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM2",
-          "bonne": "adjectif",
+          "consigne": "Choix",
+          "enonce": "Parenthèses=?",
+          "bonne": "précision",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "séparation",
+            "fin"
           ],
-          "explication": "adjectif = élément programme CM2"
+          "explication": "parenthèses"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM2",
-          "bonne": "sujet",
+          "consigne": "Vrai/Faux",
+          "enonce": "Abréviation=raccourci",
+          "bonne": "Vrai",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "Faux"
           ],
-          "explication": "sujet = élément programme CM2"
+          "explication": "abréviation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM2",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Élision=?",
+          "bonne": "apostrophe",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM2",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM2",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
+            "tiret",
             "virgule"
           ],
-          "explication": "futur = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM2",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM2",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM2",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme CM2"
+          "explication": "élision"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "phrase",
-          "en": "phrase (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "lettre",
-          "en": "lettre (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "son",
-          "en": "son (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "verbe",
-          "en": "verbe (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "nom",
-          "en": "nom (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "sujet",
-          "en": "sujet (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "présent",
-          "en": "présent (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "passé",
-          "en": "passé (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "futur",
-          "en": "futur (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "point",
-          "en": "point (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "virgule",
-          "en": "virgule (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "histoire",
-          "en": "histoire (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "description",
-          "en": "description (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "rime",
-          "en": "rime (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
-          "fr": "strophe",
-          "en": "strophe (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
-        },
-        {
           "fr": "auteur",
-          "en": "auteur (niveau CM2, tri 3)",
-          "theme": "pluriels / accord"
+          "en": "écrit",
+          "theme": "écrit"
+        },
+        {
+          "fr": "narrateur",
+          "en": "raconte",
+          "theme": "raconte"
+        },
+        {
+          "fr": "personnage",
+          "en": "acteur",
+          "theme": "acteur"
+        },
+        {
+          "fr": "action",
+          "en": "événement",
+          "theme": "événement"
+        },
+        {
+          "fr": "lieu",
+          "en": "où",
+          "theme": "où"
+        },
+        {
+          "fr": "temps",
+          "en": "quand",
+          "theme": "quand"
+        },
+        {
+          "fr": "intrigue",
+          "en": "plot",
+          "theme": "plot"
+        },
+        {
+          "fr": "dénouement",
+          "en": "fin",
+          "theme": "fin"
+        },
+        {
+          "fr": "climax",
+          "en": "tension",
+          "theme": "tension"
+        },
+        {
+          "fr": "exposition",
+          "en": "début",
+          "theme": "début"
+        },
+        {
+          "fr": "chronologie",
+          "en": "ordre",
+          "theme": "ordre"
+        },
+        {
+          "fr": "flashback",
+          "en": "retour",
+          "theme": "retour"
+        },
+        {
+          "fr": "anticipation",
+          "en": "avant",
+          "theme": "avant"
+        },
+        {
+          "fr": "symbolique",
+          "en": "sens caché",
+          "theme": "sens"
+        },
+        {
+          "fr": "thème",
+          "en": "sujet",
+          "theme": "sujet"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CM2 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Auteur=?",
+          "bonne": "écrit livre",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "raconte",
+            "lit"
           ],
-          "explication": "mot = concept clé du CM2 en Francais"
+          "explication": "auteur"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM2 couvre pluriels",
+          "consigne": "Remplir",
+          "enonce": "Narrateur=___",
+          "bonne": "raconte",
+          "fausses": [
+            "écrit",
+            "personnage"
+          ],
+          "explication": "narrateur"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Personnage=?",
+          "bonne": "acteur",
+          "fausses": [
+            "auteur",
+            "lecteur"
+          ],
+          "explication": "personnage"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Action=événement",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, pluriels = contenu CM2"
+          "explication": "action"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Remplir",
+          "enonce": "Lieu=___",
+          "bonne": "où",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "quand",
+            "qui"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "lieu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus accord : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Temps=?",
+          "bonne": "quand",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "où",
+            "qui"
           ],
-          "explication": "présent = domaine accord"
+          "explication": "temps"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "pluriels est au programme CM2",
+          "consigne": "Vrai/Faux",
+          "enonce": "Intrigue=plot",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, pluriels = contenu officiel"
+          "explication": "intrigue"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM2",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Dénouement=?",
+          "bonne": "fin",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "début",
+            "milieu"
           ],
-          "explication": "nom = élément programme CM2"
+          "explication": "dénouement"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM2",
-          "bonne": "adjectif",
-          "fausses": [
-            "sujet",
-            "présent",
-            "passé"
-          ],
-          "explication": "adjectif = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM2",
-          "bonne": "sujet",
-          "fausses": [
-            "présent",
-            "passé",
-            "futur"
-          ],
-          "explication": "sujet = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM2",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM2",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM2",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM2",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme CM2"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM2",
+          "consigne": "Remplir",
+          "enonce": "Climax=___ tension",
           "bonne": "point",
           "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
+            "ligne",
+            "moment"
           ],
-          "explication": "point = élément programme CM2"
+          "explication": "climax"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM2",
-          "bonne": "virgule",
+          "consigne": "Choix",
+          "enonce": "Exposition=?",
+          "bonne": "début",
           "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
+            "fin",
+            "milieu"
           ],
-          "explication": "virgule = élément programme CM2"
+          "explication": "exposition"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Chronologie=ordre",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "chronologie"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Flashback=?",
+          "bonne": "retour passé",
+          "fausses": [
+            "futur",
+            "présent"
+          ],
+          "explication": "flashback"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Anticipation=avant ___",
+          "bonne": "événement",
+          "fausses": [
+            "passé",
+            "présent"
+          ],
+          "explication": "anticipation"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Symbolique=sens caché",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "symbolique"
         }
       ]
     }

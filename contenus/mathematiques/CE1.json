@@ -4,768 +4,699 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "nombre",
-          "en": "nombre (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "1",
+          "en": "nombre un",
+          "theme": "nombre"
         },
         {
-          "fr": "addition",
-          "en": "addition (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "2",
+          "en": "nombre deux",
+          "theme": "nombre"
         },
         {
-          "fr": "soustraction",
-          "en": "soustraction (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "3",
+          "en": "nombre trois",
+          "theme": "nombre"
         },
         {
-          "fr": "multiplication",
-          "en": "multiplication (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "4",
+          "en": "nombre quatre",
+          "theme": "nombre"
         },
         {
-          "fr": "division",
-          "en": "division (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "5",
+          "en": "nombre cinq",
+          "theme": "nombre"
         },
         {
-          "fr": "fraction",
-          "en": "fraction (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "6",
+          "en": "nombre six",
+          "theme": "nombre"
         },
         {
-          "fr": "décimal",
-          "en": "décimal (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "7",
+          "en": "nombre sept",
+          "theme": "nombre"
         },
         {
-          "fr": "angle",
-          "en": "angle (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "8",
+          "en": "nombre huit",
+          "theme": "nombre"
+        },
+        {
+          "fr": "9",
+          "en": "nombre neuf",
+          "theme": "nombre"
+        },
+        {
+          "fr": "10",
+          "en": "nombre dix",
+          "theme": "nombre"
+        },
+        {
+          "fr": "+",
+          "en": "addition",
+          "theme": "addition"
+        },
+        {
+          "fr": "-",
+          "en": "soustraction",
+          "theme": "soustraction"
+        },
+        {
+          "fr": "=",
+          "en": "égal",
+          "theme": "égal"
         },
         {
           "fr": "carré",
-          "en": "carré (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "en": "4 côtés",
+          "theme": "4"
         },
         {
           "fr": "triangle",
-          "en": "triangle (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "en": "3 côtés",
+          "theme": "3"
         },
         {
           "fr": "cercle",
-          "en": "cercle (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "en": "rond",
+          "theme": "rond"
         },
         {
-          "fr": "périmètre",
-          "en": "périmètre (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "rectangle",
+          "en": "4 côtés",
+          "theme": "4"
         },
         {
-          "fr": "aire",
-          "en": "aire (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "cm",
+          "en": "unité longueur",
+          "theme": "unité"
         },
         {
-          "fr": "équation",
-          "en": "équation (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "kg",
+          "en": "unité poids",
+          "theme": "unité"
         },
         {
-          "fr": "variable",
-          "en": "variable (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "graphique",
-          "en": "graphique (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "pourcentage",
-          "en": "pourcentage (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "moyenne",
-          "en": "moyenne (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "médiane",
-          "en": "médiane (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "formule",
-          "en": "formule (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "l",
+          "en": "unité volume",
+          "theme": "unité"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Mathematiques, quel terme appartient au niveau CE1 ?",
-          "bonne": "nombre",
+          "consigne": "Calcul",
+          "enonce": "2 + 3 = ?",
+          "bonne": "5",
           "fausses": [
-            "addition",
-            "soustraction",
-            "multiplication"
+            "4",
+            "6",
+            "7"
           ],
-          "explication": "nombre = concept clé du CE1 en Mathematiques"
+          "explication": "2+3=5"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "Calcul",
+          "enonce": "10 - 4 = ?",
+          "bonne": "6",
+          "fausses": [
+            "5",
+            "7",
+            "8"
+          ],
+          "explication": "10-4=6"
+        },
+        {
+          "consigne": "Calcul",
+          "enonce": "3 × 2 = ?",
+          "bonne": "6",
+          "fausses": [
+            "5",
+            "7",
+            "8"
+          ],
+          "explication": "3×2=6"
+        },
+        {
+          "consigne": "Calcul",
+          "enonce": "10 ÷ 2 = ?",
+          "bonne": "5",
+          "fausses": [
+            "3",
+            "6",
+            "4"
+          ],
+          "explication": "10÷2=5"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Nombre pair ?",
+          "bonne": "4",
+          "fausses": [
+            "3",
+            "5",
+            "7"
+          ],
+          "explication": "pair=divisible 2"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Nombre impair ?",
+          "bonne": "5",
+          "fausses": [
+            "2",
+            "4",
+            "6"
+          ],
+          "explication": "impair=non divisible 2"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "2 + ___ = 7",
+          "bonne": "5",
+          "fausses": [
+            "3",
+            "4",
+            "6"
+          ],
+          "explication": "addition"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "3 × 4 = ?",
+          "bonne": "12",
+          "fausses": [
+            "11",
+            "13",
+            "14"
+          ],
+          "explication": "multiplication"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "6 pair",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "pair"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "division",
+          "consigne": "Remplir",
+          "enonce": "8 - ___ = 3",
+          "bonne": "5",
           "fausses": [
-            "fraction",
-            "décimal",
-            "angle"
+            "4",
+            "6",
+            "2"
           ],
-          "explication": "division = élément du programme"
+          "explication": "soustraction"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "carré",
+          "consigne": "Choix",
+          "enonce": "5 + 5 = ?",
+          "bonne": "10",
           "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
+            "9",
+            "11",
+            "8"
           ],
-          "explication": "carré = domaine salutations"
+          "explication": "addition"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
-          "bonne": "Vrai",
+          "consigne": "Vrai/Faux",
+          "enonce": "9 pair",
+          "bonne": "Faux",
           "fausses": [
-            "Faux"
+            "Vrai"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "impair"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "fraction",
+          "consigne": "Calcul",
+          "enonce": "6 ÷ 3 = ?",
+          "bonne": "2",
           "fausses": [
-            "décimal",
-            "angle",
-            "carré"
+            "1",
+            "3",
+            "4"
           ],
-          "explication": "fraction = élément programme CE1"
+          "explication": "division"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "décimal",
+          "consigne": "Remplir",
+          "enonce": "___ × 2 = 8",
+          "bonne": "4",
           "fausses": [
-            "angle",
-            "carré",
-            "triangle"
+            "3",
+            "5",
+            "6"
           ],
-          "explication": "décimal = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "angle",
-          "fausses": [
-            "carré",
-            "triangle",
-            "cercle"
-          ],
-          "explication": "angle = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "carré",
-          "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
-          ],
-          "explication": "carré = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "triangle",
-          "fausses": [
-            "cercle",
-            "périmètre",
-            "aire"
-          ],
-          "explication": "triangle = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "cercle",
-          "fausses": [
-            "périmètre",
-            "aire",
-            "équation"
-          ],
-          "explication": "cercle = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "périmètre",
-          "fausses": [
-            "aire",
-            "équation",
-            "variable"
-          ],
-          "explication": "périmètre = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "aire",
-          "fausses": [
-            "équation",
-            "variable",
-            "graphique"
-          ],
-          "explication": "aire = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "équation",
-          "fausses": [
-            "variable",
-            "graphique",
-            "pourcentage"
-          ],
-          "explication": "équation = élément programme CE1"
+          "explication": "multiplication"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "nombre",
-          "en": "nombre (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "addition",
-          "en": "addition (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "soustraction",
-          "en": "soustraction (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "multiplication",
-          "en": "multiplication (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "division",
-          "en": "division (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "fraction",
-          "en": "fraction (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "décimal",
-          "en": "décimal (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "angle",
-          "en": "angle (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
           "fr": "carré",
-          "en": "carré (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "en": "4 côtés égaux",
+          "theme": "4"
+        },
+        {
+          "fr": "rectangle",
+          "en": "4 côtés inégaux",
+          "theme": "4"
         },
         {
           "fr": "triangle",
-          "en": "triangle (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "en": "3 côtés",
+          "theme": "3"
         },
         {
           "fr": "cercle",
-          "en": "cercle (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "en": "forme ronde",
+          "theme": "forme"
+        },
+        {
+          "fr": "diamètre",
+          "en": "traverse cercle",
+          "theme": "traverse"
+        },
+        {
+          "fr": "rayon",
+          "en": "demi-diamètre",
+          "theme": "demi-diamètre"
         },
         {
           "fr": "périmètre",
-          "en": "périmètre (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "en": "tour figure",
+          "theme": "tour"
         },
         {
           "fr": "aire",
-          "en": "aire (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "en": "surface intérieure",
+          "theme": "surface"
         },
         {
-          "fr": "équation",
-          "en": "équation (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "centimètre",
+          "en": "cm",
+          "theme": "cm"
         },
         {
-          "fr": "variable",
-          "en": "variable (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "mètre",
+          "en": "m",
+          "theme": "m"
         },
         {
-          "fr": "graphique",
-          "en": "graphique (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "kilogramme",
+          "en": "kg",
+          "theme": "kg"
         },
         {
-          "fr": "pourcentage",
-          "en": "pourcentage (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "litre",
+          "en": "l",
+          "theme": "l"
         },
         {
-          "fr": "moyenne",
-          "en": "moyenne (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "seconde",
+          "en": "s",
+          "theme": "s"
         },
         {
-          "fr": "médiane",
-          "en": "médiane (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "minute",
+          "en": "60s",
+          "theme": "60s"
         },
         {
-          "fr": "formule",
-          "en": "formule (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "heure",
+          "en": "60min",
+          "theme": "60min"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Mathematiques, quel terme appartient au niveau CE1 ?",
-          "bonne": "nombre",
+          "consigne": "Choix",
+          "enonce": "Côtés carré ?",
+          "bonne": "4",
           "fausses": [
-            "addition",
-            "soustraction",
-            "multiplication"
+            "3",
+            "5",
+            "6"
           ],
-          "explication": "nombre = concept clé du CE1 en Mathematiques"
+          "explication": "carré"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
-          "bonne": "Vrai",
+          "consigne": "Choix",
+          "enonce": "Cercle=?",
+          "bonne": "rond",
           "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, premiers mots = contenu CE1"
-        },
-        {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "division",
-          "fausses": [
-            "fraction",
-            "décimal",
-            "angle"
-          ],
-          "explication": "division = élément du programme"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "carré",
-          "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
-          ],
-          "explication": "carré = domaine salutations"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, premiers mots = contenu officiel"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "fraction",
-          "fausses": [
-            "décimal",
-            "angle",
-            "carré"
-          ],
-          "explication": "fraction = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "décimal",
-          "fausses": [
-            "angle",
             "carré",
             "triangle"
           ],
-          "explication": "décimal = élément programme CE1"
+          "explication": "cercle"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "angle",
+          "consigne": "Remplir",
+          "enonce": "Triangle ___ côtés",
+          "bonne": "3",
           "fausses": [
-            "carré",
-            "triangle",
-            "cercle"
+            "2",
+            "4",
+            "5"
           ],
-          "explication": "angle = élément programme CE1"
+          "explication": "triangle"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "carré",
+          "consigne": "Choix",
+          "enonce": "Rayon si diamètre 10cm ?",
+          "bonne": "5cm",
           "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
+            "10cm",
+            "20cm",
+            "2cm"
           ],
-          "explication": "carré = élément programme CE1"
+          "explication": "rayon"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "triangle",
+          "consigne": "Vrai/Faux",
+          "enonce": "Périmètre=surface",
+          "bonne": "Faux",
           "fausses": [
-            "cercle",
-            "périmètre",
-            "aire"
+            "Vrai"
           ],
-          "explication": "triangle = élément programme CE1"
+          "explication": "périmètre"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "cercle",
+          "consigne": "Remplir",
+          "enonce": "Aire=___ intérieure",
+          "bonne": "surface",
           "fausses": [
             "périmètre",
-            "aire",
-            "équation"
+            "hauteur"
           ],
-          "explication": "cercle = élément programme CE1"
+          "explication": "aire"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "périmètre",
+          "consigne": "Choix",
+          "enonce": "1m = cm ?",
+          "bonne": "100",
           "fausses": [
-            "aire",
-            "équation",
-            "variable"
+            "10",
+            "1000",
+            "50"
           ],
-          "explication": "périmètre = élément programme CE1"
+          "explication": "mètre"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "aire",
+          "consigne": "Vrai/Faux",
+          "enonce": "kg=longueur",
+          "bonne": "Faux",
           "fausses": [
-            "équation",
-            "variable",
-            "graphique"
+            "Vrai"
           ],
-          "explication": "aire = élément programme CE1"
+          "explication": "kg"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "équation",
+          "consigne": "Choix",
+          "enonce": "Secondes/minute ?",
+          "bonne": "60",
           "fausses": [
-            "variable",
-            "graphique",
-            "pourcentage"
+            "30",
+            "120",
+            "45"
           ],
-          "explication": "équation = élément programme CE1"
+          "explication": "minute"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "cm=1/100 ___",
+          "bonne": "m",
+          "fausses": [
+            "km",
+            "mm"
+          ],
+          "explication": "centimètre"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Litre mesure ?",
+          "bonne": "volume",
+          "fausses": [
+            "longueur",
+            "poids"
+          ],
+          "explication": "litre"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Rectangle côtés égaux",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "rectangle"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Diamètre=?",
+          "bonne": "2× rayon",
+          "fausses": [
+            "= rayon",
+            "÷2 rayon"
+          ],
+          "explication": "diamètre"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "kg=unité ___",
+          "bonne": "poids",
+          "fausses": [
+            "longueur",
+            "volume"
+          ],
+          "explication": "kilogramme"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "nombre",
-          "en": "nombre (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "problème",
+          "en": "situation",
+          "theme": "situation"
         },
         {
-          "fr": "addition",
-          "en": "addition (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "donnée",
+          "en": "information",
+          "theme": "information"
         },
         {
-          "fr": "soustraction",
-          "en": "soustraction (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "question",
+          "en": "chercher",
+          "theme": "chercher"
         },
         {
-          "fr": "multiplication",
-          "en": "multiplication (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "résultat",
+          "en": "réponse",
+          "theme": "réponse"
         },
         {
-          "fr": "division",
-          "en": "division (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "vérification",
+          "en": "contrôle",
+          "theme": "contrôle"
         },
         {
-          "fr": "fraction",
-          "en": "fraction (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "étape",
+          "en": "phase",
+          "theme": "phase"
         },
         {
-          "fr": "décimal",
-          "en": "décimal (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "schéma",
+          "en": "dessin",
+          "theme": "dessin"
         },
         {
-          "fr": "angle",
-          "en": "angle (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "carré",
-          "en": "carré (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "triangle",
-          "en": "triangle (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "cercle",
-          "en": "cercle (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "périmètre",
-          "en": "périmètre (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "aire",
-          "en": "aire (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "équation",
-          "en": "équation (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "variable",
-          "en": "variable (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "graphique",
-          "en": "graphique (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "pourcentage",
-          "en": "pourcentage (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "moyenne",
-          "en": "moyenne (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "médiane",
-          "en": "médiane (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "opération",
+          "en": "calcul",
+          "theme": "calcul"
         },
         {
           "fr": "formule",
-          "en": "formule (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "en": "règle",
+          "theme": "règle"
+        },
+        {
+          "fr": "équation",
+          "en": "égalité",
+          "theme": "égalité"
+        },
+        {
+          "fr": "graphique",
+          "en": "dessin",
+          "theme": "dessin"
+        },
+        {
+          "fr": "tableau",
+          "en": "données",
+          "theme": "données"
+        },
+        {
+          "fr": "proportion",
+          "en": "relation",
+          "theme": "relation"
+        },
+        {
+          "fr": "pourcentage",
+          "en": "%",
+          "theme": "%"
+        },
+        {
+          "fr": "moyenne",
+          "en": "somme/nombre",
+          "theme": "somme/nombre"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Mathematiques, quel terme appartient au niveau CE1 ?",
-          "bonne": "nombre",
+          "consigne": "Choix",
+          "enonce": "Pour résoudre d'abord ?",
+          "bonne": "lire question",
           "fausses": [
-            "addition",
-            "soustraction",
-            "multiplication"
+            "calculer",
+            "vérifier",
+            "dessiner"
           ],
-          "explication": "nombre = concept clé du CE1 en Mathematiques"
+          "explication": "résoudre"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "Remplir",
+          "enonce": "Donnée=___ fournie",
+          "bonne": "information",
+          "fausses": [
+            "question",
+            "étape"
+          ],
+          "explication": "donnée"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Vérification=?",
+          "bonne": "contrôle réponse",
+          "fausses": [
+            "poser question",
+            "lire problème"
+          ],
+          "explication": "vérification"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Schéma aide comprendre",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "schéma"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "division",
+          "consigne": "Remplir",
+          "enonce": "Tableau ___ données",
+          "bonne": "organise",
           "fausses": [
-            "fraction",
-            "décimal",
-            "angle"
+            "lit",
+            "crée"
           ],
-          "explication": "division = élément du programme"
+          "explication": "tableau"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "carré",
+          "consigne": "Choix",
+          "enonce": "Proportion=?",
+          "bonne": "relation quantités",
           "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
+            "opération",
+            "résultat"
           ],
-          "explication": "carré = domaine salutations"
+          "explication": "proportion"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "Vrai/Faux",
+          "enonce": "Équation=inconnue",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "équation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "fraction",
+          "consigne": "Choix",
+          "enonce": "50% signifie ?",
+          "bonne": "moitié",
           "fausses": [
-            "décimal",
-            "angle",
-            "carré"
+            "tiers",
+            "quart"
           ],
-          "explication": "fraction = élément programme CE1"
+          "explication": "pourcentage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "décimal",
-          "fausses": [
-            "angle",
-            "carré",
-            "triangle"
-          ],
-          "explication": "décimal = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "angle",
-          "fausses": [
-            "carré",
-            "triangle",
-            "cercle"
-          ],
-          "explication": "angle = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "carré",
-          "fausses": [
-            "triangle",
-            "cercle",
-            "périmètre"
-          ],
-          "explication": "carré = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "triangle",
-          "fausses": [
-            "cercle",
-            "périmètre",
-            "aire"
-          ],
-          "explication": "triangle = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "cercle",
-          "fausses": [
-            "périmètre",
-            "aire",
-            "équation"
-          ],
-          "explication": "cercle = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "périmètre",
-          "fausses": [
-            "aire",
-            "équation",
-            "variable"
-          ],
-          "explication": "périmètre = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "aire",
+          "consigne": "Remplir",
+          "enonce": "Formule=___ mathématique",
+          "bonne": "règle",
           "fausses": [
             "équation",
-            "variable",
-            "graphique"
+            "étape"
           ],
-          "explication": "aire = élément programme CE1"
+          "explication": "formule"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "équation",
+          "consigne": "Choix",
+          "enonce": "Résultat 5+3 ?",
+          "bonne": "8",
           "fausses": [
-            "variable",
-            "graphique",
-            "pourcentage"
+            "7",
+            "9",
+            "6"
           ],
-          "explication": "équation = élément programme CE1"
+          "explication": "résultat"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Graphique=données visuelles",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "graphique"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Vérifier 7-4=3 par ?",
+          "bonne": "3+4=7",
+          "fausses": [
+            "7+4",
+            "7-3"
+          ],
+          "explication": "vérification"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Étape=___ résolution",
+          "bonne": "phase",
+          "fausses": [
+            "donnée",
+            "résultat"
+          ],
+          "explication": "étape"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "25 sur 100 ?",
+          "bonne": "25%",
+          "fausses": [
+            "50%",
+            "75%"
+          ],
+          "explication": "pourcentage"
         }
       ]
     }

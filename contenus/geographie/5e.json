@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Bassin méditerranéen",
+          "en": "Bassin méditerranéen",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Sahara",
+          "en": "Sahara",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Amazonie",
+          "en": "Amazonie",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Sibérie",
+          "en": "Sibérie",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "océan",
-          "en": "océan (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "île",
-          "en": "île (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "climat",
-          "en": "climat (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "ressource",
-          "en": "ressource (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "population",
-          "en": "population (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Andes",
+          "en": "Andes",
+          "theme": "contenus"
         },
         {
           "fr": "densité",
-          "en": "densité (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "en": "densité",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "croissance",
+          "en": "croissance",
+          "theme": "contenus"
+        },
+        {
+          "fr": "migration",
+          "en": "migration",
+          "theme": "contenus"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation",
+          "theme": "contenus"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur primaire",
+          "en": "secteur primaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur secondaire",
+          "en": "secteur secondaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur tertiaire",
+          "en": "secteur tertiaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "PIB",
+          "en": "PIB",
+          "theme": "contenus"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce",
+          "theme": "contenus"
         },
         {
           "fr": "langue",
-          "en": "langue (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "en": "langue",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "religion",
+          "en": "religion",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "culture",
+          "en": "culture",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "patrimoine",
+          "en": "patrimoine",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "carte",
-          "en": "carte (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "identité",
+          "en": "identité",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 5e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 5e",
+          "bonne": "Bassin méditerranéen",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "Sahara",
+            "Amazonie",
+            "Sibérie"
           ],
-          "explication": "continent = concept clé du 5e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "Sahara",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "Amazonie",
+            "Sibérie",
+            "Andes"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine textes courts"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 5e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 5e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 5e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 5e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Bassin méditerranéen",
+          "en": "Bassin méditerranéen",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Sahara",
+          "en": "Sahara",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Amazonie",
+          "en": "Amazonie",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Sibérie",
+          "en": "Sibérie",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "océan",
-          "en": "océan (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "île",
-          "en": "île (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "climat",
-          "en": "climat (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "ressource",
-          "en": "ressource (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "population",
-          "en": "population (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Andes",
+          "en": "Andes",
+          "theme": "contenus"
         },
         {
           "fr": "densité",
-          "en": "densité (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "en": "densité",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "croissance",
+          "en": "croissance",
+          "theme": "contenus"
+        },
+        {
+          "fr": "migration",
+          "en": "migration",
+          "theme": "contenus"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation",
+          "theme": "contenus"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur primaire",
+          "en": "secteur primaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur secondaire",
+          "en": "secteur secondaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur tertiaire",
+          "en": "secteur tertiaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "PIB",
+          "en": "PIB",
+          "theme": "contenus"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce",
+          "theme": "contenus"
         },
         {
           "fr": "langue",
-          "en": "langue (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "en": "langue",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "religion",
+          "en": "religion",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "culture",
+          "en": "culture",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "patrimoine",
+          "en": "patrimoine",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "carte",
-          "en": "carte (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "identité",
+          "en": "identité",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 5e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 5e",
+          "bonne": "Bassin méditerranéen",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "Sahara",
+            "Amazonie",
+            "Sibérie"
           ],
-          "explication": "continent = concept clé du 5e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "Sahara",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "Amazonie",
+            "Sibérie",
+            "Andes"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine textes courts"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 5e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 5e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 5e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 5e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Bassin méditerranéen",
+          "en": "Bassin méditerranéen",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Sahara",
+          "en": "Sahara",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Amazonie",
+          "en": "Amazonie",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Sibérie",
+          "en": "Sibérie",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "océan",
-          "en": "océan (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "île",
-          "en": "île (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "climat",
-          "en": "climat (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "ressource",
-          "en": "ressource (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "population",
-          "en": "population (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Andes",
+          "en": "Andes",
+          "theme": "contenus"
         },
         {
           "fr": "densité",
-          "en": "densité (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "en": "densité",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "croissance",
+          "en": "croissance",
+          "theme": "contenus"
+        },
+        {
+          "fr": "migration",
+          "en": "migration",
+          "theme": "contenus"
+        },
+        {
+          "fr": "urbanisation",
+          "en": "urbanisation",
+          "theme": "contenus"
+        },
+        {
+          "fr": "démographie",
+          "en": "démographie",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur primaire",
+          "en": "secteur primaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur secondaire",
+          "en": "secteur secondaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "secteur tertiaire",
+          "en": "secteur tertiaire",
+          "theme": "contenus"
+        },
+        {
+          "fr": "PIB",
+          "en": "PIB",
+          "theme": "contenus"
+        },
+        {
+          "fr": "commerce",
+          "en": "commerce",
+          "theme": "contenus"
         },
         {
           "fr": "langue",
-          "en": "langue (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "en": "langue",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "religion",
+          "en": "religion",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "culture",
+          "en": "culture",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "patrimoine",
+          "en": "patrimoine",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "carte",
-          "en": "carte (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "identité",
+          "en": "identité",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 5e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 5e",
+          "bonne": "Bassin méditerranéen",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "Sahara",
+            "Amazonie",
+            "Sibérie"
           ],
-          "explication": "continent = concept clé du 5e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "Sahara",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "Amazonie",
+            "Sibérie",
+            "Andes"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine textes courts"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 5e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 5e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 5e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 5e"
+          "explication": "E14"
         }
       ]
     }

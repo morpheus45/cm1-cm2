@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "préhistoire",
+          "en": "préhistoire",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "antiquité",
+          "en": "antiquité",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "moyen-âge",
+          "en": "moyen-âge",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "renaissance",
+          "en": "renaissance",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "moderne",
+          "en": "moderne",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "César",
+          "en": "César",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Jeanne",
+          "en": "Jeanne",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Louis XIV",
+          "en": "Louis XIV",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Napoléon",
+          "en": "Napoléon",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Charlemagne",
+          "en": "Charlemagne",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Révolution",
+          "en": "Révolution",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Gaule",
+          "en": "Gaule",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "Croisades",
+          "en": "Croisades",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "italienne",
+          "en": "italienne",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "chronologie",
-          "en": "chronologie (niveau CM1, tri 1)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "source",
-          "en": "source (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "industrielle",
+          "en": "industrielle",
+          "theme": "contenus"
         },
         {
           "fr": "monument",
-          "en": "monument (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "en": "monument",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "document",
+          "en": "document",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau CM1, tri 1)",
-          "theme": "noms / temps"
+          "fr": "musée",
+          "en": "musée",
+          "theme": "contenus"
+        },
+        {
+          "fr": "archive",
+          "en": "archive",
+          "theme": "contenus"
+        },
+        {
+          "fr": "inscription",
+          "en": "inscription",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau CM1 ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau CM1",
+          "bonne": "préhistoire",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "antiquité",
+            "moyen-âge",
+            "renaissance"
           ],
-          "explication": "époque = concept clé du CM1 en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM1 couvre noms et verbes",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu CM1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "antiquité",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "moyen-âge",
+            "renaissance",
+            "moderne"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps simple : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau CM1____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine temps simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "noms et verbes est au programme CM1",
+          "consigne": "V/F",
+          "enonce": "Programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM1",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme CM1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM1",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme CM1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM1",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme CM1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM1",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme CM1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM1",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme CM1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM1",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme CM1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM1",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme CM1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM1",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme CM1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM1",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme CM1"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "préhistoire",
+          "en": "préhistoire",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "antiquité",
+          "en": "antiquité",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "moyen-âge",
+          "en": "moyen-âge",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "renaissance",
+          "en": "renaissance",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "moderne",
+          "en": "moderne",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "César",
+          "en": "César",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Jeanne",
+          "en": "Jeanne",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Louis XIV",
+          "en": "Louis XIV",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Napoléon",
+          "en": "Napoléon",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Charlemagne",
+          "en": "Charlemagne",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Révolution",
+          "en": "Révolution",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Gaule",
+          "en": "Gaule",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "Croisades",
+          "en": "Croisades",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "italienne",
+          "en": "italienne",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "chronologie",
-          "en": "chronologie (niveau CM1, tri 2)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "source",
-          "en": "source (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "industrielle",
+          "en": "industrielle",
+          "theme": "contenus"
         },
         {
           "fr": "monument",
-          "en": "monument (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "en": "monument",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "document",
+          "en": "document",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau CM1, tri 2)",
-          "theme": "noms / temps"
+          "fr": "musée",
+          "en": "musée",
+          "theme": "contenus"
+        },
+        {
+          "fr": "archive",
+          "en": "archive",
+          "theme": "contenus"
+        },
+        {
+          "fr": "inscription",
+          "en": "inscription",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau CM1 ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau CM1",
+          "bonne": "préhistoire",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "antiquité",
+            "moyen-âge",
+            "renaissance"
           ],
-          "explication": "époque = concept clé du CM1 en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM1 couvre noms et verbes",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu CM1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "antiquité",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "moyen-âge",
+            "renaissance",
+            "moderne"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps simple : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau CM1____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine temps simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "noms et verbes est au programme CM1",
+          "consigne": "V/F",
+          "enonce": "Programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM1",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme CM1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM1",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme CM1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM1",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme CM1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM1",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme CM1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM1",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme CM1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM1",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme CM1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM1",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme CM1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM1",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme CM1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM1",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme CM1"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "préhistoire",
+          "en": "préhistoire",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "antiquité",
+          "en": "antiquité",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "moyen-âge",
+          "en": "moyen-âge",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "renaissance",
+          "en": "renaissance",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "moderne",
+          "en": "moderne",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "César",
+          "en": "César",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Jeanne",
+          "en": "Jeanne",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Louis XIV",
+          "en": "Louis XIV",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Napoléon",
+          "en": "Napoléon",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Charlemagne",
+          "en": "Charlemagne",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Révolution",
+          "en": "Révolution",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Gaule",
+          "en": "Gaule",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "Croisades",
+          "en": "Croisades",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "italienne",
+          "en": "italienne",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "chronologie",
-          "en": "chronologie (niveau CM1, tri 3)",
-          "theme": "noms / temps"
-        },
-        {
-          "fr": "source",
-          "en": "source (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "industrielle",
+          "en": "industrielle",
+          "theme": "contenus"
         },
         {
           "fr": "monument",
-          "en": "monument (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "en": "monument",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "document",
+          "en": "document",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau CM1, tri 3)",
-          "theme": "noms / temps"
+          "fr": "musée",
+          "en": "musée",
+          "theme": "contenus"
+        },
+        {
+          "fr": "archive",
+          "en": "archive",
+          "theme": "contenus"
+        },
+        {
+          "fr": "inscription",
+          "en": "inscription",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau CM1 ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau CM1",
+          "bonne": "préhistoire",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "antiquité",
+            "moyen-âge",
+            "renaissance"
           ],
-          "explication": "époque = concept clé du CM1 en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CM1 couvre noms et verbes",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu CM1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "antiquité",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "moyen-âge",
+            "renaissance",
+            "moderne"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps simple : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau CM1____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine temps simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "noms et verbes est au programme CM1",
+          "consigne": "V/F",
+          "enonce": "Programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, noms et verbes = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CM1",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme CM1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CM1",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme CM1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CM1",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme CM1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CM1",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme CM1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CM1",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme CM1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CM1",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme CM1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CM1",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme CM1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CM1",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme CM1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CM1",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme CM1"
+          "explication": "E14"
         }
       ]
     }

@@ -4,768 +4,758 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "a",
+          "en": "lettre 1",
+          "theme": "lettre"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "b",
+          "en": "lettre 2",
+          "theme": "lettre"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "c",
+          "en": "lettre 3",
+          "theme": "lettre"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "chat",
+          "en": "animal",
+          "theme": "animal"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "soleil",
+          "en": "astre",
+          "theme": "astre"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "maman",
+          "en": "mère",
+          "theme": "mère"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "papa",
+          "en": "père",
+          "theme": "père"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "maison",
+          "en": "habitation",
+          "theme": "habitation"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "école",
+          "en": "lieu étude",
+          "theme": "lieu"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "pain",
+          "en": "aliment",
+          "theme": "aliment"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "eau",
+          "en": "boisson",
+          "theme": "boisson"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "feu",
+          "en": "chaleur",
+          "theme": "chaleur"
         },
         {
-          "fr": "point",
-          "en": "point (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "rouge",
+          "en": "couleur",
+          "theme": "couleur"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "bleu",
+          "en": "couleur",
+          "theme": "couleur"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "vert",
+          "en": "couleur",
+          "theme": "couleur"
         },
         {
-          "fr": "histoire",
-          "en": "histoire (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "un",
+          "en": "nombre",
+          "theme": "nombre"
         },
         {
-          "fr": "description",
-          "en": "description (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "deux",
+          "en": "nombre",
+          "theme": "nombre"
         },
         {
-          "fr": "rime",
-          "en": "rime (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "trois",
+          "en": "nombre",
+          "theme": "nombre"
         },
         {
-          "fr": "strophe",
-          "en": "strophe (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "bonjour",
+          "en": "salutation",
+          "theme": "salutation"
         },
         {
-          "fr": "auteur",
-          "en": "auteur (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "au revoir",
+          "en": "adieu",
+          "theme": "adieu"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CE1 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Quel son 'ch' ?",
+          "bonne": "doux",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "dur",
+            "grave",
+            "aigu"
           ],
-          "explication": "mot = concept clé du CE1 en Francais"
+          "explication": "ch=doux"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "Remplir",
+          "enonce": "J'aime mon ___",
+          "bonne": "chat",
+          "fausses": [
+            "soleil",
+            "pain",
+            "eau"
+          ],
+          "explication": "aimer"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Soleil brille nuit",
+          "bonne": "Faux",
+          "fausses": [
+            "Vrai"
+          ],
+          "explication": "soleil=jour"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Rime 'chat' ?",
+          "bonne": "rat",
+          "fausses": [
+            "soleil",
+            "eau",
+            "feu"
+          ],
+          "explication": "rime"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Couleur herbe ?",
+          "bonne": "vert",
+          "fausses": [
+            "bleu",
+            "rouge",
+            "noir"
+          ],
+          "explication": "herbe"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "J'habite ___",
+          "bonne": "maison",
+          "fausses": [
+            "école",
+            "pain",
+            "route"
+          ],
+          "explication": "habite"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Lettre après 'a' ?",
+          "bonne": "b",
+          "fausses": [
+            "c",
+            "d",
+            "z"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "On s'assoit ___",
+          "bonne": "chaise",
+          "fausses": [
+            "table",
+            "porte",
+            "fenêtre"
+          ],
+          "explication": "chaise"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Chien=animal",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "chien"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Opposé jour ?",
+          "bonne": "nuit",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "matin",
+            "soir",
+            "lumière"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "nuit"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "On mange du ___",
+          "bonne": "pain",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "feu",
+            "chaise",
+            "soleil"
           ],
-          "explication": "présent = domaine salutations"
+          "explication": "pain"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
-          "bonne": "Vrai",
+          "consigne": "Choix",
+          "enonce": "Animal aboie ?",
+          "bonne": "chien",
           "fausses": [
-            "Faux"
+            "chat",
+            "oiseau",
+            "poisson"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "aboie"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "nom",
+          "consigne": "Vrai/Faux",
+          "enonce": "Eau=solide",
+          "bonne": "Faux",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "Vrai"
           ],
-          "explication": "nom = élément programme CE1"
+          "explication": "eau=liquide"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "adjectif",
+          "consigne": "Choix",
+          "enonce": "Nombre après 2 ?",
+          "bonne": "3",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "1",
+            "4",
+            "5"
           ],
-          "explication": "adjectif = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "sujet",
-          "fausses": [
-            "présent",
-            "passé",
-            "futur"
-          ],
-          "explication": "sujet = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "présent",
-          "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
-          ],
-          "explication": "présent = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "passé",
-          "fausses": [
-            "futur",
-            "majuscule",
-            "point"
-          ],
-          "explication": "passé = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme CE1"
+          "explication": "nombre"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "d",
+          "en": "lettre 4",
+          "theme": "lettre"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "e",
+          "en": "lettre 5",
+          "theme": "lettre"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "f",
+          "en": "lettre 6",
+          "theme": "lettre"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "g",
+          "en": "lettre 7",
+          "theme": "lettre"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "h",
+          "en": "lettre 8",
+          "theme": "lettre"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "i",
+          "en": "lettre 9",
+          "theme": "lettre"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "j",
+          "en": "lettre 10",
+          "theme": "lettre"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "k",
+          "en": "lettre 11",
+          "theme": "lettre"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "l",
+          "en": "lettre 12",
+          "theme": "lettre"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "m",
+          "en": "lettre 13",
+          "theme": "lettre"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "n",
+          "en": "lettre 14",
+          "theme": "lettre"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "o",
+          "en": "lettre 15",
+          "theme": "lettre"
         },
         {
-          "fr": "point",
-          "en": "point (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "p",
+          "en": "lettre 16",
+          "theme": "lettre"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "q",
+          "en": "lettre 17",
+          "theme": "lettre"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "r",
+          "en": "lettre 18",
+          "theme": "lettre"
         },
         {
-          "fr": "histoire",
-          "en": "histoire (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "s",
+          "en": "lettre 19",
+          "theme": "lettre"
         },
         {
-          "fr": "description",
-          "en": "description (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "t",
+          "en": "lettre 20",
+          "theme": "lettre"
         },
         {
-          "fr": "rime",
-          "en": "rime (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "u",
+          "en": "lettre 21",
+          "theme": "lettre"
         },
         {
-          "fr": "strophe",
-          "en": "strophe (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "v",
+          "en": "lettre 22",
+          "theme": "lettre"
         },
         {
-          "fr": "auteur",
-          "en": "auteur (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "w",
+          "en": "lettre 23",
+          "theme": "lettre"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CE1 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Lettre 'd' ?",
+          "bonne": "quatrième",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "troisième",
+            "cinquième",
+            "sixième"
           ],
-          "explication": "mot = concept clé du CE1 en Francais"
+          "explication": "d"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "Remplir",
+          "enonce": "Alphabet après 's' ?",
+          "bonne": "t",
+          "fausses": [
+            "u",
+            "v",
+            "w"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Total lettres alphabet ?",
+          "bonne": "26",
+          "fausses": [
+            "24",
+            "25",
+            "27"
+          ],
+          "explication": "alphabet"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Voyelle='a'",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "voyelle"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Consonne='b' ?",
+          "bonne": "oui",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "non"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "consonne"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Remplir",
+          "enonce": "Lettre entre 'p' et 'r' ?",
+          "bonne": "q",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "o",
+            "s",
+            "t"
           ],
-          "explication": "présent = domaine salutations"
+          "explication": "alphabet"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "Choix",
+          "enonce": "Son 'j' ?",
+          "bonne": "ja",
+          "fausses": [
+            "je",
+            "ji",
+            "jo"
+          ],
+          "explication": "phonétique"
+        },
+        {
+          "consigne": "Remplir",
+          "enonce": "Rime 'matin' ?",
+          "bonne": "pain",
+          "fausses": [
+            "chat",
+            "soleil",
+            "nuit"
+          ],
+          "explication": "rime"
+        },
+        {
+          "consigne": "Vrai/Faux",
+          "enonce": "Son 'ch'=consonne",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "consonne"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Nombre 0 s'appelle ?",
+          "bonne": "zéro",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "rien",
+            "vide",
+            "néant"
           ],
-          "explication": "nom = élément programme CE1"
+          "explication": "nombre"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "adjectif",
+          "consigne": "Remplir",
+          "enonce": "Après 9 ?",
+          "bonne": "10",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "8",
+            "11",
+            "12"
           ],
-          "explication": "adjectif = élément programme CE1"
+          "explication": "nombre"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "sujet",
+          "consigne": "Choix",
+          "enonce": "Voyelle='e' ?",
+          "bonne": "oui",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "non"
           ],
-          "explication": "sujet = élément programme CE1"
+          "explication": "voyelle"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "présent",
+          "consigne": "Vrai/Faux",
+          "enonce": "'y'=voyelle",
+          "bonne": "Faux",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "Vrai"
           ],
-          "explication": "présent = élément programme CE1"
+          "explication": "y"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "passé",
+          "consigne": "Choix",
+          "enonce": "Début alphabet ?",
+          "bonne": "a",
           "fausses": [
-            "futur",
-            "majuscule",
-            "point"
+            "b",
+            "z",
+            "m"
           ],
-          "explication": "passé = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "futur",
-          "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
-          ],
-          "explication": "futur = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "majuscule",
-          "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
-          ],
-          "explication": "majuscule = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "point",
-          "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
-          ],
-          "explication": "point = élément programme CE1"
-        },
-        {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "virgule",
-          "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
-          ],
-          "explication": "virgule = élément programme CE1"
+          "explication": "alphabet"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "mot",
-          "en": "mot (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "x",
+          "en": "lettre 24",
+          "theme": "lettre"
         },
         {
-          "fr": "phrase",
-          "en": "phrase (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "y",
+          "en": "lettre 25",
+          "theme": "lettre"
         },
         {
-          "fr": "lettre",
-          "en": "lettre (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "z",
+          "en": "lettre 26",
+          "theme": "lettre"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "je",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "verbe",
-          "en": "verbe (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "tu",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "nom",
-          "en": "nom (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "il",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "adjectif",
-          "en": "adjectif (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "elle",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "sujet",
-          "en": "sujet (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "nous",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "présent",
-          "en": "présent (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "vous",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "passé",
-          "en": "passé (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "ils",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "futur",
-          "en": "futur (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "elles",
+          "en": "pronom",
+          "theme": "pronom"
         },
         {
-          "fr": "majuscule",
-          "en": "majuscule (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "oui",
+          "en": "affirmation",
+          "theme": "affirmation"
         },
         {
-          "fr": "point",
-          "en": "point (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "non",
+          "en": "négation",
+          "theme": "négation"
         },
         {
-          "fr": "virgule",
-          "en": "virgule (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "merci",
+          "en": "politesse",
+          "theme": "politesse"
         },
         {
-          "fr": "dialogue",
-          "en": "dialogue (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "s'il plaît",
+          "en": "politesse",
+          "theme": "politesse"
         },
         {
-          "fr": "histoire",
-          "en": "histoire (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "bonjour",
+          "en": "salutation",
+          "theme": "salutation"
         },
         {
-          "fr": "description",
-          "en": "description (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "au revoir",
+          "en": "adieu",
+          "theme": "adieu"
         },
         {
-          "fr": "rime",
-          "en": "rime (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "excusez",
+          "en": "politesse",
+          "theme": "politesse"
         },
         {
-          "fr": "strophe",
-          "en": "strophe (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "pardon",
+          "en": "politesse",
+          "theme": "politesse"
         },
         {
-          "fr": "auteur",
-          "en": "auteur (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "aidez",
+          "en": "action",
+          "theme": "action"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Francais, quel terme appartient au niveau CE1 ?",
-          "bonne": "mot",
+          "consigne": "Choix",
+          "enonce": "Dernière lettre ?",
+          "bonne": "z",
           "fausses": [
-            "phrase",
-            "lettre",
-            "son"
+            "y",
+            "w",
+            "x"
           ],
-          "explication": "mot = concept clé du CE1 en Francais"
+          "explication": "alphabet"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
-          "bonne": "Vrai",
+          "consigne": "Remplir",
+          "enonce": "Pronom 'moi' ?",
+          "bonne": "je",
           "fausses": [
-            "Faux"
+            "tu",
+            "il",
+            "elle"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "pronom"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "verbe",
+          "consigne": "Choix",
+          "enonce": "Pronom pluriel ?",
+          "bonne": "nous",
           "fausses": [
-            "nom",
-            "adjectif",
-            "sujet"
+            "je",
+            "tu",
+            "il"
           ],
-          "explication": "verbe = élément du programme"
+          "explication": "pronom"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "présent",
+          "consigne": "Vrai/Faux",
+          "enonce": "Vous=singulier",
+          "bonne": "Faux",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "Vrai"
           ],
-          "explication": "présent = domaine salutations"
+          "explication": "vous"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
-          "bonne": "Vrai",
+          "consigne": "Remplir",
+          "enonce": "Avant 'au revoir' dit ___",
+          "bonne": "bonjour",
           "fausses": [
-            "Faux"
+            "merci",
+            "oui",
+            "non"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "salutation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "nom",
+          "consigne": "Choix",
+          "enonce": "Politesse ?",
+          "bonne": "s'il plaît",
           "fausses": [
-            "adjectif",
-            "sujet",
-            "présent"
+            "oui",
+            "non",
+            "merci"
           ],
-          "explication": "nom = élément programme CE1"
+          "explication": "politesse"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "adjectif",
+          "consigne": "Vrai/Faux",
+          "enonce": "Je=2ème personne",
+          "bonne": "Faux",
           "fausses": [
-            "sujet",
-            "présent",
-            "passé"
+            "Vrai"
           ],
-          "explication": "adjectif = élément programme CE1"
+          "explication": "je"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "sujet",
+          "consigne": "Remplir",
+          "enonce": "On dit '___ revoir' départ",
+          "bonne": "au",
           "fausses": [
-            "présent",
-            "passé",
-            "futur"
+            "bon",
+            "oui",
+            "merci"
           ],
-          "explication": "sujet = élément programme CE1"
+          "explication": "au revoir"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "présent",
+          "consigne": "Choix",
+          "enonce": "Affirmation ?",
+          "bonne": "oui",
           "fausses": [
-            "passé",
-            "futur",
-            "majuscule"
+            "non",
+            "peut-être",
+            "moyen"
           ],
-          "explication": "présent = élément programme CE1"
+          "explication": "oui"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "passé",
+          "consigne": "Remplir",
+          "enonce": "Pronoms plural='ils' ou ___",
+          "bonne": "elles",
           "fausses": [
-            "futur",
-            "majuscule",
-            "point"
+            "elle",
+            "il",
+            "elle"
           ],
-          "explication": "passé = élément programme CE1"
+          "explication": "pronom"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "futur",
+          "consigne": "Choix",
+          "enonce": "Remercie : dit ___",
+          "bonne": "merci",
           "fausses": [
-            "majuscule",
-            "point",
-            "virgule"
+            "s'il plaît",
+            "oui",
+            "non"
           ],
-          "explication": "futur = élément programme CE1"
+          "explication": "merci"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "majuscule",
+          "consigne": "Vrai/Faux",
+          "enonce": "Tu=vous",
+          "bonne": "Faux",
           "fausses": [
-            "point",
-            "virgule",
-            "dialogue"
+            "Vrai"
           ],
-          "explication": "majuscule = élément programme CE1"
+          "explication": "tu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "point",
+          "consigne": "Choix",
+          "enonce": "Après 'merci' répond ___",
+          "bonne": "de rien",
           "fausses": [
-            "virgule",
-            "dialogue",
-            "histoire"
+            "oui",
+            "non",
+            "peut-être"
           ],
-          "explication": "point = élément programme CE1"
+          "explication": "politesse"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "virgule",
+          "consigne": "Remplir",
+          "enonce": "Demande pardon : ___",
+          "bonne": "pardon",
           "fausses": [
-            "dialogue",
-            "histoire",
-            "description"
+            "merci",
+            "oui",
+            "non"
           ],
-          "explication": "virgule = élément programme CE1"
+          "explication": "pardon"
         }
       ]
     }

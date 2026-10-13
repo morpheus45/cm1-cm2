@@ -4,768 +4,756 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "équateur",
-          "en": "équateur (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "pôle",
-          "en": "pôle (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "carte",
-          "en": "carte (niveau 4e, tri 1)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 4e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "continent = concept clé du 4e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "terme2",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "terme3"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 4e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "équateur",
-          "en": "équateur (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "pôle",
-          "en": "pôle (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "carte",
-          "en": "carte (niveau 4e, tri 2)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 4e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "continent = concept clé du 4e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "terme2",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "terme3"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 4e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "équateur",
-          "en": "équateur (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "pôle",
-          "en": "pôle (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "carte",
-          "en": "carte (niveau 4e, tri 3)",
-          "theme": "registres / analyse"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 4e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 4e",
+          "bonne": "terme1",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "continent = concept clé du 4e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 4e couvre registres de langage",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu 4e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "terme2",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "terme3"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus analyse texte : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 4e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine analyse texte"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "registres de langage est au programme 4e",
+          "consigne": "V/F",
+          "enonce": "Programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, registres de langage = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 4e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 4e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 4e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 4e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 4e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 4e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 4e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 4e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 4e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 4e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 4e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 4e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 4e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 4e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 4e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 4e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 4e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 4e"
+          "explication": "E14"
         }
       ]
     }

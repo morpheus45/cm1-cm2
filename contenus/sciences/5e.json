@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
+          "fr": "lumière",
+          "en": "lumière",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réflexion",
+          "en": "réflexion",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réfraction",
+          "en": "réfraction",
+          "theme": "contenus"
+        },
+        {
+          "fr": "lentille",
+          "en": "lentille",
+          "theme": "contenus"
+        },
+        {
+          "fr": "couleur",
+          "en": "couleur",
+          "theme": "contenus"
+        },
+        {
+          "fr": "spectre",
+          "en": "spectre",
+          "theme": "contenus"
+        },
+        {
           "fr": "atome",
-          "en": "atome (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "en": "atome",
+          "theme": "contenus"
         },
         {
           "fr": "molécule",
-          "en": "molécule (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "en": "molécule",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "élément",
+          "en": "élément",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réaction",
+          "en": "réaction",
+          "theme": "contenus"
+        },
+        {
+          "fr": "oxydation",
+          "en": "oxydation",
+          "theme": "contenus"
+        },
+        {
+          "fr": "mécanique",
+          "en": "mécanique",
+          "theme": "contenus"
         },
         {
           "fr": "force",
-          "en": "force (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "en": "force",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "poids",
+          "en": "poids",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "frottement",
+          "en": "frottement",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "vitesse",
+          "en": "vitesse",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "aimant",
-          "en": "aimant (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "accélération",
+          "en": "accélération",
+          "theme": "contenus"
         },
         {
           "fr": "cellule",
-          "en": "cellule (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "en": "cellule",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "ADN",
+          "en": "ADN",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "environnement",
-          "en": "environnement (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "évolution",
-          "en": "évolution (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "génétique",
-          "en": "génétique (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "chimie",
-          "en": "chimie (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "physique",
-          "en": "physique (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "biologie",
-          "en": "biologie (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "expérience",
-          "en": "expérience (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "chromosome",
+          "en": "chromosome",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 5e ?",
-          "bonne": "atome",
-          "fausses": [
-            "molécule",
-            "énergie",
-            "force"
-          ],
-          "explication": "atome = concept clé du 5e en Sciences"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
-        },
-        {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 5e",
           "bonne": "lumière",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "réflexion",
+            "réfraction",
+            "lentille"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "aimant",
-          "fausses": [
-            "cellule",
-            "plante",
-            "animal"
-          ],
-          "explication": "aimant = domaine textes courts"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "son",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "réflexion",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "réfraction",
+            "lentille",
+            "couleur"
           ],
-          "explication": "son = élément programme 5e"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "non"
           ],
-          "explication": "chaleur = élément programme 5e"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "électricité",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
+          "bonne": "Vrai",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "Faux"
           ],
-          "explication": "électricité = élément programme 5e"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 5e"
+          "explication": "E11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
+          "fr": "lumière",
+          "en": "lumière",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réflexion",
+          "en": "réflexion",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réfraction",
+          "en": "réfraction",
+          "theme": "contenus"
+        },
+        {
+          "fr": "lentille",
+          "en": "lentille",
+          "theme": "contenus"
+        },
+        {
+          "fr": "couleur",
+          "en": "couleur",
+          "theme": "contenus"
+        },
+        {
+          "fr": "spectre",
+          "en": "spectre",
+          "theme": "contenus"
+        },
+        {
           "fr": "atome",
-          "en": "atome (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "en": "atome",
+          "theme": "contenus"
         },
         {
           "fr": "molécule",
-          "en": "molécule (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "en": "molécule",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "élément",
+          "en": "élément",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réaction",
+          "en": "réaction",
+          "theme": "contenus"
+        },
+        {
+          "fr": "oxydation",
+          "en": "oxydation",
+          "theme": "contenus"
+        },
+        {
+          "fr": "mécanique",
+          "en": "mécanique",
+          "theme": "contenus"
         },
         {
           "fr": "force",
-          "en": "force (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "en": "force",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "poids",
+          "en": "poids",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "frottement",
+          "en": "frottement",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "vitesse",
+          "en": "vitesse",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "aimant",
-          "en": "aimant (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "accélération",
+          "en": "accélération",
+          "theme": "contenus"
         },
         {
           "fr": "cellule",
-          "en": "cellule (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "en": "cellule",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "ADN",
+          "en": "ADN",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "environnement",
-          "en": "environnement (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "évolution",
-          "en": "évolution (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "génétique",
-          "en": "génétique (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "chimie",
-          "en": "chimie (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "physique",
-          "en": "physique (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "biologie",
-          "en": "biologie (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "expérience",
-          "en": "expérience (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "chromosome",
+          "en": "chromosome",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 5e ?",
-          "bonne": "atome",
-          "fausses": [
-            "molécule",
-            "énergie",
-            "force"
-          ],
-          "explication": "atome = concept clé du 5e en Sciences"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
-        },
-        {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 5e",
           "bonne": "lumière",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "réflexion",
+            "réfraction",
+            "lentille"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "aimant",
-          "fausses": [
-            "cellule",
-            "plante",
-            "animal"
-          ],
-          "explication": "aimant = domaine textes courts"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "son",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "réflexion",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "réfraction",
+            "lentille",
+            "couleur"
           ],
-          "explication": "son = élément programme 5e"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "non"
           ],
-          "explication": "chaleur = élément programme 5e"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "électricité",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
+          "bonne": "Vrai",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "Faux"
           ],
-          "explication": "électricité = élément programme 5e"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 5e"
+          "explication": "E11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
+          "fr": "lumière",
+          "en": "lumière",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réflexion",
+          "en": "réflexion",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réfraction",
+          "en": "réfraction",
+          "theme": "contenus"
+        },
+        {
+          "fr": "lentille",
+          "en": "lentille",
+          "theme": "contenus"
+        },
+        {
+          "fr": "couleur",
+          "en": "couleur",
+          "theme": "contenus"
+        },
+        {
+          "fr": "spectre",
+          "en": "spectre",
+          "theme": "contenus"
+        },
+        {
           "fr": "atome",
-          "en": "atome (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "en": "atome",
+          "theme": "contenus"
         },
         {
           "fr": "molécule",
-          "en": "molécule (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "en": "molécule",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "élément",
+          "en": "élément",
+          "theme": "contenus"
+        },
+        {
+          "fr": "réaction",
+          "en": "réaction",
+          "theme": "contenus"
+        },
+        {
+          "fr": "oxydation",
+          "en": "oxydation",
+          "theme": "contenus"
+        },
+        {
+          "fr": "mécanique",
+          "en": "mécanique",
+          "theme": "contenus"
         },
         {
           "fr": "force",
-          "en": "force (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "en": "force",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "poids",
+          "en": "poids",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "frottement",
+          "en": "frottement",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "vitesse",
+          "en": "vitesse",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "aimant",
-          "en": "aimant (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "accélération",
+          "en": "accélération",
+          "theme": "contenus"
         },
         {
           "fr": "cellule",
-          "en": "cellule (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "en": "cellule",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "ADN",
+          "en": "ADN",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "écosystème",
-          "en": "écosystème (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "environnement",
-          "en": "environnement (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "évolution",
-          "en": "évolution (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "génétique",
-          "en": "génétique (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "chimie",
-          "en": "chimie (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "physique",
-          "en": "physique (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "biologie",
-          "en": "biologie (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
-        },
-        {
-          "fr": "expérience",
-          "en": "expérience (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "chromosome",
+          "en": "chromosome",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau 5e ?",
-          "bonne": "atome",
-          "fausses": [
-            "molécule",
-            "énergie",
-            "force"
-          ],
-          "explication": "atome = concept clé du 5e en Sciences"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
-        },
-        {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau 5e",
           "bonne": "lumière",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "réflexion",
+            "réfraction",
+            "lentille"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "aimant",
-          "fausses": [
-            "cellule",
-            "plante",
-            "animal"
-          ],
-          "explication": "aimant = domaine textes courts"
-        },
-        {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "son",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "réflexion",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "réfraction",
+            "lentille",
+            "couleur"
           ],
-          "explication": "son = élément programme 5e"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "non"
           ],
-          "explication": "chaleur = élément programme 5e"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "électricité",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
+          "bonne": "Vrai",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "Faux"
           ],
-          "explication": "électricité = élément programme 5e"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme 5e"
+          "explication": "E11"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E12"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E13"
+        },
+        {
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
+          "fausses": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "explication": "E14"
         }
       ]
     }

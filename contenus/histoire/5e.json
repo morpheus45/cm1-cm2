@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Grèce",
+          "en": "Grèce",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Romain",
+          "en": "Romain",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Égypte",
+          "en": "Égypte",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Mésopotamie",
+          "en": "Mésopotamie",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "féodalité",
+          "en": "féodalité",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Église",
+          "en": "Église",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "croisades",
+          "en": "croisades",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "chevaliers",
+          "en": "chevaliers",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "châteaux",
+          "en": "châteaux",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Renaissance",
+          "en": "Renaissance",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Léonard",
+          "en": "Léonard",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Gutenberg",
+          "en": "Gutenberg",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Machiavel",
+          "en": "Machiavel",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Érasme",
+          "en": "Érasme",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Copernic",
+          "en": "Copernic",
+          "theme": "contenus"
         },
         {
-          "fr": "chronologie",
-          "en": "chronologie (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Luther",
+          "en": "Luther",
+          "theme": "contenus"
         },
         {
-          "fr": "source",
-          "en": "source (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Calvin",
+          "en": "Calvin",
+          "theme": "contenus"
         },
         {
-          "fr": "monument",
-          "en": "monument (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "Réforme",
+          "en": "Réforme",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "humanisme",
+          "en": "humanisme",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau 5e, tri 1)",
-          "theme": "vocabulaire / textes"
+          "fr": "imprimer",
+          "en": "imprimer",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau 5e ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 5e",
+          "bonne": "Grèce",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "Romain",
+            "Égypte",
+            "Mésopotamie"
           ],
-          "explication": "époque = concept clé du 5e en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "Romain",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "Égypte",
+            "Mésopotamie",
+            "féodalité"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine textes courts"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme 5e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme 5e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme 5e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme 5e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Grèce",
+          "en": "Grèce",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Romain",
+          "en": "Romain",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Égypte",
+          "en": "Égypte",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Mésopotamie",
+          "en": "Mésopotamie",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "féodalité",
+          "en": "féodalité",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Église",
+          "en": "Église",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "croisades",
+          "en": "croisades",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "chevaliers",
+          "en": "chevaliers",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "châteaux",
+          "en": "châteaux",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Renaissance",
+          "en": "Renaissance",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Léonard",
+          "en": "Léonard",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Gutenberg",
+          "en": "Gutenberg",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Machiavel",
+          "en": "Machiavel",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Érasme",
+          "en": "Érasme",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Copernic",
+          "en": "Copernic",
+          "theme": "contenus"
         },
         {
-          "fr": "chronologie",
-          "en": "chronologie (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Luther",
+          "en": "Luther",
+          "theme": "contenus"
         },
         {
-          "fr": "source",
-          "en": "source (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Calvin",
+          "en": "Calvin",
+          "theme": "contenus"
         },
         {
-          "fr": "monument",
-          "en": "monument (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "Réforme",
+          "en": "Réforme",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "humanisme",
+          "en": "humanisme",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau 5e, tri 2)",
-          "theme": "vocabulaire / textes"
+          "fr": "imprimer",
+          "en": "imprimer",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau 5e ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 5e",
+          "bonne": "Grèce",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "Romain",
+            "Égypte",
+            "Mésopotamie"
           ],
-          "explication": "époque = concept clé du 5e en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "Romain",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "Égypte",
+            "Mésopotamie",
+            "féodalité"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine textes courts"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme 5e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme 5e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme 5e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme 5e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Grèce",
+          "en": "Grèce",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Romain",
+          "en": "Romain",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Égypte",
+          "en": "Égypte",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Mésopotamie",
+          "en": "Mésopotamie",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "féodalité",
+          "en": "féodalité",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Église",
+          "en": "Église",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "croisades",
+          "en": "croisades",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "chevaliers",
+          "en": "chevaliers",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "châteaux",
+          "en": "châteaux",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Renaissance",
+          "en": "Renaissance",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Léonard",
+          "en": "Léonard",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Gutenberg",
+          "en": "Gutenberg",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Machiavel",
+          "en": "Machiavel",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Érasme",
+          "en": "Érasme",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Copernic",
+          "en": "Copernic",
+          "theme": "contenus"
         },
         {
-          "fr": "chronologie",
-          "en": "chronologie (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Luther",
+          "en": "Luther",
+          "theme": "contenus"
         },
         {
-          "fr": "source",
-          "en": "source (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Calvin",
+          "en": "Calvin",
+          "theme": "contenus"
         },
         {
-          "fr": "monument",
-          "en": "monument (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "Réforme",
+          "en": "Réforme",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "humanisme",
+          "en": "humanisme",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau 5e, tri 3)",
-          "theme": "vocabulaire / textes"
+          "fr": "imprimer",
+          "en": "imprimer",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau 5e ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 5e",
+          "bonne": "Grèce",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "Romain",
+            "Égypte",
+            "Mésopotamie"
           ],
-          "explication": "époque = concept clé du 5e en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 5e couvre vocabulaire avancé",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu 5e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "Romain",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "Égypte",
+            "Mésopotamie",
+            "féodalité"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus textes courts : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau 5e____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine textes courts"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "vocabulaire avancé est au programme 5e",
+          "consigne": "V/F",
+          "enonce": "Programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, vocabulaire avancé = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 5e",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme 5e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 5e",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme 5e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 5e",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme 5e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 5e",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme 5e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 5e",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme 5e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 5e",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme 5e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 5e",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme 5e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 5e",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme 5e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 5e",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme 5e"
+          "explication": "E14"
         }
       ]
     }

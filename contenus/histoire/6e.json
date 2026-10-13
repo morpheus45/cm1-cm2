@@ -4,768 +4,756 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "chronologie",
-          "en": "chronologie (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "source",
-          "en": "source (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "monument",
-          "en": "monument (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau 6e, tri 1)",
-          "theme": "conjugaison / temps"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau 6e ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 6e",
+          "bonne": "terme1",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "époque = concept clé du 6e en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 6e couvre conjugaison présent",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu 6e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "terme2",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "terme3"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps passé simple : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau 6e____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine temps passé simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "conjugaison présent est au programme 6e",
+          "consigne": "V/F",
+          "enonce": "Programme 6e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 6e",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme 6e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 6e",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme 6e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 6e",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme 6e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 6e",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme 6e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 6e",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme 6e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 6e",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme 6e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 6e",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme 6e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 6e",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme 6e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 6e",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme 6e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "chronologie",
-          "en": "chronologie (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "source",
-          "en": "source (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "monument",
-          "en": "monument (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau 6e, tri 2)",
-          "theme": "conjugaison / temps"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau 6e ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 6e",
+          "bonne": "terme1",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "époque = concept clé du 6e en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 6e couvre conjugaison présent",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu 6e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "terme2",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "terme3"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps passé simple : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau 6e____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine temps passé simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "conjugaison présent est au programme 6e",
+          "consigne": "V/F",
+          "enonce": "Programme 6e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 6e",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme 6e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 6e",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme 6e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 6e",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme 6e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 6e",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme 6e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 6e",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme 6e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 6e",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme 6e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 6e",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme 6e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 6e",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme 6e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 6e",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme 6e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "époque",
-          "en": "époque (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "terme1",
+          "en": "terme1",
+          "theme": "contenus"
         },
         {
-          "fr": "période",
-          "en": "période (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "terme2",
+          "en": "terme2",
+          "theme": "contenus"
         },
         {
-          "fr": "siècle",
-          "en": "siècle (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "terme3",
+          "en": "terme3",
+          "theme": "contenus"
         },
         {
-          "fr": "roi",
-          "en": "roi (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "contenus"
         },
         {
-          "fr": "reine",
-          "en": "reine (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "contenus"
         },
         {
-          "fr": "guerre",
-          "en": "guerre (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "contenus"
         },
         {
-          "fr": "paix",
-          "en": "paix (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "contenus"
         },
         {
-          "fr": "révolution",
-          "en": "révolution (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "contenus"
         },
         {
-          "fr": "empire",
-          "en": "empire (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t5",
+          "en": "d5",
+          "theme": "contenus"
         },
         {
-          "fr": "colonie",
-          "en": "colonie (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t6",
+          "en": "d6",
+          "theme": "contenus"
         },
         {
-          "fr": "indépendance",
-          "en": "indépendance (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t7",
+          "en": "d7",
+          "theme": "contenus"
         },
         {
-          "fr": "civilisation",
-          "en": "civilisation (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t8",
+          "en": "d8",
+          "theme": "contenus"
         },
         {
-          "fr": "événement",
-          "en": "événement (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t9",
+          "en": "d9",
+          "theme": "contenus"
         },
         {
-          "fr": "personnage",
-          "en": "personnage (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t10",
+          "en": "d10",
+          "theme": "contenus"
         },
         {
-          "fr": "document",
-          "en": "document (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t11",
+          "en": "d11",
+          "theme": "contenus"
         },
         {
-          "fr": "chronologie",
-          "en": "chronologie (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t12",
+          "en": "d12",
+          "theme": "contenus"
         },
         {
-          "fr": "source",
-          "en": "source (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t13",
+          "en": "d13",
+          "theme": "contenus"
         },
         {
-          "fr": "monument",
-          "en": "monument (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t14",
+          "en": "d14",
+          "theme": "contenus"
         },
         {
-          "fr": "héritage",
-          "en": "héritage (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t15",
+          "en": "d15",
+          "theme": "contenus"
         },
         {
-          "fr": "tradition",
-          "en": "tradition (niveau 6e, tri 3)",
-          "theme": "conjugaison / temps"
+          "fr": "t16",
+          "en": "d16",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Histoire, quel terme appartient au niveau 6e ?",
-          "bonne": "époque",
+          "consigne": "Choix",
+          "enonce": "Thème Histoire niveau 6e",
+          "bonne": "terme1",
           "fausses": [
-            "période",
-            "siècle",
-            "roi"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "époque = concept clé du 6e en Histoire"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 6e couvre conjugaison présent",
+          "consigne": "V/F",
+          "enonce": "Histoire au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu 6e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "reine",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Histoire____",
+          "bonne": "terme2",
           "fausses": [
-            "guerre",
-            "paix",
-            "révolution"
+            "terme3"
           ],
-          "explication": "reine = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus temps passé simple : quel terme ?",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Niveau 6e____",
+          "bonne": "oui",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "non"
           ],
-          "explication": "empire = domaine temps passé simple"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "conjugaison présent est au programme 6e",
+          "consigne": "V/F",
+          "enonce": "Programme 6e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, conjugaison présent = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 6e",
-          "bonne": "guerre",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "paix",
-            "révolution",
-            "empire"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "guerre = élément programme 6e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 6e",
-          "bonne": "paix",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "révolution",
-            "empire",
-            "colonie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "paix = élément programme 6e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 6e",
-          "bonne": "révolution",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "empire",
-            "colonie",
-            "indépendance"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "révolution = élément programme 6e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 6e",
-          "bonne": "empire",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "colonie",
-            "indépendance",
-            "civilisation"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "empire = élément programme 6e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 6e",
-          "bonne": "colonie",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "indépendance",
-            "civilisation",
-            "événement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "colonie = élément programme 6e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 6e",
-          "bonne": "indépendance",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "civilisation",
-            "événement",
-            "personnage"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "indépendance = élément programme 6e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 6e",
-          "bonne": "civilisation",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "événement",
-            "personnage",
-            "document"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "civilisation = élément programme 6e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 6e",
-          "bonne": "événement",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "personnage",
-            "document",
-            "chronologie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "événement = élément programme 6e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 6e",
-          "bonne": "personnage",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "document",
-            "chronologie",
-            "source"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "personnage = élément programme 6e"
+          "explication": "E14"
         }
       ]
     }

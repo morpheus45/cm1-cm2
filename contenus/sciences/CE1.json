@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "tête",
+          "en": "tête",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "poumons",
+          "en": "poumons",
+          "theme": "contenus"
         },
         {
-          "fr": "force",
-          "en": "force (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "os",
+          "en": "os",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "peau",
+          "en": "peau",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "mammifère",
+          "en": "mammifère",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "oiseau",
+          "en": "oiseau",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "poisson",
+          "en": "poisson",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "reptile",
+          "en": "reptile",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "insecte",
+          "en": "insecte",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "racine",
+          "en": "racine",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "tige",
+          "en": "tige",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "feuille",
+          "en": "feuille",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "fleur",
+          "en": "fleur",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "fruit",
+          "en": "fruit",
+          "theme": "contenus"
         },
         {
-          "fr": "génétique",
-          "en": "génétique (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "solide",
+          "en": "solide",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "liquide",
+          "en": "liquide",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "gaz",
+          "en": "gaz",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "eau",
+          "en": "eau",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "pierre",
+          "en": "pierre",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau CE1 ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau CE1",
+          "bonne": "tête",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "cœur",
+            "poumons",
+            "os"
           ],
-          "explication": "atome = concept clé du CE1 en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "cœur",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "poumons",
+            "os",
+            "peau"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme CE1"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "tête",
+          "en": "tête",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "poumons",
+          "en": "poumons",
+          "theme": "contenus"
         },
         {
-          "fr": "force",
-          "en": "force (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "os",
+          "en": "os",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "peau",
+          "en": "peau",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "mammifère",
+          "en": "mammifère",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "oiseau",
+          "en": "oiseau",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "poisson",
+          "en": "poisson",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "reptile",
+          "en": "reptile",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "insecte",
+          "en": "insecte",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "racine",
+          "en": "racine",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "tige",
+          "en": "tige",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "feuille",
+          "en": "feuille",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "fleur",
+          "en": "fleur",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "fruit",
+          "en": "fruit",
+          "theme": "contenus"
         },
         {
-          "fr": "génétique",
-          "en": "génétique (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "solide",
+          "en": "solide",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "liquide",
+          "en": "liquide",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "gaz",
+          "en": "gaz",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "eau",
+          "en": "eau",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "pierre",
+          "en": "pierre",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau CE1 ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau CE1",
+          "bonne": "tête",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "cœur",
+            "poumons",
+            "os"
           ],
-          "explication": "atome = concept clé du CE1 en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "cœur",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "poumons",
+            "os",
+            "peau"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme CE1"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "atome",
-          "en": "atome (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "tête",
+          "en": "tête",
+          "theme": "contenus"
         },
         {
-          "fr": "molécule",
-          "en": "molécule (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "contenus"
         },
         {
-          "fr": "énergie",
-          "en": "énergie (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "poumons",
+          "en": "poumons",
+          "theme": "contenus"
         },
         {
-          "fr": "force",
-          "en": "force (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "os",
+          "en": "os",
+          "theme": "contenus"
         },
         {
-          "fr": "lumière",
-          "en": "lumière (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "peau",
+          "en": "peau",
+          "theme": "contenus"
         },
         {
-          "fr": "son",
-          "en": "son (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "mammifère",
+          "en": "mammifère",
+          "theme": "contenus"
         },
         {
-          "fr": "chaleur",
-          "en": "chaleur (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "oiseau",
+          "en": "oiseau",
+          "theme": "contenus"
         },
         {
-          "fr": "électricité",
-          "en": "électricité (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "poisson",
+          "en": "poisson",
+          "theme": "contenus"
         },
         {
-          "fr": "aimant",
-          "en": "aimant (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "reptile",
+          "en": "reptile",
+          "theme": "contenus"
         },
         {
-          "fr": "cellule",
-          "en": "cellule (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "insecte",
+          "en": "insecte",
+          "theme": "contenus"
         },
         {
-          "fr": "plante",
-          "en": "plante (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "racine",
+          "en": "racine",
+          "theme": "contenus"
         },
         {
-          "fr": "animal",
-          "en": "animal (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "tige",
+          "en": "tige",
+          "theme": "contenus"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "feuille",
+          "en": "feuille",
+          "theme": "contenus"
         },
         {
-          "fr": "environnement",
-          "en": "environnement (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "fleur",
+          "en": "fleur",
+          "theme": "contenus"
         },
         {
-          "fr": "évolution",
-          "en": "évolution (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "fruit",
+          "en": "fruit",
+          "theme": "contenus"
         },
         {
-          "fr": "génétique",
-          "en": "génétique (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "solide",
+          "en": "solide",
+          "theme": "contenus"
         },
         {
-          "fr": "chimie",
-          "en": "chimie (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "liquide",
+          "en": "liquide",
+          "theme": "contenus"
         },
         {
-          "fr": "physique",
-          "en": "physique (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "gaz",
+          "en": "gaz",
+          "theme": "contenus"
         },
         {
-          "fr": "biologie",
-          "en": "biologie (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "eau",
+          "en": "eau",
+          "theme": "contenus"
         },
         {
-          "fr": "expérience",
-          "en": "expérience (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "pierre",
+          "en": "pierre",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Sciences, quel terme appartient au niveau CE1 ?",
-          "bonne": "atome",
+          "consigne": "Choix",
+          "enonce": "Thème Sciences niveau CE1",
+          "bonne": "tête",
           "fausses": [
-            "molécule",
-            "énergie",
-            "force"
+            "cœur",
+            "poumons",
+            "os"
           ],
-          "explication": "atome = concept clé du CE1 en Sciences"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "Sciences au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "lumière",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Sciences____",
+          "bonne": "cœur",
           "fausses": [
-            "son",
-            "chaleur",
-            "électricité"
+            "poumons",
+            "os",
+            "peau"
           ],
-          "explication": "lumière = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "non"
           ],
-          "explication": "aimant = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "son",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "chaleur",
-            "électricité",
-            "aimant"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "son = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "chaleur",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "électricité",
-            "aimant",
-            "cellule"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "chaleur = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "électricité",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "aimant",
-            "cellule",
-            "plante"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "électricité = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "aimant",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "cellule",
-            "plante",
-            "animal"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "aimant = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "cellule",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "plante",
-            "animal",
-            "écosystème"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "cellule = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "plante",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "animal",
-            "écosystème",
-            "environnement"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "plante = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "animal",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "écosystème",
-            "environnement",
-            "évolution"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "animal = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "écosystème",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "environnement",
-            "évolution",
-            "génétique"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "écosystème = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "environnement",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "évolution",
-            "génétique",
-            "chimie"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "environnement = élément programme CE1"
+          "explication": "E14"
         }
       ]
     }

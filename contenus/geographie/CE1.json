@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "maison",
+          "en": "maison",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "école",
+          "en": "école",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "rue",
+          "en": "rue",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "parc",
+          "en": "parc",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "magasin",
+          "en": "magasin",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "église",
+          "en": "église",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "gare",
+          "en": "gare",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "hôpital",
+          "en": "hôpital",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "musée",
+          "en": "musée",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "bibliothèque",
+          "en": "bibliothèque",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "nord",
+          "en": "nord",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "sud",
+          "en": "sud",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "est",
+          "en": "est",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "capitale",
-          "en": "capitale (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "latitude",
-          "en": "latitude (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "longitude",
-          "en": "longitude (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "fr": "ouest",
+          "en": "ouest",
+          "theme": "contenus"
         },
         {
           "fr": "carte",
-          "en": "carte (niveau CE1, tri 1)",
-          "theme": "premiers / salutations"
+          "en": "carte",
+          "theme": "contenus"
+        },
+        {
+          "fr": "plan",
+          "en": "plan",
+          "theme": "contenus"
+        },
+        {
+          "fr": "chemin",
+          "en": "chemin",
+          "theme": "contenus"
+        },
+        {
+          "fr": "route",
+          "en": "route",
+          "theme": "contenus"
+        },
+        {
+          "fr": "bridge",
+          "en": "bridge",
+          "theme": "contenus"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau CE1 ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau CE1",
+          "bonne": "maison",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "école",
+            "rue",
+            "parc"
           ],
-          "explication": "continent = concept clé du CE1 en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "école",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "rue",
+            "parc",
+            "magasin"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme CE1"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "maison",
+          "en": "maison",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "école",
+          "en": "école",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "rue",
+          "en": "rue",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "parc",
+          "en": "parc",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "magasin",
+          "en": "magasin",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "église",
+          "en": "église",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "gare",
+          "en": "gare",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "hôpital",
+          "en": "hôpital",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "musée",
+          "en": "musée",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "bibliothèque",
+          "en": "bibliothèque",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "nord",
+          "en": "nord",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "sud",
+          "en": "sud",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "est",
+          "en": "est",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "capitale",
-          "en": "capitale (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "latitude",
-          "en": "latitude (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "longitude",
-          "en": "longitude (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "fr": "ouest",
+          "en": "ouest",
+          "theme": "contenus"
         },
         {
           "fr": "carte",
-          "en": "carte (niveau CE1, tri 2)",
-          "theme": "premiers / salutations"
+          "en": "carte",
+          "theme": "contenus"
+        },
+        {
+          "fr": "plan",
+          "en": "plan",
+          "theme": "contenus"
+        },
+        {
+          "fr": "chemin",
+          "en": "chemin",
+          "theme": "contenus"
+        },
+        {
+          "fr": "route",
+          "en": "route",
+          "theme": "contenus"
+        },
+        {
+          "fr": "bridge",
+          "en": "bridge",
+          "theme": "contenus"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau CE1 ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau CE1",
+          "bonne": "maison",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "école",
+            "rue",
+            "parc"
           ],
-          "explication": "continent = concept clé du CE1 en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "école",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "rue",
+            "parc",
+            "magasin"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme CE1"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "maison",
+          "en": "maison",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "école",
+          "en": "école",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "rue",
+          "en": "rue",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "parc",
+          "en": "parc",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "magasin",
+          "en": "magasin",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "église",
+          "en": "église",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "gare",
+          "en": "gare",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "hôpital",
+          "en": "hôpital",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "musée",
+          "en": "musée",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "bibliothèque",
+          "en": "bibliothèque",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "nord",
+          "en": "nord",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "sud",
+          "en": "sud",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "est",
+          "en": "est",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "capitale",
-          "en": "capitale (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "latitude",
-          "en": "latitude (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "longitude",
-          "en": "longitude (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "équateur",
-          "en": "équateur (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
-        },
-        {
-          "fr": "pôle",
-          "en": "pôle (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "fr": "ouest",
+          "en": "ouest",
+          "theme": "contenus"
         },
         {
           "fr": "carte",
-          "en": "carte (niveau CE1, tri 3)",
-          "theme": "premiers / salutations"
+          "en": "carte",
+          "theme": "contenus"
+        },
+        {
+          "fr": "plan",
+          "en": "plan",
+          "theme": "contenus"
+        },
+        {
+          "fr": "chemin",
+          "en": "chemin",
+          "theme": "contenus"
+        },
+        {
+          "fr": "route",
+          "en": "route",
+          "theme": "contenus"
+        },
+        {
+          "fr": "bridge",
+          "en": "bridge",
+          "theme": "contenus"
+        },
+        {
+          "fr": "fleuve",
+          "en": "fleuve",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau CE1 ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau CE1",
+          "bonne": "maison",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "école",
+            "rue",
+            "parc"
           ],
-          "explication": "continent = concept clé du CE1 en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le CE1 couvre premiers mots",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu CE1"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "école",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "rue",
+            "parc",
+            "magasin"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus salutations : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau CE1____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine salutations"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "premiers mots est au programme CE1",
+          "consigne": "V/F",
+          "enonce": "Programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, premiers mots = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du CE1",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme CE1"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du CE1",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme CE1"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du CE1",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme CE1"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du CE1",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme CE1"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du CE1",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme CE1"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du CE1",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme CE1"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du CE1",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme CE1"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du CE1",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme CE1"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du CE1",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme CE1"
+          "explication": "E14"
         }
       ]
     }

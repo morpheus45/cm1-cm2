@@ -4,768 +4,762 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "échange",
+          "en": "échange",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "multinational",
+          "en": "multinational",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "délocalisation",
+          "en": "délocalisation",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "flux",
+          "en": "flux",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "réseau",
+          "en": "réseau",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "puissance",
+          "en": "puissance",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "géopolitique",
+          "en": "géopolitique",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "hégémonie",
+          "en": "hégémonie",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "multipolaire",
+          "en": "multipolaire",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "bipolaire",
+          "en": "bipolaire",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "ONU",
+          "en": "ONU",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "traité",
+          "en": "traité",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "bloc",
+          "en": "bloc",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "marché",
+          "en": "marché",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "supranational",
+          "en": "supranational",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "intégration",
+          "en": "intégration",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "conflit",
+          "en": "conflit",
+          "theme": "contenus"
         },
         {
-          "fr": "équateur",
-          "en": "équateur (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "paix",
+          "en": "paix",
+          "theme": "contenus"
         },
         {
-          "fr": "pôle",
-          "en": "pôle (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "développement",
+          "en": "développement",
+          "theme": "contenus"
         },
         {
-          "fr": "carte",
-          "en": "carte (niveau 3e, tri 1)",
-          "theme": "histoire / essai"
+          "fr": "inégalités",
+          "en": "inégalités",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 3e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 3e",
+          "bonne": "échange",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "multinational",
+            "délocalisation",
+            "flux"
           ],
-          "explication": "continent = concept clé du 3e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "multinational",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "délocalisation",
+            "flux",
+            "réseau"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 3e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine essai argumenté"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "V/F",
+          "enonce": "Programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 3e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 3e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 3e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 3e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 3e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 3e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 3e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 3e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 3e"
+          "explication": "E14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "échange",
+          "en": "échange",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "multinational",
+          "en": "multinational",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "délocalisation",
+          "en": "délocalisation",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "flux",
+          "en": "flux",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "réseau",
+          "en": "réseau",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "puissance",
+          "en": "puissance",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "géopolitique",
+          "en": "géopolitique",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "hégémonie",
+          "en": "hégémonie",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "multipolaire",
+          "en": "multipolaire",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "bipolaire",
+          "en": "bipolaire",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "ONU",
+          "en": "ONU",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "traité",
+          "en": "traité",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "bloc",
+          "en": "bloc",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "marché",
+          "en": "marché",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "supranational",
+          "en": "supranational",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "intégration",
+          "en": "intégration",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "conflit",
+          "en": "conflit",
+          "theme": "contenus"
         },
         {
-          "fr": "équateur",
-          "en": "équateur (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "paix",
+          "en": "paix",
+          "theme": "contenus"
         },
         {
-          "fr": "pôle",
-          "en": "pôle (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "développement",
+          "en": "développement",
+          "theme": "contenus"
         },
         {
-          "fr": "carte",
-          "en": "carte (niveau 3e, tri 2)",
-          "theme": "histoire / essai"
+          "fr": "inégalités",
+          "en": "inégalités",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 3e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 3e",
+          "bonne": "échange",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "multinational",
+            "délocalisation",
+            "flux"
           ],
-          "explication": "continent = concept clé du 3e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "multinational",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "délocalisation",
+            "flux",
+            "réseau"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 3e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine essai argumenté"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "V/F",
+          "enonce": "Programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 3e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 3e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 3e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 3e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 3e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 3e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 3e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 3e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 3e"
+          "explication": "E14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "continent",
-          "en": "continent (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "échange",
+          "en": "échange",
+          "theme": "contenus"
         },
         {
-          "fr": "pays",
-          "en": "pays (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "multinational",
+          "en": "multinational",
+          "theme": "contenus"
         },
         {
-          "fr": "ville",
-          "en": "ville (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "délocalisation",
+          "en": "délocalisation",
+          "theme": "contenus"
         },
         {
-          "fr": "montagne",
-          "en": "montagne (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "flux",
+          "en": "flux",
+          "theme": "contenus"
         },
         {
-          "fr": "fleuve",
-          "en": "fleuve (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "réseau",
+          "en": "réseau",
+          "theme": "contenus"
         },
         {
-          "fr": "océan",
-          "en": "océan (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "puissance",
+          "en": "puissance",
+          "theme": "contenus"
         },
         {
-          "fr": "île",
-          "en": "île (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "géopolitique",
+          "en": "géopolitique",
+          "theme": "contenus"
         },
         {
-          "fr": "climat",
-          "en": "climat (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "hégémonie",
+          "en": "hégémonie",
+          "theme": "contenus"
         },
         {
-          "fr": "ressource",
-          "en": "ressource (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "multipolaire",
+          "en": "multipolaire",
+          "theme": "contenus"
         },
         {
-          "fr": "population",
-          "en": "population (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "bipolaire",
+          "en": "bipolaire",
+          "theme": "contenus"
         },
         {
-          "fr": "densité",
-          "en": "densité (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "ONU",
+          "en": "ONU",
+          "theme": "contenus"
         },
         {
-          "fr": "culture",
-          "en": "culture (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "traité",
+          "en": "traité",
+          "theme": "contenus"
         },
         {
-          "fr": "langue",
-          "en": "langue (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "bloc",
+          "en": "bloc",
+          "theme": "contenus"
         },
         {
-          "fr": "frontière",
-          "en": "frontière (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "marché",
+          "en": "marché",
+          "theme": "contenus"
         },
         {
-          "fr": "capitale",
-          "en": "capitale (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "supranational",
+          "en": "supranational",
+          "theme": "contenus"
         },
         {
-          "fr": "latitude",
-          "en": "latitude (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "intégration",
+          "en": "intégration",
+          "theme": "contenus"
         },
         {
-          "fr": "longitude",
-          "en": "longitude (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "conflit",
+          "en": "conflit",
+          "theme": "contenus"
         },
         {
-          "fr": "équateur",
-          "en": "équateur (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "paix",
+          "en": "paix",
+          "theme": "contenus"
         },
         {
-          "fr": "pôle",
-          "en": "pôle (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "développement",
+          "en": "développement",
+          "theme": "contenus"
         },
         {
-          "fr": "carte",
-          "en": "carte (niveau 3e, tri 3)",
-          "theme": "histoire / essai"
+          "fr": "inégalités",
+          "en": "inégalités",
+          "theme": "contenus"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix multiple",
-          "enonce": "En Geographie, quel terme appartient au niveau 3e ?",
-          "bonne": "continent",
+          "consigne": "Choix",
+          "enonce": "Thème Geographie niveau 3e",
+          "bonne": "échange",
           "fausses": [
-            "pays",
-            "ville",
-            "montagne"
+            "multinational",
+            "délocalisation",
+            "flux"
           ],
-          "explication": "continent = concept clé du 3e en Geographie"
+          "explication": "Bonne réponse"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "Le 3e couvre histoire littéraire",
+          "consigne": "V/F",
+          "enonce": "Geographie au programme",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu 3e"
+          "explication": "C'est au programme"
         },
         {
-          "consigne": "Remplir le blanc",
-          "enonce": "Un concept important : ___",
-          "bonne": "fleuve",
+          "consigne": "Rempl",
+          "enonce": "Un terme de Geographie____",
+          "bonne": "multinational",
           "fausses": [
-            "océan",
-            "île",
-            "climat"
+            "délocalisation",
+            "flux",
+            "réseau"
           ],
-          "explication": "fleuve = élément du programme"
+          "explication": "Remplissage"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Focus essai argumenté : quel terme ?",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Niveau 3e____",
+          "bonne": "oui",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "non"
           ],
-          "explication": "ressource = domaine essai argumenté"
+          "explication": "Confirmation"
         },
         {
-          "consigne": "Vrai ou Faux",
-          "enonce": "histoire littéraire est au programme 3e",
+          "consigne": "V/F",
+          "enonce": "Programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Oui, histoire littéraire = contenu officiel"
+          "explication": "Contenu"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 6 : concept du 3e",
-          "bonne": "océan",
+          "consigne": "Choix",
+          "enonce": "Q6",
+          "bonne": "rép",
           "fausses": [
-            "île",
-            "climat",
-            "ressource"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "océan = élément programme 3e"
+          "explication": "E6"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 7 : concept du 3e",
-          "bonne": "île",
+          "consigne": "Choix",
+          "enonce": "Q7",
+          "bonne": "rép",
           "fausses": [
-            "climat",
-            "ressource",
-            "population"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "île = élément programme 3e"
+          "explication": "E7"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 8 : concept du 3e",
-          "bonne": "climat",
+          "consigne": "Choix",
+          "enonce": "Q8",
+          "bonne": "rép",
           "fausses": [
-            "ressource",
-            "population",
-            "densité"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "climat = élément programme 3e"
+          "explication": "E8"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 9 : concept du 3e",
-          "bonne": "ressource",
+          "consigne": "Choix",
+          "enonce": "Q9",
+          "bonne": "rép",
           "fausses": [
-            "population",
-            "densité",
-            "culture"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "ressource = élément programme 3e"
+          "explication": "E9"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 10 : concept du 3e",
-          "bonne": "population",
+          "consigne": "Choix",
+          "enonce": "Q10",
+          "bonne": "rép",
           "fausses": [
-            "densité",
-            "culture",
-            "langue"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "population = élément programme 3e"
+          "explication": "E10"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 11 : concept du 3e",
-          "bonne": "densité",
+          "consigne": "Choix",
+          "enonce": "Q11",
+          "bonne": "rép",
           "fausses": [
-            "culture",
-            "langue",
-            "frontière"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "densité = élément programme 3e"
+          "explication": "E11"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 12 : concept du 3e",
-          "bonne": "culture",
+          "consigne": "Choix",
+          "enonce": "Q12",
+          "bonne": "rép",
           "fausses": [
-            "langue",
-            "frontière",
-            "capitale"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "culture = élément programme 3e"
+          "explication": "E12"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 13 : concept du 3e",
-          "bonne": "langue",
+          "consigne": "Choix",
+          "enonce": "Q13",
+          "bonne": "rép",
           "fausses": [
-            "frontière",
-            "capitale",
-            "latitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "langue = élément programme 3e"
+          "explication": "E13"
         },
         {
-          "consigne": "Choix multiple",
-          "enonce": "Question 14 : concept du 3e",
-          "bonne": "frontière",
+          "consigne": "Choix",
+          "enonce": "Q14",
+          "bonne": "rép",
           "fausses": [
-            "capitale",
-            "latitude",
-            "longitude"
+            "f1",
+            "f2",
+            "f3"
           ],
-          "explication": "frontière = élément programme 3e"
+          "explication": "E14"
         }
       ]
     }
