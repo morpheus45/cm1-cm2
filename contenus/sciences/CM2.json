@@ -4,756 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "système nerveux",
+          "en": "système nerveux (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "système circulatoire",
+          "en": "système circulatoire (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "système respiratoire",
+          "en": "système respiratoire (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "système digestif",
+          "en": "système digestif (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "reproduction",
+          "en": "reproduction (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "hérédité",
+          "en": "hérédité (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "gènes",
+          "en": "gènes (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "cellule",
+          "en": "cellule (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "organisme",
+          "en": "organisme (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "photosynthèse",
+          "en": "photosynthèse (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "respiration cellulaire",
+          "en": "respiration cellulaire (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "écosystème",
+          "en": "écosystème (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "conservation",
+          "en": "conservation (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t5",
           "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "systèmes"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau CM2",
-          "bonne": "terme1",
+          "enonce": "Concept Sciences niveau CM2",
+          "bonne": "système nerveux",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "système circulatoire",
+            "système respiratoire",
+            "système digestif"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CM2"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme CM2",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
-          "bonne": "terme2",
+          "enonce": "Complète: systèmes complexes",
+          "bonne": "système circulatoire",
           "fausses": [
-            "terme3"
+            "système respiratoire",
+            "système digestif",
+            "reproduction"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CM2____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "système nerveux",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CM2",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CM2"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "système nerveux",
+          "en": "système nerveux (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "système circulatoire",
+          "en": "système circulatoire (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "système respiratoire",
+          "en": "système respiratoire (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "système digestif",
+          "en": "système digestif (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "reproduction",
+          "en": "reproduction (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "hérédité",
+          "en": "hérédité (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "gènes",
+          "en": "gènes (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "cellule",
+          "en": "cellule (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "organisme",
+          "en": "organisme (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "photosynthèse",
+          "en": "photosynthèse (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "respiration cellulaire",
+          "en": "respiration cellulaire (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "écosystème",
+          "en": "écosystème (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "conservation",
+          "en": "conservation (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t5",
           "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "systèmes"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau CM2",
-          "bonne": "terme1",
+          "enonce": "Concept Sciences niveau CM2",
+          "bonne": "système nerveux",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "système circulatoire",
+            "système respiratoire",
+            "système digestif"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CM2"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme CM2",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
-          "bonne": "terme2",
+          "enonce": "Complète: systèmes complexes",
+          "bonne": "système circulatoire",
           "fausses": [
-            "terme3"
+            "système respiratoire",
+            "système digestif",
+            "reproduction"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CM2____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "système nerveux",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CM2",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CM2"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "système nerveux",
+          "en": "système nerveux (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "système circulatoire",
+          "en": "système circulatoire (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "système respiratoire",
+          "en": "système respiratoire (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "système digestif",
+          "en": "système digestif (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "reproduction",
+          "en": "reproduction (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "hérédité",
+          "en": "hérédité (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "gènes",
+          "en": "gènes (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "cellule",
+          "en": "cellule (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "organisme",
+          "en": "organisme (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "photosynthèse",
+          "en": "photosynthèse (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "respiration cellulaire",
+          "en": "respiration cellulaire (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "écosystème",
+          "en": "écosystème (systèmes complexes)",
+          "theme": "systèmes"
+        },
+        {
+          "fr": "conservation",
+          "en": "conservation (systèmes complexes)",
+          "theme": "systèmes"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
+          "theme": "systèmes"
         },
         {
           "fr": "t5",
           "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "systèmes"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau CM2",
-          "bonne": "terme1",
+          "enonce": "Concept Sciences niveau CM2",
+          "bonne": "système nerveux",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "système circulatoire",
+            "système respiratoire",
+            "système digestif"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CM2"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme CM2",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
-          "bonne": "terme2",
+          "enonce": "Complète: systèmes complexes",
+          "bonne": "système circulatoire",
           "fausses": [
-            "terme3"
+            "système respiratoire",
+            "système digestif",
+            "reproduction"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CM2____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "système nerveux",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CM2",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CM2"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

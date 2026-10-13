@@ -5,129 +5,129 @@
       "vocabulaire": [
         {
           "fr": "lumière",
-          "en": "lumière",
-          "theme": "contenus"
+          "en": "lumière (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "réflexion",
-          "en": "réflexion",
-          "theme": "contenus"
+          "en": "réflexion (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "réfraction",
-          "en": "réfraction",
-          "theme": "contenus"
+          "en": "réfraction (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "lentille",
-          "en": "lentille",
-          "theme": "contenus"
+          "en": "lentille (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "couleur",
-          "en": "couleur",
-          "theme": "contenus"
+          "en": "couleur (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "spectre",
-          "en": "spectre",
-          "theme": "contenus"
+          "en": "spectre (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "atome",
-          "en": "atome",
-          "theme": "contenus"
+          "en": "atome (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "molécule",
-          "en": "molécule",
-          "theme": "contenus"
+          "en": "molécule (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "élément",
-          "en": "élément",
-          "theme": "contenus"
+          "en": "élément (optique et chimie)",
+          "theme": "optique"
         },
         {
-          "fr": "réaction",
-          "en": "réaction",
-          "theme": "contenus"
+          "fr": "réaction chimique",
+          "en": "réaction chimique (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "oxydation",
-          "en": "oxydation",
-          "theme": "contenus"
+          "en": "oxydation (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "mécanique",
-          "en": "mécanique",
-          "theme": "contenus"
+          "en": "mécanique (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "force",
-          "en": "force",
-          "theme": "contenus"
+          "en": "force (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "poids",
-          "en": "poids",
-          "theme": "contenus"
+          "en": "poids (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "frottement",
-          "en": "frottement",
-          "theme": "contenus"
+          "en": "frottement (optique et chimie)",
+          "theme": "optique"
         },
         {
-          "fr": "vitesse",
-          "en": "vitesse",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "optique"
         },
         {
-          "fr": "accélération",
-          "en": "accélération",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "optique"
         },
         {
-          "fr": "cellule",
-          "en": "cellule",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "optique"
         },
         {
-          "fr": "ADN",
-          "en": "ADN",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "optique"
         },
         {
-          "fr": "chromosome",
-          "en": "chromosome",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "optique"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau 5e",
+          "enonce": "Concept Sciences niveau 5e",
           "bonne": "lumière",
           "fausses": [
             "réflexion",
             "réfraction",
             "lentille"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 5e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
+          "enonce": "Complète: optique et chimie",
           "bonne": "réflexion",
           "fausses": [
             "réfraction",
@@ -138,120 +138,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 5e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "lumière",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 5e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 5e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -259,129 +261,129 @@
       "vocabulaire": [
         {
           "fr": "lumière",
-          "en": "lumière",
-          "theme": "contenus"
+          "en": "lumière (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "réflexion",
-          "en": "réflexion",
-          "theme": "contenus"
+          "en": "réflexion (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "réfraction",
-          "en": "réfraction",
-          "theme": "contenus"
+          "en": "réfraction (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "lentille",
-          "en": "lentille",
-          "theme": "contenus"
+          "en": "lentille (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "couleur",
-          "en": "couleur",
-          "theme": "contenus"
+          "en": "couleur (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "spectre",
-          "en": "spectre",
-          "theme": "contenus"
+          "en": "spectre (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "atome",
-          "en": "atome",
-          "theme": "contenus"
+          "en": "atome (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "molécule",
-          "en": "molécule",
-          "theme": "contenus"
+          "en": "molécule (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "élément",
-          "en": "élément",
-          "theme": "contenus"
+          "en": "élément (optique et chimie)",
+          "theme": "optique"
         },
         {
-          "fr": "réaction",
-          "en": "réaction",
-          "theme": "contenus"
+          "fr": "réaction chimique",
+          "en": "réaction chimique (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "oxydation",
-          "en": "oxydation",
-          "theme": "contenus"
+          "en": "oxydation (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "mécanique",
-          "en": "mécanique",
-          "theme": "contenus"
+          "en": "mécanique (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "force",
-          "en": "force",
-          "theme": "contenus"
+          "en": "force (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "poids",
-          "en": "poids",
-          "theme": "contenus"
+          "en": "poids (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "frottement",
-          "en": "frottement",
-          "theme": "contenus"
+          "en": "frottement (optique et chimie)",
+          "theme": "optique"
         },
         {
-          "fr": "vitesse",
-          "en": "vitesse",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "optique"
         },
         {
-          "fr": "accélération",
-          "en": "accélération",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "optique"
         },
         {
-          "fr": "cellule",
-          "en": "cellule",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "optique"
         },
         {
-          "fr": "ADN",
-          "en": "ADN",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "optique"
         },
         {
-          "fr": "chromosome",
-          "en": "chromosome",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "optique"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau 5e",
+          "enonce": "Concept Sciences niveau 5e",
           "bonne": "lumière",
           "fausses": [
             "réflexion",
             "réfraction",
             "lentille"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 5e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
+          "enonce": "Complète: optique et chimie",
           "bonne": "réflexion",
           "fausses": [
             "réfraction",
@@ -392,120 +394,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 5e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "lumière",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 5e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 5e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -513,129 +517,129 @@
       "vocabulaire": [
         {
           "fr": "lumière",
-          "en": "lumière",
-          "theme": "contenus"
+          "en": "lumière (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "réflexion",
-          "en": "réflexion",
-          "theme": "contenus"
+          "en": "réflexion (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "réfraction",
-          "en": "réfraction",
-          "theme": "contenus"
+          "en": "réfraction (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "lentille",
-          "en": "lentille",
-          "theme": "contenus"
+          "en": "lentille (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "couleur",
-          "en": "couleur",
-          "theme": "contenus"
+          "en": "couleur (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "spectre",
-          "en": "spectre",
-          "theme": "contenus"
+          "en": "spectre (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "atome",
-          "en": "atome",
-          "theme": "contenus"
+          "en": "atome (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "molécule",
-          "en": "molécule",
-          "theme": "contenus"
+          "en": "molécule (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "élément",
-          "en": "élément",
-          "theme": "contenus"
+          "en": "élément (optique et chimie)",
+          "theme": "optique"
         },
         {
-          "fr": "réaction",
-          "en": "réaction",
-          "theme": "contenus"
+          "fr": "réaction chimique",
+          "en": "réaction chimique (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "oxydation",
-          "en": "oxydation",
-          "theme": "contenus"
+          "en": "oxydation (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "mécanique",
-          "en": "mécanique",
-          "theme": "contenus"
+          "en": "mécanique (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "force",
-          "en": "force",
-          "theme": "contenus"
+          "en": "force (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "poids",
-          "en": "poids",
-          "theme": "contenus"
+          "en": "poids (optique et chimie)",
+          "theme": "optique"
         },
         {
           "fr": "frottement",
-          "en": "frottement",
-          "theme": "contenus"
+          "en": "frottement (optique et chimie)",
+          "theme": "optique"
         },
         {
-          "fr": "vitesse",
-          "en": "vitesse",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "optique"
         },
         {
-          "fr": "accélération",
-          "en": "accélération",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "optique"
         },
         {
-          "fr": "cellule",
-          "en": "cellule",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "optique"
         },
         {
-          "fr": "ADN",
-          "en": "ADN",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "optique"
         },
         {
-          "fr": "chromosome",
-          "en": "chromosome",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "optique"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau 5e",
+          "enonce": "Concept Sciences niveau 5e",
           "bonne": "lumière",
           "fausses": [
             "réflexion",
             "réfraction",
             "lentille"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 5e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
+          "enonce": "Complète: optique et chimie",
           "bonne": "réflexion",
           "fausses": [
             "réfraction",
@@ -646,120 +650,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 5e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "lumière",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 5e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 5e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

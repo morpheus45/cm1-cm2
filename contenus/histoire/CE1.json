@@ -5,129 +5,129 @@
       "vocabulaire": [
         {
           "fr": "hier",
-          "en": "hier",
-          "theme": "contenus"
+          "en": "hier (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "aujourd'hui",
-          "en": "aujourd'hui",
-          "theme": "contenus"
+          "en": "aujourd'hui (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "demain",
-          "en": "demain",
-          "theme": "contenus"
+          "en": "demain (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "longtemps",
-          "en": "longtemps",
-          "theme": "contenus"
+          "en": "longtemps (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "grand-mère",
-          "en": "grand-mère",
-          "theme": "contenus"
+          "en": "grand-mère (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "grand-père",
-          "en": "grand-père",
-          "theme": "contenus"
+          "en": "grand-père (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "maman",
-          "en": "maman",
-          "theme": "contenus"
+          "en": "maman (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "papa",
-          "en": "papa",
-          "theme": "contenus"
+          "en": "papa (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "frère",
-          "en": "frère",
-          "theme": "contenus"
+          "en": "frère (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "soeur",
-          "en": "soeur",
-          "theme": "contenus"
+          "en": "soeur (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "roi",
-          "en": "roi",
-          "theme": "contenus"
+          "en": "roi (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "reine",
-          "en": "reine",
-          "theme": "contenus"
+          "en": "reine (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "château",
-          "en": "château",
-          "theme": "contenus"
+          "en": "château (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "moyen-âge",
-          "en": "moyen-âge",
-          "theme": "contenus"
+          "en": "moyen-âge (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "chevalier",
-          "en": "chevalier",
-          "theme": "contenus"
+          "en": "chevalier (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "Noël",
-          "en": "Noël",
-          "theme": "contenus"
+          "en": "Noël (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "Pâques",
-          "en": "Pâques",
-          "theme": "contenus"
+          "en": "Pâques (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "anniversaire",
-          "en": "anniversaire",
-          "theme": "contenus"
+          "en": "anniversaire (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "fête",
-          "en": "fête",
-          "theme": "contenus"
+          "en": "fête (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "tradition",
-          "en": "tradition",
-          "theme": "contenus"
+          "en": "tradition (temps et famille)",
+          "theme": "temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Histoire niveau CE1",
+          "enonce": "Concept Histoire niveau CE1",
           "bonne": "hier",
           "fausses": [
             "aujourd'hui",
             "demain",
             "longtemps"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CE1"
         },
         {
           "consigne": "V/F",
-          "enonce": "Histoire au programme",
+          "enonce": "Histoire au programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Histoire"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Histoire____",
+          "enonce": "Complète: temps et famille",
           "bonne": "aujourd'hui",
           "fausses": [
             "demain",
@@ -138,120 +138,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CE1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "hier",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CE1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CE1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -259,129 +261,129 @@
       "vocabulaire": [
         {
           "fr": "hier",
-          "en": "hier",
-          "theme": "contenus"
+          "en": "hier (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "aujourd'hui",
-          "en": "aujourd'hui",
-          "theme": "contenus"
+          "en": "aujourd'hui (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "demain",
-          "en": "demain",
-          "theme": "contenus"
+          "en": "demain (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "longtemps",
-          "en": "longtemps",
-          "theme": "contenus"
+          "en": "longtemps (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "grand-mère",
-          "en": "grand-mère",
-          "theme": "contenus"
+          "en": "grand-mère (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "grand-père",
-          "en": "grand-père",
-          "theme": "contenus"
+          "en": "grand-père (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "maman",
-          "en": "maman",
-          "theme": "contenus"
+          "en": "maman (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "papa",
-          "en": "papa",
-          "theme": "contenus"
+          "en": "papa (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "frère",
-          "en": "frère",
-          "theme": "contenus"
+          "en": "frère (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "soeur",
-          "en": "soeur",
-          "theme": "contenus"
+          "en": "soeur (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "roi",
-          "en": "roi",
-          "theme": "contenus"
+          "en": "roi (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "reine",
-          "en": "reine",
-          "theme": "contenus"
+          "en": "reine (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "château",
-          "en": "château",
-          "theme": "contenus"
+          "en": "château (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "moyen-âge",
-          "en": "moyen-âge",
-          "theme": "contenus"
+          "en": "moyen-âge (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "chevalier",
-          "en": "chevalier",
-          "theme": "contenus"
+          "en": "chevalier (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "Noël",
-          "en": "Noël",
-          "theme": "contenus"
+          "en": "Noël (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "Pâques",
-          "en": "Pâques",
-          "theme": "contenus"
+          "en": "Pâques (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "anniversaire",
-          "en": "anniversaire",
-          "theme": "contenus"
+          "en": "anniversaire (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "fête",
-          "en": "fête",
-          "theme": "contenus"
+          "en": "fête (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "tradition",
-          "en": "tradition",
-          "theme": "contenus"
+          "en": "tradition (temps et famille)",
+          "theme": "temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Histoire niveau CE1",
+          "enonce": "Concept Histoire niveau CE1",
           "bonne": "hier",
           "fausses": [
             "aujourd'hui",
             "demain",
             "longtemps"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CE1"
         },
         {
           "consigne": "V/F",
-          "enonce": "Histoire au programme",
+          "enonce": "Histoire au programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Histoire"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Histoire____",
+          "enonce": "Complète: temps et famille",
           "bonne": "aujourd'hui",
           "fausses": [
             "demain",
@@ -392,120 +394,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CE1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "hier",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CE1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CE1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -513,129 +517,129 @@
       "vocabulaire": [
         {
           "fr": "hier",
-          "en": "hier",
-          "theme": "contenus"
+          "en": "hier (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "aujourd'hui",
-          "en": "aujourd'hui",
-          "theme": "contenus"
+          "en": "aujourd'hui (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "demain",
-          "en": "demain",
-          "theme": "contenus"
+          "en": "demain (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "longtemps",
-          "en": "longtemps",
-          "theme": "contenus"
+          "en": "longtemps (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "grand-mère",
-          "en": "grand-mère",
-          "theme": "contenus"
+          "en": "grand-mère (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "grand-père",
-          "en": "grand-père",
-          "theme": "contenus"
+          "en": "grand-père (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "maman",
-          "en": "maman",
-          "theme": "contenus"
+          "en": "maman (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "papa",
-          "en": "papa",
-          "theme": "contenus"
+          "en": "papa (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "frère",
-          "en": "frère",
-          "theme": "contenus"
+          "en": "frère (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "soeur",
-          "en": "soeur",
-          "theme": "contenus"
+          "en": "soeur (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "roi",
-          "en": "roi",
-          "theme": "contenus"
+          "en": "roi (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "reine",
-          "en": "reine",
-          "theme": "contenus"
+          "en": "reine (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "château",
-          "en": "château",
-          "theme": "contenus"
+          "en": "château (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "moyen-âge",
-          "en": "moyen-âge",
-          "theme": "contenus"
+          "en": "moyen-âge (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "chevalier",
-          "en": "chevalier",
-          "theme": "contenus"
+          "en": "chevalier (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "Noël",
-          "en": "Noël",
-          "theme": "contenus"
+          "en": "Noël (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "Pâques",
-          "en": "Pâques",
-          "theme": "contenus"
+          "en": "Pâques (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "anniversaire",
-          "en": "anniversaire",
-          "theme": "contenus"
+          "en": "anniversaire (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "fête",
-          "en": "fête",
-          "theme": "contenus"
+          "en": "fête (temps et famille)",
+          "theme": "temps"
         },
         {
           "fr": "tradition",
-          "en": "tradition",
-          "theme": "contenus"
+          "en": "tradition (temps et famille)",
+          "theme": "temps"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Histoire niveau CE1",
+          "enonce": "Concept Histoire niveau CE1",
           "bonne": "hier",
           "fausses": [
             "aujourd'hui",
             "demain",
             "longtemps"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CE1"
         },
         {
           "consigne": "V/F",
-          "enonce": "Histoire au programme",
+          "enonce": "Histoire au programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Histoire"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Histoire____",
+          "enonce": "Complète: temps et famille",
           "bonne": "aujourd'hui",
           "fausses": [
             "demain",
@@ -646,120 +650,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CE1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "hier",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CE1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CE1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Histoire",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

@@ -5,129 +5,129 @@
       "vocabulaire": [
         {
           "fr": "vote",
-          "en": "vote",
-          "theme": "contenus"
+          "en": "vote (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "égalité",
-          "en": "égalité",
-          "theme": "contenus"
+          "en": "égalité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "liberté",
-          "en": "liberté",
-          "theme": "contenus"
+          "en": "liberté (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "justice",
-          "en": "justice",
-          "theme": "contenus"
+          "en": "justice (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "loi",
-          "en": "loi",
-          "theme": "contenus"
+          "en": "loi (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "citoyen",
-          "en": "citoyen",
-          "theme": "contenus"
+          "en": "citoyen (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "droit",
-          "en": "droit",
-          "theme": "contenus"
+          "en": "droit (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "devoir",
-          "en": "devoir",
-          "theme": "contenus"
+          "en": "devoir (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "participation",
-          "en": "participation",
-          "theme": "contenus"
+          "en": "participation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "nation",
-          "en": "nation",
-          "theme": "contenus"
+          "en": "nation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "dignité",
-          "en": "dignité",
-          "theme": "contenus"
+          "en": "dignité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "en": "santé (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "éducation",
-          "en": "éducation",
-          "theme": "contenus"
+          "en": "éducation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté",
-          "theme": "contenus"
+          "en": "honnêteté (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "en": "solidarité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "démocratie"
         },
         {
-          "fr": "courage",
-          "en": "courage",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "démocratie"
         },
         {
-          "fr": "générosité",
-          "en": "générosité",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "démocratie"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "démocratie"
         },
         {
-          "fr": "parlement",
-          "en": "parlement",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "démocratie"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau CM1",
+          "enonce": "Concept EMC niveau CM1",
           "bonne": "vote",
           "fausses": [
             "égalité",
             "liberté",
             "justice"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CM1"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
+          "enonce": "Complète: démocratie et citoyenneté",
           "bonne": "égalité",
           "fausses": [
             "liberté",
@@ -138,120 +138,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CM1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "vote",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CM1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CM1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -259,129 +261,129 @@
       "vocabulaire": [
         {
           "fr": "vote",
-          "en": "vote",
-          "theme": "contenus"
+          "en": "vote (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "égalité",
-          "en": "égalité",
-          "theme": "contenus"
+          "en": "égalité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "liberté",
-          "en": "liberté",
-          "theme": "contenus"
+          "en": "liberté (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "justice",
-          "en": "justice",
-          "theme": "contenus"
+          "en": "justice (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "loi",
-          "en": "loi",
-          "theme": "contenus"
+          "en": "loi (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "citoyen",
-          "en": "citoyen",
-          "theme": "contenus"
+          "en": "citoyen (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "droit",
-          "en": "droit",
-          "theme": "contenus"
+          "en": "droit (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "devoir",
-          "en": "devoir",
-          "theme": "contenus"
+          "en": "devoir (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "participation",
-          "en": "participation",
-          "theme": "contenus"
+          "en": "participation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "nation",
-          "en": "nation",
-          "theme": "contenus"
+          "en": "nation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "dignité",
-          "en": "dignité",
-          "theme": "contenus"
+          "en": "dignité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "en": "santé (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "éducation",
-          "en": "éducation",
-          "theme": "contenus"
+          "en": "éducation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté",
-          "theme": "contenus"
+          "en": "honnêteté (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "en": "solidarité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "démocratie"
         },
         {
-          "fr": "courage",
-          "en": "courage",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "démocratie"
         },
         {
-          "fr": "générosité",
-          "en": "générosité",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "démocratie"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "démocratie"
         },
         {
-          "fr": "parlement",
-          "en": "parlement",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "démocratie"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau CM1",
+          "enonce": "Concept EMC niveau CM1",
           "bonne": "vote",
           "fausses": [
             "égalité",
             "liberté",
             "justice"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CM1"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
+          "enonce": "Complète: démocratie et citoyenneté",
           "bonne": "égalité",
           "fausses": [
             "liberté",
@@ -392,120 +394,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CM1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "vote",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CM1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CM1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -513,129 +517,129 @@
       "vocabulaire": [
         {
           "fr": "vote",
-          "en": "vote",
-          "theme": "contenus"
+          "en": "vote (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "égalité",
-          "en": "égalité",
-          "theme": "contenus"
+          "en": "égalité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "liberté",
-          "en": "liberté",
-          "theme": "contenus"
+          "en": "liberté (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "justice",
-          "en": "justice",
-          "theme": "contenus"
+          "en": "justice (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "loi",
-          "en": "loi",
-          "theme": "contenus"
+          "en": "loi (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "citoyen",
-          "en": "citoyen",
-          "theme": "contenus"
+          "en": "citoyen (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "droit",
-          "en": "droit",
-          "theme": "contenus"
+          "en": "droit (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "devoir",
-          "en": "devoir",
-          "theme": "contenus"
+          "en": "devoir (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "participation",
-          "en": "participation",
-          "theme": "contenus"
+          "en": "participation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "nation",
-          "en": "nation",
-          "theme": "contenus"
+          "en": "nation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "dignité",
-          "en": "dignité",
-          "theme": "contenus"
+          "en": "dignité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "en": "santé (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "éducation",
-          "en": "éducation",
-          "theme": "contenus"
+          "en": "éducation (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté",
-          "theme": "contenus"
+          "en": "honnêteté (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
           "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "en": "solidarité (démocratie et citoyenneté)",
+          "theme": "démocratie"
         },
         {
-          "fr": "tolérance",
-          "en": "tolérance",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "démocratie"
         },
         {
-          "fr": "courage",
-          "en": "courage",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "démocratie"
         },
         {
-          "fr": "générosité",
-          "en": "générosité",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "démocratie"
         },
         {
-          "fr": "gouvernement",
-          "en": "gouvernement",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "démocratie"
         },
         {
-          "fr": "parlement",
-          "en": "parlement",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "démocratie"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau CM1",
+          "enonce": "Concept EMC niveau CM1",
           "bonne": "vote",
           "fausses": [
             "égalité",
             "liberté",
             "justice"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CM1"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme CM1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
+          "enonce": "Complète: démocratie et citoyenneté",
           "bonne": "égalité",
           "fausses": [
             "liberté",
@@ -646,120 +650,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CM1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "vote",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CM1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CM1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

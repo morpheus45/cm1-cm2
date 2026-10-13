@@ -4,756 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "Constitution",
+          "en": "Constitution (institutions et libertés)",
+          "theme": "institutions"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "Président",
+          "en": "Président (institutions et libertés)",
+          "theme": "institutions"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "Parlement",
+          "en": "Parlement (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "Gouvernement",
+          "en": "Gouvernement (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "Cour",
+          "en": "Cour (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "système judiciaire",
+          "en": "système judiciaire (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "séparation pouvoirs",
+          "en": "séparation pouvoirs (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "démocratie",
+          "en": "démocratie (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "dictature",
+          "en": "dictature (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "autoritarisme",
+          "en": "autoritarisme (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "totalitarisme",
+          "en": "totalitarisme (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "libertés fondamentales",
+          "en": "libertés fondamentales (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "droits politiques",
+          "en": "droits politiques (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "droits sociaux",
+          "en": "droits sociaux (institutions et libertés)",
+          "theme": "institutions"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t5",
           "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "institutions"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 4e",
-          "bonne": "terme1",
+          "enonce": "Concept EMC niveau 4e",
+          "bonne": "Constitution",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "Président",
+            "Parlement",
+            "Gouvernement"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 4e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "terme2",
+          "enonce": "Complète: institutions et libertés",
+          "bonne": "Président",
           "fausses": [
-            "terme3"
+            "Parlement",
+            "Gouvernement",
+            "Cour"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 4e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "Constitution",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 4e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 4e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "Constitution",
+          "en": "Constitution (institutions et libertés)",
+          "theme": "institutions"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "Président",
+          "en": "Président (institutions et libertés)",
+          "theme": "institutions"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "Parlement",
+          "en": "Parlement (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "Gouvernement",
+          "en": "Gouvernement (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "Cour",
+          "en": "Cour (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "système judiciaire",
+          "en": "système judiciaire (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "séparation pouvoirs",
+          "en": "séparation pouvoirs (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "démocratie",
+          "en": "démocratie (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "dictature",
+          "en": "dictature (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "autoritarisme",
+          "en": "autoritarisme (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "totalitarisme",
+          "en": "totalitarisme (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "libertés fondamentales",
+          "en": "libertés fondamentales (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "droits politiques",
+          "en": "droits politiques (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "droits sociaux",
+          "en": "droits sociaux (institutions et libertés)",
+          "theme": "institutions"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t5",
           "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "institutions"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 4e",
-          "bonne": "terme1",
+          "enonce": "Concept EMC niveau 4e",
+          "bonne": "Constitution",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "Président",
+            "Parlement",
+            "Gouvernement"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 4e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "terme2",
+          "enonce": "Complète: institutions et libertés",
+          "bonne": "Président",
           "fausses": [
-            "terme3"
+            "Parlement",
+            "Gouvernement",
+            "Cour"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 4e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "Constitution",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 4e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 4e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "Constitution",
+          "en": "Constitution (institutions et libertés)",
+          "theme": "institutions"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "Président",
+          "en": "Président (institutions et libertés)",
+          "theme": "institutions"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "Parlement",
+          "en": "Parlement (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "Gouvernement",
+          "en": "Gouvernement (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "Cour",
+          "en": "Cour (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "système judiciaire",
+          "en": "système judiciaire (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "séparation pouvoirs",
+          "en": "séparation pouvoirs (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "démocratie",
+          "en": "démocratie (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "dictature",
+          "en": "dictature (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "autoritarisme",
+          "en": "autoritarisme (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "totalitarisme",
+          "en": "totalitarisme (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "libertés fondamentales",
+          "en": "libertés fondamentales (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "droits politiques",
+          "en": "droits politiques (institutions et libertés)",
+          "theme": "institutions"
+        },
+        {
+          "fr": "droits sociaux",
+          "en": "droits sociaux (institutions et libertés)",
+          "theme": "institutions"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
+          "theme": "institutions"
         },
         {
           "fr": "t5",
           "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "institutions"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 4e",
-          "bonne": "terme1",
+          "enonce": "Concept EMC niveau 4e",
+          "bonne": "Constitution",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "Président",
+            "Parlement",
+            "Gouvernement"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 4e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 4e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "terme2",
+          "enonce": "Complète: institutions et libertés",
+          "bonne": "Président",
           "fausses": [
-            "terme3"
+            "Parlement",
+            "Gouvernement",
+            "Cour"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 4e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "Constitution",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 4e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 4e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

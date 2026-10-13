@@ -5,129 +5,129 @@
       "vocabulaire": [
         {
           "fr": "respecter",
-          "en": "respecter",
-          "theme": "contenus"
+          "en": "respecter (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "partager",
-          "en": "partager",
-          "theme": "contenus"
+          "en": "partager (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "écouter",
-          "en": "écouter",
-          "theme": "contenus"
+          "en": "écouter (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "aider",
-          "en": "aider",
-          "theme": "contenus"
+          "en": "aider (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté",
-          "theme": "contenus"
+          "en": "honnêteté (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "famille",
-          "en": "famille",
-          "theme": "contenus"
+          "en": "famille (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "école",
-          "en": "école",
-          "theme": "contenus"
+          "en": "école (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "amis",
-          "en": "amis",
-          "theme": "contenus"
+          "en": "amis (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "communauté",
-          "en": "communauté",
-          "theme": "contenus"
+          "en": "communauté (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "citoyen",
-          "en": "citoyen",
-          "theme": "contenus"
+          "en": "citoyen (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "sécurité",
-          "en": "sécurité",
-          "theme": "contenus"
+          "en": "sécurité (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "nourriture",
-          "en": "nourriture",
-          "theme": "contenus"
+          "en": "nourriture (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "éducation",
-          "en": "éducation",
-          "theme": "contenus"
+          "en": "éducation (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "en": "santé (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "jeu",
-          "en": "jeu",
-          "theme": "contenus"
+          "en": "jeu (règles et droits)",
+          "theme": "règles"
         },
         {
-          "fr": "obéissance",
-          "en": "obéissance",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "règles"
         },
         {
-          "fr": "soin",
-          "en": "soin",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "règles"
         },
         {
-          "fr": "ordre",
-          "en": "ordre",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "règles"
         },
         {
-          "fr": "propreté",
-          "en": "propreté",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "règles"
         },
         {
-          "fr": "travail",
-          "en": "travail",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "règles"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau CE1",
+          "enonce": "Concept EMC niveau CE1",
           "bonne": "respecter",
           "fausses": [
             "partager",
             "écouter",
             "aider"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CE1"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
+          "enonce": "Complète: règles et droits",
           "bonne": "partager",
           "fausses": [
             "écouter",
@@ -138,120 +138,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CE1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "respecter",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CE1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CE1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -259,129 +261,129 @@
       "vocabulaire": [
         {
           "fr": "respecter",
-          "en": "respecter",
-          "theme": "contenus"
+          "en": "respecter (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "partager",
-          "en": "partager",
-          "theme": "contenus"
+          "en": "partager (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "écouter",
-          "en": "écouter",
-          "theme": "contenus"
+          "en": "écouter (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "aider",
-          "en": "aider",
-          "theme": "contenus"
+          "en": "aider (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté",
-          "theme": "contenus"
+          "en": "honnêteté (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "famille",
-          "en": "famille",
-          "theme": "contenus"
+          "en": "famille (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "école",
-          "en": "école",
-          "theme": "contenus"
+          "en": "école (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "amis",
-          "en": "amis",
-          "theme": "contenus"
+          "en": "amis (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "communauté",
-          "en": "communauté",
-          "theme": "contenus"
+          "en": "communauté (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "citoyen",
-          "en": "citoyen",
-          "theme": "contenus"
+          "en": "citoyen (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "sécurité",
-          "en": "sécurité",
-          "theme": "contenus"
+          "en": "sécurité (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "nourriture",
-          "en": "nourriture",
-          "theme": "contenus"
+          "en": "nourriture (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "éducation",
-          "en": "éducation",
-          "theme": "contenus"
+          "en": "éducation (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "en": "santé (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "jeu",
-          "en": "jeu",
-          "theme": "contenus"
+          "en": "jeu (règles et droits)",
+          "theme": "règles"
         },
         {
-          "fr": "obéissance",
-          "en": "obéissance",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "règles"
         },
         {
-          "fr": "soin",
-          "en": "soin",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "règles"
         },
         {
-          "fr": "ordre",
-          "en": "ordre",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "règles"
         },
         {
-          "fr": "propreté",
-          "en": "propreté",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "règles"
         },
         {
-          "fr": "travail",
-          "en": "travail",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "règles"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau CE1",
+          "enonce": "Concept EMC niveau CE1",
           "bonne": "respecter",
           "fausses": [
             "partager",
             "écouter",
             "aider"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CE1"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
+          "enonce": "Complète: règles et droits",
           "bonne": "partager",
           "fausses": [
             "écouter",
@@ -392,120 +394,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CE1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "respecter",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CE1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CE1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -513,129 +517,129 @@
       "vocabulaire": [
         {
           "fr": "respecter",
-          "en": "respecter",
-          "theme": "contenus"
+          "en": "respecter (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "partager",
-          "en": "partager",
-          "theme": "contenus"
+          "en": "partager (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "écouter",
-          "en": "écouter",
-          "theme": "contenus"
+          "en": "écouter (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "aider",
-          "en": "aider",
-          "theme": "contenus"
+          "en": "aider (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté",
-          "theme": "contenus"
+          "en": "honnêteté (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "famille",
-          "en": "famille",
-          "theme": "contenus"
+          "en": "famille (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "école",
-          "en": "école",
-          "theme": "contenus"
+          "en": "école (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "amis",
-          "en": "amis",
-          "theme": "contenus"
+          "en": "amis (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "communauté",
-          "en": "communauté",
-          "theme": "contenus"
+          "en": "communauté (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "citoyen",
-          "en": "citoyen",
-          "theme": "contenus"
+          "en": "citoyen (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "sécurité",
-          "en": "sécurité",
-          "theme": "contenus"
+          "en": "sécurité (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "nourriture",
-          "en": "nourriture",
-          "theme": "contenus"
+          "en": "nourriture (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "éducation",
-          "en": "éducation",
-          "theme": "contenus"
+          "en": "éducation (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "en": "santé (règles et droits)",
+          "theme": "règles"
         },
         {
           "fr": "jeu",
-          "en": "jeu",
-          "theme": "contenus"
+          "en": "jeu (règles et droits)",
+          "theme": "règles"
         },
         {
-          "fr": "obéissance",
-          "en": "obéissance",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "règles"
         },
         {
-          "fr": "soin",
-          "en": "soin",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "règles"
         },
         {
-          "fr": "ordre",
-          "en": "ordre",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "règles"
         },
         {
-          "fr": "propreté",
-          "en": "propreté",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "règles"
         },
         {
-          "fr": "travail",
-          "en": "travail",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "règles"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau CE1",
+          "enonce": "Concept EMC niveau CE1",
           "bonne": "respecter",
           "fausses": [
             "partager",
             "écouter",
             "aider"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication CE1"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme CE1",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
+          "enonce": "Complète: règles et droits",
           "bonne": "partager",
           "fausses": [
             "écouter",
@@ -646,120 +650,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau CE1____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "respecter",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme CE1",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est CE1"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

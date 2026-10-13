@@ -4,130 +4,130 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "échange",
-          "en": "échange",
-          "theme": "contenus"
+          "fr": "mondialisation",
+          "en": "mondialisation (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "multinational",
-          "en": "multinational",
-          "theme": "contenus"
+          "en": "multinational (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "délocalisation",
-          "en": "délocalisation",
-          "theme": "contenus"
+          "en": "délocalisation (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "flux",
-          "en": "flux",
-          "theme": "contenus"
+          "en": "flux (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "réseau",
-          "en": "réseau",
-          "theme": "contenus"
+          "en": "réseau (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "puissance",
-          "en": "puissance",
-          "theme": "contenus"
+          "en": "puissance (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "géopolitique",
-          "en": "géopolitique",
-          "theme": "contenus"
+          "en": "géopolitique (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "hégémonie",
-          "en": "hégémonie",
-          "theme": "contenus"
+          "en": "hégémonie (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "multipolaire",
-          "en": "multipolaire",
-          "theme": "contenus"
+          "en": "multipolaire (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "bipolaire",
-          "en": "bipolaire",
-          "theme": "contenus"
+          "en": "bipolaire (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "ONU",
-          "en": "ONU",
-          "theme": "contenus"
+          "en": "ONU (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "traité",
-          "en": "traité",
-          "theme": "contenus"
+          "en": "traité (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "bloc",
-          "en": "bloc",
-          "theme": "contenus"
+          "en": "bloc (mondialisation)",
+          "theme": "mondialisation"
         },
         {
-          "fr": "marché",
-          "en": "marché",
-          "theme": "contenus"
+          "fr": "marché commun",
+          "en": "marché commun (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "supranational",
-          "en": "supranational",
-          "theme": "contenus"
+          "en": "supranational (mondialisation)",
+          "theme": "mondialisation"
         },
         {
-          "fr": "intégration",
-          "en": "intégration",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "mondialisation"
         },
         {
-          "fr": "conflit",
-          "en": "conflit",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "mondialisation"
         },
         {
-          "fr": "paix",
-          "en": "paix",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "mondialisation"
         },
         {
-          "fr": "développement",
-          "en": "développement",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "mondialisation"
         },
         {
-          "fr": "inégalités",
-          "en": "inégalités",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "mondialisation"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Geographie niveau 3e",
-          "bonne": "échange",
+          "enonce": "Concept Geographie niveau 3e",
+          "bonne": "mondialisation",
           "fausses": [
             "multinational",
             "délocalisation",
             "flux"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 3e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Geographie au programme",
+          "enonce": "Geographie au programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Geographie"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Geographie____",
+          "enonce": "Complète: mondialisation",
           "bonne": "multinational",
           "fausses": [
             "délocalisation",
@@ -138,250 +138,252 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 3e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "mondialisation",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 3e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 3e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "échange",
-          "en": "échange",
-          "theme": "contenus"
+          "fr": "mondialisation",
+          "en": "mondialisation (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "multinational",
-          "en": "multinational",
-          "theme": "contenus"
+          "en": "multinational (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "délocalisation",
-          "en": "délocalisation",
-          "theme": "contenus"
+          "en": "délocalisation (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "flux",
-          "en": "flux",
-          "theme": "contenus"
+          "en": "flux (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "réseau",
-          "en": "réseau",
-          "theme": "contenus"
+          "en": "réseau (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "puissance",
-          "en": "puissance",
-          "theme": "contenus"
+          "en": "puissance (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "géopolitique",
-          "en": "géopolitique",
-          "theme": "contenus"
+          "en": "géopolitique (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "hégémonie",
-          "en": "hégémonie",
-          "theme": "contenus"
+          "en": "hégémonie (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "multipolaire",
-          "en": "multipolaire",
-          "theme": "contenus"
+          "en": "multipolaire (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "bipolaire",
-          "en": "bipolaire",
-          "theme": "contenus"
+          "en": "bipolaire (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "ONU",
-          "en": "ONU",
-          "theme": "contenus"
+          "en": "ONU (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "traité",
-          "en": "traité",
-          "theme": "contenus"
+          "en": "traité (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "bloc",
-          "en": "bloc",
-          "theme": "contenus"
+          "en": "bloc (mondialisation)",
+          "theme": "mondialisation"
         },
         {
-          "fr": "marché",
-          "en": "marché",
-          "theme": "contenus"
+          "fr": "marché commun",
+          "en": "marché commun (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "supranational",
-          "en": "supranational",
-          "theme": "contenus"
+          "en": "supranational (mondialisation)",
+          "theme": "mondialisation"
         },
         {
-          "fr": "intégration",
-          "en": "intégration",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "mondialisation"
         },
         {
-          "fr": "conflit",
-          "en": "conflit",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "mondialisation"
         },
         {
-          "fr": "paix",
-          "en": "paix",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "mondialisation"
         },
         {
-          "fr": "développement",
-          "en": "développement",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "mondialisation"
         },
         {
-          "fr": "inégalités",
-          "en": "inégalités",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "mondialisation"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Geographie niveau 3e",
-          "bonne": "échange",
+          "enonce": "Concept Geographie niveau 3e",
+          "bonne": "mondialisation",
           "fausses": [
             "multinational",
             "délocalisation",
             "flux"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 3e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Geographie au programme",
+          "enonce": "Geographie au programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Geographie"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Geographie____",
+          "enonce": "Complète: mondialisation",
           "bonne": "multinational",
           "fausses": [
             "délocalisation",
@@ -392,250 +394,252 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 3e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "mondialisation",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 3e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 3e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "échange",
-          "en": "échange",
-          "theme": "contenus"
+          "fr": "mondialisation",
+          "en": "mondialisation (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "multinational",
-          "en": "multinational",
-          "theme": "contenus"
+          "en": "multinational (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "délocalisation",
-          "en": "délocalisation",
-          "theme": "contenus"
+          "en": "délocalisation (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "flux",
-          "en": "flux",
-          "theme": "contenus"
+          "en": "flux (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "réseau",
-          "en": "réseau",
-          "theme": "contenus"
+          "en": "réseau (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "puissance",
-          "en": "puissance",
-          "theme": "contenus"
+          "en": "puissance (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "géopolitique",
-          "en": "géopolitique",
-          "theme": "contenus"
+          "en": "géopolitique (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "hégémonie",
-          "en": "hégémonie",
-          "theme": "contenus"
+          "en": "hégémonie (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "multipolaire",
-          "en": "multipolaire",
-          "theme": "contenus"
+          "en": "multipolaire (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "bipolaire",
-          "en": "bipolaire",
-          "theme": "contenus"
+          "en": "bipolaire (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "ONU",
-          "en": "ONU",
-          "theme": "contenus"
+          "en": "ONU (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "traité",
-          "en": "traité",
-          "theme": "contenus"
+          "en": "traité (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "bloc",
-          "en": "bloc",
-          "theme": "contenus"
+          "en": "bloc (mondialisation)",
+          "theme": "mondialisation"
         },
         {
-          "fr": "marché",
-          "en": "marché",
-          "theme": "contenus"
+          "fr": "marché commun",
+          "en": "marché commun (mondialisation)",
+          "theme": "mondialisation"
         },
         {
           "fr": "supranational",
-          "en": "supranational",
-          "theme": "contenus"
+          "en": "supranational (mondialisation)",
+          "theme": "mondialisation"
         },
         {
-          "fr": "intégration",
-          "en": "intégration",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "mondialisation"
         },
         {
-          "fr": "conflit",
-          "en": "conflit",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "mondialisation"
         },
         {
-          "fr": "paix",
-          "en": "paix",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "mondialisation"
         },
         {
-          "fr": "développement",
-          "en": "développement",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "mondialisation"
         },
         {
-          "fr": "inégalités",
-          "en": "inégalités",
-          "theme": "contenus"
+          "fr": "t4",
+          "en": "d4",
+          "theme": "mondialisation"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Geographie niveau 3e",
-          "bonne": "échange",
+          "enonce": "Concept Geographie niveau 3e",
+          "bonne": "mondialisation",
           "fausses": [
             "multinational",
             "délocalisation",
             "flux"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 3e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Geographie au programme",
+          "enonce": "Geographie au programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Geographie"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Geographie____",
+          "enonce": "Complète: mondialisation",
           "bonne": "multinational",
           "fausses": [
             "délocalisation",
@@ -646,120 +650,122 @@
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 3e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "mondialisation",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 3e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 3e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Geographie",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

@@ -5,253 +5,255 @@
       "vocabulaire": [
         {
           "fr": "ONU",
-          "en": "ONU",
-          "theme": "contenus"
+          "en": "ONU (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "droits",
-          "en": "droits",
-          "theme": "contenus"
+          "fr": "droits humains universels",
+          "en": "droits humains universels (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "tribunal",
-          "en": "tribunal",
-          "theme": "contenus"
+          "fr": "tribunal international",
+          "en": "tribunal international (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "éthique",
-          "en": "éthique",
-          "theme": "contenus"
+          "fr": "éthique mondiale",
+          "en": "éthique mondiale (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "développement",
-          "en": "développement",
-          "theme": "contenus"
+          "fr": "développement durable",
+          "en": "développement durable (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "conflits",
-          "en": "conflits",
-          "theme": "contenus"
+          "en": "conflits (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "paix",
-          "en": "paix",
-          "theme": "contenus"
+          "en": "paix (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "négociation",
-          "en": "négociation",
-          "theme": "contenus"
+          "fr": "justice climatique",
+          "en": "justice climatique (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "médiation",
-          "en": "médiation",
-          "theme": "contenus"
-        },
-        {
-          "fr": "résolution",
-          "en": "résolution",
-          "theme": "contenus"
-        },
-        {
-          "fr": "environnement",
-          "en": "environnement",
-          "theme": "contenus"
-        },
-        {
-          "fr": "énergie",
-          "en": "énergie",
-          "theme": "contenus"
-        },
-        {
-          "fr": "économie",
-          "en": "économie",
-          "theme": "contenus"
-        },
-        {
-          "fr": "climat",
-          "en": "climat",
-          "theme": "contenus"
-        },
-        {
-          "fr": "biodiversité",
-          "en": "biodiversité",
-          "theme": "contenus"
-        },
-        {
-          "fr": "responsabilité",
-          "en": "responsabilité",
-          "theme": "contenus"
+          "fr": "responsabilité globale",
+          "en": "responsabilité globale (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "en": "solidarité (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "justice",
-          "en": "justice",
-          "theme": "contenus"
+          "fr": "inégalités",
+          "en": "inégalités (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "nations",
-          "en": "nations",
-          "theme": "contenus"
+          "fr": "pauvreté",
+          "en": "pauvreté (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "traités",
-          "en": "traités",
-          "theme": "contenus"
+          "fr": "santé mondiale",
+          "en": "santé mondiale (mondialisme et éthique)",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t6",
+          "en": "d6",
+          "theme": "mondialisme"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 3e",
+          "enonce": "Concept EMC niveau 3e",
           "bonne": "ONU",
           "fausses": [
-            "droits",
-            "tribunal",
-            "éthique"
+            "droits humains universels",
+            "tribunal international",
+            "éthique mondiale"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 3e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "droits",
+          "enonce": "Complète: mondialisme et éthique",
+          "bonne": "droits humains universels",
           "fausses": [
-            "tribunal",
-            "éthique",
-            "développement"
+            "tribunal international",
+            "éthique mondiale",
+            "développement durable"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 3e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "ONU",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 3e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 3e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -259,253 +261,255 @@
       "vocabulaire": [
         {
           "fr": "ONU",
-          "en": "ONU",
-          "theme": "contenus"
+          "en": "ONU (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "droits",
-          "en": "droits",
-          "theme": "contenus"
+          "fr": "droits humains universels",
+          "en": "droits humains universels (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "tribunal",
-          "en": "tribunal",
-          "theme": "contenus"
+          "fr": "tribunal international",
+          "en": "tribunal international (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "éthique",
-          "en": "éthique",
-          "theme": "contenus"
+          "fr": "éthique mondiale",
+          "en": "éthique mondiale (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "développement",
-          "en": "développement",
-          "theme": "contenus"
+          "fr": "développement durable",
+          "en": "développement durable (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "conflits",
-          "en": "conflits",
-          "theme": "contenus"
+          "en": "conflits (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "paix",
-          "en": "paix",
-          "theme": "contenus"
+          "en": "paix (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "négociation",
-          "en": "négociation",
-          "theme": "contenus"
+          "fr": "justice climatique",
+          "en": "justice climatique (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "médiation",
-          "en": "médiation",
-          "theme": "contenus"
-        },
-        {
-          "fr": "résolution",
-          "en": "résolution",
-          "theme": "contenus"
-        },
-        {
-          "fr": "environnement",
-          "en": "environnement",
-          "theme": "contenus"
-        },
-        {
-          "fr": "énergie",
-          "en": "énergie",
-          "theme": "contenus"
-        },
-        {
-          "fr": "économie",
-          "en": "économie",
-          "theme": "contenus"
-        },
-        {
-          "fr": "climat",
-          "en": "climat",
-          "theme": "contenus"
-        },
-        {
-          "fr": "biodiversité",
-          "en": "biodiversité",
-          "theme": "contenus"
-        },
-        {
-          "fr": "responsabilité",
-          "en": "responsabilité",
-          "theme": "contenus"
+          "fr": "responsabilité globale",
+          "en": "responsabilité globale (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "en": "solidarité (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "justice",
-          "en": "justice",
-          "theme": "contenus"
+          "fr": "inégalités",
+          "en": "inégalités (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "nations",
-          "en": "nations",
-          "theme": "contenus"
+          "fr": "pauvreté",
+          "en": "pauvreté (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "traités",
-          "en": "traités",
-          "theme": "contenus"
+          "fr": "santé mondiale",
+          "en": "santé mondiale (mondialisme et éthique)",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t6",
+          "en": "d6",
+          "theme": "mondialisme"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 3e",
+          "enonce": "Concept EMC niveau 3e",
           "bonne": "ONU",
           "fausses": [
-            "droits",
-            "tribunal",
-            "éthique"
+            "droits humains universels",
+            "tribunal international",
+            "éthique mondiale"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 3e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "droits",
+          "enonce": "Complète: mondialisme et éthique",
+          "bonne": "droits humains universels",
           "fausses": [
-            "tribunal",
-            "éthique",
-            "développement"
+            "tribunal international",
+            "éthique mondiale",
+            "développement durable"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 3e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "ONU",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 3e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 3e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
@@ -513,253 +517,255 @@
       "vocabulaire": [
         {
           "fr": "ONU",
-          "en": "ONU",
-          "theme": "contenus"
+          "en": "ONU (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "droits",
-          "en": "droits",
-          "theme": "contenus"
+          "fr": "droits humains universels",
+          "en": "droits humains universels (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "tribunal",
-          "en": "tribunal",
-          "theme": "contenus"
+          "fr": "tribunal international",
+          "en": "tribunal international (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "éthique",
-          "en": "éthique",
-          "theme": "contenus"
+          "fr": "éthique mondiale",
+          "en": "éthique mondiale (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "développement",
-          "en": "développement",
-          "theme": "contenus"
+          "fr": "développement durable",
+          "en": "développement durable (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "conflits",
-          "en": "conflits",
-          "theme": "contenus"
+          "en": "conflits (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "paix",
-          "en": "paix",
-          "theme": "contenus"
+          "en": "paix (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "négociation",
-          "en": "négociation",
-          "theme": "contenus"
+          "fr": "justice climatique",
+          "en": "justice climatique (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "médiation",
-          "en": "médiation",
-          "theme": "contenus"
-        },
-        {
-          "fr": "résolution",
-          "en": "résolution",
-          "theme": "contenus"
-        },
-        {
-          "fr": "environnement",
-          "en": "environnement",
-          "theme": "contenus"
-        },
-        {
-          "fr": "énergie",
-          "en": "énergie",
-          "theme": "contenus"
-        },
-        {
-          "fr": "économie",
-          "en": "économie",
-          "theme": "contenus"
-        },
-        {
-          "fr": "climat",
-          "en": "climat",
-          "theme": "contenus"
-        },
-        {
-          "fr": "biodiversité",
-          "en": "biodiversité",
-          "theme": "contenus"
-        },
-        {
-          "fr": "responsabilité",
-          "en": "responsabilité",
-          "theme": "contenus"
+          "fr": "responsabilité globale",
+          "en": "responsabilité globale (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
           "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "en": "solidarité (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "justice",
-          "en": "justice",
-          "theme": "contenus"
+          "fr": "inégalités",
+          "en": "inégalités (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "nations",
-          "en": "nations",
-          "theme": "contenus"
+          "fr": "pauvreté",
+          "en": "pauvreté (mondialisme et éthique)",
+          "theme": "mondialisme"
         },
         {
-          "fr": "traités",
-          "en": "traités",
-          "theme": "contenus"
+          "fr": "santé mondiale",
+          "en": "santé mondiale (mondialisme et éthique)",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t0",
+          "en": "d0",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t1",
+          "en": "d1",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t2",
+          "en": "d2",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t3",
+          "en": "d3",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t5",
+          "en": "d5",
+          "theme": "mondialisme"
+        },
+        {
+          "fr": "t6",
+          "en": "d6",
+          "theme": "mondialisme"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 3e",
+          "enonce": "Concept EMC niveau 3e",
           "bonne": "ONU",
           "fausses": [
-            "droits",
-            "tribunal",
-            "éthique"
+            "droits humains universels",
+            "tribunal international",
+            "éthique mondiale"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 3e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 3e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "droits",
+          "enonce": "Complète: mondialisme et éthique",
+          "bonne": "droits humains universels",
           "fausses": [
-            "tribunal",
-            "éthique",
-            "développement"
+            "tribunal international",
+            "éthique mondiale",
+            "développement durable"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 3e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "ONU",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 3e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 3e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

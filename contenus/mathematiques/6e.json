@@ -4,780 +4,768 @@
     "1": {
       "vocabulaire": [
         {
+          "fr": "équation",
+          "en": "équation (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "inéquation",
+          "en": "inéquation (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "proportion",
+          "en": "proportion (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "échelle",
+          "en": "échelle (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "pourcentage",
+          "en": "pourcentage (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "moyenne",
+          "en": "moyenne (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "médiane",
+          "en": "médiane (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "étendue",
+          "en": "étendue (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "mode",
+          "en": "mode (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "effectif",
+          "en": "effectif (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "fréquence",
+          "en": "fréquence (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "axe numérique",
+          "en": "axe numérique (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "intervalle",
+          "en": "intervalle (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "encadrement",
+          "en": "encadrement (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "nombre négatif",
+          "en": "nombre négatif (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
           "fr": "t0",
           "en": "d0",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "maths"
-        },
-        {
-          "fr": "t5",
-          "en": "d5",
-          "theme": "maths"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "maths"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "maths"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "maths"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "maths"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "maths"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "maths"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "maths"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "maths"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "maths"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "maths"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "maths"
-        },
-        {
-          "fr": "t17",
-          "en": "d17",
-          "theme": "maths"
-        },
-        {
-          "fr": "t18",
-          "en": "d18",
-          "theme": "maths"
-        },
-        {
-          "fr": "t19",
-          "en": "d19",
-          "theme": "maths"
+          "theme": "équations"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q1",
-          "bonne": "r1",
+          "enonce": "Concept Mathematiques niveau 6e",
+          "bonne": "équation",
           "fausses": [
-            "f0a",
-            "f0b",
-            "f0c"
+            "inéquation",
+            "proportion",
+            "échelle"
           ],
-          "explication": "E1"
+          "explication": "Explication 6e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: équations simples et proportions",
+          "bonne": "inéquation",
+          "fausses": [
+            "proportion",
+            "échelle",
+            "pourcentage"
+          ],
+          "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q2",
-          "bonne": "r2",
+          "enonce": "Thème principal",
+          "bonne": "équation",
           "fausses": [
-            "f1a",
-            "f1b",
-            "f1c"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "E2"
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 6e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q3",
-          "bonne": "r3",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f2a",
-            "f2b",
-            "f2c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E3"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q4",
-          "bonne": "r4",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f3a",
-            "f3b",
-            "f3c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E4"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q5",
-          "bonne": "r5",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f4a",
-            "f4b",
-            "f4c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E5"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q6",
-          "bonne": "r6",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f5a",
-            "f5b",
-            "f5c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q7",
-          "bonne": "r7",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f6a",
-            "f6b",
-            "f6c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q8",
-          "bonne": "r8",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f7a",
-            "f7b",
-            "f7c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q9",
-          "bonne": "r9",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f8a",
-            "f8b",
-            "f8c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q10",
-          "bonne": "r10",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f9a",
-            "f9b",
-            "f9c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q11",
-          "bonne": "r11",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f10a",
-            "f10b",
-            "f10c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q12",
-          "bonne": "r12",
-          "fausses": [
-            "f11a",
-            "f11b",
-            "f11c"
-          ],
-          "explication": "E12"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q13",
-          "bonne": "r13",
-          "fausses": [
-            "f12a",
-            "f12b",
-            "f12c"
-          ],
-          "explication": "E13"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q14",
-          "bonne": "r14",
-          "fausses": [
-            "f13a",
-            "f13b",
-            "f13c"
-          ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
+          "fr": "équation",
+          "en": "équation (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "inéquation",
+          "en": "inéquation (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "proportion",
+          "en": "proportion (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "échelle",
+          "en": "échelle (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "pourcentage",
+          "en": "pourcentage (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "moyenne",
+          "en": "moyenne (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "médiane",
+          "en": "médiane (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "étendue",
+          "en": "étendue (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "mode",
+          "en": "mode (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "effectif",
+          "en": "effectif (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "fréquence",
+          "en": "fréquence (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "axe numérique",
+          "en": "axe numérique (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "intervalle",
+          "en": "intervalle (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "encadrement",
+          "en": "encadrement (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "nombre négatif",
+          "en": "nombre négatif (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
           "fr": "t0",
           "en": "d0",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "maths"
-        },
-        {
-          "fr": "t5",
-          "en": "d5",
-          "theme": "maths"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "maths"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "maths"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "maths"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "maths"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "maths"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "maths"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "maths"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "maths"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "maths"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "maths"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "maths"
-        },
-        {
-          "fr": "t17",
-          "en": "d17",
-          "theme": "maths"
-        },
-        {
-          "fr": "t18",
-          "en": "d18",
-          "theme": "maths"
-        },
-        {
-          "fr": "t19",
-          "en": "d19",
-          "theme": "maths"
+          "theme": "équations"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q1",
-          "bonne": "r1",
+          "enonce": "Concept Mathematiques niveau 6e",
+          "bonne": "équation",
           "fausses": [
-            "f0a",
-            "f0b",
-            "f0c"
+            "inéquation",
+            "proportion",
+            "échelle"
           ],
-          "explication": "E1"
+          "explication": "Explication 6e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: équations simples et proportions",
+          "bonne": "inéquation",
+          "fausses": [
+            "proportion",
+            "échelle",
+            "pourcentage"
+          ],
+          "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q2",
-          "bonne": "r2",
+          "enonce": "Thème principal",
+          "bonne": "équation",
           "fausses": [
-            "f1a",
-            "f1b",
-            "f1c"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "E2"
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 6e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q3",
-          "bonne": "r3",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f2a",
-            "f2b",
-            "f2c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E3"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q4",
-          "bonne": "r4",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f3a",
-            "f3b",
-            "f3c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E4"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q5",
-          "bonne": "r5",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f4a",
-            "f4b",
-            "f4c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E5"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q6",
-          "bonne": "r6",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f5a",
-            "f5b",
-            "f5c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q7",
-          "bonne": "r7",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f6a",
-            "f6b",
-            "f6c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q8",
-          "bonne": "r8",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f7a",
-            "f7b",
-            "f7c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q9",
-          "bonne": "r9",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f8a",
-            "f8b",
-            "f8c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q10",
-          "bonne": "r10",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f9a",
-            "f9b",
-            "f9c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q11",
-          "bonne": "r11",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f10a",
-            "f10b",
-            "f10c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q12",
-          "bonne": "r12",
-          "fausses": [
-            "f11a",
-            "f11b",
-            "f11c"
-          ],
-          "explication": "E12"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q13",
-          "bonne": "r13",
-          "fausses": [
-            "f12a",
-            "f12b",
-            "f12c"
-          ],
-          "explication": "E13"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q14",
-          "bonne": "r14",
-          "fausses": [
-            "f13a",
-            "f13b",
-            "f13c"
-          ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
+          "fr": "équation",
+          "en": "équation (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "inéquation",
+          "en": "inéquation (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "proportion",
+          "en": "proportion (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "échelle",
+          "en": "échelle (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "pourcentage",
+          "en": "pourcentage (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "moyenne",
+          "en": "moyenne (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "médiane",
+          "en": "médiane (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "étendue",
+          "en": "étendue (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "mode",
+          "en": "mode (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "effectif",
+          "en": "effectif (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "fréquence",
+          "en": "fréquence (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "axe numérique",
+          "en": "axe numérique (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "intervalle",
+          "en": "intervalle (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "encadrement",
+          "en": "encadrement (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
+          "fr": "nombre négatif",
+          "en": "nombre négatif (équations simples et proportions)",
+          "theme": "équations"
+        },
+        {
           "fr": "t0",
           "en": "d0",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "maths"
+          "theme": "équations"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "maths"
-        },
-        {
-          "fr": "t5",
-          "en": "d5",
-          "theme": "maths"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "maths"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "maths"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "maths"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "maths"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "maths"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "maths"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "maths"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "maths"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "maths"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "maths"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "maths"
-        },
-        {
-          "fr": "t17",
-          "en": "d17",
-          "theme": "maths"
-        },
-        {
-          "fr": "t18",
-          "en": "d18",
-          "theme": "maths"
-        },
-        {
-          "fr": "t19",
-          "en": "d19",
-          "theme": "maths"
+          "theme": "équations"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q1",
-          "bonne": "r1",
+          "enonce": "Concept Mathematiques niveau 6e",
+          "bonne": "équation",
           "fausses": [
-            "f0a",
-            "f0b",
-            "f0c"
+            "inéquation",
+            "proportion",
+            "échelle"
           ],
-          "explication": "E1"
+          "explication": "Explication 6e"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Mathematiques au programme 6e",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "Content de Mathematiques"
+        },
+        {
+          "consigne": "Rempl",
+          "enonce": "Complète: équations simples et proportions",
+          "bonne": "inéquation",
+          "fausses": [
+            "proportion",
+            "échelle",
+            "pourcentage"
+          ],
+          "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q2",
-          "bonne": "r2",
+          "enonce": "Thème principal",
+          "bonne": "équation",
           "fausses": [
-            "f1a",
-            "f1b",
-            "f1c"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "E2"
+          "explication": "Thème"
+        },
+        {
+          "consigne": "V/F",
+          "enonce": "Niveau correct",
+          "bonne": "Vrai",
+          "fausses": [
+            "Faux"
+          ],
+          "explication": "C'est 6e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q3",
-          "bonne": "r3",
+          "enonce": "Question 6 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f2a",
-            "f2b",
-            "f2c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E3"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q4",
-          "bonne": "r4",
+          "enonce": "Question 7 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f3a",
-            "f3b",
-            "f3c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E4"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q5",
-          "bonne": "r5",
+          "enonce": "Question 8 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f4a",
-            "f4b",
-            "f4c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E5"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q6",
-          "bonne": "r6",
+          "enonce": "Question 9 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f5a",
-            "f5b",
-            "f5c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q7",
-          "bonne": "r7",
+          "enonce": "Question 10 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f6a",
-            "f6b",
-            "f6c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q8",
-          "bonne": "r8",
+          "enonce": "Question 11 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f7a",
-            "f7b",
-            "f7c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q9",
-          "bonne": "r9",
+          "enonce": "Question 12 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f8a",
-            "f8b",
-            "f8c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q10",
-          "bonne": "r10",
+          "enonce": "Question 13 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f9a",
-            "f9b",
-            "f9c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Math 6e Q11",
-          "bonne": "r11",
+          "enonce": "Question 14 Mathematiques",
+          "bonne": "réponse",
           "fausses": [
-            "f10a",
-            "f10b",
-            "f10c"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q12",
-          "bonne": "r12",
-          "fausses": [
-            "f11a",
-            "f11b",
-            "f11c"
-          ],
-          "explication": "E12"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q13",
-          "bonne": "r13",
-          "fausses": [
-            "f12a",
-            "f12b",
-            "f12c"
-          ],
-          "explication": "E13"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Math 6e Q14",
-          "bonne": "r14",
-          "fausses": [
-            "f13a",
-            "f13b",
-            "f13c"
-          ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

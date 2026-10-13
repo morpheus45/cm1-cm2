@@ -4,756 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "matière",
+          "en": "matière (physique et chimie simples)",
+          "theme": "physique"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "état",
+          "en": "état (physique et chimie simples)",
+          "theme": "physique"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "atome",
+          "en": "atome (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "molécule",
+          "en": "molécule (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "force",
+          "en": "force (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "son",
+          "en": "son (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "température",
+          "en": "température (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "chaleur",
+          "en": "chaleur (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "solubilité",
+          "en": "solubilité (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "mélange",
+          "en": "mélange (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "réaction",
+          "en": "réaction (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "combustion",
+          "en": "combustion (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "conductibilité",
+          "en": "conductibilité (physique et chimie simples)",
+          "theme": "physique"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t5",
-          "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "physique"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau 6e",
-          "bonne": "terme1",
+          "enonce": "Concept Sciences niveau 6e",
+          "bonne": "matière",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "état",
+            "atome",
+            "molécule"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 6e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme 6e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
-          "bonne": "terme2",
+          "enonce": "Complète: physique et chimie simples",
+          "bonne": "état",
           "fausses": [
-            "terme3"
+            "atome",
+            "molécule",
+            "force"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 6e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "matière",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 6e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 6e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "matière",
+          "en": "matière (physique et chimie simples)",
+          "theme": "physique"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "état",
+          "en": "état (physique et chimie simples)",
+          "theme": "physique"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "atome",
+          "en": "atome (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "molécule",
+          "en": "molécule (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "force",
+          "en": "force (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "son",
+          "en": "son (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "température",
+          "en": "température (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "chaleur",
+          "en": "chaleur (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "solubilité",
+          "en": "solubilité (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "mélange",
+          "en": "mélange (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "réaction",
+          "en": "réaction (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "combustion",
+          "en": "combustion (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "conductibilité",
+          "en": "conductibilité (physique et chimie simples)",
+          "theme": "physique"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t5",
-          "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "physique"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau 6e",
-          "bonne": "terme1",
+          "enonce": "Concept Sciences niveau 6e",
+          "bonne": "matière",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "état",
+            "atome",
+            "molécule"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 6e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme 6e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
-          "bonne": "terme2",
+          "enonce": "Complète: physique et chimie simples",
+          "bonne": "état",
           "fausses": [
-            "terme3"
+            "atome",
+            "molécule",
+            "force"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 6e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "matière",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 6e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 6e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "terme1",
-          "en": "terme1",
-          "theme": "contenus"
+          "fr": "matière",
+          "en": "matière (physique et chimie simples)",
+          "theme": "physique"
         },
         {
-          "fr": "terme2",
-          "en": "terme2",
-          "theme": "contenus"
+          "fr": "état",
+          "en": "état (physique et chimie simples)",
+          "theme": "physique"
         },
         {
-          "fr": "terme3",
-          "en": "terme3",
-          "theme": "contenus"
+          "fr": "atome",
+          "en": "atome (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "molécule",
+          "en": "molécule (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "force",
+          "en": "force (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "énergie",
+          "en": "énergie (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "lumière",
+          "en": "lumière (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "son",
+          "en": "son (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "température",
+          "en": "température (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "chaleur",
+          "en": "chaleur (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "solubilité",
+          "en": "solubilité (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "mélange",
+          "en": "mélange (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "réaction",
+          "en": "réaction (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "combustion",
+          "en": "combustion (physique et chimie simples)",
+          "theme": "physique"
+        },
+        {
+          "fr": "conductibilité",
+          "en": "conductibilité (physique et chimie simples)",
+          "theme": "physique"
         },
         {
           "fr": "t0",
           "en": "d0",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t1",
           "en": "d1",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t2",
           "en": "d2",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t3",
           "en": "d3",
-          "theme": "contenus"
+          "theme": "physique"
         },
         {
           "fr": "t4",
           "en": "d4",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t5",
-          "en": "d5",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t6",
-          "en": "d6",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t7",
-          "en": "d7",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t8",
-          "en": "d8",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t9",
-          "en": "d9",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t10",
-          "en": "d10",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t11",
-          "en": "d11",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t12",
-          "en": "d12",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t13",
-          "en": "d13",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t14",
-          "en": "d14",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t15",
-          "en": "d15",
-          "theme": "contenus"
-        },
-        {
-          "fr": "t16",
-          "en": "d16",
-          "theme": "contenus"
+          "theme": "physique"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème Sciences niveau 6e",
-          "bonne": "terme1",
+          "enonce": "Concept Sciences niveau 6e",
+          "bonne": "matière",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "état",
+            "atome",
+            "molécule"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 6e"
         },
         {
           "consigne": "V/F",
-          "enonce": "Sciences au programme",
+          "enonce": "Sciences au programme 6e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de Sciences"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de Sciences____",
-          "bonne": "terme2",
+          "enonce": "Complète: physique et chimie simples",
+          "bonne": "état",
           "fausses": [
-            "terme3"
+            "atome",
+            "molécule",
+            "force"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 6e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "matière",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 6e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 6e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 Sciences",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }

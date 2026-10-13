@@ -4,762 +4,768 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "culture",
-          "en": "culture",
-          "theme": "contenus"
+          "fr": "droits humains",
+          "en": "droits humains (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "religion",
-          "en": "religion",
-          "theme": "contenus"
+          "fr": "dignité",
+          "en": "dignité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "identité",
-          "en": "identité",
-          "theme": "contenus"
+          "fr": "égalité",
+          "en": "égalité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "patrimoine",
-          "en": "patrimoine",
-          "theme": "contenus"
+          "fr": "justice",
+          "en": "justice (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "laïcité",
-          "en": "laïcité",
-          "theme": "contenus"
+          "fr": "paix",
+          "en": "paix (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "droit",
-          "en": "droit",
-          "theme": "contenus"
+          "fr": "conflit",
+          "en": "conflit (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "jeu",
-          "en": "jeu",
-          "theme": "contenus"
+          "fr": "médiation",
+          "en": "médiation (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "apprentissage",
-          "en": "apprentissage",
-          "theme": "contenus"
+          "fr": "négociation",
+          "en": "négociation (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "fr": "dialogue",
+          "en": "dialogue (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "protection",
-          "en": "protection",
-          "theme": "contenus"
+          "fr": "solidarité internationale",
+          "en": "solidarité internationale (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "volontariat",
-          "en": "volontariat",
-          "theme": "contenus"
-        },
-        {
-          "fr": "association",
-          "en": "association",
-          "theme": "contenus"
+          "fr": "développement",
+          "en": "développement (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
           "fr": "environnement",
-          "en": "environnement",
-          "theme": "contenus"
+          "en": "environnement (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "écologie",
-          "en": "écologie",
-          "theme": "contenus"
+          "fr": "changement climatique",
+          "en": "changement climatique (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "fr": "biodiversité",
+          "en": "biodiversité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "ONG",
-          "en": "ONG",
-          "theme": "contenus"
+          "fr": "responsabilité",
+          "en": "responsabilité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "discrimination",
-          "en": "discrimination",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "exclusion",
-          "en": "exclusion",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "pauvreté",
-          "en": "pauvreté",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "équité",
-          "en": "équité",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "citoyenneté"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 5e",
-          "bonne": "culture",
+          "enonce": "Concept EMC niveau 5e",
+          "bonne": "droits humains",
           "fausses": [
-            "religion",
-            "identité",
-            "patrimoine"
+            "dignité",
+            "égalité",
+            "justice"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 5e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "religion",
+          "enonce": "Complète: citoyenneté active",
+          "bonne": "dignité",
           "fausses": [
-            "identité",
-            "patrimoine",
-            "laïcité"
+            "égalité",
+            "justice",
+            "paix"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 5e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "droits humains",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 5e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 5e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "culture",
-          "en": "culture",
-          "theme": "contenus"
+          "fr": "droits humains",
+          "en": "droits humains (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "religion",
-          "en": "religion",
-          "theme": "contenus"
+          "fr": "dignité",
+          "en": "dignité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "identité",
-          "en": "identité",
-          "theme": "contenus"
+          "fr": "égalité",
+          "en": "égalité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "patrimoine",
-          "en": "patrimoine",
-          "theme": "contenus"
+          "fr": "justice",
+          "en": "justice (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "laïcité",
-          "en": "laïcité",
-          "theme": "contenus"
+          "fr": "paix",
+          "en": "paix (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "droit",
-          "en": "droit",
-          "theme": "contenus"
+          "fr": "conflit",
+          "en": "conflit (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "jeu",
-          "en": "jeu",
-          "theme": "contenus"
+          "fr": "médiation",
+          "en": "médiation (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "apprentissage",
-          "en": "apprentissage",
-          "theme": "contenus"
+          "fr": "négociation",
+          "en": "négociation (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "fr": "dialogue",
+          "en": "dialogue (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "protection",
-          "en": "protection",
-          "theme": "contenus"
+          "fr": "solidarité internationale",
+          "en": "solidarité internationale (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "volontariat",
-          "en": "volontariat",
-          "theme": "contenus"
-        },
-        {
-          "fr": "association",
-          "en": "association",
-          "theme": "contenus"
+          "fr": "développement",
+          "en": "développement (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
           "fr": "environnement",
-          "en": "environnement",
-          "theme": "contenus"
+          "en": "environnement (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "écologie",
-          "en": "écologie",
-          "theme": "contenus"
+          "fr": "changement climatique",
+          "en": "changement climatique (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "fr": "biodiversité",
+          "en": "biodiversité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "ONG",
-          "en": "ONG",
-          "theme": "contenus"
+          "fr": "responsabilité",
+          "en": "responsabilité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "discrimination",
-          "en": "discrimination",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "exclusion",
-          "en": "exclusion",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "pauvreté",
-          "en": "pauvreté",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "équité",
-          "en": "équité",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "citoyenneté"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 5e",
-          "bonne": "culture",
+          "enonce": "Concept EMC niveau 5e",
+          "bonne": "droits humains",
           "fausses": [
-            "religion",
-            "identité",
-            "patrimoine"
+            "dignité",
+            "égalité",
+            "justice"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 5e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "religion",
+          "enonce": "Complète: citoyenneté active",
+          "bonne": "dignité",
           "fausses": [
-            "identité",
-            "patrimoine",
-            "laïcité"
+            "égalité",
+            "justice",
+            "paix"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 5e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "droits humains",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 5e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 5e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "culture",
-          "en": "culture",
-          "theme": "contenus"
+          "fr": "droits humains",
+          "en": "droits humains (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "religion",
-          "en": "religion",
-          "theme": "contenus"
+          "fr": "dignité",
+          "en": "dignité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "identité",
-          "en": "identité",
-          "theme": "contenus"
+          "fr": "égalité",
+          "en": "égalité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "patrimoine",
-          "en": "patrimoine",
-          "theme": "contenus"
+          "fr": "justice",
+          "en": "justice (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "laïcité",
-          "en": "laïcité",
-          "theme": "contenus"
+          "fr": "paix",
+          "en": "paix (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "droit",
-          "en": "droit",
-          "theme": "contenus"
+          "fr": "conflit",
+          "en": "conflit (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "jeu",
-          "en": "jeu",
-          "theme": "contenus"
+          "fr": "médiation",
+          "en": "médiation (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "apprentissage",
-          "en": "apprentissage",
-          "theme": "contenus"
+          "fr": "négociation",
+          "en": "négociation (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "santé",
-          "en": "santé",
-          "theme": "contenus"
+          "fr": "dialogue",
+          "en": "dialogue (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "protection",
-          "en": "protection",
-          "theme": "contenus"
+          "fr": "solidarité internationale",
+          "en": "solidarité internationale (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "volontariat",
-          "en": "volontariat",
-          "theme": "contenus"
-        },
-        {
-          "fr": "association",
-          "en": "association",
-          "theme": "contenus"
+          "fr": "développement",
+          "en": "développement (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
           "fr": "environnement",
-          "en": "environnement",
-          "theme": "contenus"
+          "en": "environnement (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "écologie",
-          "en": "écologie",
-          "theme": "contenus"
+          "fr": "changement climatique",
+          "en": "changement climatique (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "solidarité",
-          "en": "solidarité",
-          "theme": "contenus"
+          "fr": "biodiversité",
+          "en": "biodiversité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "ONG",
-          "en": "ONG",
-          "theme": "contenus"
+          "fr": "responsabilité",
+          "en": "responsabilité (citoyenneté active)",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "discrimination",
-          "en": "discrimination",
-          "theme": "contenus"
+          "fr": "t0",
+          "en": "d0",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "exclusion",
-          "en": "exclusion",
-          "theme": "contenus"
+          "fr": "t1",
+          "en": "d1",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "pauvreté",
-          "en": "pauvreté",
-          "theme": "contenus"
+          "fr": "t2",
+          "en": "d2",
+          "theme": "citoyenneté"
         },
         {
-          "fr": "équité",
-          "en": "équité",
-          "theme": "contenus"
+          "fr": "t3",
+          "en": "d3",
+          "theme": "citoyenneté"
+        },
+        {
+          "fr": "t4",
+          "en": "d4",
+          "theme": "citoyenneté"
         }
       ],
       "questions": [
         {
           "consigne": "Choix",
-          "enonce": "Thème EMC niveau 5e",
-          "bonne": "culture",
+          "enonce": "Concept EMC niveau 5e",
+          "bonne": "droits humains",
           "fausses": [
-            "religion",
-            "identité",
-            "patrimoine"
+            "dignité",
+            "égalité",
+            "justice"
           ],
-          "explication": "Bonne réponse"
+          "explication": "Explication 5e"
         },
         {
           "consigne": "V/F",
-          "enonce": "EMC au programme",
+          "enonce": "EMC au programme 5e",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "C'est au programme"
+          "explication": "Content de EMC"
         },
         {
           "consigne": "Rempl",
-          "enonce": "Un terme de EMC____",
-          "bonne": "religion",
+          "enonce": "Complète: citoyenneté active",
+          "bonne": "dignité",
           "fausses": [
-            "identité",
-            "patrimoine",
-            "laïcité"
+            "égalité",
+            "justice",
+            "paix"
           ],
           "explication": "Remplissage"
         },
         {
           "consigne": "Choix",
-          "enonce": "Niveau 5e____",
-          "bonne": "oui",
+          "enonce": "Thème principal",
+          "bonne": "droits humains",
           "fausses": [
-            "non"
+            "non",
+            "peut-être",
+            "autre"
           ],
-          "explication": "Confirmation"
+          "explication": "Thème"
         },
         {
           "consigne": "V/F",
-          "enonce": "Programme 5e",
+          "enonce": "Niveau correct",
           "bonne": "Vrai",
           "fausses": [
             "Faux"
           ],
-          "explication": "Contenu"
+          "explication": "C'est 5e"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q6",
-          "bonne": "rép",
+          "enonce": "Question 6 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E6"
+          "explication": "Explication 6"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q7",
-          "bonne": "rép",
+          "enonce": "Question 7 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E7"
+          "explication": "Explication 7"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q8",
-          "bonne": "rép",
+          "enonce": "Question 8 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E8"
+          "explication": "Explication 8"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q9",
-          "bonne": "rép",
+          "enonce": "Question 9 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E9"
+          "explication": "Explication 9"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q10",
-          "bonne": "rép",
+          "enonce": "Question 10 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E10"
+          "explication": "Explication 10"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q11",
-          "bonne": "rép",
+          "enonce": "Question 11 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E11"
+          "explication": "Explication 11"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q12",
-          "bonne": "rép",
+          "enonce": "Question 12 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E12"
+          "explication": "Explication 12"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q13",
-          "bonne": "rép",
+          "enonce": "Question 13 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E13"
+          "explication": "Explication 13"
         },
         {
           "consigne": "Choix",
-          "enonce": "Q14",
-          "bonne": "rép",
+          "enonce": "Question 14 EMC",
+          "bonne": "réponse",
           "fausses": [
-            "f1",
-            "f2",
-            "f3"
+            "faux1",
+            "faux2",
+            "faux3"
           ],
-          "explication": "E14"
+          "explication": "Explication 14"
         }
       ]
     }
