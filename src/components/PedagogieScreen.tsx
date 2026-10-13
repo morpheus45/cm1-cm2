@@ -34,9 +34,13 @@ const SUBJECTS: { id: Subject; label: string }[] = [
 
 const LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
 
-export function PedagogieScreen() {
+interface PedagogieScreenProps {
+  initialLevel?: Level;
+}
+
+export function PedagogieScreen({ initialLevel }: PedagogieScreenProps) {
   const [subject, setSubject] = useState<Subject>('francais');
-  const [level, setLevel] = useState<Level>('CE1');
+  const [level, setLevel] = useState<Level>(initialLevel ?? 'CE1');
   const [trimester, setTrimester] = useState('1');
   const [content, setContent] = useState<PedagogieContent | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
