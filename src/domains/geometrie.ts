@@ -1,4 +1,4 @@
-import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL, type Level, type Question, type Trimester } from '../types';
 import type { Figure, Point } from '../lib/figures';
 import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
@@ -545,8 +545,8 @@ function cycle(list: Family[], n: number): Family[] {
  * fois la même question.
  */
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
-  // Le CE1, le CE2 et la 6e ont leurs propres sortes de questions (geometrieNiveaux.ts).
-  if (level === 'CE1' || level === 'CE2' || level === '6e') return genererLesNouveauxNiveaux(level, trimester, rng, count);
+  // Le CE1, le CE2, la 6e et le collège ont leurs propres sortes de questions (geometrieNiveaux.ts).
+  if (level === 'CE1' || level === 'CE2' || level === '6e' || CYCLE_OF_LEVEL[level] === 4) return genererLesNouveauxNiveaux(level, trimester, rng, count);
   const stage = stageOf(level, trimester);
   const available = FAMILIES.filter((family) => isAvailableAt(family.minStage, stage));
   const recent = available.filter((family) => family.minStage === stage);

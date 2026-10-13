@@ -1,13 +1,14 @@
-import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL, type Level, type Question, type Trimester } from '../types';
 import { availableAt, stageOf } from '../lib/progression';
 import { rngShuffle, type Rng } from '../lib/seededRandom';
 import type { Family } from './geometrieCommun';
 import { FAMILLES_CYCLE2 } from './geometrieCycle2';
+import { FAMILLES_CYCLE4 } from './geometrieCycle4';
 import { FAMILLES_6E } from './geometrieSixieme';
 
 /**
- * Les questions de géométrie du CE1, du CE2 et de la 6e : chaque niveau a ses
- * propres sortes de questions (geometrieCycle2.ts, geometrieSixieme.ts), avec
+ * Les questions de géométrie du CE1, du CE2, de la 6e et du collège : chaque niveau a ses
+ * propres sortes de questions (geometrieCycle2.ts, geometrieSixieme.ts, geometrieCycle4.ts), avec
  * leurs propres nombres, et la séance se compose comme celle des autres
  * domaines de maths (mathsCommun.ts) : la part du trimestre pour ce qu'il
  * apporte de nouveau, le reste en révision, jamais deux fois la même question.
@@ -19,6 +20,7 @@ function cycle<T>(liste: T[], n: number): T[] {
 }
 
 export function famillesDuNiveau(level: Level): Family[] {
+  if (CYCLE_OF_LEVEL[level] === 4) return FAMILLES_CYCLE4;
   return level === '6e' ? FAMILLES_6E : FAMILLES_CYCLE2;
 }
 

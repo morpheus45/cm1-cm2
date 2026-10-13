@@ -1,4 +1,4 @@
-import { ALL_SUBJECTS, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS } from '../types';
+import { ALL_SUBJECTS, CYCLE_OF_LEVEL, SUBJECT_ACTIVITIES, SUBJECT_DOMAINS } from '../types';
 import type { Activity, Domain, Level, Subject, Trimester } from '../types';
 
 /**
@@ -62,13 +62,22 @@ export function subjectsFor(level: Level, trimester: Trimester): Subject[] {
  *  réciter ses tables, c'est du calcul. */
 const NEEDS_CALCUL: Activity[] = ['posees', 'tables'];
 
+/** Les séances de l'école primaire : on y pose ses opérations à la main et on
+ *  y récite ses tables. Au collège (le cycle 4, de la 5e à la 3e), l'élève ne
+ *  s'entraîne plus ainsi : ses calculs sont des expressions, des relatifs, des
+ *  fractions, des équations, que l'on ne pose pas en colonnes. */
+const SEANCES_DU_PRIMAIRE: Activity[] = ['posees', 'tables'];
+
 /**
  * Les types de séance qu'on peut proposer à l'élève : ceux de la matière, moins
- * ceux dont le contenu manque à ce niveau. Aucun quand la matière n'a pas une
- * seule notion à proposer.
+ * ceux dont le contenu manque à ce niveau, et moins ceux de l'école primaire
+ * au collège. Aucun quand la matière n'a pas une seule notion à proposer.
  */
 export function activitiesFor(subject: Subject, level: Level, trimester: Trimester): Activity[] {
   if (notionsFor(subject, level, trimester).length === 0) return [];
   const calcul = hasContent('calcul', level, trimester);
-  return SUBJECT_ACTIVITIES[subject].filter((activity) => calcul || !NEEDS_CALCUL.includes(activity));
+  const college = CYCLE_OF_LEVEL[level] === 4;
+  return SUBJECT_ACTIVITIES[subject].filter(
+    (activity) => (calcul || !NEEDS_CALCUL.includes(activity)) && !(college && SEANCES_DU_PRIMAIRE.includes(activity))
+  );
 }

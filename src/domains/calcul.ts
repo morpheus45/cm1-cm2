@@ -1,10 +1,11 @@
-import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL, type Level, type Question, type Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngShuffle } from '../lib/seededRandom';
 import { availableAt, isAvailableAt, stageOf, type Stage } from '../lib/progression';
 import { formatFrenchNumber } from '../lib/classProblems';
 import { genererCycle2, TECHNIQUES_CYCLE2 } from './calculCycle2';
 import { genererSixieme, TECHNIQUES_6E } from './calculSixieme';
+import { genererCycle4 } from './calculCycle4';
 
 type Operation = '+' | '-' | '×' | '÷';
 
@@ -246,6 +247,8 @@ export function eligibleOperationKinds(level: Level, trimester: Trimester): Oper
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
   if (level === 'CE1' || level === 'CE2') return genererCycle2(level, trimester, rng, count);
   if (level === '6e') return genererSixieme(level, trimester, rng, count);
+  // Au collège, on ne pose pas d'opération : les questions sont des expressions, des relatifs, des équations (calculCycle4.ts).
+  if (CYCLE_OF_LEVEL[level] === 4) return genererCycle4(level, trimester, rng, count);
   const questions: Question[] = [];
   const operations = buildOperations(level, trimester, rng, count);
 

@@ -1,10 +1,11 @@
-import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL, type Level, type Question, type Trimester } from '../types';
 import type { Rng } from '../lib/seededRandom';
 import { rngInt, rngPickN, rngShuffle } from '../lib/seededRandom';
 import { availableAt, stageOf, type Stage, type Staged } from '../lib/progression';
 import { ecritureChiffree, numberToFrenchWords } from './nombresEnLettres';
 import { genererCycle2 } from './numerationCycle2';
 import { genererSixieme } from './numerationSixieme';
+import { genererCycle4 } from './numerationCycle4';
 
 // Les nombres en lettres et en chiffres ont leur propre fichier ; on les redonne ici, où les tests et le
 // reste de l'application les cherchent.
@@ -101,11 +102,12 @@ function randomDicteeNumber(rng: Rng, stage: Stage): number {
 }
 
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
-  // Le CE1, le CE2 et la 6e ont leurs propres questions (numerationCycle2.ts,
-  // numerationSixieme.ts) : la taille des nombres et la banque ci-dessous
-  // sont celles du CM1 et du CM2.
+  // Le CE1, le CE2, la 6e et le collège (5e, 4e, 3e) ont leurs propres questions
+  // (numerationCycle2.ts, numerationSixieme.ts, numerationCycle4.ts) : la taille
+  // des nombres et la banque ci-dessous sont celles du CM1 et du CM2.
   if (level === 'CE1' || level === 'CE2') return genererCycle2(level, trimester, rng, count);
   if (level === '6e') return genererSixieme(level, trimester, rng, count);
+  if (CYCLE_OF_LEVEL[level] === 4) return genererCycle4(level, trimester, rng, count);
   const stage = stageOf(level, trimester);
   const bankPool = availableAt(BANK_ITEMS, stage);
   const bankBudget = count >= 4 ? Math.min(2, count, bankPool.length) : 0;

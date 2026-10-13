@@ -34,13 +34,17 @@ import * as geometrie from './geometrie';
  *  - cycle 4 (5e, 4e, 3e), des élèves de 12 à 15 ans : plus souple, des
  *    phrases plus longues sont permises.
  * Le point-virgule reste proscrit à tous les âges, et les parenthèses en
- * histoire et en géographie aussi.
+ * histoire et en géographie aussi. Une seule exception, au collège : il sépare
+ * les deux nombres des coordonnées d'un point, « (3 ; −2) », comme dans tous les
+ * manuels français (la virgule y est déjà celle des décimaux, et « (3, −2) »
+ * serait ambigu). Rien d'autre, nulle part.
  *
  * Les questions de chaque niveau ouvert (src/lib/contenu.ts) passent par les
- * séances, comme pour l'élève. Celles du CE1, du CE2 et de la 6e passent aussi
- * directement par leurs générateurs, avec bien plus de graines que les séances
- * n'en tirent : elles doivent être lisibles par des enfants de sept ans. Les
- * seuils du cycle 4 attendent leur contenu.
+ * séances, comme pour l'élève. Celles du CE1, du CE2, de la 6e et des trois
+ * niveaux du collège (maths) passent aussi directement par leurs générateurs,
+ * avec bien plus de graines que les séances n'en tirent : les premières doivent
+ * être lisibles par des enfants de sept ans, les autres par des élèves de douze
+ * à quinze ans, avec les seuils de leur cycle.
  */
 interface Seuils {
   /** Mots d'une phrase de la consigne ou de l'énoncé. */
@@ -72,9 +76,13 @@ const wordsOf = (sentence: string) => sentence.split(/\s+/).filter((token) => /[
 /** Une phrase s'arrête au point, au point d'exclamation ou d'interrogation, et aux deux-points. */
 const sentencesOf = (text: string) => text.split(/[.!?:…]+(?:\s|$)/).filter((part) => wordsOf(part).length > 0);
 
-/** Les maths du CE1, du CE2 et de la 6e : les questions que leurs générateurs fabriquent, en nombre. */
+/** Les coordonnées d'un point : deux nombres (ou deux lettres) séparés par un point-virgule, entre parenthèses. */
+const COORDONNEES = /\(\s*−?(?:[\d,]+|[a-z])\s;\s−?(?:[\d,]+|[a-z])\s*\)/g;
+const sansCoordonnees = (text: string) => text.replace(COORDONNEES, '');
+
+/** Les maths du CE1, du CE2, de la 6e et du collège : les questions que leurs générateurs fabriquent, en nombre. */
 const GENERATEURS_DES_NOUVEAUX_NIVEAUX = [numeration.generate, calcul.generate, problemes.generate, geometrie.generate];
-const NOUVEAUX_NIVEAUX: Level[] = ['CE1', 'CE2', '6e'];
+const NOUVEAUX_NIVEAUX: Level[] = ['CE1', 'CE2', '6e', '5e', '4e', '3e'];
 
 function questionsDesNouveauxNiveaux(): QuestionDuNiveau[] {
   return NOUVEAUX_NIVEAUX.flatMap((level) =>
@@ -136,10 +144,27 @@ describe('ce que lit l\'élève', () => {
     AVAILABLE_LEVELS.forEach((level) => expect(levels.has(level), level).toBe(true));
   });
 
-  it('n\'a jamais de point-virgule', () => {
-    questions.forEach(({ question: q }) =>
-      [q.instruction ?? '', q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) => expect(text, text).not.toContain(';'))
+  it('n\'a jamais de point-virgule, sauf entre les deux nombres des coordonnées d\'un point au collège', () => {
+    questions.forEach(({ level, question: q }) =>
+      [q.instruction ?? '', q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) =>
+        expect(CYCLE_OF_LEVEL[level] === 4 ? sansCoordonnees(text) : text, text).not.toContain(';')
+      )
     );
+  });
+
+  it('n\'emploie le point-virgule des coordonnées que dans une paire de nombres entre parenthèses : « (3 ; −2) »', () => {
+    // L'exception est étroite : deux nombres (ou deux lettres, dans une règle comme « (x ; y) ») séparés par « ; », entre parenthèses.
+    let vues = 0;
+    questions
+      .filter(({ level }) => CYCLE_OF_LEVEL[level] === 4)
+      .forEach(({ question: q }) =>
+        [q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) => {
+          vues += (text.match(/;/g) ?? []).length;
+          expect(text.match(/;/g)?.length ?? 0, text).toBe(text.match(COORDONNEES)?.length ?? 0);
+        })
+      );
+    // Sans coordonnées lues, le test précédent ne prouverait rien.
+    expect(vues).toBeGreaterThan(100);
   });
 
   it('fait des phrases courtes', () => {
@@ -160,7 +185,7 @@ describe('ce que lit l\'élève', () => {
     );
   });
 
-  it('élide devant une voyelle dans les maths du CE1, du CE2 et de la 6e : « d\'enfants », jamais « de enfants »', () => {
+  it('élide devant une voyelle dans les maths du CE1 à la 3e : « d\'enfants », jamais « de enfants »', () => {
     // Les énoncés se composent à partir de listes de mots : un mot qui commence par une voyelle
     // (enfants, étuis, œufs) ne doit pas rester seul derrière « de », « que » ou « ne ».
     // « onze » n'élide pas : « de onze » est juste. (\b ne voit pas les lettres accentuées : « achète un » n'est pas « te un » ; et le nom d'un point, « de A », n'est pas un mot.)
