@@ -37,6 +37,17 @@ Ouvrez simplement : **https://morpheus45.github.io/cm1-cm2/**
 
 Aucune installation ! La plateforme est déployée automatiquement sur GitHub Pages.
 
+### 🎓 Accès rapide par niveau scolaire
+Liens directs vers chaque niveau (vocabulaire + questions) :
+
+| Cycle 2 | Cycle 3 | Cycle 4 |
+|---------|---------|---------|
+| [CE1](https://morpheus45.github.io/cm1-cm2/#ce1) | [CM1](https://morpheus45.github.io/cm1-cm2/#cm1) | [5e](https://morpheus45.github.io/cm1-cm2/#5e) |
+| [CE2](https://morpheus45.github.io/cm1-cm2/#ce2) | [CM2](https://morpheus45.github.io/cm1-cm2/#cm2) | [4e](https://morpheus45.github.io/cm1-cm2/#4e) |
+|  | [6e](https://morpheus45.github.io/cm1-cm2/#6e) | [3e](https://morpheus45.github.io/cm1-cm2/#3e) |
+
+**Ou** cliquez sur « 🎓 Accès rapide par niveau » depuis l'accueil.
+
 ### 🏠 Accès local (Développement)
 ```bash
 # Cloner le dépôt
