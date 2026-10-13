@@ -4,768 +4,780 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "respecter",
-          "en": "respecter (règles et droits)",
-          "theme": "règles"
+          "fr": "règle",
+          "en": "règle",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "partager",
-          "en": "partager (règles et droits)",
-          "theme": "règles"
+          "fr": "respect",
+          "en": "respect",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "écouter",
-          "en": "écouter (règles et droits)",
-          "theme": "règles"
+          "fr": "ami",
+          "en": "ami",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "aider",
-          "en": "aider (règles et droits)",
-          "theme": "règles"
+          "fr": "camarade",
+          "en": "camarade",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "partage",
+          "en": "partage",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "aide",
+          "en": "aide",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "gentillesse",
+          "en": "gentillesse",
+          "theme": "Vivre ensemble"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté (règles et droits)",
-          "theme": "règles"
+          "en": "honnêteté",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "famille",
-          "en": "famille (règles et droits)",
-          "theme": "règles"
+          "fr": "courage",
+          "en": "courage",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "justice",
+          "en": "justice",
+          "theme": "Vivre ensemble"
         },
         {
           "fr": "école",
-          "en": "école (règles et droits)",
-          "theme": "règles"
+          "en": "école",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "amis",
-          "en": "amis (règles et droits)",
-          "theme": "règles"
+          "fr": "famille",
+          "en": "famille",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "communauté",
-          "en": "communauté (règles et droits)",
-          "theme": "règles"
+          "fr": "droit",
+          "en": "droit",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "citoyen",
-          "en": "citoyen (règles et droits)",
-          "theme": "règles"
+          "fr": "devoir",
+          "en": "devoir",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "sécurité",
-          "en": "sécurité (règles et droits)",
-          "theme": "règles"
+          "fr": "égalité",
+          "en": "égalité",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "nourriture",
-          "en": "nourriture (règles et droits)",
-          "theme": "règles"
+          "fr": "différence",
+          "en": "différence",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "éducation",
-          "en": "éducation (règles et droits)",
-          "theme": "règles"
+          "fr": "tolérance",
+          "en": "tolérance",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "santé",
-          "en": "santé (règles et droits)",
-          "theme": "règles"
+          "fr": "paix",
+          "en": "paix",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "jeu",
-          "en": "jeu (règles et droits)",
-          "theme": "règles"
+          "fr": "conflit",
+          "en": "conflit",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "t0",
-          "en": "d0",
-          "theme": "règles"
-        },
-        {
-          "fr": "t1",
-          "en": "d1",
-          "theme": "règles"
-        },
-        {
-          "fr": "t2",
-          "en": "d2",
-          "theme": "règles"
-        },
-        {
-          "fr": "t3",
-          "en": "d3",
-          "theme": "règles"
-        },
-        {
-          "fr": "t4",
-          "en": "d4",
-          "theme": "règles"
+          "fr": "résolution",
+          "en": "résolution",
+          "theme": "Vivre ensemble"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept EMC niveau CE1",
-          "bonne": "respecter",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"règle\" ?",
+          "bonne": "règle",
           "fausses": [
-            "partager",
-            "écouter",
-            "aider"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE1"
+          "explication": "La réponse correcte est \"règle\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "V/F",
-          "enonce": "EMC au programme CE1",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"respect\" ?",
+          "bonne": "respect",
           "fausses": [
-            "Faux"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Content de EMC"
+          "explication": "La réponse correcte est \"respect\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Rempl",
-          "enonce": "Complète: règles et droits",
-          "bonne": "partager",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ami\" ?",
+          "bonne": "ami",
           "fausses": [
-            "écouter",
-            "aider",
-            "honnêteté"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"ami\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "respecter",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"camarade\" ?",
+          "bonne": "camarade",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"camarade\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"partage\" ?",
+          "bonne": "partage",
           "fausses": [
-            "Faux"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "C'est CE1"
+          "explication": "La réponse correcte est \"partage\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"aide\" ?",
+          "bonne": "aide",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"aide\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"gentillesse\" ?",
+          "bonne": "gentillesse",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"gentillesse\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"honnêteté\" ?",
+          "bonne": "honnêteté",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"honnêteté\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"courage\" ?",
+          "bonne": "courage",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"courage\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"justice\" ?",
+          "bonne": "justice",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"justice\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"école\" ?",
+          "bonne": "école",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"école\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"famille\" ?",
+          "bonne": "famille",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"famille\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"droit\" ?",
+          "bonne": "droit",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"droit\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"devoir\" ?",
+          "bonne": "devoir",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"devoir\" car elle appartient au thème: Vivre ensemble"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "respecter",
-          "en": "respecter (règles et droits)",
-          "theme": "règles"
+          "fr": "règle",
+          "en": "règle",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "partager",
-          "en": "partager (règles et droits)",
-          "theme": "règles"
+          "fr": "respect",
+          "en": "respect",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "écouter",
-          "en": "écouter (règles et droits)",
-          "theme": "règles"
+          "fr": "ami",
+          "en": "ami",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "aider",
-          "en": "aider (règles et droits)",
-          "theme": "règles"
+          "fr": "camarade",
+          "en": "camarade",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "partage",
+          "en": "partage",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "aide",
+          "en": "aide",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "gentillesse",
+          "en": "gentillesse",
+          "theme": "Vivre ensemble"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté (règles et droits)",
-          "theme": "règles"
+          "en": "honnêteté",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "famille",
-          "en": "famille (règles et droits)",
-          "theme": "règles"
+          "fr": "courage",
+          "en": "courage",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "justice",
+          "en": "justice",
+          "theme": "Vivre ensemble"
         },
         {
           "fr": "école",
-          "en": "école (règles et droits)",
-          "theme": "règles"
+          "en": "école",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "amis",
-          "en": "amis (règles et droits)",
-          "theme": "règles"
+          "fr": "famille",
+          "en": "famille",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "communauté",
-          "en": "communauté (règles et droits)",
-          "theme": "règles"
+          "fr": "droit",
+          "en": "droit",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "citoyen",
-          "en": "citoyen (règles et droits)",
-          "theme": "règles"
+          "fr": "devoir",
+          "en": "devoir",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "sécurité",
-          "en": "sécurité (règles et droits)",
-          "theme": "règles"
+          "fr": "égalité",
+          "en": "égalité",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "nourriture",
-          "en": "nourriture (règles et droits)",
-          "theme": "règles"
+          "fr": "différence",
+          "en": "différence",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "éducation",
-          "en": "éducation (règles et droits)",
-          "theme": "règles"
+          "fr": "tolérance",
+          "en": "tolérance",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "santé",
-          "en": "santé (règles et droits)",
-          "theme": "règles"
+          "fr": "paix",
+          "en": "paix",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "jeu",
-          "en": "jeu (règles et droits)",
-          "theme": "règles"
+          "fr": "conflit",
+          "en": "conflit",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "t0",
-          "en": "d0",
-          "theme": "règles"
-        },
-        {
-          "fr": "t1",
-          "en": "d1",
-          "theme": "règles"
-        },
-        {
-          "fr": "t2",
-          "en": "d2",
-          "theme": "règles"
-        },
-        {
-          "fr": "t3",
-          "en": "d3",
-          "theme": "règles"
-        },
-        {
-          "fr": "t4",
-          "en": "d4",
-          "theme": "règles"
+          "fr": "résolution",
+          "en": "résolution",
+          "theme": "Vivre ensemble"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept EMC niveau CE1",
-          "bonne": "respecter",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"règle\" ?",
+          "bonne": "règle",
           "fausses": [
-            "partager",
-            "écouter",
-            "aider"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE1"
+          "explication": "La réponse correcte est \"règle\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "V/F",
-          "enonce": "EMC au programme CE1",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"respect\" ?",
+          "bonne": "respect",
           "fausses": [
-            "Faux"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Content de EMC"
+          "explication": "La réponse correcte est \"respect\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Rempl",
-          "enonce": "Complète: règles et droits",
-          "bonne": "partager",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ami\" ?",
+          "bonne": "ami",
           "fausses": [
-            "écouter",
-            "aider",
-            "honnêteté"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"ami\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "respecter",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"camarade\" ?",
+          "bonne": "camarade",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"camarade\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"partage\" ?",
+          "bonne": "partage",
           "fausses": [
-            "Faux"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "C'est CE1"
+          "explication": "La réponse correcte est \"partage\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"aide\" ?",
+          "bonne": "aide",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"aide\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"gentillesse\" ?",
+          "bonne": "gentillesse",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"gentillesse\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"honnêteté\" ?",
+          "bonne": "honnêteté",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"honnêteté\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"courage\" ?",
+          "bonne": "courage",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"courage\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"justice\" ?",
+          "bonne": "justice",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"justice\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"école\" ?",
+          "bonne": "école",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"école\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"famille\" ?",
+          "bonne": "famille",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"famille\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"droit\" ?",
+          "bonne": "droit",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"droit\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"devoir\" ?",
+          "bonne": "devoir",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"devoir\" car elle appartient au thème: Vivre ensemble"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "respecter",
-          "en": "respecter (règles et droits)",
-          "theme": "règles"
+          "fr": "règle",
+          "en": "règle",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "partager",
-          "en": "partager (règles et droits)",
-          "theme": "règles"
+          "fr": "respect",
+          "en": "respect",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "écouter",
-          "en": "écouter (règles et droits)",
-          "theme": "règles"
+          "fr": "ami",
+          "en": "ami",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "aider",
-          "en": "aider (règles et droits)",
-          "theme": "règles"
+          "fr": "camarade",
+          "en": "camarade",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "partage",
+          "en": "partage",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "aide",
+          "en": "aide",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "gentillesse",
+          "en": "gentillesse",
+          "theme": "Vivre ensemble"
         },
         {
           "fr": "honnêteté",
-          "en": "honnêteté (règles et droits)",
-          "theme": "règles"
+          "en": "honnêteté",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "famille",
-          "en": "famille (règles et droits)",
-          "theme": "règles"
+          "fr": "courage",
+          "en": "courage",
+          "theme": "Vivre ensemble"
+        },
+        {
+          "fr": "justice",
+          "en": "justice",
+          "theme": "Vivre ensemble"
         },
         {
           "fr": "école",
-          "en": "école (règles et droits)",
-          "theme": "règles"
+          "en": "école",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "amis",
-          "en": "amis (règles et droits)",
-          "theme": "règles"
+          "fr": "famille",
+          "en": "famille",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "communauté",
-          "en": "communauté (règles et droits)",
-          "theme": "règles"
+          "fr": "droit",
+          "en": "droit",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "citoyen",
-          "en": "citoyen (règles et droits)",
-          "theme": "règles"
+          "fr": "devoir",
+          "en": "devoir",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "sécurité",
-          "en": "sécurité (règles et droits)",
-          "theme": "règles"
+          "fr": "égalité",
+          "en": "égalité",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "nourriture",
-          "en": "nourriture (règles et droits)",
-          "theme": "règles"
+          "fr": "différence",
+          "en": "différence",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "éducation",
-          "en": "éducation (règles et droits)",
-          "theme": "règles"
+          "fr": "tolérance",
+          "en": "tolérance",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "santé",
-          "en": "santé (règles et droits)",
-          "theme": "règles"
+          "fr": "paix",
+          "en": "paix",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "jeu",
-          "en": "jeu (règles et droits)",
-          "theme": "règles"
+          "fr": "conflit",
+          "en": "conflit",
+          "theme": "Vivre ensemble"
         },
         {
-          "fr": "t0",
-          "en": "d0",
-          "theme": "règles"
-        },
-        {
-          "fr": "t1",
-          "en": "d1",
-          "theme": "règles"
-        },
-        {
-          "fr": "t2",
-          "en": "d2",
-          "theme": "règles"
-        },
-        {
-          "fr": "t3",
-          "en": "d3",
-          "theme": "règles"
-        },
-        {
-          "fr": "t4",
-          "en": "d4",
-          "theme": "règles"
+          "fr": "résolution",
+          "en": "résolution",
+          "theme": "Vivre ensemble"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept EMC niveau CE1",
-          "bonne": "respecter",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"règle\" ?",
+          "bonne": "règle",
           "fausses": [
-            "partager",
-            "écouter",
-            "aider"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE1"
+          "explication": "La réponse correcte est \"règle\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "V/F",
-          "enonce": "EMC au programme CE1",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"respect\" ?",
+          "bonne": "respect",
           "fausses": [
-            "Faux"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Content de EMC"
+          "explication": "La réponse correcte est \"respect\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Rempl",
-          "enonce": "Complète: règles et droits",
-          "bonne": "partager",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"ami\" ?",
+          "bonne": "ami",
           "fausses": [
-            "écouter",
-            "aider",
-            "honnêteté"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"ami\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "respecter",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"camarade\" ?",
+          "bonne": "camarade",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"camarade\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"partage\" ?",
+          "bonne": "partage",
           "fausses": [
-            "Faux"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "C'est CE1"
+          "explication": "La réponse correcte est \"partage\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"aide\" ?",
+          "bonne": "aide",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"aide\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"gentillesse\" ?",
+          "bonne": "gentillesse",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"gentillesse\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"honnêteté\" ?",
+          "bonne": "honnêteté",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"honnêteté\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"courage\" ?",
+          "bonne": "courage",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"courage\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"justice\" ?",
+          "bonne": "justice",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"justice\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"école\" ?",
+          "bonne": "école",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"école\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"famille\" ?",
+          "bonne": "famille",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"famille\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"droit\" ?",
+          "bonne": "droit",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"droit\" car elle appartient au thème: Vivre ensemble"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 EMC",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"devoir\" ?",
+          "bonne": "devoir",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"devoir\" car elle appartient au thème: Vivre ensemble"
         }
       ]
     }

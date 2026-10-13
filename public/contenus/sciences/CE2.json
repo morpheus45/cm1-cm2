@@ -4,768 +4,780 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "animal",
-          "en": "animal (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "squelette",
+          "en": "squelette",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "plante",
-          "en": "plante (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "muscle",
+          "en": "muscle",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "minéral",
-          "en": "minéral (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "os",
+          "en": "os",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "respiration",
-          "en": "respiration (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "cerveau",
+          "en": "cerveau",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "nourriture",
-          "en": "nourriture (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "reproduction",
-          "en": "reproduction (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "poumon",
+          "en": "poumon",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "croissance",
-          "en": "croissance (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "estomac",
+          "en": "estomac",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "mort",
-          "en": "mort (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "santé",
+          "en": "santé",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "décomposition",
-          "en": "décomposition (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "hygiène",
+          "en": "hygiène",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "chaîne alimentaire",
-          "en": "chaîne alimentaire (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "maladie",
+          "en": "maladie",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "habitat",
-          "en": "habitat (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "microbe",
+          "en": "microbe",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "vaccination",
+          "en": "vaccination",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "jour",
-          "en": "jour (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "alimentation",
+          "en": "alimentation",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "nuit",
-          "en": "nuit (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "sport",
+          "en": "sport",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "saisons",
-          "en": "saisons (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "sommeil",
+          "en": "sommeil",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t0",
-          "en": "d0",
-          "theme": "vivant"
+          "fr": "toxique",
+          "en": "toxique",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t1",
-          "en": "d1",
-          "theme": "vivant"
+          "fr": "poison",
+          "en": "poison",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t2",
-          "en": "d2",
-          "theme": "vivant"
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t3",
-          "en": "d3",
-          "theme": "vivant"
+          "fr": "premier secours",
+          "en": "premier secours",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t4",
-          "en": "d4",
-          "theme": "vivant"
+          "fr": "médecin",
+          "en": "médecin",
+          "theme": "Corps et santé"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept Sciences niveau CE2",
-          "bonne": "animal",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"squelette\" ?",
+          "bonne": "squelette",
           "fausses": [
-            "plante",
-            "minéral",
-            "respiration"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE2"
+          "explication": "La réponse correcte est \"squelette\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Sciences au programme CE2",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"muscle\" ?",
+          "bonne": "muscle",
           "fausses": [
-            "Faux"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Content de Sciences"
+          "explication": "La réponse correcte est \"muscle\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Rempl",
-          "enonce": "Complète: vivant et non-vivant",
-          "bonne": "plante",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"os\" ?",
+          "bonne": "os",
           "fausses": [
-            "minéral",
-            "respiration",
-            "nourriture"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"os\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "animal",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cerveau\" ?",
+          "bonne": "cerveau",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"cerveau\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cœur\" ?",
+          "bonne": "cœur",
           "fausses": [
-            "Faux"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "C'est CE2"
+          "explication": "La réponse correcte est \"cœur\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poumon\" ?",
+          "bonne": "poumon",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"poumon\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"estomac\" ?",
+          "bonne": "estomac",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"estomac\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"santé\" ?",
+          "bonne": "santé",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"santé\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hygiène\" ?",
+          "bonne": "hygiène",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"hygiène\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maladie\" ?",
+          "bonne": "maladie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"maladie\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"microbe\" ?",
+          "bonne": "microbe",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"microbe\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"vaccination\" ?",
+          "bonne": "vaccination",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"vaccination\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"alimentation\" ?",
+          "bonne": "alimentation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"alimentation\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sport\" ?",
+          "bonne": "sport",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"sport\" car elle appartient au thème: Corps et santé"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "animal",
-          "en": "animal (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "squelette",
+          "en": "squelette",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "plante",
-          "en": "plante (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "muscle",
+          "en": "muscle",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "minéral",
-          "en": "minéral (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "os",
+          "en": "os",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "respiration",
-          "en": "respiration (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "cerveau",
+          "en": "cerveau",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "nourriture",
-          "en": "nourriture (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "reproduction",
-          "en": "reproduction (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "poumon",
+          "en": "poumon",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "croissance",
-          "en": "croissance (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "estomac",
+          "en": "estomac",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "mort",
-          "en": "mort (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "santé",
+          "en": "santé",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "décomposition",
-          "en": "décomposition (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "hygiène",
+          "en": "hygiène",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "chaîne alimentaire",
-          "en": "chaîne alimentaire (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "maladie",
+          "en": "maladie",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "habitat",
-          "en": "habitat (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "microbe",
+          "en": "microbe",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "vaccination",
+          "en": "vaccination",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "jour",
-          "en": "jour (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "alimentation",
+          "en": "alimentation",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "nuit",
-          "en": "nuit (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "sport",
+          "en": "sport",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "saisons",
-          "en": "saisons (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "sommeil",
+          "en": "sommeil",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t0",
-          "en": "d0",
-          "theme": "vivant"
+          "fr": "toxique",
+          "en": "toxique",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t1",
-          "en": "d1",
-          "theme": "vivant"
+          "fr": "poison",
+          "en": "poison",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t2",
-          "en": "d2",
-          "theme": "vivant"
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t3",
-          "en": "d3",
-          "theme": "vivant"
+          "fr": "premier secours",
+          "en": "premier secours",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t4",
-          "en": "d4",
-          "theme": "vivant"
+          "fr": "médecin",
+          "en": "médecin",
+          "theme": "Corps et santé"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept Sciences niveau CE2",
-          "bonne": "animal",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"squelette\" ?",
+          "bonne": "squelette",
           "fausses": [
-            "plante",
-            "minéral",
-            "respiration"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE2"
+          "explication": "La réponse correcte est \"squelette\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Sciences au programme CE2",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"muscle\" ?",
+          "bonne": "muscle",
           "fausses": [
-            "Faux"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Content de Sciences"
+          "explication": "La réponse correcte est \"muscle\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Rempl",
-          "enonce": "Complète: vivant et non-vivant",
-          "bonne": "plante",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"os\" ?",
+          "bonne": "os",
           "fausses": [
-            "minéral",
-            "respiration",
-            "nourriture"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"os\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "animal",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cerveau\" ?",
+          "bonne": "cerveau",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"cerveau\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cœur\" ?",
+          "bonne": "cœur",
           "fausses": [
-            "Faux"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "C'est CE2"
+          "explication": "La réponse correcte est \"cœur\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poumon\" ?",
+          "bonne": "poumon",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"poumon\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"estomac\" ?",
+          "bonne": "estomac",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"estomac\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"santé\" ?",
+          "bonne": "santé",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"santé\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hygiène\" ?",
+          "bonne": "hygiène",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"hygiène\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maladie\" ?",
+          "bonne": "maladie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"maladie\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"microbe\" ?",
+          "bonne": "microbe",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"microbe\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"vaccination\" ?",
+          "bonne": "vaccination",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"vaccination\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"alimentation\" ?",
+          "bonne": "alimentation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"alimentation\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sport\" ?",
+          "bonne": "sport",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"sport\" car elle appartient au thème: Corps et santé"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "animal",
-          "en": "animal (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "squelette",
+          "en": "squelette",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "plante",
-          "en": "plante (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "muscle",
+          "en": "muscle",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "minéral",
-          "en": "minéral (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "os",
+          "en": "os",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "respiration",
-          "en": "respiration (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "cerveau",
+          "en": "cerveau",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "nourriture",
-          "en": "nourriture (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "cœur",
+          "en": "cœur",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "reproduction",
-          "en": "reproduction (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "poumon",
+          "en": "poumon",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "croissance",
-          "en": "croissance (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "estomac",
+          "en": "estomac",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "mort",
-          "en": "mort (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "santé",
+          "en": "santé",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "décomposition",
-          "en": "décomposition (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "hygiène",
+          "en": "hygiène",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "chaîne alimentaire",
-          "en": "chaîne alimentaire (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "maladie",
+          "en": "maladie",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "habitat",
-          "en": "habitat (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "microbe",
+          "en": "microbe",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "écosystème",
-          "en": "écosystème (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "vaccination",
+          "en": "vaccination",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "jour",
-          "en": "jour (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "alimentation",
+          "en": "alimentation",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "nuit",
-          "en": "nuit (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "sport",
+          "en": "sport",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "saisons",
-          "en": "saisons (vivant et non-vivant)",
-          "theme": "vivant"
+          "fr": "sommeil",
+          "en": "sommeil",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t0",
-          "en": "d0",
-          "theme": "vivant"
+          "fr": "toxique",
+          "en": "toxique",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t1",
-          "en": "d1",
-          "theme": "vivant"
+          "fr": "poison",
+          "en": "poison",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t2",
-          "en": "d2",
-          "theme": "vivant"
+          "fr": "sécurité",
+          "en": "sécurité",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t3",
-          "en": "d3",
-          "theme": "vivant"
+          "fr": "premier secours",
+          "en": "premier secours",
+          "theme": "Corps et santé"
         },
         {
-          "fr": "t4",
-          "en": "d4",
-          "theme": "vivant"
+          "fr": "médecin",
+          "en": "médecin",
+          "theme": "Corps et santé"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept Sciences niveau CE2",
-          "bonne": "animal",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"squelette\" ?",
+          "bonne": "squelette",
           "fausses": [
-            "plante",
-            "minéral",
-            "respiration"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE2"
+          "explication": "La réponse correcte est \"squelette\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Sciences au programme CE2",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"muscle\" ?",
+          "bonne": "muscle",
           "fausses": [
-            "Faux"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Content de Sciences"
+          "explication": "La réponse correcte est \"muscle\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Rempl",
-          "enonce": "Complète: vivant et non-vivant",
-          "bonne": "plante",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"os\" ?",
+          "bonne": "os",
           "fausses": [
-            "minéral",
-            "respiration",
-            "nourriture"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"os\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "animal",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cerveau\" ?",
+          "bonne": "cerveau",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"cerveau\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cœur\" ?",
+          "bonne": "cœur",
           "fausses": [
-            "Faux"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "C'est CE2"
+          "explication": "La réponse correcte est \"cœur\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poumon\" ?",
+          "bonne": "poumon",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"poumon\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"estomac\" ?",
+          "bonne": "estomac",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"estomac\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"santé\" ?",
+          "bonne": "santé",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"santé\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"hygiène\" ?",
+          "bonne": "hygiène",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"hygiène\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"maladie\" ?",
+          "bonne": "maladie",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"maladie\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"microbe\" ?",
+          "bonne": "microbe",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"microbe\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"vaccination\" ?",
+          "bonne": "vaccination",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"vaccination\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"alimentation\" ?",
+          "bonne": "alimentation",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"alimentation\" car elle appartient au thème: Corps et santé"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 Sciences",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sport\" ?",
+          "bonne": "sport",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"sport\" car elle appartient au thème: Corps et santé"
         }
       ]
     }

@@ -5,255 +5,259 @@
       "vocabulaire": [
         {
           "fr": "1",
-          "en": "1 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "1",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "2",
-          "en": "2 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "2",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "3",
-          "en": "3 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "3",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "4",
-          "en": "4 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "4",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "5",
-          "en": "5 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "5",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "6",
-          "en": "6 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "6",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "7",
-          "en": "7 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "7",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "8",
-          "en": "8 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "8",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "9",
-          "en": "9 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "9",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "10",
-          "en": "10 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "10",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "+",
-          "en": "+ (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "plus",
+          "en": "plus",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "-",
-          "en": "- (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "moins",
+          "en": "moins",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "×",
-          "en": "× (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "égal",
+          "en": "égal",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "÷",
-          "en": "÷ (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "addition",
+          "en": "addition",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "=",
-          "en": "= (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "soustraction",
+          "en": "soustraction",
+          "theme": "Nombres et calcul"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine",
+          "theme": "Nombres et calcul"
+        },
+        {
+          "fr": "unité",
+          "en": "unité",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "pair",
-          "en": "pair (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "pair",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "impair",
-          "en": "impair (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "impair",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "carré",
-          "en": "carré (nombres 1-10 et opérations)",
-          "theme": "nombres"
-        },
-        {
-          "fr": "triangle",
-          "en": "triangle (nombres 1-10 et opérations)",
-          "theme": "nombres"
-        },
-        {
-          "fr": "cercle",
-          "en": "cercle (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "compter",
+          "en": "compter",
+          "theme": "Nombres et calcul"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept Mathematiques niveau CE1",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"1\" ?",
           "bonne": "1",
           "fausses": [
-            "2",
-            "3",
-            "4"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE1"
+          "explication": "La réponse correcte est \"1\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Mathematiques au programme CE1",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Content de Mathematiques"
-        },
-        {
-          "consigne": "Rempl",
-          "enonce": "Complète: nombres 1-10 et opérations",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"2\" ?",
           "bonne": "2",
           "fausses": [
-            "3",
-            "4",
-            "5"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"2\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "1",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"3\" ?",
+          "bonne": "3",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"3\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"4\" ?",
+          "bonne": "4",
           "fausses": [
-            "Faux"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "C'est CE1"
+          "explication": "La réponse correcte est \"4\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"5\" ?",
+          "bonne": "5",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"5\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"6\" ?",
+          "bonne": "6",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"6\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"7\" ?",
+          "bonne": "7",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"7\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"8\" ?",
+          "bonne": "8",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"8\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"9\" ?",
+          "bonne": "9",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"9\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"10\" ?",
+          "bonne": "10",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"10\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"plus\" ?",
+          "bonne": "plus",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"plus\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"moins\" ?",
+          "bonne": "moins",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"moins\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égal\" ?",
+          "bonne": "égal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"égal\" car elle appartient au thème: Nombres et calcul"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"addition\" ?",
+          "bonne": "addition",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"addition\" car elle appartient au thème: Nombres et calcul"
         }
       ]
     },
@@ -261,255 +265,259 @@
       "vocabulaire": [
         {
           "fr": "1",
-          "en": "1 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "1",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "2",
-          "en": "2 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "2",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "3",
-          "en": "3 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "3",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "4",
-          "en": "4 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "4",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "5",
-          "en": "5 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "5",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "6",
-          "en": "6 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "6",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "7",
-          "en": "7 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "7",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "8",
-          "en": "8 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "8",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "9",
-          "en": "9 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "9",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "10",
-          "en": "10 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "10",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "+",
-          "en": "+ (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "plus",
+          "en": "plus",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "-",
-          "en": "- (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "moins",
+          "en": "moins",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "×",
-          "en": "× (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "égal",
+          "en": "égal",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "÷",
-          "en": "÷ (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "addition",
+          "en": "addition",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "=",
-          "en": "= (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "soustraction",
+          "en": "soustraction",
+          "theme": "Nombres et calcul"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine",
+          "theme": "Nombres et calcul"
+        },
+        {
+          "fr": "unité",
+          "en": "unité",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "pair",
-          "en": "pair (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "pair",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "impair",
-          "en": "impair (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "impair",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "carré",
-          "en": "carré (nombres 1-10 et opérations)",
-          "theme": "nombres"
-        },
-        {
-          "fr": "triangle",
-          "en": "triangle (nombres 1-10 et opérations)",
-          "theme": "nombres"
-        },
-        {
-          "fr": "cercle",
-          "en": "cercle (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "compter",
+          "en": "compter",
+          "theme": "Nombres et calcul"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept Mathematiques niveau CE1",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"1\" ?",
           "bonne": "1",
           "fausses": [
-            "2",
-            "3",
-            "4"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE1"
+          "explication": "La réponse correcte est \"1\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Mathematiques au programme CE1",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Content de Mathematiques"
-        },
-        {
-          "consigne": "Rempl",
-          "enonce": "Complète: nombres 1-10 et opérations",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"2\" ?",
           "bonne": "2",
           "fausses": [
-            "3",
-            "4",
-            "5"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"2\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "1",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"3\" ?",
+          "bonne": "3",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"3\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"4\" ?",
+          "bonne": "4",
           "fausses": [
-            "Faux"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "C'est CE1"
+          "explication": "La réponse correcte est \"4\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"5\" ?",
+          "bonne": "5",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"5\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"6\" ?",
+          "bonne": "6",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"6\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"7\" ?",
+          "bonne": "7",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"7\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"8\" ?",
+          "bonne": "8",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"8\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"9\" ?",
+          "bonne": "9",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"9\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"10\" ?",
+          "bonne": "10",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"10\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"plus\" ?",
+          "bonne": "plus",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"plus\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"moins\" ?",
+          "bonne": "moins",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"moins\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égal\" ?",
+          "bonne": "égal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"égal\" car elle appartient au thème: Nombres et calcul"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"addition\" ?",
+          "bonne": "addition",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"addition\" car elle appartient au thème: Nombres et calcul"
         }
       ]
     },
@@ -517,255 +525,259 @@
       "vocabulaire": [
         {
           "fr": "1",
-          "en": "1 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "1",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "2",
-          "en": "2 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "2",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "3",
-          "en": "3 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "3",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "4",
-          "en": "4 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "4",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "5",
-          "en": "5 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "5",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "6",
-          "en": "6 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "6",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "7",
-          "en": "7 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "7",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "8",
-          "en": "8 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "8",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "9",
-          "en": "9 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "9",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "10",
-          "en": "10 (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "10",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "+",
-          "en": "+ (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "plus",
+          "en": "plus",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "-",
-          "en": "- (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "moins",
+          "en": "moins",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "×",
-          "en": "× (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "égal",
+          "en": "égal",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "÷",
-          "en": "÷ (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "addition",
+          "en": "addition",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "=",
-          "en": "= (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "soustraction",
+          "en": "soustraction",
+          "theme": "Nombres et calcul"
+        },
+        {
+          "fr": "dizaine",
+          "en": "dizaine",
+          "theme": "Nombres et calcul"
+        },
+        {
+          "fr": "unité",
+          "en": "unité",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "pair",
-          "en": "pair (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "pair",
+          "theme": "Nombres et calcul"
         },
         {
           "fr": "impair",
-          "en": "impair (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "en": "impair",
+          "theme": "Nombres et calcul"
         },
         {
-          "fr": "carré",
-          "en": "carré (nombres 1-10 et opérations)",
-          "theme": "nombres"
-        },
-        {
-          "fr": "triangle",
-          "en": "triangle (nombres 1-10 et opérations)",
-          "theme": "nombres"
-        },
-        {
-          "fr": "cercle",
-          "en": "cercle (nombres 1-10 et opérations)",
-          "theme": "nombres"
+          "fr": "compter",
+          "en": "compter",
+          "theme": "Nombres et calcul"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Concept Mathematiques niveau CE1",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"1\" ?",
           "bonne": "1",
           "fausses": [
-            "2",
-            "3",
-            "4"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "Explication CE1"
+          "explication": "La réponse correcte est \"1\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Mathematiques au programme CE1",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "Content de Mathematiques"
-        },
-        {
-          "consigne": "Rempl",
-          "enonce": "Complète: nombres 1-10 et opérations",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"2\" ?",
           "bonne": "2",
           "fausses": [
-            "3",
-            "4",
-            "5"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "Remplissage"
+          "explication": "La réponse correcte est \"2\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Thème principal",
-          "bonne": "1",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"3\" ?",
+          "bonne": "3",
           "fausses": [
-            "non",
-            "peut-être",
-            "autre"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "Thème"
+          "explication": "La réponse correcte est \"3\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "V/F",
-          "enonce": "Niveau correct",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"4\" ?",
+          "bonne": "4",
           "fausses": [
-            "Faux"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "C'est CE1"
+          "explication": "La réponse correcte est \"4\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 6 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"5\" ?",
+          "bonne": "5",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "Explication 6"
+          "explication": "La réponse correcte est \"5\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 7 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"6\" ?",
+          "bonne": "6",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "Explication 7"
+          "explication": "La réponse correcte est \"6\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 8 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"7\" ?",
+          "bonne": "7",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "Explication 8"
+          "explication": "La réponse correcte est \"7\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 9 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"8\" ?",
+          "bonne": "8",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "Explication 9"
+          "explication": "La réponse correcte est \"8\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 10 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"9\" ?",
+          "bonne": "9",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "Explication 10"
+          "explication": "La réponse correcte est \"9\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 11 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"10\" ?",
+          "bonne": "10",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "Explication 11"
+          "explication": "La réponse correcte est \"10\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 12 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"plus\" ?",
+          "bonne": "plus",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "Explication 12"
+          "explication": "La réponse correcte est \"plus\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 13 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"moins\" ?",
+          "bonne": "moins",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "Explication 13"
+          "explication": "La réponse correcte est \"moins\" car elle appartient au thème: Nombres et calcul"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Question 14 Mathematiques",
-          "bonne": "réponse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"égal\" ?",
+          "bonne": "égal",
           "fausses": [
-            "faux1",
-            "faux2",
-            "faux3"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "Explication 14"
+          "explication": "La réponse correcte est \"égal\" car elle appartient au thème: Nombres et calcul"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"addition\" ?",
+          "bonne": "addition",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"addition\" car elle appartient au thème: Nombres et calcul"
         }
       ]
     }

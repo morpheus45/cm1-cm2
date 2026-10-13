@@ -5,757 +5,779 @@
       "vocabulaire": [
         {
           "fr": "a",
-          "en": "lettre 1",
-          "theme": "lettre"
+          "en": "a",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "b",
-          "en": "lettre 2",
-          "theme": "lettre"
+          "fr": "e",
+          "en": "e",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "c",
-          "en": "lettre 3",
-          "theme": "lettre"
+          "fr": "i",
+          "en": "i",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "chat",
-          "en": "animal",
-          "theme": "animal"
+          "fr": "o",
+          "en": "o",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "soleil",
-          "en": "astre",
-          "theme": "astre"
+          "fr": "u",
+          "en": "u",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "maman",
-          "en": "mère",
-          "theme": "mère"
+          "fr": "la",
+          "en": "la",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "papa",
-          "en": "père",
-          "theme": "père"
-        },
-        {
-          "fr": "maison",
-          "en": "habitation",
-          "theme": "habitation"
-        },
-        {
-          "fr": "école",
-          "en": "lieu étude",
-          "theme": "lieu"
-        },
-        {
-          "fr": "pain",
-          "en": "aliment",
-          "theme": "aliment"
-        },
-        {
-          "fr": "eau",
-          "en": "boisson",
-          "theme": "boisson"
-        },
-        {
-          "fr": "feu",
-          "en": "chaleur",
-          "theme": "chaleur"
-        },
-        {
-          "fr": "rouge",
-          "en": "couleur",
-          "theme": "couleur"
-        },
-        {
-          "fr": "bleu",
-          "en": "couleur",
-          "theme": "couleur"
-        },
-        {
-          "fr": "vert",
-          "en": "couleur",
-          "theme": "couleur"
+          "fr": "le",
+          "en": "le",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "un",
-          "en": "nombre",
-          "theme": "nombre"
+          "en": "un",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "deux",
-          "en": "nombre",
-          "theme": "nombre"
+          "fr": "une",
+          "en": "une",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "trois",
-          "en": "nombre",
-          "theme": "nombre"
+          "fr": "de",
+          "en": "de",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "bonjour",
-          "en": "salutation",
-          "theme": "salutation"
+          "fr": "est",
+          "en": "est",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "au revoir",
-          "en": "adieu",
-          "theme": "adieu"
+          "fr": "cat",
+          "en": "cat",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "dog",
+          "en": "dog",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "et",
+          "en": "et",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ou",
+          "en": "ou",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "nous",
+          "en": "nous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "vous",
+          "en": "vous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "il",
+          "en": "il",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "elle",
+          "en": "elle",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ils",
+          "en": "ils",
+          "theme": "Apprentissage lecture"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Quel son 'ch' ?",
-          "bonne": "doux",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"a\" ?",
+          "bonne": "a",
           "fausses": [
-            "dur",
-            "grave",
-            "aigu"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "ch=doux"
+          "explication": "La réponse correcte est \"a\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "J'aime mon ___",
-          "bonne": "chat",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"e\" ?",
+          "bonne": "e",
           "fausses": [
-            "soleil",
-            "pain",
-            "eau"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "aimer"
+          "explication": "La réponse correcte est \"e\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Soleil brille nuit",
-          "bonne": "Faux",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"i\" ?",
+          "bonne": "i",
           "fausses": [
-            "Vrai"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "soleil=jour"
+          "explication": "La réponse correcte est \"i\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Rime 'chat' ?",
-          "bonne": "rat",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"o\" ?",
+          "bonne": "o",
           "fausses": [
-            "soleil",
-            "eau",
-            "feu"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "rime"
+          "explication": "La réponse correcte est \"o\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Couleur herbe ?",
-          "bonne": "vert",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"u\" ?",
+          "bonne": "u",
           "fausses": [
-            "bleu",
-            "rouge",
-            "noir"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "herbe"
+          "explication": "La réponse correcte est \"u\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "J'habite ___",
-          "bonne": "maison",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"la\" ?",
+          "bonne": "la",
           "fausses": [
-            "école",
-            "pain",
-            "route"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "habite"
+          "explication": "La réponse correcte est \"la\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Lettre après 'a' ?",
-          "bonne": "b",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"le\" ?",
+          "bonne": "le",
           "fausses": [
-            "c",
-            "d",
-            "z"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "alphabet"
+          "explication": "La réponse correcte est \"le\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "On s'assoit ___",
-          "bonne": "chaise",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"un\" ?",
+          "bonne": "un",
           "fausses": [
-            "table",
-            "porte",
-            "fenêtre"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "chaise"
+          "explication": "La réponse correcte est \"un\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Chien=animal",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"une\" ?",
+          "bonne": "une",
           "fausses": [
-            "Faux"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "chien"
+          "explication": "La réponse correcte est \"une\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Opposé jour ?",
-          "bonne": "nuit",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"de\" ?",
+          "bonne": "de",
           "fausses": [
-            "matin",
-            "soir",
-            "lumière"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "nuit"
+          "explication": "La réponse correcte est \"de\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "On mange du ___",
-          "bonne": "pain",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
           "fausses": [
-            "feu",
-            "chaise",
-            "soleil"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "pain"
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Animal aboie ?",
-          "bonne": "chien",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cat\" ?",
+          "bonne": "cat",
           "fausses": [
-            "chat",
-            "oiseau",
-            "poisson"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "aboie"
+          "explication": "La réponse correcte est \"cat\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Eau=solide",
-          "bonne": "Faux",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dog\" ?",
+          "bonne": "dog",
           "fausses": [
-            "Vrai"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "eau=liquide"
+          "explication": "La réponse correcte est \"dog\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Nombre après 2 ?",
-          "bonne": "3",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"et\" ?",
+          "bonne": "et",
           "fausses": [
-            "1",
-            "4",
-            "5"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "nombre"
+          "explication": "La réponse correcte est \"et\" car elle appartient au thème: Apprentissage lecture"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "d",
-          "en": "lettre 4",
-          "theme": "lettre"
+          "fr": "a",
+          "en": "a",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "e",
-          "en": "lettre 5",
-          "theme": "lettre"
-        },
-        {
-          "fr": "f",
-          "en": "lettre 6",
-          "theme": "lettre"
-        },
-        {
-          "fr": "g",
-          "en": "lettre 7",
-          "theme": "lettre"
-        },
-        {
-          "fr": "h",
-          "en": "lettre 8",
-          "theme": "lettre"
+          "en": "e",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "i",
-          "en": "lettre 9",
-          "theme": "lettre"
-        },
-        {
-          "fr": "j",
-          "en": "lettre 10",
-          "theme": "lettre"
-        },
-        {
-          "fr": "k",
-          "en": "lettre 11",
-          "theme": "lettre"
-        },
-        {
-          "fr": "l",
-          "en": "lettre 12",
-          "theme": "lettre"
-        },
-        {
-          "fr": "m",
-          "en": "lettre 13",
-          "theme": "lettre"
-        },
-        {
-          "fr": "n",
-          "en": "lettre 14",
-          "theme": "lettre"
+          "en": "i",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "o",
-          "en": "lettre 15",
-          "theme": "lettre"
-        },
-        {
-          "fr": "p",
-          "en": "lettre 16",
-          "theme": "lettre"
-        },
-        {
-          "fr": "q",
-          "en": "lettre 17",
-          "theme": "lettre"
-        },
-        {
-          "fr": "r",
-          "en": "lettre 18",
-          "theme": "lettre"
-        },
-        {
-          "fr": "s",
-          "en": "lettre 19",
-          "theme": "lettre"
-        },
-        {
-          "fr": "t",
-          "en": "lettre 20",
-          "theme": "lettre"
+          "en": "o",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "u",
-          "en": "lettre 21",
-          "theme": "lettre"
+          "en": "u",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "v",
-          "en": "lettre 22",
-          "theme": "lettre"
+          "fr": "la",
+          "en": "la",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "w",
-          "en": "lettre 23",
-          "theme": "lettre"
+          "fr": "le",
+          "en": "le",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "un",
+          "en": "un",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "une",
+          "en": "une",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "de",
+          "en": "de",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "cat",
+          "en": "cat",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "dog",
+          "en": "dog",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "et",
+          "en": "et",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ou",
+          "en": "ou",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "nous",
+          "en": "nous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "vous",
+          "en": "vous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "il",
+          "en": "il",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "elle",
+          "en": "elle",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ils",
+          "en": "ils",
+          "theme": "Apprentissage lecture"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Lettre 'd' ?",
-          "bonne": "quatrième",
-          "fausses": [
-            "troisième",
-            "cinquième",
-            "sixième"
-          ],
-          "explication": "d"
-        },
-        {
-          "consigne": "Remplir",
-          "enonce": "Alphabet après 's' ?",
-          "bonne": "t",
-          "fausses": [
-            "u",
-            "v",
-            "w"
-          ],
-          "explication": "alphabet"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Total lettres alphabet ?",
-          "bonne": "26",
-          "fausses": [
-            "24",
-            "25",
-            "27"
-          ],
-          "explication": "alphabet"
-        },
-        {
-          "consigne": "Vrai/Faux",
-          "enonce": "Voyelle='a'",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "voyelle"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Consonne='b' ?",
-          "bonne": "oui",
-          "fausses": [
-            "non"
-          ],
-          "explication": "consonne"
-        },
-        {
-          "consigne": "Remplir",
-          "enonce": "Lettre entre 'p' et 'r' ?",
-          "bonne": "q",
-          "fausses": [
-            "o",
-            "s",
-            "t"
-          ],
-          "explication": "alphabet"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Son 'j' ?",
-          "bonne": "ja",
-          "fausses": [
-            "je",
-            "ji",
-            "jo"
-          ],
-          "explication": "phonétique"
-        },
-        {
-          "consigne": "Remplir",
-          "enonce": "Rime 'matin' ?",
-          "bonne": "pain",
-          "fausses": [
-            "chat",
-            "soleil",
-            "nuit"
-          ],
-          "explication": "rime"
-        },
-        {
-          "consigne": "Vrai/Faux",
-          "enonce": "Son 'ch'=consonne",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "consonne"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Nombre 0 s'appelle ?",
-          "bonne": "zéro",
-          "fausses": [
-            "rien",
-            "vide",
-            "néant"
-          ],
-          "explication": "nombre"
-        },
-        {
-          "consigne": "Remplir",
-          "enonce": "Après 9 ?",
-          "bonne": "10",
-          "fausses": [
-            "8",
-            "11",
-            "12"
-          ],
-          "explication": "nombre"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Voyelle='e' ?",
-          "bonne": "oui",
-          "fausses": [
-            "non"
-          ],
-          "explication": "voyelle"
-        },
-        {
-          "consigne": "Vrai/Faux",
-          "enonce": "'y'=voyelle",
-          "bonne": "Faux",
-          "fausses": [
-            "Vrai"
-          ],
-          "explication": "y"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Début alphabet ?",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"a\" ?",
           "bonne": "a",
           "fausses": [
-            "b",
-            "z",
-            "m"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "alphabet"
+          "explication": "La réponse correcte est \"a\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"e\" ?",
+          "bonne": "e",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"e\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"i\" ?",
+          "bonne": "i",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"i\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"o\" ?",
+          "bonne": "o",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"o\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"u\" ?",
+          "bonne": "u",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"u\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"la\" ?",
+          "bonne": "la",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"la\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"le\" ?",
+          "bonne": "le",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"le\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"un\" ?",
+          "bonne": "un",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"un\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"une\" ?",
+          "bonne": "une",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"une\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"de\" ?",
+          "bonne": "de",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"de\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
+          "fausses": [
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
+          ],
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cat\" ?",
+          "bonne": "cat",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"cat\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dog\" ?",
+          "bonne": "dog",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"dog\" car elle appartient au thème: Apprentissage lecture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"et\" ?",
+          "bonne": "et",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"et\" car elle appartient au thème: Apprentissage lecture"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "x",
-          "en": "lettre 24",
-          "theme": "lettre"
+          "fr": "a",
+          "en": "a",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "y",
-          "en": "lettre 25",
-          "theme": "lettre"
+          "fr": "e",
+          "en": "e",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "z",
-          "en": "lettre 26",
-          "theme": "lettre"
+          "fr": "i",
+          "en": "i",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "je",
-          "en": "pronom",
-          "theme": "pronom"
+          "fr": "o",
+          "en": "o",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "tu",
-          "en": "pronom",
-          "theme": "pronom"
+          "fr": "u",
+          "en": "u",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "il",
-          "en": "pronom",
-          "theme": "pronom"
+          "fr": "la",
+          "en": "la",
+          "theme": "Apprentissage lecture"
         },
         {
-          "fr": "elle",
-          "en": "pronom",
-          "theme": "pronom"
+          "fr": "le",
+          "en": "le",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "un",
+          "en": "un",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "une",
+          "en": "une",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "de",
+          "en": "de",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "est",
+          "en": "est",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "cat",
+          "en": "cat",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "dog",
+          "en": "dog",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "et",
+          "en": "et",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "ou",
+          "en": "ou",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "nous",
-          "en": "pronom",
-          "theme": "pronom"
+          "en": "nous",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "vous",
-          "en": "pronom",
-          "theme": "pronom"
+          "en": "vous",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "il",
+          "en": "il",
+          "theme": "Apprentissage lecture"
+        },
+        {
+          "fr": "elle",
+          "en": "elle",
+          "theme": "Apprentissage lecture"
         },
         {
           "fr": "ils",
-          "en": "pronom",
-          "theme": "pronom"
-        },
-        {
-          "fr": "elles",
-          "en": "pronom",
-          "theme": "pronom"
-        },
-        {
-          "fr": "oui",
-          "en": "affirmation",
-          "theme": "affirmation"
-        },
-        {
-          "fr": "non",
-          "en": "négation",
-          "theme": "négation"
-        },
-        {
-          "fr": "merci",
-          "en": "politesse",
-          "theme": "politesse"
-        },
-        {
-          "fr": "s'il plaît",
-          "en": "politesse",
-          "theme": "politesse"
-        },
-        {
-          "fr": "bonjour",
-          "en": "salutation",
-          "theme": "salutation"
-        },
-        {
-          "fr": "au revoir",
-          "en": "adieu",
-          "theme": "adieu"
-        },
-        {
-          "fr": "excusez",
-          "en": "politesse",
-          "theme": "politesse"
-        },
-        {
-          "fr": "pardon",
-          "en": "politesse",
-          "theme": "politesse"
-        },
-        {
-          "fr": "aidez",
-          "en": "action",
-          "theme": "action"
+          "en": "ils",
+          "theme": "Apprentissage lecture"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Dernière lettre ?",
-          "bonne": "z",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"a\" ?",
+          "bonne": "a",
           "fausses": [
-            "y",
-            "w",
-            "x"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "alphabet"
+          "explication": "La réponse correcte est \"a\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Pronom 'moi' ?",
-          "bonne": "je",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"e\" ?",
+          "bonne": "e",
           "fausses": [
-            "tu",
-            "il",
-            "elle"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "pronom"
+          "explication": "La réponse correcte est \"e\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Pronom pluriel ?",
-          "bonne": "nous",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"i\" ?",
+          "bonne": "i",
           "fausses": [
-            "je",
-            "tu",
-            "il"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "pronom"
+          "explication": "La réponse correcte est \"i\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Vous=singulier",
-          "bonne": "Faux",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"o\" ?",
+          "bonne": "o",
           "fausses": [
-            "Vrai"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "vous"
+          "explication": "La réponse correcte est \"o\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Avant 'au revoir' dit ___",
-          "bonne": "bonjour",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"u\" ?",
+          "bonne": "u",
           "fausses": [
-            "merci",
-            "oui",
-            "non"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "salutation"
+          "explication": "La réponse correcte est \"u\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Politesse ?",
-          "bonne": "s'il plaît",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"la\" ?",
+          "bonne": "la",
           "fausses": [
-            "oui",
-            "non",
-            "merci"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "politesse"
+          "explication": "La réponse correcte est \"la\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Je=2ème personne",
-          "bonne": "Faux",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"le\" ?",
+          "bonne": "le",
           "fausses": [
-            "Vrai"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "je"
+          "explication": "La réponse correcte est \"le\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "On dit '___ revoir' départ",
-          "bonne": "au",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"un\" ?",
+          "bonne": "un",
           "fausses": [
-            "bon",
-            "oui",
-            "merci"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "au revoir"
+          "explication": "La réponse correcte est \"un\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Affirmation ?",
-          "bonne": "oui",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"une\" ?",
+          "bonne": "une",
           "fausses": [
-            "non",
-            "peut-être",
-            "moyen"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "oui"
+          "explication": "La réponse correcte est \"une\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Pronoms plural='ils' ou ___",
-          "bonne": "elles",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"de\" ?",
+          "bonne": "de",
           "fausses": [
-            "elle",
-            "il",
-            "elle"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "pronom"
+          "explication": "La réponse correcte est \"de\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Remercie : dit ___",
-          "bonne": "merci",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"est\" ?",
+          "bonne": "est",
           "fausses": [
-            "s'il plaît",
-            "oui",
-            "non"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "merci"
+          "explication": "La réponse correcte est \"est\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Tu=vous",
-          "bonne": "Faux",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"cat\" ?",
+          "bonne": "cat",
           "fausses": [
-            "Vrai"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "tu"
+          "explication": "La réponse correcte est \"cat\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Après 'merci' répond ___",
-          "bonne": "de rien",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"dog\" ?",
+          "bonne": "dog",
           "fausses": [
-            "oui",
-            "non",
-            "peut-être"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "politesse"
+          "explication": "La réponse correcte est \"dog\" car elle appartient au thème: Apprentissage lecture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Demande pardon : ___",
-          "bonne": "pardon",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"et\" ?",
+          "bonne": "et",
           "fausses": [
-            "merci",
-            "oui",
-            "non"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "pardon"
+          "explication": "La réponse correcte est \"et\" car elle appartient au thème: Apprentissage lecture"
         }
       ]
     }

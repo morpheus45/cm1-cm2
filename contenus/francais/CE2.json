@@ -4,674 +4,780 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "k",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "livre",
+          "en": "livre",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "l",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "histoire",
+          "en": "histoire",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "m",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "conte",
+          "en": "conte",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "n",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "fable",
+          "en": "fable",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "o",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "poésie",
+          "en": "poésie",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "p",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "majuscule",
+          "en": "majuscule",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "qu",
-          "en": "digramme",
-          "theme": "digramme"
+          "fr": "minuscule",
+          "en": "minuscule",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "r",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "virgule",
+          "en": "virgule",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "s",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "point",
+          "en": "point",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "t",
-          "en": "lettre",
-          "theme": "lettre"
+          "fr": "accent",
+          "en": "accent",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "u",
-          "en": "lettre",
-          "theme": "lettre"
-        },
-        {
-          "fr": "v",
-          "en": "lettre",
-          "theme": "lettre"
-        },
-        {
-          "fr": "w",
-          "en": "lettre",
-          "theme": "lettre"
-        },
-        {
-          "fr": "x",
-          "en": "lettre",
-          "theme": "lettre"
-        },
-        {
-          "fr": "y",
-          "en": "lettre",
-          "theme": "lettre"
-        },
-        {
-          "fr": "z",
-          "en": "lettre",
-          "theme": "lettre"
-        },
-        {
-          "fr": "voyelle",
-          "en": "son ouvert",
-          "theme": "son"
-        },
-        {
-          "fr": "consonne",
-          "en": "son fermé",
-          "theme": "son"
+          "fr": "syllabe",
+          "en": "syllabe",
+          "theme": "Lecture et écriture"
         },
         {
           "fr": "son",
-          "en": "bruit",
-          "theme": "bruit"
+          "en": "son",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "rime",
-          "en": "ressemblance",
-          "theme": "ressemblance"
+          "fr": "lettre",
+          "en": "lettre",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "mot",
+          "en": "mot",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "phrase",
+          "en": "phrase",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "verbe",
+          "en": "verbe",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "nom",
+          "en": "nom",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "adjectif",
+          "en": "adjectif",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "article",
+          "en": "article",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "préposition",
+          "en": "préposition",
+          "theme": "Lecture et écriture"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Après 'k' ?",
-          "bonne": "l",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"livre\" ?",
+          "bonne": "livre",
           "fausses": [
-            "j",
-            "m"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "alphabet"
+          "explication": "La réponse correcte est \"livre\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Digramme 'qu' = son ___",
-          "bonne": "k",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"histoire\" ?",
+          "bonne": "histoire",
           "fausses": [
-            "q",
-            "w"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "digramme"
+          "explication": "La réponse correcte est \"histoire\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Voyelle='a'",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"conte\" ?",
+          "bonne": "conte",
           "fausses": [
-            "Faux"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "voyelle"
+          "explication": "La réponse correcte est \"conte\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Consonne='b' ?",
-          "bonne": "oui",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fable\" ?",
+          "bonne": "fable",
           "fausses": [
-            "non"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "consonne"
+          "explication": "La réponse correcte est \"fable\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Rime 'maison' ?",
-          "bonne": "raison",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poésie\" ?",
+          "bonne": "poésie",
           "fausses": [
-            "chat",
-            "soleil"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "rime"
+          "explication": "La réponse correcte est \"poésie\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Son 'j' ?",
-          "bonne": "jeu",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"majuscule\" ?",
+          "bonne": "majuscule",
           "fausses": [
-            "je",
-            "ji"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "phonétique"
+          "explication": "La réponse correcte est \"majuscule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Son 'ch'=consonne",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"minuscule\" ?",
+          "bonne": "minuscule",
           "fausses": [
-            "Faux"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "consonne"
+          "explication": "La réponse correcte est \"minuscule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Après 't' ?",
-          "bonne": "u",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"virgule\" ?",
+          "bonne": "virgule",
           "fausses": [
-            "s",
-            "v"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "alphabet"
+          "explication": "La réponse correcte est \"virgule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Entre 'p' et 'r' ?",
-          "bonne": "q",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"point\" ?",
+          "bonne": "point",
           "fausses": [
-            "o",
-            "s"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "alphabet"
+          "explication": "La réponse correcte est \"point\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Rime=son identique",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"accent\" ?",
+          "bonne": "accent",
           "fausses": [
-            "Faux"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "rime"
+          "explication": "La réponse correcte est \"accent\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Après 'w' ?",
-          "bonne": "x",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"syllabe\" ?",
+          "bonne": "syllabe",
           "fausses": [
-            "v",
-            "y"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "alphabet"
+          "explication": "La réponse correcte est \"syllabe\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Voyelle après 't' ?",
-          "bonne": "u",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"son\" ?",
+          "bonne": "son",
           "fausses": [
-            "s",
-            "v"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "voyelle"
+          "explication": "La réponse correcte est \"son\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Consonne après 's' ?",
-          "bonne": "t",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"lettre\" ?",
+          "bonne": "lettre",
           "fausses": [
-            "u",
-            "v"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "consonne"
+          "explication": "La réponse correcte est \"lettre\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "'y'=voyelle",
-          "bonne": "Faux",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mot\" ?",
+          "bonne": "mot",
           "fausses": [
-            "Vrai"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "y"
+          "explication": "La réponse correcte est \"mot\" car elle appartient au thème: Lecture et écriture"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
-          "fr": "sujet",
-          "en": "qui agit",
-          "theme": "qui"
+          "fr": "livre",
+          "en": "livre",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "verbe",
-          "en": "action",
-          "theme": "action"
+          "fr": "histoire",
+          "en": "histoire",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "complément",
-          "en": "précise",
-          "theme": "précise"
+          "fr": "conte",
+          "en": "conte",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "présent",
-          "en": "maintenant",
-          "theme": "maintenant"
+          "fr": "fable",
+          "en": "fable",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "passé",
-          "en": "avant",
-          "theme": "avant"
-        },
-        {
-          "fr": "futur",
-          "en": "après",
-          "theme": "après"
-        },
-        {
-          "fr": "singulier",
-          "en": "un",
-          "theme": "un"
-        },
-        {
-          "fr": "pluriel",
-          "en": "plusieurs",
-          "theme": "plusieurs"
-        },
-        {
-          "fr": "genre",
-          "en": "masculin/féminin",
-          "theme": "masculin/féminin"
-        },
-        {
-          "fr": "accord",
-          "en": "concordance",
-          "theme": "concordance"
+          "fr": "poésie",
+          "en": "poésie",
+          "theme": "Lecture et écriture"
         },
         {
           "fr": "majuscule",
-          "en": "grande",
-          "theme": "grande"
+          "en": "majuscule",
+          "theme": "Lecture et écriture"
         },
         {
           "fr": "minuscule",
-          "en": "petite",
-          "theme": "petite"
-        },
-        {
-          "fr": "point",
-          "en": "fin",
-          "theme": "fin"
+          "en": "minuscule",
+          "theme": "Lecture et écriture"
         },
         {
           "fr": "virgule",
-          "en": "pause",
-          "theme": "pause"
+          "en": "virgule",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "point",
+          "en": "point",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "accent",
+          "en": "accent",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "syllabe",
+          "en": "syllabe",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "son",
+          "en": "son",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "lettre",
+          "en": "lettre",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "mot",
+          "en": "mot",
+          "theme": "Lecture et écriture"
         },
         {
           "fr": "phrase",
-          "en": "sens complet",
-          "theme": "sens"
+          "en": "phrase",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "verbe",
+          "en": "verbe",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "nom",
+          "en": "nom",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "adjectif",
+          "en": "adjectif",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "article",
+          "en": "article",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "préposition",
+          "en": "préposition",
+          "theme": "Lecture et écriture"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Sujet 'chat dort' ?",
-          "bonne": "chat",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"livre\" ?",
+          "bonne": "livre",
           "fausses": [
-            "dort",
-            "le"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "sujet"
+          "explication": "La réponse correcte est \"livre\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Verbe 'je ___' ?",
-          "bonne": "vais",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"histoire\" ?",
+          "bonne": "histoire",
           "fausses": [
-            "viens",
-            "reste"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "verbe"
+          "explication": "La réponse correcte est \"histoire\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Complément 'je vais ___' ?",
-          "bonne": "école",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"conte\" ?",
+          "bonne": "conte",
           "fausses": [
-            "marche",
-            "dors"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "complément"
+          "explication": "La réponse correcte est \"conte\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Présent=maintenant",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fable\" ?",
+          "bonne": "fable",
           "fausses": [
-            "Faux"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "présent"
+          "explication": "La réponse correcte est \"fable\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Passé=?",
-          "bonne": "avant",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poésie\" ?",
+          "bonne": "poésie",
           "fausses": [
-            "après",
-            "maintenant"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "passé"
+          "explication": "La réponse correcte est \"poésie\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Futur=___",
-          "bonne": "après",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"majuscule\" ?",
+          "bonne": "majuscule",
           "fausses": [
-            "avant",
-            "maintenant"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "futur"
+          "explication": "La réponse correcte est \"majuscule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Singulier='un' ?",
-          "bonne": "oui",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"minuscule\" ?",
+          "bonne": "minuscule",
           "fausses": [
-            "non"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "singulier"
+          "explication": "La réponse correcte est \"minuscule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Pluriel='plusieurs' ou ___",
-          "bonne": "beaucoup",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"virgule\" ?",
+          "bonne": "virgule",
           "fausses": [
-            "un",
-            "seul"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "pluriel"
+          "explication": "La réponse correcte est \"virgule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Genre=?",
-          "bonne": "masculin/féminin",
-          "fausses": [
-            "singulier/pluriel"
-          ],
-          "explication": "genre"
-        },
-        {
-          "consigne": "Vrai/Faux",
-          "enonce": "Accord=concordance",
-          "bonne": "Vrai",
-          "fausses": [
-            "Faux"
-          ],
-          "explication": "accord"
-        },
-        {
-          "consigne": "Choix",
-          "enonce": "Majuscule début ?",
-          "bonne": "phrase",
-          "fausses": [
-            "mot",
-            "ligne"
-          ],
-          "explication": "majuscule"
-        },
-        {
-          "consigne": "Remplir",
-          "enonce": "Fin phrase = ___",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"point\" ?",
           "bonne": "point",
           "fausses": [
-            "virgule",
-            "trait"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "point"
+          "explication": "La réponse correcte est \"point\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Virgule=?",
-          "bonne": "pause",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"accent\" ?",
+          "bonne": "accent",
           "fausses": [
-            "fin",
-            "début"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "virgule"
+          "explication": "La réponse correcte est \"accent\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Phrase=sens complet",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"syllabe\" ?",
+          "bonne": "syllabe",
           "fausses": [
-            "Faux"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "phrase"
+          "explication": "La réponse correcte est \"syllabe\" car elle appartient au thème: Lecture et écriture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"son\" ?",
+          "bonne": "son",
+          "fausses": [
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
+          ],
+          "explication": "La réponse correcte est \"son\" car elle appartient au thème: Lecture et écriture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"lettre\" ?",
+          "bonne": "lettre",
+          "fausses": [
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
+          ],
+          "explication": "La réponse correcte est \"lettre\" car elle appartient au thème: Lecture et écriture"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mot\" ?",
+          "bonne": "mot",
+          "fausses": [
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
+          ],
+          "explication": "La réponse correcte est \"mot\" car elle appartient au thème: Lecture et écriture"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "adjectif",
-          "en": "qualité",
-          "theme": "qualité"
+          "fr": "livre",
+          "en": "livre",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "adverbe",
-          "en": "manière",
-          "theme": "manière"
+          "fr": "histoire",
+          "en": "histoire",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "préposition",
-          "en": "relation",
-          "theme": "relation"
+          "fr": "conte",
+          "en": "conte",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "article",
-          "en": "le, la",
-          "theme": "le,"
+          "fr": "fable",
+          "en": "fable",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "pronom",
-          "en": "remplace",
-          "theme": "remplace"
+          "fr": "poésie",
+          "en": "poésie",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "dialogue",
-          "en": "conversation",
-          "theme": "conversation"
+          "fr": "majuscule",
+          "en": "majuscule",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "narration",
-          "en": "raconte",
-          "theme": "raconte"
+          "fr": "minuscule",
+          "en": "minuscule",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "description",
-          "en": "peint",
-          "theme": "peint"
+          "fr": "virgule",
+          "en": "virgule",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "ponctuation",
-          "en": "clarté",
-          "theme": "clarté"
+          "fr": "point",
+          "en": "point",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "titre",
-          "en": "nom",
-          "theme": "nom"
+          "fr": "accent",
+          "en": "accent",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "auteur",
-          "en": "écrit",
-          "theme": "écrit"
+          "fr": "syllabe",
+          "en": "syllabe",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "lecteur",
-          "en": "lit",
-          "theme": "lit"
+          "fr": "son",
+          "en": "son",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "lettre",
+          "en": "lettre",
+          "theme": "Lecture et écriture"
         },
         {
           "fr": "mot",
-          "en": "unité",
-          "theme": "unité"
+          "en": "mot",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "sens",
-          "en": "signification",
-          "theme": "signification"
+          "fr": "phrase",
+          "en": "phrase",
+          "theme": "Lecture et écriture"
         },
         {
-          "fr": "contexte",
-          "en": "environnement",
-          "theme": "environnement"
+          "fr": "verbe",
+          "en": "verbe",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "nom",
+          "en": "nom",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "adjectif",
+          "en": "adjectif",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "article",
+          "en": "article",
+          "theme": "Lecture et écriture"
+        },
+        {
+          "fr": "préposition",
+          "en": "préposition",
+          "theme": "Lecture et écriture"
         }
       ],
       "questions": [
         {
-          "consigne": "Choix",
-          "enonce": "Adjectif 'grand' décrit ?",
-          "bonne": "qualité",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"livre\" ?",
+          "bonne": "livre",
           "fausses": [
-            "action",
-            "relation"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "adjectif"
+          "explication": "La réponse correcte est \"livre\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "___ modifie verbe",
-          "bonne": "adverbe",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"histoire\" ?",
+          "bonne": "histoire",
           "fausses": [
-            "adjectif",
-            "préposition"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "adverbe"
+          "explication": "La réponse correcte est \"histoire\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Préposition 'dans' ?",
-          "bonne": "relation",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"conte\" ?",
+          "bonne": "conte",
           "fausses": [
-            "action",
-            "qualité"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "préposition"
+          "explication": "La réponse correcte est \"conte\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Article='le', 'la'",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"fable\" ?",
+          "bonne": "fable",
           "fausses": [
-            "Faux"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "article"
+          "explication": "La réponse correcte est \"fable\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Pronom ___ le nom",
-          "bonne": "remplace",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"poésie\" ?",
+          "bonne": "poésie",
           "fausses": [
-            "décrit",
-            "modifie"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "pronom"
+          "explication": "La réponse correcte est \"poésie\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Dialogue=?",
-          "bonne": "conversation",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"majuscule\" ?",
+          "bonne": "majuscule",
           "fausses": [
-            "narration",
-            "description"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "dialogue"
+          "explication": "La réponse correcte est \"majuscule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Narration=raconte",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"minuscule\" ?",
+          "bonne": "minuscule",
           "fausses": [
-            "Faux"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "narration"
+          "explication": "La réponse correcte est \"minuscule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Description=?",
-          "bonne": "peint",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"virgule\" ?",
+          "bonne": "virgule",
           "fausses": [
-            "raconte",
-            "dialogue"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "description"
+          "explication": "La réponse correcte est \"virgule\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Ponctuation=___ texte",
-          "bonne": "clarté",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"point\" ?",
+          "bonne": "point",
           "fausses": [
-            "beauté",
-            "longueur"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "ponctuation"
+          "explication": "La réponse correcte est \"point\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Titre=?",
-          "bonne": "nom texte",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"accent\" ?",
+          "bonne": "accent",
           "fausses": [
-            "premier mot",
-            "dernier mot"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "titre"
+          "explication": "La réponse correcte est \"accent\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Auteur=écrit",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"syllabe\" ?",
+          "bonne": "syllabe",
           "fausses": [
-            "Faux"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "auteur"
+          "explication": "La réponse correcte est \"syllabe\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Choix",
-          "enonce": "Lecteur=?",
-          "bonne": "lit",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"son\" ?",
+          "bonne": "son",
           "fausses": [
-            "écrit",
-            "dessine"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "lecteur"
+          "explication": "La réponse correcte est \"son\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Remplir",
-          "enonce": "Mot=___ langage",
-          "bonne": "unité",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"lettre\" ?",
+          "bonne": "lettre",
           "fausses": [
-            "phrase",
-            "lettre"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "mot"
+          "explication": "La réponse correcte est \"lettre\" car elle appartient au thème: Lecture et écriture"
         },
         {
-          "consigne": "Vrai/Faux",
-          "enonce": "Sens=signification",
-          "bonne": "Vrai",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mot\" ?",
+          "bonne": "mot",
           "fausses": [
-            "Faux"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "sens"
+          "explication": "La réponse correcte est \"mot\" car elle appartient au thème: Lecture et écriture"
         }
       ]
     }

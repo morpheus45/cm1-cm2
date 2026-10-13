@@ -4,780 +4,780 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "livre",
+          "fr": "book",
           "en": "book",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
-          "fr": "stylo",
+          "fr": "pen",
           "en": "pen",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
-          "fr": "crayon",
+          "fr": "pencil",
           "en": "pencil",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
-          "fr": "bureau",
+          "fr": "desk",
           "en": "desk",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
           "fr": "chair",
           "en": "chair",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
-          "fr": "professeur",
+          "fr": "teacher",
           "en": "teacher",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
           "fr": "student",
           "en": "student",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
           "fr": "classroom",
           "en": "classroom",
-          "theme": "école"
+          "theme": "École et famille"
         },
         {
-          "fr": "blackboard",
-          "en": "blackboard",
-          "theme": "école"
+          "fr": "mother",
+          "en": "mother",
+          "theme": "École et famille"
         },
         {
-          "fr": "notebook",
-          "en": "notebook",
-          "theme": "école"
+          "fr": "father",
+          "en": "father",
+          "theme": "École et famille"
         },
         {
-          "fr": "term10",
-          "en": "term10",
-          "theme": "école"
+          "fr": "sister",
+          "en": "sister",
+          "theme": "École et famille"
         },
         {
-          "fr": "term11",
-          "en": "term11",
-          "theme": "école"
+          "fr": "brother",
+          "en": "brother",
+          "theme": "École et famille"
         },
         {
-          "fr": "term12",
-          "en": "term12",
-          "theme": "école"
+          "fr": "grandmother",
+          "en": "grandmother",
+          "theme": "École et famille"
         },
         {
-          "fr": "term13",
-          "en": "term13",
-          "theme": "école"
+          "fr": "grandfather",
+          "en": "grandfather",
+          "theme": "École et famille"
         },
         {
-          "fr": "term14",
-          "en": "term14",
-          "theme": "école"
+          "fr": "cousin",
+          "en": "cousin",
+          "theme": "École et famille"
         },
         {
-          "fr": "term15",
-          "en": "term15",
-          "theme": "école"
+          "fr": "baby",
+          "en": "baby",
+          "theme": "École et famille"
         },
         {
-          "fr": "term16",
-          "en": "term16",
-          "theme": "école"
+          "fr": "hello",
+          "en": "hello",
+          "theme": "École et famille"
         },
         {
-          "fr": "term17",
-          "en": "term17",
-          "theme": "école"
+          "fr": "goodbye",
+          "en": "goodbye",
+          "theme": "École et famille"
         },
         {
-          "fr": "term18",
-          "en": "term18",
-          "theme": "école"
+          "fr": "thank you",
+          "en": "thank you",
+          "theme": "École et famille"
         },
         {
-          "fr": "term19",
-          "en": "term19",
-          "theme": "école"
+          "fr": "please",
+          "en": "please",
+          "theme": "École et famille"
         }
       ],
       "questions": [
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"book\" to French:",
-          "bonne": "livre",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"book\" ?",
+          "bonne": "book",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "\"book\" means \"livre\" in French. Theme: école"
+          "explication": "La réponse correcte est \"book\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"pen\" to French:",
-          "bonne": "stylo",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pen\" ?",
+          "bonne": "pen",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "\"pen\" means \"stylo\" in French. Theme: école"
+          "explication": "La réponse correcte est \"pen\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"pencil\" to French:",
-          "bonne": "crayon",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pencil\" ?",
+          "bonne": "pencil",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "\"pencil\" means \"crayon\" in French. Theme: école"
+          "explication": "La réponse correcte est \"pencil\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"desk\" to French:",
-          "bonne": "bureau",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"desk\" ?",
+          "bonne": "desk",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "\"desk\" means \"bureau\" in French. Theme: école"
+          "explication": "La réponse correcte est \"desk\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"chair\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chair\" ?",
           "bonne": "chair",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "\"chair\" means \"chair\" in French. Theme: école"
+          "explication": "La réponse correcte est \"chair\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"teacher\" to French:",
-          "bonne": "professeur",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"teacher\" ?",
+          "bonne": "teacher",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "\"teacher\" means \"professeur\" in French. Theme: école"
+          "explication": "La réponse correcte est \"teacher\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"student\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"student\" ?",
           "bonne": "student",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "\"student\" means \"student\" in French. Theme: école"
+          "explication": "La réponse correcte est \"student\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"classroom\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"classroom\" ?",
           "bonne": "classroom",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "\"classroom\" means \"classroom\" in French. Theme: école"
+          "explication": "La réponse correcte est \"classroom\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"blackboard\" to French:",
-          "bonne": "blackboard",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mother\" ?",
+          "bonne": "mother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "\"blackboard\" means \"blackboard\" in French. Theme: école"
+          "explication": "La réponse correcte est \"mother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"notebook\" to French:",
-          "bonne": "notebook",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"father\" ?",
+          "bonne": "father",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "\"notebook\" means \"notebook\" in French. Theme: école"
+          "explication": "La réponse correcte est \"father\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term10\" to French:",
-          "bonne": "term10",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sister\" ?",
+          "bonne": "sister",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "\"term10\" means \"term10\" in French. Theme: école"
+          "explication": "La réponse correcte est \"sister\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term11\" to French:",
-          "bonne": "term11",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brother\" ?",
+          "bonne": "brother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "\"term11\" means \"term11\" in French. Theme: école"
+          "explication": "La réponse correcte est \"brother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term12\" to French:",
-          "bonne": "term12",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"grandmother\" ?",
+          "bonne": "grandmother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "\"term12\" means \"term12\" in French. Theme: école"
+          "explication": "La réponse correcte est \"grandmother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term13\" to French:",
-          "bonne": "term13",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"grandfather\" ?",
+          "bonne": "grandfather",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "\"term13\" means \"term13\" in French. Theme: école"
+          "explication": "La réponse correcte est \"grandfather\" car elle appartient au thème: École et famille"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
+          "fr": "book",
+          "en": "book",
+          "theme": "École et famille"
+        },
+        {
+          "fr": "pen",
+          "en": "pen",
+          "theme": "École et famille"
+        },
+        {
+          "fr": "pencil",
+          "en": "pencil",
+          "theme": "École et famille"
+        },
+        {
+          "fr": "desk",
+          "en": "desk",
+          "theme": "École et famille"
+        },
+        {
+          "fr": "chair",
+          "en": "chair",
+          "theme": "École et famille"
+        },
+        {
+          "fr": "teacher",
+          "en": "teacher",
+          "theme": "École et famille"
+        },
+        {
+          "fr": "student",
+          "en": "student",
+          "theme": "École et famille"
+        },
+        {
+          "fr": "classroom",
+          "en": "classroom",
+          "theme": "École et famille"
+        },
+        {
           "fr": "mother",
           "en": "mother",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
           "fr": "father",
           "en": "father",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
           "fr": "sister",
           "en": "sister",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
           "fr": "brother",
           "en": "brother",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
           "fr": "grandmother",
           "en": "grandmother",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
           "fr": "grandfather",
           "en": "grandfather",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
           "fr": "cousin",
           "en": "cousin",
-          "theme": "famille"
-        },
-        {
-          "fr": "uncle",
-          "en": "uncle",
-          "theme": "famille"
-        },
-        {
-          "fr": "aunt",
-          "en": "aunt",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
           "fr": "baby",
           "en": "baby",
-          "theme": "famille"
+          "theme": "École et famille"
         },
         {
-          "fr": "term10",
-          "en": "term10",
-          "theme": "famille"
+          "fr": "hello",
+          "en": "hello",
+          "theme": "École et famille"
         },
         {
-          "fr": "term11",
-          "en": "term11",
-          "theme": "famille"
+          "fr": "goodbye",
+          "en": "goodbye",
+          "theme": "École et famille"
         },
         {
-          "fr": "term12",
-          "en": "term12",
-          "theme": "famille"
+          "fr": "thank you",
+          "en": "thank you",
+          "theme": "École et famille"
         },
         {
-          "fr": "term13",
-          "en": "term13",
-          "theme": "famille"
-        },
-        {
-          "fr": "term14",
-          "en": "term14",
-          "theme": "famille"
-        },
-        {
-          "fr": "term15",
-          "en": "term15",
-          "theme": "famille"
-        },
-        {
-          "fr": "term16",
-          "en": "term16",
-          "theme": "famille"
-        },
-        {
-          "fr": "term17",
-          "en": "term17",
-          "theme": "famille"
-        },
-        {
-          "fr": "term18",
-          "en": "term18",
-          "theme": "famille"
-        },
-        {
-          "fr": "term19",
-          "en": "term19",
-          "theme": "famille"
+          "fr": "please",
+          "en": "please",
+          "theme": "École et famille"
         }
       ],
       "questions": [
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"mother\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"book\" ?",
+          "bonne": "book",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"book\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pen\" ?",
+          "bonne": "pen",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"pen\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pencil\" ?",
+          "bonne": "pencil",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"pencil\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"desk\" ?",
+          "bonne": "desk",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"desk\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chair\" ?",
+          "bonne": "chair",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"chair\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"teacher\" ?",
+          "bonne": "teacher",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"teacher\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"student\" ?",
+          "bonne": "student",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"student\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"classroom\" ?",
+          "bonne": "classroom",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"classroom\" car elle appartient au thème: École et famille"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mother\" ?",
           "bonne": "mother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "\"mother\" means \"mother\" in French. Theme: famille"
+          "explication": "La réponse correcte est \"mother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"father\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"father\" ?",
           "bonne": "father",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "\"father\" means \"father\" in French. Theme: famille"
+          "explication": "La réponse correcte est \"father\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"sister\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sister\" ?",
           "bonne": "sister",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "\"sister\" means \"sister\" in French. Theme: famille"
+          "explication": "La réponse correcte est \"sister\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"brother\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brother\" ?",
           "bonne": "brother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "\"brother\" means \"brother\" in French. Theme: famille"
+          "explication": "La réponse correcte est \"brother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"grandmother\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"grandmother\" ?",
           "bonne": "grandmother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "\"grandmother\" means \"grandmother\" in French. Theme: famille"
+          "explication": "La réponse correcte est \"grandmother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"grandfather\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"grandfather\" ?",
           "bonne": "grandfather",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "\"grandfather\" means \"grandfather\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"cousin\" to French:",
-          "bonne": "cousin",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"cousin\" means \"cousin\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"uncle\" to French:",
-          "bonne": "uncle",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"uncle\" means \"uncle\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"aunt\" to French:",
-          "bonne": "aunt",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"aunt\" means \"aunt\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"baby\" to French:",
-          "bonne": "baby",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"baby\" means \"baby\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term10\" to French:",
-          "bonne": "term10",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term10\" means \"term10\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term11\" to French:",
-          "bonne": "term11",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term11\" means \"term11\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term12\" to French:",
-          "bonne": "term12",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term12\" means \"term12\" in French. Theme: famille"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term13\" to French:",
-          "bonne": "term13",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term13\" means \"term13\" in French. Theme: famille"
+          "explication": "La réponse correcte est \"grandfather\" car elle appartient au thème: École et famille"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "head",
-          "en": "head",
-          "theme": "corps"
+          "fr": "book",
+          "en": "book",
+          "theme": "École et famille"
         },
         {
-          "fr": "arm",
-          "en": "arm",
-          "theme": "corps"
+          "fr": "pen",
+          "en": "pen",
+          "theme": "École et famille"
         },
         {
-          "fr": "leg",
-          "en": "leg",
-          "theme": "corps"
+          "fr": "pencil",
+          "en": "pencil",
+          "theme": "École et famille"
         },
         {
-          "fr": "hand",
-          "en": "hand",
-          "theme": "corps"
+          "fr": "desk",
+          "en": "desk",
+          "theme": "École et famille"
         },
         {
-          "fr": "foot",
-          "en": "foot",
-          "theme": "corps"
+          "fr": "chair",
+          "en": "chair",
+          "theme": "École et famille"
         },
         {
-          "fr": "eye",
-          "en": "eye",
-          "theme": "corps"
+          "fr": "teacher",
+          "en": "teacher",
+          "theme": "École et famille"
         },
         {
-          "fr": "ear",
-          "en": "ear",
-          "theme": "corps"
+          "fr": "student",
+          "en": "student",
+          "theme": "École et famille"
         },
         {
-          "fr": "nose",
-          "en": "nose",
-          "theme": "corps"
+          "fr": "classroom",
+          "en": "classroom",
+          "theme": "École et famille"
         },
         {
-          "fr": "mouth",
-          "en": "mouth",
-          "theme": "corps"
+          "fr": "mother",
+          "en": "mother",
+          "theme": "École et famille"
         },
         {
-          "fr": "hair",
-          "en": "hair",
-          "theme": "corps"
+          "fr": "father",
+          "en": "father",
+          "theme": "École et famille"
         },
         {
-          "fr": "term10",
-          "en": "term10",
-          "theme": "corps"
+          "fr": "sister",
+          "en": "sister",
+          "theme": "École et famille"
         },
         {
-          "fr": "term11",
-          "en": "term11",
-          "theme": "corps"
+          "fr": "brother",
+          "en": "brother",
+          "theme": "École et famille"
         },
         {
-          "fr": "term12",
-          "en": "term12",
-          "theme": "corps"
+          "fr": "grandmother",
+          "en": "grandmother",
+          "theme": "École et famille"
         },
         {
-          "fr": "term13",
-          "en": "term13",
-          "theme": "corps"
+          "fr": "grandfather",
+          "en": "grandfather",
+          "theme": "École et famille"
         },
         {
-          "fr": "term14",
-          "en": "term14",
-          "theme": "corps"
+          "fr": "cousin",
+          "en": "cousin",
+          "theme": "École et famille"
         },
         {
-          "fr": "term15",
-          "en": "term15",
-          "theme": "corps"
+          "fr": "baby",
+          "en": "baby",
+          "theme": "École et famille"
         },
         {
-          "fr": "term16",
-          "en": "term16",
-          "theme": "corps"
+          "fr": "hello",
+          "en": "hello",
+          "theme": "École et famille"
         },
         {
-          "fr": "term17",
-          "en": "term17",
-          "theme": "corps"
+          "fr": "goodbye",
+          "en": "goodbye",
+          "theme": "École et famille"
         },
         {
-          "fr": "term18",
-          "en": "term18",
-          "theme": "corps"
+          "fr": "thank you",
+          "en": "thank you",
+          "theme": "École et famille"
         },
         {
-          "fr": "term19",
-          "en": "term19",
-          "theme": "corps"
+          "fr": "please",
+          "en": "please",
+          "theme": "École et famille"
         }
       ],
       "questions": [
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"head\" to French:",
-          "bonne": "head",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"book\" ?",
+          "bonne": "book",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "\"head\" means \"head\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"book\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"arm\" to French:",
-          "bonne": "arm",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pen\" ?",
+          "bonne": "pen",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "\"arm\" means \"arm\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"pen\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"leg\" to French:",
-          "bonne": "leg",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pencil\" ?",
+          "bonne": "pencil",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "\"leg\" means \"leg\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"pencil\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"hand\" to French:",
-          "bonne": "hand",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"desk\" ?",
+          "bonne": "desk",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "\"hand\" means \"hand\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"desk\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"foot\" to French:",
-          "bonne": "foot",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"chair\" ?",
+          "bonne": "chair",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "\"foot\" means \"foot\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"chair\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"eye\" to French:",
-          "bonne": "eye",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"teacher\" ?",
+          "bonne": "teacher",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "\"eye\" means \"eye\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"teacher\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"ear\" to French:",
-          "bonne": "ear",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"student\" ?",
+          "bonne": "student",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "\"ear\" means \"ear\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"student\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"nose\" to French:",
-          "bonne": "nose",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"classroom\" ?",
+          "bonne": "classroom",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "\"nose\" means \"nose\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"classroom\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"mouth\" to French:",
-          "bonne": "mouth",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"mother\" ?",
+          "bonne": "mother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "\"mouth\" means \"mouth\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"mother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"hair\" to French:",
-          "bonne": "hair",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"father\" ?",
+          "bonne": "father",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "\"hair\" means \"hair\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"father\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term10\" to French:",
-          "bonne": "term10",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"sister\" ?",
+          "bonne": "sister",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "\"term10\" means \"term10\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"sister\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term11\" to French:",
-          "bonne": "term11",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brother\" ?",
+          "bonne": "brother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "\"term11\" means \"term11\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"brother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term12\" to French:",
-          "bonne": "term12",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"grandmother\" ?",
+          "bonne": "grandmother",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "\"term12\" means \"term12\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"grandmother\" car elle appartient au thème: École et famille"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term13\" to French:",
-          "bonne": "term13",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"grandfather\" ?",
+          "bonne": "grandfather",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "\"term13\" means \"term13\" in French. Theme: corps"
+          "explication": "La réponse correcte est \"grandfather\" car elle appartient au thème: École et famille"
         }
       ]
     }

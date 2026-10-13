@@ -4,780 +4,780 @@
     "1": {
       "vocabulaire": [
         {
-          "fr": "rouge",
+          "fr": "red",
           "en": "red",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "bleu",
+          "fr": "blue",
           "en": "blue",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "vert",
+          "fr": "green",
           "en": "green",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "jaune",
+          "fr": "yellow",
           "en": "yellow",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "orange",
           "en": "orange",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "purple",
           "en": "purple",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "pink",
           "en": "pink",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "black",
           "en": "black",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "white",
           "en": "white",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "brown",
           "en": "brown",
-          "theme": "couleurs"
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term10",
-          "en": "term10",
-          "theme": "couleurs"
+          "fr": "one",
+          "en": "one",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term11",
-          "en": "term11",
-          "theme": "couleurs"
+          "fr": "two",
+          "en": "two",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term12",
-          "en": "term12",
-          "theme": "couleurs"
+          "fr": "three",
+          "en": "three",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term13",
-          "en": "term13",
-          "theme": "couleurs"
+          "fr": "four",
+          "en": "four",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term14",
-          "en": "term14",
-          "theme": "couleurs"
+          "fr": "five",
+          "en": "five",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term15",
-          "en": "term15",
-          "theme": "couleurs"
+          "fr": "six",
+          "en": "six",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term16",
-          "en": "term16",
-          "theme": "couleurs"
+          "fr": "seven",
+          "en": "seven",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term17",
-          "en": "term17",
-          "theme": "couleurs"
+          "fr": "eight",
+          "en": "eight",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term18",
-          "en": "term18",
-          "theme": "couleurs"
+          "fr": "nine",
+          "en": "nine",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term19",
-          "en": "term19",
-          "theme": "couleurs"
+          "fr": "ten",
+          "en": "ten",
+          "theme": "Couleurs et chiffres"
         }
       ],
       "questions": [
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"red\" to French:",
-          "bonne": "rouge",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"red\" ?",
+          "bonne": "red",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "\"red\" means \"rouge\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"red\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"blue\" to French:",
-          "bonne": "bleu",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"blue\" ?",
+          "bonne": "blue",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "\"blue\" means \"bleu\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"blue\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"green\" to French:",
-          "bonne": "vert",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"green\" ?",
+          "bonne": "green",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "\"green\" means \"vert\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"green\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"yellow\" to French:",
-          "bonne": "jaune",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"yellow\" ?",
+          "bonne": "yellow",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "\"yellow\" means \"jaune\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"yellow\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"orange\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"orange\" ?",
           "bonne": "orange",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "\"orange\" means \"orange\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"orange\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"purple\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"purple\" ?",
           "bonne": "purple",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "\"purple\" means \"purple\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"purple\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"pink\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pink\" ?",
           "bonne": "pink",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "\"pink\" means \"pink\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"pink\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"black\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"black\" ?",
           "bonne": "black",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "\"black\" means \"black\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"black\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"white\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"white\" ?",
           "bonne": "white",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "\"white\" means \"white\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"white\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"brown\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brown\" ?",
           "bonne": "brown",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "\"brown\" means \"brown\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"brown\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term10\" to French:",
-          "bonne": "term10",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"one\" ?",
+          "bonne": "one",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "\"term10\" means \"term10\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"one\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term11\" to French:",
-          "bonne": "term11",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"two\" ?",
+          "bonne": "two",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "\"term11\" means \"term11\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"two\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term12\" to French:",
-          "bonne": "term12",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"three\" ?",
+          "bonne": "three",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "\"term12\" means \"term12\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"three\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term13\" to French:",
-          "bonne": "term13",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"four\" ?",
+          "bonne": "four",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "\"term13\" means \"term13\" in French. Theme: couleurs"
+          "explication": "La réponse correcte est \"four\" car elle appartient au thème: Couleurs et chiffres"
         }
       ]
     },
     "2": {
       "vocabulaire": [
         {
+          "fr": "red",
+          "en": "red",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "blue",
+          "en": "blue",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "green",
+          "en": "green",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "yellow",
+          "en": "yellow",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "orange",
+          "en": "orange",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "purple",
+          "en": "purple",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "pink",
+          "en": "pink",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "black",
+          "en": "black",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "white",
+          "en": "white",
+          "theme": "Couleurs et chiffres"
+        },
+        {
+          "fr": "brown",
+          "en": "brown",
+          "theme": "Couleurs et chiffres"
+        },
+        {
           "fr": "one",
           "en": "one",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "two",
           "en": "two",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "three",
           "en": "three",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "four",
           "en": "four",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "five",
           "en": "five",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "six",
           "en": "six",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "seven",
           "en": "seven",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "eight",
           "en": "eight",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "nine",
           "en": "nine",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         },
         {
           "fr": "ten",
           "en": "ten",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term10",
-          "en": "term10",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term11",
-          "en": "term11",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term12",
-          "en": "term12",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term13",
-          "en": "term13",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term14",
-          "en": "term14",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term15",
-          "en": "term15",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term16",
-          "en": "term16",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term17",
-          "en": "term17",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term18",
-          "en": "term18",
-          "theme": "chiffres"
-        },
-        {
-          "fr": "term19",
-          "en": "term19",
-          "theme": "chiffres"
+          "theme": "Couleurs et chiffres"
         }
       ],
       "questions": [
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"one\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"red\" ?",
+          "bonne": "red",
+          "fausses": [
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
+          ],
+          "explication": "La réponse correcte est \"red\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"blue\" ?",
+          "bonne": "blue",
+          "fausses": [
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
+          ],
+          "explication": "La réponse correcte est \"blue\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"green\" ?",
+          "bonne": "green",
+          "fausses": [
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
+          ],
+          "explication": "La réponse correcte est \"green\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"yellow\" ?",
+          "bonne": "yellow",
+          "fausses": [
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
+          ],
+          "explication": "La réponse correcte est \"yellow\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"orange\" ?",
+          "bonne": "orange",
+          "fausses": [
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
+          ],
+          "explication": "La réponse correcte est \"orange\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"purple\" ?",
+          "bonne": "purple",
+          "fausses": [
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
+          ],
+          "explication": "La réponse correcte est \"purple\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pink\" ?",
+          "bonne": "pink",
+          "fausses": [
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
+          ],
+          "explication": "La réponse correcte est \"pink\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"black\" ?",
+          "bonne": "black",
+          "fausses": [
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
+          ],
+          "explication": "La réponse correcte est \"black\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"white\" ?",
+          "bonne": "white",
+          "fausses": [
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
+          ],
+          "explication": "La réponse correcte est \"white\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brown\" ?",
+          "bonne": "brown",
+          "fausses": [
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
+          ],
+          "explication": "La réponse correcte est \"brown\" car elle appartient au thème: Couleurs et chiffres"
+        },
+        {
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"one\" ?",
           "bonne": "one",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "\"one\" means \"one\" in French. Theme: chiffres"
+          "explication": "La réponse correcte est \"one\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"two\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"two\" ?",
           "bonne": "two",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "\"two\" means \"two\" in French. Theme: chiffres"
+          "explication": "La réponse correcte est \"two\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"three\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"three\" ?",
           "bonne": "three",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "\"three\" means \"three\" in French. Theme: chiffres"
+          "explication": "La réponse correcte est \"three\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"four\" to French:",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"four\" ?",
           "bonne": "four",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "\"four\" means \"four\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"five\" to French:",
-          "bonne": "five",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"five\" means \"five\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"six\" to French:",
-          "bonne": "six",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"six\" means \"six\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"seven\" to French:",
-          "bonne": "seven",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"seven\" means \"seven\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"eight\" to French:",
-          "bonne": "eight",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"eight\" means \"eight\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"nine\" to French:",
-          "bonne": "nine",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"nine\" means \"nine\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"ten\" to French:",
-          "bonne": "ten",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"ten\" means \"ten\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term10\" to French:",
-          "bonne": "term10",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term10\" means \"term10\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term11\" to French:",
-          "bonne": "term11",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term11\" means \"term11\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term12\" to French:",
-          "bonne": "term12",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term12\" means \"term12\" in French. Theme: chiffres"
-        },
-        {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term13\" to French:",
-          "bonne": "term13",
-          "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
-          ],
-          "explication": "\"term13\" means \"term13\" in French. Theme: chiffres"
+          "explication": "La réponse correcte est \"four\" car elle appartient au thème: Couleurs et chiffres"
         }
       ]
     },
     "3": {
       "vocabulaire": [
         {
-          "fr": "cat",
-          "en": "cat",
-          "theme": "animaux"
+          "fr": "red",
+          "en": "red",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "dog",
-          "en": "dog",
-          "theme": "animaux"
+          "fr": "blue",
+          "en": "blue",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "bird",
-          "en": "bird",
-          "theme": "animaux"
+          "fr": "green",
+          "en": "green",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "fish",
-          "en": "fish",
-          "theme": "animaux"
+          "fr": "yellow",
+          "en": "yellow",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "elephant",
-          "en": "elephant",
-          "theme": "animaux"
+          "fr": "orange",
+          "en": "orange",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "lion",
-          "en": "lion",
-          "theme": "animaux"
+          "fr": "purple",
+          "en": "purple",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "monkey",
-          "en": "monkey",
-          "theme": "animaux"
+          "fr": "pink",
+          "en": "pink",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "duck",
-          "en": "duck",
-          "theme": "animaux"
+          "fr": "black",
+          "en": "black",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "horse",
-          "en": "horse",
-          "theme": "animaux"
+          "fr": "white",
+          "en": "white",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "pig",
-          "en": "pig",
-          "theme": "animaux"
+          "fr": "brown",
+          "en": "brown",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term10",
-          "en": "term10",
-          "theme": "animaux"
+          "fr": "one",
+          "en": "one",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term11",
-          "en": "term11",
-          "theme": "animaux"
+          "fr": "two",
+          "en": "two",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term12",
-          "en": "term12",
-          "theme": "animaux"
+          "fr": "three",
+          "en": "three",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term13",
-          "en": "term13",
-          "theme": "animaux"
+          "fr": "four",
+          "en": "four",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term14",
-          "en": "term14",
-          "theme": "animaux"
+          "fr": "five",
+          "en": "five",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term15",
-          "en": "term15",
-          "theme": "animaux"
+          "fr": "six",
+          "en": "six",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term16",
-          "en": "term16",
-          "theme": "animaux"
+          "fr": "seven",
+          "en": "seven",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term17",
-          "en": "term17",
-          "theme": "animaux"
+          "fr": "eight",
+          "en": "eight",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term18",
-          "en": "term18",
-          "theme": "animaux"
+          "fr": "nine",
+          "en": "nine",
+          "theme": "Couleurs et chiffres"
         },
         {
-          "fr": "term19",
-          "en": "term19",
-          "theme": "animaux"
+          "fr": "ten",
+          "en": "ten",
+          "theme": "Couleurs et chiffres"
         }
       ],
       "questions": [
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"cat\" to French:",
-          "bonne": "cat",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"red\" ?",
+          "bonne": "red",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_0_0",
+            "faux_0_1",
+            "faux_0_2"
           ],
-          "explication": "\"cat\" means \"cat\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"red\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"dog\" to French:",
-          "bonne": "dog",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"blue\" ?",
+          "bonne": "blue",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_1_0",
+            "faux_1_1",
+            "faux_1_2"
           ],
-          "explication": "\"dog\" means \"dog\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"blue\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"bird\" to French:",
-          "bonne": "bird",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"green\" ?",
+          "bonne": "green",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_2_0",
+            "faux_2_1",
+            "faux_2_2"
           ],
-          "explication": "\"bird\" means \"bird\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"green\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"fish\" to French:",
-          "bonne": "fish",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"yellow\" ?",
+          "bonne": "yellow",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_3_0",
+            "faux_3_1",
+            "faux_3_2"
           ],
-          "explication": "\"fish\" means \"fish\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"yellow\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"elephant\" to French:",
-          "bonne": "elephant",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"orange\" ?",
+          "bonne": "orange",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_4_0",
+            "faux_4_1",
+            "faux_4_2"
           ],
-          "explication": "\"elephant\" means \"elephant\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"orange\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"lion\" to French:",
-          "bonne": "lion",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"purple\" ?",
+          "bonne": "purple",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_5_0",
+            "faux_5_1",
+            "faux_5_2"
           ],
-          "explication": "\"lion\" means \"lion\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"purple\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"monkey\" to French:",
-          "bonne": "monkey",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"pink\" ?",
+          "bonne": "pink",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_6_0",
+            "faux_6_1",
+            "faux_6_2"
           ],
-          "explication": "\"monkey\" means \"monkey\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"pink\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"duck\" to French:",
-          "bonne": "duck",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"black\" ?",
+          "bonne": "black",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_7_0",
+            "faux_7_1",
+            "faux_7_2"
           ],
-          "explication": "\"duck\" means \"duck\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"black\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"horse\" to French:",
-          "bonne": "horse",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"white\" ?",
+          "bonne": "white",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_8_0",
+            "faux_8_1",
+            "faux_8_2"
           ],
-          "explication": "\"horse\" means \"horse\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"white\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"pig\" to French:",
-          "bonne": "pig",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"brown\" ?",
+          "bonne": "brown",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_9_0",
+            "faux_9_1",
+            "faux_9_2"
           ],
-          "explication": "\"pig\" means \"pig\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"brown\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term10\" to French:",
-          "bonne": "term10",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"one\" ?",
+          "bonne": "one",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_10_0",
+            "faux_10_1",
+            "faux_10_2"
           ],
-          "explication": "\"term10\" means \"term10\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"one\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term11\" to French:",
-          "bonne": "term11",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"two\" ?",
+          "bonne": "two",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_11_0",
+            "faux_11_1",
+            "faux_11_2"
           ],
-          "explication": "\"term11\" means \"term11\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"two\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term12\" to French:",
-          "bonne": "term12",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"three\" ?",
+          "bonne": "three",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_12_0",
+            "faux_12_1",
+            "faux_12_2"
           ],
-          "explication": "\"term12\" means \"term12\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"three\" car elle appartient au thème: Couleurs et chiffres"
         },
         {
-          "consigne": "Traduction",
-          "enonce": "Translate \"term13\" to French:",
-          "bonne": "term13",
+          "consigne": "Question",
+          "enonce": "Quel est le synonyme de \"four\" ?",
+          "bonne": "four",
           "fausses": [
-            "faux0",
-            "faux1",
-            "faux2"
+            "faux_13_0",
+            "faux_13_1",
+            "faux_13_2"
           ],
-          "explication": "\"term13\" means \"term13\" in French. Theme: animaux"
+          "explication": "La réponse correcte est \"four\" car elle appartient au thème: Couleurs et chiffres"
         }
       ]
     }
