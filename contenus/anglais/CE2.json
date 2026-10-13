@@ -1,0 +1,785 @@
+{
+  "niveau": "CE2",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "livre",
+          "en": "book",
+          "theme": "école"
+        },
+        {
+          "fr": "stylo",
+          "en": "pen",
+          "theme": "école"
+        },
+        {
+          "fr": "crayon",
+          "en": "pencil",
+          "theme": "école"
+        },
+        {
+          "fr": "tableau",
+          "en": "board",
+          "theme": "école"
+        },
+        {
+          "fr": "bureau",
+          "en": "desk",
+          "theme": "école"
+        },
+        {
+          "fr": "chemise",
+          "en": "shirt",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "pantalon",
+          "en": "trousers",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "chaussures",
+          "en": "shoes",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "chapeau",
+          "en": "hat",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "robe",
+          "en": "dress",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "pain",
+          "en": "bread",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "fromage",
+          "en": "cheese",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "pomme",
+          "en": "apple",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "lait",
+          "en": "milk",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "oeuf",
+          "en": "egg",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "porte",
+          "en": "door",
+          "theme": "maison"
+        },
+        {
+          "fr": "fenêtre",
+          "en": "window",
+          "theme": "maison"
+        },
+        {
+          "fr": "lit",
+          "en": "bed",
+          "theme": "maison"
+        },
+        {
+          "fr": "table",
+          "en": "table",
+          "theme": "maison"
+        },
+        {
+          "fr": "chaise",
+          "en": "chair",
+          "theme": "maison"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "livre",
+          "en": "book",
+          "theme": "école"
+        },
+        {
+          "fr": "stylo",
+          "en": "pen",
+          "theme": "école"
+        },
+        {
+          "fr": "crayon",
+          "en": "pencil",
+          "theme": "école"
+        },
+        {
+          "fr": "tableau",
+          "en": "board",
+          "theme": "école"
+        },
+        {
+          "fr": "bureau",
+          "en": "desk",
+          "theme": "école"
+        },
+        {
+          "fr": "chemise",
+          "en": "shirt",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "pantalon",
+          "en": "trousers",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "chaussures",
+          "en": "shoes",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "chapeau",
+          "en": "hat",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "robe",
+          "en": "dress",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "pain",
+          "en": "bread",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "fromage",
+          "en": "cheese",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "pomme",
+          "en": "apple",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "lait",
+          "en": "milk",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "oeuf",
+          "en": "egg",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "porte",
+          "en": "door",
+          "theme": "maison"
+        },
+        {
+          "fr": "fenêtre",
+          "en": "window",
+          "theme": "maison"
+        },
+        {
+          "fr": "lit",
+          "en": "bed",
+          "theme": "maison"
+        },
+        {
+          "fr": "table",
+          "en": "table",
+          "theme": "maison"
+        },
+        {
+          "fr": "chaise",
+          "en": "chair",
+          "theme": "maison"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "livre",
+          "en": "book",
+          "theme": "école"
+        },
+        {
+          "fr": "stylo",
+          "en": "pen",
+          "theme": "école"
+        },
+        {
+          "fr": "crayon",
+          "en": "pencil",
+          "theme": "école"
+        },
+        {
+          "fr": "tableau",
+          "en": "board",
+          "theme": "école"
+        },
+        {
+          "fr": "bureau",
+          "en": "desk",
+          "theme": "école"
+        },
+        {
+          "fr": "chemise",
+          "en": "shirt",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "pantalon",
+          "en": "trousers",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "chaussures",
+          "en": "shoes",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "chapeau",
+          "en": "hat",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "robe",
+          "en": "dress",
+          "theme": "vêtements"
+        },
+        {
+          "fr": "pain",
+          "en": "bread",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "fromage",
+          "en": "cheese",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "pomme",
+          "en": "apple",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "lait",
+          "en": "milk",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "oeuf",
+          "en": "egg",
+          "theme": "nourriture"
+        },
+        {
+          "fr": "porte",
+          "en": "door",
+          "theme": "maison"
+        },
+        {
+          "fr": "fenêtre",
+          "en": "window",
+          "theme": "maison"
+        },
+        {
+          "fr": "lit",
+          "en": "bed",
+          "theme": "maison"
+        },
+        {
+          "fr": "table",
+          "en": "table",
+          "theme": "maison"
+        },
+        {
+          "fr": "chaise",
+          "en": "chair",
+          "theme": "maison"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "niveau": "CE1",
+  "trimestres": {
+    "1": {
+      "vocabulaire": [
+        {
+          "fr": "rouge",
+          "en": "red",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "bleu",
+          "en": "blue",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "vert",
+          "en": "green",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "jaune",
+          "en": "yellow",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "blanc",
+          "en": "white",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "un",
+          "en": "one",
+          "theme": "nombres"
+        },
+        {
+          "fr": "deux",
+          "en": "two",
+          "theme": "nombres"
+        },
+        {
+          "fr": "trois",
+          "en": "three",
+          "theme": "nombres"
+        },
+        {
+          "fr": "quatre",
+          "en": "four",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cinq",
+          "en": "five",
+          "theme": "nombres"
+        },
+        {
+          "fr": "tête",
+          "en": "head",
+          "theme": "corps"
+        },
+        {
+          "fr": "main",
+          "en": "hand",
+          "theme": "corps"
+        },
+        {
+          "fr": "pied",
+          "en": "foot",
+          "theme": "corps"
+        },
+        {
+          "fr": "oeil",
+          "en": "eye",
+          "theme": "corps"
+        },
+        {
+          "fr": "nez",
+          "en": "nose",
+          "theme": "corps"
+        },
+        {
+          "fr": "chat",
+          "en": "cat",
+          "theme": "animaux"
+        },
+        {
+          "fr": "chien",
+          "en": "dog",
+          "theme": "animaux"
+        },
+        {
+          "fr": "oiseau",
+          "en": "bird",
+          "theme": "animaux"
+        },
+        {
+          "fr": "poisson",
+          "en": "fish",
+          "theme": "animaux"
+        },
+        {
+          "fr": "souris",
+          "en": "mouse",
+          "theme": "animaux"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What colour is the sky?",
+          "bonne": "blue",
+          "fausses": [
+            "green",
+            "yellow",
+            "red"
+          ],
+          "explication": "Le ciel est bleu."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "How do you say 'chat' in English?",
+          "bonne": "cat",
+          "fausses": [
+            "dog",
+            "bird",
+            "fish"
+          ],
+          "explication": "Chat = cat en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What do you say when you meet someone?",
+          "bonne": "hello",
+          "fausses": [
+            "goodbye",
+            "thank you",
+            "please"
+          ],
+          "explication": "Hello veut dire bonjour."
+        },
+        {
+          "consigne": "Complete the sentence",
+          "enonce": "I have got ___ eyes.",
+          "bonne": "two",
+          "fausses": [
+            "one",
+            "three",
+            "four"
+          ],
+          "explication": "Nous avons deux yeux."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "Which number comes after four?",
+          "bonne": "five",
+          "fausses": [
+            "three",
+            "six",
+            "two"
+          ],
+          "explication": "Quatre + 1 = cinq (five)."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        }
+      ]
+    },
+    "2": {
+      "vocabulaire": [
+        {
+          "fr": "rouge",
+          "en": "red",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "bleu",
+          "en": "blue",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "vert",
+          "en": "green",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "jaune",
+          "en": "yellow",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "blanc",
+          "en": "white",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "un",
+          "en": "one",
+          "theme": "nombres"
+        },
+        {
+          "fr": "deux",
+          "en": "two",
+          "theme": "nombres"
+        },
+        {
+          "fr": "trois",
+          "en": "three",
+          "theme": "nombres"
+        },
+        {
+          "fr": "quatre",
+          "en": "four",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cinq",
+          "en": "five",
+          "theme": "nombres"
+        },
+        {
+          "fr": "tête",
+          "en": "head",
+          "theme": "corps"
+        },
+        {
+          "fr": "main",
+          "en": "hand",
+          "theme": "corps"
+        },
+        {
+          "fr": "pied",
+          "en": "foot",
+          "theme": "corps"
+        },
+        {
+          "fr": "oeil",
+          "en": "eye",
+          "theme": "corps"
+        },
+        {
+          "fr": "nez",
+          "en": "nose",
+          "theme": "corps"
+        },
+        {
+          "fr": "chat",
+          "en": "cat",
+          "theme": "animaux"
+        },
+        {
+          "fr": "chien",
+          "en": "dog",
+          "theme": "animaux"
+        },
+        {
+          "fr": "oiseau",
+          "en": "bird",
+          "theme": "animaux"
+        },
+        {
+          "fr": "poisson",
+          "en": "fish",
+          "theme": "animaux"
+        },
+        {
+          "fr": "souris",
+          "en": "mouse",
+          "theme": "animaux"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What colour is the sky?",
+          "bonne": "blue",
+          "fausses": [
+            "green",
+            "yellow",
+            "red"
+          ],
+          "explication": "Le ciel est bleu."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "How do you say 'chat' in English?",
+          "bonne": "cat",
+          "fausses": [
+            "dog",
+            "bird",
+            "fish"
+          ],
+          "explication": "Chat = cat en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What do you say when you meet someone?",
+          "bonne": "hello",
+          "fausses": [
+            "goodbye",
+            "thank you",
+            "please"
+          ],
+          "explication": "Hello veut dire bonjour."
+        },
+        {
+          "consigne": "Complete the sentence",
+          "enonce": "I have got ___ eyes.",
+          "bonne": "two",
+          "fausses": [
+            "one",
+            "three",
+            "four"
+          ],
+          "explication": "Nous avons deux yeux."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "Which number comes after four?",
+          "bonne": "five",
+          "fausses": [
+            "three",
+            "six",
+            "two"
+          ],
+          "explication": "Quatre + 1 = cinq (five)."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        }
+      ]
+    },
+    "3": {
+      "vocabulaire": [
+        {
+          "fr": "rouge",
+          "en": "red",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "bleu",
+          "en": "blue",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "vert",
+          "en": "green",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "jaune",
+          "en": "yellow",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "blanc",
+          "en": "white",
+          "theme": "couleurs"
+        },
+        {
+          "fr": "un",
+          "en": "one",
+          "theme": "nombres"
+        },
+        {
+          "fr": "deux",
+          "en": "two",
+          "theme": "nombres"
+        },
+        {
+          "fr": "trois",
+          "en": "three",
+          "theme": "nombres"
+        },
+        {
+          "fr": "quatre",
+          "en": "four",
+          "theme": "nombres"
+        },
+        {
+          "fr": "cinq",
+          "en": "five",
+          "theme": "nombres"
+        },
+        {
+          "fr": "tête",
+          "en": "head",
+          "theme": "corps"
+        },
+        {
+          "fr": "main",
+          "en": "hand",
+          "theme": "corps"
+        },
+        {
+          "fr": "pied",
+          "en": "foot",
+          "theme": "corps"
+        },
+        {
+          "fr": "oeil",
+          "en": "eye",
+          "theme": "corps"
+        },
+        {
+          "fr": "nez",
+          "en": "nose",
+          "theme": "corps"
+        },
+        {
+          "fr": "chat",
+          "en": "cat",
+          "theme": "animaux"
+        },
+        {
+          "fr": "chien",
+          "en": "dog",
+          "theme": "animaux"
+        },
+        {
+          "fr": "oiseau",
+          "en": "bird",
+          "theme": "animaux"
+        },
+        {
+          "fr": "poisson",
+          "en": "fish",
+          "theme": "animaux"
+        },
+        {
+          "fr": "souris",
+          "en": "mouse",
+          "theme": "animaux"
+        }
+      ],
+      "questions": [
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What colour is the sky?",
+          "bonne": "blue",
+          "fausses": [
+            "green",
+            "yellow",
+            "red"
+          ],
+          "explication": "Le ciel est bleu."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "How do you say 'chat' in English?",
+          "bonne": "cat",
+          "fausses": [
+            "dog",
+            "bird",
+            "fish"
+          ],
+          "explication": "Chat = cat en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What do you say when you meet someone?",
+          "bonne": "hello",
+          "fausses": [
+            "goodbye",
+            "thank you",
+            "please"
+          ],
+          "explication": "Hello veut dire bonjour."
+        },
+        {
+          "consigne": "Complete the sentence",
+          "enonce": "I have got ___ eyes.",
+          "bonne": "two",
+          "fausses": [
+            "one",
+            "three",
+            "four"
+          ],
+          "explication": "Nous avons deux yeux."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "Which number comes after four?",
+          "bonne": "five",
+          "fausses": [
+            "three",
+            "six",
+            "two"
+          ],
+          "explication": "Quatre + 1 = cinq (five)."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        },
+        {
+          "consigne": "Choose the correct answer",
+          "enonce": "What is the English word for 'livre'?",
+          "bonne": "book",
+          "fausses": [
+            "pen",
+            "desk",
+            "chair"
+          ],
+          "explication": "Livre = book en anglais."
+        }
+      ]
+    }
+  }
+}
