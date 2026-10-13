@@ -32,8 +32,26 @@ Chaque niveau contient **3 trimestres** avec :
 
 ## 🌐 Utilisation
 
-### Accès web
-1. Ouvrez `web/index.html` dans votre navigateur
+### ☁️ Accès en ligne (Recommandé)
+Ouvrez simplement : **https://morpheus45.github.io/cm1-cm2/**
+
+Aucune installation ! La plateforme est déployée automatiquement sur GitHub Pages.
+
+### 🏠 Accès local (Développement)
+```bash
+# Cloner le dépôt
+git clone https://github.com/morpheus45/cm1-cm2.git
+cd cm1-cm2
+
+# Installer et lancer
+npm install
+npm run dev
+
+# Ouvre http://localhost:5173
+```
+
+### 📚 Utiliser la section pédagogie
+1. Cliquez sur **« Apprendre (Vocabulaire & Notions) »**
 2. Sélectionnez une **matière**
 3. Choisissez un **niveau** (CE1 → 3e)
 4. Sélectionnez un **trimestre**

@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run --passWithNoTests",
     "icons": "node tools/generate-icons.mjs",
-    "cartes": "node tools/generate-maps.mjs"
+    "cartes": "node tools/generate-maps.mjs",
+    "deploy": "npm run build && npm run publish"
   },
   "dependencies": {
     "@fontsource/andika": "^5.3.0",
