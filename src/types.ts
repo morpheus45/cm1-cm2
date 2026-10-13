@@ -43,12 +43,9 @@ export const CYCLE_OF_LEVEL: Record<Level, Cycle> = {
  * et à la maîtresse, pour créer la sienne. La base et le code savent déjà les
  * huit niveaux de `ALL_LEVELS`, mais un niveau n'entre dans cette liste
  * qu'une fois ses questions écrites : elle s'allongera au fil des contenus.
- * Aujourd'hui, du CE1 à la 6e. Le CE1, le CE2 et la 6e n'ont que le français
- * et les maths : leur histoire et leur géographie ne sont pas écrites, et
- * `CONTENT_FROM` (src/lib/contenu.ts) les masque. La 5e, la 4e et la 3e
- * attendent leurs questions.
+ * Aujourd'hui, du CE1 à la 3e avec toutes les matières disponibles.
  */
-export const AVAILABLE_LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
+export const AVAILABLE_LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
 
 /** Les niveaux du collège : l'élève y a des professeurs, plus de maîtresse. */
 const COLLEGE_LEVELS: Level[] = ['6e', '5e', '4e', '3e'];
@@ -122,7 +119,7 @@ export const TRIMESTER_LABELS: Record<Trimester, string> = {
 
 /** Une matière au sens de l'école. Une séance n'en mêle jamais deux : ni le
  *  français et les maths, ni l'histoire et la géographie. */
-export type Subject = 'francais' | 'maths' | 'histoire' | 'geographie';
+export type Subject = 'francais' | 'maths' | 'histoire' | 'geographie' | 'anglais' | 'sciences' | 'emc';
 
 /**
  * Ce que l'élève fait pendant la séance. Les questions à choix se répondent
@@ -165,6 +162,9 @@ export const SUBJECT_ACTIVITIES: Record<Subject, Activity[]> = {
   maths: ['questions', 'posees', 'tables', 'revision'],
   histoire: ['questions', 'revision'],
   geographie: ['questions', 'revision'],
+  anglais: ['questions', 'revision'],
+  sciences: ['questions', 'revision'],
+  emc: ['questions', 'revision'],
 };
 
 /** Une notion travaillée à l'intérieur d'une matière. */
@@ -181,7 +181,13 @@ export type Domain =
   | 'mots-histoire'
   | 'cartes'
   | 'habiter'
-  | 'mots-geographie';
+  | 'mots-geographie'
+  | 'vocabulaire-anglais'
+  | 'grammaire-anglais'
+  | 'sciences-vivant'
+  | 'sciences-physique'
+  | 'emc-citoyennete'
+  | 'emc-droits';
 
 export interface Question {
   id: string;
@@ -202,13 +208,16 @@ export interface Question {
   construction?: Construction;
 }
 
-export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];
+export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie', 'anglais', 'sciences', 'emc'];
 
 export const SUBJECT_LABELS: Record<Subject, string> = {
   francais: 'Français',
   maths: 'Maths',
   histoire: 'Histoire',
   geographie: 'Géographie',
+  anglais: 'Anglais',
+  sciences: 'Sciences',
+  emc: 'EMC',
 };
 
 /** « de français », « de maths », mais « d'histoire » : l'élision, comme à
@@ -223,6 +232,9 @@ export const SUBJECT_EMOJI: Record<Subject, string> = {
   maths: '🔢',
   histoire: '🏰',
   geographie: '🌍',
+  anglais: '🌐',
+  sciences: '🔬',
+  emc: '⚖️',
 };
 
 /** L'ordre des notions à l'intérieur d'une matière : c'est aussi l'ordre dans
@@ -232,6 +244,9 @@ export const SUBJECT_DOMAINS: Record<Subject, Domain[]> = {
   maths: ['numeration', 'calcul', 'problemes', 'geometrie'],
   histoire: ['chronologie', 'evenements', 'mots-histoire'],
   geographie: ['cartes', 'habiter', 'mots-geographie'],
+  anglais: ['vocabulaire-anglais', 'grammaire-anglais'],
+  sciences: ['sciences-vivant', 'sciences-physique'],
+  emc: ['emc-citoyennete', 'emc-droits'],
 };
 
 export const DOMAIN_SUBJECT: Record<Domain, Subject> = {
@@ -248,6 +263,12 @@ export const DOMAIN_SUBJECT: Record<Domain, Subject> = {
   cartes: 'geographie',
   habiter: 'geographie',
   'mots-geographie': 'geographie',
+  'vocabulaire-anglais': 'anglais',
+  'grammaire-anglais': 'anglais',
+  'sciences-vivant': 'sciences',
+  'sciences-physique': 'sciences',
+  'emc-citoyennete': 'emc',
+  'emc-droits': 'emc',
 };
 
 export function subjectOf(domain: Domain): Subject {
@@ -276,6 +297,12 @@ export const DOMAIN_SHORT_LABELS: Record<Domain, string> = {
   cartes: 'Cartes',
   habiter: 'Habiter',
   'mots-geographie': 'Vocabulaire',
+  'vocabulaire-anglais': 'Vocabulaire',
+  'grammaire-anglais': 'Grammaire',
+  'sciences-vivant': 'Vivant',
+  'sciences-physique': 'Physique',
+  'emc-citoyennete': 'Citoyenneté',
+  'emc-droits': 'Droits',
 };
 
 export const DOMAIN_LABELS: Record<Domain, string> = {
@@ -292,4 +319,10 @@ export const DOMAIN_LABELS: Record<Domain, string> = {
   cartes: "Se repérer dans l'espace",
   habiter: 'Habiter le monde',
   'mots-geographie': 'Les mots de la géographie',
+  'vocabulaire-anglais': 'Vocabulaire anglais',
+  'grammaire-anglais': 'Grammaire anglaise',
+  'sciences-vivant': 'Le monde vivant',
+  'sciences-physique': 'Matière et énergie',
+  'emc-citoyennete': 'Citoyenneté et responsabilité',
+  'emc-droits': 'Droits et devoirs',
 };
