@@ -45,6 +45,8 @@
     @apply rounded-2xl border-2 bg-white font-semibold text-encre transition-transform;
     border-color: var(--encre);
     box-shadow: 0 3px 0 var(--encre);
+    /* 44 px au moins : un doigt d'enfant ne vise pas au pixel près. */
+    min-height: 2.75rem;
   }
   .etiquette:not(:disabled):active {
     transform: translateY(2px);
@@ -58,6 +60,7 @@
   .bouton-encre {
     @apply rounded-2xl bg-encre font-bold text-white transition-transform;
     box-shadow: 0 4px 0 #0c1430;
+    min-height: 2.75rem;
   }
   .bouton-encre:not(:disabled):active {
     transform: translateY(3px);

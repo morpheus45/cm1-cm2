@@ -282,15 +282,16 @@ export function HomeScreen({
                 key={lvl}
                 actif={level === lvl}
                 onClick={() => moveTo(lvl, trimester)}
-                className="py-3 text-xl"
+                className="py-3 text-lg sm:text-xl"
               >
                 {LEVEL_LABELS[lvl]}
               </Choix>
             ))}
           </div>
-          <div className="flex flex-wrap gap-2">
+          {/* Trois colonnes égales : les trois trimestres se ressemblent, même sur un petit écran. */}
+          <div className="grid grid-cols-3 gap-2">
             {ALL_TRIMESTERS.map((t) => (
-              <Choix key={t} actif={trimester === t} onClick={() => moveTo(level, t)} className="flex-1 px-1 py-2 text-sm leading-tight">
+              <Choix key={t} actif={trimester === t} onClick={() => moveTo(level, t)} className="flex-1 px-1 py-2 text-xs leading-tight min-[360px]:text-sm">
                 {TRIMESTER_LABELS[t]}
               </Choix>
             ))}
@@ -313,7 +314,7 @@ export function HomeScreen({
                   type="button"
                   aria-pressed={actif}
                   onClick={() => selectSubject(s)}
-                  className={`etiquette relative flex flex-col items-center gap-1 px-2 pb-3 pt-2 text-xl ${seuleSurSaLigne ? 'col-span-2' : ''}`}
+                  className={`etiquette relative flex flex-col items-center gap-1 px-2 pb-3 pt-2 text-[clamp(1rem,5vw,1.25rem)] ${seuleSurSaLigne ? 'col-span-2' : ''}`}
                   style={actif ? { background: colors.tint, borderColor: colors.deep, boxShadow: `0 3px 0 ${colors.deep}` } : undefined}
                 >
                   <RainbowArc domains={notionsFor(s, level, trimester)} className="w-24" />
@@ -342,7 +343,7 @@ export function HomeScreen({
                     key={option}
                     actif={activity === option}
                     onClick={() => setActivity(option)}
-                    className="flex-1 px-1 py-2 text-sm leading-tight"
+                    className="flex-1 px-1 py-2 text-xs leading-tight min-[360px]:text-sm"
                   >
                     {ACTIVITY_LABELS[option]}
                   </Choix>
