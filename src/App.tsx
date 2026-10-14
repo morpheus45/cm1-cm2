@@ -1,7 +1,7 @@
 import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import { pupilKey, subjectOf } from './types';
 import type { Domain, Pupil } from './types';
-import { buildSession, type Session } from './lib/sessionBuilder';
+import { buildSession, QUESTIONS_PER_SESSION, type Session } from './lib/sessionBuilder';
 import { buildWorksheet, type Stroke, type Worksheet } from './lib/worksheet';
 import { activitiesFor, notionsFor } from './lib/contenu';
 import { loadPreferences, savePreferences } from './lib/preferences';
@@ -67,6 +67,8 @@ import { WrittenRecapScreen } from './components/WrittenRecapScreen';
 import { TablesScreen } from './components/TablesScreen';
 import { buildTableFacts, tablesAuProgramme, TABLES_PER_SESSION, type TableFact } from './domains/tables';
 import { createRng } from './lib/seededRandom';
+import { AIDES_DE_BASE, aidesDuProfil, appliquerAuDocument, forgetAllProfils, forgetProfil, loadProfil, reduireChoix, seanceDe, type Aides } from './lib/adaptations';
+import { voixDisponible } from './lib/voix';
 
 // L'accès maîtresse — graphiques, correction, compte — n'est chargé qu'à
 // l'ouverture : les tablettes des élèves n'ont pas à le télécharger. Le
@@ -188,6 +190,14 @@ export function App() {
   // directement, par un lien donné aux parents.
   const [infoView, setInfoView] = useState(() => window.location.hash === '#informations');
 
+  // Les aides de l'élève qui fait la séance : lues au moment où elle commence.
+  const [aides, setAides] = useState<Aides>(AIDES_DE_BASE);
+
+  // L'espace maîtresse garde son affichage habituel, quelles que soient les aides du dernier élève.
+  useEffect(() => {
+    if (teacherView) appliquerAuDocument(AIDES_DE_BASE);
+  }, [teacherView]);
+
   useEffect(() => {
     const sync = () => {
       setTeacherView(window.location.hash === '#maitresse');
@@ -283,16 +293,24 @@ export function App() {
       return;
     }
 
-    const built = buildSession({
+    const aidesDeLEleve = aidesDuProfil(loadProfil(pupilKey(pupil)));
+    const generated = buildSession({
       domains,
       level: options.level,
       trimester: options.trimester,
       seed,
+      count: seanceDe(aidesDeLEleve, QUESTIONS_PER_SESSION),
       classProblems: options.joinCode ? cachedClassProblems(options.joinCode) : [],
       classQuestions: options.joinCode ? cachedClassQuestions(options.joinCode) : [],
       avoidSignatures: recentSignatures(pupil, options.subject),
+      exclude: (question) =>
+        (aidesDeLEleve.sansConstructions && question.construction !== undefined) ||
+        (question.audio !== undefined && !voixDisponible()),
     });
-    if (built.questions.length === 0) return;
+    if (generated.questions.length === 0) return;
+    const built = aidesDeLEleve.moinsDeChoix ? { ...generated, questions: generated.questions.map(reduireChoix) } : generated;
+    setAides(aidesDeLEleve);
+    appliquerAuDocument(aidesDeLEleve);
     setSession(built);
     recordShownQuestions(pupil, options.subject, built.questions);
     // Un code tout juste saisi : les problèmes et les questions de la classe
@@ -470,10 +488,12 @@ export function App() {
           onForgetLocalPupil={(key) => {
             setResults(forgetPupil(key));
             updateCorrections((list) => forgetCorrections(list, key));
+            forgetProfil(key);
           }}
           onForgetAllLocal={() => {
             setResults(forgetAllResults());
             updateCorrections((list) => forgetCorrections(list, null));
+            forgetAllProfils();
           }}
           onBack={() => {
             window.location.hash = '';
@@ -596,6 +616,7 @@ export function App() {
         stepDomains={session.questions.map((entry) => entry.domain)}
         onAnswer={handleAnswer}
         onQuit={goHome}
+        aides={aides}
       />
     );
   }

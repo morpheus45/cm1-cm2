@@ -142,7 +142,8 @@ describe('buildSession', () => {
             expect(q.prompt.trim().length).toBeGreaterThan(0);
             // Une construction de géométrie n'a pas de choix : l'élève pose
             // des points.
-            if (q.construction) {
+            // Des mots à remettre dans l'ordre : pas de choix non plus.
+            if (q.construction || q.wordOrder) {
               expect(q.choices).toEqual([]);
               return;
             }
@@ -167,7 +168,8 @@ describe('buildSession', () => {
       const session = buildSession({ domains: [domain], level: 'CM1', trimester: 1, seed: 8 });
       // Pour une question à figure, la figure fait partie de l'énoncé : deux
       // polygones différents sont deux questions différentes.
-      const distinct = new Set(session.questions.map((q) => q.prompt + JSON.stringify(q.figure ?? null)));
+      // Un exercice d'écoute : le mot entendu fait la question.
+      const distinct = new Set(session.questions.map((q) => q.prompt + JSON.stringify(q.figure ?? null) + (q.audio?.text ?? '')));
       expect(distinct.size, `${domain} se répète trop`).toBeGreaterThanOrEqual(
         QUESTIONS_PER_SESSION - 1
       );

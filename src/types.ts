@@ -208,7 +208,21 @@ export interface Question {
    *  quadrillage). La question n'a alors pas de choix : `choices` est vide et
    *  `correctIndex` vaut -1. */
   construction?: Construction;
+  /** Un mot ou une phrase à écouter, lu par la synthèse vocale de l'appareil. */
+  audio?: { text: string; lang: VoiceLang };
+  /** Remettre des mots dans l'ordre : `words` est la bonne phrase, `bank` les
+   *  étiquettes proposées, intrus compris. `choices` est vide et
+   *  `correctIndex` vaut -1. */
+  wordOrder?: { words: string[]; bank: string[]; sentence: string };
+  /** La langue des passages entre guillemets et des réponses, pour la lecture
+   *  à voix haute. Le français par défaut. */
+  voice?: { quote?: VoiceLang; choices?: VoiceLang };
+  /** Un exercice d'entraînement (écoute, mots à remettre dans l'ordre) :
+   *  jamais proposé dans une évaluation de la maîtresse. */
+  practiceOnly?: boolean;
 }
+
+export type VoiceLang = 'fr-FR' | 'en-GB';
 
 export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie', 'anglais', 'sciences', 'emc'];
 

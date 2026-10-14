@@ -1,4 +1,5 @@
 import type { Level, Trimester } from '../types';
+import { createRng, rngShuffle } from '../lib/seededRandom';
 import { writtenGenerator, writtenItem as item, type WrittenItem } from './histoireGeographie';
 
 /**
@@ -7,6 +8,11 @@ import { writtenGenerator, writtenItem as item, type WrittenItem } from './histo
  *
  * Deux notions : les mots (un lexique par thème, interrogé dans les deux
  * sens) et les phrases (comprendre, dire, la grammaire de chaque année).
+ *
+ * Comme dans les applications de langue, on ne fait pas que lire : on écoute
+ * le mot prononcé par la voix anglaise de l'appareil, et on remet les mots
+ * d'une phrase dans l'ordre. Ces exercices sont fabriqués à partir des mots et
+ * des phrases déjà écrits et relus : rien n'est inventé.
  */
 
 type Pair = [fr: string, en: string];
@@ -65,9 +71,22 @@ export function itemsDuLexique(): WrittenItem[] {
         const t = Number(trimestre) as Trimester;
         const autresEn = paires.map((paire) => paire[1]).filter((mot) => mot !== en);
         const autresFr = paires.map((paire) => paire[0]).filter((mot) => mot !== fr);
+        const audio = { text: en, lang: 'en-GB' as const };
         return [
-          item(lvl, t, `Comment dit-on « ${fr} » en anglais ?`, en, autresEn, `« ${fr} » se dit « ${en} » en anglais.`),
-          item(lvl, t, `Que veut dire le mot anglais « ${en} » ?`, fr, autresFr, `« ${en} » veut dire « ${fr} ».`),
+          { ...item(lvl, t, `Comment dit-on « ${fr} » en anglais ?`, en, autresEn, `« ${fr} » se dit « ${en} » en anglais.`), voice: { choices: 'en-GB' as const } },
+          { ...item(lvl, t, `Que veut dire le mot anglais « ${en} » ?`, fr, autresFr, `« ${en} » veut dire « ${fr} ».`), voice: { quote: 'en-GB' as const } },
+          // L'écoute : le mot n'est pas écrit, on l'entend.
+          {
+            ...item(lvl, t, 'Écoute bien. Quel mot entends-tu ?', en, autresEn, `On a entendu « ${en} », qui veut dire « ${fr} ».`),
+            audio,
+            voice: { choices: 'en-GB' as const },
+            practiceOnly: true,
+          },
+          {
+            ...item(lvl, t, 'Écoute bien. Que veut dire ce mot ?', fr, autresFr, `On a entendu « ${en} », qui veut dire « ${fr} ».`),
+            audio,
+            practiceOnly: true,
+          },
         ];
       })
     )
@@ -225,5 +244,76 @@ export const PHRASES: WrittenItem[] = [
   item('3e', 3, 'Que veut dire « Scientists have discovered a new vaccine » ?', 'Des scientifiques ont découvert un nouveau vaccin.', ['Des scientifiques cherchent un vaccin.', 'Un vaccin a découvert des scientifiques.', 'Des scientifiques refusent un vaccin.'], 'Have discovered est au present perfect.'),
 ];
 
+/** Les mots anglais courants qui signalent une phrase anglaise. */
+const MOTS_ANGLAIS = /\b(i|i'm|i've|you|your|my|his|her|the|a|an|is|are|am|was|were|it|it's|this|these|there|what|what's|how|when|why|where|who|do|does|don't|doesn't|didn't|can|can't|have|has|had|will|would|should|must|mustn't|yes|no|please|thank|hello|goodbye|of|to|in|on|at|and|we|she|he|they)\b/i;
+
+/** Une phrase est anglaise si elle n'a aucun accent français et contient un mot anglais courant. */
+export function looksEnglish(text: string): boolean {
+  return !/[àâçéèêëîïôûùüœ]/i.test(text) && MOTS_ANGLAIS.test(text);
+}
+
+const citation = (prompt: string) => prompt.match(/« (.+?) »/)?.[1];
+
+/** La langue des citations et des réponses, pour que la voix lise l'anglais avec l'accent anglais. */
+function avecVoix(entry: WrittenItem): WrittenItem {
+  const quote = citation(entry.prompt);
+  const voice = {
+    ...(quote && looksEnglish(quote) && { quote: 'en-GB' as const }),
+    ...([entry.correct, ...entry.wrong].every(looksEnglish) && { choices: 'en-GB' as const }),
+  };
+  return Object.keys(voice).length > 0 ? { ...entry, voice } : entry;
+}
+
+/** Les mots d'une phrase, sans la ponctuation : les étiquettes ne portent que des mots. */
+const motsDe = (phrase: string) =>
+  phrase
+    .trim()
+    .split(/\s+/)
+    .map((mot) => mot.replace(/[.,!?;:]+$/, ''))
+    .filter((mot) => mot.length > 0);
+
+/**
+ * « Remets les mots dans l'ordre », dans les deux sens, à partir des
+ * traductions déjà écrites : « Comment dit-on « Je n'aime pas les chiens » ? »
+ * devient « Traduis en anglais » avec les étiquettes I, don't, like, dogs. Les
+ * intrus viennent des mauvaises réponses de la même question : ce sont les
+ * pièges que l'élève a déjà croisés. Vers le français, pas d'intrus : avec
+ * « est-il » en plus, « Quel jour est-il » serait juste et compté faux. L'ordre
+ * des étiquettes est tiré une fois pour toutes, à partir de la phrase.
+ */
+export function itemsAOrdonner(phrases: WrittenItem[]): WrittenItem[] {
+  return phrases.flatMap((entry) => {
+    const quote = citation(entry.prompt);
+    if (!quote || !/^(Comment dit-on|Que veut dire) « /.test(entry.prompt)) return [];
+    const versAnglais = entry.prompt.startsWith('Comment dit-on') && looksEnglish(entry.correct) && !looksEnglish(quote);
+    const versFrancais = entry.prompt.startsWith('Que veut dire') && looksEnglish(quote) && !looksEnglish(entry.correct);
+    if (!versAnglais && !versFrancais) return [];
+    const words = motsDe(entry.correct);
+    // Une phrase d'un mot ne se range pas, une trop longue décourage.
+    if (words.length < 3 || words.length > 9) return [];
+    const enMinuscules = words.map((mot) => mot.toLowerCase());
+    const intrus = versAnglais
+      ? [...new Set(entry.wrong.flatMap(motsDe))].filter((mot) => !enMinuscules.includes(mot.toLowerCase())).slice(0, 3)
+      : [];
+    let graine = 0;
+    for (const lettre of entry.correct) graine = (graine * 31 + lettre.charCodeAt(0)) >>> 0;
+    const bank = rngShuffle(createRng(graine + 1), [...words, ...intrus]);
+    return [
+      {
+        level: entry.level,
+        trimester: entry.trimester,
+        instruction: 'Touche les mots dans le bon ordre',
+        prompt: `${versAnglais ? 'Traduis en anglais' : 'Traduis en français'} : « ${quote} »`,
+        correct: entry.correct,
+        wrong: [],
+        explanation: entry.explanation,
+        wordOrder: { words, bank, sentence: entry.correct },
+        voice: versFrancais ? { quote: 'en-GB' } : { choices: 'en-GB' },
+        practiceOnly: true,
+      },
+    ];
+  });
+}
+
 export const generateMots = writtenGenerator('anglais-mots', itemsDuLexique());
-export const generatePhrases = writtenGenerator('anglais-phrases', PHRASES);
+export const generatePhrases = writtenGenerator('anglais-phrases', [...PHRASES.map(avecVoix), ...itemsAOrdonner(PHRASES)]);

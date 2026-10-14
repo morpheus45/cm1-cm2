@@ -9,7 +9,10 @@ import type { OpenEvaluation } from '../lib/evaluation';
 import type { EvaluationState } from '../lib/pupilEvaluations';
 import { isCloudConfigured, isValidJoinCode, normaliseJoinCode } from '../lib/cloud';
 import { receivedFor, type ReceivedCorrection, type StoredCorrection } from '../lib/pupilCorrections';
-import { activitiesFor, notionsFor, subjectsFor } from '../lib/contenu';
+import { activitiesFor as activitiesDuProgramme, notionsFor, subjectsFor } from '../lib/contenu';
+import { aidesDuProfil, appliquerAuDocument, loadProfil, TROUBLE_LABELS, TROUBLES } from '../lib/adaptations';
+import { pupilKey } from '../types';
+import { AidesScreen } from './AidesScreen';
 import { worksheetScore } from '../lib/worksheet';
 import { formatFrenchDate } from '../lib/worksheetPdf';
 import { ALL_TABLES, tablesAuProgramme } from '../domains/tables';
@@ -77,6 +80,16 @@ export function HomeScreen({
 }: HomeScreenProps) {
   const [name, setName] = useState(initial.name);
   const [lastName, setLastName] = useState(initial.lastName);
+  // Les aides de l'élève dont le prénom est écrit : relues à chaque changement de prénom, et au retour de l'écran des aides.
+  const eleve = pupilKey({ firstName: name, lastName });
+  const [aidesOuvertes, setAidesOuvertes] = useState(false);
+  const profil = useMemo(() => loadProfil(eleve), [eleve, aidesOuvertes]);
+  const aides = aidesDuProfil(profil);
+  const troublesCoches = TROUBLES.filter((trouble) => profil.troubles[trouble]);
+  useEffect(() => appliquerAuDocument(aides), [eleve, aidesOuvertes]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Sans écriture à la main, pas d'opérations posées au doigt.
+  const activitiesFor = (s: Subject, l: Level, t: Trimester) =>
+    activitiesDuProgramme(s, l, t).filter((option) => !(aides.sansEcritureMain && option === 'posees'));
   const received = useMemo(
     () => receivedFor(corrections, { firstName: name, lastName }),
     [corrections, name, lastName]
@@ -162,6 +175,11 @@ export function HomeScreen({
 
   // Poser des opérations ne demande aucune notion, et la révision ciblée
   // choisit les siennes toute seule.
+  // Une séance d'opérations posées choisie avant que l'élève ait réglé ses aides : on passe à la suivante.
+  useEffect(() => {
+    if (activities.length > 0 && !activities.includes(activity)) setActivity(activities[0]);
+  }, [activities.join(), activity]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const canStart =
     name.trim().length > 0 &&
     activities.includes(activity) &&
@@ -180,6 +198,10 @@ export function HomeScreen({
     activity,
     tables,
   });
+
+  if (aidesOuvertes) {
+    return <AidesScreen eleve={eleve} prenom={name.trim()} onClose={() => setAidesOuvertes(false)} />;
+  }
 
   return (
     <div className="min-h-screen px-4 pb-12 pt-3">
@@ -235,6 +257,20 @@ export function HomeScreen({
                 <span className="text-sm font-bold text-[#B84A06]">Le code fait six lettres ou chiffres.</span>
               )}
             </Ligne>
+          )}
+          {name.trim().length > 0 && (
+            <button
+              type="button"
+              onClick={() => setAidesOuvertes(true)}
+              className="etiquette flex flex-col items-start gap-0.5 px-4 py-3 text-left"
+            >
+              <span className="text-lg">Mes aides</span>
+              <span className="text-sm font-normal text-encre-douce">
+                {troublesCoches.length > 0
+                  ? troublesCoches.map((trouble) => TROUBLE_LABELS[trouble]).join(', ')
+                  : 'Dyslexie, dyscalculie, TDA/H… : régler l\'écran avec un adulte'}
+              </span>
+            </button>
           )}
         </Etape>
 
@@ -562,7 +598,7 @@ const champ =
 
 /** Une consigne de la fiche : son numéro, son titre, puis ce qu'on remplit.
  *  Masquée, elle n'est pas dessinée : il n'y a rien à y remplir. */
-function Etape({
+export function Etape({
   numero,
   titre,
   masquee = false,
@@ -599,7 +635,7 @@ function Ligne({ label, aide, children }: { label: string; aide?: string; childr
 }
 
 /** Une étiquette à choisir : pleine d'encre quand elle est choisie. */
-function Choix({
+export function Choix({
   actif,
   onClick,
   className = '',

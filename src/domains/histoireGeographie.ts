@@ -24,6 +24,10 @@ export interface WrittenItem {
   explanation?: string;
   figure?: Figure;
   instruction?: string;
+  audio?: Question['audio'];
+  wordOrder?: Question['wordOrder'];
+  voice?: Question['voice'];
+  practiceOnly?: boolean;
 }
 
 /** Une question déjà prête, avant son numéro dans la séance. */
@@ -118,12 +122,16 @@ export function isEligible(item: { level: Level; trimester: Trimester }, level: 
 
 export function fromItem(rng: Rng, item: WrittenItem): Draft {
   return {
-    key: item.prompt,
+    key: item.audio ? `${item.prompt}§${item.audio.text}` : item.prompt,
     instruction: item.instruction,
     prompt: item.prompt,
     figure: item.figure,
-    ...choose(rng, item.correct, item.wrong),
+    ...(item.wordOrder ? { choices: [], correctIndex: -1 } : choose(rng, item.correct, item.wrong)),
     explanation: item.explanation,
+    ...(item.audio && { audio: item.audio }),
+    ...(item.wordOrder && { wordOrder: item.wordOrder }),
+    ...(item.voice && { voice: item.voice }),
+    ...(item.practiceOnly && { practiceOnly: true }),
   };
 }
 

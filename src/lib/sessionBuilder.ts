@@ -62,6 +62,10 @@ export interface SessionRequest {
    * les plus anciennes plutôt que de raccourcir la séance.
    */
   avoidSignatures?: string[];
+  /** Les questions à écarter : les constructions pour un élève dyspraxique,
+   *  les exercices d'écoute sans voix sur l'appareil, l'entraînement dans
+   *  une évaluation. */
+  exclude?: (question: Question) => boolean;
 }
 
 export interface Session {
@@ -114,10 +118,11 @@ function pickFreshQuestions(
   trimester: Trimester,
   rng: Rng,
   count: number,
-  avoid: string[]
+  avoid: string[],
+  exclude: (question: Question) => boolean
 ): Question[] {
   if (count <= 0) return [];
-  const candidates = generator(level, trimester, rng, Math.max(count, CANDIDATE_POOL_SIZE));
+  const candidates = generator(level, trimester, rng, Math.max(count, CANDIDATE_POOL_SIZE)).filter((question) => !exclude(question));
   const seenSignatures = new Set<string>();
   const unique: Question[] = [];
   candidates.forEach((question) => {
@@ -155,6 +160,7 @@ export function buildSession({
   classProblems = [],
   classQuestions = [],
   avoidSignatures = [],
+  exclude = () => false,
 }: SessionRequest): Session {
   const requestedDomains = ALL_DOMAINS.filter((domain) => domains.includes(domain));
   const subject = subjectOfDomains(requestedDomains);
@@ -187,7 +193,8 @@ export function buildSession({
       trimester,
       rng,
       domainCount - own.length,
-      avoidSignatures
+      avoidSignatures,
+      exclude
     );
     questions.push(...(own.length > 0 ? rngShuffle(rng, [...own, ...generated]) : generated));
   });
