@@ -183,7 +183,7 @@ export function QuestionScreen({
         </div>
         {chiffres && aDesNombres(typographieFrancaise(question.prompt)) && <LegendeDesRangs />}
         {audio && audioJouable && (
-          <div className="flex items-center justify-center gap-3 py-2">
+          <div className="flex flex-wrap items-center justify-center gap-3 py-2">
             <button type="button" onClick={() => dire([audio])} className="bouton-encre inline-flex items-center gap-2 px-6 py-4 text-xl">
               <HautParleur size={26} /> Écouter
             </button>
