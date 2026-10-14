@@ -13,6 +13,9 @@ import * as problemes from '../domains/problemes';
 import * as geometrie from '../domains/geometrie';
 import * as histoire from '../domains/histoire';
 import * as geographie from '../domains/geographie';
+import * as anglais from '../domains/anglais';
+import * as sciences from '../domains/sciences';
+import * as emc from '../domains/emc';
 import { questionSignature } from './questionHistory';
 
 type Generator = (level: Level, trimester: Trimester, rng: Rng, count: number) => Question[];
@@ -31,6 +34,12 @@ const GENERATORS: Record<Domain, Generator> = {
   cartes: geographie.generateCartes,
   habiter: geographie.generateHabiter,
   'mots-geographie': geographie.generateMotsGeographie,
+  'anglais-mots': anglais.generateMots,
+  'anglais-phrases': anglais.generatePhrases,
+  'sciences-vivant': sciences.generateVivant,
+  'sciences-matiere': sciences.generateMatiere,
+  'emc-vivre-ensemble': emc.generateVivreEnsemble,
+  'emc-republique': emc.generateRepublique,
 };
 
 /** Longueur d'une séance : assez pour travailler, assez court pour tenir. */

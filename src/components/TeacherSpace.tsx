@@ -377,7 +377,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
               />
             </label>
             {/* Cinq niveaux : trois puis deux sur un téléphone, tous sur une ligne dès que la place le permet. */}
-            <div className="grid grid-cols-3 gap-3 sm:grid-cols-5">
+            <div className="grid grid-cols-4 gap-2 sm:gap-3">
               {AVAILABLE_LEVELS.map((lvl) => (
                 <button
                   key={lvl}

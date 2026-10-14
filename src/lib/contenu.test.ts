@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { activitiesFor, CONTENT_FROM, hasContent, notionsFor, subjectsFor } from './contenu';
 import { buildSession, MIXED_SUBJECTS_ERROR } from './sessionBuilder';
 import { buildWorksheet } from './worksheet';
@@ -15,16 +15,18 @@ import {
 } from '../types';
 import type { Domain, Level, Subject } from '../types';
 
-/** Les niveaux dont les questions sont écrites : du CE1 à la 6e. */
-const WITH_CONTENT: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
-/** Les trois autres, au collège : rien n'y est encore écrit. */
-const WITHOUT_CONTENT = ALL_LEVELS.filter((level) => !WITH_CONTENT.includes(level));
-/** Le CM1 et le CM2 ont leurs quatre matières. */
+/** Les huit niveaux ont des questions. */
+const WITH_CONTENT: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
+/** Le collège : les maths, l'anglais, les sciences et l'EMC y sont écrits ;
+ *  le français, l'histoire et la géographie pas encore. */
+const COLLEGE: Level[] = ['5e', '4e', '3e'];
+const SUBJECTS_AT_COLLEGE: Subject[] = ['maths', 'anglais', 'sciences', 'emc'];
+/** Le CM1 et le CM2 ont leurs sept matières. */
 const WITH_EVERY_SUBJECT: Level[] = ['CM1', 'CM2'];
-/** Le CE1, le CE2 et la 6e n'ont que le français et les maths : leur histoire
- *  et leur géographie ne sont pas écrites. */
-const FRENCH_AND_MATHS_ONLY = WITH_CONTENT.filter((level) => !WITH_EVERY_SUBJECT.includes(level));
-const SUBJECTS_WRITTEN: Subject[] = ['francais', 'maths'];
+/** Le CE1, le CE2 et la 6e ont tout sauf l'histoire et la géographie, qui ne
+ *  sont pas écrites pour eux. */
+const FRENCH_AND_MATHS_ONLY: Level[] = ['CE1', 'CE2', '6e'];
+const SUBJECTS_WRITTEN: Subject[] = ['francais', 'maths', 'anglais', 'sciences', 'emc'];
 const SUBJECTS_NOT_WRITTEN: Subject[] = ['histoire', 'geographie'];
 const NOTIONS_WRITTEN: Domain[] = SUBJECTS_WRITTEN.flatMap((subject) => SUBJECT_DOMAINS[subject]);
 const NOTIONS_NOT_WRITTEN: Domain[] = SUBJECTS_NOT_WRITTEN.flatMap((subject) => SUBJECT_DOMAINS[subject]);
@@ -38,8 +40,7 @@ describe('les notions qui ont des questions', () => {
     );
   });
 
-  it('sont, au CE1, au CE2 et en 6e, celles du français et des maths, dès le 1er trimestre', () => {
-    expect(FRENCH_AND_MATHS_ONLY).toEqual(['CE1', 'CE2', '6e']);
+  it('sont, au CE1, au CE2 et en 6e, toutes sauf l\'histoire et la géographie, dès le 1er trimestre', () => {
     expect(NOTIONS_WRITTEN).toEqual([
       'conjugaison',
       'accords',
@@ -48,6 +49,12 @@ describe('les notions qui ont des questions', () => {
       'calcul',
       'problemes',
       'geometrie',
+      'anglais-mots',
+      'anglais-phrases',
+      'sciences-vivant',
+      'sciences-matiere',
+      'emc-vivre-ensemble',
+      'emc-republique',
     ]);
     FRENCH_AND_MATHS_ONLY.forEach((level) =>
       ALL_TRIMESTERS.forEach((trimester) =>
@@ -65,11 +72,14 @@ describe('les notions qui ont des questions', () => {
     );
   });
 
-  it('ne sont ouvertes à aucun des trois niveaux du collège qui restent', () => {
-    expect(WITHOUT_CONTENT).toEqual(['5e', '4e', '3e']);
-    WITHOUT_CONTENT.forEach((level) =>
+  it('sont, au collège, celles des maths, de l\'anglais, des sciences et de l\'EMC, et aucune autre', () => {
+    COLLEGE.forEach((level) =>
       ALL_TRIMESTERS.forEach((trimester) =>
-        ALL_DOMAINS.forEach((domain) => expect(hasContent(domain, level, trimester), `${domain} ${level} T${trimester}`).toBe(false))
+        ALL_DOMAINS.forEach((domain) =>
+          expect(hasContent(domain, level, trimester), `${domain} ${level} T${trimester}`).toBe(
+            SUBJECTS_AT_COLLEGE.some((subject) => SUBJECT_DOMAINS[subject].includes(domain))
+          )
+        )
       )
     );
   });
@@ -161,21 +171,21 @@ describe('les notions qui ont des questions', () => {
 });
 
 describe('les matières qu\'on propose', () => {
-  it('sont les quatre, au CM1 et au CM2', () => {
+  it('sont les sept, au CM1 et au CM2', () => {
     WITH_EVERY_SUBJECT.forEach((level) =>
       ALL_TRIMESTERS.forEach((trimester) => expect(subjectsFor(level, trimester), `${level} T${trimester}`).toEqual(ALL_SUBJECTS))
     );
   });
 
-  it('sont le français et les maths, au CE1, au CE2 et en 6e : ni histoire ni géographie', () => {
+  it('sont toutes, sauf l\'histoire et la géographie, au CE1, au CE2 et en 6e', () => {
     FRENCH_AND_MATHS_ONLY.forEach((level) =>
       ALL_TRIMESTERS.forEach((trimester) => expect(subjectsFor(level, trimester), `${level} T${trimester}`).toEqual(SUBJECTS_WRITTEN))
     );
   });
 
-  it('ne sont aucune, dans les trois niveaux du collège qui restent', () => {
-    WITHOUT_CONTENT.forEach((level) =>
-      ALL_TRIMESTERS.forEach((trimester) => expect(subjectsFor(level, trimester), `${level} T${trimester}`).toEqual([]))
+  it('sont les maths, l\'anglais, les sciences et l\'EMC, au collège', () => {
+    COLLEGE.forEach((level) =>
+      ALL_TRIMESTERS.forEach((trimester) => expect(subjectsFor(level, trimester), `${level} T${trimester}`).toEqual(SUBJECTS_AT_COLLEGE))
     );
   });
 
@@ -230,6 +240,13 @@ describe('une matière sans questions à un niveau ouvert', () => {
 });
 
 describe('un niveau sans questions', () => {
+  // Plus aucun niveau n'est vide : on vide la 5e le temps de chaque essai,
+  // pour vérifier que l'application tient toujours debout dans ce cas.
+  const WITHOUT_CONTENT: Level[] = ['5e'];
+  const original = structuredClone(CONTENT_FROM);
+  beforeEach(() => ALL_DOMAINS.forEach((domain) => delete CONTENT_FROM[domain]['5e']));
+  afterEach(() => ALL_DOMAINS.forEach((domain) => (CONTENT_FROM[domain] = structuredClone(original[domain]))));
+
   it('ne propose aucune notion : en 5e, rien n\'est à choisir', () => {
     ALL_TRIMESTERS.forEach((trimester) =>
       ALL_SUBJECTS.forEach((subject) => {
@@ -335,7 +352,7 @@ describe('un niveau couvert en partie', () => {
 
   it('retire aussi du choix une matière dont plus aucune notion n\'a de questions', () => {
     SUBJECT_DOMAINS.geographie.forEach((domain) => delete CONTENT_FROM[domain].CM1);
-    expect(subjectsFor('CM1', 1)).toEqual(['francais', 'maths', 'histoire']);
+    expect(subjectsFor('CM1', 1)).toEqual(['francais', 'maths', 'histoire', 'anglais', 'sciences', 'emc']);
     expect(subjectsFor('CM2', 1)).toEqual(ALL_SUBJECTS);
     expect(notionsFor('geographie', 'CM1', 1)).toEqual([]);
     expect(activitiesFor('geographie', 'CM1', 1)).toEqual([]);

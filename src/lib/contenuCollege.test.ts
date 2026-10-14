@@ -28,8 +28,6 @@ describe('les séances du collège', () => {
   });
 
   it('cachent les tables de multiplication et les opérations posées, tant que les maths y ont des questions', () => {
-    // Avant l'ouverture : rien à proposer, comme avant.
-    COLLEGE.forEach((level) => ALL_TRIMESTERS.forEach((trimester) => expect(activitiesFor('maths', level, trimester)).toEqual([])));
     ouvrirLeCollege();
     COLLEGE.forEach((level) =>
       ALL_TRIMESTERS.forEach((trimester) => {
@@ -64,6 +62,7 @@ describe('les séances du collège', () => {
   });
 
   it('se laissent ouvrir niveau par niveau : la 5e ouverte seule ne change pas la 4e', () => {
+    SUBJECT_DOMAINS.maths.forEach((domain) => COLLEGE.forEach((level) => delete CONTENT_FROM[domain][level]));
     SUBJECT_DOMAINS.maths.forEach((domain) => (CONTENT_FROM[domain]['5e'] = 1));
     expect(activitiesFor('maths', '5e', 1)).toEqual(['questions', 'revision']);
     expect(activitiesFor('maths', '4e', 1)).toEqual([]);

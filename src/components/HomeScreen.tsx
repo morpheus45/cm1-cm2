@@ -239,8 +239,8 @@ export function HomeScreen({
         </Etape>
 
         <Etape numero={2} titre="Ta classe">
-          {/* Cinq classes : trois puis deux sur un téléphone, toutes sur une ligne dès que la place le permet. */}
-          <div className="grid grid-cols-3 gap-3 sm:grid-cols-5">
+          {/* Huit classes sur deux rangées de quatre : l'école, puis le collège. */}
+          <div className="grid grid-cols-4 gap-2 sm:gap-3">
             {AVAILABLE_LEVELS.map((lvl) => (
               <Choix
                 key={lvl}
@@ -266,8 +266,10 @@ export function HomeScreen({
 
         <Etape numero={3} titre="Ta matière">
           <div className="grid grid-cols-2 gap-3">
-            {subjects.map((s) => {
+            {subjects.map((s, index) => {
               const actif = subject === s;
+              // Un nombre impair de matières : la dernière prend toute la largeur plutôt que de rester seule à gauche.
+              const seuleSurSaLigne = index === subjects.length - 1 && subjects.length % 2 === 1;
               const colors = SUBJECT_COLORS[s];
               return (
                 <button
@@ -275,7 +277,7 @@ export function HomeScreen({
                   type="button"
                   aria-pressed={actif}
                   onClick={() => selectSubject(s)}
-                  className="etiquette relative flex flex-col items-center gap-1 px-2 pb-3 pt-2 text-xl"
+                  className={`etiquette relative flex flex-col items-center gap-1 px-2 pb-3 pt-2 text-xl ${seuleSurSaLigne ? 'col-span-2' : ''}`}
                   style={actif ? { background: colors.tint, borderColor: colors.deep, boxShadow: `0 3px 0 ${colors.deep}` } : undefined}
                 >
                   <RainbowArc domains={notionsFor(s, level, trimester)} className="w-24" />

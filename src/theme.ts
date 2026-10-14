@@ -36,6 +36,12 @@ export const NOTION_COLORS: Record<Domain, NotionColors> = {
   cartes: { band: '#1A8FB5', deep: '#136A88', tint: '#E0F2F8' },
   habiter: { band: '#A5C23A', deep: '#4A6512', tint: '#EEF5D8' },
   'mots-geographie': { band: '#C0603A', deep: '#9A4222', tint: '#FBE8DF' },
+  'anglais-mots': { band: '#2B6CB0', deep: '#1E4E8C', tint: '#E3EDF9' },
+  'anglais-phrases': { band: '#C53030', deep: '#9B2C2C', tint: '#FBE4E4' },
+  'sciences-vivant': { band: '#38A169', deep: '#276749', tint: '#E3F4EA' },
+  'sciences-matiere': { band: '#DD6B20', deep: '#9C4221', tint: '#FDEBDD' },
+  'emc-vivre-ensemble': { band: '#805AD5', deep: '#553C9A', tint: '#EFE9FB' },
+  'emc-republique': { band: '#3182CE', deep: '#2A4365', tint: '#E3EEF9' },
 };
 
 /** La couleur qui annonce une matière. */
@@ -44,6 +50,9 @@ export const SUBJECT_COLORS: Record<Subject, NotionColors> = {
   maths: NOTION_COLORS.calcul,
   histoire: NOTION_COLORS.evenements,
   geographie: NOTION_COLORS.cartes,
+  anglais: NOTION_COLORS['anglais-mots'],
+  sciences: NOTION_COLORS['sciences-vivant'],
+  emc: NOTION_COLORS['emc-republique'],
 };
 
 /**

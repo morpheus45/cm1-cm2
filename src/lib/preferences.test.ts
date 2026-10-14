@@ -64,9 +64,8 @@ describe('parsePreferences', () => {
     (['CE1', 'CE2', 'CM1', 'CM2', '6e'] as const).forEach((level) =>
       expect(parsePreferences(JSON.stringify({ level })).level, level).toBe(level)
     );
-    // Un niveau que l'application connaît, mais n'offre pas encore, comme un
-    // niveau inconnu : le CM1.
-    ['5e', '4e', '3e', 'CP'].forEach((level) =>
+    // Un niveau inconnu : le CM1.
+    ['CP', '2de', ''].forEach((level) =>
       expect(parsePreferences(JSON.stringify({ level })).level, level).toBe('CM1')
     );
   });
