@@ -84,3 +84,43 @@
     animation: none !important;
   }
 }
+
+/* Les aides des élèves DYS (src/lib/adaptations.ts), posées sur <html>.
+   Hors des @layer, pour l'emporter sur les classes utilitaires. */
+
+/* La taille du texte : tout est en rem, la mise en page grandit avec lui. */
+html[data-texte='grand'] {
+  font-size: 112.5%;
+}
+html[data-texte='tres-grand'] {
+  font-size: 125%;
+}
+
+/* L'espacement : les valeurs du critère WCAG 1.4.12, en deux crans. */
+html[data-espacement='aere'] body {
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
+html[data-espacement='aere'] :where(p, button, span, li, label, h1, h2, h3) {
+  line-height: 1.6;
+}
+html[data-espacement='tres-aere'] body {
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
+}
+html[data-espacement='tres-aere'] :where(p, button, span, li, label, h1, h2, h3) {
+  line-height: 1.9;
+}
+
+/* Le papier uni : ni grain, ni lignes Seyès, ni marge rouge. */
+html[data-fond-uni] body {
+  background-image: none;
+}
+html[data-fond-uni] .cahier {
+  background-image: none;
+}
+
+/* De grandes cibles : plus faciles à toucher sans viser. */
+html[data-grandes-cibles] :is(.etiquette, .bouton-encre) {
+  min-height: 3.5rem;
+}

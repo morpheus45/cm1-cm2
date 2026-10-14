@@ -217,13 +217,13 @@ export function EvaluationBuilder({
             role="group"
             aria-label="Matière"
           >
-            {subjects.map((candidate) => (
+            {subjects.map((candidate, index) => (
               <button
                 key={candidate}
                 type="button"
                 aria-pressed={candidate === subject}
                 onClick={() => setSubject(candidate)}
-                className={`etiquette px-3 py-2 text-base ${candidate === subject ? '!bg-encre !text-white' : ''}`}
+                className={`etiquette px-3 py-2 text-base ${candidate === subject ? '!bg-encre !text-white' : ''} ${index === subjects.length - 1 && subjects.length % 2 === 1 ? 'col-span-2 sm:col-span-1' : ''}`}
               >
                 {SUBJECT_LABELS[candidate]}
               </button>

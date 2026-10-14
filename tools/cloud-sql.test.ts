@@ -123,8 +123,10 @@ describe('les questions de la classe parlent la même langue que la base', () =>
   });
 
   it('accepte exactement les notions ouvertes à la maîtresse, jamais les problèmes de maths', () => {
-    const constraint = sql.match(/domain\s+text not null check \(domain in \(([\s\S]*?)\)\)/);
-    expect(constraint, 'contrainte sur domain introuvable').not.toBeNull();
+    // La liste de 007, élargie par 009 : c'est la dernière posée qui s'applique.
+    const elargie = readFileSync(join(process.cwd(), 'supabase', '009_anglais_sciences_emc.sql'), 'utf8');
+    const constraint = [...(sql + elargie).matchAll(/check \(domain in \(([\s\S]*?)\)\)/g)].at(-1);
+    expect(constraint, 'contrainte sur domain introuvable').toBeDefined();
     const allowed = [...constraint![1].matchAll(/'([^']*)'/g)].map((m) => m[1]).sort();
     expect(allowed).toEqual([...ALL_DOMAINS].filter(isCustomisableDomain).sort());
   });

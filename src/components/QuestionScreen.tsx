@@ -12,6 +12,11 @@ import { ConstructionBoard } from './figures/ConstructionBoard';
 import { useScreenTitle } from './useScreenTitle';
 import { Brouillon } from './Brouillon';
 import { needsBrouillon } from '../lib/brouillon';
+import { AIDES_DE_BASE, type Aides } from '../lib/adaptations';
+import { dire, morceaux, taire, voixPour } from '../lib/voix';
+import { Ecouter, HautParleur } from './Ecouter';
+import { aDesNombres, colorerChiffres, LegendeDesRangs } from './ChiffresColores';
+import { MotsAOrdonner } from './MotsAOrdonner';
 
 interface QuestionScreenProps {
   question: Question;
@@ -22,6 +27,8 @@ interface QuestionScreenProps {
   stepDomains?: Domain[];
   onAnswer: (correct: boolean) => void;
   onQuit: () => void;
+  /** Les aides de l'élève (dyslexie, TDA/H…). */
+  aides?: Aides;
 }
 
 const ENCOURAGEMENTS = ['Bravo\u00a0!', 'Super\u00a0!', 'Bien joué\u00a0!', 'Génial\u00a0!', 'Continue comme ça\u00a0!'];
@@ -29,9 +36,11 @@ const ENCOURAGEMENTS = ['Bravo\u00a0!', 'Super\u00a0!', 'Bien joué\u00a0!', 'G�
 const JUSTE = NOTION_COLORS.numeration;
 const A_REVOIR = NOTION_COLORS.accords;
 
-/** L'énoncé, ses mots importants surlignés de la couleur de la notion. */
-export function renderPrompt(prompt: string, highlight: string) {
+/** L'énoncé, ses mots importants surlignés de la couleur de la notion, ses
+ *  nombres colorés par rang si l'élève en a besoin. */
+export function renderPrompt(prompt: string, highlight: string, chiffres = false) {
   const parts = prompt.split(/\*\*(.+?)\*\*/g);
+  const texte = (part: string) => (chiffres ? colorerChiffres(part) : part);
   return parts.map((part, index) =>
     index % 2 === 1 ? (
       <strong
@@ -39,10 +48,10 @@ export function renderPrompt(prompt: string, highlight: string) {
         className="rounded-sm px-0.5"
         style={{ background: `linear-gradient(transparent 55%, ${highlight} 55%)` }}
       >
-        {part}
+        {texte(part)}
       </strong>
     ) : (
-      <span key={index}>{part}</span>
+      <span key={index}>{texte(part)}</span>
     )
   );
 }
@@ -55,11 +64,24 @@ export function QuestionScreen({
   stepDomains = [],
   onAnswer,
   onQuit,
+  aides = AIDES_DE_BASE,
 }: QuestionScreenProps) {
   const [selected, setSelected] = useState<number | null>(null);
-  // Une construction : juste ou non, une fois que l'élève a validé.
+  // Choisir, puis valider : la réponse touchée en attendant « Je valide ».
+  const [pending, setPending] = useState<number | null>(null);
+  // Une construction, ou des mots à remettre dans l'ordre : juste ou non, une fois que l'élève a validé.
   const [built, setBuilt] = useState<boolean | null>(null);
   const construction = question.construction;
+  const wordOrder = question.wordOrder;
+  const ownAnswer = construction !== undefined || wordOrder !== undefined;
+  const chiffres = aides.chiffresColores && subject === 'maths';
+  const ecrire = (text: string) => (chiffres ? colorerChiffres(typographieFrancaise(text)) : typographieFrancaise(text));
+  const quoteLang = question.voice?.quote ?? 'fr-FR';
+  const choicesLang = question.voice?.choices ?? 'fr-FR';
+  // L'écoute : sans voix anglaise sur l'appareil, le mot s'écrit plutôt que d'être mal prononcé.
+  const audio = question.audio;
+  const audioJouable = audio !== undefined && voixPour(audio.lang);
+  const enonce = morceaux([question.instruction, question.prompt].filter(Boolean).join('. '), quoteLang);
   // Rotation fixe (aucun hasard hors de seededRandom.ts) : les mots changent
   // au fil de la séance sans avoir besoin d'une graine.
   const encouragement = ENCOURAGEMENTS[(questionNumber - 1) % ENCOURAGEMENTS.length];
@@ -67,11 +89,21 @@ export function QuestionScreen({
 
   const handleSelect = (index: number) => {
     if (selected !== null) return;
-    setSelected(index);
+    if (aides.validerEnDeuxTemps) setPending(index);
+    else setSelected(index);
   };
 
-  const answered = construction ? built !== null : selected !== null;
-  const isCorrect = construction ? built === true : answered && selected === question.correctIndex;
+  const answered = ownAnswer ? built !== null : selected !== null;
+  const isCorrect = ownAnswer ? built === true : answered && selected === question.correctIndex;
+
+  // Ce qu'on entend en arrivant sur la question : le mot à écouter, ou l'énoncé si l'élève a choisi la lecture automatique.
+  useEffect(() => {
+    if (audio && audioJouable) dire([audio]);
+    else if (aides.lecture === 'auto') dire(enonce);
+    return taire;
+    // Une seule fois par question.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [question.id]);
 
   // Chaque question repart du haut de la page, annoncée par son titre :
   // « Séance de français, question 3 sur 12 ».
@@ -94,14 +126,21 @@ export function QuestionScreen({
       ? `${encouragement} C'est la bonne réponse.`
       : construction
         ? "Ce n'est pas encore ça : la correction est tracée en vert."
-        : `Ce n'est pas encore ça. La bonne réponse est : ${typographieFrancaise(question.choices[question.correctIndex])}.`;
+        : wordOrder
+          ? `Ce n'est pas encore ça. La bonne phrase est : ${wordOrder.sentence}`
+          : `Ce n'est pas encore ça. La bonne réponse est : ${typographieFrancaise(question.choices[question.correctIndex])}.`;
 
   const handleContinue = () => {
     if (!answered) return;
+    taire();
     onAnswer(isCorrect);
     setSelected(null);
+    setPending(null);
     setBuilt(null);
   };
+
+  const lireEnonce = aides.lecture !== 'non' || quoteLang === 'en-GB';
+  const lireReponses = aides.lireReponses || choicesLang === 'en-GB';
 
   return (
     <div
@@ -133,7 +172,28 @@ export function QuestionScreen({
         {question.instruction && (
           <p className="text-lg font-bold text-encre-douce">{typographieFrancaise(question.instruction)}</p>
         )}
-        <p className="break-words text-[1.6rem] leading-relaxed text-encre">{renderPrompt(typographieFrancaise(question.prompt), colors.tint)}</p>
+        <div className="flex items-start gap-3">
+          <p className="enonce min-w-0 flex-1 break-words text-[1.6rem] leading-relaxed text-encre">
+            {renderPrompt(typographieFrancaise(question.prompt), colors.tint, chiffres)}
+          </p>
+          {lireEnonce && !audio && <Ecouter parts={enonce} label="Écouter la question" />}
+        </div>
+        {chiffres && aDesNombres(typographieFrancaise(question.prompt)) && <LegendeDesRangs />}
+        {audio && audioJouable && (
+          <div className="flex items-center justify-center gap-3 py-2">
+            <button type="button" onClick={() => dire([audio])} className="bouton-encre inline-flex items-center gap-2 px-6 py-4 text-xl">
+              <HautParleur size={26} /> Écouter
+            </button>
+            <button type="button" onClick={() => dire([{ ...audio, slow: true }])} className="etiquette inline-flex items-center gap-2 px-4 py-3 text-lg">
+              <HautParleur size={20} /> Lentement
+            </button>
+          </div>
+        )}
+        {audio && !audioJouable && (
+          <p className="rounded-2xl bg-white px-4 py-3 text-lg text-encre shadow-[inset_0_0_0_1px_rgba(30,42,74,0.12)]">
+            Cet appareil ne sait pas parler anglais. Le mot est : <strong>{audio.text}</strong>
+          </p>
+        )}
         {question.figure && construction && (
           <ConstructionBoard
             key={question.id}
@@ -153,31 +213,51 @@ export function QuestionScreen({
         )}
       </section>
 
-      {needsBrouillon(question) && <Brouillon key={question.id} locked={answered} />}
+      {(needsBrouillon(question) || (aides.brouillonPartout && subject === 'maths' && !ownAnswer)) && (
+        <Brouillon key={question.id} locked={answered} />
+      )}
 
-      {!construction && (
+      {wordOrder && (
+        <MotsAOrdonner
+          key={question.id}
+          wordOrder={wordOrder}
+          lang={choicesLang}
+          validated={built}
+          onValidate={setBuilt}
+        />
+      )}
+
+      {!ownAnswer && (
         <div className="flex flex-col gap-3" role="group" aria-label="Réponses">
           {question.choices.map((choice, index) => {
             const isSelected = selected === index;
             const showCorrect = answered && index === question.correctIndex;
             const showWrongSelected = answered && isSelected && !isCorrect;
-            const state = showCorrect ? JUSTE : showWrongSelected ? A_REVOIR : null;
+            const state = showCorrect ? JUSTE : showWrongSelected ? A_REVOIR : !answered && pending === index ? colors : null;
             return (
-              <button
-                key={choice + index}
-                type="button"
-                disabled={answered}
-                onClick={() => handleSelect(index)}
-                className={`etiquette flex items-center justify-between gap-3 px-4 py-3.5 text-left text-xl ${
-                  answered && !state ? '!opacity-50' : '!opacity-100'
-                }`}
-                style={state ? { background: state.tint, borderColor: state.deep, color: state.deep, boxShadow: `0 3px 0 ${state.deep}` } : undefined}
-              >
-                <span className="min-w-0 break-words">{typographieFrancaise(choice)}</span>
-                {showCorrect && <Gommette color={JUSTE.deep} mark="coche" size={28} label="Bonne réponse" />}
-              </button>
+              <div key={choice + index} className="flex items-stretch gap-2">
+                <button
+                  type="button"
+                  disabled={answered}
+                  aria-pressed={aides.validerEnDeuxTemps ? pending === index : undefined}
+                  onClick={() => handleSelect(index)}
+                  className={`etiquette flex min-w-0 flex-1 items-center justify-between gap-3 px-4 py-3.5 text-left text-xl ${
+                    answered && !state ? '!opacity-50' : '!opacity-100'
+                  }`}
+                  style={state ? { background: state.tint, borderColor: state.deep, color: state.deep, boxShadow: `0 3px 0 ${state.deep}` } : undefined}
+                >
+                  <span className="min-w-0 break-words">{ecrire(choice)}</span>
+                  {showCorrect && <Gommette color={JUSTE.deep} mark="coche" size={28} label="Bonne réponse" />}
+                </button>
+                {lireReponses && <Ecouter parts={[{ text: choice, lang: choicesLang }]} label={`Écouter : ${choice}`} />}
+              </div>
             );
           })}
+          {aides.validerEnDeuxTemps && !answered && (
+            <button type="button" disabled={pending === null} onClick={() => setSelected(pending)} className="bouton-encre w-full py-4 text-xl">
+              Je valide
+            </button>
+          )}
         </div>
       )}
 
@@ -193,7 +273,11 @@ export function QuestionScreen({
             </Tampon>
           ) : (
             <p className="text-center text-lg font-bold text-encre-douce">
-              {construction ? 'La correction est tracée en vert.' : 'La bonne réponse est marquée d\'une gommette verte.'}
+              {construction
+                ? 'La correction est tracée en vert.'
+                : wordOrder
+                  ? 'Compare avec la bonne phrase.'
+                  : 'La bonne réponse est marquée d\'une gommette verte.'}
             </p>
           )}
           {question.explanation && (

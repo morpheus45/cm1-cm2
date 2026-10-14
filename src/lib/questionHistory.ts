@@ -19,7 +19,9 @@ const SESSIONS_REMEMBERED = 10;
  *  choix ni la bonne réponse — deux tirages du même énoncé restent la même
  *  question, même si les propositions sont mélangées différemment. */
 export function questionSignature(question: Question): string {
-  return [question.domain, question.instruction ?? '', question.prompt].join('§');
+  const base = [question.domain, question.instruction ?? '', question.prompt].join('§');
+  // Un exercice d'écoute garde le même énoncé d'un mot à l'autre : c'est le mot entendu qui le distingue.
+  return question.audio ? `${base}§${question.audio.text}` : base;
 }
 
 interface SessionSignatures {

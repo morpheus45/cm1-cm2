@@ -1,3 +1,4 @@
+import { ALL_LEVELS } from '../types';
 import type { Domain, Level, Question, Trimester } from '../types';
 import type { Figure } from '../lib/figures';
 import { rngShuffle, type Rng } from '../lib/seededRandom';
@@ -23,6 +24,10 @@ export interface WrittenItem {
   explanation?: string;
   figure?: Figure;
   instruction?: string;
+  audio?: Question['audio'];
+  wordOrder?: Question['wordOrder'];
+  voice?: Question['voice'];
+  practiceOnly?: boolean;
 }
 
 /** Une question déjà prête, avant son numéro dans la séance. */
@@ -117,12 +122,16 @@ export function isEligible(item: { level: Level; trimester: Trimester }, level: 
 
 export function fromItem(rng: Rng, item: WrittenItem): Draft {
   return {
-    key: item.prompt,
+    key: item.audio ? `${item.prompt}§${item.audio.text}` : item.prompt,
     instruction: item.instruction,
     prompt: item.prompt,
     figure: item.figure,
-    ...choose(rng, item.correct, item.wrong),
+    ...(item.wordOrder ? { choices: [], correctIndex: -1 } : choose(rng, item.correct, item.wrong)),
     explanation: item.explanation,
+    ...(item.audio && { audio: item.audio }),
+    ...(item.wordOrder && { wordOrder: item.wordOrder }),
+    ...(item.voice && { voice: item.voice }),
+    ...(item.practiceOnly && { practiceOnly: true }),
   };
 }
 
@@ -179,4 +188,37 @@ export function drawer(rng: Rng, items: WrittenItem[]): () => Draft {
   const order = rngShuffle(rng, items);
   let next = 0;
   return () => fromItem(rng, order[next++ % order.length]);
+}
+
+export const writtenItem = (
+  level: Level,
+  trimester: Trimester,
+  prompt: string,
+  correct: string,
+  wrong: string[],
+  explanation: string
+): WrittenItem => ({ level, trimester, prompt, correct, wrong: wrong.filter((entry) => entry !== correct), explanation });
+
+/** Une notion faite seulement de questions écrites : celles du trimestre en
+ *  cours d'abord ; en révision, les trimestres précédents et toute l'année
+ *  d'avant. L'anglais, les sciences et l'EMC sont des programmes en spirale :
+ *  à la rentrée, on reprend ce qui a été vu l'année précédente. */
+export function writtenGenerator(domain: Domain, items: WrittenItem[]) {
+  return (level: Level, trimester: Trimester, rng: Rng, count: number): Question[] => {
+    const previous = ALL_LEVELS[ALL_LEVELS.indexOf(level) - 1];
+    const eligible = items.filter((entry) => isEligible(entry, level, trimester));
+    const current = eligible.filter((entry) => entry.trimester === trimester);
+    const review = [
+      ...eligible.filter((entry) => entry.trimester < trimester),
+      ...items.filter((entry) => entry.level === previous),
+    ];
+    return assemble(
+      domain,
+      rng,
+      count,
+      trimester,
+      current.length > 0 ? [drawer(rng, current)] : [],
+      review.length > 0 ? [drawer(rng, review)] : []
+    );
+  };
 }

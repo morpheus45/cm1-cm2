@@ -1,4 +1,4 @@
-import { ALL_SUBJECTS, SUBJECT_DOMAINS, type Level, type Question, type Trimester } from '../types';
+import { SUBJECT_DOMAINS, type Level, type Question, type Subject, type Trimester } from '../types';
 import { buildSession } from '../lib/sessionBuilder';
 import { activitiesFor, notionsFor } from '../lib/contenu';
 import { needsBrouillon } from '../lib/brouillon';
@@ -65,6 +65,10 @@ function empreintesDe(questions: Question[]): string[] {
  *   feuille d'opérations posées et la série de tables du niveau ;
  * - « offre » : les séances et les notions que l'élève peut choisir.
  */
+/** Les matières relevées dans empreintesNiveaux.json. L'anglais, les sciences
+ *  et l'EMC sont venus après : ils s'ajoutent sans rien changer aux autres. */
+const MATIERES_D_AVANT_LE_CYCLE_4: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];
+
 export function empreintesNiveaux(): Record<string, string[]> {
   const empreintes: Record<string, string[]> = {};
 
@@ -110,7 +114,7 @@ export function empreintesNiveaux(): Record<string, string[]> {
 
   for (const level of NIVEAUX_OUVERTS) {
     for (const trimester of TRIMESTRES) {
-      empreintes[`offre ${level} T${trimester}`] = ALL_SUBJECTS.map((subject) =>
+      empreintes[`offre ${level} T${trimester}`] = MATIERES_D_AVANT_LE_CYCLE_4.map((subject) =>
         empreinte(JSON.stringify([activitiesFor(subject, level, trimester), notionsFor(subject, level, trimester)]))
       );
     }

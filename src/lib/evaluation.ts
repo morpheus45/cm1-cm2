@@ -405,7 +405,17 @@ export function candidateQuestions(
   classProblems: ClassProblem[] = [],
   classQuestions: ClassQuestion[] = []
 ): Question[] {
-  return buildSession({ domains: [domain], level, trimester, seed, count, classProblems, classQuestions }).questions;
+  return buildSession({
+    domains: [domain],
+    level,
+    trimester,
+    seed,
+    count,
+    classProblems,
+    classQuestions,
+    // Toute la classe reçoit les mêmes questions, sur un écran sans son ni étiquettes à ranger.
+    exclude: (question) => question.practiceOnly === true,
+  }).questions;
 }
 
 export function candidateOperations(level: Level, trimester: Trimester, seed: number, count: number): WorksheetOperation[] {

@@ -43,12 +43,11 @@ export const CYCLE_OF_LEVEL: Record<Level, Cycle> = {
  * et à la maîtresse, pour créer la sienne. La base et le code savent déjà les
  * huit niveaux de `ALL_LEVELS`, mais un niveau n'entre dans cette liste
  * qu'une fois ses questions écrites : elle s'allongera au fil des contenus.
- * Aujourd'hui, du CE1 à la 6e. Le CE1, le CE2 et la 6e n'ont que le français
- * et les maths : leur histoire et leur géographie ne sont pas écrites, et
- * `CONTENT_FROM` (src/lib/contenu.ts) les masque. La 5e, la 4e et la 3e
- * attendent leurs questions.
+ * Aujourd'hui, les huit niveaux. Une matière sans questions à un niveau —
+ * le français au collège, l'histoire et la géographie hors du CM1 et du
+ * CM2 — y est masquée par `CONTENT_FROM` (src/lib/contenu.ts).
  */
-export const AVAILABLE_LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e'];
+export const AVAILABLE_LEVELS: Level[] = ['CE1', 'CE2', 'CM1', 'CM2', '6e', '5e', '4e', '3e'];
 
 /** Les niveaux du collège : l'élève y a des professeurs, plus de maîtresse. */
 const COLLEGE_LEVELS: Level[] = ['6e', '5e', '4e', '3e'];
@@ -122,7 +121,7 @@ export const TRIMESTER_LABELS: Record<Trimester, string> = {
 
 /** Une matière au sens de l'école. Une séance n'en mêle jamais deux : ni le
  *  français et les maths, ni l'histoire et la géographie. */
-export type Subject = 'francais' | 'maths' | 'histoire' | 'geographie';
+export type Subject = 'francais' | 'maths' | 'histoire' | 'geographie' | 'anglais' | 'sciences' | 'emc';
 
 /**
  * Ce que l'élève fait pendant la séance. Les questions à choix se répondent
@@ -165,6 +164,9 @@ export const SUBJECT_ACTIVITIES: Record<Subject, Activity[]> = {
   maths: ['questions', 'posees', 'tables', 'revision'],
   histoire: ['questions', 'revision'],
   geographie: ['questions', 'revision'],
+  anglais: ['questions', 'revision'],
+  sciences: ['questions', 'revision'],
+  emc: ['questions', 'revision'],
 };
 
 /** Une notion travaillée à l'intérieur d'une matière. */
@@ -181,7 +183,13 @@ export type Domain =
   | 'mots-histoire'
   | 'cartes'
   | 'habiter'
-  | 'mots-geographie';
+  | 'mots-geographie'
+  | 'anglais-mots'
+  | 'anglais-phrases'
+  | 'sciences-vivant'
+  | 'sciences-matiere'
+  | 'emc-vivre-ensemble'
+  | 'emc-republique';
 
 export interface Question {
   id: string;
@@ -200,22 +208,40 @@ export interface Question {
    *  quadrillage). La question n'a alors pas de choix : `choices` est vide et
    *  `correctIndex` vaut -1. */
   construction?: Construction;
+  /** Un mot ou une phrase à écouter, lu par la synthèse vocale de l'appareil. */
+  audio?: { text: string; lang: VoiceLang };
+  /** Remettre des mots dans l'ordre : `words` est la bonne phrase, `bank` les
+   *  étiquettes proposées, intrus compris. `choices` est vide et
+   *  `correctIndex` vaut -1. */
+  wordOrder?: { words: string[]; bank: string[]; sentence: string };
+  /** La langue des passages entre guillemets et des réponses, pour la lecture
+   *  à voix haute. Le français par défaut. */
+  voice?: { quote?: VoiceLang; choices?: VoiceLang };
+  /** Un exercice d'entraînement (écoute, mots à remettre dans l'ordre) :
+   *  jamais proposé dans une évaluation de la maîtresse. */
+  practiceOnly?: boolean;
 }
 
-export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];
+export type VoiceLang = 'fr-FR' | 'en-GB';
+
+export const ALL_SUBJECTS: Subject[] = ['francais', 'maths', 'histoire', 'geographie', 'anglais', 'sciences', 'emc'];
 
 export const SUBJECT_LABELS: Record<Subject, string> = {
   francais: 'Français',
   maths: 'Maths',
   histoire: 'Histoire',
   geographie: 'Géographie',
+  anglais: 'Anglais',
+  sciences: 'Sciences',
+  emc: 'EMC',
 };
 
 /** « de français », « de maths », mais « d'histoire » : l'élision, comme à
  *  l'écrit. */
 export function ofSubject(subject: Subject): string {
-  const label = SUBJECT_LABELS[subject].toLowerCase();
-  return /^[aeiouyéèh]/.test(label) ? `d'${label}` : `de ${label}`;
+  // Un sigle garde ses majuscules : « d'EMC ».
+  const label = /^[A-Z]+$/.test(SUBJECT_LABELS[subject]) ? SUBJECT_LABELS[subject] : SUBJECT_LABELS[subject].toLowerCase();
+  return /^[aeiouyéèh]/i.test(label) ? `d'${label}` : `de ${label}`;
 }
 
 export const SUBJECT_EMOJI: Record<Subject, string> = {
@@ -223,6 +249,9 @@ export const SUBJECT_EMOJI: Record<Subject, string> = {
   maths: '🔢',
   histoire: '🏰',
   geographie: '🌍',
+  anglais: '🇬🇧',
+  sciences: '🔬',
+  emc: '🤝',
 };
 
 /** L'ordre des notions à l'intérieur d'une matière : c'est aussi l'ordre dans
@@ -232,6 +261,9 @@ export const SUBJECT_DOMAINS: Record<Subject, Domain[]> = {
   maths: ['numeration', 'calcul', 'problemes', 'geometrie'],
   histoire: ['chronologie', 'evenements', 'mots-histoire'],
   geographie: ['cartes', 'habiter', 'mots-geographie'],
+  anglais: ['anglais-mots', 'anglais-phrases'],
+  sciences: ['sciences-vivant', 'sciences-matiere'],
+  emc: ['emc-vivre-ensemble', 'emc-republique'],
 };
 
 export const DOMAIN_SUBJECT: Record<Domain, Subject> = {
@@ -248,6 +280,12 @@ export const DOMAIN_SUBJECT: Record<Domain, Subject> = {
   cartes: 'geographie',
   habiter: 'geographie',
   'mots-geographie': 'geographie',
+  'anglais-mots': 'anglais',
+  'anglais-phrases': 'anglais',
+  'sciences-vivant': 'sciences',
+  'sciences-matiere': 'sciences',
+  'emc-vivre-ensemble': 'emc',
+  'emc-republique': 'emc',
 };
 
 export function subjectOf(domain: Domain): Subject {
@@ -276,6 +314,12 @@ export const DOMAIN_SHORT_LABELS: Record<Domain, string> = {
   cartes: 'Cartes',
   habiter: 'Habiter',
   'mots-geographie': 'Vocabulaire',
+  'anglais-mots': 'Mots',
+  'anglais-phrases': 'Phrases',
+  'sciences-vivant': 'Vivant',
+  'sciences-matiere': 'Matière',
+  'emc-vivre-ensemble': 'Vivre ensemble',
+  'emc-republique': 'République',
 };
 
 export const DOMAIN_LABELS: Record<Domain, string> = {
@@ -292,4 +336,10 @@ export const DOMAIN_LABELS: Record<Domain, string> = {
   cartes: "Se repérer dans l'espace",
   habiter: 'Habiter le monde',
   'mots-geographie': 'Les mots de la géographie',
+  'anglais-mots': 'Les mots anglais',
+  'anglais-phrases': 'Comprendre et parler',
+  'sciences-vivant': 'Le vivant, le corps et la Terre',
+  'sciences-matiere': 'Matière, énergie et objets',
+  'emc-vivre-ensemble': 'Vivre ensemble',
+  'emc-republique': 'La République et le citoyen',
 };

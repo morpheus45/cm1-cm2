@@ -33,6 +33,8 @@ export const LOCAL_DATA: Record<string, string> = {
   'exercices-cm1-cm2:historique-questions':
     'les signatures des questions déjà posées, par élève : effacées à la rentrée',
   'exercices-cm1-cm2:classe-choisie': 'la dernière classe ouverte par la maîtresse : gardée, aucune donnée d\'élève',
+  'exercices-cm1-cm2:aides':
+    'les aides DYS de chaque élève : gardées d\'une année sur l\'autre, effacées depuis « Mes aides » ou avec le dossier de l\'élève',
   [SCHOOL_YEAR_KEY]: 'l\'année scolaire du dernier lancement',
 };
 

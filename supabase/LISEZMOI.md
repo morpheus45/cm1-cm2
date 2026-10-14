@@ -32,7 +32,11 @@ dans `.github/workflows/deploy.yml`.
    le CM2 ; aucune donnée n'est touchée ; à passer **avant** de publier la
    version qui ouvre un nouveau niveau, sinon la création d'une classe de ce
    niveau est refusée et les séances de ses élèves restent en attente sur les
-   tablettes). Les fichiers sont rejouables : on les relance
+   tablettes), puis `009_anglais_sciences_emc.sql` (la base accepte
+   l'anglais, les sciences et l'EMC, pour les séances, les évaluations et les
+   questions de la classe ; aucune donnée n'est touchée ; à passer **avant**
+   de publier la version qui ouvre ces matières, sinon leurs séances restent
+   en attente sur les tablettes). Les fichiers sont rejouables : on les relance
    après chaque modification, sans rien perdre. Pour copier sans rien abîmer, le plus sûr est le bouton
    « Copy raw file » de GitHub, sur la page du fichier.
 2. **Les comptes des maîtresses.** *Authentication → Sign In / Providers →

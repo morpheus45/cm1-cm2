@@ -27,6 +27,7 @@ const SECTIONS: Section[] = [
     title: 'Ce qui est enregistré',
     items: [
       'Sur la tablette : le prénom de l\'élève et l\'initiale de son nom, le code de la classe, ses réglages, ses étoiles, et les résultats de ses séances (la date, la matière, les notions travaillées, le nombre de bonnes réponses). Pour les opérations posées, ce que l\'élève a écrit au doigt, puis la correction de l\'enseignante.',
+      'Les aides de l\'élève (dyslexie, dyscalculie, TDA/H…), si un adulte les a réglées : ce sont des informations de santé. Elles restent uniquement sur la tablette, au nom de l\'élève, et ne sont jamais envoyées à l\'enseignante ni sur internet. Elles sont gardées d\'une année sur l\'autre, jusqu\'à ce qu\'on les efface, depuis l\'écran « Mes aides » ou avec le dossier de l\'élève.',
       'Pour une évaluation lancée par l\'enseignante : la réponse de l\'élève à chaque question, que l\'application corrige. Pendant l\'évaluation, la tablette garde aussi où il en est, pour qu\'il puisse reprendre s\'il s\'interrompt.',
       'Dans l\'espace de la classe, seulement avec un code de classe : les mêmes résultats, les mêmes feuilles d\'opérations et les copies des évaluations, avec le prénom et l\'initiale de l\'élève.',
       'Pour l\'enseignante : l\'adresse e-mail et le mot de passe de son compte. Le mot de passe est enregistré sous une forme que personne ne peut relire.',

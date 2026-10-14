@@ -189,8 +189,9 @@ describe('ce que lit l\'élève', () => {
     // Les énoncés se composent à partir de listes de mots : un mot qui commence par une voyelle
     // (enfants, étuis, œufs) ne doit pas rester seul derrière « de », « que » ou « ne ».
     // « onze » n'élide pas : « de onze » est juste. (\b ne voit pas les lettres accentuées : « achète un » n'est pas « te un » ; et le nom d'un point, « de A », n'est pas un mot.)
+    // Les maths seulement : en anglais, « Give me apple » n'est pas une faute d'élision.
     questions
-      .filter(({ level }) => NOUVEAUX_NIVEAUX.includes(level))
+      .filter(({ level, question }) => NOUVEAUX_NIVEAUX.includes(level) && subjectOf(question.domain) === 'maths')
       .forEach(({ level, question: q }) =>
         [q.instruction ?? '', q.prompt, ...q.choices, q.explanation ?? ''].forEach((text) =>
           expect(text, `${level} : ${text}`).not.toMatch(/(?<![\p{L}'’])(?:de|ne|se|que|me|te|je) (?!onz)[aeiouéèêâîôûœ]\p{L}/iu)
