@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import {
+  AIDES_DE_BASE,
   AIDE_LABELS,
   aidesDesTroubles,
   aidesDuProfil,
@@ -74,6 +75,16 @@ export function AidesScreen({ eleve, prenom, onClose }: AidesScreenProps) {
   const aides = aidesDuProfil(profil);
   const conseil = aidesDesTroubles(profil.troubles);
   const titleRef = useScreenTitle('aides');
+  // Le réglage une à une est un second niveau : on voit d'abord les aides en service.
+  const [detail, setDetail] = useState(false);
+  const enService = ORDRE.filter((aide) => aides[aide] !== AIDES_DE_BASE[aide]);
+  const valeurLue = (aide: Aide) => {
+    const valeur = aides[aide];
+    if (aide === 'texte') return TAILLE_LABELS[valeur as Aides['texte']];
+    if (aide === 'espacement') return ESPACEMENT_LABELS[valeur as Aides['espacement']];
+    if (aide === 'lecture') return LECTURE_LABELS[valeur as Aides['lecture']];
+    return null;
+  };
 
   useEffect(() => {
     saveProfil(eleve, profil);
@@ -137,10 +148,35 @@ export function AidesScreen({ eleve, prenom, onClose }: AidesScreenProps) {
         </Etape>
 
         <Etape numero={2} titre="Les aides">
-          <p className="text-sm text-encre-douce">
-            Elles découlent de ce qui est coché. Chacune peut être changée à la main.
-          </p>
-          {ORDRE.map((aide) => {
+          {enService.length === 0 ? (
+            <p className="text-base text-encre-douce">Aucune aide pour l'instant. Coche ce qui est difficile, juste au-dessus.</p>
+          ) : (
+            <ul className="flex flex-col gap-1.5">
+              {enService.map((aide) => (
+                <li key={aide} className="flex items-start gap-2 text-base text-encre">
+                  <span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-encre" />
+                  <span>
+                    {AIDE_LABELS[aide]}
+                    {valeurLue(aide) && <span className="font-bold"> : {valeurLue(aide)}</span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+          <button
+            type="button"
+            aria-expanded={detail}
+            onClick={() => setDetail(!detail)}
+            className="etiquette px-4 py-2 text-base"
+          >
+            {detail ? 'Masquer le détail' : 'Régler les aides une à une'}
+          </button>
+          {detail && (
+            <p className="text-sm text-encre-douce">
+              Elles découlent de ce qui est coché. Chacune peut être changée à la main.
+            </p>
+          )}
+          {detail && ORDRE.map((aide) => {
             const pourquoi = raisons(profil.troubles, aide);
             const aLaMain = aide in profil.reglages;
             return (

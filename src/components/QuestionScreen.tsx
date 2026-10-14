@@ -75,7 +75,10 @@ export function QuestionScreen({
   const wordOrder = question.wordOrder;
   const ownAnswer = construction !== undefined || wordOrder !== undefined;
   const chiffres = aides.chiffresColores && subject === 'maths';
-  const ecrire = (text: string) => (chiffres ? colorerChiffres(typographieFrancaise(text)) : typographieFrancaise(text));
+  // Texte aéré : un mot composé ne se coupe plus au trait d'union (« soixante-dix » reste entier), le trait devient insécable.
+  const typo = (text: string) =>
+    aides.espacement === 'normal' ? typographieFrancaise(text) : typographieFrancaise(text).replace(/(\p{L})-(\p{L})/gu, '$1\u2011$2');
+  const ecrire = (text: string) => (chiffres ? colorerChiffres(typo(text)) : typo(text));
   const quoteLang = question.voice?.quote ?? 'fr-FR';
   const choicesLang = question.voice?.choices ?? 'fr-FR';
   // L'écoute : sans voix anglaise sur l'appareil, le mot s'écrit plutôt que d'être mal prononcé.
@@ -174,7 +177,7 @@ export function QuestionScreen({
         )}
         <div className="flex items-start gap-3">
           <p className="enonce min-w-0 flex-1 break-words text-[1.6rem] leading-relaxed text-encre">
-            {renderPrompt(typographieFrancaise(question.prompt), colors.tint, chiffres)}
+            {renderPrompt(typo(question.prompt), colors.tint, chiffres)}
           </p>
           {lireEnonce && !audio && <Ecouter parts={enonce} label="Écouter la question" />}
         </div>
