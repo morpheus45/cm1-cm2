@@ -30,7 +30,7 @@ const SECTIONS: Section[] = [
       'Les aides de l\'élève (dyslexie, dyscalculie, TDA/H…), si un adulte les a réglées : ce sont des informations de santé. Elles restent uniquement sur la tablette, au nom de l\'élève, et ne sont jamais envoyées à l\'enseignante ni sur internet. Elles sont gardées d\'une année sur l\'autre, jusqu\'à ce qu\'on les efface, depuis l\'écran « Mes aides » ou avec le dossier de l\'élève.',
       'Pour une évaluation lancée par l\'enseignante : la réponse de l\'élève à chaque question, que l\'application corrige. Pendant l\'évaluation, la tablette garde aussi où il en est, pour qu\'il puisse reprendre s\'il s\'interrompt.',
       'Dans l\'espace de la classe, seulement avec un code de classe : les mêmes résultats, les mêmes feuilles d\'opérations et les copies des évaluations, avec le prénom et l\'initiale de l\'élève.',
-      'Pour l\'enseignante : l\'adresse e-mail et le mot de passe de son compte. Le mot de passe est enregistré sous une forme que personne ne peut relire.',
+      'Pour l\'enseignante, ou le parent dans l\'appli Android : l\'adresse e-mail et le mot de passe de son compte. Le mot de passe est enregistré sous une forme que personne ne peut relire. Le compte se supprime à tout moment depuis l\'espace adulte, avec « Supprimer mon compte » : ses classes et tous les résultats associés sont effacés aussitôt.',
     ],
   },
   {
@@ -61,6 +61,14 @@ const SECTIONS: Section[] = [
     ],
   },
   {
+    title: 'L\'appli Android Arc-en-Ciel',
+    items: [
+      'L\'appli Android est la même application que ce site, avec les mêmes règles. Le site reste gratuit.',
+      'Dans l\'appli, chaque niveau s\'ouvre par un abonnement mensuel, avec 7 jours d\'essai gratuit. Le paiement, le renouvellement et la résiliation passent uniquement par Google Play : l\'application ne voit ni ne garde aucune donnée bancaire. Elle sait seulement quels niveaux sont ouverts sur l\'appareil.',
+      'Google traite les données du paiement selon ses propres règles de confidentialité.',
+    ],
+  },
+  {
     title: 'Cookies et sécurité',
     items: [
       'Aucun cookie, aucun traceur. L\'application garde seulement sur la tablette ce qu\'il lui faut pour fonctionner : ce stockage ne demande pas de consentement.',
@@ -76,16 +84,16 @@ const SECTIONS: Section[] = [
   {
     title: 'Les programmes',
     paragraphs: [
-      'Les exercices suivent les programmes de l\'Éducation nationale : français et mathématiques du cycle 2 (Bulletin officiel n° 41 du 31 octobre 2024) et du cycle 3 (Bulletin officiel n° 16 du 17 avril 2025) ; histoire et géographie du CM1 (Bulletin officiel n° 22 du 28 mai 2026) ; au CM2, cette année encore, le programme d\'histoire et de géographie de 2020. Le CE1, le CE2 et la 6e n\'ont, pour l\'instant, que le français et les mathématiques.',
+      'Les exercices suivent les programmes de l\'Éducation nationale, du CE1 à la 3e, dans sept matières : français, mathématiques, histoire, géographie, anglais, sciences et enseignement moral et civique. Français et mathématiques : cycle 2 (Bulletin officiel n° 41 du 31 octobre 2024) et cycle 3 (Bulletin officiel n° 16 du 17 avril 2025). Histoire et géographie du CM1 : Bulletin officiel n° 22 du 28 mai 2026.',
     ],
   },
   {
     title: 'Qui publie ce site',
     items: [
-      'Ce cahier d\'exercices est réalisé à titre non professionnel, pour des classes du CE1 à la 6e. Il est gratuit.',
+      'Ce cahier d\'exercices est réalisé pour des élèves du CE1 à la 3e. Le site est gratuit. L\'appli Android est payante, par abonnement.',
       'Hébergement du site : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.',
       'Hébergement de l\'espace des classes : Supabase, centre de données de Francfort (Allemagne).',
-      'Page mise à jour en septembre 2026.',
+      'Page mise à jour en octobre 2026.',
     ],
   },
 ];
