@@ -24,6 +24,7 @@ import { Choix, Etape } from './HomeScreen';
 import { Ecouter } from './Ecouter';
 import { colorerChiffres, LegendeDesRangs } from './ChiffresColores';
 import { useScreenTitle } from './useScreenTitle';
+import { QuestionnaireScreen } from './QuestionnaireScreen';
 
 interface AidesScreenProps {
   /** La clé de l'élève (pupilKey) : les aides sont rangées à son nom. */
@@ -107,6 +108,19 @@ export function AidesScreen({ eleve, prenom, onClose }: AidesScreenProps) {
   };
 
   const toutEffacer = () => setProfil({ troubles: {}, reglages: {} });
+  const [questionnaire, setQuestionnaire] = useState(false);
+  if (questionnaire) {
+    return (
+      <QuestionnaireScreen
+        prenom={prenom}
+        onCancel={() => setQuestionnaire(false)}
+        onApply={(troubles) => {
+          setProfil({ ...profil, troubles });
+          setQuestionnaire(false);
+        }}
+      />
+    );
+  }
   const exemple = 'Léa a 1 245 billes. Elle en gagne 38. Combien en a-t-elle maintenant ?';
 
   return (
@@ -126,6 +140,10 @@ export function AidesScreen({ eleve, prenom, onClose }: AidesScreenProps) {
         </p>
 
         <Etape numero={1} titre="Ce qui est difficile">
+          <button type="button" onClick={() => setQuestionnaire(true)} className="etiquette flex flex-col items-start gap-0.5 px-4 py-3 text-left">
+            <span className="text-lg">Je ne sais pas : faire le questionnaire</span>
+            <span className="text-sm font-normal text-encre-douce">42 phrases, environ 5 minutes. Un repérage, pas un diagnostic.</span>
+          </button>
           <p className="text-sm text-encre-douce">Plusieurs choix sont possibles : les aides s'additionnent.</p>
           {TROUBLES.map((trouble) => {
             const degre = profil.troubles[trouble] ?? 0;
