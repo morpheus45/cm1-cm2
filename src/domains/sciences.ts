@@ -1,4 +1,5 @@
 import { writtenGenerator, writtenItem as item, type WrittenItem } from './histoireGeographie';
+import { supplement, uniques } from './banquesSupplementaires';
 
 /**
  * Les sciences, du CE1 à la 3e : « Questionner le monde » au cycle 2,
@@ -298,5 +299,5 @@ export const MATIERE: WrittenItem[] = [
   item('3e', 3, 'Une centrale nucléaire produit de l\'électricité à partir :', 'de l\'uranium', ['du charbon', 'du vent', 'du soleil'], 'La fission des noyaux d\'uranium dégage de la chaleur.'),
 ];
 
-export const generateVivant = writtenGenerator('sciences-vivant', VIVANT);
-export const generateMatiere = writtenGenerator('sciences-matiere', MATIERE);
+export const generateVivant = writtenGenerator('sciences-vivant', uniques([...VIVANT, ...supplement('sciences-vivant')]));
+export const generateMatiere = writtenGenerator('sciences-matiere', uniques([...MATIERE, ...supplement('sciences-matiere')]));
