@@ -2,6 +2,7 @@ import type { Level, Question, Trimester } from '../types';
 import type { Figure, Shape } from '../lib/figures';
 import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
 import { HISTOIRE_ECOLE, REPERES_ECOLE } from './histoireEcole';
+import { supplement, uniques } from './banquesSupplementaires';
 import { HISTOIRE_COLLEGE, REPERES_COLLEGE } from './histoireCollege';
 import { assemble, choose, deriveDefinitionReverses, drawer, isEligible, type Draft, type WrittenItem } from './histoireGeographie';
 
@@ -628,12 +629,12 @@ const RAW_ITEMS: Record<HistoryDomain, WrittenItem[]> = {
  * (« Comment appelle-t-on... ? »), fabriquée à partir de la même phrase
  * déjà vérifiée — voir `deriveDefinitionReverses`.
  */
-const TOUS_LES_NIVEAUX = (domain: HistoryDomain) => [...RAW_ITEMS[domain], ...HISTOIRE_ECOLE[domain], ...HISTOIRE_COLLEGE[domain]];
+const TOUS_LES_NIVEAUX = (domain: HistoryDomain) => uniques([...RAW_ITEMS[domain], ...HISTOIRE_ECOLE[domain], ...HISTOIRE_COLLEGE[domain], ...supplement(domain)]);
 
 export const ITEMS: Record<HistoryDomain, WrittenItem[]> = {
   chronologie: TOUS_LES_NIVEAUX('chronologie'),
   evenements: TOUS_LES_NIVEAUX('evenements'),
-  'mots-histoire': [...TOUS_LES_NIVEAUX('mots-histoire'), ...deriveDefinitionReverses(TOUS_LES_NIVEAUX('mots-histoire'))],
+  'mots-histoire': uniques([...TOUS_LES_NIVEAUX('mots-histoire'), ...deriveDefinitionReverses(TOUS_LES_NIVEAUX('mots-histoire'))]),
 };
 
 // --- Les questions fabriquées à partir des repères --------------------------------

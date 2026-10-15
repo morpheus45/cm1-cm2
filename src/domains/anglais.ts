@@ -1,6 +1,7 @@
 import type { Level, Trimester } from '../types';
 import { createRng, rngShuffle } from '../lib/seededRandom';
 import { writtenGenerator, writtenItem as item, type WrittenItem } from './histoireGeographie';
+import { supplement, uniques } from './banquesSupplementaires';
 
 /**
  * L'anglais, du CE1 à la 3e : du niveau A1 découvert au cycle 2 jusqu'au
@@ -316,4 +317,5 @@ export function itemsAOrdonner(phrases: WrittenItem[]): WrittenItem[] {
 }
 
 export const generateMots = writtenGenerator('anglais-mots', itemsDuLexique());
-export const generatePhrases = writtenGenerator('anglais-phrases', [...PHRASES.map(avecVoix), ...itemsAOrdonner(PHRASES)]);
+const TOUTES_LES_PHRASES = uniques([...PHRASES, ...supplement('anglais-phrases')]);
+export const generatePhrases = writtenGenerator('anglais-phrases', [...TOUTES_LES_PHRASES.map(avecVoix), ...itemsAOrdonner(TOUTES_LES_PHRASES)]);

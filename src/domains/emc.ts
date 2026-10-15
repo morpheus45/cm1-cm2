@@ -1,4 +1,5 @@
 import { writtenGenerator, writtenItem as item, type WrittenItem } from './histoireGeographie';
+import { supplement, uniques } from './banquesSupplementaires';
 
 /**
  * L'enseignement moral et civique, du CE1 à la 3e.
@@ -296,5 +297,5 @@ export const REPUBLIQUE: WrittenItem[] = [
   item('3e', 3, 'Une révision de la Constitution peut être adoptée :', 'par le Congrès ou par référendum', ['par le maire de Paris', 'par un seul ministre', 'par les juges'], 'Le Congrès réunit députés et sénateurs à Versailles.'),
 ];
 
-export const generateVivreEnsemble = writtenGenerator('emc-vivre-ensemble', VIVRE_ENSEMBLE);
-export const generateRepublique = writtenGenerator('emc-republique', REPUBLIQUE);
+export const generateVivreEnsemble = writtenGenerator('emc-vivre-ensemble', uniques([...VIVRE_ENSEMBLE, ...supplement('emc-vivre-ensemble')]));
+export const generateRepublique = writtenGenerator('emc-republique', uniques([...REPUBLIQUE, ...supplement('emc-republique')]));
