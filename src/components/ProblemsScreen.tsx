@@ -182,10 +182,10 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
 
         <section className={fiche} aria-labelledby="chat-titre">
           <h2 id="chat-titre" className="text-lg font-bold text-encre">
-            Préparer avec l'assistant de Cédric
+            Préparer avec Arcélie
           </h2>
           <p className="text-sm text-encre-douce">
-            L'assistant de Cédric vous aide à créer, corriger ou adapter les problèmes de votre classe. C'est une
+            Arcélie, l'assistante de l'application, vous aide à créer, corriger ou adapter les problèmes de votre classe. C'est une
             intelligence artificielle : l'application refait chaque calcul, et rien n'arrive aux élèves sans votre
             accord. Toute autre demande est transmise à Cédric, l'administrateur de l'application. N'écrivez ici
             aucun nom d'élève : vos messages sont envoyés à un service d'intelligence artificielle externe.
@@ -225,7 +225,7 @@ export function ProblemsScreen({ classId, className, level, onClose }: ProblemsS
                     }
                   >
                     <span className="mb-0.5 block text-xs font-bold uppercase tracking-wider" style={{ color: VIOLET.deep }}>
-                      Assistant de Cédric
+                      Arcélie
                     </span>
                     {bulle.texte}
                   </p>
