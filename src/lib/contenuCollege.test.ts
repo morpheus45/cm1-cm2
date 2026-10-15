@@ -43,9 +43,8 @@ describe('les séances du collège', () => {
     COLLEGE.forEach((level) =>
       ALL_TRIMESTERS.forEach((trimester) => {
         expect(activitiesFor('francais', level, trimester)).toEqual(SUBJECT_ACTIVITIES.francais);
-        // L'histoire et la géographie n'y ont pas de questions : aucune séance.
-        expect(activitiesFor('histoire', level, trimester)).toEqual([]);
-        expect(activitiesFor('geographie', level, trimester)).toEqual([]);
+        expect(activitiesFor('histoire', level, trimester)).toEqual(SUBJECT_ACTIVITIES.histoire);
+        expect(activitiesFor('geographie', level, trimester)).toEqual(SUBJECT_ACTIVITIES.geographie);
       })
     );
   });

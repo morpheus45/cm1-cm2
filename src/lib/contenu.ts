@@ -10,29 +10,27 @@ import type { Activity, Domain, Level, Subject, Trimester } from '../types';
  * ni offerte à la maîtresse pour une évaluation. L'application ne plante pas
  * pour autant : elle fait comme si la notion n'existait pas à ce niveau.
  *
- * Aujourd'hui : les maths, l'anglais, les sciences et l'EMC du CE1 à la 3e ;
- * le français du CE1 à la 6e ; l'histoire et la géographie au CM1 et au CM2
- * seulement. Ce qui manque à un niveau disparaît des choix de l'élève et de
- * ceux de la maîtresse. Écrire les
+ * Aujourd'hui : toutes les matières, du CE1 à la 3e. Ce qui manquerait à un
+ * niveau disparaîtrait des choix de l'élève et de ceux de la maîtresse. Écrire les
  * questions d'un niveau ne suffit pas : c'est ici qu'on l'ouvre, notion par
  * notion (le test src/lib/contenu.test.ts vérifie qu'une notion ouverte donne
  * bien des questions). Ouvrir un niveau à l'élève et à la maîtresse est une
  * autre décision : `AVAILABLE_LEVELS`, dans src/types.ts.
  */
 export const CONTENT_FROM: Record<Domain, Partial<Record<Level, Trimester>>> = {
-  conjugaison: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
-  accords: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
-  orthographe: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1 },
+  conjugaison: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
+  accords: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
+  orthographe: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
   numeration: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
   calcul: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
   problemes: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
   geometrie: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
-  chronologie: { CM1: 1, CM2: 1 },
-  evenements: { CM1: 1, CM2: 1 },
-  'mots-histoire': { CM1: 1, CM2: 1 },
-  cartes: { CM1: 1, CM2: 1 },
-  habiter: { CM1: 1, CM2: 1 },
-  'mots-geographie': { CM1: 1, CM2: 1 },
+  chronologie: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
+  evenements: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
+  'mots-histoire': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
+  cartes: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
+  habiter: { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
+  'mots-geographie': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
   'anglais-mots': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
   'anglais-phrases': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },
   'sciences-vivant': { CE1: 1, CE2: 1, CM1: 1, CM2: 1, '6e': 1, '5e': 1, '4e': 1, '3e': 1 },

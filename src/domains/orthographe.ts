@@ -1,4 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL } from '../types';
+import { FRANCAIS_COLLEGE } from './francaisCollege';
+import { writtenGenerator } from './histoireGeographie';
 import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
 import { availableAt, stageOf } from '../lib/progression';
@@ -71,7 +74,11 @@ function antonymQuestion(index: number, rng: Rng, item: AntonymItem): Question {
   };
 }
 
+const college = writtenGenerator('orthographe', FRANCAIS_COLLEGE.orthographe);
+
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  // Le collège : des questions écrites une à une (francaisCollege.ts).
+  if (CYCLE_OF_LEVEL[level] === 4) return college(level, trimester, rng, count);
   // Le CE1, le CE2 et la 6e ont leur propre orthographe, écrite à part : celle du CM1 et du CM2 ne change pas.
   if (estNiveauEcrit(level)) return generateNiveau(level, trimester, rng, count);
   const stage = stageOf(level, trimester);

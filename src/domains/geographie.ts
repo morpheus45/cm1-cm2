@@ -1,3 +1,5 @@
+import { GEOGRAPHIE_ECOLE } from './geographieEcole';
+import { GEOGRAPHIE_COLLEGE } from './geographieCollege';
 import type { Level, Question, Trimester } from '../types';
 import type { Figure, Point, Shape } from '../lib/figures';
 import { rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
@@ -586,9 +588,12 @@ const RAW_ITEMS: Record<GeographyDomain, WrittenItem[]> = {
  * (« Comment appelle-t-on... ? »), fabriquée à partir de la même phrase
  * déjà vérifiée — voir `deriveDefinitionReverses`.
  */
+const TOUS_LES_NIVEAUX = (domain: GeographyDomain) => [...RAW_ITEMS[domain], ...GEOGRAPHIE_ECOLE[domain], ...GEOGRAPHIE_COLLEGE[domain]];
+
 export const ITEMS: Record<GeographyDomain, WrittenItem[]> = {
-  ...RAW_ITEMS,
-  'mots-geographie': [...RAW_ITEMS['mots-geographie'], ...deriveDefinitionReverses(RAW_ITEMS['mots-geographie'])],
+  cartes: TOUS_LES_NIVEAUX('cartes'),
+  habiter: TOUS_LES_NIVEAUX('habiter'),
+  'mots-geographie': [...TOUS_LES_NIVEAUX('mots-geographie'), ...deriveDefinitionReverses(TOUS_LES_NIVEAUX('mots-geographie'))],
 };
 
 // --- La rose des vents ---------------------------------------------------------------

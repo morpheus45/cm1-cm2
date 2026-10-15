@@ -1,4 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL } from '../types';
+import { FRANCAIS_COLLEGE } from './francaisCollege';
+import { writtenGenerator } from './histoireGeographie';
 import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
 import { isAvailableAt, stageOf, type Stage } from '../lib/progression';
@@ -180,7 +183,11 @@ function identificationQuestion(rng: Rng, index: number, candidate: Candidate, t
 
 const MIN_TENSES_FOR_IDENTIFICATION = 4;
 
+const college = writtenGenerator('conjugaison', FRANCAIS_COLLEGE.conjugaison);
+
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  // Le collège : des questions écrites une à une (francaisCollege.ts).
+  if (CYCLE_OF_LEVEL[level] === 4) return college(level, trimester, rng, count);
   if (estNiveauEcrit(level)) return generateNiveau(level, trimester, rng, count);
   const tenses = eligibleTenses(level, trimester);
   const canIdentify = tenses.length >= MIN_TENSES_FOR_IDENTIFICATION;
