@@ -65,9 +65,10 @@ function empreintesDe(questions: Question[]): string[] {
  *   feuille d'opérations posées et la série de tables du niveau ;
  * - « offre » : les séances et les notions que l'élève peut choisir.
  */
-/** Les matières relevées dans empreintesNiveaux.json. L'anglais, les sciences
- *  et l'EMC sont venus après : ils s'ajoutent sans rien changer aux autres. */
-const MATIERES_D_AVANT_LE_CYCLE_4: Subject[] = ['francais', 'maths', 'histoire', 'geographie'];
+/** Les matières dont l'offre est relevée dans empreintesNiveaux.json : le
+ *  français et les maths, qui ne doivent pas bouger. Les autres matières ont
+ *  été ouvertes depuis, à dessein. */
+const MATIERES_D_AVANT_LE_CYCLE_4: Subject[] = ['francais', 'maths'];
 
 export function empreintesNiveaux(): Record<string, string[]> {
   const empreintes: Record<string, string[]> = {};

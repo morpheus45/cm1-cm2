@@ -1,4 +1,7 @@
 import type { Level, Question, Trimester } from '../types';
+import { CYCLE_OF_LEVEL } from '../types';
+import { FRANCAIS_COLLEGE } from './francaisCollege';
+import { writtenGenerator } from './histoireGeographie';
 import type { Rng } from '../lib/seededRandom';
 import { rngPickN, rngShuffle } from '../lib/seededRandom';
 import { isAvailableAt, stageOf } from '../lib/progression';
@@ -219,7 +222,11 @@ function allocate(count: number, keys: PoolKey[]): Record<PoolKey, number> {
   return { nominal: 0, adjectif: 0, sujet: 0, participe: 0, ...allocation };
 }
 
+const college = writtenGenerator('accords', FRANCAIS_COLLEGE.accords);
+
 export function generate(level: Level, trimester: Trimester, rng: Rng, count: number): Question[] {
+  // Le collège : des questions écrites une à une (francaisCollege.ts).
+  if (CYCLE_OF_LEVEL[level] === 4) return college(level, trimester, rng, count);
   // Le CE1, le CE2 et la 6e ont leurs propres listes et leurs propres familles de questions (accordsNiveaux.ts).
   if (estNiveauEcrit(level)) return generateNiveau(level, trimester, rng, count);
   const stage = stageOf(level, trimester);

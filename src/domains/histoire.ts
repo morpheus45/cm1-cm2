@@ -1,6 +1,8 @@
 import type { Level, Question, Trimester } from '../types';
 import type { Figure, Shape } from '../lib/figures';
 import { rngInt, rngPick, rngShuffle, type Rng } from '../lib/seededRandom';
+import { HISTOIRE_ECOLE, REPERES_ECOLE } from './histoireEcole';
+import { HISTOIRE_COLLEGE, REPERES_COLLEGE } from './histoireCollege';
 import { assemble, choose, deriveDefinitionReverses, drawer, isEligible, type Draft, type WrittenItem } from './histoireGeographie';
 
 /**
@@ -25,14 +27,14 @@ type HistoryDomain = 'chronologie' | 'evenements' | 'mots-histoire';
 
 /** Un repère daté : de quoi fabriquer des questions de dates, de siècles et
  *  de frises. */
-interface Repere {
+export interface Repere {
   level: Level;
   trimester: Trimester;
   year: number;
   label: string;
 }
 
-export const REPERES: Repere[] = [
+const REPERES_CM: Repere[] = [
   { level: 'CM1', trimester: 1, year: 476, label: 'le début du Moyen Âge' },
   { level: 'CM1', trimester: 1, year: 1163, label: 'le début du chantier de Notre-Dame de Paris' },
   { level: 'CM1', trimester: 2, year: 1515, label: 'le début du règne de François Ier' },
@@ -66,6 +68,9 @@ export const REPERES: Repere[] = [
   { level: 'CM2', trimester: 3, year: 1957, label: 'le traité de Rome, qui unit six pays d\'Europe' },
   { level: 'CM2', trimester: 3, year: 2002, label: 'l\'arrivée des pièces et des billets en euros' },
 ];
+
+/** Les repères de tous les niveaux : CM1 et CM2 ici, les autres dans histoireEcole.ts et histoireCollege.ts. */
+export const REPERES: Repere[] = [...REPERES_CM, ...REPERES_ECOLE, ...REPERES_COLLEGE];
 
 const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
 
@@ -623,9 +628,12 @@ const RAW_ITEMS: Record<HistoryDomain, WrittenItem[]> = {
  * (« Comment appelle-t-on... ? »), fabriquée à partir de la même phrase
  * déjà vérifiée — voir `deriveDefinitionReverses`.
  */
+const TOUS_LES_NIVEAUX = (domain: HistoryDomain) => [...RAW_ITEMS[domain], ...HISTOIRE_ECOLE[domain], ...HISTOIRE_COLLEGE[domain]];
+
 export const ITEMS: Record<HistoryDomain, WrittenItem[]> = {
-  ...RAW_ITEMS,
-  'mots-histoire': [...RAW_ITEMS['mots-histoire'], ...deriveDefinitionReverses(RAW_ITEMS['mots-histoire'])],
+  chronologie: TOUS_LES_NIVEAUX('chronologie'),
+  evenements: TOUS_LES_NIVEAUX('evenements'),
+  'mots-histoire': [...TOUS_LES_NIVEAUX('mots-histoire'), ...deriveDefinitionReverses(TOUS_LES_NIVEAUX('mots-histoire'))],
 };
 
 // --- Les questions fabriquées à partir des repères --------------------------------
@@ -746,6 +754,9 @@ function timelineQuestion(rng: Rng, pool: Repere[]): Draft | null {
 const CENTURY_RANGES: Partial<Record<Level, Record<Trimester, [number, number]>>> = {
   CM1: { 1: [1001, 1300], 2: [1501, 1700], 3: [1401, 1800] },
   CM2: { 1: [1789, 1950], 2: [1801, 1900], 3: [1901, 2020] },
+  '5e': { 1: [501, 1500], 2: [901, 1500], 3: [1451, 1715] },
+  '4e': { 1: [1685, 1815], 2: [1801, 1900], 3: [1848, 1914] },
+  '3e': { 1: [1914, 1945], 2: [1945, 2002], 3: [1944, 2000] },
 };
 
 /** « En quel siècle se trouve l'année 1150 ? » : une année prise au hasard
