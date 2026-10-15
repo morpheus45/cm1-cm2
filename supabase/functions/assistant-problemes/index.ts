@@ -3,8 +3,11 @@
 // maths. Tout le reste est transmis à l'administrateur de l'application.
 //
 // Fonction Supabase (Edge Function, Deno), à déployer sous le nom
-// « assistant-problemes ». Secret requis : ANTHROPIC_API_KEY (Edge Functions →
-// Secrets). La clé ne quitte jamais le serveur : aucune tablette ne la voit.
+// « assistant-problemes ». Le modèle tourne sur le PC de Cédric, derrière
+// OmniRoute : la fonction dépose la question dans la table assistant_travaux
+// (supabase/010_assistant_omniroute.sql), le relais du PC
+// (tools/relais-assistant.py) y écrit la réponse. Aucune clé de modèle n'est
+// installée dans Supabase, et le PC n'est pas joignable depuis internet.
 //
 // Ce que la fonction garantit, quoi que réponde le modèle :
 //  - seule une maîtresse connectée peut l'appeler (vérifiée ici même) ;
@@ -14,10 +17,10 @@
 //  - les problèmes proposés sont revérifiés ensuite par l'application, qui
 //    refait chaque calcul avant de les laisser entrer dans la classe.
 
-import Anthropic from 'npm:@anthropic-ai/sdk@0.128.0';
 import { createClient } from 'npm:@supabase/supabase-js@2.117.2';
 
-const MODEL = 'claude-opus-5';
+/** Le temps laissé au relais du PC pour répondre. */
+const ATTENTE_MS = 110_000;
 /** Demandes par maîtresse et par jour. Quelques centimes chacune. */
 const DAILY_LIMIT = 40;
 const MAX_MESSAGES = 30;
@@ -76,9 +79,9 @@ function lecteur(niveau: Niveau): string {
 }
 
 function systemPrompt(niveau: Niveau): string {
-  return `Tu es « l'assistant de Cédric », l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de français et de maths pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle ${CYCLES[niveau]}). Cédric est l'administrateur de l'application ; toi, tu es une intelligence artificielle : dis-le simplement si on te le demande, et ne te présente jamais comme Cédric ni comme une personne. Ne nomme ni le modèle d'intelligence artificielle ni l'entreprise qui le fournit ; si la maîtresse te le demande, réponds que tu es l'assistant de l'application, une intelligence artificielle mise à disposition par Cédric. Tu parles à la maîtresse d'une classe de ${niveau}.
+  return `Tu es « l'assistant de Cédric », l'assistant de l'espace maîtresse de l'application « École Arc-en-Ciel », un cahier d'exercices de toutes les matières (français, maths, histoire, géographie, anglais, sciences, EMC) pour des élèves de ${niveau}, conforme aux programmes de l'Éducation nationale (cycle ${CYCLES[niveau]}). Cédric est l'administrateur de l'application ; toi, tu es une intelligence artificielle : dis-le simplement si on te le demande, et ne te présente jamais comme Cédric ni comme une personne. Ne nomme ni le modèle d'intelligence artificielle ni l'entreprise qui le fournit ; si la maîtresse te le demande, réponds que tu es l'assistant de l'application, une intelligence artificielle mise à disposition par Cédric. Tu parles à la maîtresse d'une classe de ${niveau}.
 
-L'application propose aux élèves des séances d'une seule matière : questions de conjugaison, d'accords, d'orthographe, de numération, de calcul et de problèmes ; des opérations posées à la main, que la maîtresse corrige au stylet ; une révision ciblée sur les notions fragiles. La maîtresse y suit chaque élève (niveaux de maîtrise, graphiques, attendus de fin d'année) et y ajoute ses propres problèmes de maths pour la classe.
+L'application propose aux élèves des séances d'une seule matière : questions de français, de maths, d'histoire, de géographie, d'anglais (avec écoute et phrases à remettre dans l'ordre), de sciences et d'EMC ; des opérations posées à la main, que la maîtresse corrige au stylet ; une révision ciblée sur les notions fragiles. La maîtresse y suit chaque élève (niveaux de maîtrise, graphiques, attendus de fin d'année) et y ajoute ses propres problèmes de maths pour la classe.
 
 Ton rôle se limite à aider la maîtresse à corriger ou adapter l'utilisation de l'application pour sa classe : créer, corriger ou adapter des problèmes de maths pour ses élèves, et répondre à ses questions sur l'utilisation de l'application.
 
@@ -93,7 +96,9 @@ Les problèmes que tu proposes (${MAX_PROBLEMS} au plus par réponse) :
 - "trimestre" : 1, 2 ou 3, le moment de l'année où la notion est travaillée en ${niveau}.
 Pour corriger ou adapter un problème existant, renvoie sa nouvelle version complète dans "problemes".
 
-Réponds en français. Dans "message", deux ou trois phrases au plus, sans mise en forme.`;
+Réponds en français. Dans "message", deux ou trois phrases au plus, sans mise en forme.
+Réponds UNIQUEMENT par un objet JSON, sans texte autour, de la forme :
+{"message": "…", "hors_champ": false, "demande_administrateur": "", "problemes": [{"enonce": "…", "calcul": "…", "reponse": "…", "unite": "…", "fausses_reponses": ["…", "…", "…"], "trimestre": 1}]}`;
 }
 
 const SCHEMA = {
@@ -141,9 +146,11 @@ interface Reponse {
 
 /** La conversation envoyée par la page : alternée, commençant et finissant
  *  par la maîtresse, bornée en longueur. */
-function lireMessages(raw: unknown): Anthropic.Beta.Messages.BetaMessageParam[] | null {
+type Message = { role: 'user' | 'assistant'; content: string };
+
+function lireMessages(raw: unknown): Message[] | null {
   if (!Array.isArray(raw) || raw.length === 0 || raw.length > MAX_MESSAGES) return null;
-  const messages: Anthropic.Beta.Messages.BetaMessageParam[] = [];
+  const messages: Message[] = [];
   for (const [index, entry] of raw.entries()) {
     const role = (entry as { role?: unknown })?.role;
     const content = (entry as { content?: unknown })?.content;
@@ -164,7 +171,8 @@ function isString(value: unknown): value is string {
 function lireReponse(text: string): Reponse | null {
   let parsed: unknown;
   try {
-    parsed = JSON.parse(text);
+    // Le modèle entoure parfois l'objet de ``` : on ne garde que l'objet.
+    parsed = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
   } catch {
     return null;
   }
@@ -252,60 +260,41 @@ Deno.serve(async (req) => {
   }
 
   // 4. Le modèle d'intelligence artificielle.
-  const apiKey = Deno.env.get('ANTHROPIC_API_KEY');
-  if (!apiKey) {
-    return erreur(503, 'cle-manquante', "La clé de l'assistant n'est pas encore installée dans Supabase.");
+  // La file d'attente, en clé de service : ni la maîtresse ni les tablettes n'y ont accès.
+  const serviceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+  if (!serviceKey) return erreur(503, 'cle-manquante', "L'assistant n'est pas encore installé dans Supabase.");
+  const file = createClient(url, serviceKey, { auth: { persistSession: false, autoRefreshToken: false } });
+  const { data: travail, error: depotError } = await file
+    .from('assistant_travaux')
+    .insert({ niveau, systeme: systemPrompt(niveau), messages })
+    .select('id')
+    .single();
+  if (depotError || !travail) {
+    console.error('depot', depotError?.message);
+    return erreur(500, 'base', "La file de l'assistant est introuvable : le fichier 010 a-t-il été exécuté dans Supabase ?");
   }
-  const anthropic = new Anthropic({ apiKey });
-  let response: Anthropic.Beta.Messages.BetaMessage;
-  try {
-    response = await anthropic.beta.messages.create({
-      model: MODEL,
-      max_tokens: 16000,
-      // Si les filtres de sécurité du modèle refusent une demande par erreur,
-      // le fournisseur la reprend avec le modèle de repli qu'il recommande.
-      betas: ['server-side-fallback-2026-07-01'],
-      fallbacks: 'default',
-      system: systemPrompt(niveau),
-      // Réflexion adaptative (par défaut) à effort moyen : des problèmes
-      // justes sans faire attendre la maîtresse.
-      output_config: { effort: 'medium', format: { type: 'json_schema', schema: SCHEMA } },
-      messages,
-    });
-  } catch (error) {
-    if (error instanceof Anthropic.AuthenticationError) {
-      return erreur(503, 'cle-refusee', "La clé de l'assistant installée dans Supabase est refusée : elle doit être remplacée.");
+  let texte: string | null = null;
+  let echec = false;
+  const limite = Date.now() + ATTENTE_MS;
+  while (Date.now() < limite) {
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    const { data: etat } = await file.from('assistant_travaux').select('statut, reponse').eq('id', travail.id).single();
+    if (etat?.statut === 'pret') {
+      texte = etat.reponse ?? '';
+      break;
     }
-    if (error instanceof Anthropic.RateLimitError) {
-      return erreur(429, 'occupe', "L'assistant est très demandé en ce moment : réessayez dans une minute.");
+    if (etat?.statut === 'erreur') {
+      echec = true;
+      break;
     }
-    if (error instanceof Anthropic.APIConnectionError) {
-      return erreur(503, 'injoignable', "L'assistant est injoignable pour l'instant : réessayez dans un moment.");
-    }
-    if (error instanceof Anthropic.APIError) {
-      console.error('assistant', error.status, error.message);
-      return erreur(502, 'indisponible', "L'assistant n'a pas pu répondre : réessayez dans un moment.");
-    }
-    throw error;
   }
-
-  if (response.stop_reason === 'refusal') {
-    return json(200, {
-      message: "Je ne peux pas répondre à cette demande. Reformulez-la en lien avec les exercices de la classe.",
-      problemes: [],
-      horsChamp: false,
-      transmis: false,
-      assistant: null,
-    });
+  await file.from('assistant_travaux').delete().eq('id', travail.id);
+  if (texte === null) {
+    return erreur(503, echec ? 'indisponible' : 'injoignable', "L'assistant n'a pas pu répondre pour l'instant : réessayez dans un moment.");
   }
-  if (response.stop_reason === 'max_tokens') {
-    return erreur(502, 'trop-long', "La réponse de l'assistant était trop longue : demandez moins de problèmes à la fois.");
-  }
-  const text = [...response.content].reverse().find((block) => block.type === 'text');
-  const reponse = text && text.type === 'text' ? lireReponse(text.text) : null;
+  const reponse = lireReponse(texte);
   if (!reponse) return erreur(502, 'illisible', "La réponse de l'assistant n'a pas pu être lue : réessayez.");
 
-  // 5. Hors du cadre : rangée pour l'administrateur, et la réponse le dit.
   if (reponse.hors_champ) {
     const derniere = messages[messages.length - 1].content as string;
     const { error: sendError } = await supabase.rpc('transmettre_a_l_administrateur', {
@@ -319,7 +308,7 @@ Deno.serve(async (req) => {
       problemes: [],
       horsChamp: true,
       transmis: !sendError,
-      assistant: text!.type === 'text' ? text!.text : null,
+      assistant: texte,
     });
   }
 
@@ -328,6 +317,6 @@ Deno.serve(async (req) => {
     problemes: reponse.problemes,
     horsChamp: false,
     transmis: false,
-    assistant: text!.type === 'text' ? text!.text : null,
+    assistant: texte,
   });
 });
