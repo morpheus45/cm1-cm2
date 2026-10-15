@@ -2,9 +2,11 @@ import { useCallback, useEffect, useState } from 'react';
 import { AVAILABLE_LEVELS, LEVEL_LABELS, pupilKey } from '../types';
 import type { Level } from '../types';
 import type { SessionResult } from '../lib/results';
+import { estAppliAndroid } from '../lib/abonnements';
 import { isCloudConfigured } from '../lib/cloud';
 import { correctionsOf } from '../lib/correction';
 import { correctionQueue, loadChosenClass, pickCurrentClass, saveChosenClass } from '../lib/teacherClasses';
+import { supprimerMonCompte } from '../lib/teacherCloud';
 import type { Worksheet } from '../lib/worksheet';
 import {
   createClass,
@@ -53,7 +55,7 @@ function Panel({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen px-4 py-5">
       <div className="mx-auto flex max-w-lg flex-col gap-4">
-        <SchoolTitle size="petit" subtitle="Espace maîtresse" />
+        <SchoolTitle size="petit" subtitle={estAppliAndroid() ? 'Espace parents' : 'Espace maîtresse'} />
         {children}
       </div>
     </div>
@@ -414,13 +416,37 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
             )}
           </section>
           {!another && (
-            <button
-              type="button"
-              onClick={disconnect}
-              className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
-            >
-              {demoMode ? 'Sortir de la démonstration' : 'Se déconnecter'}
-            </button>
+            <>
+              <button
+                type="button"
+                onClick={disconnect}
+                className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
+              >
+                {demoMode ? 'Sortir de la démonstration' : 'Se déconnecter'}
+              </button>
+              {!demoMode && (
+                <button
+                  type="button"
+                  onClick={async () => {
+                    if (
+                      window.confirm(
+                        'Supprimer définitivement votre compte, vos classes et tous les résultats de vos élèves ? Cette action est irréversible.'
+                      )
+                    ) {
+                      try {
+                        await supprimerMonCompte();
+                        window.location.reload();
+                      } catch (e) {
+                        window.alert(`La suppression n'a pas abouti : ${e instanceof Error ? e.message : 'réessayez plus tard'}.`);
+                      }
+                    }
+                  }}
+                  className="text-sm font-bold text-encre-douce underline decoration-2 underline-offset-4"
+                >
+                  Supprimer mon compte
+                </button>
+              )}
+            </>
           )}
         </Panel>
       </>
@@ -495,7 +521,7 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         Évaluations de la classe
       </button>
       <button type="button" onClick={() => setShowProblems(true)} className={secondary}>
-        Problèmes de la classe, avec l'assistant de Cédric
+        Problèmes de la classe, avec Arcélie
       </button>
       <button type="button" onClick={() => setShowClassQuestions(true)} className={secondary}>
         Questions de la classe, dans toutes les matières
@@ -507,6 +533,29 @@ export function TeacherSpace({ localSessions, onBack, onForgetLocalPupil, onForg
         <button type="button" disabled={busy} onClick={disconnect} className={secondary}>
           {demoMode ? 'Sortir de la démonstration' : 'Se déconnecter'}
         </button>
+        {!demoMode && (
+          <button
+            type="button"
+            disabled={busy}
+            onClick={async () => {
+              if (
+                window.confirm(
+                  'Supprimer définitivement votre compte, vos classes et tous les résultats de vos élèves ? Cette action est irréversible.'
+                )
+              ) {
+                try {
+                  await supprimerMonCompte();
+                  window.location.reload();
+                } catch (e) {
+                  window.alert(`La suppression n'a pas abouti : ${e instanceof Error ? e.message : 'réessayez plus tard'}.`);
+                }
+              }
+            }}
+            className={secondary}
+          >
+            Supprimer mon compte
+          </button>
+        )}
       </div>
     </section>
   );

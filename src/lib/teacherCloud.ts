@@ -508,3 +508,10 @@ export function signUpMissing(email: string, password: string): string[] {
 }
 
 export type { Trimester };
+
+/** Google Play exige qu'un compte puisse être supprimé depuis l'appli : le compte, ses classes et les résultats de ses élèves. */
+export async function supprimerMonCompte(): Promise<void> {
+  const { error } = await (await client()).rpc('supprimer_mon_compte');
+  if (error) throw new Error(frenchAuthError(error.message));
+  await signOut();
+}

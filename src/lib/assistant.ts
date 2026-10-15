@@ -91,7 +91,7 @@ export async function assistantErrorMessage(error: unknown): Promise<string> {
 
 /** Le message montré à la place d'une vraie réponse, en démonstration. */
 export const DEMO_ASSISTANT_MESSAGE =
-  "L'assistant de Cédric ne répond pas dans la classe de démonstration : aucune donnée n'y est envoyée à un service extérieur. Essayez-le avec un vrai compte.";
+  "Arcélie ne répond pas dans la classe de démonstration : aucune donnée n'y est envoyée à un service extérieur. Essayez-le avec un vrai compte.";
 
 export async function askAssistant(niveau: Level, turns: ChatTurn[]): Promise<AssistantReply> {
   if (isDemoActive()) throw new Error(DEMO_ASSISTANT_MESSAGE);

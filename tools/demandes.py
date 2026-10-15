@@ -10,7 +10,7 @@ for ligne in open(os.path.expanduser('~/.config/cm1-cm2/relais.env')):
         k, v = ligne.strip().split('=', 1); os.environ.setdefault(k, v)
 URL = os.environ['SUPABASE_URL'].rstrip('/') + '/rest/v1/demandes_administrateur'
 CLE = os.environ['SUPABASE_SERVICE_ROLE_KEY']
-H = {'apikey': CLE, 'Authorization': 'Bearer ' + CLE, 'Content-Type': 'application/json'}
+H = {'apikey': CLE, 'Content-Type': 'application/json', **({} if CLE.startswith('sb_secret_') else {'Authorization': 'Bearer ' + CLE})}
 
 if len(sys.argv) > 2 and sys.argv[1] == '--traitee':
     for i in sys.argv[2:]:
