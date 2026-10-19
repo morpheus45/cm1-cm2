@@ -8,10 +8,14 @@ import '@fontsource/andika/latin-700.css';
 import '@fontsource/playwrite-fr-moderne/latin-400.css';
 import './index.css';
 import { applyRetention } from './lib/conservation';
+import { parlerAuxParents } from './lib/abonnements';
 
 // Une année scolaire, pas davantage : ce qui date d'avant la rentrée est
 // effacé avant même l'affichage.
 applyRetention();
+
+// Dans l'appli Android, les adultes sont des parents : « enfant » plutôt qu'« élève ».
+parlerAuxParents();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -25,7 +25,7 @@ CLE = env('SUPABASE_SERVICE_ROLE_KEY')
 OMNI = env('OMNIROUTE_URL', 'http://127.0.0.1:20128/v1/chat/completions')
 OMNI_CLE = env('OMNIROUTE_KEY')
 MODELES = env('OMNIROUTE_MODELES', 'antigravity/gemini-3.8-flash-tiered,gratuit-fiable').split(',')
-ENTETES = {'apikey': CLE, 'Authorization': 'Bearer ' + CLE, 'Content-Type': 'application/json'}
+ENTETES = {'apikey': CLE, 'Content-Type': 'application/json', **({} if CLE.startswith('sb_secret_') else {'Authorization': 'Bearer ' + CLE})}
 
 def base(methode, requete='', corps=None, prefer=None):
     entetes = dict(ENTETES, **({'Prefer': prefer} if prefer else {}))

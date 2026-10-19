@@ -21,6 +21,7 @@ import { ProgressLines } from './charts/ProgressLines';
 import { ClassBands, type ClassBand } from './charts/ClassBands';
 import { YearOutlookCard } from './charts/YearOutlookCard';
 import { PupilList } from './PupilList';
+import { estAppliAndroid } from '../lib/abonnements';
 
 interface TeacherScreenProps {
   sessions: SessionResult[];
@@ -204,7 +205,7 @@ export function TeacherScreen({
     <header className="flex items-start justify-between gap-3">
       <div className="min-w-0">
         <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-encre-douce">
-          <RainbowArc className="w-8" /> École Arc-en-Ciel · Espace maîtresse
+          <RainbowArc className="w-8" /> École Arc-en-Ciel · {estAppliAndroid() ? 'Espace parents' : 'Espace maîtresse'}
         </p>
         <h1 className="truncate text-2xl font-bold text-encre">
           {folder ? pupilLabel(folder.pupil) : 'Mes élèves'}

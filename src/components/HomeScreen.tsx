@@ -13,6 +13,8 @@ import { activitiesFor as activitiesDuProgramme, notionsFor, subjectsFor } from 
 import { aidesDuProfil, appliquerAuDocument, loadProfil, TROUBLE_LABELS, TROUBLES } from '../lib/adaptations';
 import { pupilKey } from '../types';
 import { AidesScreen } from './AidesScreen';
+import { AbonnementScreen } from './AbonnementScreen';
+import { detailsDesOffres, estAppliAndroid, niveauOuvert, niveauxAbonnes } from '../lib/abonnements';
 import { worksheetScore } from '../lib/worksheet';
 import { formatFrenchDate } from '../lib/worksheetPdf';
 import { ALL_TABLES, tablesAuProgramme } from '../domains/tables';
@@ -80,6 +82,15 @@ export function HomeScreen({
 }: HomeScreenProps) {
   const [name, setName] = useState(initial.name);
   const [lastName, setLastName] = useState(initial.lastName);
+  const [abonnes, setAbonnes] = useState<Level[]>([]);
+  const [offres, setOffres] = useState<Partial<Record<Level, { prix: string; titre: string }>>>({});
+  const [abonnementOuvert, setAbonnementOuvert] = useState(false);
+
+  useEffect(() => {
+    if (!estAppliAndroid()) return;
+    void niveauxAbonnes().then(setAbonnes);
+    void detailsDesOffres().then(setOffres);
+  }, []);
   // Les aides de l'élève dont le prénom est écrit : relues à chaque changement de prénom, et au retour de l'écran des aides.
   const eleve = pupilKey({ firstName: name, lastName });
   const [aidesOuvertes, setAidesOuvertes] = useState(false);
@@ -187,6 +198,8 @@ export function HomeScreen({
       ? tables.some((table) => offeredTables.includes(table))
       : posingOperations || activity === 'revision' || chosenNotions.length > 0);
 
+  const verrouille = !niveauOuvert(level, abonnes);
+
   const options = (): StartOptions => ({
     name: name.trim(),
     lastName: lastName.trim(),
@@ -201,6 +214,20 @@ export function HomeScreen({
 
   if (aidesOuvertes) {
     return <AidesScreen eleve={eleve} prenom={name.trim()} onClose={() => setAidesOuvertes(false)} />;
+  }
+
+  if (abonnementOuvert) {
+    return (
+      <AbonnementScreen
+        niveau={level}
+        prix={offres[level]?.prix}
+        onRetour={() => setAbonnementOuvert(false)}
+        onAbonne={() => {
+          setAbonnementOuvert(false);
+          void niveauxAbonnes().then(setAbonnes);
+        }}
+      />
+    );
   }
 
   return (
@@ -414,11 +441,11 @@ export function HomeScreen({
 
         <button
           type="button"
-          disabled={!canStart}
-          onClick={() => onStart(options())}
+          disabled={verrouille ? false : !canStart}
+          onClick={verrouille ? () => setAbonnementOuvert(true) : () => onStart(options())}
           className="bouton-encre w-full py-4 text-xl"
         >
-          Commencer ma séance
+          {verrouille ? `S'abonner au ${level} · 7 jours gratuits` : 'Commencer ma séance'}
         </button>
 
         <nav aria-label="Autres pages" className="flex flex-col items-center gap-1">
@@ -426,7 +453,7 @@ export function HomeScreen({
             href="#maitresse"
             className="rounded-full px-4 py-2 text-base font-bold text-encre-douce underline decoration-2 underline-offset-4"
           >
-            Espace maîtresse
+            {estAppliAndroid() ? 'Espace parents' : 'Espace maîtresse'}
           </a>
           <a
             href="#informations"

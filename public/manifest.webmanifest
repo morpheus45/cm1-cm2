@@ -1,7 +1,7 @@
 {
   "name": "École Arc-en-Ciel",
   "short_name": "Arc-en-Ciel",
-  "description": "Le cahier d'exercices de l'École Arc-en-Ciel : français et maths du CE1 à la 6e, histoire et géographie au CM1 et au CM2, trimestre par trimestre.",
+  "description": "Le cahier d'exercices de l'École Arc-en-Ciel : du CE1 à la 3e, sept matières (français, maths, histoire, géographie, anglais, sciences, EMC), trimestre par trimestre, avec des aides pour les élèves DYS et TDA/H.",
   "lang": "fr",
   "dir": "ltr",
   "start_url": ".",

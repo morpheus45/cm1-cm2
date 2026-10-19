@@ -11,7 +11,7 @@ for ligne in open(os.path.expanduser('~/.config/cm1-cm2/relais.env')):
 CLE = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '')
 if not CLE:
     raise SystemExit('Clé service_role manquante dans ~/.config/cm1-cm2/relais.env')
-H = {'apikey': CLE, 'Authorization': 'Bearer ' + CLE}
+H = {'apikey': CLE, **({} if CLE.startswith('sb_secret_') else {'Authorization': 'Bearer ' + CLE})}
 url = os.environ['SUPABASE_URL'].rstrip('/') + '/rest/v1/demandes_administrateur?traitee=eq.false&order=created_at.asc&select=id,created_at,teacher_email,resume,demande'
 demandes = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=H), timeout=30))
 

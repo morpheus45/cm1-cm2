@@ -46,7 +46,7 @@ function firstCustomisableDomain(subject: Subject): Domain {
 /**
  * Les questions que la maîtresse ajoute elle-même à sa classe, dans
  * n'importe quelle matière — sauf les problèmes de maths, qui ont leur
- * propre écran avec l'assistant de Cédric et une vérification du calcul.
+ * propre écran avec Arcélie et une vérification du calcul.
  *
  * Ici, rien n'est recalculé : l'application vérifie la forme (un énoncé
  * assez long, des réponses distinctes), jamais si la réponse est juste.
@@ -162,7 +162,7 @@ export function ClassQuestionsScreen({ classId, className, level, onClose }: Cla
           </div>
           {!SUBJECT_DOMAINS[subject].some(isCustomisableDomain) && (
             <p className="text-sm font-bold text-encre-douce">
-              Les problèmes de maths ont leur propre écran, avec l'assistant de Cédric.
+              Les problèmes de maths ont leur propre écran, avec Arcélie.
             </p>
           )}
 
