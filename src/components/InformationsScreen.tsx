@@ -64,7 +64,7 @@ const SECTIONS: Section[] = [
     title: 'L\'appli Android Arc-en-Ciel',
     items: [
       'L\'appli Android est la même application que ce site, avec les mêmes règles. Le site reste gratuit.',
-      'Dans l\'appli, chaque niveau s\'ouvre par un abonnement mensuel, avec 7 jours d\'essai gratuit. Le paiement, le renouvellement et la résiliation passent uniquement par Google Play : l\'application ne voit ni ne garde aucune donnée bancaire. Elle sait seulement quels niveaux sont ouverts sur l\'appareil.',
+      'Dans l\'appli, chaque niveau s\'ouvre par un abonnement mensuel, avec 7 jours d\'essai gratuit. Le paiement, le renouvellement et la résiliation passent uniquement par Google Play : l\'application ne voit ni ne garde aucune donnée bancaire. Elle sait seulement quels niveaux sont ouverts sur l\'appareil. Pour confirmer l\'abonnement auprès de Google, le reçu d\'achat, anonyme, passe par l\'espace des classes sans y être gardé.',
       'Google traite les données du paiement selon ses propres règles de confidentialité.',
     ],
   },
