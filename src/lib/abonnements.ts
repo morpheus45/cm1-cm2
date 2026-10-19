@@ -171,3 +171,43 @@ export function niveauOuvert(niveau: Level, abonnes: Level[]): boolean {
   }
   return abonnes.includes(niveau);
 }
+
+const VOCABULAIRE_PARENTS: [RegExp, string][] = [
+  [/École Arc-en-Ciel/g, 'Arc-en-Ciel'],
+  [/Espace maîtresse/g, 'Espace parents'],
+  [/Élèves/g, 'Enfants'],
+  [/élèves/g, 'enfants'],
+  [/Élève/g, 'Enfant'],
+  [/élève/g, 'enfant'],
+];
+
+/** Le vocabulaire de l'appli, faite pour les familles : « enfant » plutôt qu'« élève ». */
+export function enMotsDeParents(texte: string): string {
+  return VOCABULAIRE_PARENTS.reduce((t, [motif, mot]) => t.replace(motif, mot), texte);
+}
+
+/**
+ * Dans l'appli Android, réécrit tout le texte affiché avec le vocabulaire des
+ * parents. Le site, lui, garde celui de l'école.
+ * ponytail: réécriture du DOM après React, à remplacer par des libellés dédiés si l'appli diverge davantage du site.
+ */
+export function parlerAuxParents(racine: Node = document.body): void {
+  if (!estAppliAndroid()) return;
+  const reecrire = (noeud: Node) => {
+    const marche = document.createTreeWalker(noeud, NodeFilter.SHOW_TEXT);
+    for (let t = marche.currentNode as Node | null; t; t = marche.nextNode()) {
+      if (t.nodeType === Node.TEXT_NODE && t.nodeValue && /[ÉéE]l[èe]ve|École Arc|Espace maîtresse/.test(t.nodeValue)) {
+        const nouveau = enMotsDeParents(t.nodeValue);
+        if (nouveau !== t.nodeValue) t.nodeValue = nouveau;
+      }
+    }
+  };
+  document.title = enMotsDeParents(document.title);
+  reecrire(racine);
+  new MutationObserver((changements) => {
+    for (const c of changements) {
+      if (c.type === 'characterData') reecrire(c.target);
+      c.addedNodes.forEach(reecrire);
+    }
+  }).observe(racine, { childList: true, subtree: true, characterData: true });
+}
