@@ -35,7 +35,7 @@ export const LOCAL_DATA: Record<string, string> = {
   'exercices-cm1-cm2:classe-choisie': 'la dernière classe ouverte par la maîtresse : gardée, aucune donnée d\'élève',
   'exercices-cm1-cm2:aides':
     'les aides DYS de chaque élève : gardées d\'une année sur l\'autre, effacées depuis « Mes aides » ou avec le dossier de l\'élève',
-  'exercices-cm1-cm2:appli': 'le fait que l\'application Android est ouverte : gardé, aucune donnée d\'élève',
+  'exercices-cm1-cm2:appli': 'le fait que l\'application Android est ouverte : le temps de la session seulement, aucune donnée d\'élève',
   [SCHOOL_YEAR_KEY]: 'l\'année scolaire du dernier lancement',
 };
 

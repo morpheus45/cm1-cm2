@@ -1,5 +1,6 @@
 import type { Level } from '../types';
 import { ALL_LEVELS } from '../types';
+import { cloudClient } from './cloud';
 
 interface ItemDetails {
   itemId: string;
@@ -54,10 +55,12 @@ export function estAppliAndroid(): boolean {
     return false;
   }
 
+  // sessionStorage, pas localStorage : l'appli partage le stockage de Chrome,
+  // et le site ouvert dans Chrome doit rester gratuit.
   const parametres = new URLSearchParams(window.location.search);
   if (parametres.get('appli') === 'android') {
     try {
-      localStorage.setItem(STORAGE_KEY, 'android');
+      sessionStorage.setItem(STORAGE_KEY, 'android');
     } catch {
       // Ignorer l'indisponibilité du stockage local
     }
@@ -65,7 +68,7 @@ export function estAppliAndroid(): boolean {
   }
 
   try {
-    if (localStorage.getItem(STORAGE_KEY) === 'android') {
+    if (sessionStorage.getItem(STORAGE_KEY) === 'android') {
       return true;
     }
   } catch {
@@ -93,6 +96,9 @@ export async function niveauxAbonnes(): Promise<Level[]> {
   }
   try {
     const achats = await dgs.listPurchases();
+    // Un achat pas encore confirmé (réseau coupé juste après le paiement) l'est
+    // à l'ouverture suivante, bien avant les trois jours laissés par Google.
+    for (const achat of achats) void confirmerAchat(achat.itemId, achat.purchaseToken);
     const skusAchetes = new Set(achats.map((achat) => achat.itemId));
     return ALL_LEVELS.filter((niveau) => skusAchetes.has(SKU[niveau]));
   } catch {
@@ -158,8 +164,28 @@ export async function sAbonner(niveau: Level): Promise<boolean> {
     );
 
     const reponse = await requetePaiement.show();
+    const { purchaseToken } = reponse.details as { purchaseToken?: string };
+    if (purchaseToken) await confirmerAchat(SKU[niveau], purchaseToken);
     await reponse.complete('success');
     return true;
+  } catch {
+    // Déjà abonné (Google refuse un second achat), ou paiement annulé.
+    return (await niveauxAbonnes()).includes(niveau);
+  }
+}
+
+/**
+ * Fait vérifier et confirmer l'achat par le serveur (fonction Supabase
+ * « abonnement-play ») : sans confirmation sous trois jours, Google rembourse
+ * et retire l'abonnement. Un échec n'est pas grave : on réessaie à chaque
+ * ouverture de l'appli.
+ */
+export async function confirmerAchat(sku: string, purchaseToken: string): Promise<boolean> {
+  try {
+    const supabase = await cloudClient();
+    if (!supabase) return false;
+    const { data, error } = await supabase.functions.invoke('abonnement-play', { body: { sku, purchaseToken } });
+    return !error && data?.actif === true;
   } catch {
     return false;
   }
