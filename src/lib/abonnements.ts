@@ -89,7 +89,25 @@ async function service(): Promise<DigitalGoodsService | null> {
   }
 }
 
+/**
+ * Un compte parent à qui l'accès est offert (relecteurs de Google Play,
+ * familles invitées) : la liste est gardée côté serveur, migration 012.
+ */
+async function accesOffert(): Promise<boolean> {
+  try {
+    const supabase = await cloudClient();
+    if (!supabase) return false;
+    const { data: session } = await supabase.auth.getSession();
+    if (!session.session) return false;
+    const { data, error } = await supabase.rpc('acces_offert');
+    return !error && data === true;
+  } catch {
+    return false;
+  }
+}
+
 export async function niveauxAbonnes(): Promise<Level[]> {
+  if (await accesOffert()) return [...ALL_LEVELS];
   const dgs = await service();
   if (!dgs) {
     return [];
